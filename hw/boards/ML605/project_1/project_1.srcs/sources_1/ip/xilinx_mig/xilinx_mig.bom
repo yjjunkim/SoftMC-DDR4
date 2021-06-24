@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<BillOfMaterials Version="1" Minor="2">
+	<IPInstance name="xilinx_mig">
+		<FileSets>
+			<FileSet generator="xmdf_to_bom">
+				<File name="xilinx_mig/user_design/rtl/controller/arb_mux.v" type="verilog" timestamp="Mon Jun 14 08:26:11 2021" checksum="0">
+				</File>
+				<File name="xilinx_mig/user_design/rtl/controller/arb_row_col.v" type="verilog" timestamp="Mon Jun 14 08:26:11 2021" checksum="0">
+				</File>
+				<File name="xilinx_mig/user_design/rtl/controller/arb_select.v" type="verilog" timestamp="Mon Jun 14 08:26:11 2021" checksum="0">
+				</File>
+				<File name="xilinx_mig/user_design/rtl/controller/bank_cntrl.v" type="verilog" timestamp="Mon Jun 14 08:26:11 2021" checksum="0">
+				</File>
+				<File name="xilinx_mig/user_design/rtl/controller/bank_common.v" type="verilog" timestamp="Mon Jun 14 08:26:11 2021" checksum="0">
+				</File>
+				<File name="xilinx_mig/user_design/rtl/controller/bank_compare.v" type="verilog" timestamp="Mon Jun 14 08:26:11 2021" checksum="0">
+				</File>
+				<File name="xilinx_mig/user_design/rtl/controller/bank_mach.v" type="verilog" timestamp="Mon Jun 14 08:26:11 2021" checksum="0">
+				</File>
+				<File name="xilinx_mig/user_design/rtl/controller/bank_queue.v" type="verilog" timestamp="Mon Jun 14 08:26:11 2021" checksum="0">
+				</File>
+				<File name="xilinx_mig/user_design/rtl/controller/bank_state.v" type="verilog" timestamp="Mon Jun 14 08:26:11 2021" checksum="0">
+				</File>
+				<File name="xilinx_mig/user_design/rtl/controller/col_mach.v" type="verilog" timestamp="Mon Jun 14 08:26:11 2021" checksum="0">
+				</File>
+				<File name="xilinx_mig/user_design/rtl/controller/mc.v" type="verilog" timestamp="Mon Jun 14 08:26:11 2021" checksum="0">
+				</File>
+				<File name="xilinx_mig/user_design/rtl/controller/rank_cntrl.v" type="verilog" timestamp="Mon Jun 14 08:26:11 2021" checksum="0">
+				</File>
+				<File name="xilinx_mig/user_design/rtl/controller/rank_common.v" type="verilog" timestamp="Mon Jun 14 08:26:11 2021" checksum="0">
+				</File>
+				<File name="xilinx_mig/user_design/rtl/controller/rank_mach.v" type="verilog" timestamp="Mon Jun 14 08:26:11 2021" checksum="0">
+				</File>
+				<File name="xilinx_mig/user_design/rtl/controller/round_robin_arb.v" type="verilog" timestamp="Mon Jun 14 08:26:11 2021" checksum="0">
+				</File>
+				<File name="xilinx_mig/user_design/rtl/ecc/ecc_buf.v" type="verilog" timestamp="Mon Jun 14 08:26:11 2021" checksum="0">
+				</File>
+				<File name="xilinx_mig/user_design/rtl/ecc/ecc_dec_fix.v" type="verilog" timestamp="Mon Jun 14 08:26:11 2021" checksum="0">
+				</File>
+				<File name="xilinx_mig/user_design/rtl/ecc/ecc_gen.v" type="verilog" timestamp="Mon Jun 14 08:26:11 2021" checksum="0">
+				</File>
+				<File name="xilinx_mig/user_design/rtl/ecc/ecc_merge_enc.v" type="verilog" timestamp="Mon Jun 14 08:26:11 2021" checksum="0">
+				</File>
+				<File name="xilinx_mig/user_design/rtl/ip_top/clk_ibuf.v" type="verilog" timestamp="Mon Jun 14 08:26:11 2021" checksum="0">
+				</File>
+				<File name="xilinx_mig/user_design/rtl/ip_top/ddr2_ddr3_chipscope.v" type="verilog" timestamp="Mon Jun 14 08:26:11 2021" checksum="0">
+				</File>
+				<File name="xilinx_mig/user_design/rtl/ip_top/infrastructure.v" type="verilog" timestamp="Mon Jun 14 08:26:11 2021" checksum="0">
+				</File>
+				<File name="xilinx_mig/user_design/rtl/ip_top/iodelay_ctrl.v" type="verilog" timestamp="Mon Jun 14 08:26:58 2021" checksum="0">
+				</File>
+				<File name="xilinx_mig/user_design/rtl/ip_top/mem_intfc.v" type="verilog" timestamp="Mon Jun 14 08:26:11 2021" checksum="0">
+				</File>
+				<File name="xilinx_mig/user_design/rtl/ip_top/memc_ui_top.v" type="verilog" timestamp="Mon Jun 14 08:26:11 2021" checksum="0">
+				</File>
+				<File name="xilinx_mig/user_design/rtl/ip_top/xilinx_mig.v" type="verilog" timestamp="Mon Jun 14 08:26:11 2021" checksum="0">
+				</File>
+				<File name="xilinx_mig/user_design/rtl/phy/circ_buffer.v" type="verilog" timestamp="Mon Jun 14 08:26:11 2021" checksum="0">
+				</File>
+				<File name="xilinx_mig/user_design/rtl/phy/phy_ck_iob.v" type="verilog" timestamp="Mon Jun 14 08:26:11 2021" checksum="0">
+				</File>
+				<File name="xilinx_mig/user_design/rtl/phy/phy_clock_io.v" type="verilog" timestamp="Mon Jun 14 08:26:11 2021" checksum="0">
+				</File>
+				<File name="xilinx_mig/user_design/rtl/phy/phy_control_io.v" type="verilog" timestamp="Mon Jun 14 08:26:11 2021" checksum="0">
+				</File>
+				<File name="xilinx_mig/user_design/rtl/phy/phy_data_io.v" type="verilog" timestamp="Mon Jun 14 08:26:11 2021" checksum="0">
+				</File>
+				<File name="xilinx_mig/user_design/rtl/phy/phy_dly_ctrl.v" type="verilog" timestamp="Mon Jun 14 08:26:11 2021" checksum="0">
+				</File>
+				<File name="xilinx_mig/user_design/rtl/phy/phy_dm_iob.v" type="verilog" timestamp="Mon Jun 14 08:26:11 2021" checksum="0">
+				</File>
+				<File name="xilinx_mig/user_design/rtl/phy/phy_dq_iob.v" type="verilog" timestamp="Mon Jun 14 08:26:11 2021" checksum="0">
+				</File>
+				<File name="xilinx_mig/user_design/rtl/phy/phy_dqs_iob.v" type="verilog" timestamp="Mon Jun 14 08:26:11 2021" checksum="0">
+				</File>
+				<File name="xilinx_mig/user_design/rtl/phy/phy_init.v" type="verilog" timestamp="Mon Jun 14 08:26:11 2021" checksum="0">
+				</File>
+				<File name="xilinx_mig/user_design/rtl/phy/phy_pd.v" type="verilog" timestamp="Mon Jun 14 08:26:11 2021" checksum="0">
+				</File>
+				<File name="xilinx_mig/user_design/rtl/phy/phy_pd_top.v" type="verilog" timestamp="Mon Jun 14 08:26:11 2021" checksum="0">
+				</File>
+				<File name="xilinx_mig/user_design/rtl/phy/phy_rdclk_gen.v" type="verilog" timestamp="Mon Jun 14 08:26:11 2021" checksum="0">
+				</File>
+				<File name="xilinx_mig/user_design/rtl/phy/phy_rdctrl_sync.v" type="verilog" timestamp="Mon Jun 14 08:26:58 2021" checksum="0">
+				</File>
+				<File name="xilinx_mig/user_design/rtl/phy/phy_rddata_sync.v" type="verilog" timestamp="Mon Jun 14 08:26:11 2021" checksum="0">
+				</File>
+				<File name="xilinx_mig/user_design/rtl/phy/phy_rdlvl.v" type="verilog" timestamp="Mon Jun 14 08:26:11 2021" checksum="0">
+				</File>
+				<File name="xilinx_mig/user_design/rtl/phy/phy_read.v" type="verilog" timestamp="Mon Jun 14 08:26:58 2021" checksum="0">
+				</File>
+				<File name="xilinx_mig/user_design/rtl/phy/phy_top.v" type="verilog" timestamp="Mon Jun 14 08:26:58 2021" checksum="0">
+				</File>
+				<File name="xilinx_mig/user_design/rtl/phy/phy_write.v" type="verilog" timestamp="Mon Jun 14 08:26:11 2021" checksum="0">
+				</File>
+				<File name="xilinx_mig/user_design/rtl/phy/phy_wrlvl.v" type="verilog" timestamp="Mon Jun 14 08:26:11 2021" checksum="0">
+				</File>
+				<File name="xilinx_mig/user_design/rtl/phy/rd_bitslip.v" type="verilog" timestamp="Mon Jun 14 08:26:11 2021" checksum="0">
+				</File>
+				<File name="xilinx_mig/user_design/rtl/ui/ui_cmd.v" type="verilog" timestamp="Mon Jun 14 08:26:11 2021" checksum="0">
+				</File>
+				<File name="xilinx_mig/user_design/rtl/ui/ui_rd_data.v" type="verilog" timestamp="Mon Jun 14 08:26:11 2021" checksum="0">
+				</File>
+				<File name="xilinx_mig/user_design/rtl/ui/ui_top.v" type="verilog" timestamp="Mon Jun 14 08:26:11 2021" checksum="0">
+				</File>
+				<File name="xilinx_mig/user_design/rtl/ui/ui_wr_data.v" type="verilog" timestamp="Mon Jun 14 08:26:11 2021" checksum="0">
+				</File>
+				<File name="xilinx_mig/user_design/par/xilinx_mig.ucf" type="ucf" timestamp="Mon Jun 14 08:26:11 2021" checksum="0">
+				</File>
+			</FileSet>
+		</FileSets>
+	</IPInstance>
+</BillOfMaterials>
+

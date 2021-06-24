@@ -1,0 +1,49 @@
+Release 14.6 - par P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Mon Jun 14 18:51:47 2021
+
+All signals are completely routed.
+
+WARNING:ParHelpers:361 - There are 37 loadless signals in this design. This design will cause Bitgen to issue DRC
+   warnings.
+
+   i_pcie_top/app/endpoint/endpoint64.endpoint/channels[0].channel/txPort/gate/fifo/mem/Mram_rRAM10_RAMD_D1_O
+   i_pcie_top/app/endpoint/endpoint64.endpoint/channels[0].channel/txPort/gate/fifo/mem/Mram_rRAM11_RAMD_D1_O
+   i_pcie_top/app/endpoint/endpoint64.endpoint/channels[0].channel/txPort/gate/fifo/mem/Mram_rRAM1_RAMD_D1_O
+   i_pcie_top/app/endpoint/endpoint64.endpoint/channels[0].channel/txPort/gate/fifo/mem/Mram_rRAM2_RAMD_D1_O
+   i_pcie_top/app/endpoint/endpoint64.endpoint/channels[0].channel/txPort/gate/fifo/mem/Mram_rRAM3_RAMD_D1_O
+   i_pcie_top/app/endpoint/endpoint64.endpoint/channels[0].channel/txPort/gate/fifo/mem/Mram_rRAM4_RAMD_D1_O
+   i_pcie_top/app/endpoint/endpoint64.endpoint/channels[0].channel/txPort/gate/fifo/mem/Mram_rRAM5_RAMD_D1_O
+   i_pcie_top/app/endpoint/endpoint64.endpoint/channels[0].channel/txPort/gate/fifo/mem/Mram_rRAM6_RAMD_D1_O
+   i_pcie_top/app/endpoint/endpoint64.endpoint/channels[0].channel/txPort/gate/fifo/mem/Mram_rRAM7_RAMD_D1_O
+   i_pcie_top/app/endpoint/endpoint64.endpoint/channels[0].channel/txPort/gate/fifo/mem/Mram_rRAM8_RAMD_D1_O
+   i_pcie_top/app/endpoint/endpoint64.endpoint/channels[0].channel/txPort/gate/fifo/mem/Mram_rRAM9_RAMD_D1_O
+   i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/reorderQueue/data_input/countRam/Mram_rRAM1_RAMD_D1_O
+   i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/reorderQueue/data_input/posRam/Mram_rRAM1_RAMD_D1_O
+   i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/reorderQueue/data_input/posRam/Mram_rRAM2_RAMD_D1_O
+   i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/reorderQueue/mapRam/Mram_rRAM_RAMD_D1_O
+   i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/reorderQueue/pktRam/Mram_rRAM1_RAMD_D1_O
+   i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/reorderQueue/pktRam/Mram_rRAM2_RAMD_D1_O
+   i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/rxEngReq/fifo/mem/Mram_rRAM10_RAMD_D1_O
+   i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/rxEngReq/fifo/mem/Mram_rRAM11_RAMD_D1_O
+   i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/rxEngReq/fifo/mem/Mram_rRAM12_RAMD_D1_O
+   i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/rxEngReq/fifo/mem/Mram_rRAM1_RAMD_D1_O
+   i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/rxEngReq/fifo/mem/Mram_rRAM2_RAMD_D1_O
+   i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/rxEngReq/fifo/mem/Mram_rRAM3_RAMD_D1_O
+   i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/rxEngReq/fifo/mem/Mram_rRAM4_RAMD_D1_O
+   i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/rxEngReq/fifo/mem/Mram_rRAM5_RAMD_D1_O
+   i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/rxEngReq/fifo/mem/Mram_rRAM6_RAMD_D1_O
+   i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/rxEngReq/fifo/mem/Mram_rRAM7_RAMD_D1_O
+   i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/rxEngReq/fifo/mem/Mram_rRAM8_RAMD_D1_O
+   i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/rxEngReq/fifo/mem/Mram_rRAM9_RAMD_D1_O
+   xil_phy/u_phy_data_io/gen_dqs[0].u_phy_dqs_iob/u_iobuf_dqs/OB
+   xil_phy/u_phy_data_io/gen_dqs[1].u_phy_dqs_iob/u_iobuf_dqs/OB
+   xil_phy/u_phy_data_io/gen_dqs[2].u_phy_dqs_iob/u_iobuf_dqs/OB
+   xil_phy/u_phy_data_io/gen_dqs[3].u_phy_dqs_iob/u_iobuf_dqs/OB
+   xil_phy/u_phy_data_io/gen_dqs[4].u_phy_dqs_iob/u_iobuf_dqs/OB
+   xil_phy/u_phy_data_io/gen_dqs[5].u_phy_dqs_iob/u_iobuf_dqs/OB
+   xil_phy/u_phy_data_io/gen_dqs[6].u_phy_dqs_iob/u_iobuf_dqs/OB
+   xil_phy/u_phy_data_io/gen_dqs[7].u_phy_dqs_iob/u_iobuf_dqs/OB
+
+

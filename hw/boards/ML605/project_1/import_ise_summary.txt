@@ -1,0 +1,920 @@
+*******************************************************************************
+*
+*                      IMPORT XISE SUMMARY REPORT
+*
+*                       (import_ise_summary.txt)
+*
+*  PLEASE READ THIS REPORT TO GET THE DETAILED INFORMATION ON THE DATA THAT
+*  WAS PARSED FROM THE ISE PROJECT AND IMPORTED INTO THE CURRENT PROJECT.
+*
+*
+* The report is divided into following three sections:-
+*
+* Section (1) - ISE PROJECT INFORMATION
+*
+*  This section provides the details of the ISE project that was imported
+*
+* Section (2) - EXCEPTIONS
+*
+*  This section summarizes the ISE project data that was either not imported or
+*  not mapped into the current project
+*
+* Section (3) - MAPPED DATA
+*
+*  This section summarizes the Vivado project information that was imported
+*  from the ISE project data
+*
+*******************************************************************************
+
+Section (1) - ISE PROJECT INFORMATION
+-------------------------------------
+
+The following items describes the information about the ISE project that was imported:-
+
+Project Name    = SoftMC
+Project File    = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/SoftMC.xise
+Project Version = 14.6
+Device Family   = Virtex6
+Part Name       = xc6vlx240t-1-ff1156*
+
+*This part is not supported in Vivado and is replaced with the default part in the new project.
+ Please see Section (3.1) - "Target Device" below for more details.
+
+
+Section (2) - EXCEPTIONS
+------------------------
+
+The following sub-sections describes the list of items that were NOT mapped from the
+XISE file contents into the current project:-
+
+Section (2.1) - Missing Sources
+-------------------------------
+None
+
+
+Section (2.2) - Unknown Sources
+-------------------------------
+None
+
+
+Section (2.3) - IP Import Issues
+--------------------------------
+None
+
+
+Section (2.4) - Unknown Properties
+----------------------------------
+
+The following ISE properties were not mapped into the current project:-
+
+
+<ISE Property Name>                                    <ISE Property Value>
+"AES Initial Vector virtex6"                           ''
+"AES Key (Hex String) virtex6"                         ''
+"Allow SelectMAP Pins to Persist"                      'false'
+"Analysis Effort Level"                                'Standard'
+"Asynchronous To Synchronous"                          'false'
+"Automatically Insert glbl Module in the Netlist"      'true'
+"Automatically Run Generate Target PROM/ACE File"      'false'
+"BPI Reads Per Page"                                   '1'
+"BRAM Utilization Ratio"                               '100'
+"Bring Out Global Set/Reset Net as a Port"             'false'
+"Bring Out Global Tristate Net as a Port"              'false'
+"Bus Delimiter"                                        '<>'
+"Case"                                                 'Maintain'
+"Case Implementation Style"                            'None'
+"Change Device Speed To"                               '-1'
+"Change Device Speed To Post Trace"                    '-1'
+"Configuration Clk (Configuration Pins)"               'Pull Up'
+"Configuration Pin Busy"                               'Pull Up'
+"Configuration Pin CS"                                 'Pull Up'
+"Configuration Pin DIn"                                'Pull Up'
+"Configuration Pin Done"                               'Pull Up'
+"Configuration Pin HSWAPEN"                            'Pull Up'
+"Configuration Pin Init"                               'Pull Up'
+"Configuration Pin M0"                                 'Pull Up'
+"Configuration Pin M1"                                 'Pull Up'
+"Configuration Pin M2"                                 'Pull Up'
+"Configuration Pin Program"                            'Pull Up'
+"Configuration Pin RdWr"                               'Pull Up'
+"Configuration Rate virtex5"                           '2'
+"Correlate Output to Input Design"                     'false'
+"Create Binary Configuration File"                     'false'
+"Create IEEE 1532 Configuration File"                  'false'
+"Create ReadBack Data Files"                           'false'
+"Cross Clock Analysis"                                 'false'
+"Cycles for First BPI Page Read"                       '1'
+"DCI Update Mode"                                      'Quiet(Off)'
+"DSP Utilization Ratio"                                '100'
+"Device Speed Grade/Select ABS Minimum"                '-1'
+"Disable Detailed Package Model Insertion"             'false'
+"Disable JTAG Connection"                              'false'
+"Do Not Escape Signal and Instance Names in Netlist"   'false'
+"Done (Output Events)"                                 'Default (4)'
+"Drive Done Pin High"                                  'false'
+"Enable BitStream Compression"                         'false'
+"Enable Cyclic Redundancy Checking (CRC)"              'true'
+"Enable Debugging of Serial Mode BitStream"            'false'
+"Enable Internal Done Pipe"                            'false'
+"Enable Message Filtering"                             'false'
+"Enable Outputs (Output Events)"                       'Default (5)'
+"Encrypt Bitstream"                                    'false'
+"Encrypt Bitstream virtex6"                            'false'
+"Encrypt Key Select virtex6"                           'BBRAM'
+"Equivalent Register Removal"                          'true'
+"Essential Bits"                                       'false'
+"Evaluation Development Board"                         'None Specified'
+"FPGA Start-Up Clock"                                  'CCLK'
+"FSM Style"                                            'LUT'
+"Fallback Reconfiguration"                             'Enable'
+"Flatten Output Netlist"                               'false'
+"Functional Model Target Language ArchWiz"             'Verilog'
+"Functional Model Target Language Coregen"             'Verilog'
+"Functional Model Target Language Schematic"           'Verilog'
+"Generate Asynchronous Delay Report"                   'false'
+"Generate Clock Region Report"                         'false'
+"Generate Constraints Interaction Report"              'false'
+"Generate Constraints Interaction Report Post Trace"   'false'
+"Generate Datasheet Section"                           'true'
+"Generate Detailed MAP Report"                         'false'
+"Generate Multiple Hierarchical Netlist Files"         'false'
+"Generate Post-Place & Route Power Report"             'false'
+"Generate Post-Place & Route Simulation Model"         'false'
+"Generate RTL Schematic"                               'Yes'
+"Generate Testbench File"                              'false'
+"Generate Timegroups Section"                          'false'
+"Generate Timegroups Section Post Trace"               'false'
+"Global Optimization Goal"                             'AllClockNets'
+"Global Optimization map virtex5"                      'Off'
+"Global Set/Reset Port Name"                           'GSR_PORT'
+"Global Tristate Port Name"                            'GTS_PORT'
+"HDL Instantiation Template Target Language"           'Verilog'
+"HMAC Key (Hex String)"                                ''
+"Hierarchy Separator"                                  '/'
+"Ignore User Timing Constraints Map"                   'false'
+"Include 'uselib Directive in Verilog File"            'false'
+"Include SIMPRIM Models in Verilog File"               'false'
+"Include UNISIM Models in Verilog File"                'false'
+"Include sdf_annotate task in Verilog File"            'true'
+"Insert Buffers to Prevent Pulse Swallowing"           'true'
+"JTAG Pin TCK"                                         'Pull Up'
+"JTAG Pin TDI"                                         'Pull Up'
+"JTAG Pin TDO"                                         'Pull Up'
+"JTAG Pin TMS"                                         'Pull Up'
+"JTAG to System Monitor Connection"                    'Enable'
+"Keep Hierarchy"                                       'No'
+"Last Unlock Status"                                   'false'
+"Library for Verilog Sources"                          ''
+"Max Fanout"                                           '100000'
+"Maximum Compression"                                  'false'
+"Maximum Number of Lines in Report"                    '1000'
+"Maximum Signal Name Length"                           '20'
+"Move First Flip-Flop Stage"                           'true'
+"Move Last Flip-Flop Stage"                            'true'
+"Netlist Translation Type"                             'Timestamp'
+"Number of Paths in Error/Verbose Report"              '3'
+"Optimize Instantiated Primitives"                     'false'
+"Other XPWR Command Line Options"                      ''
+"Output Extended Identifiers"                          'false'
+"Output File Name"                                     'softMC_top'
+"Perform Advanced Analysis"                            'false'
+"Perform Advanced Analysis Post Trace"                 'false'
+"Place And Route Mode"                                 'Route Only'
+"Port to be used"                                      'Auto - default'
+"Post Map Simulation Model Name"                       'softMC_top_map.v'
+"Post Place & Route Simulation Model Name"             'softMC_top_timesim.v'
+"Post Synthesis Simulation Model Name"                 'softMC_top_synthesis.v'
+"Post Translate Simulation Model Name"                 'softMC_top_translate.v'
+"Power Down Device if Over Safe Temperature"           'false'
+"Produce Verbose Report"                               'false'
+"RAM Extraction"                                       'true'
+"ROM Extraction"                                       'true'
+"ROM Style"                                            'Auto'
+"Read Cores"                                           'true'
+"Reduce Control Sets"                                  'Auto'
+"Regenerate Core"                                      'Under Current Project Setting'
+"Register Duplication Xst"                             'true'
+"Release Write Enable (Output Events)"                 'Default (6)'
+"Rename Design Instance in Testbench File to"          'UUT'
+"Rename Top Level Architecture To"                     'Structure'
+"Rename Top Level Entity to"                           ''
+"Report Paths by Endpoint"                             '3'
+"Report Paths by Endpoint Post Trace"                  '3'
+"Report Type"                                          'Verbose Report'
+"Report Type Post Trace"                               'Verbose Report'
+"Reset On Configuration Pulse Width"                   '100'
+"Revision Select"                                      '00'
+"Revision Select Tristate"                             'Disable'
+"Safe Implementation"                                  'No'
+"Security"                                             'Enable Readback and Reconfiguration'
+"Shift Register Extraction"                            'true'
+"Shift Register Minimum Size virtex6"                  '2'
+"Show All Models"                                      'false'
+"Slice Utilization Ratio"                              '98'
+"Starting Address for Fallback Configuration virtex6"  'None'
+"Top-Level Module Name in Output Netlist"              ''
+"Tristate On Configuration Pulse Width"                '0'
+"Unused IOB Pins"                                      'Pull Down'
+"Use Clock Enable"                                     'Auto'
+"Use Smart Guide"                                      'false'
+"Use Synchronous Reset"                                'Auto'
+"Use Synchronous Set"                                  'Auto'
+"Use Synthesis Constraints File"                       'true'
+"User Access Register Value"                           'None'
+"UserID Code (8 Digit Hexadecimal)"                    '0xFFFFFFFF'
+"VHDL Source Analysis Standard"                        'VHDL-93'
+"Wait for DCI Match (Output Events) virtex5"           'Auto'
+"Wait for PLL Lock (Output Events) virtex6"            'No Wait'
+"Watchdog Timer Mode virtex5"                          'Off'
+"Watchdog Timer Value virtex5"                         '0x000000'
+"Write Timing Constraints"                             'false'
+
+
+Section (3) - MAPPED DATA
+-------------------------
+
+The following sub-sections describes the list of items that were imported from the
+ISE properties and sources and mapped into the current project:-
+
+Section (3.1) - Target Device
+-----------------------------
+
+Default Part = xc7vx485tffg1157-1
+Family       = virtex7
+Package      = ffg1157
+Speed Grade  = -1
+
+
+Section (3.2) - Filesets
+------------------------
+
+<sources_1>
+FILESET_TYPE   = DesignSrcs
+TOP            = softMC_top
+DESIGN_MODE    = RTL
+VERILOG_DIR    = 
+VERILOG_DEFINE = 
+VHDL_GENERICS  = 
+
+File(s):-
+NAME      = xilinx_mig.xco
+FILE PATH = c:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xilinx_mig/xilinx_mig.xco
+FILE_TYPE = IP
+LIBRARY   = xil_defaultlib
+
+NAME      = mig.prj
+FILE PATH = c:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xilinx_mig/xilinx_mig/user_design/mig.prj
+FILE_TYPE = Configuration Files
+LIBRARY   = xil_defaultlib
+
+NAME      = rdback_fifo.xco
+FILE PATH = c:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/rdback_fifo/rdback_fifo.xco
+FILE_TYPE = IP
+LIBRARY   = xil_defaultlib
+
+NAME      = pcie_endpoint.xco
+FILE PATH = c:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/pcie_endpoint/pcie_endpoint.xco
+FILE_TYPE = IP
+LIBRARY   = xil_defaultlib
+
+NAME      = instr_fifo.xco
+FILE PATH = c:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/instr_fifo/instr_fifo.xco
+FILE_TYPE = IP
+LIBRARY   = xil_defaultlib
+
+NAME      = axi_basic_tx_thrtl_ctl.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/axi_basic_tx_thrtl_ctl.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = axi_basic_tx_pipeline.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/axi_basic_tx_pipeline.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = pcie_pipe_misc_v6.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/pcie_pipe_misc_v6.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = axi_basic_tx.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/axi_basic_tx.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = pcie_pipe_v6.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/pcie_pipe_v6.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = pcie_reset_delay_v6.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/pcie_reset_delay_v6.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = gtx_drp_chanalign_fix_3752_v6.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/gtx_drp_chanalign_fix_3752_v6.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = chnl_tester.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/chnl_tester.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = gtx_rx_valid_filter_v6.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/gtx_rx_valid_filter_v6.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = gtx_tx_sync_rate_v6.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/gtx_tx_sync_rate_v6.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = gtx_wrapper_v6.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/gtx_wrapper_v6.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = pcie_2_0_v6.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/pcie_2_0_v6.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = pcie_bram_top_v6.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/pcie_bram_top_v6.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = pcie_upconfig_fix_3451_v6.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/pcie_upconfig_fix_3451_v6.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = pcie_bram_v6.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/pcie_bram_v6.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = pcie_brams_v6.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/pcie_brams_v6.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = pcie_clocking_v6.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/pcie_clocking_v6.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = ddr3_model.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/xilinx_mig/user_design/sim/ddr3_model.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = pcie_endpoint.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/pcie_endpoint.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = pcie_gtx_v6.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/pcie_gtx_v6.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = pcie_pipe_lane_v6.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/pcie_pipe_lane_v6.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = axi_basic_rx_null_gen.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/axi_basic_rx_null_gen.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = axi_basic_rx_pipeline.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/axi_basic_rx_pipeline.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = axi_basic_rx.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/axi_basic_rx.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = axi_basic_top.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/axi_basic_top.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = ff.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/ff.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = syncff.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/syncff.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = ram_2clk_1w_1r.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/ram_2clk_1w_1r.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = ram_1clk_1w_1r.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/ram_1clk_1w_1r.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = sync_fifo.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/sync_fifo.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = cross_domain_signal.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/cross_domain_signal.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = async_fifo.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/async_fifo.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = tx_port_writer.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/tx_port_writer.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = tx_port_monitor_64.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/tx_port_monitor_64.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = tx_port_monitor_32.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/tx_port_monitor_32.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = tx_port_monitor_128.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/tx_port_monitor_128.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = tx_port_channel_gate_64.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/tx_port_channel_gate_64.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = tx_port_channel_gate_32.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/tx_port_channel_gate_32.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = tx_port_channel_gate_128.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/tx_port_channel_gate_128.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = tx_port_buffer_64.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/tx_port_buffer_64.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = tx_port_buffer_32.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/tx_port_buffer_32.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = tx_port_buffer_128.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/tx_port_buffer_128.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = tx_engine_selector.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/tx_engine_selector.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = tx_engine_formatter_64.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/tx_engine_formatter_64.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = tx_engine_formatter_32.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/tx_engine_formatter_32.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = tx_engine_formatter_128.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/tx_engine_formatter_128.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = sg_list_requester.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/sg_list_requester.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = sg_list_reader_64.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/sg_list_reader_64.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = sg_list_reader_32.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/sg_list_reader_32.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = sg_list_reader_128.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/sg_list_reader_128.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = rx_port_requester_mux.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/rx_port_requester_mux.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = rx_port_reader.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/rx_port_reader.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = rx_port_channel_gate.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/rx_port_channel_gate.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = reorder_queue_output.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/reorder_queue_output.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = reorder_queue_input.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/reorder_queue_input.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = fifo_packer_64.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/fifo_packer_64.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = fifo_packer_32.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/fifo_packer_32.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = fifo_packer_128.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/fifo_packer_128.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = async_fifo_fwft.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/async_fifo_fwft.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = tx_qword_aligner_64.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/tx_qword_aligner_64.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = tx_qword_aligner_128.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/tx_qword_aligner_128.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = tx_port_64.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/tx_port_64.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = tx_port_32.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/tx_port_32.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = tx_port_128.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/tx_port_128.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = tx_engine_upper_64.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/tx_engine_upper_64.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = tx_engine_upper_32.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/tx_engine_upper_32.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = tx_engine_upper_128.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/tx_engine_upper_128.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = tx_engine_lower_64.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/tx_engine_lower_64.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = tx_engine_lower_32.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/tx_engine_lower_32.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = tx_engine_lower_128.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/tx_engine_lower_128.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = rx_port_64.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/rx_port_64.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = rx_port_32.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/rx_port_32.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = rx_port_128.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/rx_port_128.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = rx_engine_req.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/rx_engine_req.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = reorder_queue.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/reorder_queue.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = interrupt_controller.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/interrupt_controller.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = tx_engine_64.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/tx_engine_64.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = tx_engine_32.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/tx_engine_32.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = tx_engine_128.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/tx_engine_128.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = translation_layer_64.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/translation_layer_64.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = translation_layer_32.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/translation_layer_32.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = translation_layer_128.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/translation_layer_128.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = rx_engine_64.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/rx_engine_64.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = rx_engine_32.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/rx_engine_32.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = rx_engine_128.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/rx_engine_128.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = recv_credit_flow_ctrl.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/recv_credit_flow_ctrl.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = interrupt.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/interrupt.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = demux_1_to_n.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/demux_1_to_n.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = channel_64.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/channel_64.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = channel_32.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/channel_32.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = channel_128.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/channel_128.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = translation_layer.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/translation_layer.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = riffa_endpoint_64.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/riffa_endpoint_64.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = riffa_endpoint_32.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/riffa_endpoint_32.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = riffa_endpoint_128.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/riffa_endpoint_128.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = instr_decoder.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/instr_decoder.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = softMC_pcie_app.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/softMC_pcie_app.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = pipe_reg.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/pipe_reg.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = riffa_endpoint.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/riffa_endpoint.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = instr_dispatcher.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/instr_dispatcher.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = read_capturer.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/read_capturer.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = maint_handler.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/maint_handler.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = maint_ctrl.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/maint_ctrl.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = iseq_dispatcher.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/iseq_dispatcher.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = riffa_adapter_v6_pcie_v2_5.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/riffa_adapter_v6_pcie_v2_5.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = instr_receiver.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/instr_receiver.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = autoref_config.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/autoref_config.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = softMC.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/softMC.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = riffa_top_v6_pcie_v2_5.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/riffa_top_v6_pcie_v2_5.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = softMC_top.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/softMC_top.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = softMC.inc
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/softMC.inc
+FILE_TYPE = Unknown
+LIBRARY   = xil_defaultlib
+
+NAME      = common_functions.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/common_functions.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = ddr3_model_parameters.vh
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/xilinx_mig/user_design/sim/ddr3_model_parameters.vh
+FILE_TYPE = Verilog Header
+LIBRARY   = xil_defaultlib
+
+
+<constrs_1>
+FILESET_TYPE   = Constrs
+
+Note: During the import operation, any constraint file(s) that are found in the ISE project will be added to the current Vivado project.
+      However, please note that none of these files will be automatically marked as a "Target Constraint File". To set a constraint file
+      as target, select the file in the GUI "Sources" window, right-click on this file and then select "Set Target UCF". Alternatively,
+      the target constraint file can be set using the "set_property target_constrs_file <filename> <fileset>" Tcl command.
+
+File(s):-
+NAME      = softMC_constraints.ucf
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/softMC_constraints.ucf
+FILE_TYPE = Unknown
+
+
+<sim_1>
+FILESET_TYPE   = SimulationSrcs
+
+File(s):-
+NAME      = wiredly.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/ipcore_dir/xilinx_mig/user_design/sim/wiredly.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+NAME      = tb_softMC_top.v
+FILE PATH = C:/Users/Administrator/Desktop/xusp3s_test/vivado_prj/SoftMC-master/hw/boards/ML605/tb_softMC_top.v
+FILE_TYPE = Verilog
+LIBRARY   = xil_defaultlib
+
+
+<utils_1>
+FILESET_TYPE   = Utils
+
+File(s):-
+None
+
+Section (3.3) - Design Runs(s)
+------------------------------
+
+<synth_1>
+FLOW      = Vivado Synthesis 2019
+PART      = xc7vx485tffg1157-1
+SRCSET    = sources_1
+CONSTRSET = constrs_1
+STRATEGY  = Vivado Synthesis Defaults
+
+Options:-
+
+Note: The current run uses Vivado Strategies; hence no ISE run options will be mapped to this run during the import operation.
+
+
+
+<impl_1>
+FLOW      = Vivado Implementation 2019
+PART      = xc7vx485tffg1157-1
+SRCSET    = sources_1
+CONSTRSET = constrs_1
+STRATEGY  = Vivado Implementation Defaults
+
+Options:-
+
+Note: The current run uses Vivado Strategies; hence no ISE run options will be mapped to this run during the import operation.
+
+
+
+<sim_1>
+TOP  = tb_softMC_top
+SOURCE_SET  = sources_1
+
+Options:-
+        

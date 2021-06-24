@@ -1,0 +1,600 @@
+Release 14.6 Map P.68d (nt64)
+Xilinx Map Application Log File for Design 'softMC_top'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt on -ol
+high -t 30 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off
+-pr off -lc off -power off -o softMC_top_map.ncd softMC_top.ngd softMC_top.pcf 
+Target Device  : xc6vlx240t
+Target Package : ff1156
+Target Speed   : -1
+Mapper Version : virtex6 -- $Revision: 1.55 $
+Mapped Date    : Mon Jun 14 18:48:10 2021
+
+Mapping design into LUTs...
+WARNING:MapLib:41 - All members of TNM group "FFS(i_pcie_top/user_reset_n_i)"
+   have been optimized out of the design.
+WARNING:MapLib:48 - The timing specification "TS_RESETN" has been discarded
+   because its TO group (FFS(i_pcie_top/user_reset_n_i)) was optimized away.
+Running directed packing...
+Running delay-based LUT packing...
+Updating timing models...
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+Running timing-driven placement...
+Total REAL time at the beginning of Placer: 36 secs 
+Total CPU  time at the beginning of Placer: 35 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:1f613441) REAL time: 43 secs 
+
+Phase 2.7  Design Feasibility Check
+Phase 2.7  Design Feasibility Check (Checksum:1f613441) REAL time: 43 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:5a958007) REAL time: 43 secs 
+
+Phase 4.37  Local Placement Optimization
+Phase 4.37  Local Placement Optimization (Checksum:5a958007) REAL time: 43 secs 
+
+WARNING:Place - MMCM comp u_infrastructure/u_mmcm_adv is driving load
+   xil_phy/u_phy_read/u_phy_rdclk_gen/gen_ck_cpt[2].u_oserdes_cpt (type OLOGIC)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp u_infrastructure/u_mmcm_adv is driving load
+   xil_phy/u_phy_read/u_phy_rdclk_gen/gen_ck_cpt[6].u_oserdes_cpt (type OLOGIC)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp u_infrastructure/u_mmcm_adv is driving load
+   xil_phy/u_phy_read/u_phy_rdclk_gen/gen_ck_cpt[3].u_oserdes_cpt (type OLOGIC)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp u_infrastructure/u_mmcm_adv is driving load
+   xil_phy/u_phy_read/u_phy_rdclk_gen/gen_loop_col1.u_oserdes_rsync (type
+   OLOGIC)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp u_infrastructure/u_mmcm_adv is driving load
+   xil_phy/u_phy_read/u_phy_rdclk_gen/gen_ck_cpt[7].u_oserdes_cpt (type OLOGIC)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp u_infrastructure/u_mmcm_adv is driving load
+   xil_phy/u_phy_read/u_phy_rdclk_gen/gen_ck_cpt[0].u_oserdes_cpt (type OLOGIC)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp u_infrastructure/u_mmcm_adv is driving load
+   xil_phy/u_phy_read/u_phy_rdclk_gen/gen_ck_cpt[4].u_oserdes_cpt (type OLOGIC)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp u_infrastructure/u_mmcm_adv is driving load
+   xil_phy/u_phy_read/u_phy_rdclk_gen/gen_ck_cpt[1].u_oserdes_cpt (type OLOGIC)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp u_infrastructure/u_mmcm_adv is driving load
+   xil_phy/u_phy_read/u_phy_rdclk_gen/gen_loop_col0.u_oserdes_rsync (type
+   OLOGIC)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp u_infrastructure/u_mmcm_adv is driving load
+   xil_phy/u_phy_read/u_phy_rdclk_gen/gen_ck_cpt[5].u_oserdes_cpt (type OLOGIC)
+   The load component should be of clock buffer type.
+Phase 5.2  Initial Placement for Architecture Specific Features
+WARNING:Place - MMCM comp u_infrastructure/u_mmcm_adv is driving load
+   xil_phy/u_phy_read/u_phy_rdclk_gen/gen_ck_cpt[2].u_oserdes_cpt (type OLOGIC)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp u_infrastructure/u_mmcm_adv is driving load
+   xil_phy/u_phy_read/u_phy_rdclk_gen/gen_ck_cpt[6].u_oserdes_cpt (type OLOGIC)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp u_infrastructure/u_mmcm_adv is driving load
+   xil_phy/u_phy_read/u_phy_rdclk_gen/gen_ck_cpt[3].u_oserdes_cpt (type OLOGIC)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp u_infrastructure/u_mmcm_adv is driving load
+   xil_phy/u_phy_read/u_phy_rdclk_gen/gen_loop_col1.u_oserdes_rsync (type
+   OLOGIC)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp u_infrastructure/u_mmcm_adv is driving load
+   xil_phy/u_phy_read/u_phy_rdclk_gen/gen_ck_cpt[7].u_oserdes_cpt (type OLOGIC)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp u_infrastructure/u_mmcm_adv is driving load
+   xil_phy/u_phy_read/u_phy_rdclk_gen/gen_ck_cpt[0].u_oserdes_cpt (type OLOGIC)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp u_infrastructure/u_mmcm_adv is driving load
+   xil_phy/u_phy_read/u_phy_rdclk_gen/gen_ck_cpt[4].u_oserdes_cpt (type OLOGIC)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp u_infrastructure/u_mmcm_adv is driving load
+   xil_phy/u_phy_read/u_phy_rdclk_gen/gen_ck_cpt[1].u_oserdes_cpt (type OLOGIC)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp u_infrastructure/u_mmcm_adv is driving load
+   xil_phy/u_phy_read/u_phy_rdclk_gen/gen_loop_col0.u_oserdes_rsync (type
+   OLOGIC)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp u_infrastructure/u_mmcm_adv is driving load
+   xil_phy/u_phy_read/u_phy_rdclk_gen/gen_ck_cpt[5].u_oserdes_cpt (type OLOGIC)
+   The load component should be of clock buffer type.
+
+.
+
+
+There are 12 clock regions on the target FPGA device:
+|------------------------------------------|------------------------------------------|
+| CLOCKREGION_X0Y5:                        | CLOCKREGION_X1Y5:                        |
+|   4 BUFRs available, 0 in use            |   2 BUFRs available, 0 in use            |
+|   6 Regional Clock Spines, 0 in use      |   6 Regional Clock Spines, 0 in use      |
+|   4 edge BUFIOs available, 0 in use      |   0 edge BUFIOs available, 0 in use      |
+|   4 center BUFIOs available, 0 in use    |   4 center BUFIOs available, 0 in use    |
+|                                          |                                          |
+|------------------------------------------|------------------------------------------|
+| CLOCKREGION_X0Y4:                        | CLOCKREGION_X1Y4:                        |
+|   4 BUFRs available, 0 in use            |   2 BUFRs available, 0 in use            |
+|   6 Regional Clock Spines, 1 in use      |   6 Regional Clock Spines, 1 in use      |
+|   4 edge BUFIOs available, 0 in use      |   0 edge BUFIOs available, 0 in use      |
+|   4 center BUFIOs available, 2 in use    |   4 center BUFIOs available, 0 in use    |
+|                                          |                                          |
+|------------------------------------------|------------------------------------------|
+| CLOCKREGION_X0Y3:                        | CLOCKREGION_X1Y3:                        |
+|   4 BUFRs available, 1 in use            |   2 BUFRs available, 1 in use            |
+|   6 Regional Clock Spines, 1 in use      |   6 Regional Clock Spines, 1 in use      |
+|   4 edge BUFIOs available, 0 in use      |   0 edge BUFIOs available, 0 in use      |
+|   4 center BUFIOs available, 3 in use    |   4 center BUFIOs available, 3 in use    |
+|                                          |                                          |
+|------------------------------------------|------------------------------------------|
+| CLOCKREGION_X0Y2:                        | CLOCKREGION_X1Y2:                        |
+|   4 BUFRs available, 0 in use            |   2 BUFRs available, 0 in use            |
+|   6 Regional Clock Spines, 1 in use      |   6 Regional Clock Spines, 1 in use      |
+|   4 edge BUFIOs available, 0 in use      |   0 edge BUFIOs available, 0 in use      |
+|   4 center BUFIOs available, 0 in use    |   4 center BUFIOs available, 0 in use    |
+|                                          |                                          |
+|------------------------------------------|------------------------------------------|
+| CLOCKREGION_X0Y1:                        | CLOCKREGION_X1Y1:                        |
+|   4 BUFRs available, 0 in use            |   2 BUFRs available, 0 in use            |
+|   6 Regional Clock Spines, 0 in use      |   6 Regional Clock Spines, 0 in use      |
+|   4 edge BUFIOs available, 0 in use      |   0 edge BUFIOs available, 0 in use      |
+|   4 center BUFIOs available, 0 in use    |   4 center BUFIOs available, 0 in use    |
+|                                          |                                          |
+|------------------------------------------|------------------------------------------|
+| CLOCKREGION_X0Y0:                        | CLOCKREGION_X1Y0:                        |
+|   4 BUFRs available, 0 in use            |   2 BUFRs available, 0 in use            |
+|   6 Regional Clock Spines, 0 in use      |   6 Regional Clock Spines, 0 in use      |
+|   4 edge BUFIOs available, 0 in use      |   0 edge BUFIOs available, 0 in use      |
+|   4 center BUFIOs available, 0 in use    |   4 center BUFIOs available, 0 in use    |
+|                                          |                                          |
+|------------------------------------------|------------------------------------------|
+
+
+Clock-Region: <CLOCKREGION_X0Y3>
+  key resource utilizations (used/available): edge-bufios - 0/4; center-bufios - 3/4; bufrs - 1/4; regional-clock-spines - 1/6
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|       |    clock    | BRAM |     |    |        |        |       |       |       |      |      |     |      |
+|       |    region   | FIFO | DCM | GT | ILOGIC | OLOGIC |   FF  |  LUTM |  LUTL | MULT | EMAC | PPC | PCIe | <- (Types of Resources in Clock Region)
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+|       | Upper Region|  96  |  0  |  0 |   80   |   80   | 26880 |  9600 | 17280 |  64  |   0  |  0  |   0  | <- Available resources in the upper region
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+|       |CurrentRegion|  96  |  0  |  0 |   80   |   80   | 23040 |  9600 | 13440 |  64  |   0  |  0  |   0  | <- Available resources in the current region
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+|       | Lower Region|  96  |  0  |  0 |   80   |   80   | 23040 |  9600 | 13440 |  64  |   0  |  0  |   0  | <- Available resources in the lower region
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+| clock |    region   |                                                                                      -----------------------------------------------
+|  type |  expansion  |                                                                                      | <IO/Regional clock Net Name>
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+| BUFIO |             |   0  |  0  |  0 |    8   |    0   |     0 |     0 |     0 |   0  |   0  |  0  |   0  | "xil_phy/clk_cpt<5>"
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+| BUFIO |             |   0  |  0  |  0 |    8   |    0   |     0 |     0 |     0 |   0  |   0  |  0  |   0  | "xil_phy/clk_cpt<6>"
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+| BUFIO |             |   0  |  0  |  0 |    8   |    0   |     0 |     0 |     0 |   0  |   0  |  0  |   0  | "xil_phy/clk_cpt<7>"
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+|  BUFR | Upper/Lower |   0  |  0  |  0 |   40   |    0   |  1010 |    40 |     0 |   0  |   0  |  0  |   0  | "xil_phy/clk_rsync<1>"
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+
+
+Clock-Region: <CLOCKREGION_X1Y3>
+  key resource utilizations (used/available): edge-bufios - 0/0; center-bufios - 3/4; bufrs - 1/2; regional-clock-spines - 1/6
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|       |    clock    | BRAM |     |    |        |        |       |       |       |      |      |     |      |
+|       |    region   | FIFO | DCM | GT | ILOGIC | OLOGIC |   FF  |  LUTM |  LUTL | MULT | EMAC | PPC | PCIe | <- (Types of Resources in Clock Region)
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+|       | Upper Region| 108  |  0  |  0 |   40   |   40   | 24960 |  9920 | 15040 |  64  |   2  |  0  |   0  | <- Available resources in the upper region
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+|       |CurrentRegion| 108  |  0  |  0 |   40   |   40   | 24000 |  9760 | 14240 |  64  |   0  |  0  |   1  | <- Available resources in the current region
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+|       | Lower Region| 108  |  0  |  0 |   40   |   40   | 24960 |  9920 | 15040 |  64  |   2  |  0  |   0  | <- Available resources in the lower region
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+| clock |    region   |                                                                                      -----------------------------------------------
+|  type |  expansion  |                                                                                      | <IO/Regional clock Net Name>
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+| BUFIO |             |   0  |  0  |  0 |    8   |    0   |     0 |     0 |     0 |   0  |   0  |  0  |   0  | "xil_phy/clk_cpt<2>"
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+| BUFIO |             |   0  |  0  |  0 |    9   |    0   |     0 |     0 |     0 |   0  |   0  |  0  |   0  | "xil_phy/clk_cpt<0>"
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+| BUFIO |             |   0  |  0  |  0 |    8   |    0   |     0 |     0 |     0 |   0  |   0  |  0  |   0  | "xil_phy/clk_cpt<1>"
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+|  BUFR | Upper/Lower |   0  |  0  |  0 |   25   |    0   |   628 |    25 |     0 |   0  |   0  |  0  |   0  | "xil_phy/clk_rsync<0>"
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+
+
+Clock-Region: <CLOCKREGION_X0Y4>
+  key resource utilizations (used/available): edge-bufios - 0/4; center-bufios - 2/4; bufrs - 0/4; regional-clock-spines - 1/6
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|       |    clock    | BRAM |     |    |        |        |       |       |       |      |      |     |      |
+|       |    region   | FIFO | DCM | GT | ILOGIC | OLOGIC |   FF  |  LUTM |  LUTL | MULT | EMAC | PPC | PCIe | <- (Types of Resources in Clock Region)
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+|       | Upper Region|  96  |  0  |  0 |   80   |   80   | 26880 |  9600 | 17280 |  64  |   0  |  0  |   0  | <- Available resources in the upper region
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+|       |CurrentRegion|  96  |  0  |  0 |   80   |   80   | 26880 |  9600 | 17280 |  64  |   0  |  0  |   0  | <- Available resources in the current region
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+|       | Lower Region|  96  |  0  |  0 |   80   |   80   | 23040 |  9600 | 13440 |  64  |   0  |  0  |   0  | <- Available resources in the lower region
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+| clock |    region   |                                                                                      -----------------------------------------------
+|  type |  expansion  |                                                                                      | <IO/Regional clock Net Name>
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+| BUFIO |             |   0  |  0  |  0 |    8   |    0   |     0 |     0 |     0 |   0  |   0  |  0  |   0  | "xil_phy/clk_cpt<3>"
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+| BUFIO |             |   0  |  0  |  0 |    8   |    0   |     0 |     0 |     0 |   0  |   0  |  0  |   0  | "xil_phy/clk_cpt<4>"
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+
+
+
+
+######################################################################################
+# REGIONAL CLOCKING RESOURCE DISTRIBUTION UCF REPORT:
+#
+# Number of Regional Clocking Regions in the device: 12  (6 clock spines in each)
+# Number of Regional Clock Networks used in this design: 11 (each network can be
+# composed of up to 3 clock spines and cover up to 3 regional clock regions)
+# 
+######################################################################################
+
+# IO-Clock "xil_phy/clk_cpt<2>" driven by "BUFIODQS_X2Y15"
+INST "xil_phy/u_phy_read/u_phy_rdclk_gen/gen_ck_cpt[2].u_bufio_cpt" LOC = "BUFIODQS_X2Y15" ;
+NET "xil_phy/clk_cpt<2>" TNM_NET = "TN_xil_phy/clk_cpt<2>" ;
+TIMEGRP "TN_xil_phy/clk_cpt<2>" AREA_GROUP = "CLKAG_xil_phy/clk_cpt<2>" ;
+AREA_GROUP "CLKAG_xil_phy/clk_cpt<2>" RANGE = CLOCKREGION_X1Y3;
+
+
+# IO-Clock "xil_phy/clk_cpt<3>" driven by "BUFIODQS_X1Y17"
+INST "xil_phy/u_phy_read/u_phy_rdclk_gen/gen_ck_cpt[3].u_bufio_cpt" LOC = "BUFIODQS_X1Y17" ;
+NET "xil_phy/clk_cpt<3>" TNM_NET = "TN_xil_phy/clk_cpt<3>" ;
+TIMEGRP "TN_xil_phy/clk_cpt<3>" AREA_GROUP = "CLKAG_xil_phy/clk_cpt<3>" ;
+AREA_GROUP "CLKAG_xil_phy/clk_cpt<3>" RANGE = CLOCKREGION_X0Y4;
+
+
+# IO-Clock "xil_phy/clk_cpt<4>" driven by "BUFIODQS_X1Y18"
+INST "xil_phy/u_phy_read/u_phy_rdclk_gen/gen_ck_cpt[4].u_bufio_cpt" LOC = "BUFIODQS_X1Y18" ;
+NET "xil_phy/clk_cpt<4>" TNM_NET = "TN_xil_phy/clk_cpt<4>" ;
+TIMEGRP "TN_xil_phy/clk_cpt<4>" AREA_GROUP = "CLKAG_xil_phy/clk_cpt<4>" ;
+AREA_GROUP "CLKAG_xil_phy/clk_cpt<4>" RANGE = CLOCKREGION_X0Y4;
+
+
+# IO-Clock "xil_phy/clk_cpt<5>" driven by "BUFIODQS_X1Y12"
+INST "xil_phy/u_phy_read/u_phy_rdclk_gen/gen_ck_cpt[5].u_bufio_cpt" LOC = "BUFIODQS_X1Y12" ;
+NET "xil_phy/clk_cpt<5>" TNM_NET = "TN_xil_phy/clk_cpt<5>" ;
+TIMEGRP "TN_xil_phy/clk_cpt<5>" AREA_GROUP = "CLKAG_xil_phy/clk_cpt<5>" ;
+AREA_GROUP "CLKAG_xil_phy/clk_cpt<5>" RANGE = CLOCKREGION_X0Y3;
+
+
+# IO-Clock "xil_phy/clk_cpt<6>" driven by "BUFIODQS_X1Y14"
+INST "xil_phy/u_phy_read/u_phy_rdclk_gen/gen_ck_cpt[6].u_bufio_cpt" LOC = "BUFIODQS_X1Y14" ;
+NET "xil_phy/clk_cpt<6>" TNM_NET = "TN_xil_phy/clk_cpt<6>" ;
+TIMEGRP "TN_xil_phy/clk_cpt<6>" AREA_GROUP = "CLKAG_xil_phy/clk_cpt<6>" ;
+AREA_GROUP "CLKAG_xil_phy/clk_cpt<6>" RANGE = CLOCKREGION_X0Y3;
+
+
+# IO-Clock "xil_phy/clk_cpt<0>" driven by "BUFIODQS_X2Y12"
+INST "xil_phy/u_phy_read/u_phy_rdclk_gen/gen_ck_cpt[0].u_bufio_cpt" LOC = "BUFIODQS_X2Y12" ;
+NET "xil_phy/clk_cpt<0>" TNM_NET = "TN_xil_phy/clk_cpt<0>" ;
+TIMEGRP "TN_xil_phy/clk_cpt<0>" AREA_GROUP = "CLKAG_xil_phy/clk_cpt<0>" ;
+AREA_GROUP "CLKAG_xil_phy/clk_cpt<0>" RANGE = CLOCKREGION_X1Y3;
+
+
+# IO-Clock "xil_phy/clk_cpt<1>" driven by "BUFIODQS_X2Y14"
+INST "xil_phy/u_phy_read/u_phy_rdclk_gen/gen_ck_cpt[1].u_bufio_cpt" LOC = "BUFIODQS_X2Y14" ;
+NET "xil_phy/clk_cpt<1>" TNM_NET = "TN_xil_phy/clk_cpt<1>" ;
+TIMEGRP "TN_xil_phy/clk_cpt<1>" AREA_GROUP = "CLKAG_xil_phy/clk_cpt<1>" ;
+AREA_GROUP "CLKAG_xil_phy/clk_cpt<1>" RANGE = CLOCKREGION_X1Y3;
+
+
+# IO-Clock "xil_phy/clk_cpt<7>" driven by "BUFIODQS_X1Y15"
+INST "xil_phy/u_phy_read/u_phy_rdclk_gen/gen_ck_cpt[7].u_bufio_cpt" LOC = "BUFIODQS_X1Y15" ;
+NET "xil_phy/clk_cpt<7>" TNM_NET = "TN_xil_phy/clk_cpt<7>" ;
+TIMEGRP "TN_xil_phy/clk_cpt<7>" AREA_GROUP = "CLKAG_xil_phy/clk_cpt<7>" ;
+AREA_GROUP "CLKAG_xil_phy/clk_cpt<7>" RANGE = CLOCKREGION_X0Y3;
+
+
+# Regional-Clock "xil_phy/clk_rsync<0>" driven by "BUFR_X2Y6"
+INST "xil_phy/u_phy_read/u_phy_rdclk_gen/gen_loop_col0.u_bufr_rsync" LOC = "BUFR_X2Y6" ;
+NET "xil_phy/clk_rsync<0>" TNM_NET = "TN_xil_phy/clk_rsync<0>" ;
+TIMEGRP "TN_xil_phy/clk_rsync<0>" AREA_GROUP = "CLKAG_xil_phy/clk_rsync<0>" ;
+AREA_GROUP "CLKAG_xil_phy/clk_rsync<0>" RANGE = CLOCKREGION_X1Y3, CLOCKREGION_X1Y4, CLOCKREGION_X1Y2;
+
+
+# Regional-Clock "xil_phy/clk_rsync<1>" driven by "BUFR_X1Y6"
+INST "xil_phy/u_phy_read/u_phy_rdclk_gen/gen_loop_col1.u_bufr_rsync" LOC = "BUFR_X1Y6" ;
+NET "xil_phy/clk_rsync<1>" TNM_NET = "TN_xil_phy/clk_rsync<1>" ;
+TIMEGRP "TN_xil_phy/clk_rsync<1>" AREA_GROUP = "CLKAG_xil_phy/clk_rsync<1>" ;
+AREA_GROUP "CLKAG_xil_phy/clk_rsync<1>" RANGE = CLOCKREGION_X0Y3, CLOCKREGION_X0Y4, CLOCKREGION_X0Y2;
+
+
+Phase 5.2  Initial Placement for Architecture Specific Features (Checksum:e0103cde) REAL time: 53 secs 
+
+Phase 6.36  Local Placement Optimization
+Phase 6.36  Local Placement Optimization (Checksum:e0103cde) REAL time: 53 secs 
+
+WARNING:Place - MMCM comp u_infrastructure/u_mmcm_adv is driving load
+   xil_phy/u_phy_read/u_phy_rdclk_gen/gen_ck_cpt[2].u_oserdes_cpt (type OLOGIC)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp u_infrastructure/u_mmcm_adv is driving load
+   xil_phy/u_phy_read/u_phy_rdclk_gen/gen_ck_cpt[6].u_oserdes_cpt (type OLOGIC)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp u_infrastructure/u_mmcm_adv is driving load
+   xil_phy/u_phy_read/u_phy_rdclk_gen/gen_ck_cpt[3].u_oserdes_cpt (type OLOGIC)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp u_infrastructure/u_mmcm_adv is driving load
+   xil_phy/u_phy_read/u_phy_rdclk_gen/gen_loop_col1.u_oserdes_rsync (type OLOGIC)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp u_infrastructure/u_mmcm_adv is driving load
+   xil_phy/u_phy_read/u_phy_rdclk_gen/gen_ck_cpt[7].u_oserdes_cpt (type OLOGIC)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp u_infrastructure/u_mmcm_adv is driving load
+   xil_phy/u_phy_read/u_phy_rdclk_gen/gen_ck_cpt[0].u_oserdes_cpt (type OLOGIC)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp u_infrastructure/u_mmcm_adv is driving load
+   xil_phy/u_phy_read/u_phy_rdclk_gen/gen_ck_cpt[4].u_oserdes_cpt (type OLOGIC)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp u_infrastructure/u_mmcm_adv is driving load
+   xil_phy/u_phy_read/u_phy_rdclk_gen/gen_ck_cpt[1].u_oserdes_cpt (type OLOGIC)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp u_infrastructure/u_mmcm_adv is driving load
+   xil_phy/u_phy_read/u_phy_rdclk_gen/gen_loop_col0.u_oserdes_rsync (type OLOGIC)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp u_infrastructure/u_mmcm_adv is driving load
+   xil_phy/u_phy_read/u_phy_rdclk_gen/gen_ck_cpt[5].u_oserdes_cpt (type OLOGIC)
+   The load component should be of clock buffer type.
+Phase 7.30  Global Clock Region Assignment
+Phase 7.30  Global Clock Region Assignment (Checksum:e0103cde) REAL time: 53 secs 
+
+Phase 8.3  Local Placement Optimization
+Phase 8.3  Local Placement Optimization (Checksum:e0103cde) REAL time: 53 secs 
+
+Phase 9.5  Local Placement Optimization
+Phase 9.5  Local Placement Optimization (Checksum:e0103cde) REAL time: 53 secs 
+
+Phase 10.8  Global Placement
+............................................
+.................................................................................................................................
+............................................
+.............
+Phase 10.8  Global Placement (Checksum:b0b4378c) REAL time: 1 mins 23 secs 
+
+Phase 11.5  Local Placement Optimization
+Phase 11.5  Local Placement Optimization (Checksum:b0b4378c) REAL time: 1 mins 23 secs 
+
+Phase 12.18  Placement Optimization
+Phase 12.18  Placement Optimization (Checksum:1f44a776) REAL time: 1 mins 52 secs 
+
+Phase 13.5  Local Placement Optimization
+Phase 13.5  Local Placement Optimization (Checksum:1f44a776) REAL time: 1 mins 52 secs 
+
+Phase 14.34  Placement Validation
+Phase 14.34  Placement Validation (Checksum:4bba2941) REAL time: 1 mins 53 secs 
+
+Total REAL time to Placer completion: 1 mins 55 secs 
+Total CPU  time to Placer completion: 1 mins 54 secs 
+Running physical synthesis...
+.........................................................................................................................................................................
+Physical synthesis completed.
+Running post-placement packing...
+Writing output files...
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   i_pcie_top/app/endpoint/endpoint64.endpoint/channels[0].channel/txPort/gate/fifo/asyncCompare/wDirSet is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   i_pcie_top/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFifo/fifo/asyncCompare/wDirSet is sourced
+   by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:367 - The signal <xil_phy/u_phy_data_io/gen_dqs[0].u_phy_dqs_iob/u_iobuf_dqs/OB> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <xil_phy/u_phy_data_io/gen_dqs[1].u_phy_dqs_iob/u_iobuf_dqs/OB> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <xil_phy/u_phy_data_io/gen_dqs[2].u_phy_dqs_iob/u_iobuf_dqs/OB> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <xil_phy/u_phy_data_io/gen_dqs[3].u_phy_dqs_iob/u_iobuf_dqs/OB> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <xil_phy/u_phy_data_io/gen_dqs[4].u_phy_dqs_iob/u_iobuf_dqs/OB> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <xil_phy/u_phy_data_io/gen_dqs[5].u_phy_dqs_iob/u_iobuf_dqs/OB> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <xil_phy/u_phy_data_io/gen_dqs[6].u_phy_dqs_iob/u_iobuf_dqs/OB> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <xil_phy/u_phy_data_io/gen_dqs[7].u_phy_dqs_iob/u_iobuf_dqs/OB> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_pcie_top/app/endpoint/endpoint64.endpoint/channels[0].channel/txPort/gate/fifo/mem/Mram_rRAM10_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_pcie_top/app/endpoint/endpoint64.endpoint/channels[0].channel/txPort/gate/fifo/mem/Mram_rRAM9_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_pcie_top/app/endpoint/endpoint64.endpoint/channels[0].channel/txPort/gate/fifo/mem/Mram_rRAM8_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_pcie_top/app/endpoint/endpoint64.endpoint/channels[0].channel/txPort/gate/fifo/mem/Mram_rRAM6_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_pcie_top/app/endpoint/endpoint64.endpoint/channels[0].channel/txPort/gate/fifo/mem/Mram_rRAM7_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_pcie_top/app/endpoint/endpoint64.endpoint/channels[0].channel/txPort/gate/fifo/mem/Mram_rRAM3_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_pcie_top/app/endpoint/endpoint64.endpoint/channels[0].channel/txPort/gate/fifo/mem/Mram_rRAM4_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_pcie_top/app/endpoint/endpoint64.endpoint/channels[0].channel/txPort/gate/fifo/mem/Mram_rRAM5_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_pcie_top/app/endpoint/endpoint64.endpoint/channels[0].channel/txPort/gate/fifo/mem/Mram_rRAM2_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_pcie_top/app/endpoint/endpoint64.endpoint/channels[0].channel/txPort/gate/fifo/mem/Mram_rRAM1_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_pcie_top/app/endpoint/endpoint64.endpoint/channels[0].channel/txPort/gate/fifo/mem/Mram_rRAM11_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/reorderQueue/mapRam/Mram_rRAM_RAMD_D1_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/reorderQueue/pktRam/Mram_rRAM1_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/reorderQueue/pktRam/Mram_rRAM2_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/reorderQueue/data_input/posRam/Mram_rRAM2_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/reorderQueue/data_input/posRam/Mram_rRAM1_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/rxEngReq/fifo/mem/Mram_rRAM3_RAMD_D1_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/rxEngReq/fifo/mem/Mram_rRAM5_RAMD_D1_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/rxEngReq/fifo/mem/Mram_rRAM2_RAMD_D1_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/rxEngReq/fifo/mem/Mram_rRAM1_RAMD_D1_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/rxEngReq/fifo/mem/Mram_rRAM4_RAMD_D1_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/rxEngReq/fifo/mem/Mram_rRAM6_RAMD_D1_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/rxEngReq/fifo/mem/Mram_rRAM10_RAMD_D1_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/rxEngReq/fifo/mem/Mram_rRAM7_RAMD_D1_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/rxEngReq/fifo/mem/Mram_rRAM11_RAMD_D1_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/rxEngReq/fifo/mem/Mram_rRAM8_RAMD_D1_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/rxEngReq/fifo/mem/Mram_rRAM9_RAMD_D1_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/rxEngReq/fifo/mem/Mram_rRAM12_RAMD_D1_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/reorderQueue/data_input/countRam/Mram_rRAM1_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:2045 - The MMCM_ADV block <u_infrastructure/u_mmcm_adv> has CLKOUT pins that do not drive the
+   same kind of BUFFER load. Routing from the different buffer types will not be phase aligned. 
+
+Design Summary
+--------------
+
+Design Summary:
+Number of errors:      0
+Number of warnings:   72
+Slice Logic Utilization:
+  Number of Slice Registers:                11,986 out of 301,440    3%
+    Number used as Flip Flops:              11,984
+    Number used as Latches:                      2
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                0
+  Number of Slice LUTs:                      8,833 out of 150,720    5%
+    Number used as logic:                    7,713 out of 150,720    5%
+      Number using O6 output only:           4,741
+      Number using O5 output only:             490
+      Number using O5 and O6:                2,482
+      Number used as ROM:                        0
+    Number used as Memory:                     666 out of  58,400    1%
+      Number used as Dual Port RAM:            384
+        Number using O6 output only:             8
+        Number using O5 output only:             1
+        Number using O5 and O6:                375
+      Number used as Single Port RAM:            0
+      Number used as Shift Register:           282
+        Number using O6 output only:           247
+        Number using O5 output only:             0
+        Number using O5 and O6:                 35
+    Number used exclusively as route-thrus:    454
+      Number with same-slice register load:    425
+      Number with same-slice carry load:        29
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                 4,529 out of  37,680   12%
+  Number of LUT Flip Flop pairs used:       13,262
+    Number with an unused Flip Flop:         2,781 out of  13,262   20%
+    Number with an unused LUT:               4,429 out of  13,262   33%
+    Number of fully used LUT-FF pairs:       6,052 out of  13,262   45%
+    Number of unique control sets:             375
+    Number of slice register sites lost
+      to control set restrictions:           1,594 out of 301,440    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+  OVERMAPPING of BRAM resources should be ignored if the design is
+  over-mapped for a non-BRAM resource or if placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                       126 out of     600   21%
+    Number of LOCed IOBs:                      126 out of     126  100%
+    IOB Flip Flops:                              1
+    IOB Master Pads:                            10
+    IOB Slave Pads:                             10
+    Number of bonded IPADs:                     18
+    Number of bonded OPADs:                     16
+
+Specific Feature Utilization:
+  Number of RAMB36E1/FIFO36E1s:                 28 out of     416    6%
+    Number using RAMB36E1 only:                 28
+    Number using FIFO36E1 only:                  0
+  Number of RAMB18E1/FIFO18E1s:                  1 out of     832    1%
+    Number using RAMB18E1 only:                  1
+    Number using FIFO18E1 only:                  0
+  Number of BUFG/BUFGCTRLs:                      8 out of      32   25%
+    Number used as BUFGs:                        8
+    Number used as BUFGCTRLs:                    0
+  Number of ILOGICE1/ISERDESE1s:                65 out of     720    9%
+    Number used as ILOGICE1s:                    0
+    Number used as ISERDESE1s:                  65
+  Number of OLOGICE1/OSERDESE1s:               118 out of     720   16%
+    Number used as OLOGICE1s:                    1
+    Number used as OSERDESE1s:                 117
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHCEs:                             0 out of     144    0%
+  Number of BUFIODQSs:                           8 out of      72   11%
+  Number of BUFRs:                               2 out of      36    5%
+    Number of LOCed BUFRs:                       2 out of       2  100%
+  Number of CAPTUREs:                            0 out of       1    0%
+  Number of DSP48E1s:                            0 out of     768    0%
+  Number of EFUSE_USRs:                          0 out of       1    0%
+  Number of FRAME_ECCs:                          0 out of       1    0%
+  Number of GTXE1s:                              8 out of      20   40%
+    Number of LOCed GTXE1s:                      8 out of       8  100%
+  Number of IBUFDS_GTXE1s:                       1 out of      12    8%
+    Number of LOCed IBUFDS_GTXE1s:               1 out of       1  100%
+  Number of ICAPs:                               0 out of       2    0%
+  Number of IDELAYCTRLs:                         3 out of      18   16%
+  Number of IODELAYE1s:                         82 out of     720   11%
+    Number of LOCed IODELAYE1s:                 10 out of      82   12%
+  Number of MMCM_ADVs:                           2 out of      12   16%
+    Number of LOCed MMCM_ADVs:                   2 out of       2  100%
+  Number of PCIE_2_0s:                           1 out of       2   50%
+    Number of LOCed PCIE_2_0s:                   1 out of       1  100%
+  Number of STARTUPs:                            1 out of       1  100%
+  Number of SYSMONs:                             0 out of       1    0%
+  Number of TEMAC_SINGLEs:                       0 out of       4    0%
+
+Average Fanout of Non-Clock Nets:                3.06
+
+Peak Memory Usage:  1047 MB
+Total REAL time to MAP completion:  2 mins 24 secs 
+Total CPU time to MAP completion:   2 mins 23 secs 
+
+Mapping completed.
+See MAP report file "softMC_top_map.mrp" for details.

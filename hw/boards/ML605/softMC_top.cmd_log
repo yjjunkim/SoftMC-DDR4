@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/xusp3s_mig/SoftMC-master/hw/boards/ML605/softMC_top.xst" -ofn "C:/Users/Administrator/Desktop/xusp3s_mig/SoftMC-master/hw/boards/ML605/softMC_top.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/xusp3s_mig/SoftMC-master/hw/boards/ML605/softMC_top.xst" -ofn "C:/Users/Administrator/Desktop/xusp3s_mig/SoftMC-master/hw/boards/ML605/softMC_top.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/xusp3s_mig/SoftMC-master/hw/boards/ML605/softMC_top.xst" -ofn "C:/Users/Administrator/Desktop/xusp3s_mig/SoftMC-master/hw/boards/ML605/softMC_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc softMC_constraints.ucf -p xc6vlx240t-ff1156-1 softMC_top.ngc softMC_top.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt on -ol high -t 30 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o softMC_top_map.ncd softMC_top.ngd softMC_top.pcf 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/xusp3s_mig/SoftMC-master/hw/boards/ML605/softMC_top.xst" -ofn "C:/Users/Administrator/Desktop/xusp3s_mig/SoftMC-master/hw/boards/ML605/softMC_top.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/xusp3s_mig/SoftMC-master/hw/boards/ML605/softMC_top.xst" -ofn "C:/Users/Administrator/Desktop/xusp3s_mig/SoftMC-master/hw/boards/ML605/softMC_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc softMC_constraints.ucf -p xc6vlx240t-ff1156-1 softMC_top.ngc softMC_top.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt on -ol high -t 30 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o softMC_top_map.ncd softMC_top.ngd softMC_top.pcf 
+par -w -intstyle ise -ol high -mt off softMC_top_map.ncd softMC_top.ncd softMC_top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml softMC_top.twx softMC_top.ncd -o softMC_top.twr softMC_top.pcf -ucf softMC_constraints.ucf 
+bitgen -intstyle ise -f softMC_top.ut softMC_top.ncd 

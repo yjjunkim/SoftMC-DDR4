@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Administrator\Desktop\xusp3s_mig\SoftMC-master\hw\boards\ML605\softMC_top.ncd
+OUTFILE=C:\Users\Administrator\Desktop\xusp3s_mig\SoftMC-master\hw\boards\ML605\softMC_top.bit
+FAMILY=Virtex6
+PART=xc6vlx240t-1ff1156
+WORKINGDIR=C:\Users\Administrator\Desktop\xusp3s_mig\SoftMC-master\hw\boards\ML605
+LICENSE=ISE
+USER_INFO=212236669_0_0_462

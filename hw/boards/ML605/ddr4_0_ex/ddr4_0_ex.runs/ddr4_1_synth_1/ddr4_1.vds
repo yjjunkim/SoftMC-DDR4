@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Jun 22 17:40:54 2021
+# Process ID: 25900
+# Current directory: C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ddr4_0_ex/ddr4_0_ex.runs/ddr4_1_synth_1
+# Command line: vivado.exe -log ddr4_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ddr4_1.tcl
+# Log file: C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ddr4_0_ex/ddr4_0_ex.runs/ddr4_1_synth_1/ddr4_1.vds
+# Journal file: C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ddr4_0_ex/ddr4_0_ex.runs/ddr4_1_synth_1\vivado.jou
+#-----------------------------------------------------------
+source ddr4_1.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP ddr4_1, cache-ID = cdd388993f73b542.
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 22 17:41:04 2021...

@@ -1,0 +1,162 @@
+Release 14.6 Drc P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Mon Jun 14 18:52:15 2021
+
+drc -z softMC_top.ncd softMC_top.pcf
+
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   i_pcie_top/app/endpoint/endpoint64.endpoint/channels[0].channel/txPort/gate/f
+   ifo/asyncCompare/wDirSet is sourced by a combinatorial pin. This is not good
+   design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   i_pcie_top/app/endpoint/endpoint64.endpoint/channels[0].channel/rxPort/mainFi
+   fo/fifo/asyncCompare/wDirSet is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:367 - The signal
+   <xil_phy/u_phy_data_io/gen_dqs[0].u_phy_dqs_iob/u_iobuf_dqs/OB> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <xil_phy/u_phy_data_io/gen_dqs[1].u_phy_dqs_iob/u_iobuf_dqs/OB> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <xil_phy/u_phy_data_io/gen_dqs[2].u_phy_dqs_iob/u_iobuf_dqs/OB> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <xil_phy/u_phy_data_io/gen_dqs[3].u_phy_dqs_iob/u_iobuf_dqs/OB> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <xil_phy/u_phy_data_io/gen_dqs[4].u_phy_dqs_iob/u_iobuf_dqs/OB> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <xil_phy/u_phy_data_io/gen_dqs[5].u_phy_dqs_iob/u_iobuf_dqs/OB> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <xil_phy/u_phy_data_io/gen_dqs[6].u_phy_dqs_iob/u_iobuf_dqs/OB> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <xil_phy/u_phy_data_io/gen_dqs[7].u_phy_dqs_iob/u_iobuf_dqs/OB> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_pcie_top/app/endpoint/endpoint64.endpoint/channels[0].channel/txPort/gate/
+   fifo/mem/Mram_rRAM10_RAMD_D1_O> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_pcie_top/app/endpoint/endpoint64.endpoint/channels[0].channel/txPort/gate/
+   fifo/mem/Mram_rRAM9_RAMD_D1_O> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_pcie_top/app/endpoint/endpoint64.endpoint/channels[0].channel/txPort/gate/
+   fifo/mem/Mram_rRAM8_RAMD_D1_O> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_pcie_top/app/endpoint/endpoint64.endpoint/channels[0].channel/txPort/gate/
+   fifo/mem/Mram_rRAM6_RAMD_D1_O> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_pcie_top/app/endpoint/endpoint64.endpoint/channels[0].channel/txPort/gate/
+   fifo/mem/Mram_rRAM7_RAMD_D1_O> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_pcie_top/app/endpoint/endpoint64.endpoint/channels[0].channel/txPort/gate/
+   fifo/mem/Mram_rRAM3_RAMD_D1_O> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_pcie_top/app/endpoint/endpoint64.endpoint/channels[0].channel/txPort/gate/
+   fifo/mem/Mram_rRAM4_RAMD_D1_O> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_pcie_top/app/endpoint/endpoint64.endpoint/channels[0].channel/txPort/gate/
+   fifo/mem/Mram_rRAM5_RAMD_D1_O> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_pcie_top/app/endpoint/endpoint64.endpoint/channels[0].channel/txPort/gate/
+   fifo/mem/Mram_rRAM2_RAMD_D1_O> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_pcie_top/app/endpoint/endpoint64.endpoint/channels[0].channel/txPort/gate/
+   fifo/mem/Mram_rRAM1_RAMD_D1_O> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_pcie_top/app/endpoint/endpoint64.endpoint/channels[0].channel/txPort/gate/
+   fifo/mem/Mram_rRAM11_RAMD_D1_O> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/reorderQueue/mapRam/Mram_r
+   RAM_RAMD_D1_O> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/reorderQueue/pktRam/Mram_r
+   RAM1_RAMD_D1_O> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/reorderQueue/pktRam/Mram_r
+   RAM2_RAMD_D1_O> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/reorderQueue/data_input/po
+   sRam/Mram_rRAM2_RAMD_D1_O> is incomplete. The signal does not drive any load
+   pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/reorderQueue/data_input/po
+   sRam/Mram_rRAM1_RAMD_D1_O> is incomplete. The signal does not drive any load
+   pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/rxEngReq/fifo/mem/Mram_rRA
+   M3_RAMD_D1_O> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/rxEngReq/fifo/mem/Mram_rRA
+   M5_RAMD_D1_O> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/rxEngReq/fifo/mem/Mram_rRA
+   M2_RAMD_D1_O> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/rxEngReq/fifo/mem/Mram_rRA
+   M1_RAMD_D1_O> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/rxEngReq/fifo/mem/Mram_rRA
+   M4_RAMD_D1_O> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/rxEngReq/fifo/mem/Mram_rRA
+   M6_RAMD_D1_O> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/rxEngReq/fifo/mem/Mram_rRA
+   M10_RAMD_D1_O> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/rxEngReq/fifo/mem/Mram_rRA
+   M7_RAMD_D1_O> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/rxEngReq/fifo/mem/Mram_rRA
+   M11_RAMD_D1_O> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/rxEngReq/fifo/mem/Mram_rRA
+   M8_RAMD_D1_O> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/rxEngReq/fifo/mem/Mram_rRA
+   M9_RAMD_D1_O> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/rxEngReq/fifo/mem/Mram_rRA
+   M12_RAMD_D1_O> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/reorderQueue/data_input/co
+   untRam/Mram_rRAM1_RAMD_D1_O> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:2045 - The MMCM_ADV block <u_infrastructure/u_mmcm_adv>
+   has CLKOUT pins that do not drive the same kind of BUFFER load. Routing from
+   the different buffer types will not be phase aligned. 
+DRC detected 0 errors and 40 warnings.  Please see the previously displayed
+individual error or warning messages for more details.

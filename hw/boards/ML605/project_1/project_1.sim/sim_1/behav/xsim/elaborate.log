@@ -1,0 +1,27 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto b05a631014b24489b6600b177fa38575 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L microblaze_v11_0_4 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L lmb_v10_v3_0_11 -L lmb_bram_if_cntlr_v4_0_19 -L blk_mem_gen_v8_4_4 -L iomodule_v3_1_6 -L fifo_generator_v13_2_5 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_softMC_top_behav xil_defaultlib.tb_softMC_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3180] cannot find port 'rdback_fifo_empty' on this module [C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/tb_softMC_top.v:505]
+ERROR: [VRFC 10-3180] cannot find port 'rdback_data' on this module [C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/tb_softMC_top.v:504]
+ERROR: [VRFC 10-3180] cannot find port 'rdback_fifo_rden' on this module [C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/tb_softMC_top.v:503]
+ERROR: [VRFC 10-3180] cannot find port 'app_instr' on this module [C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/tb_softMC_top.v:501]
+ERROR: [VRFC 10-3180] cannot find port 'app_ack' on this module [C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/tb_softMC_top.v:500]
+ERROR: [VRFC 10-3180] cannot find port 'app_en' on this module [C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/tb_softMC_top.v:499]
+ERROR: [VRFC 10-3180] cannot find port 'processing_iseq' on this module [C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/tb_softMC_top.v:497]
+ERROR: [VRFC 10-3180] cannot find port 'iq_full' on this module [C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/tb_softMC_top.v:496]
+ERROR: [VRFC 10-3180] cannot find port 'dfi_init_complete' on this module [C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/tb_softMC_top.v:495]
+ERROR: [VRFC 10-3180] cannot find port 'ddr_dq' on this module [C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/tb_softMC_top.v:494]
+ERROR: [VRFC 10-3180] cannot find port 'ddr_dqs_n' on this module [C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/tb_softMC_top.v:493]
+ERROR: [VRFC 10-3180] cannot find port 'ddr_dqs_p' on this module [C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/tb_softMC_top.v:492]
+ERROR: [VRFC 10-3180] cannot find port 'ddr_dm' on this module [C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/tb_softMC_top.v:491]
+ERROR: [VRFC 10-3180] cannot find port 'ddr_reset_n' on this module [C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/tb_softMC_top.v:489]
+ERROR: [VRFC 10-3180] cannot find port 'ddr_odt' on this module [C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/tb_softMC_top.v:488]
+ERROR: [VRFC 10-3180] cannot find port 'ddr_cke' on this module [C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/tb_softMC_top.v:487]
+ERROR: [VRFC 10-3180] cannot find port 'ddr_cs_n' on this module [C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/tb_softMC_top.v:486]
+ERROR: [VRFC 10-3180] cannot find port 'ddr_we_n' on this module [C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/tb_softMC_top.v:485]
+ERROR: [VRFC 10-3180] cannot find port 'ddr_cas_n' on this module [C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/tb_softMC_top.v:484]
+INFO: [#UNDEF] Sorry, too many errors..
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

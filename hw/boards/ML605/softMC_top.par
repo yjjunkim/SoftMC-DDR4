@@ -1,0 +1,445 @@
+Release 14.6 par P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+WIN-82IMF3CKAHH::  Mon Jun 14 18:50:36 2021
+
+par -w -intstyle ise -ol high -mt off softMC_top_map.ncd softMC_top.ncd
+softMC_top.pcf 
+
+
+Constraints file: softMC_top.pcf.
+Loading device for application Rf_Device from file '6vlx240t.nph' in environment C:\Xilinx\14.6\ISE_DS\ISE\.
+   "softMC_top" is an NCD, version 3.2, device xc6vlx240t, package ff1156, speed -1
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 0.950 Volts. (default - Range: 0.950 to 1.050 Volts)
+
+
+Device speed data version:  "PRODUCTION 1.17 2013-06-08".
+
+
+
+Device Utilization Summary:
+
+Slice Logic Utilization:
+  Number of Slice Registers:                11,986 out of 301,440    3%
+    Number used as Flip Flops:              11,984
+    Number used as Latches:                      2
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                0
+  Number of Slice LUTs:                      8,833 out of 150,720    5%
+    Number used as logic:                    7,713 out of 150,720    5%
+      Number using O6 output only:           4,741
+      Number using O5 output only:             490
+      Number using O5 and O6:                2,482
+      Number used as ROM:                        0
+    Number used as Memory:                     666 out of  58,400    1%
+      Number used as Dual Port RAM:            384
+        Number using O6 output only:             8
+        Number using O5 output only:             1
+        Number using O5 and O6:                375
+      Number used as Single Port RAM:            0
+      Number used as Shift Register:           282
+        Number using O6 output only:           247
+        Number using O5 output only:             0
+        Number using O5 and O6:                 35
+    Number used exclusively as route-thrus:    454
+      Number with same-slice register load:    425
+      Number with same-slice carry load:        29
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                 4,529 out of  37,680   12%
+  Number of LUT Flip Flop pairs used:       13,262
+    Number with an unused Flip Flop:         2,781 out of  13,262   20%
+    Number with an unused LUT:               4,429 out of  13,262   33%
+    Number of fully used LUT-FF pairs:       6,052 out of  13,262   45%
+    Number of slice register sites lost
+      to control set restrictions:               0 out of 301,440    0%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+  OVERMAPPING of BRAM resources should be ignored if the design is
+  over-mapped for a non-BRAM resource or if placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                       126 out of     600   21%
+    Number of LOCed IOBs:                      126 out of     126  100%
+    IOB Flip Flops:                              1
+    IOB Master Pads:                            10
+    IOB Slave Pads:                             10
+    Number of bonded IPADs:                     18
+    Number of bonded OPADs:                     16
+
+Specific Feature Utilization:
+  Number of RAMB36E1/FIFO36E1s:                 28 out of     416    6%
+    Number using RAMB36E1 only:                 28
+    Number using FIFO36E1 only:                  0
+  Number of RAMB18E1/FIFO18E1s:                  1 out of     832    1%
+    Number using RAMB18E1 only:                  1
+    Number using FIFO18E1 only:                  0
+  Number of BUFG/BUFGCTRLs:                      8 out of      32   25%
+    Number used as BUFGs:                        8
+    Number used as BUFGCTRLs:                    0
+  Number of ILOGICE1/ISERDESE1s:                65 out of     720    9%
+    Number used as ILOGICE1s:                    0
+    Number used as ISERDESE1s:                  65
+  Number of OLOGICE1/OSERDESE1s:               118 out of     720   16%
+    Number used as OLOGICE1s:                    1
+    Number used as OSERDESE1s:                 117
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHCEs:                             0 out of     144    0%
+  Number of BUFIODQSs:                           8 out of      72   11%
+  Number of BUFRs:                               2 out of      36    5%
+    Number of LOCed BUFRs:                       2 out of       2  100%
+  Number of CAPTUREs:                            0 out of       1    0%
+  Number of DSP48E1s:                            0 out of     768    0%
+  Number of EFUSE_USRs:                          0 out of       1    0%
+  Number of FRAME_ECCs:                          0 out of       1    0%
+  Number of GTXE1s:                              8 out of      20   40%
+    Number of LOCed GTXE1s:                      8 out of       8  100%
+  Number of IBUFDS_GTXE1s:                       1 out of      12    8%
+    Number of LOCed IBUFDS_GTXE1s:               1 out of       1  100%
+  Number of ICAPs:                               0 out of       2    0%
+  Number of IDELAYCTRLs:                         3 out of      18   16%
+  Number of IODELAYE1s:                         82 out of     720   11%
+    Number of LOCed IODELAYE1s:                 10 out of      82   12%
+  Number of MMCM_ADVs:                           2 out of      12   16%
+    Number of LOCed MMCM_ADVs:                   2 out of       2  100%
+  Number of PCIE_2_0s:                           1 out of       2   50%
+    Number of LOCed PCIE_2_0s:                   1 out of       1  100%
+  Number of STARTUPs:                            1 out of       1  100%
+  Number of SYSMONs:                             0 out of       1    0%
+  Number of TEMAC_SINGLEs:                       0 out of       4    0%
+
+
+Overall effort level (-ol):   High 
+Router effort level (-rl):    High 
+
+INFO:Timing:3386 - Intersecting Constraints found and resolved.  For more information, see the TSI report.  Please consult the Xilinx
+   Command Line Tools User Guide for information on generating a TSI report.
+Starting initial Timing Analysis.  REAL time: 13 secs 
+Finished initial Timing Analysis.  REAL time: 14 secs 
+
+WARNING:Par:288 - The signal xil_phy/u_phy_data_io/gen_dqs[0].u_phy_dqs_iob/u_iobuf_dqs/OB has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal xil_phy/u_phy_data_io/gen_dqs[1].u_phy_dqs_iob/u_iobuf_dqs/OB has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal xil_phy/u_phy_data_io/gen_dqs[2].u_phy_dqs_iob/u_iobuf_dqs/OB has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal xil_phy/u_phy_data_io/gen_dqs[3].u_phy_dqs_iob/u_iobuf_dqs/OB has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal xil_phy/u_phy_data_io/gen_dqs[4].u_phy_dqs_iob/u_iobuf_dqs/OB has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal xil_phy/u_phy_data_io/gen_dqs[5].u_phy_dqs_iob/u_iobuf_dqs/OB has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal xil_phy/u_phy_data_io/gen_dqs[6].u_phy_dqs_iob/u_iobuf_dqs/OB has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal xil_phy/u_phy_data_io/gen_dqs[7].u_phy_dqs_iob/u_iobuf_dqs/OB has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal i_pcie_top/app/endpoint/endpoint64.endpoint/channels[0].channel/txPort/gate/fifo/mem/Mram_rRAM10_RAMD_D1_O has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal i_pcie_top/app/endpoint/endpoint64.endpoint/channels[0].channel/txPort/gate/fifo/mem/Mram_rRAM9_RAMD_D1_O has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal i_pcie_top/app/endpoint/endpoint64.endpoint/channels[0].channel/txPort/gate/fifo/mem/Mram_rRAM8_RAMD_D1_O has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal i_pcie_top/app/endpoint/endpoint64.endpoint/channels[0].channel/txPort/gate/fifo/mem/Mram_rRAM6_RAMD_D1_O has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal i_pcie_top/app/endpoint/endpoint64.endpoint/channels[0].channel/txPort/gate/fifo/mem/Mram_rRAM7_RAMD_D1_O has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal i_pcie_top/app/endpoint/endpoint64.endpoint/channels[0].channel/txPort/gate/fifo/mem/Mram_rRAM3_RAMD_D1_O has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal i_pcie_top/app/endpoint/endpoint64.endpoint/channels[0].channel/txPort/gate/fifo/mem/Mram_rRAM4_RAMD_D1_O has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal i_pcie_top/app/endpoint/endpoint64.endpoint/channels[0].channel/txPort/gate/fifo/mem/Mram_rRAM5_RAMD_D1_O has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal i_pcie_top/app/endpoint/endpoint64.endpoint/channels[0].channel/txPort/gate/fifo/mem/Mram_rRAM2_RAMD_D1_O has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal i_pcie_top/app/endpoint/endpoint64.endpoint/channels[0].channel/txPort/gate/fifo/mem/Mram_rRAM1_RAMD_D1_O has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal i_pcie_top/app/endpoint/endpoint64.endpoint/channels[0].channel/txPort/gate/fifo/mem/Mram_rRAM11_RAMD_D1_O has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/reorderQueue/mapRam/Mram_rRAM_RAMD_D1_O has no load.  PAR
+   will not attempt to route this signal.
+WARNING:Par:288 - The signal i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/reorderQueue/pktRam/Mram_rRAM1_RAMD_D1_O has no load.  PAR
+   will not attempt to route this signal.
+WARNING:Par:288 - The signal i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/reorderQueue/pktRam/Mram_rRAM2_RAMD_D1_O has no load.  PAR
+   will not attempt to route this signal.
+WARNING:Par:288 - The signal i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/reorderQueue/data_input/posRam/Mram_rRAM2_RAMD_D1_O has no
+   load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/reorderQueue/data_input/posRam/Mram_rRAM1_RAMD_D1_O has no
+   load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/rxEngReq/fifo/mem/Mram_rRAM3_RAMD_D1_O has no load.  PAR will
+   not attempt to route this signal.
+WARNING:Par:288 - The signal i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/rxEngReq/fifo/mem/Mram_rRAM5_RAMD_D1_O has no load.  PAR will
+   not attempt to route this signal.
+WARNING:Par:288 - The signal i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/rxEngReq/fifo/mem/Mram_rRAM2_RAMD_D1_O has no load.  PAR will
+   not attempt to route this signal.
+WARNING:Par:288 - The signal i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/rxEngReq/fifo/mem/Mram_rRAM1_RAMD_D1_O has no load.  PAR will
+   not attempt to route this signal.
+WARNING:Par:288 - The signal i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/rxEngReq/fifo/mem/Mram_rRAM4_RAMD_D1_O has no load.  PAR will
+   not attempt to route this signal.
+WARNING:Par:288 - The signal i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/rxEngReq/fifo/mem/Mram_rRAM6_RAMD_D1_O has no load.  PAR will
+   not attempt to route this signal.
+WARNING:Par:288 - The signal i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/rxEngReq/fifo/mem/Mram_rRAM10_RAMD_D1_O has no load.  PAR
+   will not attempt to route this signal.
+WARNING:Par:288 - The signal i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/rxEngReq/fifo/mem/Mram_rRAM7_RAMD_D1_O has no load.  PAR will
+   not attempt to route this signal.
+WARNING:Par:288 - The signal i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/rxEngReq/fifo/mem/Mram_rRAM11_RAMD_D1_O has no load.  PAR
+   will not attempt to route this signal.
+WARNING:Par:288 - The signal i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/rxEngReq/fifo/mem/Mram_rRAM8_RAMD_D1_O has no load.  PAR will
+   not attempt to route this signal.
+WARNING:Par:288 - The signal i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/rxEngReq/fifo/mem/Mram_rRAM9_RAMD_D1_O has no load.  PAR will
+   not attempt to route this signal.
+WARNING:Par:288 - The signal i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/rxEngReq/fifo/mem/Mram_rRAM12_RAMD_D1_O has no load.  PAR
+   will not attempt to route this signal.
+WARNING:Par:288 - The signal i_pcie_top/app/endpoint/endpoint64.endpoint/rxEng/reorderQueue/data_input/countRam/Mram_rRAM1_RAMD_D1_O has no
+   load.  PAR will not attempt to route this signal.
+Starting Router
+
+
+Phase  1  : 71537 unrouted;      REAL time: 16 secs 
+
+Phase  2  : 56803 unrouted;      REAL time: 20 secs 
+
+Phase  3  : 15972 unrouted;      REAL time: 42 secs 
+
+Phase  4  : 15963 unrouted; (Setup:313, Hold:26717, Component Switching Limit:0)     REAL time: 50 secs 
+
+Updating file: softMC_top.ncd with current fully routed design.
+
+Phase  5  : 0 unrouted; (Setup:0, Hold:24690, Component Switching Limit:0)     REAL time: 1 mins 2 secs 
+
+Phase  6  : 0 unrouted; (Setup:0, Hold:24690, Component Switching Limit:0)     REAL time: 1 mins 2 secs 
+
+Phase  7  : 0 unrouted; (Setup:0, Hold:24690, Component Switching Limit:0)     REAL time: 1 mins 2 secs 
+
+Phase  8  : 0 unrouted; (Setup:0, Hold:24690, Component Switching Limit:0)     REAL time: 1 mins 2 secs 
+
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 1 mins 4 secs 
+
+Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 1 mins 6 secs 
+Total REAL time to Router completion: 1 mins 6 secs 
+Total CPU time to Router completion: 1 mins 9 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+| i_pcie_top/user_clk |BUFGCTRL_X0Y28| No   | 1488 |  0.429     |  2.035      |
++---------------------+--------------+------+------+------------+-------------+
+|i_pcie_top/core/pipe |              |      |      |            |             |
+|                _clk |BUFGCTRL_X0Y30| No   |  318 |  0.438     |  2.046      |
++---------------------+--------------+------+------+------------+-------------+
+|                 clk |BUFGCTRL_X0Y25| No   | 1737 |  0.426     |  2.043      |
++---------------------+--------------+------+------+------------+-------------+
+|xil_phy/clk_rsync<0> |              |      |      |            |             |
+|                     |  Regional Clk|Yes   |  289 |  0.175     |  1.013      |
++---------------------+--------------+------+------+------------+-------------+
+|xil_phy/clk_rsync<1> |              |      |      |            |             |
+|                     |  Regional Clk|Yes   |  484 |  0.259     |  1.102      |
++---------------------+--------------+------+------+------------+-------------+
+|i_pcie_top/core/drp_ |              |      |      |            |             |
+|                 clk |BUFGCTRL_X0Y31| No   |   25 |  0.394     |  2.046      |
++---------------------+--------------+------+------+------------+-------------+
+|            mmcm_clk | BUFGCTRL_X0Y0| No   |    7 |  0.128     |  1.716      |
++---------------------+--------------+------+------+------------+-------------+
+|i_pcie_top/core/TxOu |              |      |      |            |             |
+|           tClk_bufg |BUFGCTRL_X0Y27| No   |    6 |  0.010     |  1.633      |
++---------------------+--------------+------+------+------------+-------------+
+|             clk_mem |BUFGCTRL_X0Y26| No   |  182 |  0.164     |  1.901      |
++---------------------+--------------+------+------+------------+-------------+
+|i_pcie_top/app/endpo |              |      |      |            |             |
+|int/endpoint64.endpo |              |      |      |            |             |
+|int/channels[0].chan |              |      |      |            |             |
+|nel/txPort/gate/fifo |              |      |      |            |             |
+|/asyncCompare/wDirSe |              |      |      |            |             |
+|                   t |         Local|      |    1 |  0.000     |  0.359      |
++---------------------+--------------+------+------+------------+-------------+
+|i_pcie_top/core/pcie |              |      |      |            |             |
+|_clocking_i/mmcm_adv |              |      |      |            |             |
+|        _i_ML_NEW_I1 |         Local|      |    3 |  0.000     |  2.362      |
++---------------------+--------------+------+------+------------+-------------+
+|u_infrastructure/u_m |              |      |      |            |             |
+|   mcm_adv_ML_NEW_I1 |         Local|      |    3 |  0.000     |  1.413      |
++---------------------+--------------+------+------+------------+-------------+
+|  xil_phy/clk_cpt<2> |         Local|      |   16 |  0.011     |  1.310      |
++---------------------+--------------+------+------+------------+-------------+
+|  xil_phy/clk_cpt<3> |         Local|      |   16 |  0.000     |  1.288      |
++---------------------+--------------+------+------+------------+-------------+
+|  xil_phy/clk_cpt<4> |         Local|      |   16 |  0.011     |  1.310      |
++---------------------+--------------+------+------+------------+-------------+
+|  xil_phy/clk_cpt<5> |         Local|      |   16 |  0.011     |  1.310      |
++---------------------+--------------+------+------+------------+-------------+
+|  xil_phy/clk_cpt<6> |         Local|      |   16 |  0.000     |  1.288      |
++---------------------+--------------+------+------+------------+-------------+
+|  xil_phy/clk_cpt<0> |         Local|      |   18 |  0.011     |  1.310      |
++---------------------+--------------+------+------+------------+-------------+
+|  xil_phy/clk_cpt<1> |         Local|      |   16 |  0.000     |  1.288      |
++---------------------+--------------+------+------+------------+-------------+
+|  xil_phy/clk_cpt<7> |         Local|      |   16 |  0.011     |  1.310      |
++---------------------+--------------+------+------+------------+-------------+
+|         clk_rd_base |         Local|      |   10 |  0.271     |  1.428      |
++---------------------+--------------+------+------+------------+-------------+
+|i_pcie_top/sys_clk_c |              |      |      |            |             |
+|                     |         Local|      |   16 |  0.000     |  3.105      |
++---------------------+--------------+------+------+------------+-------------+
+|i_pcie_top/core/pcie |              |      |      |            |             |
+|_clocking_i/mmcm_adv |              |      |      |            |             |
+|       _i_ML_NEW_OUT |         Local|      |    2 |  0.000     |  0.539      |
++---------------------+--------------+------+------+------------+-------------+
+|u_infrastructure/u_m |              |      |      |            |             |
+|  mcm_adv_ML_NEW_OUT |         Local|      |    2 |  0.000     |  0.349      |
++---------------------+--------------+------+------+------------+-------------+
+|MMCM_PHASE_CALIBRATI |              |      |      |            |             |
+|ON_ML_LUT2_300_ML_NE |              |      |      |            |             |
+|               W_CLK |         Local|      |    3 |  0.138     |  0.371      |
++---------------------+--------------+------+------+------------+-------------+
+|MMCM_PHASE_CALIBRATI |              |      |      |            |             |
+|ON_ML_LUT2_308_ML_NE |              |      |      |            |             |
+|               W_CLK |         Local|      |    3 |  0.016     |  0.364      |
++---------------------+--------------+------+------+------------+-------------+
+|i_pcie_top/app/endpo |              |      |      |            |             |
+|int/endpoint64.endpo |              |      |      |            |             |
+|int/channels[0].chan |              |      |      |            |             |
+|nel/rxPort/mainFifo/ |              |      |      |            |             |
+|fifo/asyncCompare/wD |              |      |      |            |             |
+|               irSet |         Local|      |    1 |  0.000     |  0.474      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+* The fanout is the number of component pins not the individual BEL loads,
+for example SLICE loads not FF loads.
+
+Timing Score: 0 (Setup: 0, Hold: 0, Component Switching Limit: 0)
+
+Number of Timing Constraints that were not applied: 3
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  TS_CLK_250 = PERIOD TIMEGRP "CLK_250" TS_ | SETUP       |     0.008ns|     3.992ns|       0|           0
+  SYSCLK HIGH 50% PRIORITY 1                | HOLD        |     0.011ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  TS_u_infrastructure_clk_pll = PERIOD TIME | SETUP       |     0.031ns|     4.969ns|       0|           0
+  GRP "u_infrastructure_clk_pll"         TS | HOLD        |     0.008ns|            |       0|           0
+  _clk_ref HIGH 50%                         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  Pin to Pin Skew Constraint                | MAXDELAY    |     0.106ns|     0.450ns|       0|           0
+----------------------------------------------------------------------------------------------------------
+  TS_CLK_125 = PERIOD TIMEGRP "CLK_125" TS_ | SETUP       |     0.180ns|     7.820ns|       0|           0
+  SYSCLK / 2 HIGH 50% PRIORITY 100          | HOLD        |     0.012ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  TS_clk_ref = PERIOD TIMEGRP "TNM_clk_ref" | SETUP       |     4.027ns|     0.973ns|       0|           0
+   5 ns HIGH 50%                            | HOLD        |     0.129ns|            |       0|           0
+                                            | MINPERIOD   |     0.239ns|     4.761ns|       0|           0
+----------------------------------------------------------------------------------------------------------
+  TS_clk_rsync = PERIOD TIMEGRP "TNM_clk_rs | SETUP       |     0.740ns|     4.260ns|       0|           0
+  ync" 5 ns HIGH 50%                        | HOLD        |     0.050ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  TS_TXOUTCLKBUFG = PERIOD TIMEGRP "TXOUTCL | SETUP       |     0.872ns|     3.128ns|       0|           0
+  KBUFG" 250 MHz HIGH 50% PRIORITY 100      | HOLD        |     0.143ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  TS_u_infrastructure_clk_mem_pll = PERIOD  | MINPERIOD   |     1.071ns|     1.429ns|       0|           0
+  TIMEGRP         "u_infrastructure_clk_mem |             |            |            |        |            
+  _pll" TS_clk_ref / 2 HIGH 50%             |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_clk_rsync_rise_to_fall = MAXDELAY FROM | SETUP       |     2.357ns|     2.643ns|       0|           0
+   TIMEGRP "TG_clk_rsync_rise" TO         T | HOLD        |     0.205ns|            |       0|           0
+  IMEGRP "TG_clk_rsync_fall" 5 ns           |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_SYSCLK = PERIOD TIMEGRP "SYSCLK" 250 M | MINPERIOD   |     2.462ns|     1.538ns|       0|           0
+  Hz HIGH 50%                               |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_MC_PHY_INIT_SEL = MAXDELAY FROM TIMEGR | SETUP       |     5.732ns|     4.268ns|       0|           0
+  P "TNM_PHY_INIT_SEL" TO TIMEGRP "FFS"     | HOLD        |     0.591ns|            |       0|           0
+       10 ns                                |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_clk_rd_base = PERIOD TIMEGRP "clk_rd_b | N/A         |         N/A|         N/A|     N/A|         N/A
+  ase" TS_clk_ref / 2 HIGH 50%              |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Review Timing Report for more details on the following derived constraints.
+To create a Timing Report, run "trce -v 12 -fastpaths -o design_timing_report design.ncd design.pcf"
+or "Run Timing Analysis" from Timing Analyzer (timingan).
+Derived Constraints for TS_clk_ref
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_clk_ref                     |      5.000ns|      4.761ns|      4.969ns|            0|            0|           14|        82212|
+| TS_u_infrastructure_clk_pll   |      5.000ns|      4.969ns|          N/A|            0|            0|        82212|            0|
+| TS_u_infrastructure_clk_mem_pl|      2.500ns|      1.429ns|          N/A|            0|            0|            0|            0|
+| l                             |             |             |             |             |             |             |             |
+| TS_clk_rd_base                |      2.500ns|          N/A|          N/A|            0|            0|            0|            0|
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+Derived Constraints for TS_SYSCLK
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_SYSCLK                      |      4.000ns|      1.538ns|      3.992ns|            0|            0|            0|        77718|
+| TS_CLK_125                    |      8.000ns|      7.820ns|          N/A|            0|            0|        10964|            0|
+| TS_CLK_250                    |      4.000ns|      3.992ns|          N/A|            0|            0|        66754|            0|
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+All constraints were met.
+INFO:Timing:2761 - N/A entries in the Constraints List may indicate that the 
+   constraint is not analyzed due to the following: No paths covered by this 
+   constraint; Other constraints intersect with this constraint; or This 
+   constraint was disabled by a Path Tracing Control. Please run the Timespec 
+   Interaction Report (TSI) via command line (trce tsi) or Timing Analyzer GUI.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+WARNING:Par:283 - There are 37 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+
+Total REAL time to PAR completion: 1 mins 10 secs 
+Total CPU time to PAR completion: 1 mins 13 secs 
+
+Peak Memory Usage:  1092 MB
+
+Placer: Placement generated during map.
+Routing: Completed - No errors found.
+Timing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 39
+Number of info messages: 1
+
+Writing design to file softMC_top.ncd
+
+
+
+PAR done!

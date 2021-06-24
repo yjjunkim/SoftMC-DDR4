@@ -1,0 +1,71 @@
+INFO:sim:172 - Generating IP...
+Applying current project options...
+Finished applying current project options.
+Resolving generics for 'rdback_fifo'...
+WARNING:sim - A core named 'rdback_fifo' already exists in the project. Output
+   products for this core may be overwritten.
+Applying external generics to 'rdback_fifo'...
+Delivering associated files for 'rdback_fifo'...
+Delivering EJava files for 'rdback_fifo'...
+Generating implementation netlist for 'rdback_fifo'...
+INFO:sim - Pre-processing HDL files for 'rdback_fifo'...
+WARNING:sim - BlackBox generator run option '-ifmt' found multiple times. Only
+   the first occurence is considered.
+Running synthesis for 'rdback_fifo'
+Running ngcbuild...
+Writing VEO instantiation template for 'rdback_fifo'...
+Writing Verilog behavioral simulation model for 'rdback_fifo'...
+WARNING:sim - Overwriting existing file
+   C:/Users/Administrator/Desktop/xusp3s_mig/SoftMC-master/hw/boards/ML605/ipcor
+   e_dir/tmp/_cg/rdback_fifo/doc/fifo_generator_v9_3_vinfo.html with file from
+   view xilinx_documentation
+Delivered 3 files into directory
+C:/Users/Administrator/Desktop/xusp3s_mig/SoftMC-master/hw/boards/ML605/ipcore_d
+ir/tmp/_cg/rdback_fifo
+Delivered 1 file into directory
+C:/Users/Administrator/Desktop/xusp3s_mig/SoftMC-master/hw/boards/ML605/ipcore_d
+ir/tmp/_cg/rdback_fifo
+Generating ASY schematic symbol...
+INFO:sim:949 - Finished generation of ASY schematic symbol.
+Generating SYM schematic symbol for 'rdback_fifo'...
+Generating metadata file...
+Regenerating ISE project file for 'rdback_fifo'...
+Generating ISE project...
+XCO file found: rdback_fifo.xco
+XMDF file found: rdback_fifo_xmdf.tcl
+Adding
+C:/Users/Administrator/Desktop/xusp3s_mig/SoftMC-master/hw/boards/ML605/ipcore_d
+ir/tmp/_cg/rdback_fifo.asy -view all -origin_type imported
+Adding
+C:/Users/Administrator/Desktop/xusp3s_mig/SoftMC-master/hw/boards/ML605/ipcore_d
+ir/tmp/_cg/rdback_fifo.ngc -view all -origin_type created
+Checking file
+"C:/Users/Administrator/Desktop/xusp3s_mig/SoftMC-master/hw/boards/ML605/ipcore_
+dir/tmp/_cg/rdback_fifo.ngc" for project device match ...
+File
+"C:/Users/Administrator/Desktop/xusp3s_mig/SoftMC-master/hw/boards/ML605/ipcore_
+dir/tmp/_cg/rdback_fifo.ngc" device information matches project device.
+Adding
+C:/Users/Administrator/Desktop/xusp3s_mig/SoftMC-master/hw/boards/ML605/ipcore_d
+ir/tmp/_cg/rdback_fifo.sym -view all -origin_type imported
+Adding
+C:/Users/Administrator/Desktop/xusp3s_mig/SoftMC-master/hw/boards/ML605/ipcore_d
+ir/tmp/_cg/rdback_fifo.v -view all -origin_type created
+INFO:HDLCompiler:1845 - Analyzing Verilog file
+   "C:/Users/Administrator/Desktop/xusp3s_mig/SoftMC-master/hw/boards/ML605/ipco
+   re_dir/tmp/_cg/rdback_fifo.v" into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding
+C:/Users/Administrator/Desktop/xusp3s_mig/SoftMC-master/hw/boards/ML605/ipcore_d
+ir/tmp/_cg/rdback_fifo.veo -view all -origin_type imported
+INFO:TclTasksC:2116 - The automatic calculation of top has been turned-off.
+   Please set the new top explicitly by running the "project set top" command.
+   To re-calculate the new top automatically, set the "Auto Implementation Top"
+   property to true.
+Top level has been set to "/rdback_fifo"
+Generating README file...
+Generating FLIST file...
+INFO:sim:948 - Finished FLIST file generation.
+Moving files to output directory...
+Finished moving files to output directory
+Wrote CGP file for project 'rdback_fifo'.

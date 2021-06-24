@@ -1,0 +1,83 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Jun 22 17:34:47 2021
+# Process ID: 7088
+# Current directory: C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18036 C:\Users\yongj\Desktop\SoftMC-master_schematic_0622\SoftMC-master_schematic\SoftMC-master\hw\boards\ML605\project_1\project_1.xpr
+# Log file: C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/project_1/vivado.log
+# Journal file: C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/project_1/project_1.xpr
+report_ip_status -name ip_status 
+set_property part xcvu095-ffvb1760-1-i [current_project]
+upgrade_ip -srcset ddr4_0 -vlnv xilinx.com:ip:ddr4:2.2 [get_ips  ddr4_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips ddr4_0] -no_script -sync -force -quiet
+set_property -dict [list CONFIG.Phy_Only {Phy_Only_Single} CONFIG.C0.DDR4_TimePeriod {1071} CONFIG.C0.DDR4_InputClockPeriod {13924} CONFIG.C0.DDR4_MemoryType {SODIMMs} CONFIG.C0.DDR4_MemoryPart {MTA4ATF51264HZ-2G6} CONFIG.C0.DDR4_DataWidth {64} CONFIG.C0.DDR4_CasLatency {13} CONFIG.C0.DDR4_CasWriteLatency {10} CONFIG.Debug_Signal {Disable} CONFIG.C0.BANK_GROUP_WIDTH {1}] [get_ips ddr4_0]
+generate_target all [get_files  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ddr4_0.xci]
+catch { config_ip_cache -export [get_ips -all ddr4_0] }
+export_ip_user_files -of_objects [get_files C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ddr4_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ddr4_0.xci]
+launch_runs ddr4_0_synth_1 -jobs 6
+wait_on_run ddr4_0_synth_1
+export_simulation -of_objects [get_files C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ddr4_0.xci] -directory C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/project_1/project_1.ip_user_files -ipstatic_source_dir C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/project_1/project_1.cache/compile_simlib/modelsim} {questa=C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/project_1/project_1.cache/compile_simlib/questa} {riviera=C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/project_1/project_1.cache/compile_simlib/riviera} {activehdl=C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property part xcvu095-ffvc2104-3-e [current_project]
+report_ip_status -name ip_status 
+set_property part xcvu095-ffvb1760-1-i [current_project]
+report_ip_status -name ip_status 
+upgrade_ip -srcset instr_fifo -vlnv xilinx.com:ip:fifo_generator:13.2 [get_ips  instr_fifo] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips instr_fifo] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+upgrade_ip -srcset rdback_fifo -vlnv xilinx.com:ip:fifo_generator:13.2 [get_ips  rdback_fifo] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips rdback_fifo] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+generate_target all [get_files C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/instr_fifo/instr_fifo.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/instr_fifo/instr_fifo.xci]
+generate_target all [get_files C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/rdback_fifo/rdback_fifo.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/rdback_fifo/rdback_fifo.xci]
+launch_runs instr_fifo_synth_1
+wait_on_run instr_fifo_synth_1
+launch_runs rdback_fifo_synth_1
+wait_on_run rdback_fifo_synth_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+refresh_design
+refresh_design
+report_ip_status -name ip_status 
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+export_ip_user_files -of_objects  [get_files C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/pcie_endpoint/pcie_endpoint.xco] -no_script -reset -force -quiet
+remove_files  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/pcie_endpoint/pcie_endpoint.xco
+file delete -force C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/project_1/project_1.ip_user_files/ip/pcie_endpoint
+export_ip_user_files -of_objects  [get_files C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xilinx_mig/xilinx_mig.xco] -no_script -reset -force -quiet
+remove_files  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xilinx_mig/xilinx_mig.xco
+refresh_design
+refresh_design
+refresh_design
+export_ip_user_files -of_objects  [get_files C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/riffa_top_v6_pcie_v2_5.v] -no_script -reset -force -quiet
+remove_files  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/riffa_top_v6_pcie_v2_5.v
+refresh_design
+export_ip_user_files -of_objects  [get_files C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/pcie_endpoint.v] -no_script -reset -force -quiet
+remove_files  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/pcie_endpoint.v
+export_ip_user_files -of_objects  [get_files C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/riffa_adapter_v6_pcie_v2_5.v] -no_script -reset -force -quiet
+remove_files  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/riffa_adapter_v6_pcie_v2_5.v
+remove_files  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/pcie_endpoint.v
+export_ip_user_files -of_objects  [get_files C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/pcie_2_0_v6.v] -no_script -reset -force -quiet
+remove_files  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/pcie_2_0_v6.v
+refresh_design
+export_ip_user_files -of_objects  [get_files C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/pcie_pipe_v6.v] -no_script -reset -force -quiet
+remove_files  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/pcie_pipe_v6.v
+export_ip_user_files -of_objects  [get_files C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/pcie_bram_top_v6.v] -no_script -reset -force -quiet
+remove_files  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/pcie_bram_top_v6.v
+export_ip_user_files -of_objects  [get_files C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/pcie_brams_v6.v] -no_script -reset -force -quiet
+remove_files  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/pcie_brams_v6.v
+export_ip_user_files -of_objects  [get_files C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/pcie_gtx_v6.v] -no_script -reset -force -quiet
+remove_files  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/pcie_gtx_v6.v
+export_ip_user_files -of_objects  [get_files C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/pcie_bram_v6.v] -no_script -reset -force -quiet
+remove_files  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/pcie_bram_v6.v
+refresh_design
