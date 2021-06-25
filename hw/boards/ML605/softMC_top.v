@@ -533,7 +533,7 @@ module softMC_top #
 	.app_en(app_en),
 	.app_ack(app_ack),
 	.app_instr(app_instr), 
-	.iq_full(iq_full),
+	//.iq_full(iq_full),
 	.processing_iseq(processing_iseq),
 	
 	// DFI Control/Address

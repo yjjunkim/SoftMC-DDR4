@@ -4,24 +4,157 @@ Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto b05a631014
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-ERROR: [VRFC 10-3180] cannot find port 'rdback_fifo_empty' on this module [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:505]
-ERROR: [VRFC 10-3180] cannot find port 'rdback_data' on this module [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:504]
-ERROR: [VRFC 10-3180] cannot find port 'rdback_fifo_rden' on this module [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:503]
-ERROR: [VRFC 10-3180] cannot find port 'app_instr' on this module [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:501]
-ERROR: [VRFC 10-3180] cannot find port 'app_ack' on this module [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:500]
-ERROR: [VRFC 10-3180] cannot find port 'app_en' on this module [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:499]
-ERROR: [VRFC 10-3180] cannot find port 'processing_iseq' on this module [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:497]
-ERROR: [VRFC 10-3180] cannot find port 'iq_full' on this module [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:496]
-ERROR: [VRFC 10-3180] cannot find port 'dfi_init_complete' on this module [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:495]
-ERROR: [VRFC 10-3180] cannot find port 'ddr_dq' on this module [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:494]
-ERROR: [VRFC 10-3180] cannot find port 'ddr_dqs_n' on this module [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:493]
-ERROR: [VRFC 10-3180] cannot find port 'ddr_dqs_p' on this module [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:492]
-ERROR: [VRFC 10-3180] cannot find port 'ddr_dm' on this module [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:491]
-ERROR: [VRFC 10-3180] cannot find port 'ddr_reset_n' on this module [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:489]
-ERROR: [VRFC 10-3180] cannot find port 'ddr_odt' on this module [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:488]
-ERROR: [VRFC 10-3180] cannot find port 'ddr_cke' on this module [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:487]
-ERROR: [VRFC 10-3180] cannot find port 'ddr_cs_n' on this module [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:486]
-ERROR: [VRFC 10-3180] cannot find port 'ddr_we_n' on this module [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:485]
-ERROR: [VRFC 10-3180] cannot find port 'ddr_cas_n' on this module [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:484]
-INFO: [#UNDEF] Sorry, too many errors..
-ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named BM_CNT_WIDTH [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:450]
+WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named tPRDI [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:460]
+WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named tREFI [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:461]
+WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named tZQI [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:462]
+WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named ADDR_CMD_MODE [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:463]
+WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named ORDERING [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:464]
+WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named STARVE_LIMIT [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:465]
+WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named ADDR_WIDTH [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:466]
+WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named ECC [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:467]
+WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named ECC_TEST [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:468]
+WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named DATA_WIDTH [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:470]
+WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named PAYLOAD_WIDTH [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:471]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'c0_ddr4_ck_c' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:479]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'c0_ddr4_ck_t' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:480]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'c0_ddr4_adr' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:481]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'c0_ddr4_ba' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:482]
+WARNING: [VRFC 10-3091] actual bit length 256 differs from formal bit length 512 for port 'rdback_data' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:504]
+WARNING: [VRFC 10-3091] actual bit length 63 differs from formal bit length 64 for port 'wrDataMask' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_top.v:469]
+WARNING: [VRFC 10-3091] actual bit length 120 differs from formal bit length 136 for port 'mc_ADR' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_top.v:481]
+WARNING: [VRFC 10-3091] actual bit length 24 differs from formal bit length 16 for port 'mc_BA' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_top.v:482]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 5 for port 'winBuf' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_top.v:503]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 120 for port 'dfi_address' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_dispatcher.v:317]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 24 for port 'dfi_bank' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_dispatcher.v:318]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'dfi_cs_n' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_dispatcher.v:320]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'dm_tdqs' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:790]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 13 for port 'addr' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:792]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 16 for port 'dq' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:793]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'dqs' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:794]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'dqs_n' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:795]
+WARNING: [VRFC 10-3705] select index 1 into 'ddr3_cs_n_sdram' is out of bounds [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:525]
+WARNING: [VRFC 10-3705] select index 13 into 'addr' is out of bounds [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/xilinx_mig/user_design/sim/ddr3_model.v:1064]
+WARNING: [VRFC 10-3705] select index 13 into 'addr' is out of bounds [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/xilinx_mig/user_design/sim/ddr3_model.v:1153]
+WARNING: [VRFC 10-3705] select index 13 into 'addr' is out of bounds [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/xilinx_mig/user_design/sim/ddr3_model.v:1224]
+WARNING: [VRFC 10-3705] select index 13 into 'addr' is out of bounds [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/xilinx_mig/user_design/sim/ddr3_model.v:1246]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4398] File "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_cplx.sv" Line 855 : The System Verilog Assertion  will be ignored as it appears inside another process. This assertion is not yet supported.
+WARNING: [XSIM 43-4398] File "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_top.sv" Line 1812 : The System Verilog Assertion  will be ignored as it appears inside another process. This assertion is not yet supported.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.WireDelay(Delay_g=0.0,Delay_rd=0...
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.MMCME3_ADV(CLKFBOUT_MULT_F=13.0,...
+Compiling module xil_defaultlib.ddr4_v2_2_10_infrastructure(CLKI...
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.IBUFDS(IBUF_LOW_PWR="FALSE")
+Compiling module unisims_ver.PLLE3_ADV(CLKFBOUT_MULT=4,CLKFBO...
+Compiling module xil_defaultlib.ddr4_phy_v2_2_0_pll(BACKBONE_ROU...
+Compiling module unisims_ver.HPIO_VREF(VREF_CNTR="FABRIC_RANG...
+Compiling module unisims_ver.IOBUFE3_default
+Compiling module unisims_ver.IOBUFDS
+Compiling module xil_defaultlib.ddr4_phy_v2_2_0_iob_byte(IOBTYPE...
+Compiling module unisims_ver.OBUFDS
+Compiling module xil_defaultlib.ddr4_phy_v2_2_0_iob_byte(IOBTYPE...
+Compiling module xil_defaultlib.ddr4_phy_v2_2_0_iob_byte(IOBTYPE...
+Compiling module xil_defaultlib.ddr4_phy_v2_2_0_iob_byte(IOBTYPE...
+Compiling module xil_defaultlib.ddr4_phy_v2_2_0_iob(BYTES=10,IOB...
+Compiling module xil_defaultlib.ddr4_phy_v2_2_0_fifo_sv(DEPTH=16...
+Compiling module xil_defaultlib.ddr4_phy_v2_2_0_bitslice_behav(t...
+Compiling module xil_defaultlib.ddr4_phy_v2_2_0_xiphy_behav(tCK=...
+Compiling module xil_defaultlib.ddr4_0_phy_ddr4_default
+Compiling module xil_defaultlib.ddr4_0_phy
+Compiling module xil_defaultlib.ddr4_v2_2_10_cal_debug_microblaz...
+Compiling module xil_defaultlib.ddr4_v2_2_10_cal_cplx_data(DBYTE...
+Compiling module xil_defaultlib.ddr4_v2_2_10_cal_cplx(DBYTES=8,A...
+Compiling module xil_defaultlib.ddr4_v2_2_10_cal_mc_odt(ODTWR=16...
+Compiling module xil_defaultlib.ddr4_v2_2_10_cal_addr_decode(MEM...
+Compiling module xil_defaultlib.ddr4_v2_2_10_cal_config_rom(MEM0...
+Compiling module xil_defaultlib.ddr4_v2_2_10_chipscope_xsdb_slav...
+Compiling module xil_defaultlib.ddr4_v2_2_10_cal_sync(WIDTH=1)
+Compiling module xil_defaultlib.ddr4_v2_2_10_cal_sync(WIDTH=16)
+Compiling module xil_defaultlib.ddr4_v2_2_10_cal_sync(WIDTH=9)
+Compiling module xil_defaultlib.ddr4_v2_2_10_cal_xsdb_arbiter
+Compiling module xil_defaultlib.ddr4_v2_2_10_bram_tdp(INIT=2304'...
+Compiling module xil_defaultlib.ddr4_v2_2_10_cfg_mem_mod(SIZE=36...
+Compiling module xil_defaultlib.ddr4_v2_2_10_cal_xsdb_bram(SPREA...
+Compiling module xil_defaultlib.ddr4_v2_2_10_cal(ABITS=17,BGBITS...
+Compiling module xil_defaultlib.ddr4_v2_2_10_cal_rd_en(RL=32'b01...
+Compiling module xil_defaultlib.ddr4_v2_2_10_cal_read(DBYTES=8,R...
+Compiling module xil_defaultlib.ddr4_v2_2_10_cal_wr_bit
+Compiling module xil_defaultlib.ddr4_v2_2_10_cal_wr_byte_default
+Compiling module xil_defaultlib.ddr4_v2_2_10_cal_write(DBYTES=8,...
+Compiling module xil_defaultlib.ddr4_v2_2_10_cal_pi(DBYTES=8,RL=...
+Compiling module xil_defaultlib.ddr4_v2_2_10_cal_top(ABITS=17,BG...
+Compiling module unisims_ver.VCC
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.FDRE_default
+Compiling module unisims_ver.FDR
+Compiling module unisims_ver.FDSE_default
+Compiling module unisims_ver.FDS
+Compiling module unisims_ver.FD
+Compiling module unisims_ver.FDRE(INIT=1'b1)
+Compiling module unisims_ver.FD(INIT=1'b1)
+Compiling module unisims_ver.RAM32X1D
+Compiling module unisims_ver.FDE
+Compiling module unisims_ver.LUT6_2
+Compiling module unisims_ver.MUXCY
+Compiling module unisims_ver.MUXCY_L
+Compiling module unisims_ver.XORCY
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.MULT_AND
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.MUXF5
+Compiling module unisims_ver.SRL16E_default
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.FDSE(INIT=1'b0)
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module unisims_ver.MUXF7
+Compiling module unisims_ver.INV
+Compiling module unisims_ver.RB36_INTERNAL_VLOG(READ_WIDTH_A=...
+Compiling module unisims_ver.RAMB36E1(READ_WIDTH_A=2,READ_WID...
+Compiling module unisims_ver.RAMB36(READ_WIDTH_A=2,READ_WIDTH...
+Compiling module xil_defaultlib.microblaze_mcs
+Compiling module xil_defaultlib.ddr4_0_microblaze_mcs
+Compiling module xil_defaultlib.ddr4_0_ddr4_cal_riu(TCQ=100.0)
+Compiling module xil_defaultlib.ddr4_v2_2_10_cal_sync(WIDTH=1,TC...
+Compiling module xil_defaultlib.ddr4_v2_2_10_cal_sync(WIDTH=32,T...
+Compiling module xil_defaultlib.ddr4_v2_2_10_cal_sync(WIDTH=20,T...
+Compiling module xil_defaultlib.ddr4_0_ddr4_default
+Compiling module xil_defaultlib.ddr4_0
+Compiling module xil_defaultlib.maint_ctrl_default
+Compiling module xil_defaultlib.periodic_rd_ctrl_default
+Compiling module xil_defaultlib.zq_calib_ctrl_default
+Compiling module xil_defaultlib.autoref_ctrl
+Compiling module xil_defaultlib.maint_ctrl_top
+Compiling module xil_defaultlib.maint_handler
+Compiling module xil_defaultlib.autoref_config
+Compiling module xil_defaultlib.instr_receiver
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_bhv_ver_s...
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_bhv_ver_p...
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_CONV_VER(...
+Compiling module fifo_generator_v13_2_5.fifo_generator_vlog_beh(C_COMMON...
+Compiling module xil_defaultlib.instr_fifo
+Compiling module xil_defaultlib.pipe_reg(WIDTH=32)
+Compiling module xil_defaultlib.instr_decoder_default
+Compiling module xil_defaultlib.instr_dispatcher
+Compiling module xil_defaultlib.iseq_dispatcher
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_bhv_ver_s...
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_bhv_ver_p...
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_CONV_VER(...
+Compiling module fifo_generator_v13_2_5.fifo_generator_vlog_beh(C_COMMON...
+Compiling module xil_defaultlib.rdback_fifo
+Compiling module xil_defaultlib.read_capturer
+Compiling module xil_defaultlib.softMC
+Compiling module xil_defaultlib.softMC_top(REFCLK_FREQ=200,BANK_...
+Compiling module xil_defaultlib.ddr3_model_default
+Compiling module xil_defaultlib.tb_softMC_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_softMC_top_behav

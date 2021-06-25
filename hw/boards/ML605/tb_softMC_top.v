@@ -470,39 +470,39 @@ module tb_softMC_top;
      .DATA_WIDTH                (DATA_WIDTH),
      .PAYLOAD_WIDTH             (PAYLOAD_WIDTH)
      ) uut (
-		.sys_clk_p(sys_clk_p), 
-		.sys_clk_n(sys_clk_n), 
+		.c0_sys_clk_p(sys_clk_p), 
+		.c0_sys_clk_n(sys_clk_n), 
 		.clk_ref_p(clk_ref_p), 
 		.clk_ref_n(clk_ref_n), 
 		.sys_rst(sys_rst), 
-		.sys_reset_n(1'b1),
-		.ddr_ck_p(ddr3_ck_p_fpga), 
-		.ddr_ck_n(ddr3_ck_n_fpga), 
-		.ddr_addr(ddr3_addr_fpga), 
-		.ddr_ba(ddr3_ba_fpga), 
-		.ddr_ras_n(ddr3_ras_n_fpga), 
-		.ddr_cas_n(ddr3_cas_n_fpga), 
-		.ddr_we_n(ddr3_we_n_fpga), 
-		.ddr_cs_n(ddr3_cs_n_fpga), 
-		.ddr_cke(ddr3_cke_fpga), 
-		.ddr_odt(ddr3_odt_fpga), 
-		.ddr_reset_n(ddr3_reset_n), 
+		//.c0_ddr4_reset_n(1'b1),
+		.c0_ddr4_ck_c(ddr3_ck_p_fpga),  // 0625 c? t?
+		.c0_ddr4_ck_t(ddr3_ck_n_fpga), 
+		.c0_ddr4_adr(ddr3_addr_fpga), 
+		.c0_ddr4_ba(ddr3_ba_fpga), 
+		//.ddr_ras_n(ddr3_ras_n_fpga), 
+		//.ddr_cas_n(ddr3_cas_n_fpga), 
+		//.ddr_we_n(ddr3_we_n_fpga), 
+		.c0_ddr4_cs_n(ddr3_cs_n_fpga), 
+		.c0_ddr4_cke(ddr3_cke_fpga), 
+		.c0_ddr4_odt(ddr3_odt_fpga), 
+		.c0_ddr4_reset_n(ddr3_reset_n), 
 		//.ddr_parity(), 
-		.ddr_dm(), 
-		.ddr_dqs_p(ddr3_dqs_p_fpga), 
-		.ddr_dqs_n(ddr3_dqs_n_fpga), 
-		.ddr_dq(ddr3_dq_fpga),
-		.dfi_init_complete(phy_init_done),
-		.iq_full(iq_full),
-		.processing_iseq(processing_iseq),
+		.c0_ddr4_dm_dbi_n(), 
+		.c0_ddr4_dqs_c(ddr3_dqs_p_fpga), 
+		.c0_ddr4_dqs_t(ddr3_dqs_n_fpga), 
+		.c0_ddr4_dq(ddr3_dq_fpga),
+		.c0_init_calib_complete(phy_init_done),
+		//.iq_full(iq_full),
+		//.processing_iseq(processing_iseq),
 		
 		.app_en(app_en),
 		.app_ack(app_ack),
 		.app_instr(app_instr),
 		
 		.rdback_fifo_rden(rdback_fifo_rden),
-		.rdback_data(rdback_data),
-		.rdback_fifo_empty(rdback_fifo_empty)
+		.rdback_data(rdback_data)
+		//.rdback_fifo_empty(rdback_fifo_empty)
 	);
 
 

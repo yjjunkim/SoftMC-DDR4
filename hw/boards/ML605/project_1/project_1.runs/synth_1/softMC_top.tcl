@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/project_1/project_1.runs/synth_1/softMC_top.tcl"
+  variable script "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/synth_1/softMC_top.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,7 +70,8 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param synth.incrementalSynthesisCache C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/project_1/.Xil/Vivado-32916-DESKTOP-ILOVGO9/incrSyn
+set_param synth.incrementalSynthesisCache C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/.Xil/Vivado-16164-DESKTOP-ILOVGO9/incrSyn
+set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
 set_msg_config  -id {[BD 41-1306]}  -suppress 
@@ -82,151 +83,151 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/project_1/project_1.cache/wt [current_project]
-set_property parent.project_path C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/project_1/project_1.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.cache/wt [current_project]
+set_property parent.project_path C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo c:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/project_1/project_1.cache/ip [current_project]
+set_property ip_output_repo c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog {
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/softMC.inc
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/common_functions.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/xilinx_mig/user_design/sim/ddr3_model_parameters.vh
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC.inc
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/common_functions.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/xilinx_mig/user_design/sim/ddr3_model_parameters.vh
 }
-set_property file_type "Verilog Header" [get_files C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/softMC.inc]
-set_property file_type "Verilog Header" [get_files C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/common_functions.v]
+set_property file_type "Verilog Header" [get_files C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC.inc]
+set_property file_type "Verilog Header" [get_files C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/common_functions.v]
 read_verilog -library xil_defaultlib {
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/axi_basic_tx_thrtl_ctl.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/axi_basic_tx_pipeline.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/pcie_pipe_misc_v6.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/axi_basic_tx.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/pcie_reset_delay_v6.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/gtx_drp_chanalign_fix_3752_v6.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/chnl_tester.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/gtx_rx_valid_filter_v6.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/gtx_tx_sync_rate_v6.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/gtx_wrapper_v6.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/pcie_upconfig_fix_3451_v6.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/pcie_clocking_v6.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/xilinx_mig/user_design/sim/ddr3_model.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/pcie_pipe_lane_v6.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/axi_basic_rx_null_gen.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/axi_basic_rx_pipeline.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/axi_basic_rx.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/axi_basic_top.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/ff.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/syncff.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/ram_2clk_1w_1r.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/ram_1clk_1w_1r.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/sync_fifo.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/cross_domain_signal.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/async_fifo.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/tx_port_writer.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/tx_port_monitor_64.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/tx_port_monitor_32.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/tx_port_monitor_128.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/tx_port_channel_gate_64.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/tx_port_channel_gate_32.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/tx_port_channel_gate_128.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/tx_port_buffer_64.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/tx_port_buffer_32.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/tx_port_buffer_128.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/tx_engine_selector.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/tx_engine_formatter_64.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/tx_engine_formatter_32.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/tx_engine_formatter_128.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/sg_list_requester.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/sg_list_reader_64.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/sg_list_reader_32.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/sg_list_reader_128.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/rx_port_requester_mux.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/rx_port_reader.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/rx_port_channel_gate.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/reorder_queue_output.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/reorder_queue_input.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/fifo_packer_64.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/fifo_packer_32.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/fifo_packer_128.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/async_fifo_fwft.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/tx_qword_aligner_64.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/tx_qword_aligner_128.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/tx_port_64.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/tx_port_32.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/tx_port_128.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/tx_engine_upper_64.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/tx_engine_upper_32.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/tx_engine_upper_128.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/tx_engine_lower_64.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/tx_engine_lower_32.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/tx_engine_lower_128.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/rx_port_64.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/rx_port_32.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/rx_port_128.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/rx_engine_req.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/reorder_queue.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/interrupt_controller.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/tx_engine_64.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/tx_engine_32.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/tx_engine_128.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/translation_layer_64.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/translation_layer_32.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/translation_layer_128.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/rx_engine_64.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/rx_engine_32.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/rx_engine_128.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/recv_credit_flow_ctrl.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/interrupt.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/demux_1_to_n.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/channel_64.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/channel_32.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/channel_128.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/translation_layer.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/riffa_endpoint_64.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/riffa_endpoint_32.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/ipcore_dir/riffa/riffa_endpoint_128.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/instr_decoder.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/softMC_pcie_app.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/pipe_reg.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/instr_dispatcher.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/read_capturer.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/maint_handler.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/maint_ctrl.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/iseq_dispatcher.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/instr_receiver.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/autoref_config.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/softMC.v
-  C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/softMC_top.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/axi_basic_tx_thrtl_ctl.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/axi_basic_tx_pipeline.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/pcie_pipe_misc_v6.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/axi_basic_tx.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/pcie_reset_delay_v6.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/gtx_drp_chanalign_fix_3752_v6.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/chnl_tester.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/gtx_rx_valid_filter_v6.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/gtx_tx_sync_rate_v6.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/gtx_wrapper_v6.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/pcie_upconfig_fix_3451_v6.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/pcie_clocking_v6.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/xilinx_mig/user_design/sim/ddr3_model.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/pcie_pipe_lane_v6.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/axi_basic_rx_null_gen.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/axi_basic_rx_pipeline.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/axi_basic_rx.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/axi_basic_top.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/ff.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/syncff.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/ram_2clk_1w_1r.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/ram_1clk_1w_1r.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/sync_fifo.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/cross_domain_signal.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/async_fifo.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/tx_port_writer.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/tx_port_monitor_64.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/tx_port_monitor_32.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/tx_port_monitor_128.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/tx_port_channel_gate_64.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/tx_port_channel_gate_32.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/tx_port_channel_gate_128.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/tx_port_buffer_64.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/tx_port_buffer_32.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/tx_port_buffer_128.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/tx_engine_selector.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/tx_engine_formatter_64.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/tx_engine_formatter_32.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/tx_engine_formatter_128.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/sg_list_requester.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/sg_list_reader_64.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/sg_list_reader_32.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/sg_list_reader_128.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/rx_port_requester_mux.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/rx_port_reader.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/rx_port_channel_gate.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/reorder_queue_output.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/reorder_queue_input.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/fifo_packer_64.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/fifo_packer_32.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/fifo_packer_128.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/async_fifo_fwft.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/tx_qword_aligner_64.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/tx_qword_aligner_128.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/tx_port_64.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/tx_port_32.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/tx_port_128.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/tx_engine_upper_64.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/tx_engine_upper_32.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/tx_engine_upper_128.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/tx_engine_lower_64.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/tx_engine_lower_32.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/tx_engine_lower_128.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/rx_port_64.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/rx_port_32.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/rx_port_128.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/rx_engine_req.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/reorder_queue.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/interrupt_controller.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/tx_engine_64.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/tx_engine_32.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/tx_engine_128.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/translation_layer_64.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/translation_layer_32.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/translation_layer_128.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/rx_engine_64.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/rx_engine_32.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/rx_engine_128.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/recv_credit_flow_ctrl.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/interrupt.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/demux_1_to_n.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/channel_64.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/channel_32.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/channel_128.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/translation_layer.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/riffa_endpoint_64.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/riffa_endpoint_32.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/riffa_endpoint_128.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_pcie_app.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/pipe_reg.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_dispatcher.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/read_capturer.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_handler.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_ctrl.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/iseq_dispatcher.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_receiver.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/autoref_config.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC.v
+  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_top.v
 }
-read_ip -quiet C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ddr4_0.xci
-set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/par/ddr4_0_phy_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_0/bd_9054_microblaze_I_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_0/bd_9054_microblaze_I_0_ooc_debug.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_1/bd_9054_rst_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_1/bd_9054_rst_0_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_2/bd_9054_ilmb_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_3/bd_9054_dlmb_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_6/bd_9054_lmb_bram_I_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_9/bd_9054_second_lmb_bram_I_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_10/bd_9054_iomodule_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/bd_9054_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_0/ddr4_0_microblaze_mcs_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_0/ddr4_0_microblaze_mcs_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ddr4_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/par/ddr4_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_0/data/mb_bootloop_le.elf]
-set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_0/mb_bootloop_le.elf]
-set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/sw/calibration_0/Debug/calibration_ddr.elf]
+read_ip -quiet C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ddr4_0.xci
+set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/par/ddr4_0_phy_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_0/bd_9054_microblaze_I_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_0/bd_9054_microblaze_I_0_ooc_debug.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_1/bd_9054_rst_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_1/bd_9054_rst_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_2/bd_9054_ilmb_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_3/bd_9054_dlmb_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_6/bd_9054_lmb_bram_I_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_9/bd_9054_second_lmb_bram_I_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_10/bd_9054_iomodule_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/bd_9054_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_0/ddr4_0_microblaze_mcs_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_0/ddr4_0_microblaze_mcs_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ddr4_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/par/ddr4_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_0/data/mb_bootloop_le.elf]
+set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_0/mb_bootloop_le.elf]
+set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/sw/calibration_0/Debug/calibration_ddr.elf]
 
-read_ip -quiet C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/instr_fifo/instr_fifo.xci
-set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/instr_fifo/instr_fifo.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/instr_fifo/instr_fifo_ooc.xdc]
+read_ip -quiet C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/instr_fifo/instr_fifo.xci
+set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/instr_fifo/instr_fifo.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/instr_fifo/instr_fifo_ooc.xdc]
 
-read_ip -quiet C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/rdback_fifo/rdback_fifo.xci
-set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/rdback_fifo/rdback_fifo.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/rdback_fifo/rdback_fifo_ooc.xdc]
+read_ip -quiet C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/rdback_fifo/rdback_fifo.xci
+set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/rdback_fifo/rdback_fifo.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/rdback_fifo/rdback_fifo_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being

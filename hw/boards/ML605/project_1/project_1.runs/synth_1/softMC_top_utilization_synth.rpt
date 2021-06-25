@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Wed Jun 23 18:32:44 2021
+| Date         : Fri Jun 25 18:21:37 2021
 | Host         : DESKTOP-ILOVGO9 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file softMC_top_utilization_synth.rpt -pb softMC_top_utilization_synth.pb
 | Design       : softMC_top
@@ -31,8 +31,8 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| CLB LUTs*               |  478 |     0 |    537600 |  0.09 |
-|   LUT as Logic          |  478 |     0 |    537600 |  0.09 |
+| CLB LUTs*               |  468 |     0 |    537600 |  0.09 |
+|   LUT as Logic          |  468 |     0 |    537600 |  0.09 |
 |   LUT as Memory         |    0 |     0 |     76800 |  0.00 |
 | CLB Registers           |  380 |     0 |   1075200 |  0.04 |
 |   Register as Flip Flop |  380 |     0 |   1075200 |  0.04 |
@@ -157,12 +157,12 @@ Table of Contents
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
 | FDRE     |  371 |            Register |
-| LUT6     |  176 |                 CLB |
-| LUT3     |  158 |                 CLB |
-| LUT4     |   76 |                 CLB |
-| LUT5     |   69 |                 CLB |
-| LUT1     |   25 |                 CLB |
-| LUT2     |   21 |                 CLB |
+| LUT6     |  178 |                 CLB |
+| LUT3     |  151 |                 CLB |
+| LUT4     |   95 |                 CLB |
+| LUT5     |   40 |                 CLB |
+| LUT1     |   24 |                 CLB |
+| LUT2     |   23 |                 CLB |
 | OBUFT    |   17 |                 I/O |
 | FDSE     |    9 |            Register |
 | CARRY8   |    7 |                 CLB |
