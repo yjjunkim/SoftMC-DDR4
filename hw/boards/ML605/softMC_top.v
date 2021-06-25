@@ -25,12 +25,12 @@ module softMC_top #
     parameter COL_WIDTH       = 10,      // column address width
     parameter nCS_PER_RANK    = 1,       // # of unique CS outputs per rank
     parameter DQ_CNT_WIDTH    = 6,       // = ceil(log2(DQ_WIDTH))
-    parameter DQ_WIDTH        = 32,      // # of DQ (data)
+    parameter DQ_WIDTH        = 64,      // # of DQ (data)
     parameter DM_WIDTH        = 4,       // # of DM (data mask)
     parameter DQS_CNT_WIDTH   = 3,       // = ceil(log2(DQS_WIDTH))
     parameter DQS_WIDTH       = 8,       // # of DQS (strobe)
     parameter DRAM_WIDTH      = 8,       // # of DQ per DQS
-    parameter ROW_WIDTH       = 16,      // DRAM address bus width
+    parameter ROW_WIDTH       = 17,      // DRAM address bus width
     parameter RANK_WIDTH      = 1,       // log2(CS_WIDTH)
     parameter CS_WIDTH        = 1,       // # of DRAM ranks
     parameter CKE_WIDTH       = 1,       // # of cke outputs 
@@ -166,8 +166,9 @@ module softMC_top #
 	//Data read back Interface
 	//output rdback_fifo_empty,
 	input rdback_fifo_rden,
-	output[DQ_WIDTH*4 - 1:0] rdback_data
-
+	
+	//output[DQ_WIDTH*4 - 1:0] rdback_data
+    output[511:0] rdback_data
 	`endif //SIM
     );
 	 
@@ -516,7 +517,10 @@ module softMC_top #
 	
 	//Data read back Interface
 	wire rdback_fifo_rden;
-	wire[DQ_WIDTH*4 - 1:0] rdback_data;
+	//wire[DQ_WIDTH*4 - 1:0] rdback_data;
+	//juh rdback fifo -> 512
+	wire[511:0] rdback_data;
+	
 	`endif //SIM
 	
 	

@@ -16,10 +16,12 @@ module read_capturer #(parameter DQ_WIDTH = 64) (
 	input rdback_fifo_almost_full,
 	input rdback_fifo_full,
 	output rdback_fifo_wren,
-	output[4*DQ_WIDTH-1:0] rdback_fifo_wrdata
+	//output[4*DQ_WIDTH-1:0] rdback_fifo_wrdata
+	output[511:0] rdback_fifo_wrdata
 );
 
-	reg[4*DQ_WIDTH-1:0] rd_data_r, rd_data_r2;
+	//reg[4*DQ_WIDTH-1:0] rd_data_r, rd_data_r2;
+	reg[511:0] rd_data_r, rd_data_r2;
 	reg rd_data_en_r, rd_data_en_even_r, rd_data_en_odd_r;
 	reg rdback_fifo_full_r;
 	

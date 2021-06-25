@@ -72,13 +72,13 @@ module rdback_fifo (
 input wire clk;
 input wire srst;
 (* X_INTERFACE_INFO = "xilinx.com:interface:fifo_write:1.0 FIFO_WRITE WR_DATA" *)
-input wire [255 : 0] din;
+input wire [511 : 0] din;
 (* X_INTERFACE_INFO = "xilinx.com:interface:fifo_write:1.0 FIFO_WRITE WR_EN" *)
 input wire wr_en;
 (* X_INTERFACE_INFO = "xilinx.com:interface:fifo_read:1.0 FIFO_READ RD_EN" *)
 input wire rd_en;
 (* X_INTERFACE_INFO = "xilinx.com:interface:fifo_read:1.0 FIFO_READ RD_DATA" *)
-output wire [255 : 0] dout;
+output wire [511 : 0] dout;
 (* X_INTERFACE_INFO = "xilinx.com:interface:fifo_write:1.0 FIFO_WRITE FULL" *)
 output wire full;
 (* X_INTERFACE_INFO = "xilinx.com:interface:fifo_write:1.0 FIFO_WRITE ALMOST_FULL" *)
@@ -94,9 +94,9 @@ output wire rd_rst_busy;
     .C_COUNT_TYPE(0),
     .C_DATA_COUNT_WIDTH(11),
     .C_DEFAULT_VALUE("BlankString"),
-    .C_DIN_WIDTH(256),
+    .C_DIN_WIDTH(512),
     .C_DOUT_RST_VAL("0"),
-    .C_DOUT_WIDTH(256),
+    .C_DOUT_WIDTH(512),
     .C_ENABLE_RLOCS(0),
     .C_FAMILY("virtexu"),
     .C_FULL_FLAGS_RST_VAL(0),

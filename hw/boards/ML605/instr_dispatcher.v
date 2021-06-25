@@ -23,15 +23,15 @@ module instr_dispatcher #(parameter ROW_WIDTH = 15, BANK_WIDTH = 3, CKE_WIDTH = 
 	//DFI Interface
 	// DFI Control/Address
 	input 											dfi_ready,
-	output[ROW_WIDTH-1:0]              dfi_address0,
+	output[ROW_WIDTH*8-1:0]              dfi_address0, // *8bit
 	output[ROW_WIDTH-1:0]              dfi_address1,
-	output[BANK_WIDTH-1:0]             dfi_bank0,
+	output[BANK_WIDTH*8-1:0]             dfi_bank0,    // *8bit
 	output[BANK_WIDTH-1:0]             dfi_bank1,
-	output									  dfi_cke0,
+	output [CKE_WIDTH*8-1:0]				  dfi_cke0,    // *8bit
 	output 									  dfi_cke1,
 	output									  dfi_cas_n0,
 	output										dfi_cas_n1,
-	output[CS_WIDTH*nCS_PER_RANK-1:0]  dfi_cs_n0,
+	output[7:0]  dfi_cs_n0,        // *8bit
 	output[CS_WIDTH*nCS_PER_RANK-1:0]  dfi_cs_n1,
 	output[7:0]  dfi_odt0, // *8bit
 	output[CS_WIDTH*nCS_PER_RANK-1:0]  dfi_odt1,
@@ -41,7 +41,8 @@ module instr_dispatcher #(parameter ROW_WIDTH = 15, BANK_WIDTH = 3, CKE_WIDTH = 
 	output										dfi_we_n1,
 	// DFI Write
 	output reg                             dfi_wrdata_en,
-	output [4*DQ_WIDTH-1:0]             dfi_wrdata,
+	//output [4*DQ_WIDTH-1:0]             dfi_wrdata,    // *8bit
+	output [511:0]             dfi_wrdata,
 	output [4*(DQ_WIDTH/8)-1:0]         dfi_wrdata_mask,
 	// DFI Read
 	output reg                             dfi_rddata_en,
@@ -322,7 +323,11 @@ module instr_dispatcher #(parameter ROW_WIDTH = 15, BANK_WIDTH = 3, CKE_WIDTH = 
 	);
 	
 	assign dfi_wrdata_mask = 0;
-	assign dfi_wrdata = dfi_cas_n0 ? {4*(DQ_WIDTH/8){write_burst_data_r}} : {4*(DQ_WIDTH/8){write_burst_data_ns}};
+	//assign dfi_wrdata = dfi_cas_n0 ? {8*(DQ_WIDTH/8){write_burst_data_r}} : {8*(DQ_WIDTH/8){write_burst_data_ns}};
+	//assign dfi_wrdata = dfi_cas_n0 ? {8*(DQ_WIDTH/8){write_burst_data_r}} : {8*(DQ_WIDTH/8){write_burst_data_r}};
+	//jun : wrData burstlength 8
+	//assign dfi_wrdata = {8*(DQ_WIDTH/8){write_burst_data_r}};
+	assign dfi_wrdata = {64{write_burst_data_r}};
 	
 	always@(posedge clk) begin
 		pr_rd_ack_r <= pr_rd_ack_ns;
@@ -377,7 +382,8 @@ module instr_dispatcher #(parameter ROW_WIDTH = 15, BANK_WIDTH = 3, CKE_WIDTH = 
 	end
 	// jun odt ¼öÁ¤
 	//assign dfi_odt0 = bus_write_r;
-	assign dfi_odt0 = {6'b000000, bus_write_r, bus_write_r};
+	assign dfi_odt0 = {{6{1'b0}},bus_write_r, bus_write_r};
+	//assign dfi_odt0 = {8'b000000};
 	assign dfi_odt1 = bus_write_r;
 	
 	assign dfi_cke0 = cke0_r;

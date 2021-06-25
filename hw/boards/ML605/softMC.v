@@ -61,7 +61,7 @@ module softMC #(parameter TCQ = 100, tCK = 2500, nCK_PER_CLK = 2, RANK_WIDTH = 1
 	//Data read back Interface
 	output rdback_fifo_empty,
 	input rdback_fifo_rden,
-	output[DQ_WIDTH*4 - 1:0] rdback_data
+	output[DQ_WIDTH*8 - 1:0] rdback_data
 );
 	 
 	 //DFI constants
@@ -257,7 +257,9 @@ module softMC #(parameter TCQ = 100, tCK = 2500, nCK_PER_CLK = 2, RANK_WIDTH = 1
 	assign iq_full = instr0_fifo_full | instr1_fifo_full;
 	assign processing_iseq = dispatcher_busy;
 	
-	wire[DQ_WIDTH*4 - 1: 0] rdback_fifo_wrdata, rdback_fifo_out;
+	//wire[DQ_WIDTH*4 - 1: 0] rdback_fifo_wrdata, rdback_fifo_out;
+	//jun rdback data -> 512
+	wire[511: 0] rdback_fifo_wrdata, rdback_fifo_out;
 	wire rdback_fifo_full, rdback_fifo_almost_full;
 	wire rdback_fifo_wren;
 	

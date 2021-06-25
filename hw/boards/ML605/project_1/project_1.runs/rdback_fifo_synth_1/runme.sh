@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/project_1/project_1.runs/rdback_fifo_synth_1'
+HD_PWD='C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/rdback_fifo_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

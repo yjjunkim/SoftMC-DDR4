@@ -24,6 +24,7 @@ module instr_decoder #(parameter ROW_WIDTH = 15, BANK_WIDTH = 3, CS_WIDTH = 1)(
 	localparam HIGH = 1'b1;
     // 6'b1 concat : jun
     localparam tmp_slot = {ROW_WIDTH*8{1'b1}};
+    reg [2:0] addr_add;
 	always@* begin
 		dfi_address = {ROW_WIDTH*8{1'bx}};
 		dfi_bank = {BANK_WIDTH*8{1'bx}};
@@ -35,11 +36,13 @@ module instr_decoder #(parameter ROW_WIDTH = 15, BANK_WIDTH = 3, CS_WIDTH = 1)(
 		// jun
 		mc_ACT_n = {8{HIGH}};
 		if(en) begin // host 에서 오는 instr 사용
-			dfi_address = {{ROW_WIDTH*6{1'b1}}, instr[ROW_WIDTH - 1:0] ,instr[ROW_WIDTH - 1:0]}; // MSB *6 ROWWIDTH만큼  1으로 채우기, INSTR 2번 COPY
+	        addr_add = {instr[`RAS_OFFSET], instr[`CAS_OFFSET], instr[`WE_OFFSET]};
+	        //dfi_address = {{ROW_WIDTH*6{1'b1}}, ,{2{instr[ROW_WIDTH - 1:0]}}}; // MSB *6 ROWWIDTH만큼  1으로 채우기, , INSTR 2번 COPY
+			dfi_address = {{ROW_WIDTH*6{1'b1}}, addr_add,instr[ROW_WIDTH - 1:0] ,addr_add ,instr[ROW_WIDTH - 1:0]}; // MSB *6 ROWWIDTH만큼  1으로 채우기, , INSTR 2번 COPY+(RAS,CAS,WE)
 			dfi_bank = {{BANK_WIDTH*6{1'b1}}, instr[`ROW_OFFSET +: BANK_WIDTH],instr[`ROW_OFFSET +: BANK_WIDTH]}; // MSB *6 BANKWIDTH만큼 1으로 채우기, INSTR 2번 COPY
 			// bg, TOP에서 LST 2bit 0으로 TIE 해두었음 
-			// act
-			// odt
+			// act 
+			// odt "instr_dispatcher"에서 assign
 			dfi_we_n = instr[`WE_OFFSET];
 			dfi_cas_n = instr[`CAS_OFFSET];
 			dfi_ras_n = instr[`RAS_OFFSET];
@@ -47,6 +50,7 @@ module instr_decoder #(parameter ROW_WIDTH = 15, BANK_WIDTH = 3, CS_WIDTH = 1)(
 			// jun L H H -> ACT_n => LOW
 			mc_ACT_n = ((~dfi_ras_n)&(dfi_cas_n)&(dfi_we_n)) ? 8'b11111100 : 8'b11111111;
 			
+			//jun : RdCAS, WrCAS
 			mcRdCAS = ((dfi_ras_n)&(~dfi_cas_n)&(dfi_we_n)) ? 1'b1 : 1'b0;
 			mcWrCAS = ((dfi_ras_n)&(~dfi_cas_n)&(~dfi_we_n)) ? 1'b1 : 1'b0;
 			
