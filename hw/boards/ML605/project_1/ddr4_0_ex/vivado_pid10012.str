@@ -94,3 +94,190 @@ Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
 // TclEventType: PROJECT_DASHBOARD_GADGET_NEW
 // TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 154 MB (+30266kb) [00:00:09]
+// WARNING: HEventQueue.dispatchEvent() is taking  2108 ms.
+// Tcl Message: open_project C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/ddr4_0_ex/ddr4_0_ex.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,112 MB. GUI used memory: 86 MB. Current time: 7/1/21, 5:16:48 PM KST
+// Tcl Message: open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 1111.922 ; gain = 0.000 
+// Project name: ddr4_0_ex; location: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/ddr4_0_ex; part: xcvu095-ffvb1760-1-i
+dismissDialog("Open Project"); // bz
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 168 MB (+6059kb) [00:00:44]
+// Elapsed time: 32 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, example_top (example_top.sv)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, example_top (example_top.sv)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, example_top (example_top.sv), u_example_tb_phy : example_tb_phy (example_tb_phy.sv)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, example_top (example_top.sv), u_example_tb_phy : example_tb_phy (example_tb_phy.sv)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, example_top (example_top.sv), u_example_tb_phy : example_tb_phy (example_tb_phy.sv)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, example_top (example_top.sv), u_example_tb_phy : example_tb_phy (example_tb_phy.sv)]", 3, true, false, false, false, false, true); // D - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 5); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 6); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, sim_tb_top (sim_tb_top.sv)]", 9, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, sim_tb_top (sim_tb_top.sv), mem_model_x16.mem.tranDQ3[0].tranDQ13[0].tranDQ2[3].bidiDQ : short (sim_tb_top.sv)]", 18, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("sim_tb_top.sv", 631, 361); // bP
+selectCodeEditor("sim_tb_top.sv", 166, 1072); // bP
+// [GUI Memory]: 183 MB (+7572kb) [00:01:13]
+typeControlKey((HResource) null, "sim_tb_top.sv", 'c'); // bP
+// Elapsed time: 27 seconds
+selectCodeEditor("sim_tb_top.sv", 273, 609); // bP
+selectCodeEditor("sim_tb_top.sv", 332, 540); // bP
+selectCodeEditor("sim_tb_top.sv", 363, 509); // bP
+selectCodeEditor("sim_tb_top.sv", 363, 509, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("sim_tb_top.sv", 685, 511); // bP
+selectCodeEditor("sim_tb_top.sv", 787, 520); // bP
+// Elapsed time: 24 seconds
+selectCodeEditor("sim_tb_top.sv", 771, 459); // bP
+selectCodeEditor("sim_tb_top.sv", 770, 458, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("sim_tb_top.sv", 770, 459); // bP
+selectCodeEditor("sim_tb_top.sv", 770, 459, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "sim_tb_top.sv", 'c'); // bP
+// Elapsed time: 11 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "NUM_PHYSICAL_PARTS"); // l
+selectCodeEditor("sim_tb_top.sv", 646, 542); // bP
+selectCodeEditor("sim_tb_top.sv", 657, 558); // bP
+selectCodeEditor("sim_tb_top.sv", 643, 553); // bP
+typeControlKey((HResource) null, "sim_tb_top.sv", 'c'); // bP
+selectCodeEditor("sim_tb_top.sv", 553, 466); // bP
+typeControlKey((HResource) null, "sim_tb_top.sv", 'c'); // bP
+// [GUI Memory]: 195 MB (+2067kb) [00:02:54]
+// Elapsed time: 70 seconds
+selectCodeEditor("sim_tb_top.sv", 238, 493); // bP
+// Elapsed time: 16 seconds
+selectCodeEditor("sim_tb_top.sv", 498, 527); // bP
+selectCodeEditor("sim_tb_top.sv", 527, 560); // bP
+// Elapsed time: 14 seconds
+selectCodeEditor("sim_tb_top.sv", 137, 754); // bP
+typeControlKey((HResource) null, "sim_tb_top.sv", 'c'); // bP
+// Elapsed time: 10 seconds
+selectCodeEditor("sim_tb_top.sv", 116, 808); // bP
+typeControlKey((HResource) null, "sim_tb_top.sv", 'c'); // bP
+// Elapsed time: 11 seconds
+selectCodeEditor("sim_tb_top.sv", 1049, 623); // bP
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "CONFIGURED_DENSITY"); // l
+selectCodeEditor("sim_tb_top.sv", 602, 369); // bP
+typeControlKey((HResource) null, "sim_tb_top.sv", 'c'); // bP
+// Elapsed time: 26 seconds
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 2); // i
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation-Only Sources, sim_1, SystemVerilog, xil_defaultlib, arch_package.sv]", 24, false); // D
+// Elapsed time: 161 seconds
+selectCodeEditor("sim_tb_top.sv", 430, 882); // bP
+selectCodeEditor("sim_tb_top.sv", 444, 945); // bP
+selectCodeEditor("sim_tb_top.sv", 433, 934); // bP
+selectCodeEditor("sim_tb_top.sv", 434, 936, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "sim_tb_top.sv", 'c'); // bP
+// Elapsed time: 221 seconds
+selectCodeEditor("sim_tb_top.sv", 660, 726); // bP
+selectCodeEditor("sim_tb_top.sv", 393, 665); // bP
+selectCodeEditor("sim_tb_top.sv", 389, 535); // bP
+selectCodeEditor("sim_tb_top.sv", 407, 418); // bP
+selectCodeEditor("sim_tb_top.sv", 417, 373); // bP
+selectCodeEditor("sim_tb_top.sv", 388, 636); // bP
+selectCodeEditor("sim_tb_top.sv", 365, 723); // bP
+selectCodeEditor("sim_tb_top.sv", 477, 784); // bP
+selectCodeEditor("sim_tb_top.sv", 468, 829); // bP
+selectCodeEditor("sim_tb_top.sv", 460, 849); // bP
+typeControlKey((HResource) null, "sim_tb_top.sv", 'c'); // bP
+// Elapsed time: 16 seconds
+selectCodeEditor("sim_tb_top.sv", 484, 888); // bP
+selectCodeEditor("sim_tb_top.sv", 411, 888); // bP
+typeControlKey((HResource) null, "sim_tb_top.sv", 'c'); // bP
+selectCodeEditor("sim_tb_top.sv", 417, 954); // bP
+selectCodeEditor("sim_tb_top.sv", 420, 949); // bP
+typeControlKey((HResource) null, "sim_tb_top.sv", 'c'); // bP
+selectCodeEditor("sim_tb_top.sv", 548, 963); // bP
+// Elapsed time: 12 seconds
+selectCodeEditor("sim_tb_top.sv", 992, 444); // bP
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "c0_ddr4_bg_sdram"); // l
+selectCodeEditor("sim_tb_top.sv", 551, 508); // bP
+selectCodeEditor("sim_tb_top.sv", 507, 520); // bP
+selectCodeEditor("sim_tb_top.sv", 526, 520); // bP
+typeControlKey((HResource) null, "sim_tb_top.sv", 'c'); // bP
+// Elapsed time: 21 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ADDR_WIDTH"); // l
+selectCodeEditor("sim_tb_top.sv", 549, 690); // bP
+typeControlKey((HResource) null, "sim_tb_top.sv", 'c'); // bP
+// Elapsed time: 11 seconds
+selectCodeEditor("sim_tb_top.sv", 1261, 482); // bP
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "DDR4_ADRMOD"); // l
+selectCodeEditor("sim_tb_top.sv", 587, 845); // bP
+typeControlKey((HResource) null, "sim_tb_top.sv", 'c'); // bP
+// Elapsed time: 15 seconds
+selectCodeEditor("sim_tb_top.sv", 773, 460); // bP
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "c0_ddr4_cs_n"); // l
+selectCodeEditor("sim_tb_top.sv", 414, 647); // bP
+selectCodeEditor("sim_tb_top.sv", 438, 618); // bP
+selectCodeEditor("sim_tb_top.sv", 465, 618); // bP
+typeControlKey((HResource) null, "sim_tb_top.sv", 'c'); // bP
+// Elapsed time: 17 seconds
+selectCodeEditor("sim_tb_top.sv", 743, 597); // bP
+selectCodeEditor("sim_tb_top.sv", 426, 435); // bP
+typeControlKey((HResource) null, "sim_tb_top.sv", 'c'); // bP
+// Elapsed time: 594 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "example_tb_phy.sv", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sim_tb_top.sv", 2); // m
+// Elapsed time: 191 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation-Only Sources, sim_1, SystemVerilog, xil_defaultlib, ddr4_sdram_model_wrapper.sv]", 25, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation-Only Sources, sim_1, SystemVerilog, xil_defaultlib, arch_package.sv]", 24, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation-Only Sources, sim_1, SystemVerilog, xil_defaultlib, ddr4_sdram_model_wrapper.sv]", 25, false); // D
+// Elapsed time: 88 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation-Only Sources, sim_1, SystemVerilog, xil_defaultlib, proj_package.sv]", 26, false); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation-Only Sources, sim_1, SystemVerilog, xil_defaultlib, Unreferenced]", 30); // D
+// HMemoryUtils.trashcanNow. Engine heap size: 1,112 MB. GUI used memory: 137 MB. Current time: 7/1/21, 5:46:51 PM KST
+// Elapsed time: 92 seconds
+selectCodeEditor("sim_tb_top.sv", 492, 484); // bP
+selectCodeEditor("sim_tb_top.sv", 514, 434); // bP
+// HMemoryUtils.trashcanNow. Engine heap size: 1,112 MB. GUI used memory: 128 MB. Current time: 7/1/21, 6:16:52 PM KST
+// Elapsed time: 2361 seconds
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // i
+// Elapsed time: 17 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Verilog Header]", 7); // D
+// Elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Verilog Header, MemoryArray.sv]", 9, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Verilog Header, StateTableCore.sv]", 8, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Verilog Header, MemoryArray.sv]", 9, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Verilog Header, StateTable.sv]", 10, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Verilog Header, timing_tasks.sv]", 11, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Verilog Header, arch_defines.v]", 12, false); // D
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 2); // i
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation-Only Sources, sim_1, Verilog Header, StateTableCore.sv]", 18, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation-Only Sources, sim_1, Verilog Header, MemoryArray.sv]", 17, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation-Only Sources, sim_1, Verilog Header, StateTable.sv]", 19, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation-Only Sources, sim_1, Verilog Header, timing_tasks.sv]", 21, false); // D
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // i
+// Elapsed time: 65 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Verilog Header, timing_tasks.sv]", 11, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Verilog Header, timing_tasks.sv]", 11, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("timing_tasks.sv", 290, 823); // bP
+selectCodeEditor("timing_tasks.sv", 290, 823, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("timing_tasks.sv", 298, 810); // bP
+selectCodeEditor("timing_tasks.sv", 298, 809, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 41 seconds
+selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "Properties", 1); // i
+// Elapsed time: 42 seconds
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 2); // i
+// Elapsed time: 172 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "example_tb_phy.sv", 1); // m
+// Elapsed time: 18 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation-Only Sources, sim_1, SystemVerilog, xil_defaultlib, sim_tb_top.sv]", 29, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation-Only Sources, sim_1, SystemVerilog, xil_defaultlib, sim_tb_top.sv]", 29, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("sim_tb_top.sv", 151, 399); // bP
+selectCodeEditor("sim_tb_top.sv", 151, 398, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "sim_tb_top.sv", 'c'); // bP
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // i
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, SystemVerilog]", 13); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, sim_tb_top (sim_tb_top.sv), ddr4_model (ddr4_model.sv)]", 109); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, sim_tb_top (sim_tb_top.sv), ddr4_model (ddr4_model.sv), StateTable (StateTable.sv)]", 110, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, sim_tb_top (sim_tb_top.sv), ddr4_model (ddr4_model.sv)]", 109, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, sim_tb_top (sim_tb_top.sv), ddr4_model (ddr4_model.sv), StateTable (StateTable.sv)]", 110, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, sim_tb_top (sim_tb_top.sv), ddr4_model (ddr4_model.sv)]", 109, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, sim_tb_top (sim_tb_top.sv), ddr4_model (ddr4_model.sv), StateTable (StateTable.sv)]", 110, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, sim_tb_top (sim_tb_top.sv), ddr4_model (ddr4_model.sv)]", 109, true); // D - Node
+selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "General", 0); // i
+selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "Properties", 1); // i

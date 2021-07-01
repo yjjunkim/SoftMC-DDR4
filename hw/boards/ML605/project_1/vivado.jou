@@ -11,3 +11,71 @@
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.xpr
+set_property file_type SystemVerilog [get_files  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v]
+add_files -norecurse C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/ddr4_0_ex/imports/arch_package.sv
+add_files -norecurse C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/ddr4_0_ex/imports/arch_package.sv
+reorder_files -after C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/ddr4_0_ex/imports/arch_package.sv C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/ddr4_0_ex/imports/arch_package.sv
+set_property used_in_synthesis false [get_files  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/ddr4_0_ex/imports/arch_package.sv]
+import_files -norecurse C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/ddr4_0_ex/imports/arch_package.sv
+export_ip_user_files -of_objects  [get_files C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/imports/imports/arch_package.sv] -no_script -reset -force -quiet
+remove_files  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/imports/imports/arch_package.sv
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/ddr4_0_ex/imports/arch_package.sv
+set_property used_in_synthesis false [get_files  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/imports/arch_package.sv]
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+launch_simulation
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/ddr4_0_ex/imports/arch_defines.v
+set_property file_type SystemVerilog [get_files  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/imports/arch_defines.v]
+launch_simulation
+source tb_softMC_top.tcl
+close_sim
+launch_simulation
+set_property used_in_synthesis true [get_files  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/imports/arch_package.sv]
+set_property used_in_synthesis false [get_files  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/imports/arch_package.sv]
+set_property used_in_synthesis false [get_files  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/imports/arch_defines.v]
+set_property used_in_synthesis true [get_files  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/imports/arch_package.sv]
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -force -norecurse C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/ddr4_0_ex/imports/arch_package.sv
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/ddr4_0_ex/imports/ddr4_model.sv
+launch_simulation
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/ddr4_0_ex/imports/ddr4_sdram_model_wrapper.sv
+set_property used_in_synthesis false [get_files  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/imports/arch_package.sv]
+set_property used_in_synthesis false [get_files  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/imports/ddr4_model.sv]
+set_property used_in_synthesis false [get_files  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/imports/ddr4_sdram_model_wrapper.sv]
+launch_simulation
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/ddr4_0_ex/imports/StateTable.sv
+launch_simulation
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/ddr4_0_ex/imports/StateTableCore.sv
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/ddr4_0_ex/imports/timing_tasks.sv C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/ddr4_0_ex/imports/MemoryArray.sv}
+launch_simulation
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/ddr4_0_ex/imports/proj_package.sv
+launch_simulation
+set_property used_in_synthesis false [get_files  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/imports/proj_package.sv]
+set_property used_in_synthesis false [get_files  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/imports/MemoryArray.sv]
+set_property used_in_synthesis false [get_files  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/imports/timing_tasks.sv]
+set_property used_in_synthesis false [get_files  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/imports/StateTableCore.sv]
+set_property used_in_synthesis false [get_files  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/imports/StateTable.sv]
+launch_simulation
+set_property FILE_TYPE {Verilog Header} [get_files C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/imports/MemoryArray.sv]
+launch_simulation
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -force -norecurse {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/ddr4_0_ex/imports/StateTableCore.sv C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/ddr4_0_ex/imports/arch_defines.v C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/ddr4_0_ex/imports/StateTable.sv C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/ddr4_0_ex/imports/timing_tasks.sv}
+set_property FILE_TYPE {Verilog Header} [get_files C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/imports/timing_tasks.sv]
+set_property FILE_TYPE {Verilog Header} [get_files C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/imports/StateTable.sv]
+set_property FILE_TYPE {Verilog Header} [get_files C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/imports/StateTableCore.sv]
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -force -norecurse C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/ddr4_0_ex/imports/arch_defines.v
+set_property FILE_TYPE {Verilog Header} [get_files C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/imports/arch_defines.v]
+launch_simulation
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -force -norecurse C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/ddr4_0_ex/imports/ddr4_model.sv
+launch_simulation
+set_property USED_IN_SYNTHESIS 0 [get_files C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/imports/ddr4_model.sv]
+launch_simulation

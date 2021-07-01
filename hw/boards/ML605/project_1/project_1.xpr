@@ -45,7 +45,7 @@
     <Option Name="IPUserFilesDir" Val="$PIPUSERFILESDIR"/>
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
-    <Option Name="WTXSimLaunchSim" Val="26"/>
+    <Option Name="WTXSimLaunchSim" Val="46"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -903,7 +903,6 @@
       <File Path="$PPRDIR/../tb_softMC_top.v">
         <FileInfo SFType="SVerilog">
           <Attr Name="Library" Val="xil_defaultlib"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -916,9 +915,73 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sim_1/imports/imports/ddr4_sdram_model_wrapper.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/ddr4_0_ex/imports/ddr4_sdram_model_wrapper.sv"/>
+          <Attr Name="ImportTime" Val="1625124843"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/imports/imports/MemoryArray.sv">
+        <FileInfo SFType="VHeader">
+          <Attr Name="ImportPath" Val="$PPRDIR/ddr4_0_ex/imports/MemoryArray.sv"/>
+          <Attr Name="ImportTime" Val="1625124843"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/imports/imports/proj_package.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/ddr4_0_ex/imports/proj_package.sv"/>
+          <Attr Name="ImportTime" Val="1625124843"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/imports/imports/StateTableCore.sv">
+        <FileInfo SFType="VHeader">
+          <Attr Name="ImportPath" Val="$PPRDIR/ddr4_0_ex/imports/StateTableCore.sv"/>
+          <Attr Name="ImportTime" Val="1625124843"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/imports/imports/StateTable.sv">
+        <FileInfo SFType="VHeader">
+          <Attr Name="ImportPath" Val="$PPRDIR/ddr4_0_ex/imports/StateTable.sv"/>
+          <Attr Name="ImportTime" Val="1625124843"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/imports/imports/timing_tasks.sv">
+        <FileInfo SFType="VHeader">
+          <Attr Name="ImportPath" Val="$PPRDIR/ddr4_0_ex/imports/timing_tasks.sv"/>
+          <Attr Name="ImportTime" Val="1625124843"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sim_1/imports/imports/arch_defines.v">
-        <FileInfo SFType="SVerilog">
+        <FileInfo SFType="VHeader">
           <Attr Name="ImportPath" Val="$PPRDIR/ddr4_0_ex/imports/arch_defines.v"/>
+          <Attr Name="ImportTime" Val="1625124843"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/imports/imports/ddr4_model.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/ddr4_0_ex/imports/ddr4_model.sv"/>
+          <Attr Name="ImportTime" Val="1625124843"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/imports/imports/interface.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/ddr4_0_ex/imports/interface.sv"/>
           <Attr Name="ImportTime" Val="1625124843"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>

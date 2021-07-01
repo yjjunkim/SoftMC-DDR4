@@ -1,11 +1,11 @@
 # compile verilog/system verilog design source files
-verilog xil_defaultlib  --include "../../../../../" --include "../../../../../ipcore_dir/riffa" --include "../../../../../ipcore_dir/xilinx_mig/user_design/sim" --include "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/map" --include "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/ip_top" --include "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal" \
+verilog xil_defaultlib  --include "../../../../../" --include "../../../../../ipcore_dir/riffa" --include "../../../../../ipcore_dir/xilinx_mig/user_design/sim" --include "../../../../project_1.srcs/sim_1/imports/imports" --include "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/map" --include "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/ip_top" --include "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal" \
 "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_6/sim/bd_9054_lmb_bram_I_0.v" \
 "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_9/sim/bd_9054_second_lmb_bram_I_0.v" \
 "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/sim/bd_9054.v" \
 "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/ip_0/sim/ddr4_0_microblaze_mcs.v" \
 
-sv xil_defaultlib  --include "../../../../../" --include "../../../../../ipcore_dir/riffa" --include "../../../../../ipcore_dir/xilinx_mig/user_design/sim" --include "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/map" --include "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/ip_top" --include "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal" \
+sv xil_defaultlib  --include "../../../../../" --include "../../../../../ipcore_dir/riffa" --include "../../../../../ipcore_dir/xilinx_mig/user_design/sim" --include "../../../../project_1.srcs/sim_1/imports/imports" --include "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/map" --include "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/ip_top" --include "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal" \
 "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/phy/ddr4_0_phy_ddr4.sv" \
 "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/phy/ddr4_phy_v2_2_xiphy_behav.sv" \
 "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/phy/ddr4_phy_v2_2_xiphy.sv" \
@@ -43,7 +43,7 @@ sv xil_defaultlib  --include "../../../../../" --include "../../../../../ipcore_
 "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/ip_top/ddr4_0.sv" \
 "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/tb/microblaze_mcs_0.sv" \
 
-verilog xil_defaultlib  --include "../../../../../" --include "../../../../../ipcore_dir/riffa" --include "../../../../../ipcore_dir/xilinx_mig/user_design/sim" --include "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/map" --include "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/ip_top" --include "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal" \
+verilog xil_defaultlib  --include "../../../../../" --include "../../../../../ipcore_dir/riffa" --include "../../../../../ipcore_dir/xilinx_mig/user_design/sim" --include "../../../../project_1.srcs/sim_1/imports/imports" --include "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/map" --include "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/ip_top" --include "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal" \
 "../../../../project_1.ip_user_files/ip/instr_fifo/sim/instr_fifo.v" \
 "../../../../project_1.srcs/sources_1/ip/rdback_fifo/sim/rdback_fifo.v" \
 "../../../../../ipcore_dir/riffa/axi_basic_tx_thrtl_ctl.v" \
@@ -145,10 +145,13 @@ verilog xil_defaultlib  --include "../../../../../" --include "../../../../../ip
 "../../../../../softMC_top.v" \
 "../../../../../ipcore_dir/xilinx_mig/user_design/sim/wiredly.v" \
 
-sv xil_defaultlib  --include "../../../../../" --include "../../../../../ipcore_dir/riffa" --include "../../../../../ipcore_dir/xilinx_mig/user_design/sim" --include "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/map" --include "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/ip_top" --include "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal" \
+sv xil_defaultlib  --include "../../../../../" --include "../../../../../ipcore_dir/riffa" --include "../../../../../ipcore_dir/xilinx_mig/user_design/sim" --include "../../../../project_1.srcs/sim_1/imports/imports" --include "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/map" --include "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/ip_top" --include "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal" \
 "../../../../../tb_softMC_top.v" \
 "../../../../project_1.srcs/sim_1/imports/imports/arch_package.sv" \
-"../../../../project_1.srcs/sim_1/imports/imports/arch_defines.v" \
+"../../../../project_1.srcs/sim_1/imports/imports/ddr4_sdram_model_wrapper.sv" \
+"../../../../project_1.srcs/sim_1/imports/imports/proj_package.sv" \
+"../../../../project_1.srcs/sim_1/imports/imports/ddr4_model.sv" \
+"../../../../project_1.srcs/sim_1/imports/imports/interface.sv" \
 
 # compile glbl module
 verilog xil_defaultlib "glbl.v"

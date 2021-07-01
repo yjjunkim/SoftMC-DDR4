@@ -811,8 +811,12 @@ module tb_softMC_top;
 	localparam ADDR_WIDTH                    = 17;
 	localparam NUM_PHYSICAL_PARTS = (DQ_WIDTH/DRAM_WIDTH) ;
 	
-	import arch_package::*; 
-    parameter UTYPE_density CONFIGURED_DENSITY = _8G; 
+	import arch_package::*;
+	
+	//typedef enum {_2G=2, _4G=4, _8G=8, _16G=16} UTYPE_density;
+    //parameter UTYPE_density CONFIGURED_DENSITY = _8G;
+    //parameter CONFIGURED_DENSITY = 8;
+    
     
     wire    c0_ddr4_ck_t;
     wire    c0_ddr4_ck_c;
@@ -834,6 +838,7 @@ module tb_softMC_top;
     reg [ADDR_WIDTH-1:0] DDR4_ADRMOD[RANK_WIDTH-1:0];
 	
 	generate
+	
     if (DQ_WIDTH/16) begin: mem
     
           DDR4_if #(.CONFIGURED_DQ_BITS (16)) iDDR4[0:(RANK_WIDTH*NUM_PHYSICAL_PARTS)-1]();
@@ -842,8 +847,8 @@ module tb_softMC_top;
               for (i = 0; i < NUM_PHYSICAL_PARTS; i++) begin:memModel2
                 ddr4_model  #
                 (
-                 .CONFIGURED_DQ_BITS (16),
-                 .CONFIGURED_DENSITY (CONFIGURED_DENSITY)
+                 .CONFIGURED_DQ_BITS (16)
+                 //.CONFIGURED_DENSITY (CONFIGURED_DENSITY)
                  )  ddr4_model(
                     .model_enable (model_enable),
                     .iDDR4        (iDDR4[(r*NUM_PHYSICAL_PARTS)+i])
@@ -913,7 +918,7 @@ module tb_softMC_top;
               assign iDDR4[(r*NUM_PHYSICAL_PARTS)+ i].VREF_DQ = 1'b1;
               assign iDDR4[(r*NUM_PHYSICAL_PARTS)+ i].RESET_n = c0_ddr4_reset_n;
               end
-            end
+            //end
           end
     
           if (DQ_WIDTH%16) begin: mem_extra_bits
@@ -922,8 +927,8 @@ module tb_softMC_top;
     
             ddr4_model  #
               (
-               .CONFIGURED_DQ_BITS (16),
-               .CONFIGURED_DENSITY (CONFIGURED_DENSITY)
+               .CONFIGURED_DQ_BITS (16)
+               //.CONFIGURED_DENSITY (CONFIGURED_DENSITY)
                )  ddr4_model(
                 .model_enable (model_enable),
                 .iDDR4        (iDDR4[(DQ_WIDTH/DRAM_WIDTH)])
@@ -974,7 +979,7 @@ module tb_softMC_top;
             assign iDDR4[DQ_WIDTH/DRAM_WIDTH].VREF_DQ = 1'b1;
             assign iDDR4[DQ_WIDTH/DRAM_WIDTH].CS_n = c0_ddr4_cs_n[0];
           end
-        //end
+        end
       endgenerate
 	//***************************************************************************
   // Reporting the test case status
