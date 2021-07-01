@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Jun 29 14:14:13 2021
+# Process ID: 15952
+# Current directory: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17584 C:\Users\yongj\Desktop\softmc_ddr4\hw\boards\ML605\project_1\project_1.xpr
+# Log file: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/vivado.log
+# Journal file: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.xpr
+launch_simulation
+create_fileset -simset sim_2
+set_property SOURCE_SET sources_1 [get_filesets sim_2]
+current_fileset -simset [ get_filesets sim_2 ]
+set_property top tb_softMC_top [get_filesets sim_2]
+set_property SOURCE_SET sources_1 [get_filesets sim_2]
+launch_simulation -simset [get_filesets sim_2 ]
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+current_fileset -simset [ get_filesets sim_1 ]
+launch_simulation
+set_property is_enabled false [get_files  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v]
+set_property is_enabled true [get_files  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v]
+set_property is_enabled false [get_files  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v]
+set_property is_enabled true [get_files  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v]
+set_property is_enabled false [get_files  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v]
+set_property is_enabled true [get_files  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v]
+launch_simulation
+launch_simulation

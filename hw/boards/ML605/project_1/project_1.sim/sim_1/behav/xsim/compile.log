@@ -183,12 +183,6 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/
 INFO: [VRFC 10-311] analyzing module channel_128
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/translation_layer.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module translation_layer
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/riffa_endpoint_64.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module riffa_endpoint_64
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/riffa_endpoint_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module riffa_endpoint_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/riffa_endpoint_128.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module riffa_endpoint_128
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module instr_decoder
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_pcie_app.v" into library xil_defaultlib
@@ -209,7 +203,7 @@ INFO: [VRFC 10-311] analyzing module zq_calib_ctrl
 INFO: [VRFC 10-311] analyzing module autoref_ctrl
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/iseq_dispatcher.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module iseq_dispatcher
-WARNING: [VRFC 10-3380] identifier 'instr0_disp_en' is used before its declaration [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/iseq_dispatcher.v:73]
+WARNING: [VRFC 10-3380] identifier 'instr0_disp_en' is used before its declaration [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/iseq_dispatcher.v:77]
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_receiver.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module instr_receiver
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/autoref_config.v" into library xil_defaultlib

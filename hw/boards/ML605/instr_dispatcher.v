@@ -49,6 +49,11 @@ module instr_dispatcher #(parameter ROW_WIDTH = 15, BANK_WIDTH = 3, CKE_WIDTH = 
 	output reg										dfi_rddata_en_even,
 	output reg 										dfi_rddata_en_odd,
 	
+	//jun ACT_n
+	output [7:0] mc_ACT_n,
+	output mcRdCAS,
+	output mcWrCAS,
+	
 	//Bus Command
 	output reg io_config_strobe,
 	output reg[1:0] io_config,
@@ -307,6 +312,10 @@ module instr_dispatcher #(parameter ROW_WIDTH = 15, BANK_WIDTH = 3, CKE_WIDTH = 
 		.dfi_cs_n(dfi_cs_n0),
 		.dfi_ras_n(dfi_ras_n0),
 //		.dfi_ras_n(dfi_ras_n0),
+        //jun add port
+	    .mc_ACT_n(mc_ACT_n),
+	    .mcRdCAS              (mcRdCAS),
+        .mcWrCAS              (mcWrCAS),
 		.dfi_we_n(dfi_we_n0)
 	);
 	
@@ -319,6 +328,10 @@ module instr_dispatcher #(parameter ROW_WIDTH = 15, BANK_WIDTH = 3, CKE_WIDTH = 
 		.dfi_cas_n(dfi_cas_n1),
 		.dfi_cs_n(dfi_cs_n1),
 		.dfi_ras_n(dfi_ras_n1),
+		//jun add port
+	    //.mc_ACT_n(mc_ACT_n),
+	    //.mcRdCAS              (mcRdCAS),
+        //.mcWrCAS              (mcWrCAS),
 		.dfi_we_n(dfi_we_n1)
 	);
 	

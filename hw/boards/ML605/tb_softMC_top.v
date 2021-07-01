@@ -49,7 +49,7 @@ module tb_softMC_top;
                                     // # of Data (DQ) bits.
   parameter DQS_WIDTH             = 8;
                                     // # of DQS/DQS# bits.
-  parameter ROW_WIDTH             = 15;
+  parameter ROW_WIDTH             = 17;
                                     // # of memory Row Address bits.
   parameter BURST_MODE            = "8";
                                     // Burst Length (Mode Register 0).

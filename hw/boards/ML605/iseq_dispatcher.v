@@ -27,8 +27,7 @@ module iseq_dispatcher #(parameter ROW_WIDTH = 15, BANK_WIDTH = 3, CKE_WIDTH = 1
 	output [ROW_WIDTH-1:0]              dfi_address1,
 	output [BANK_WIDTH*8-1:0]             dfi_bank0,   // *8bit
 	output [BANK_WIDTH-1:0]             dfi_bank1,
-	//jun ACT_n
-	output [7:0] mc_ACT_n, 
+	
 	output [CKE_WIDTH*8-1:0]	        		dfi_cke0, //JUN : not match with softMC
 	output										dfi_cke1,
 	output 										dfi_cas_n0,
@@ -50,6 +49,11 @@ module iseq_dispatcher #(parameter ROW_WIDTH = 15, BANK_WIDTH = 3, CKE_WIDTH = 1
 	output                              dfi_rddata_en,
 	output										dfi_rddata_en_even,
 	output										dfi_rddata_en_odd,
+	
+	//jun ACT_n
+	output [7:0] mc_ACT_n,
+	output mcRdCAS,
+	output mcWrCAS,
 	
 	//Bus Command
 	output io_config_strobe,
@@ -152,6 +156,11 @@ module iseq_dispatcher #(parameter ROW_WIDTH = 15, BANK_WIDTH = 3, CKE_WIDTH = 1
 	.dfi_rddata_en(dfi_rddata_en),
 	.dfi_rddata_en_even(dfi_rddata_en_even),
 	.dfi_rddata_en_odd(dfi_rddata_en_odd),
+	
+	//jun add port
+	.mc_ACT_n(mc_ACT_n),
+	.mcRdCAS              (mcRdCAS),
+    .mcWrCAS              (mcWrCAS),
 	
 	//Bus Command
 	.io_config_strobe(io_config_strobe),

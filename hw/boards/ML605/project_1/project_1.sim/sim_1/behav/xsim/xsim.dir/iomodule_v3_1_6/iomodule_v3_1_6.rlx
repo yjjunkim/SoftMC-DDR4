@@ -1,5 +1,0 @@
-0.7
-2020.2
-Nov 18 2020
-09:47:47
-C:/Users/yongj/Desktop/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/project_1/project_1.ip_user_files/ipstatic/hdl/iomodule_v3_1_vh_rfs.vhd,1623825073,vhdl,,,,divide_part;fit_module;gpi_module;gpo_module;intr_ctrl;iomodule;iomodule_core;iomodule_funcs;iomodule_vote_pkg;mb_fdr;mb_fdre;mb_fdse;mb_lut3;mb_mult_and;mb_muxcy;mb_muxcy_xorcy;mb_muxf5;mb_muxf6;mb_sync_bit;mb_sync_reset;mb_sync_vec;mb_xorcy;pit_module;pselect_mask;pulse_sync;uart;uart_control_status;uart_core;uart_receive;uart_transmit;xil_scan_reset_control;xil_srl16e;xil_srlc16e,,,,,,,,

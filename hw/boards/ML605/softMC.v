@@ -246,6 +246,11 @@ module softMC #(parameter TCQ = 100, tCK = 2500, nCK_PER_CLK = 2, RANK_WIDTH = 1
 	 
 	 .pr_rd_ack(pr_rd_ack),
 	 
+	 //jun add port
+	 .mc_ACT_n(mc_ACT_n),
+	 .mcRdCAS              (mcRdCAS),
+     .mcWrCAS              (mcWrCAS),
+	 
 	 //auto-refresh
 	 .aref_set_interval(aref_set_interval),
 	 .aref_interval(aref_interval_in),

@@ -18,18 +18,16 @@ WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named DATA
 WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named PAYLOAD_WIDTH [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:471]
 WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'c0_ddr4_ck_c' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:479]
 WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'c0_ddr4_ck_t' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:480]
-WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'c0_ddr4_adr' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:481]
 WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'c0_ddr4_ba' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:482]
 WARNING: [VRFC 10-3091] actual bit length 256 differs from formal bit length 512 for port 'rdback_data' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:504]
 WARNING: [VRFC 10-3091] actual bit length 63 differs from formal bit length 64 for port 'wrDataMask' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_top.v:469]
-WARNING: [VRFC 10-3091] actual bit length 120 differs from formal bit length 136 for port 'mc_ADR' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_top.v:481]
 WARNING: [VRFC 10-3091] actual bit length 24 differs from formal bit length 16 for port 'mc_BA' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_top.v:482]
 WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 5 for port 'winBuf' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_top.v:503]
-WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 120 for port 'dfi_address' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_dispatcher.v:317]
-WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 24 for port 'dfi_bank' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_dispatcher.v:318]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'dfi_cs_n' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_dispatcher.v:320]
+WARNING: [VRFC 10-3091] actual bit length 17 differs from formal bit length 136 for port 'dfi_address' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_dispatcher.v:326]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 24 for port 'dfi_bank' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_dispatcher.v:327]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'dfi_cs_n' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_dispatcher.v:329]
 WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'dm_tdqs' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:790]
-WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 13 for port 'addr' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:792]
+WARNING: [VRFC 10-3091] actual bit length 17 differs from formal bit length 13 for port 'addr' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:792]
 WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 16 for port 'dq' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:793]
 WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'dqs' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:794]
 WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'dqs_n' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:795]
@@ -143,16 +141,16 @@ Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_CONV_VER(...
 Compiling module fifo_generator_v13_2_5.fifo_generator_vlog_beh(C_COMMON...
 Compiling module xil_defaultlib.instr_fifo
 Compiling module xil_defaultlib.pipe_reg(WIDTH=32)
-Compiling module xil_defaultlib.instr_decoder_default
-Compiling module xil_defaultlib.instr_dispatcher
-Compiling module xil_defaultlib.iseq_dispatcher
+Compiling module xil_defaultlib.instr_decoder(ROW_WIDTH=17)
+Compiling module xil_defaultlib.instr_dispatcher(ROW_WIDTH=17)
+Compiling module xil_defaultlib.iseq_dispatcher(ROW_WIDTH=17)
 Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_bhv_ver_s...
 Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_bhv_ver_p...
 Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_CONV_VER(...
 Compiling module fifo_generator_v13_2_5.fifo_generator_vlog_beh(C_COMMON...
 Compiling module xil_defaultlib.rdback_fifo
 Compiling module xil_defaultlib.read_capturer
-Compiling module xil_defaultlib.softMC
+Compiling module xil_defaultlib.softMC(ROW_WIDTH=17)
 Compiling module xil_defaultlib.softMC_top(REFCLK_FREQ=200,BANK_...
 Compiling module xil_defaultlib.ddr3_model_default
 Compiling module xil_defaultlib.tb_softMC_top

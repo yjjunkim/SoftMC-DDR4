@@ -97,9 +97,11 @@ always@* begin
 	endcase //state_r
 end //always
 
-assign instr0_fifo_en = ~sel_fifo & instr_en_r;
+//assign instr0_fifo_en = ~sel_fifo & instr_en_r;
+assign instr0_fifo_en = instr_en_r;
 assign instr0_fifo_data = instr_r;
-assign instr1_fifo_en = sel_fifo & instr_en_r;
+//assign instr1_fifo_en = sel_fifo & instr_en_r;
+assign instr1_fifo_en = 1'b0;
 assign instr1_fifo_data = instr_r;
 
 always@(posedge clk) begin

@@ -131,9 +131,6 @@ verilog xil_defaultlib  --include "../../../../../" --include "../../../../../ip
 "../../../../../ipcore_dir/riffa/channel_32.v" \
 "../../../../../ipcore_dir/riffa/channel_128.v" \
 "../../../../../ipcore_dir/riffa/translation_layer.v" \
-"../../../../../ipcore_dir/riffa/riffa_endpoint_64.v" \
-"../../../../../ipcore_dir/riffa/riffa_endpoint_32.v" \
-"../../../../../ipcore_dir/riffa/riffa_endpoint_128.v" \
 "../../../../../instr_decoder.v" \
 "../../../../../softMC_pcie_app.v" \
 "../../../../../pipe_reg.v" \
