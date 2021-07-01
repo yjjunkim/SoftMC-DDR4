@@ -1,3 +1,97 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/phy/ddr4_0_phy_ddr4.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_0_phy_ddr4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/phy/ddr4_phy_v2_2_xiphy_behav.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_0_xiphy_behav
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_0_bitslice_behav
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_0_fifo_sv
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/phy/ddr4_phy_v2_2_xiphy.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_0_xiphy
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/iob/ddr4_phy_v2_2_iob_byte.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_0_iob_byte
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/iob/ddr4_phy_v2_2_iob.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_0_iob
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/clocking/ddr4_phy_v2_2_pll.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_0_pll
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/xiphy_files/ddr4_phy_v2_2_xiphy_tristate_wrapper.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_0_xiphy_tristate_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/xiphy_files/ddr4_phy_v2_2_xiphy_riuor_wrapper.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_0_xiphy_riuor_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/xiphy_files/ddr4_phy_v2_2_xiphy_control_wrapper.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_0_xiphy_control_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/xiphy_files/ddr4_phy_v2_2_xiphy_byte_wrapper.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_0_xiphy_byte_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/xiphy_files/ddr4_phy_v2_2_xiphy_bitslice_wrapper.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_0_xiphy_bitslice_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/ip_top/ddr4_0_phy.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_0_phy
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/clocking/ddr4_v2_2_infrastructure.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_infrastructure
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_xsdb_bram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_xsdb_bram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_write.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_write
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_wr_byte.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_wr_byte
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_wr_bit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_wr_bit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_sync.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_sync
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_read.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_read
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_rd_en.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_rd_en
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_pi.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_pi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_mc_odt.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_mc_odt
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_debug_microblaze.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_debug_microblaze
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_cplx_data.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_cplx_data
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_cplx.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_cplx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_config_rom.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_config_rom
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_addr_decode
+WARNING: [VRFC 10-8426] non-net output port 'io_ready_lvl' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:165]
+WARNING: [VRFC 10-8426] non-net output port 'ub_ready' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:166]
+WARNING: [VRFC 10-8426] non-net output port 'cal_DMOut_n' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:235]
+WARNING: [VRFC 10-8426] non-net output port 'casSlot' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:267]
+WARNING: [VRFC 10-8426] non-net output port 'rdCAS' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:269]
+WARNING: [VRFC 10-8426] non-net output port 'wrCAS' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:272]
+WARNING: [VRFC 10-8426] non-net output port 'lowCL0' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:276]
+WARNING: [VRFC 10-8426] non-net output port 'lowCL1' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:277]
+WARNING: [VRFC 10-8426] non-net output port 'lowCL2' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:278]
+WARNING: [VRFC 10-8426] non-net output port 'lowCL3' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:279]
+WARNING: [VRFC 10-8426] non-net output port 'uppCL0' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:280]
+WARNING: [VRFC 10-8426] non-net output port 'uppCL1' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:281]
+WARNING: [VRFC 10-8426] non-net output port 'uppCL2' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:282]
+WARNING: [VRFC 10-8426] non-net output port 'uppCL3' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:283]
+WARNING: [VRFC 10-8426] non-net output port 'win_status' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:320]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_top
+WARNING: [VRFC 10-8426] non-net output port 'cal_RESET_n' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_top.sv:323]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_xsdb_arbiter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_xsdb_arbiter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_chipscope_xsdb_slave.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_chipscope_xsdb_slave
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_dp_AB9.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cfg_mem_mod
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_bram_tdp
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/ip_top/ddr4_0_ddr4.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_0_ddr4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_0_ddr4_cal_riu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_0_ddr4_cal_riu
+WARNING: [VRFC 10-8426] non-net output port 'io_addr_strobe_lvl_riuclk' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_0_ddr4_cal_riu.sv:115]
+WARNING: [VRFC 10-8426] non-net output port 'io_write_strobe_riuclk' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_0_ddr4_cal_riu.sv:118]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/ip_top/ddr4_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/tb/microblaze_mcs_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_0_microblaze_mcs
+INFO: [VRFC 10-311] analyzing module microblaze_mcs
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/instr_fifo/sim/instr_fifo.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module instr_fifo
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/rdback_fifo/sim/rdback_fifo.v" into library xil_defaultlib
@@ -218,5 +312,11 @@ INFO: [VRFC 10-2458] undeclared symbol processing_iseq, assumed default net type
 INFO: [VRFC 10-2458] undeclared symbol rdback_fifo_empty, assumed default net type wire [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_top.v:582]
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/xilinx_mig/user_design/sim/wiredly.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module WireDelay
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module tb_softMC_top
+INFO: [VRFC 10-2458] undeclared symbol model_enable, assumed default net type wire [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:848]
+INFO: [VRFC 10-2458] undeclared symbol model_enable, assumed default net type wire [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:928]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/imports/arch_package.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of package 'arch_package' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/imports/arch_package.sv:5]
+WARNING: [VRFC 10-3669] re-analyze module 'tb_softMC_top' since module 'arch_package' is overwritten or removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:5]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/imports/arch_defines.v" into library xil_defaultlib

@@ -33,7 +33,7 @@ module tb_softMC_top;
                                     // # = ceil(log2(DQS_WIDTH)).
   parameter RANK_WIDTH            = 1;
                                     // # = ceil(log2(RANKS)).
-  parameter BANK_WIDTH            = 3;
+  parameter BANK_WIDTH            = 2;
                                     // # of memory Bank Address bits.
   parameter CK_WIDTH              = 2;
                                     // # of CK/CK# outputs to memory.
@@ -49,7 +49,7 @@ module tb_softMC_top;
                                     // # of Data (DQ) bits.
   parameter DQS_WIDTH             = 8;
                                     // # of DQS/DQS# bits.
-  parameter ROW_WIDTH             = 17;
+  parameter ROW_WIDTH             = 16;
                                     // # of memory Row Address bits.
   parameter BURST_MODE            = "8";
                                     // Burst Length (Mode Register 0).
@@ -86,7 +86,8 @@ module tb_softMC_top;
                                     // write PLL VCO divisor.
   parameter CLKOUT_DIVIDE         = 3;
                                     // VCO output divisor for fast (memory) clocks.
-  parameter tCK                   = 2500;
+  //parameter tCK                   = 2500;
+  parameter tCK                   = 1071;
                                     // memory tCK paramter.
                                     // # = Clock Period.
   parameter DEBUG_PORT            = "OFF";
@@ -98,7 +99,7 @@ module tb_softMC_top;
                                     // memory tREFI paramter.
   parameter tZQI                    = 128_000_000;
                                     // memory tZQI paramter.
-  parameter ADDR_WIDTH              = 29;
+  //parameter ADDR_WIDTH              = 29;
                                     // # = RANK_WIDTH + BANK_WIDTH
                                     //     + ROW_WIDTH + COL_WIDTH;
   parameter STARVE_LIMIT            = 2;
@@ -277,7 +278,7 @@ module tb_softMC_top;
   wire                               clk;
   wire                               rst;
   wire                               app_sz;
-  wire [ADDR_WIDTH-1:0]              app_addr;
+  //wire [ADDR_WIDTH-1:0]              app_addr;
   wire                               app_wdf_wren;
   wire [APP_DATA_WIDTH-1:0]          app_wdf_data;
   wire [APP_MASK_WIDTH-1:0]          app_wdf_mask;
@@ -463,7 +464,7 @@ module tb_softMC_top;
      .ADDR_CMD_MODE             (ADDR_CMD_MODE),
      .ORDERING                  (ORDERING),
      .STARVE_LIMIT              (STARVE_LIMIT),
-     .ADDR_WIDTH                (ADDR_WIDTH),
+     //.ADDR_WIDTH                (ADDR_WIDTH),
      .ECC                       (ECC),
      .ECC_TEST                  (ECC_TEST),
      .TCQ                       (TCQ),
@@ -537,8 +538,8 @@ module tb_softMC_top;
      else
        ddr3_cke_r <= #(CLK_PERIOD) ddr3_cke_sdram;
 
-
-
+//==================================DDR3======================================
+/*
   //***************************************************************************
   // Instantiate memories
   //***************************************************************************
@@ -801,8 +802,180 @@ module tb_softMC_top;
       end
     end
   endgenerate
+	*/
+	//==========================DDR4====================================
+	genvar i;
+    genvar r;
+    genvar s;
+	localparam DRAM_WIDTH                    = 16;
+	localparam ADDR_WIDTH                    = 17;
+	localparam NUM_PHYSICAL_PARTS = (DQ_WIDTH/DRAM_WIDTH) ;
 	
-
+	import arch_package::*; 
+    parameter UTYPE_density CONFIGURED_DENSITY = _8G; 
+    
+    wire    c0_ddr4_ck_t;
+    wire    c0_ddr4_ck_c;
+    wire                 c0_ddr4_reset_n;
+    wire  [7:0]          c0_ddr4_dm_dbi_n;
+    wire  [63:0]          c0_ddr4_dq;
+    wire  [7:0]          c0_ddr4_dqs_c;
+    wire  [7:0]          c0_ddr4_dqs_t;
+    
+    wire  [0:0]           c0_ddr4_cke;
+    wire  [0:0]           c0_ddr4_odt;
+    wire  [0:0]            c0_ddr4_cs_n;
+    
+    wire                 c0_ddr4_act_n;
+    
+    reg  [1:0]           c0_ddr4_ba_sdram[1:0];
+    reg  [0:0]           c0_ddr4_bg_sdram[1:0];
+    
+    reg [ADDR_WIDTH-1:0] DDR4_ADRMOD[RANK_WIDTH-1:0];
+	
+	generate
+    if (DQ_WIDTH/16) begin: mem
+    
+          DDR4_if #(.CONFIGURED_DQ_BITS (16)) iDDR4[0:(RANK_WIDTH*NUM_PHYSICAL_PARTS)-1]();
+    
+            for (r = 0; r < RANK_WIDTH; r++) begin:memModels_Ri2
+              for (i = 0; i < NUM_PHYSICAL_PARTS; i++) begin:memModel2
+                ddr4_model  #
+                (
+                 .CONFIGURED_DQ_BITS (16),
+                 .CONFIGURED_DENSITY (CONFIGURED_DENSITY)
+                 )  ddr4_model(
+                    .model_enable (model_enable),
+                    .iDDR4        (iDDR4[(r*NUM_PHYSICAL_PARTS)+i])
+                );
+              end
+            end
+    
+            for (r = 0; r < RANK_WIDTH; r++) begin:tranDQ3
+              for (i = 0; i < NUM_PHYSICAL_PARTS; i++) begin:tranDQ13
+                for (s = 0; s < 16; s++) begin:tranDQ2
+                  `ifdef XILINX_SIMULATOR
+                  short bidiDQ(iDDR4[(r*NUM_PHYSICAL_PARTS)+i].DQ[s], c0_ddr4_dq[s+i*16]);
+                  `else
+                  tran bidiDQ(iDDR4[(r*NUM_PHYSICAL_PARTS)+i].DQ[s], c0_ddr4_dq[s+i*16]);
+                  `endif
+                end
+              end
+            end
+    
+            for (r = 0; r < RANK_WIDTH; r++) begin:tranDQS3
+              for (i = 0; i < NUM_PHYSICAL_PARTS; i++) begin:tranDQS13
+              `ifdef XILINX_SIMULATOR
+                short bidiDQS0(iDDR4[(r*NUM_PHYSICAL_PARTS)+i].DQS_t[0], c0_ddr4_dqs_t[(2*i)]);
+                short bidiDQS0_(iDDR4[(r*NUM_PHYSICAL_PARTS)+i].DQS_c[0], c0_ddr4_dqs_c[(2*i)]);
+                short bidiDM0(iDDR4[(r*NUM_PHYSICAL_PARTS)+i].DM_n[0], c0_ddr4_dm_dbi_n[(2*i)]);
+                short bidiDQS1(iDDR4[(r*NUM_PHYSICAL_PARTS)+i].DQS_t[1], c0_ddr4_dqs_t[((2*i)+1)]);
+                short bidiDQS1_(iDDR4[(r*NUM_PHYSICAL_PARTS)+i].DQS_c[1], c0_ddr4_dqs_c[((2*i)+1)]);
+                short bidiDM1(iDDR4[(r*NUM_PHYSICAL_PARTS)+i].DM_n[1], c0_ddr4_dm_dbi_n[((2*i)+1)]);
+    
+              `else
+                tran bidiDQS0(iDDR4[(r*NUM_PHYSICAL_PARTS)+i].DQS_t[0], c0_ddr4_dqs_t[(2*i)]);
+                tran bidiDQS0_(iDDR4[(r*NUM_PHYSICAL_PARTS)+i].DQS_c[0], c0_ddr4_dqs_c[(2*i)]);
+                tran bidiDM0(iDDR4[(r*NUM_PHYSICAL_PARTS)+i].DM_n[0], c0_ddr4_dm_dbi_n[(2*i)]);
+                tran bidiDQS1(iDDR4[(r*NUM_PHYSICAL_PARTS)+i].DQS_t[1], c0_ddr4_dqs_t[((2*i)+1)]);
+                tran bidiDQS1_(iDDR4[(r*NUM_PHYSICAL_PARTS)+i].DQS_c[1], c0_ddr4_dqs_c[((2*i)+1)]);
+                tran bidiDM1(iDDR4[(r*NUM_PHYSICAL_PARTS)+i].DM_n[1], c0_ddr4_dm_dbi_n[((2*i)+1)]);
+              `endif
+            end
+          end
+    
+           for (r = 0; r < RANK_WIDTH; r++) begin:tranADCTL_RANKS
+             for (i = 0; i < NUM_PHYSICAL_PARTS; i++) begin:tranADCTL
+    
+               assign iDDR4[(r*NUM_PHYSICAL_PARTS)+ i].BG        = c0_ddr4_bg_sdram[r];
+               assign iDDR4[(r*NUM_PHYSICAL_PARTS)+ i].BA        = c0_ddr4_ba_sdram[r];
+               assign iDDR4[(r*NUM_PHYSICAL_PARTS)+ i].ADDR_17 = (ADDR_WIDTH == 18) ? DDR4_ADRMOD[r][ADDR_WIDTH-1] : 1'b0;
+               assign iDDR4[(r*NUM_PHYSICAL_PARTS)+ i].ADDR      = DDR4_ADRMOD[r][13:0];
+               assign iDDR4[(r*NUM_PHYSICAL_PARTS)+ i].CS_n = c0_ddr4_cs_n[r];
+    
+             end
+           end
+    
+        for (r = 0; r < RANK_WIDTH; r++) begin:tranADCTL_RANKS1
+          for (i = 0; i < NUM_PHYSICAL_PARTS; i++) begin:tranADCTL1
+              assign iDDR4[(r*NUM_PHYSICAL_PARTS)+ i].CK = {c0_ddr4_ck_t, c0_ddr4_ck_c};
+              assign iDDR4[(r*NUM_PHYSICAL_PARTS)+ i].ACT_n     = c0_ddr4_act_n;
+              assign iDDR4[(r*NUM_PHYSICAL_PARTS)+ i].RAS_n_A16 = DDR4_ADRMOD[r][16];
+              assign iDDR4[(r*NUM_PHYSICAL_PARTS)+ i].CAS_n_A15 = DDR4_ADRMOD[r][15];
+              assign iDDR4[(r*NUM_PHYSICAL_PARTS)+ i].WE_n_A14  = DDR4_ADRMOD[r][14];
+              assign iDDR4[(r*NUM_PHYSICAL_PARTS)+ i].CKE       = c0_ddr4_cke[r];
+              assign iDDR4[(r*NUM_PHYSICAL_PARTS)+ i].ODT       = c0_ddr4_odt[r];
+              assign iDDR4[(r*NUM_PHYSICAL_PARTS)+ i].PARITY  = 1'b0;
+              assign iDDR4[(r*NUM_PHYSICAL_PARTS)+ i].TEN     = 1'b0;
+              assign iDDR4[(r*NUM_PHYSICAL_PARTS)+ i].ZQ      = 1'b1;
+              assign iDDR4[(r*NUM_PHYSICAL_PARTS)+ i].PWR     = 1'b1;
+              assign iDDR4[(r*NUM_PHYSICAL_PARTS)+ i].VREF_CA = 1'b1;
+              assign iDDR4[(r*NUM_PHYSICAL_PARTS)+ i].VREF_DQ = 1'b1;
+              assign iDDR4[(r*NUM_PHYSICAL_PARTS)+ i].RESET_n = c0_ddr4_reset_n;
+              end
+            end
+          end
+    
+          if (DQ_WIDTH%16) begin: mem_extra_bits
+           // DDR4 X16 dual rank is not supported
+            DDR4_if #(.CONFIGURED_DQ_BITS (16)) iDDR4[(DQ_WIDTH/DRAM_WIDTH):(DQ_WIDTH/DRAM_WIDTH)]();
+    
+            ddr4_model  #
+              (
+               .CONFIGURED_DQ_BITS (16),
+               .CONFIGURED_DENSITY (CONFIGURED_DENSITY)
+               )  ddr4_model(
+                .model_enable (model_enable),
+                .iDDR4        (iDDR4[(DQ_WIDTH/DRAM_WIDTH)])
+            );
+    
+            for (i = (DQ_WIDTH/DRAM_WIDTH)*16; i < DQ_WIDTH; i=i+1) begin:tranDQ
+              `ifdef XILINX_SIMULATOR
+              short bidiDQ(iDDR4[i/16].DQ[i%16], c0_ddr4_dq[i]);
+              short bidiDQ_msb(iDDR4[i/16].DQ[(i%16)+8], c0_ddr4_dq[i]);
+              `else
+              tran bidiDQ(iDDR4[i/16].DQ[i%16], c0_ddr4_dq[i]);
+              tran bidiDQ_msb(iDDR4[i/16].DQ[(i%16)+8], c0_ddr4_dq[i]);
+              `endif
+            end
+    
+            `ifdef XILINX_SIMULATOR
+            short bidiDQS0(iDDR4[DQ_WIDTH/DRAM_WIDTH].DQS_t[0], c0_ddr4_dqs_t[DQS_WIDTH-1]);
+            short bidiDQS0_(iDDR4[DQ_WIDTH/DRAM_WIDTH].DQS_c[0], c0_ddr4_dqs_c[DQS_WIDTH-1]);
+            short bidiDM0(iDDR4[DQ_WIDTH/DRAM_WIDTH].DM_n[0], c0_ddr4_dm_dbi_n[DM_WIDTH-1]);
+            short bidiDQS1(iDDR4[DQ_WIDTH/DRAM_WIDTH].DQS_t[1], c0_ddr4_dqs_t[DQS_WIDTH-1]);
+            short bidiDQS1_(iDDR4[DQ_WIDTH/DRAM_WIDTH].DQS_c[1], c0_ddr4_dqs_c[DQS_WIDTH-1]);
+            short bidiDM1(iDDR4[DQ_WIDTH/DRAM_WIDTH].DM_n[1], c0_ddr4_dm_dbi_n[DM_WIDTH-1]);
+            `else
+            tran bidiDQS0(iDDR4[DQ_WIDTH/DRAM_WIDTH].DQS_t[0], c0_ddr4_dqs_t[DQS_WIDTH-1]);
+            tran bidiDQS0_(iDDR4[DQ_WIDTH/DRAM_WIDTH].DQS_c[0], c0_ddr4_dqs_c[DQS_WIDTH-1]);
+            tran bidiDM0(iDDR4[DQ_WIDTH/DRAM_WIDTH].DM_n[0], c0_ddr4_dm_dbi_n[DM_WIDTH-1]);
+            tran bidiDQS1(iDDR4[DQ_WIDTH/DRAM_WIDTH].DQS_t[1], c0_ddr4_dqs_t[DQS_WIDTH-1]);
+            tran bidiDQS1_(iDDR4[DQ_WIDTH/DRAM_WIDTH].DQS_c[1], c0_ddr4_dqs_c[DQS_WIDTH-1]);
+            tran bidiDM1(iDDR4[DQ_WIDTH/DRAM_WIDTH].DM_n[1], c0_ddr4_dm_dbi_n[DM_WIDTH-1]);
+            `endif
+    
+            assign iDDR4[DQ_WIDTH/DRAM_WIDTH].CK = {c0_ddr4_ck_t, c0_ddr4_ck_c};
+            assign iDDR4[DQ_WIDTH/DRAM_WIDTH].ACT_n = c0_ddr4_act_n;
+            assign iDDR4[DQ_WIDTH/DRAM_WIDTH].RAS_n_A16 = DDR4_ADRMOD[0][16];
+            assign iDDR4[DQ_WIDTH/DRAM_WIDTH].CAS_n_A15 = DDR4_ADRMOD[0][15];
+            assign iDDR4[DQ_WIDTH/DRAM_WIDTH].WE_n_A14 = DDR4_ADRMOD[0][14];
+            assign iDDR4[DQ_WIDTH/DRAM_WIDTH].CKE = c0_ddr4_cke[0];
+            assign iDDR4[DQ_WIDTH/DRAM_WIDTH].ODT = c0_ddr4_odt[0];
+            assign iDDR4[DQ_WIDTH/DRAM_WIDTH].BG = c0_ddr4_bg_sdram[0];
+            assign iDDR4[DQ_WIDTH/DRAM_WIDTH].BA = c0_ddr4_ba_sdram[0];
+            assign iDDR4[DQ_WIDTH/DRAM_WIDTH].ADDR_17 = (ADDR_WIDTH == 18) ? DDR4_ADRMOD[0][ADDR_WIDTH-1] : 1'b0;
+            assign iDDR4[DQ_WIDTH/DRAM_WIDTH].ADDR = DDR4_ADRMOD[0][13:0];
+            assign iDDR4[DQ_WIDTH/DRAM_WIDTH].RESET_n = c0_ddr4_reset_n;
+            assign iDDR4[DQ_WIDTH/DRAM_WIDTH].TEN     = 1'b0;
+            assign iDDR4[DQ_WIDTH/DRAM_WIDTH].ZQ      = 1'b1;
+            assign iDDR4[DQ_WIDTH/DRAM_WIDTH].PWR     = 1'b1;
+            assign iDDR4[DQ_WIDTH/DRAM_WIDTH].VREF_CA = 1'b1;
+            assign iDDR4[DQ_WIDTH/DRAM_WIDTH].VREF_DQ = 1'b1;
+            assign iDDR4[DQ_WIDTH/DRAM_WIDTH].CS_n = c0_ddr4_cs_n[0];
+          end
+        //end
+      endgenerate
 	//***************************************************************************
   // Reporting the test case status
   //***************************************************************************

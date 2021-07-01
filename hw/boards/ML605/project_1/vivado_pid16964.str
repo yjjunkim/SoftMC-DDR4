@@ -1,0 +1,998 @@
+/*
+
+Xilinx Vivado v2020.2 (64-bit) [Major: 2020, Minor: 2]
+SW Build: 3064766 on Wed Nov 18 09:12:45 MST 2020
+IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+
+Process ID (PID): 16964
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Thu Jul 01 14:49:20 KST 2021
+Time zone: 	Korean Standard Time (Asia/Seoul)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 3840x2160
+Screen resolution (DPI): 175
+Available screens: 2
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=21
+Scale size: 37
+
+Java version: 	11.0.2 64-bit
+Java home: 	D:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2
+Java executable location: 	D:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	yongj
+User home directory: C:/Users/yongj
+User working directory: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1
+User country: 	KR
+User language: 	ko
+User locale: 	ko_KR
+
+RDI_BASEROOT: D:/Xilinx/Vivado
+HDI_APPROOT: D:/Xilinx/Vivado/2020.2
+RDI_DATADIR: D:/Xilinx/Vivado/2020.2/data
+RDI_BINDIR: D:/Xilinx/Vivado/2020.2/bin
+
+Vivado preferences file location: C:/Users/yongj/AppData/Roaming/Xilinx/Vivado/2020.2/vivado.xml
+Vivado preferences directory: C:/Users/yongj/AppData/Roaming/Xilinx/Vivado/2020.2/
+Vivado layouts directory: C:/Users/yongj/AppData/Roaming/Xilinx/Vivado/2020.2/data/layouts
+PlanAhead jar file location: 	D:/Xilinx/Vivado/2020.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/vivado.log
+Vivado journal file location: 	C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/vivado.jou
+Engine tmp dir: 	C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/.Xil/Vivado-16964-DESKTOP-ILOVGO9
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_DSP: D:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_HLS: D:/Xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: D:/Xilinx/Vivado/2020.2
+XILINX_VIVADO: D:/Xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: D:/Xilinx/Vivado/2020.2
+
+
+GUI allocated memory:	143 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,175 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 125 MB (+129102kb) [00:00:09]
+// [Engine Memory]: 1,175 MB (+1080498kb) [00:00:09]
+// bz (cr):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\yongj\Desktop\softmc_ddr4\hw\boards\ML605\project_1\project_1.xpr. Version: Vivado v2020.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.xpr 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,175 MB. GUI used memory: 81 MB. Current time: 7/1/21, 2:49:21 PM KST
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  3438 ms.
+// Tcl Message: open_project C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 1309.633 ; gain = 0.000 
+// Project name: project_1; location: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1; part: xcvu095-ffvb1760-1-i
+dismissDialog("Open Project"); // bz
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 162 MB (+31652kb) [00:00:23]
+// Elapsed time: 31 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 29); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 30); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_softMC_top (tb_softMC_top.v)]", 32, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_softMC_top (tb_softMC_top.v), uut : softMC_top (softMC_top.v)]", 34, true, false, false, false, false, true); // D - Double Click - Node
+// [GUI Memory]: 175 MB (+4681kb) [00:00:58]
+// Elapsed time: 736 seconds
+selectCodeEditor("tb_softMC_top.v", 489, 380); // bP
+selectCodeEditor("tb_softMC_top.v", 489, 380, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 19 seconds
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ddr3_dq_fpga"); // l
+// Elapsed time: 10 seconds
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ddr3_dq_fpga"); // l
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ddr3_dq_fpga"); // l
+// Elapsed time: 10 seconds
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ddr3_dq_fpga"); // l
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ddr3_dq_fpga"); // l
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ddr3_dq_fpga"); // l
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ddr3_dq_fpga"); // l
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ddr3_dq_fpga"); // l
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ddr3_dq_fpga"); // l
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ddr3_dq_fpga"); // l
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ddr3_dq_fpga"); // l
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ddr3_dq_fpga"); // l
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ddr3_dq_fpga"); // l
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ddr3_dq_fpga"); // l
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ddr3_dq_fpga"); // l
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ddr3_dq_fpga"); // l
+// Elapsed time: 76 seconds
+selectCodeEditor("tb_softMC_top.v", 765, 538); // bP
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ddr4", true); // l
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ddr4"); // l
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ddr4"); // l
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ddr4"); // l
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ddr4"); // l
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ddr4"); // l
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ddr4"); // l
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ddr4"); // l
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ddr4"); // l
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ddr4"); // l
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ddr4"); // l
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ddr4"); // l
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ddr4"); // l
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ddr4"); // l
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ddr4"); // l
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ddr4"); // l
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ddr4"); // l
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ddr4"); // l
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ddr4"); // l
+// Elapsed time: 15 seconds
+selectCodeEditor("tb_softMC_top.v", 449, 919); // bP
+// Elapsed time: 30 seconds
+selectCodeEditor("tb_softMC_top.v", 259, 348); // bP
+typeControlKey((HResource) null, "tb_softMC_top.v", 'v'); // bP
+selectCodeEditor("tb_softMC_top.v", 872, 340); // bP
+typeControlKey((HResource) null, "tb_softMC_top.v", 'c'); // bP
+selectCodeEditor("tb_softMC_top.v", 129, 319); // bP
+selectCodeEditor("tb_softMC_top.v", 126, 337); // bP
+typeControlKey((HResource) null, "tb_softMC_top.v", 'v'); // bP
+selectCodeEditor("tb_softMC_top.v", 361, 337); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ak
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cr):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: LOAD_FEATURE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator... INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.sim/sim_1/behav/xsim' INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [USF-XSim-7] Finding pre-compiled libraries... INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.sim/sim_1/behav/xsim' INFO: [SIM-utils-50] Design contains embedded sources, generating MEM files for simulation... 
+// Tcl Message: Generating merged BMM file for the design top 'ddr4_0'... Generating merged BMM file for the design top 'ddr4_0'... 
+// Tcl Message: INFO: [SIM-utils-54] Inspecting design source files for 'tb_softMC_top' in fileset 'sim_1'... 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)... 
+// Tcl Message: INFO: [USF-XSim-101] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvlog --incr --relax -L uvm -prj tb_softMC_top_vlog.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 1309.633 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '12' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.sim/sim_1/behav/xsim' 
+// Tcl Message: "xelab -wto b05a631014b24489b6600b177fa38575 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L microblaze_v11_0_4 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L lmb_v10_v3_0_11 -L lmb_bram_if_cntlr_v4_0_19 -L blk_mem_gen_v8_4_4 -L iomodule_v3_1_6 -L fifo_generator_v13_2_5 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_softMC_top_behav xil_defaultlib.tb_softMC_top xil_defaultlib.glbl -log elaborate.log" 
+// Tcl Message: Vivado Simulator 2020.2 Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved. Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto b05a631014b24489b6600b177fa38575 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L microblaze_v11_0_4 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L lmb_v10_v3_0_11 -L lmb_bram_if_cntlr_v4_0_19 -L blk_mem_gen_v8_4_4 -L iomodule_v3_1_6 -L fifo_generator_v13_2_5 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_softMC_top_behav xil_defaultlib.tb_softMC_top xil_defaultlib.glbl -log elaborate.log  Using 2 slave threads. Starting static elaboration 
+// Tcl Message: Pass Through NonSizing Optimizer 
+// TclEventType: LAUNCH_SIM
+// TclEventType: LOAD_FEATURE
+// Tcl Message: Built simulation snapshot tb_softMC_top_behav 
+// Tcl Message: run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:26 . Memory (MB): peak = 1309.633 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '26' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "tb_softMC_top_behav -key {Behavioral:sim_1:Functional:tb_softMC_top} -tclbatch {tb_softMC_top.tcl} -protoinst "protoinst_files/bd_9054.protoinst" -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2020.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// WARNING: HEventQueue.dispatchEvent() is taking  2002 ms.
+// Tcl Message: INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/bd_9054.protoinst 
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// Elapsed time: 45 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// [GUI Memory]: 184 MB (+545kb) [00:17:10]
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [GUI Memory]: 204 MB (+11985kb) [00:17:11]
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,175 MB. GUI used memory: 138 MB. Current time: 7/1/21, 3:06:19 PM KST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: source tb_softMC_top.tcl 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: SIMULATION_OBJECT_TREE_REFRESHING
+// Tcl Message: # run 1000ns 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,175 MB. GUI used memory: 126 MB. Current time: 7/1/21, 3:06:21 PM KST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1309.633 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_softMC_top_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:13 ; elapsed = 00:00:49 . Memory (MB): peak = 1309.633 ; gain = 0.000 
+// 'd' command handler elapsed time: 49 seconds
+dismissDialog("Run Simulation"); // e
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ac
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ac
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // ac
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // ac
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ac
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ah
+selectMenu(PAResourceItoN.MainMenuMgr_SIMULATION_WAVEFORM, "Simulation Waveform"); // ah
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_CLOSE, "Close Simulation"); // ak
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ac
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_CLOSE
+// A (cr): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Close : addNotify
+// TclEventType: WAVEFORM_CLOSE_WCFG
+dismissDialog("Confirm Close"); // A
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// WARNING: HEventQueue.dispatchEvent() is taking  1074 ms.
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+dismissDialog("Close"); // bz
+// Elapsed time: 14 seconds
+selectCodeEditor("tb_softMC_top.v", 893, 322); // bP
+typeControlKey((HResource) null, "tb_softMC_top.v", 'v'); // bP
+// Elapsed time: 44 seconds
+selectCodeEditor("tb_softMC_top.v", 696, 612); // bP
+// Elapsed time: 12 seconds
+selectCodeEditor("tb_softMC_top.v", 311, 695); // bP
+selectCodeEditor("tb_softMC_top.v", 868, 718); // bP
+// Elapsed time: 10 seconds
+selectCodeEditor("tb_softMC_top.v", 1, 305); // bP
+// Elapsed time: 22 seconds
+selectCodeEditor("tb_softMC_top.v", 295, 581); // bP
+typeControlKey((HResource) null, "tb_softMC_top.v", 'v'); // bP
+selectCodeEditor("tb_softMC_top.v", 822, 709); // bP
+selectCodeEditor("tb_softMC_top.v", 822, 709, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("tb_softMC_top.v", 831, 719); // bP
+selectCodeEditor("tb_softMC_top.v", 831, 718, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("tb_softMC_top.v", 657, 603); // bP
+typeControlKey((HResource) null, "tb_softMC_top.v", 'v'); // bP
+selectCodeEditor("tb_softMC_top.v", 687, 699); // bP
+// Elapsed time: 16 seconds
+selectCodeEditor("tb_softMC_top.v", 415, 618); // bP
+selectCodeEditor("tb_softMC_top.v", 415, 618, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("tb_softMC_top.v", 386, 620); // bP
+selectCodeEditor("tb_softMC_top.v", 386, 619, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "tb_softMC_top.v", 'c'); // bP
+// Elapsed time: 43 seconds
+selectCodeEditor("tb_softMC_top.v", 415, 371); // bP
+selectCodeEditor("tb_softMC_top.v", 418, 238); // bP
+selectCodeEditor("tb_softMC_top.v", 455, 805); // bP
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tck"); // l
+selectCodeEditor("tb_softMC_top.v", 472, 813); // bP
+selectCodeEditor("tb_softMC_top.v", 25, 817); // bP
+typeControlKey((HResource) null, "tb_softMC_top.v", 'c'); // bP
+selectCodeEditor("tb_softMC_top.v", 299, 837); // bP
+typeControlKey((HResource) null, "tb_softMC_top.v", 'v'); // bP
+typeControlKey((HResource) null, "tb_softMC_top.v", 'v'); // bP
+typeControlKey(null, null, 'z');
+selectCodeEditor("tb_softMC_top.v", 19, 812); // bP
+selectCodeEditor("tb_softMC_top.v", 418, 844); // bP
+selectCodeEditor("tb_softMC_top.v", 418, 843, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("tb_softMC_top.v", 1180, 799); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 39 seconds
+selectCodeEditor("tb_softMC_top.v", 965, 650); // bP
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "addr_width"); // l
+selectCodeEditor("tb_softMC_top.v", 510, 784); // bP
+selectCodeEditor("tb_softMC_top.v", 684, 804); // bP
+selectCodeEditor("tb_softMC_top.v", 684, 776); // bP
+typeControlKey((HResource) null, "tb_softMC_top.v", 'v'); // bP
+selectCodeEditor("tb_softMC_top.v", 470, 758); // bP
+selectCodeEditor("tb_softMC_top.v", 718, 820); // bP
+// Elapsed time: 14 seconds
+selectCodeEditor("tb_softMC_top.v", 420, 585); // bP
+selectCodeEditor("tb_softMC_top.v", 422, 600); // bP
+typeControlKey((HResource) null, "tb_softMC_top.v", 'v'); // bP
+selectCodeEditor("tb_softMC_top.v", 128, 653); // bP
+selectCodeEditor("tb_softMC_top.v", 525, 906); // bP
+selectCodeEditor("tb_softMC_top.v", 537, 971); // bP
+selectCodeEditor("tb_softMC_top.v", 537, 971, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "tb_softMC_top.v", 'c'); // bP
+selectCodeEditor("tb_softMC_top.v", 73, 618); // bP
+selectCodeEditor("tb_softMC_top.v", 69, 621, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("tb_softMC_top.v", 69, 622); // bP
+selectCodeEditor("tb_softMC_top.v", 68, 653); // bP
+selectCodeEditor("tb_softMC_top.v", 243, 645); // bP
+typeControlKey((HResource) null, "tb_softMC_top.v", 'v'); // bP
+selectCodeEditor("tb_softMC_top.v", 24, 712); // bP
+selectCodeEditor("tb_softMC_top.v", 407, 696); // bP
+selectCodeEditor("tb_softMC_top.v", 708, 724); // bP
+selectCodeEditor("tb_softMC_top.v", 619, 576); // bP
+selectCodeEditor("tb_softMC_top.v", 669, 796); // bP
+// Elapsed time: 20 seconds
+selectCodeEditor("tb_softMC_top.v", 416, 386); // bP
+selectCodeEditor("tb_softMC_top.v", 613, 444); // bP
+typeControlKey((HResource) null, "tb_softMC_top.v", 'v'); // bP
+selectCodeEditor("tb_softMC_top.v", 813, 656); // bP
+selectCodeEditor("tb_softMC_top.v", 435, 344); // bP
+typeControlKey((HResource) null, "tb_softMC_top.v", 'v'); // bP
+selectCodeEditor("tb_softMC_top.v", 14, 391); // bP
+selectCodeEditor("tb_softMC_top.v", 534, 398); // bP
+selectCodeEditor("tb_softMC_top.v", 1023, 690); // bP
+selectCodeEditor("tb_softMC_top.v", 499, 504); // bP
+typeControlKey((HResource) null, "tb_softMC_top.v", 'v'); // bP
+selectCodeEditor("tb_softMC_top.v", 889, 621); // bP
+selectCodeEditor("tb_softMC_top.v", 1137, 767); // bP
+// Elapsed time: 52 seconds
+selectCodeEditor("tb_softMC_top.v", 547, 723); // bP
+typeControlKey((HResource) null, "tb_softMC_top.v", 'v'); // bP
+selectCodeEditor("tb_softMC_top.v", 17, 774); // bP
+selectCodeEditor("tb_softMC_top.v", 621, 780); // bP
+selectCodeEditor("tb_softMC_top.v", 889, 781); // bP
+selectCodeEditor("tb_softMC_top.v", 1027, 874); // bP
+selectCodeEditor("tb_softMC_top.v", 1027, 873, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "tb_softMC_top.v", 'c'); // bP
+// Elapsed time: 31 seconds
+selectCodeEditor("tb_softMC_top.v", 577, 782); // bP
+typeControlKey((HResource) null, "tb_softMC_top.v", 'v'); // bP
+selectCodeEditor("tb_softMC_top.v", 794, 854); // bP
+selectCodeEditor("tb_softMC_top.v", 766, 577); // bP
+selectCodeEditor("tb_softMC_top.v", 764, 532); // bP
+// Elapsed time: 22 seconds
+selectCodeEditor("tb_softMC_top.v", 562, 587); // bP
+typeControlKey((HResource) null, "tb_softMC_top.v", 'v'); // bP
+selectCodeEditor("tb_softMC_top.v", 1264, 705); // bP
+selectCodeEditor("tb_softMC_top.v", 520, 524); // bP
+typeControlKey((HResource) null, "tb_softMC_top.v", 'v'); // bP
+selectCodeEditor("tb_softMC_top.v", 653, 544); // bP
+selectCodeEditor("tb_softMC_top.v", 746, 576); // bP
+selectCodeEditor("tb_softMC_top.v", 956, 594); // bP
+selectCodeEditor("tb_softMC_top.v", 1114, 845); // bP
+// Elapsed time: 18 seconds
+selectCodeEditor("tb_softMC_top.v", 847, 915); // bP
+selectCodeEditor("tb_softMC_top.v", 768, 913); // bP
+selectCodeEditor("tb_softMC_top.v", 768, 913, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "tb_softMC_top.v", 'c'); // bP
+selectCodeEditor("tb_softMC_top.v", 652, 725); // bP
+selectCodeEditor("tb_softMC_top.v", 604, 658); // bP
+typeControlKey((HResource) null, "tb_softMC_top.v", 'v'); // bP
+selectCodeEditor("tb_softMC_top.v", 25, 726); // bP
+selectCodeEditor("tb_softMC_top.v", 597, 700); // bP
+selectCodeEditor("tb_softMC_top.v", 975, 732); // bP
+selectCodeEditor("tb_softMC_top.v", 1049, 736); // bP
+selectCodeEditor("tb_softMC_top.v", 1064, 751); // bP
+selectCodeEditor("tb_softMC_top.v", 1033, 807); // bP
+selectCodeEditor("tb_softMC_top.v", 913, 868); // bP
+selectCodeEditor("tb_softMC_top.v", 442, 892); // bP
+selectCodeEditor("tb_softMC_top.v", 455, 910); // bP
+typeControlKey((HResource) null, "tb_softMC_top.v", 'v'); // bP
+selectCodeEditor("tb_softMC_top.v", 29, 977); // bP
+selectCodeEditor("tb_softMC_top.v", 25, 972); // bP
+selectCodeEditor("tb_softMC_top.v", 544, 955); // bP
+selectCodeEditor("tb_softMC_top.v", 846, 907); // bP
+selectCodeEditor("tb_softMC_top.v", 504, 699); // bP
+selectCodeEditor("tb_softMC_top.v", 507, 684); // bP
+typeControlKey((HResource) null, "tb_softMC_top.v", 'v'); // bP
+selectCodeEditor("tb_softMC_top.v", 945, 807); // bP
+selectCodeEditor("tb_softMC_top.v", 535, 766); // bP
+selectCodeEditor("tb_softMC_top.v", 141, 430); // bP
+selectCodeEditor("tb_softMC_top.v", 61, 431); // bP
+selectCodeEditor("tb_softMC_top.v", 85, 427); // bP
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("tb_softMC_top.v", 85, 433); // bP
+selectCodeEditor("tb_softMC_top.v", 297, 433); // bP
+selectCodeEditor("tb_softMC_top.v", 315, 464); // bP
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("tb_softMC_top.v", 312, 455); // bP
+// Elapsed time: 19 seconds
+selectCodeEditor("tb_softMC_top.v", 143, 1005); // bP
+selectCodeEditor("tb_softMC_top.v", 89, 1007); // bP
+typeControlKey(null, null, 'z');
+selectCodeEditor("tb_softMC_top.v", 92, 1012); // bP
+selectCodeEditor("tb_softMC_top.v", 83, 1042); // bP
+selectCodeEditor("tb_softMC_top.v", 68, 1039); // bP
+selectCodeEditor("tb_softMC_top.v", 278, 1043); // bP
+selectCodeEditor("tb_softMC_top.v", 422, 958); // bP
+selectCodeEditor("tb_softMC_top.v", 425, 1033); // bP
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("tb_softMC_top.v", 114, 1014); // bP
+selectCodeEditor("tb_softMC_top.v", 198, 1039); // bP
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("tb_softMC_top.v", 75, 233); // bP
+typeControlKey((HResource) null, "tb_softMC_top.v", 'v'); // bP
+selectCodeEditor("tb_softMC_top.v", 667, 295); // bP
+// Elapsed time: 18 seconds
+selectCodeEditor("tb_softMC_top.v", 204, 685); // bP
+selectCodeEditor("tb_softMC_top.v", 600, 689); // bP
+selectCodeEditor("tb_softMC_top.v", 603, 706); // bP
+// Elapsed time: 17 seconds
+selectCodeEditor("tb_softMC_top.v", 115, 722); // bP
+typeControlKey((HResource) null, "tb_softMC_top.v", 'v'); // bP
+selectCodeEditor("tb_softMC_top.v", 598, 673); // bP
+selectCodeEditor("tb_softMC_top.v", 614, 682); // bP
+selectCodeEditor("tb_softMC_top.v", 766, 532); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ak
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cr):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator... INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.sim/sim_1/behav/xsim' INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [USF-XSim-7] Finding pre-compiled libraries... INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.sim/sim_1/behav/xsim' INFO: [SIM-utils-50] Design contains embedded sources, generating MEM files for simulation... 
+// Tcl Message: Generating merged BMM file for the design top 'ddr4_0'... Generating merged BMM file for the design top 'ddr4_0'... 
+// Tcl Message: INFO: [SIM-utils-54] Inspecting design source files for 'tb_softMC_top' in fileset 'sim_1'... 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)... 
+// Tcl Message: INFO: [USF-XSim-101] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvlog --incr --relax -L uvm -prj tb_softMC_top_vlog.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 1309.633 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '13' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.sim/sim_1/behav/xsim' 
+// Tcl Message: "xelab -wto b05a631014b24489b6600b177fa38575 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L microblaze_v11_0_4 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L lmb_v10_v3_0_11 -L lmb_bram_if_cntlr_v4_0_19 -L blk_mem_gen_v8_4_4 -L iomodule_v3_1_6 -L fifo_generator_v13_2_5 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_softMC_top_behav xil_defaultlib.tb_softMC_top xil_defaultlib.glbl -log elaborate.log" 
+// Tcl Message: Vivado Simulator 2020.2 Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved. Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto b05a631014b24489b6600b177fa38575 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L microblaze_v11_0_4 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L lmb_v10_v3_0_11 -L lmb_bram_if_cntlr_v4_0_19 -L blk_mem_gen_v8_4_4 -L iomodule_v3_1_6 -L fifo_generator_v13_2_5 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_softMC_top_behav xil_defaultlib.tb_softMC_top xil_defaultlib.glbl -log elaborate.log  Using 2 slave threads. Starting static elaboration 
+// Tcl Message: Pass Through NonSizing Optimizer 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1309.633 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds INFO: [USF-XSim-99] Step results log file:'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.sim/sim_1/behav/xsim/elaborate.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.sim/sim_1/behav/xsim/elaborate.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:24 . Memory (MB): peak = 1309.633 ; gain = 0.000 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  
+// HOptionPane Error: 'ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  (Run Simulation)'
+// 'd' command handler elapsed time: 33 seconds
+// Elapsed time: 34 seconds
+selectButton("OptionPane.button", "OK"); // JButton
+// a (cr): Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Critical Messages"); // a
+// Elapsed time: 31 seconds
+selectCodeEditor("tb_softMC_top.v", 154, 367); // bP
+selectCodeEditor("tb_softMC_top.v", 154, 366, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("tb_softMC_top.v", 165, 376); // bP
+selectCodeEditor("tb_softMC_top.v", 165, 376, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("tb_softMC_top.v", 167, 378); // bP
+selectCodeEditor("tb_softMC_top.v", 167, 378, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("tb_softMC_top.v", 179, 379); // bP
+selectCodeEditor("tb_softMC_top.v", 179, 378, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("tb_softMC_top.v", 259, 503); // bP
+selectCodeEditor("tb_softMC_top.v", 259, 503, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("tb_softMC_top.v", 151, 378); // bP
+selectCodeEditor("tb_softMC_top.v", 151, 377, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("tb_softMC_top.v", 159, 375); // bP
+selectCodeEditor("tb_softMC_top.v", 159, 375, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("tb_softMC_top.v", 159, 374); // bP
+selectCodeEditor("tb_softMC_top.v", 159, 374); // bP
+selectCodeEditor("tb_softMC_top.v", 301, 486); // bP
+selectCodeEditor("tb_softMC_top.v", 250, 508); // bP
+selectCodeEditor("tb_softMC_top.v", 250, 508, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 14 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_softMC_top (tb_softMC_top.v)]", 32); // D
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 2); // i
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog]", 1); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SystemVerilog, xil_defaultlib]", 7, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SystemVerilog, xil_defaultlib]", 7, true, false, false, false, true, false); // D - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ak
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a
+setFileChooser("C:/Users/yongj/Desktop/SoftMC-DDR4-main/SoftMC-DDR4-main/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/ML605/ddr4_model.sv");
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 9 seconds
+dismissDialog("Add Sources"); // c
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse C:/Users/yongj/Desktop/SoftMC-DDR4-main/SoftMC-DDR4-main/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/ML605/ddr4_model.sv 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ak
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cr):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator... INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.sim/sim_1/behav/xsim' INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [USF-XSim-7] Finding pre-compiled libraries... INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.sim/sim_1/behav/xsim' INFO: [SIM-utils-50] Design contains embedded sources, generating MEM files for simulation... 
+// Tcl Message: Generating merged BMM file for the design top 'ddr4_0'... Generating merged BMM file for the design top 'ddr4_0'... 
+// Tcl Message: INFO: [SIM-utils-54] Inspecting design source files for 'tb_softMC_top' in fileset 'sim_1'... 
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)... 
+// Tcl Message: INFO: [USF-XSim-101] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvlog --incr --relax -L uvm -prj tb_softMC_top_vlog.prj" 
+// Tcl Message: run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 1309.633 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '14' seconds INFO: [USF-XSim-99] Step results log file:'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.sim/sim_1/behav/xsim/xvlog.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.sim/sim_1/behav/xsim/xvlog.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:16 . Memory (MB): peak = 1309.633 ; gain = 0.000 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  
+// HOptionPane Error: 'ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  (Run Simulation)'
+// 'd' command handler elapsed time: 17 seconds
+// Elapsed time: 17 seconds
+selectButton("OptionPane.button", "OK"); // JButton
+// a (cr): Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Critical Messages"); // a
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 236, 257); // dS
+// Elapsed time: 10 seconds
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 309, 98); // dS
+selectCodeEditor("tb_softMC_top.v", 249, 438); // bP
+// Elapsed time: 10 seconds
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // u
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // u
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 15, false); // u
+// A (cr): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // A
+// Tcl Message: synth_design -rtl -rtl_skip_mlo -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -rtl_skip_mlo -name rtl_1 Starting synth_design Using part: xcvu095-ffvb1760-1-i Top: softMC_top 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,749 MB. GUI used memory: 121 MB. Current time: 7/1/21, 3:20:56 PM KST
+// TclEventType: ELABORATE_START
+// HMemoryUtils.trashcanNow. Engine heap size: 2,138 MB. GUI used memory: 121 MB. Current time: 7/1/21, 3:21:11 PM KST
+// TclEventType: ELABORATE_FAIL
+// TclEventType: DESIGN_NEW_FAILED
+// Tcl Message: INFO: [Device 21-403] Loading part xcvu095-ffvb1760-1-i 
+// Tcl Message: Failed to read verilog 'C:/Users/yongj/Desktop/SoftMC-DDR4-main/SoftMC-DDR4-main/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/ML605/ddr4_model.sv' 
+// Tcl Message: 1 Infos, 0 Warnings, 0 Critical Warnings and 18 Errors encountered. synth_design failed 
+// Tcl Message: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details  
+// [Engine Memory]: 2,138 MB (+948514kb) [00:32:06]
+// U (cr): Critical Messages: addNotify
+// Elapsed time: 20 seconds
+dismissDialog("Open Elaborated Design"); // bz
+dismissDialog("Critical Messages"); // U
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 317, 156); // dS
+// Elapsed time: 12 seconds
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 799, 307); // dS
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 78, 275); // dS
+typeControlKey(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, "RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR", 'c'); // dS
+// Elapsed time: 30 seconds
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // i
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header]", 1); // D
+// Elapsed time: 20 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Verilog Header]", 41); // D
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 975, 272); // dS
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 926, 265); // dS
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 1798, 280); // dS
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 1455, 262); // dS
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 1616, 261); // dS
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 1595, 239); // dS
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 372, 260); // dS
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 2282, 303); // dS
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 295, 272); // dS
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 1526, 389); // dS
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 246, 182); // dS
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 2073, 197); // dS
+// Elapsed time: 68 seconds
+selectCodeEditor("tb_softMC_top.v", 605, 590); // bP
+selectCodeEditor("tb_softMC_top.v", 606, 630); // bP
+selectCodeEditor("tb_softMC_top.v", 842, 655); // bP
+selectCodeEditor("tb_softMC_top.v", 1001, 648); // bP
+selectCodeEditor("tb_softMC_top.v", 889, 633); // bP
+selectCodeEditor("tb_softMC_top.v", 880, 630); // bP
+selectCodeEditor("tb_softMC_top.v", 887, 664); // bP
+selectCodeEditor("tb_softMC_top.v", 682, 714); // bP
+selectCodeEditor("tb_softMC_top.v", 618, 672); // bP
+selectCodeEditor("tb_softMC_top.v", 637, 748); // bP
+selectCodeEditor("tb_softMC_top.v", 735, 783); // bP
+selectCodeEditor("tb_softMC_top.v", 536, 725); // bP
+selectCodeEditor("tb_softMC_top.v", 622, 763); // bP
+selectCodeEditor("tb_softMC_top.v", 722, 788); // bP
+selectCodeEditor("tb_softMC_top.v", 688, 744); // bP
+selectCodeEditor("tb_softMC_top.v", 690, 775); // bP
+selectCodeEditor("tb_softMC_top.v", 681, 746); // bP
+selectCodeEditor("tb_softMC_top.v", 598, 589); // bP
+selectCodeEditor("tb_softMC_top.v", 598, 589, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 34 seconds
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 2); // i
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SystemVerilog, xil_defaultlib, ddr4_model.sv]", 9, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SystemVerilog, xil_defaultlib, arch_package.sv]", 8, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SystemVerilog, xil_defaultlib, ddr4_model.sv]", 9, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SystemVerilog, xil_defaultlib]", 7, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SystemVerilog, xil_defaultlib, arch_package.sv]", 8, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SystemVerilog, xil_defaultlib, ddr4_model.sv]", 9, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SystemVerilog, xil_defaultlib, arch_package.sv]", 8, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SystemVerilog, xil_defaultlib, ddr4_model.sv]", 9, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SystemVerilog, xil_defaultlib]", 7, true); // D - Node
+// Elapsed time: 92 seconds
+selectCodeEditor("tb_softMC_top.v", 1267, 385); // bP
+// Elapsed time: 31 seconds
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // i
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 2); // i
+selectCodeEditor("tb_softMC_top.v", 398, 324); // bP
+selectCodeEditor("tb_softMC_top.v", 729, 338); // bP
+selectCodeEditor("tb_softMC_top.v", 785, 362); // bP
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 1727, 236); // dS
+// Elapsed time: 12 seconds
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 330, 160); // dS
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 336, 173); // dS
+selectCheckBox(PAResourceItoN.MsgView_CRITICAL_WARNINGS, (String) null, false); // g: FALSE
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, false); // g: FALSE
+selectCheckBox(PAResourceItoN.MsgView_INFORMATION_MESSAGES, (String) null, false); // g: FALSE
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.sim/sim_1/behav/xsim/elaborate.log' file for more information.. ]", 2); // ah
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.. ]", 4); // ah
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Synth 8-5809] Error generated from encrypted envelope. [C:/Users/yongj/Desktop/SoftMC-DDR4-main/SoftMC-DDR4-main/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/ML605/StateTableCore.sv:2950]. ]", 6); // ah
+// Elapsed time: 21 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SystemVerilog, xil_defaultlib, ddr4_model.sv]", 9, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SystemVerilog, xil_defaultlib, ddr4_model.sv]", 9, false, false, false, false, false, true); // D - Double Click
+// ag (cr): Unable to Open File: addNotify
+dismissDialog("Unable to Open File"); // ag
+// Elapsed time: 77 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SystemVerilog, xil_defaultlib, ddr4_model.sv]", 9, false, false, false, false, true, false); // D - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ak
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cr): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Remove Sources"); // aE
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Users/yongj/Desktop/SoftMC-DDR4-main/SoftMC-DDR4-main/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/ML605/ddr4_model.sv] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  C:/Users/yongj/Desktop/SoftMC-DDR4-main/SoftMC-DDR4-main/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/ML605/ddr4_model.sv 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SystemVerilog, xil_defaultlib]", 7, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SystemVerilog, xil_defaultlib]", 7, true, false, false, false, true, false); // D - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ak
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+// F (c): Create Source File: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Create Source File"); // F
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a
+// Elapsed time: 33 seconds
+dismissFileChooser();
+// 'g' command handler elapsed time: 41 seconds
+dismissDialog("Add Sources"); // c
+// Elapsed time: 35 seconds
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // i
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Verilog Header, ddr3_model_parameters.vh]", 37, false); // D
+// Elapsed time: 24 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header, softMC.inc]", 4, false); // D
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 15, false); // u
+// A (cr): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // A
+// TclEventType: ELABORATE_START
+// Tcl Message: synth_design -rtl -rtl_skip_mlo -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -rtl_skip_mlo -name rtl_1 Starting synth_design Using part: xcvu095-ffvb1760-1-i Top: softMC_top 
+// TclEventType: ELABORATE_FINISH
+// HMemoryUtils.trashcanNow. Engine heap size: 2,176 MB. GUI used memory: 119 MB. Current time: 7/1/21, 3:31:21 PM KST
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_INTERFACE_ADD
+// TclEventType: SIGNAL_HIERARCHY_CHANGED
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,336 MB. GUI used memory: 119 MB. Current time: 7/1/21, 3:31:30 PM KST
+// [Engine Memory]: 2,336 MB (+95334kb) [00:42:23]
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 2,454 MB (+915kb) [00:42:24]
+// Xgd.load filename: D:/Xilinx/Vivado/2020.2/data/parts/xilinx/virtexu/devint/virtexu/xcvu095/xcvu095.xgd; ZipEntry: xcvu095_detail.xgd elapsed time: 1.3s
+// [GUI Memory]: 228 MB (+13448kb) [00:42:25]
+// DeviceModel: Load Xgds SwingWorker Join Forever elapsed time: 1.5s
+// [Engine Memory]: 2,592 MB (+16313kb) [00:42:25]
+// [GUI Memory]: 257 MB (+18873kb) [00:42:26]
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  2749 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2122.227 ; gain = 33.352 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'softMC_top' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_top.v:5] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'ddr4_0' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/.Xil/Vivado-16964-DESKTOP-ILOVGO9/realtime/ddr4_0_stub.v:6] INFO: [Synth 8-6155] done synthesizing module 'ddr4_0' (1#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/.Xil/Vivado-16964-DESKTOP-ILOVGO9/realtime/ddr4_0_stub.v:6] INFO: [Synth 8-6157] synthesizing module 'softMC' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC.v:6] 
+// Tcl Message: 	Parameter TCQ bound to: 100 - type: integer  	Parameter tCK bound to: 2500 - type: integer  	Parameter nCK_PER_CLK bound to: 2 - type: integer  	Parameter RANK_WIDTH bound to: 1 - type: integer  	Parameter ROW_WIDTH bound to: 17 - type: integer  	Parameter BANK_WIDTH bound to: 2 - type: integer  	Parameter CKE_WIDTH bound to: 1 - type: integer  	Parameter CS_WIDTH bound to: 1 - type: integer  	Parameter nCS_PER_RANK bound to: 1 - type: integer  	Parameter DQ_WIDTH bound to: 64 - type: integer  	Parameter MAINT_PRESCALER_PERIOD bound to: 200000 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'maint_ctrl_top' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_ctrl.v:4] 
+// Tcl Message: 	Parameter RANK_WIDTH bound to: 1 - type: integer  	Parameter TCQ bound to: 100 - type: integer  	Parameter tCK bound to: 2500 - type: integer  	Parameter nCK_PER_CLK bound to: 2 - type: integer  	Parameter MAINT_PRESCALER_PERIOD bound to: 200000 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'maint_ctrl' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_ctrl.v:73] 
+// Tcl Message: 	Parameter TCQ bound to: 100 - type: integer  	Parameter tCK bound to: 2500 - type: integer  	Parameter nCK_PER_CLK bound to: 2 - type: integer  	Parameter MAINT_PRESCALER_PERIOD bound to: 200000 - type: integer  	Parameter MAINT_PRESCALER_DIV bound to: 40 - type: integer  	Parameter MAINT_PRESCALER_WIDTH bound to: 6 - type: integer  	Parameter ONE bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'maint_ctrl' (2#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_ctrl.v:73] INFO: [Synth 8-6157] synthesizing module 'periodic_rd_ctrl' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_ctrl.v:119] 
+// Tcl Message: 	Parameter tCK bound to: 2500 - type: integer  	Parameter nCK_PER_CLK bound to: 2 - type: integer  	Parameter TCQ bound to: 100 - type: integer  	Parameter MAINT_PRESCALER_PERIOD bound to: 200000 - type: integer  	Parameter tPRDI bound to: 1000000 - type: integer  	Parameter PERIODIC_RD_TIMER_DIV bound to: 5 - type: integer  	Parameter PERIODIC_RD_TIMER_WIDTH bound to: 3 - type: integer  	Parameter ONE bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'periodic_rd_ctrl' (3#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_ctrl.v:119] INFO: [Synth 8-6157] synthesizing module 'zq_calib_ctrl' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_ctrl.v:175] 
+// Tcl Message: 	Parameter TCQ bound to: 100 - type: integer  	Parameter MAINT_PRESCALER_PERIOD bound to: 200000 - type: integer  	Parameter MAINT_PRESCALER_PERIOD_NS bound to: 200 - type: integer  	Parameter tZQI bound to: 128000000 - type: integer  	Parameter ZQ_TIMER_DIV bound to: 640000 - type: integer  	Parameter ZQ_TIMER_WIDTH bound to: 20 - type: integer  	Parameter ONE bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'zq_calib_ctrl' (4#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_ctrl.v:175] INFO: [Synth 8-6157] synthesizing module 'autoref_ctrl' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_ctrl.v:242] 
+// Tcl Message: 	Parameter TCQ bound to: 100 - type: integer  	Parameter ONE bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'autoref_ctrl' (5#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_ctrl.v:242] INFO: [Synth 8-6155] done synthesizing module 'maint_ctrl_top' (6#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_ctrl.v:4] INFO: [Synth 8-6157] synthesizing module 'maint_handler' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_handler.v:5] 
+// Tcl Message: INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_handler.v:97] 
+// Tcl Message: INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_handler.v:212] 
+// Tcl Message: INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_handler.v:267] INFO: [Synth 8-6155] done synthesizing module 'maint_handler' (7#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_handler.v:5] INFO: [Synth 8-6157] synthesizing module 'autoref_config' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/autoref_config.v:4] INFO: [Synth 8-6155] done synthesizing module 'autoref_config' (8#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/autoref_config.v:4] INFO: [Synth 8-6157] synthesizing module 'instr_receiver' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_receiver.v:5] 
+// Tcl Message: 	Parameter STATE_IDLE bound to: 2'b00  	Parameter STATE_APP bound to: 2'b01  	Parameter STATE_MAINT bound to: 2'b10  
+// Tcl Message: INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_receiver.v:52] INFO: [Synth 8-6155] done synthesizing module 'instr_receiver' (9#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_receiver.v:5] INFO: [Synth 8-6157] synthesizing module 'instr_fifo' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/.Xil/Vivado-16964-DESKTOP-ILOVGO9/realtime/instr_fifo_stub.v:6] INFO: [Synth 8-6155] done synthesizing module 'instr_fifo' (10#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/.Xil/Vivado-16964-DESKTOP-ILOVGO9/realtime/instr_fifo_stub.v:6] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'iseq_dispatcher' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/iseq_dispatcher.v:3] 
+// Tcl Message: 	Parameter ROW_WIDTH bound to: 17 - type: integer  	Parameter BANK_WIDTH bound to: 2 - type: integer  	Parameter CKE_WIDTH bound to: 1 - type: integer  	Parameter CS_WIDTH bound to: 1 - type: integer  	Parameter nCS_PER_RANK bound to: 1 - type: integer  	Parameter DQ_WIDTH bound to: 64 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'pipe_reg' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/pipe_reg.v:3] 
+// Tcl Message: 	Parameter WIDTH bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'pipe_reg' (11#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/pipe_reg.v:3] INFO: [Synth 8-6157] synthesizing module 'instr_dispatcher' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_dispatcher.v:5] 
+// Tcl Message: 	Parameter ROW_WIDTH bound to: 17 - type: integer  	Parameter BANK_WIDTH bound to: 2 - type: integer  	Parameter CKE_WIDTH bound to: 1 - type: integer  	Parameter RANK_WIDTH bound to: 1 - type: integer  	Parameter CS_WIDTH bound to: 1 - type: integer  	Parameter nCS_PER_RANK bound to: 1 - type: integer  	Parameter DQ_WIDTH bound to: 64 - type: integer  	Parameter ONE bound to: 1 - type: integer  	Parameter TWO bound to: 2 - type: integer  	Parameter HIGH bound to: 1'b1  	Parameter LOW bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_dispatcher.v:177] INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_dispatcher.v:244] INFO: [Synth 8-6157] synthesizing module 'instr_decoder' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:5] 
+// Tcl Message: 	Parameter ROW_WIDTH bound to: 17 - type: integer  	Parameter BANK_WIDTH bound to: 2 - type: integer  	Parameter CS_WIDTH bound to: 1 - type: integer  	Parameter LOW bound to: 1'b0  	Parameter HIGH bound to: 1'b1  	Parameter tmp_slot bound to: 136'b1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111  
+// Tcl Message: INFO: [Common 17-14] Message 'Synth 8-6090' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. INFO: [Synth 8-6155] done synthesizing module 'instr_decoder' (12#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:5] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'instr_dispatcher' (13#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_dispatcher.v:5] INFO: [Synth 8-6155] done synthesizing module 'iseq_dispatcher' (14#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/iseq_dispatcher.v:3] INFO: [Synth 8-6157] synthesizing module 'rdback_fifo' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/.Xil/Vivado-16964-DESKTOP-ILOVGO9/realtime/rdback_fifo_stub.v:6] INFO: [Synth 8-6155] done synthesizing module 'rdback_fifo' (15#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/.Xil/Vivado-16964-DESKTOP-ILOVGO9/realtime/rdback_fifo_stub.v:6] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'read_capturer' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/read_capturer.v:3] 
+// Tcl Message: 	Parameter DQ_WIDTH bound to: 64 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'read_capturer' (16#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/read_capturer.v:3] INFO: [Synth 8-6155] done synthesizing module 'softMC' (17#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC.v:6] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'softMC_top' (18#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_top.v:5] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2189.234 ; gain = 100.359 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2212.168 ; gain = 123.293 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2212.168 ; gain = 123.293 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Project 1-454] Reading design checkpoint 'c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ddr4_0.dcp' for cell 'u_ddr4_0' INFO: [Project 1-454] Reading design checkpoint 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/.Xil/Vivado-16964-DESKTOP-ILOVGO9/instr_fifo/instr_fifo.dcp' for cell 'i_softmc/i_instr0_fifo' INFO: [Project 1-454] Reading design checkpoint 'c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/rdback_fifo/rdback_fifo.dcp' for cell 'i_softmc/i_rdback_fifo' 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2248.602 ; gain = 0.000 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 522 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2020.2 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_0/bd_9054_microblaze_I_0.xdc] for cell 'u_ddr4_0/inst/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0' Finished Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_0/bd_9054_microblaze_I_0.xdc] for cell 'u_ddr4_0/inst/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0' 
+// Tcl Message: INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_0/bd_9054_microblaze_I_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/softMC_top_propImpl.xdc]. Resolution: To avoid this warning, move constraints listed in [.Xil/softMC_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis. 
+// Tcl Message: Finished Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/par/ddr4_0.xdc] for cell 'u_ddr4_0/inst' 
+// Tcl Message: INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/par/ddr4_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/softMC_top_propImpl.xdc]. Resolution: To avoid this warning, move constraints listed in [.Xil/softMC_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis. 
+// Tcl Message: INFO: [Timing 38-2] Deriving generated clocks 
+// Tcl Message: Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ddr4_0_board.xdc] for cell 'u_ddr4_0/inst' Finished Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ddr4_0_board.xdc] for cell 'u_ddr4_0/inst' Completed Processing XDC Constraints  
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 2447.758 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 132 instances were transformed.   DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 3 instances   IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instance    IOBUFDS => IOBUFDS (DIFFINBUF, IBUFCTRL, INV, OBUFT(x2)): 8 instances   IOBUFE3 => IOBUFE3 (IBUFCTRL, INBUF, OBUFT_DCIEN): 72 instances   LUT6_2 => LUT6_2 (LUT5, LUT6): 31 instances   OBUFDS => OBUFDS_DUAL_BUF (INV, OBUF(x2)): 1 instance    RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 16 instances  
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:34 ; elapsed = 00:00:22 . Memory (MB): peak = 2782.836 ; gain = 693.961 
+// Tcl Message: 54 Infos, 141 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:22 . Memory (MB): peak = 2782.836 ; gain = 698.008 
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgdAndInitRouteStorage elapsed time: 2.1s
+// [Engine Memory]: 2,737 MB (+16359kb) [00:42:27]
+// Schematic: addNotify
+// Elapsed time: 22 seconds
+dismissDialog("Open Elaborated Design"); // bz
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // f
+// Elapsed time: 86 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aK
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 2); // i
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SystemVerilog, xil_defaultlib]", 7, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SystemVerilog]", 6, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SystemVerilog]", 6, true, false, false, false, true, false); // D - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_EDIT_SIMULATION_SETS, "Edit Simulation Sets..."); // ak
+// Run Command: PAResourceCommand.PACommandNames_EDIT_SIMULATION_SETS
+// az (cr): Add Sources: addNotify
+dismissDialog("Add Sources"); // az
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SystemVerilog]", 6, true, false, false, false, true, false); // D - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ak
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_HDL_NETLIST_BLOCK_DESIGN, "Add or create design sources"); // a
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a
+// Elapsed time: 16 seconds
+setFileChooser("C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ddr4_1_ex/imports/ddr4_model.sv");
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 21 seconds
+dismissDialog("Add Sources"); // c
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ddr4_1_ex/imports/ddr4_model.sv 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h
+// bz (cr):  Reloading : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: refresh_design 
+// WARNING: HEventQueue.dispatchEvent() is taking  4984 ms.

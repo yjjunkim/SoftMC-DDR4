@@ -2,22 +2,12 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Thu Jul  1 14:11:13 2021
-# Process ID: 15876
+# Start of session at: Thu Jul  1 17:14:41 2021
+# Process ID: 27484
 # Current directory: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent25176 C:\Users\yongj\Desktop\softmc_ddr4\hw\boards\ML605\project_1\project_1.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10604 C:\Users\yongj\Desktop\softmc_ddr4\hw\boards\ML605\project_1\project_1.xpr
 # Log file: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/vivado.log
 # Journal file: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.xpr
-synth_design -rtl -rtl_skip_mlo -name rtl_1
-refresh_design
-launch_simulation
-source tb_softMC_top.tcl
-add_bp {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v} 913
-run all
-current_wave_config {Untitled 1}
-add_wave {{/tb_softMC_top/uut/i_softmc/i_iseq_disp/i_instr_dispatcher}} 
-restart
-run all
