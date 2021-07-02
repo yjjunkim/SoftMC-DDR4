@@ -1,6 +1,12 @@
 `timescale 1ps / 1ps
 
 `include "softMC.inc"
+`ifdef XILINX_SIMULATOR
+module short(in1, in1);
+inout in1;
+endmodule
+`endif
+
 
 module tb_softMC_top;
 	
@@ -247,8 +253,8 @@ module tb_softMC_top;
   wire [DM_WIDTH-1:0]                ddr3_dm_fpga;
   wire [DQS_WIDTH-1:0]               ddr3_dqs_p_fpga;
   wire [DQS_WIDTH-1:0]               ddr3_dqs_n_fpga;
-  wire [CK_WIDTH-1:0]                ddr3_ck_p_fpga;
-  wire [CK_WIDTH-1:0]                ddr3_ck_n_fpga;
+  wire [CK_WIDTH-1:0]                c0_ddr4_ck_t;
+  wire [CK_WIDTH-1:0]                c0_ddr4_ck_c;
 
   wire [DQ_WIDTH-1:0]                ddr3_dq_sdram;
   reg [ROW_WIDTH-1:0]                ddr3_addr_sdram;
@@ -308,6 +314,55 @@ module tb_softMC_top;
   wire                               modify_enable_sel;
   wire [2:0]                         vio_data_mode;
   wire [2:0]                         vio_addr_mode;
+  
+  //=============DDR4 PORT ============================
+  parameter CA_MIRROR                      = "OFF";
+  
+  wire    c0_ddr4_ck_t;
+  wire    c0_ddr4_ck_c;
+  wire                 c0_ddr4_reset_n;
+  wire  [7:0]          c0_ddr4_dm_dbi_n;
+  wire  [63:0]          c0_ddr4_dq;
+  wire  [7:0]          c0_ddr4_dqs_c;
+  wire  [7:0]          c0_ddr4_dqs_t;
+    
+  wire  [0:0]           c0_ddr4_cke;
+  wire  [0:0]           c0_ddr4_odt;
+  wire  [0:0]            c0_ddr4_cs_n;
+    
+  wire                 c0_ddr4_act_n;
+    
+  reg  [1:0]           c0_ddr4_ba_sdram[1:0];
+  reg  [0:0]           c0_ddr4_bg_sdram[1:0];
+    
+  reg [ADDR_WIDTH-1:0] DDR4_ADRMOD[RANK_WIDTH-1:0];
+  
+  wire  [1:0]          c0_ddr4_ba;
+  wire  [0:0]    c0_ddr4_bg;
+  wire  [16:0]          c0_ddr4_adr;
+  
+  wire  [0:0]  c0_ddr4_ck_t_int;
+  wire  [0:0]  c0_ddr4_ck_c_int;
+  
+  reg  [16:0]            c0_ddr4_adr_sdram[1:0];
+  //===============DDR4==============
+  //**************************************************************************//
+  // Reset Generation
+  //**************************************************************************//
+  bit  en_model;
+  tri  model_enable = en_model;
+  
+  initial begin
+     //sys_rst = 1'b0;
+     //#200
+     //sys_rst = 1'b1;
+     en_model = 1'b0; 
+     #5 en_model = 1'b1;
+     //#200;
+     //sys_rst = 1'b0;
+     //#100;
+  end 
+ 
 
   //**************************************************************************//
   // Clock generation and reset
@@ -342,8 +397,8 @@ module tb_softMC_top;
   //**************************************************************************//
 
   always @( * ) begin
-    ddr3_ck_p_sdram   <=  #(TPROP_PCB_CTRL) ddr3_ck_p_fpga;
-    ddr3_ck_n_sdram   <=  #(TPROP_PCB_CTRL) ddr3_ck_n_fpga;
+    ddr3_ck_p_sdram   <=  #(TPROP_PCB_CTRL) c0_ddr4_ck_t;
+    ddr3_ck_n_sdram   <=  #(TPROP_PCB_CTRL) c0_ddr4_ck_c;
     ddr3_addr_sdram   <=  #(TPROP_PCB_CTRL) ddr3_addr_fpga;
     ddr3_ba_sdram     <=  #(TPROP_PCB_CTRL) ddr3_ba_fpga;
     ddr3_ras_n_sdram  <=  #(TPROP_PCB_CTRL) ddr3_ras_n_fpga;
@@ -477,22 +532,25 @@ module tb_softMC_top;
 		.clk_ref_n(clk_ref_n), 
 		.sys_rst(sys_rst), 
 		//.c0_ddr4_reset_n(1'b1),
-		.c0_ddr4_ck_c(ddr3_ck_p_fpga),  // 0625 c? t?
-		.c0_ddr4_ck_t(ddr3_ck_n_fpga), 
-		.c0_ddr4_adr(ddr3_addr_fpga), 
-		.c0_ddr4_ba(ddr3_ba_fpga), 
+		//.c0_ddr4_reset_n(c0_ddr4_reset_n),
+		.c0_ddr4_ck_c(c0_ddr4_ck_c_int),  // 0625 c? t?
+		.c0_ddr4_ck_t(c0_ddr4_ck_t_int), 
+		.c0_ddr4_adr(c0_ddr4_adr), 
+		.c0_ddr4_ba(c0_ddr4_ba), // add ba, bg
+		.c0_ddr4_bg(c0_ddr4_bg), // add ba, bg
 		//.ddr_ras_n(ddr3_ras_n_fpga), 
 		//.ddr_cas_n(ddr3_cas_n_fpga), 
 		//.ddr_we_n(ddr3_we_n_fpga), 
-		.c0_ddr4_cs_n(ddr3_cs_n_fpga), 
-		.c0_ddr4_cke(ddr3_cke_fpga), 
-		.c0_ddr4_odt(ddr3_odt_fpga), 
-		.c0_ddr4_reset_n(ddr3_reset_n), 
+		.c0_ddr4_act_n(c0_ddr4_act_n),
+		.c0_ddr4_cs_n(c0_ddr4_cs_n), 
+		.c0_ddr4_cke(c0_ddr4_cke), 
+		.c0_ddr4_odt(c0_ddr4_odt), 
+		.c0_ddr4_reset_n(c0_ddr4_reset_n), 
 		//.ddr_parity(), 
 		.c0_ddr4_dm_dbi_n(), 
-		.c0_ddr4_dqs_c(ddr3_dqs_p_fpga), 
-		.c0_ddr4_dqs_t(ddr3_dqs_n_fpga), 
-		.c0_ddr4_dq(ddr3_dq_fpga),
+		.c0_ddr4_dqs_c(c0_ddr4_dqs_c), 
+		.c0_ddr4_dqs_t(c0_ddr4_dqs_t), 
+		.c0_ddr4_dq(c0_ddr4_dq),
 		.c0_init_calib_complete(phy_init_done),
 		//.iq_full(iq_full),
 		//.processing_iseq(processing_iseq),
@@ -804,6 +862,46 @@ module tb_softMC_top;
   endgenerate
 	*/
 	//==========================DDR4====================================
+	//**************************************************************************//
+  // Clock Generation
+  //**************************************************************************//
+
+  //initial
+  //  sys_clk_i = 1'b0;
+  //always
+  //  sys_clk_i = #(13924/2.0) ~sys_clk_i;
+
+  //assign c0_sys_clk_p = sys_clk_i;
+  //assign c0_sys_clk_n = ~sys_clk_i;
+
+  assign c0_ddr4_ck_t = c0_ddr4_ck_t_int[0];
+  assign c0_ddr4_ck_c = c0_ddr4_ck_c_int[0];
+
+   always @( * ) begin
+     c0_ddr4_adr_sdram[0]   <=  c0_ddr4_adr;
+     c0_ddr4_adr_sdram[1]   <=  (CA_MIRROR == "ON") ?
+                                       {c0_ddr4_adr[ADDR_WIDTH-1:14],
+                                        c0_ddr4_adr[11], c0_ddr4_adr[12],
+                                        c0_ddr4_adr[13], c0_ddr4_adr[10:9],
+                                        c0_ddr4_adr[7], c0_ddr4_adr[8],
+                                        c0_ddr4_adr[5], c0_ddr4_adr[6],
+                                        c0_ddr4_adr[3], c0_ddr4_adr[4],
+                                        c0_ddr4_adr[2:0]} :
+                                        c0_ddr4_adr;
+     c0_ddr4_ba_sdram[0]    <=  c0_ddr4_ba;
+     c0_ddr4_ba_sdram[1]    <=  (CA_MIRROR == "ON") ?
+                                        {c0_ddr4_ba[0],
+                                         c0_ddr4_ba[1]} :
+                                         c0_ddr4_ba;
+     c0_ddr4_bg_sdram[0]    <=  c0_ddr4_bg;
+      c0_ddr4_bg_sdram[1]    <=  c0_ddr4_bg;
+    end
+	
+	
+	//==========================DDR4====================================
+	//===========================================================================
+  //                         Memory Model instantiation
+  //===========================================================================
 	genvar i;
     genvar r;
     genvar s;
@@ -811,13 +909,14 @@ module tb_softMC_top;
 	localparam ADDR_WIDTH                    = 17;
 	localparam NUM_PHYSICAL_PARTS = (DQ_WIDTH/DRAM_WIDTH) ;
 	
-	import arch_package::*;
+	//import arch_package::*;
 	
 	//typedef enum {_2G=2, _4G=4, _8G=8, _16G=16} UTYPE_density;
     //parameter UTYPE_density CONFIGURED_DENSITY = _8G;
     //parameter CONFIGURED_DENSITY = 8;
     
-    
+    // DDR4 ports 
+    /*
     wire    c0_ddr4_ck_t;
     wire    c0_ddr4_ck_c;
     wire                 c0_ddr4_reset_n;
@@ -836,6 +935,7 @@ module tb_softMC_top;
     reg  [0:0]           c0_ddr4_bg_sdram[1:0];
     
     reg [ADDR_WIDTH-1:0] DDR4_ADRMOD[RANK_WIDTH-1:0];
+    */
 	
 	generate
 	
