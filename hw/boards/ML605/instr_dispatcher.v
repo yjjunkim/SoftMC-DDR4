@@ -95,14 +95,25 @@ module instr_dispatcher #(parameter ROW_WIDTH = 15, BANK_WIDTH = 3, CKE_WIDTH = 
 	reg dec1_en;
 	wire[31:0] dec1_instr;
 
-	// ?씤?뒪?듃?윮?뀡 2媛? ?룞?떆?뿉 dispatch
-	wire en0 = instr_src_r ? en_in1 : en_in0;
-	wire[31:0] instr0 = instr_src_r ? instr_in1 : instr_in0;
-	assign en_ack0 = instr_src_r ? ack1 : ack0;
+	// iseq로부터 fifo0, fifo1로부터 받은 instr을 전달함.
+	// 우리는 instr_in0만 사용할 것임
+	// decoder1로 instr_in0가 전달되지 않도록 해야함.
+	// deocder1에는 instr_in1만 전달되도록(비어있는 instr1)
 	
-	wire en1 = instr_src_r ? en_in0 : en_in1;
-	wire[31:0] instr1 = instr_src_r ? instr_in0 : instr_in1;
-	assign en_ack1 = instr_src_r ? ack0 : ack1;
+	// 2개 decoder가 
+	//wire en0 = instr_src_r ? en_in1 : en_in0;
+	wire en0 = en_in0;
+	//wire[31:0] instr0 = instr_src_r ? instr_in1 : instr_in0;
+	wire[31:0] instr0 = instr_in0;
+	//assign en_ack0 = instr_src_r ? ack1 : ack0;
+	assign en_ack0 = ack0;
+	
+    //wire en1 = instr_src_r ? en_in0 : en_in1;
+    wire en1 = en_in1;
+	//wire[31:0] instr1 = instr_src_r ? instr_in0 : instr_in1;
+	wire[31:0] instr1 =instr_in1;
+	//assign en_ack1 = instr_src_r ? ack0 : ack1;
+	assign en_ack1 = ack1;
 	
 	assign dec0_instr = instr0;
 	assign dec1_instr = instr1;

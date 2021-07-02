@@ -218,18 +218,3 @@ INFO: [VRFC 10-2458] undeclared symbol processing_iseq, assumed default net type
 INFO: [VRFC 10-2458] undeclared symbol rdback_fifo_empty, assumed default net type wire [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_top.v:582]
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/xilinx_mig/user_design/sim/wiredly.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module WireDelay
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module tb_softMC_top
-INFO: [VRFC 10-2458] undeclared symbol model_enable, assumed default net type wire [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:853]
-INFO: [VRFC 10-2458] undeclared symbol model_enable, assumed default net type wire [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:933]
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/imports/arch_package.sv" into library xil_defaultlib
-WARNING: [VRFC 10-3264] design element 'arch_package' is previously defined, ignoring this definition [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/imports/arch_package.sv:5]
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/imports/ddr4_sdram_model_wrapper.sv" into library xil_defaultlib
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/imports/proj_package.sv" into library xil_defaultlib
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/imports/ddr4_model.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module StateTable
-INFO: [VRFC 10-311] analyzing module ddr4_model
-WARNING: [VRFC 10-2821] generate block is allowed only inside loop and conditional generate in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/imports/ddr4_model.sv:340]
-WARNING: [VRFC 10-2821] generate block is allowed only inside loop and conditional generate in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/imports/ddr4_model.sv:1535]
-WARNING: [VRFC 10-2821] generate block is allowed only inside loop and conditional generate in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/imports/ddr4_model.sv:1582]
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/imports/interface.sv" into library xil_defaultlib

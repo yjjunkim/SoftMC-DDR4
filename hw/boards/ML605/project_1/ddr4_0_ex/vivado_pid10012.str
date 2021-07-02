@@ -281,3 +281,484 @@ selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation S
 selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, sim_tb_top (sim_tb_top.sv), ddr4_model (ddr4_model.sv)]", 109, true); // D - Node
 selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "General", 0); // i
 selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "Properties", 1); // i
+// Elapsed time: 240 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Text]", 114); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Text]", 114); // D
+selectCodeEditor("sim_tb_top.sv", 604, 477); // bP
+selectCodeEditor("sim_tb_top.sv", 99, 813); // bP
+selectCodeEditor("sim_tb_top.sv", 99, 813, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 89 seconds
+selectCodeEditor("sim_tb_top.sv", 457, 407); // bP
+typeControlKey((HResource) null, "sim_tb_top.sv", 'c'); // bP
+// Elapsed time: 109 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "timing_tasks.sv", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sim_tb_top.sv", 2); // m
+// Elapsed time: 28 seconds
+selectCodeEditor("sim_tb_top.sv", 145, 434); // bP
+selectCodeEditor("sim_tb_top.sv", 139, 415); // bP
+selectCodeEditor("sim_tb_top.sv", 346, 379); // bP
+selectCodeEditor("sim_tb_top.sv", 716, 623); // bP
+selectCodeEditor("sim_tb_top.sv", 801, 661); // bP
+selectCodeEditor("sim_tb_top.sv", 572, 525); // bP
+selectCodeEditor("sim_tb_top.sv", 710, 653); // bP
+selectCodeEditor("sim_tb_top.sv", 414, 502); // bP
+selectCodeEditor("sim_tb_top.sv", 424, 520); // bP
+// Elapsed time: 44 seconds
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 2); // i
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation-Only Sources, sim_1, SystemVerilog, xil_defaultlib, proj_package.sv]", 26, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation-Only Sources, sim_1, SystemVerilog, xil_defaultlib, arch_package.sv]", 24, false); // D
+selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "General", 0); // i
+// Elapsed time: 47 seconds
+selectCodeEditor("sim_tb_top.sv", 955, 518); // bP
+selectCodeEditor("sim_tb_top.sv", 323, 268); // bP
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ak
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cr):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: LOAD_FEATURE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator... 
+// Tcl Message: Generating merged BMM file for the design top 'sim_tb_top'... 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/ddr4_0_ex/ddr4_0_ex.sim/sim_1/behav/xsim' INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [USF-XSim-7] Finding pre-compiled libraries... INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/ddr4_0_ex/ddr4_0_ex.sim/sim_1/behav/xsim' INFO: [SIM-utils-50] Design contains embedded sources, generating MEM files for simulation... 
+// Tcl Message: Generating merged BMM file for the design top 'sim_tb_top'... Generating merged BMM file for the design top 'sim_tb_top'... 
+// Tcl Message: INFO: [SIM-utils-54] Inspecting design source files for 'sim_tb_top' in fileset 'sim_1'... INFO: [SIM-utils-43] Exported 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/ddr4_0_ex/ddr4_0_ex.sim/sim_1/behav/xsim/temp_mem.txt' INFO: [SIM-utils-43] Exported 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/ddr4_0_ex/ddr4_0_ex.sim/sim_1/behav/xsim/temp_second_mem.txt' 
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/ddr4_0_ex/ddr4_0_ex.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvlog --incr --relax -L uvm -prj sim_tb_top_vlog.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1132.602 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '11' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/ddr4_0_ex/ddr4_0_ex.sim/sim_1/behav/xsim' 
+// Tcl Message: Starting static elaboration Pass Through NonSizing Optimizer 
+// Tcl Message: Completed static elaboration 
+// Tcl Message: Compiling module xil_defaultlib.short Compiling module xil_defaultlib.sim_tb_top Compiling module xil_defaultlib.glbl 
+// Tcl Message: Built simulation snapshot sim_tb_top_behav  ****** Webtalk v2020.2 (64-bit)   **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020   **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020     ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.  source C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/ddr4_0_ex/ddr4_0_ex.sim/sim_1/behav/xsim/xsim.dir/sim_tb_top_behav/webtalk/xsim_webtalk.tcl -notrace 
+// TclEventType: LAUNCH_SIM
+// TclEventType: LOAD_FEATURE
+// Tcl Message: INFO: [Common 17-186] 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/ddr4_0_ex/ddr4_0_ex.sim/sim_1/behav/xsim/xsim.dir/sim_tb_top_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu Jul  1 18:44:20 2021. For additional details about this file, please refer to the WebTalk help file at D:/Xilinx/Vivado/2020.2/doc/webtalk_introduction.html. INFO: [Common 17-206] Exiting Webtalk at Thu Jul  1 18:44:20 2021... 
+// Tcl Message: run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:28 . Memory (MB): peak = 1132.602 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '28' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/ddr4_0_ex/ddr4_0_ex.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "sim_tb_top_behav -key {Behavioral:sim_1:Functional:sim_tb_top} -tclbatch {sim_tb_top.tcl} -protoinst "protoinst_files/bd_9054.protoinst" -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2020.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// Tcl Message: INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/bd_9054.protoinst 
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// Elapsed time: 43 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: source sim_tb_top.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: SIMULATION_OBJECT_TREE_REFRESHING
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 1,112 MB. GUI used memory: 145 MB. Current time: 7/1/21, 6:44:24 PM KST
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_tb_top_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:44 . Memory (MB): peak = 1172.277 ; gain = 53.254 
+// 'd' command handler elapsed time: 44 seconds
+dismissDialog("Run Simulation"); // e
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sim_tb_top.sv", 1); // m
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Elapsed time: 16 seconds
+selectCodeEditor("sim_tb_top.sv", 243, 404); // bP
+selectCodeEditor("sim_tb_top.sv", 243, 404); // bP
+selectCodeEditor("sim_tb_top.sv", 243, 404, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 551 seconds
+selectCodeEditor("sim_tb_top.sv", 485, 248); // bP
+// Elapsed time: 13 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "iddr4"); // l
+selectCodeEditor("sim_tb_top.sv", 434, 816); // bP
+selectCodeEditor("sim_tb_top.sv", 472, 818); // bP
+selectCodeEditor("sim_tb_top.sv", 472, 817, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 31 seconds
+selectCodeEditor("sim_tb_top.sv", 106, 831); // bP
+selectCodeEditor("sim_tb_top.sv", 106, 831, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("sim_tb_top.sv", 114, 827); // bP
+selectCodeEditor("sim_tb_top.sv", 114, 827, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 54 seconds
+selectCodeEditor("sim_tb_top.sv", 557, 454); // bP
+selectCodeEditor("sim_tb_top.sv", 77, 1008); // bP
+selectCodeEditor("sim_tb_top.sv", 97, 1011); // bP
+selectCodeEditor("sim_tb_top.sv", 97, 1011, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("sim_tb_top.sv", 392, 799); // bP
+selectCodeEditor("sim_tb_top.sv", 446, 534); // bP
+selectCodeEditor("sim_tb_top.sv", 464, 496); // bP
+selectCodeEditor("sim_tb_top.sv", 460, 630); // bP
+selectCodeEditor("sim_tb_top.sv", 519, 558); // bP
+// Elapsed time: 91 seconds
+selectCodeEditor("sim_tb_top.sv", 727, 347); // bP
+selectCodeEditor("sim_tb_top.sv", 727, 347, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("sim_tb_top.sv", 830, 405); // bP
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 982 ms to process. Increasing delay to 2000 ms.
+// Elapsed time: 52 seconds
+selectCodeEditor("sim_tb_top.sv", 1032, 416); // bP
+// Elapsed time: 92 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ac
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ah
+selectMenu(PAResourceItoN.MainMenuMgr_SIMULATION_WAVEFORM, "Simulation Waveform"); // ah
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_CLOSE, "Close Simulation"); // ak
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ac
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_CLOSE
+// A (cr): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Close : addNotify
+// TclEventType: WAVEFORM_CLOSE_WCFG
+dismissDialog("Confirm Close"); // A
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// Tcl Message: close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1172.277 ; gain = 0.000 
+dismissDialog("Close"); // bz
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SystemVerilog, xil_defaultlib, ddrx_cal_mc_odt.sv]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SystemVerilog, xil_defaultlib, example_tb_phy.sv]", 4, false); // D
+// HMemoryUtils.trashcanNow. Engine heap size: 1,112 MB. GUI used memory: 136 MB. Current time: 7/1/21, 7:14:27 PM KST
+// Elapsed time: 1241 seconds
+selectCodeEditor("sim_tb_top.sv", 1251, 341); // bP
+// Elapsed time: 17 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "CONFIGURED_DENSITY"); // l
+// Elapsed time: 29 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation-Only Sources, sim_1, SystemVerilog, xil_defaultlib, sim_tb_top.sv]", 29, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation-Only Sources, sim_1, SystemVerilog, xil_defaultlib, interface.sv]", 28, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation-Only Sources, sim_1, SystemVerilog, xil_defaultlib, ddr4_model.sv]", 27, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation-Only Sources, sim_1, SystemVerilog, xil_defaultlib, sim_tb_top.sv]", 29, false); // D
+// Elapsed time: 828 seconds
+selectCodeEditor("sim_tb_top.sv", 111, 173); // bP
+selectCodeEditor("sim_tb_top.sv", 111, 173, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("sim_tb_top.sv", 341, 224); // bP
+selectCodeEditor("sim_tb_top.sv", 475, 229); // bP
+selectCodeEditor("sim_tb_top.sv", 504, 263); // bP
+selectCodeEditor("sim_tb_top.sv", 470, 304); // bP
+selectCodeEditor("sim_tb_top.sv", 453, 323); // bP
+selectCodeEditor("sim_tb_top.sv", 432, 308); // bP
+selectCodeEditor("sim_tb_top.sv", 493, 238); // bP
+selectCodeEditor("sim_tb_top.sv", 498, 293); // bP
+selectCodeEditor("sim_tb_top.sv", 508, 370); // bP
+selectCodeEditor("sim_tb_top.sv", 521, 395); // bP
+selectCodeEditor("sim_tb_top.sv", 534, 418); // bP
+selectCodeEditor("sim_tb_top.sv", 530, 405); // bP
+selectCodeEditor("sim_tb_top.sv", 530, 429); // bP
+selectCodeEditor("sim_tb_top.sv", 518, 398); // bP
+selectCodeEditor("sim_tb_top.sv", 203, 512); // bP
+selectCodeEditor("sim_tb_top.sv", 203, 512, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 41 seconds
+selectCodeEditor("sim_tb_top.sv", 149, 406); // bP
+selectCodeEditor("sim_tb_top.sv", 149, 405, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("sim_tb_top.sv", 174, 405); // bP
+selectCodeEditor("sim_tb_top.sv", 174, 404, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("sim_tb_top.sv", 174, 403); // bP
+selectCodeEditor("sim_tb_top.sv", 174, 403); // bP
+selectCodeEditor("sim_tb_top.sv", 199, 432); // bP
+selectCodeEditor("sim_tb_top.sv", 183, 412); // bP
+selectCodeEditor("sim_tb_top.sv", 183, 411, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "sim_tb_top.sv", 'c'); // bP
+// HMemoryUtils.trashcanNow. Engine heap size: 1,112 MB. GUI used memory: 135 MB. Current time: 7/1/21, 7:44:28 PM KST
+// Elapsed time: 598 seconds
+selectCodeEditor("sim_tb_top.sv", 360, 585); // bP
+selectCodeEditor("sim_tb_top.sv", 360, 585, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("sim_tb_top.sv", 189, 482); // bP
+selectCodeEditor("sim_tb_top.sv", 189, 482, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("sim_tb_top.sv", 333, 490); // bP
+selectCodeEditor("sim_tb_top.sv", 333, 490, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("sim_tb_top.sv", 201, 493); // bP
+selectCodeEditor("sim_tb_top.sv", 201, 494, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("sim_tb_top.sv", 344, 491); // bP
+selectCodeEditor("sim_tb_top.sv", 344, 491, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("sim_tb_top.sv", 201, 202); // bP
+selectCodeEditor("sim_tb_top.sv", 201, 202, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("sim_tb_top.sv", 387, 303); // bP
+selectCodeEditor("sim_tb_top.sv", 387, 302, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("sim_tb_top.sv", 416, 307); // bP
+selectCodeEditor("sim_tb_top.sv", 416, 306, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("sim_tb_top.sv", 688, 654); // bP
+// Elapsed time: 127 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "c0_ddr4_ck_t"); // l
+// Elapsed time: 168 seconds
+selectCodeEditor("sim_tb_top.sv", 916, 687); // bP
+typeControlKey((HResource) null, "sim_tb_top.sv", 'c'); // bP
+// Elapsed time: 76 seconds
+selectCodeEditor("sim_tb_top.sv", 745, 451); // bP
+selectCodeEditor("sim_tb_top.sv", 231, 414); // bP
+selectCodeEditor("sim_tb_top.sv", 239, 501); // bP
+selectCodeEditor("sim_tb_top.sv", 243, 537); // bP
+selectCodeEditor("sim_tb_top.sv", 220, 539); // bP
+selectCodeEditor("sim_tb_top.sv", 194, 618); // bP
+selectCodeEditor("sim_tb_top.sv", 194, 617, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("sim_tb_top.sv", 331, 628); // bP
+selectCodeEditor("sim_tb_top.sv", 331, 627, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "sim_tb_top.sv", 'c'); // bP
+selectCodeEditor("sim_tb_top.sv", 406, 642); // bP
+selectCodeEditor("sim_tb_top.sv", 396, 630); // bP
+selectCodeEditor("sim_tb_top.sv", 396, 630, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("sim_tb_top.sv", 412, 600); // bP
+selectCodeEditor("sim_tb_top.sv", 393, 613); // bP
+selectCodeEditor("sim_tb_top.sv", 393, 613, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 108 seconds
+selectCodeEditor("sim_tb_top.sv", 333, 720); // bP
+selectCodeEditor("sim_tb_top.sv", 420, 751); // bP
+selectCodeEditor("sim_tb_top.sv", 420, 751, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("sim_tb_top.sv", 423, 715); // bP
+selectCodeEditor("sim_tb_top.sv", 427, 716, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("sim_tb_top.sv", 427, 716); // bP
+selectCodeEditor("sim_tb_top.sv", 437, 734); // bP
+selectCodeEditor("sim_tb_top.sv", 435, 724); // bP
+selectCodeEditor("sim_tb_top.sv", 435, 724, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 1073 seconds
+selectCodeEditor("sim_tb_top.sv", 1287, 503); // bP
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "short"); // l
+selectCodeEditor("sim_tb_top.sv", 348, 422); // bP
+selectCodeEditor("sim_tb_top.sv", 269, 433); // bP
+// Elapsed time: 19 seconds
+selectCodeEditor("sim_tb_top.sv", 144, 432); // bP
+typeControlKey(null, null, 'z');
+selectCodeEditor("sim_tb_top.sv", 179, 465); // bP
+selectCodeEditor("sim_tb_top.sv", 110, 397); // bP
+selectCodeEditor("sim_tb_top.sv", 111, 396, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("sim_tb_top.sv", 188, 404); // bP
+selectCodeEditor("sim_tb_top.sv", 188, 404, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "sim_tb_top.sv", 'c'); // bP
+selectCodeEditor("sim_tb_top.sv", 270, 385); // bP
+selectCodeEditor("sim_tb_top.sv", 102, 548); // bP
+typeControlKey((HResource) null, "sim_tb_top.sv", 'c'); // bP
+// HMemoryUtils.trashcanNow. Engine heap size: 1,112 MB. GUI used memory: 134 MB. Current time: 7/1/21, 8:14:28 PM KST
+// Elapsed time: 145 seconds
+selectCodeEditor("sim_tb_top.sv", 176, 499); // bP
+selectCodeEditor("sim_tb_top.sv", 176, 498, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("sim_tb_top.sv", 189, 498); // bP
+selectCodeEditor("sim_tb_top.sv", 189, 498, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("sim_tb_top.sv", 190, 498); // bP
+selectCodeEditor("sim_tb_top.sv", 190, 498); // bP
+selectCodeEditor("sim_tb_top.sv", 210, 531); // bP
+selectCodeEditor("sim_tb_top.sv", 208, 528, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("sim_tb_top.sv", 208, 527); // bP
+selectCodeEditor("sim_tb_top.sv", 208, 527); // bP
+selectCodeEditor("sim_tb_top.sv", 44, 493); // bP
+typeControlKey((HResource) null, "sim_tb_top.sv", 'c'); // bP
+// Elapsed time: 26 seconds
+selectCodeEditor("sim_tb_top.sv", 189, 408); // bP
+selectCodeEditor("sim_tb_top.sv", 189, 408, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("sim_tb_top.sv", 189, 407); // bP
+selectCodeEditor("sim_tb_top.sv", 139, 404); // bP
+selectCodeEditor("sim_tb_top.sv", 139, 402, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 179 seconds
+selectCodeEditor("sim_tb_top.sv", 760, 484); // bP
+selectCodeEditor("sim_tb_top.sv", 547, 466); // bP
+// Elapsed time: 46 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "c0_ddr4_reset_n"); // l
+// Elapsed time: 835 seconds
+selectCodeEditor("sim_tb_top.sv", 1051, 398); // bP
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "c0_ddr4_ba_sdram"); // l
+selectCodeEditor("sim_tb_top.sv", 391, 915); // bP
+selectCodeEditor("sim_tb_top.sv", 391, 915, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("sim_tb_top.sv", 401, 914); // bP
+selectCodeEditor("sim_tb_top.sv", 266, 765); // bP
+selectCodeEditor("sim_tb_top.sv", 203, 972); // bP
+selectCodeEditor("sim_tb_top.sv", 203, 972, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("sim_tb_top.sv", 364, 973); // bP
+selectCodeEditor("sim_tb_top.sv", 364, 973, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("sim_tb_top.sv", 394, 974); // bP
+selectCodeEditor("sim_tb_top.sv", 394, 974, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "sim_tb_top.sv", 'c'); // bP
+selectCodeEditor("sim_tb_top.sv", 354, 244); // bP
+// Elapsed time: 16 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "c0_ddr4_bg"); // l
+// Elapsed time: 33 seconds
+selectCodeEditor("sim_tb_top.sv", 600, 819); // bP
+selectCodeEditor("sim_tb_top.sv", 353, 625); // bP
+typeControlKey((HResource) null, "sim_tb_top.sv", 'c'); // bP
+// Elapsed time: 32 seconds
+selectCodeEditor("sim_tb_top.sv", 321, 44); // bP
+typeControlKey((HResource) null, "sim_tb_top.sv", 'c'); // bP
+selectCodeEditor("sim_tb_top.sv", 395, 122); // bP
+typeControlKey((HResource) null, "sim_tb_top.sv", 'c'); // bP
+// Elapsed time: 58 seconds
+selectCodeEditor("sim_tb_top.sv", 276, 151); // bP
+selectCodeEditor("sim_tb_top.sv", 276, 150, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "sim_tb_top.sv", 'c'); // bP
+// Elapsed time: 29 seconds
+selectCodeEditor("sim_tb_top.sv", 271, 137); // bP
+selectCodeEditor("sim_tb_top.sv", 271, 137, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("sim_tb_top.sv", 271, 136); // bP
+selectCodeEditor("sim_tb_top.sv", 272, 136); // bP
+selectCodeEditor("sim_tb_top.sv", 285, 146); // bP
+selectCodeEditor("sim_tb_top.sv", 206, 145); // bP
+selectCodeEditor("sim_tb_top.sv", 190, 186); // bP
+selectCodeEditor("sim_tb_top.sv", 188, 150); // bP
+typeControlKey((HResource) null, "sim_tb_top.sv", 'c'); // bP
+// Elapsed time: 22 seconds
+selectCodeEditor("sim_tb_top.sv", 163, 712); // bP
+selectCodeEditor("sim_tb_top.sv", 163, 711, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("sim_tb_top.sv", 185, 562); // bP
+selectCodeEditor("sim_tb_top.sv", 185, 562, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("sim_tb_top.sv", 185, 588); // bP
+selectCodeEditor("sim_tb_top.sv", 185, 588, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("sim_tb_top.sv", 183, 275); // bP
+selectCodeEditor("sim_tb_top.sv", 183, 273, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("sim_tb_top.sv", 383, 236); // bP
+selectCodeEditor("sim_tb_top.sv", 383, 236, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("sim_tb_top.sv", 391, 237); // bP
+selectCodeEditor("sim_tb_top.sv", 391, 237, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "sim_tb_top.sv", 'c'); // bP
+// Elapsed time: 21 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "c0_ddr4_adr"); // l
+selectCodeEditor("sim_tb_top.sv", 410, 55); // bP
+typeControlKey((HResource) null, "sim_tb_top.sv", 'c'); // bP
+// Elapsed time: 136 seconds
+selectCodeEditor("sim_tb_top.sv", 358, 562); // bP
+selectCodeEditor("sim_tb_top.sv", 240, 628); // bP
+selectCodeEditor("sim_tb_top.sv", 211, 628); // bP
+selectCodeEditor("sim_tb_top.sv", 211, 628, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 55 seconds
+selectCodeEditor("sim_tb_top.sv", 167, 631); // bP
+selectCodeEditor("sim_tb_top.sv", 165, 630, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "sim_tb_top.sv", 'c'); // bP
+// Elapsed time: 13 seconds
+selectCodeEditor("sim_tb_top.sv", 144, 628); // bP
+selectCodeEditor("sim_tb_top.sv", 144, 626, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 68 seconds
+selectCodeEditor("sim_tb_top.sv", 488, 1009); // bP
+selectCodeEditor("sim_tb_top.sv", 177, 608); // bP
+// HMemoryUtils.trashcanNow. Engine heap size: 1,112 MB. GUI used memory: 134 MB. Current time: 7/1/21, 8:44:29 PM KST
+// Elapsed time: 51 seconds
+selectCodeEditor("sim_tb_top.sv", 122, 846); // bP
+typeControlKey((HResource) null, "sim_tb_top.sv", 'c'); // bP
+// Elapsed time: 14 seconds
+selectCodeEditor("sim_tb_top.sv", 1169, 462); // bP
+selectCodeEditor("sim_tb_top.sv", 403, 505); // bP
+selectCodeEditor("sim_tb_top.sv", 403, 505, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("sim_tb_top.sv", 193, 1104); // bP
+selectCodeEditor("sim_tb_top.sv", 193, 1103, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("sim_tb_top.sv", 193, 1102); // bP
+selectCodeEditor("sim_tb_top.sv", 193, 1102, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 181 seconds
+selectCodeEditor("sim_tb_top.sv", 357, 532); // bP
+selectCodeEditor("sim_tb_top.sv", 357, 530, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("sim_tb_top.sv", 360, 532); // bP
+selectCodeEditor("sim_tb_top.sv", 360, 531, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 21 seconds
+selectCodeEditor("sim_tb_top.sv", 365, 271); // bP
+typeControlKey((HResource) null, "sim_tb_top.sv", 'c'); // bP
+// Elapsed time: 38 seconds
+selectCodeEditor("sim_tb_top.sv", 421, 1098); // bP
+selectCodeEditor("sim_tb_top.sv", 421, 1097, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "sim_tb_top.sv", 'c'); // bP
+selectCodeEditor("sim_tb_top.sv", 457, 1140); // bP
+selectCodeEditor("sim_tb_top.sv", 457, 1140, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "sim_tb_top.sv", 'c'); // bP
+selectCodeEditor("sim_tb_top.sv", 508, 1124); // bP
+selectCodeEditor("sim_tb_top.sv", 445, 1135); // bP
+selectCodeEditor("sim_tb_top.sv", 445, 1135, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "sim_tb_top.sv", 'c'); // bP
+// Elapsed time: 49 seconds
+selectCodeEditor("sim_tb_top.sv", 1201, 449); // bP
+// Elapsed time: 11 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "c0_ddr4_adr_sdram"); // l
+selectCodeEditor("sim_tb_top.sv", 578, 49); // bP
+typeControlKey((HResource) null, "sim_tb_top.sv", 'c'); // bP
+// Elapsed time: 19 seconds
+selectCodeEditor("sim_tb_top.sv", 857, 187); // bP
+selectCodeEditor("sim_tb_top.sv", 664, 87); // bP
+selectCodeEditor("sim_tb_top.sv", 651, 51); // bP
+selectCodeEditor("sim_tb_top.sv", 655, 79); // bP
+selectCodeEditor("sim_tb_top.sv", 640, 86); // bP
+selectCodeEditor("sim_tb_top.sv", 632, 50); // bP
+// Elapsed time: 19 seconds
+selectCodeEditor("sim_tb_top.sv", 384, 308); // bP
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "CA_MIRROR"); // l
+selectCodeEditor("sim_tb_top.sv", 608, 149); // bP
+typeControlKey((HResource) null, "sim_tb_top.sv", 'c'); // bP

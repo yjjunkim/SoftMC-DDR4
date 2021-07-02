@@ -12,3 +12,6 @@
 start_gui
 open_project C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/ddr4_0_ex/ddr4_0_ex.xpr
 update_compile_order -fileset sources_1
+launch_simulation
+source sim_tb_top.tcl
+close_sim
