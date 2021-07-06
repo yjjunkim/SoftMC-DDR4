@@ -94,7 +94,7 @@ module tb_softMC_top;
   parameter CLKOUT_DIVIDE         = 3;
                                     // VCO output divisor for fast (memory) clocks.
   //parameter tCK                   = 2500;
-  parameter tCK                   = 1071;
+  parameter tCK                   = 2499;
                                     // memory tCK paramter.
                                     // # = Clock Period.
   parameter DEBUG_PORT            = "OFF";

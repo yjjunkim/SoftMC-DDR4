@@ -1,0 +1,293 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jul  5 18:41:43 2021
+# Process ID: 11620
+# Current directory: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/ddr4_0_ex
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent28344 C:\Users\yongj\Desktop\softmc_ddr4\hw\boards\ML605\project_1\ddr4_0_ex\ddr4_0_ex.xpr
+# Log file: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/ddr4_0_ex/vivado.log
+# Journal file: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/ddr4_0_ex\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/ddr4_0_ex/ddr4_0_ex.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 1108.891 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+Generating merged BMM file for the design top 'sim_tb_top'...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/ddr4_0_ex/ddr4_0_ex.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/ddr4_0_ex/ddr4_0_ex.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-50] Design contains embedded sources, generating MEM files for simulation...
+Generating merged BMM file for the design top 'sim_tb_top'...
+Generating merged BMM file for the design top 'sim_tb_top'...
+INFO: [SIM-utils-54] Inspecting design source files for 'sim_tb_top' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/ddr4_0_ex/ddr4_0_ex.sim/sim_1/behav/xsim/temp_mem.txt'
+INFO: [SIM-utils-43] Exported 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/ddr4_0_ex/ddr4_0_ex.sim/sim_1/behav/xsim/temp_second_mem.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/ddr4_0_ex/ddr4_0_ex.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj sim_tb_top_vlog.prj"
+"xvhdl --incr --relax -prj sim_tb_top_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/ddr4_0_ex/ddr4_0_ex.sim/sim_1/behav/xsim'
+"xelab -wto 4d192d7b5acd496fa3ab1a7010230987 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L microblaze_v11_0_4 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L lmb_v10_v3_0_11 -L lmb_bram_if_cntlr_v4_0_19 -L blk_mem_gen_v8_4_4 -L iomodule_v3_1_6 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim_tb_top_behav xil_defaultlib.sim_tb_top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 4d192d7b5acd496fa3ab1a7010230987 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L microblaze_v11_0_4 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L lmb_v10_v3_0_11 -L lmb_bram_if_cntlr_v4_0_19 -L blk_mem_gen_v8_4_4 -L iomodule_v3_1_6 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim_tb_top_behav xil_defaultlib.sim_tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1125.488 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/ddr4_0_ex/ddr4_0_ex.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim_tb_top_behav -key {Behavioral:sim_1:Functional:sim_tb_top} -tclbatch {sim_tb_top.tcl} -protoinst "protoinst_files/bd_9054.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/bd_9054.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/bd_9054.protoinst for the following reason(s):
+There are no instances of module "bd_9054" in the design.
+
+Time resolution is 1 ps
+source sim_tb_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Loading timesets for 'sim_tb_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[0].ddr4_model .LoadTiming' @0
+	Loaded timeset:TS_1875
+	Loaded timeset:TS_1500
+	Loaded timeset:TS_1250
+	Loaded timeset:TS_1072
+	Loaded timeset:TS_938
+	Loaded timeset:TS_833
+	Loaded timeset:TS_750
+	Loaded timeset:TS_682
+	Loaded timeset:TS_625
+Model based on DDR4 DDS version 0.999 6/06/2014 (build data 5/06/2016)
+sim_tb_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[0].ddr4_model :Configured as x16 8G stack:1
+Loading timesets for 'sim_tb_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[1].ddr4_model .LoadTiming' @0
+	Loaded timeset:TS_1875
+	Loaded timeset:TS_1500
+	Loaded timeset:TS_1250
+	Loaded timeset:TS_1072
+	Loaded timeset:TS_938
+	Loaded timeset:TS_833
+	Loaded timeset:TS_750
+	Loaded timeset:TS_682
+	Loaded timeset:TS_625
+Model based on DDR4 DDS version 0.999 6/06/2014 (build data 5/06/2016)
+sim_tb_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[1].ddr4_model :Configured as x16 8G stack:1
+Loading timesets for 'sim_tb_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[2].ddr4_model .LoadTiming' @0
+	Loaded timeset:TS_1875
+	Loaded timeset:TS_1500
+	Loaded timeset:TS_1250
+	Loaded timeset:TS_1072
+	Loaded timeset:TS_938
+	Loaded timeset:TS_833
+	Loaded timeset:TS_750
+	Loaded timeset:TS_682
+	Loaded timeset:TS_625
+Model based on DDR4 DDS version 0.999 6/06/2014 (build data 5/06/2016)
+sim_tb_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[2].ddr4_model :Configured as x16 8G stack:1
+Loading timesets for 'sim_tb_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[3].ddr4_model .LoadTiming' @0
+	Loaded timeset:TS_1875
+	Loaded timeset:TS_1500
+	Loaded timeset:TS_1250
+	Loaded timeset:TS_1072
+	Loaded timeset:TS_938
+	Loaded timeset:TS_833
+	Loaded timeset:TS_750
+	Loaded timeset:TS_682
+	Loaded timeset:TS_625
+Model based on DDR4 DDS version 0.999 6/06/2014 (build data 5/06/2016)
+sim_tb_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[3].ddr4_model :Configured as x16 8G stack:1
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: sim_tb_top.u_example_top.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[0].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: sim_tb_top.u_example_top.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[1].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: sim_tb_top.u_example_top.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[4].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: sim_tb_top.u_example_top.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[5].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: sim_tb_top.u_example_top.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[6].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: sim_tb_top.u_example_top.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[7].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: sim_tb_top.u_example_top.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[8].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: sim_tb_top.u_example_top.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[9].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+xsim: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1136.477 ; gain = 9.949
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_tb_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:12 ; elapsed = 00:00:19 . Memory (MB): peak = 1136.477 ; gain = 27.586
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/sim_tb_top/\mem_model_x16.mem.iDDR4[0] }} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+restart: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1152.145 ; gain = 0.000
+run all
+Loading timesets for 'sim_tb_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[0].ddr4_model .LoadTiming' @0
+	Loaded timeset:TS_1875
+	Loaded timeset:TS_1500
+	Loaded timeset:TS_1250
+	Loaded timeset:TS_1072
+	Loaded timeset:TS_938
+	Loaded timeset:TS_833
+	Loaded timeset:TS_750
+	Loaded timeset:TS_682
+	Loaded timeset:TS_625
+Model based on DDR4 DDS version 0.999 6/06/2014 (build data 5/06/2016)
+sim_tb_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[0].ddr4_model :Configured as x16 8G stack:1
+Loading timesets for 'sim_tb_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[1].ddr4_model .LoadTiming' @0
+	Loaded timeset:TS_1875
+	Loaded timeset:TS_1500
+	Loaded timeset:TS_1250
+	Loaded timeset:TS_1072
+	Loaded timeset:TS_938
+	Loaded timeset:TS_833
+	Loaded timeset:TS_750
+	Loaded timeset:TS_682
+	Loaded timeset:TS_625
+Model based on DDR4 DDS version 0.999 6/06/2014 (build data 5/06/2016)
+sim_tb_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[1].ddr4_model :Configured as x16 8G stack:1
+Loading timesets for 'sim_tb_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[2].ddr4_model .LoadTiming' @0
+	Loaded timeset:TS_1875
+	Loaded timeset:TS_1500
+	Loaded timeset:TS_1250
+	Loaded timeset:TS_1072
+	Loaded timeset:TS_938
+	Loaded timeset:TS_833
+	Loaded timeset:TS_750
+	Loaded timeset:TS_682
+	Loaded timeset:TS_625
+Model based on DDR4 DDS version 0.999 6/06/2014 (build data 5/06/2016)
+sim_tb_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[2].ddr4_model :Configured as x16 8G stack:1
+Loading timesets for 'sim_tb_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[3].ddr4_model .LoadTiming' @0
+	Loaded timeset:TS_1875
+	Loaded timeset:TS_1500
+	Loaded timeset:TS_1250
+	Loaded timeset:TS_1072
+	Loaded timeset:TS_938
+	Loaded timeset:TS_833
+	Loaded timeset:TS_750
+	Loaded timeset:TS_682
+	Loaded timeset:TS_625
+Model based on DDR4 DDS version 0.999 6/06/2014 (build data 5/06/2016)
+sim_tb_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[3].ddr4_model :Configured as x16 8G stack:1
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: sim_tb_top.u_example_top.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[0].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: sim_tb_top.u_example_top.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[1].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: sim_tb_top.u_example_top.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[4].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: sim_tb_top.u_example_top.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[5].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: sim_tb_top.u_example_top.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[6].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: sim_tb_top.u_example_top.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[7].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: sim_tb_top.u_example_top.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[8].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: sim_tb_top.u_example_top.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[9].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+sim_tb_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[0].ddr4_model .always_diff_ck.if_diff_ck:Initialization complete @3832579
+sim_tb_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[1].ddr4_model .always_diff_ck.if_diff_ck:Initialization complete @3832579
+sim_tb_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[2].ddr4_model .always_diff_ck.if_diff_ck:Initialization complete @3832579
+sim_tb_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[3].ddr4_model .always_diff_ck.if_diff_ck:Initialization complete @3832579
+10 Writes and 10 Reads to the memory completed
+Test Completed Successfully
+TEST PASSED
+Stopped at time : 5891487 ps : File "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/ddr4_0_ex/imports/example_tb_phy.sv" Line 723
+run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1152.145 ; gain = 0.000
+run all
+$finish called at time : 5891487 ps : File "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/ddr4_0_ex/imports/example_tb_phy.sv" Line 723
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/sim_tb_top/u_example_top/u_example_tb_phy/wrData}} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/sim_tb_top/u_example_top/u_example_tb_phy/rdData}} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/sim_tb_top/u_example_top/u_ddr4_0}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+restart: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1202.871 ; gain = 0.000
+run all
+Loading timesets for 'sim_tb_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[0].ddr4_model .LoadTiming' @0
+	Loaded timeset:TS_1875
+	Loaded timeset:TS_1500
+	Loaded timeset:TS_1250
+	Loaded timeset:TS_1072
+	Loaded timeset:TS_938
+	Loaded timeset:TS_833
+	Loaded timeset:TS_750
+	Loaded timeset:TS_682
+	Loaded timeset:TS_625
+Model based on DDR4 DDS version 0.999 6/06/2014 (build data 5/06/2016)
+sim_tb_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[0].ddr4_model :Configured as x16 8G stack:1
+Loading timesets for 'sim_tb_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[1].ddr4_model .LoadTiming' @0
+	Loaded timeset:TS_1875
+	Loaded timeset:TS_1500
+	Loaded timeset:TS_1250
+	Loaded timeset:TS_1072
+	Loaded timeset:TS_938
+	Loaded timeset:TS_833
+	Loaded timeset:TS_750
+	Loaded timeset:TS_682
+	Loaded timeset:TS_625
+Model based on DDR4 DDS version 0.999 6/06/2014 (build data 5/06/2016)
+sim_tb_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[1].ddr4_model :Configured as x16 8G stack:1
+Loading timesets for 'sim_tb_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[2].ddr4_model .LoadTiming' @0
+	Loaded timeset:TS_1875
+	Loaded timeset:TS_1500
+	Loaded timeset:TS_1250
+	Loaded timeset:TS_1072
+	Loaded timeset:TS_938
+	Loaded timeset:TS_833
+	Loaded timeset:TS_750
+	Loaded timeset:TS_682
+	Loaded timeset:TS_625
+Model based on DDR4 DDS version 0.999 6/06/2014 (build data 5/06/2016)
+sim_tb_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[2].ddr4_model :Configured as x16 8G stack:1
+Loading timesets for 'sim_tb_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[3].ddr4_model .LoadTiming' @0
+	Loaded timeset:TS_1875
+	Loaded timeset:TS_1500
+	Loaded timeset:TS_1250
+	Loaded timeset:TS_1072
+	Loaded timeset:TS_938
+	Loaded timeset:TS_833
+	Loaded timeset:TS_750
+	Loaded timeset:TS_682
+	Loaded timeset:TS_625
+Model based on DDR4 DDS version 0.999 6/06/2014 (build data 5/06/2016)
+sim_tb_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[3].ddr4_model :Configured as x16 8G stack:1
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: sim_tb_top.u_example_top.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[0].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: sim_tb_top.u_example_top.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[1].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: sim_tb_top.u_example_top.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[4].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: sim_tb_top.u_example_top.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[5].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: sim_tb_top.u_example_top.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[6].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: sim_tb_top.u_example_top.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[7].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: sim_tb_top.u_example_top.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[8].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: sim_tb_top.u_example_top.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[9].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+sim_tb_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[0].ddr4_model .always_diff_ck.if_diff_ck:Initialization complete @3832579
+sim_tb_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[1].ddr4_model .always_diff_ck.if_diff_ck:Initialization complete @3832579
+sim_tb_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[2].ddr4_model .always_diff_ck.if_diff_ck:Initialization complete @3832579
+sim_tb_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[3].ddr4_model .always_diff_ck.if_diff_ck:Initialization complete @3832579
+10 Writes and 10 Reads to the memory completed
+Test Completed Successfully
+TEST PASSED
+Stopped at time : 5891487 ps : File "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/ddr4_0_ex/imports/example_tb_phy.sv" Line 723
+run all
+$finish called at time : 5891487 ps : File "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/ddr4_0_ex/imports/example_tb_phy.sv" Line 723
+run all
+run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1239.074 ; gain = 0.000
+run all

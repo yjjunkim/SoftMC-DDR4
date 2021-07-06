@@ -142,3 +142,68 @@ current_wave_config {Untitled 13}
 add_wave {{/tb_softMC_top/uut/u_ddr4_0}} 
 run all
 run all
+current_wave_config {Untitled 13}
+add_wave {{/tb_softMC_top/\mem_model_x16.mem.iDDR4[0] }} 
+restart
+run all
+run all
+current_wave_config {Untitled 13}
+add_wave {{/tb_softMC_top/c0_ddr4_ck_t_int}} 
+current_wave_config {Untitled 13}
+add_wave {{/tb_softMC_top/c0_ddr4_ck_c_int}} 
+run all
+restart
+run all
+run all
+current_wave_config {Untitled 13}
+add_wave {{/tb_softMC_top/\mem_model_x16.mem.iDDR4[0] /CK}} 
+current_wave_config {Untitled 13}
+add_wave {{/tb_softMC_top/\mem_model_x16.mem.iDDR4[1] /CK}} 
+current_wave_config {Untitled 13}
+add_wave {{/tb_softMC_top/\mem_model_x16.mem.iDDR4[2] /CK}} 
+current_wave_config {Untitled 13}
+add_wave {{/tb_softMC_top/\mem_model_x16.mem.iDDR4[3] }} 
+restart
+run all
+close_sim
+launch_simulation
+launch_simulation
+source tb_softMC_top.tcl
+current_wave_config {Untitled 14}
+add_wave {{/tb_softMC_top/\mem_model_x16.mem.iDDR4[0] }} 
+run all
+current_wave_config {Untitled 14}
+add_wave {{/tb_softMC_top/uut/u_ddr4_0}} 
+restart
+run all
+close_sim
+launch_simulation
+source tb_softMC_top.tcl
+current_wave_config {Untitled 15}
+add_wave {{/tb_softMC_top/\mem_model_x16.mem.iDDR4[0] }} 
+current_wave_config {Untitled 15}
+add_wave {{/tb_softMC_top/uut}} 
+run all
+restart
+run all
+add_bp {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v} 1262
+run all
+run all
+run all
+close_sim
+launch_simulation
+source tb_softMC_top.tcl
+current_wave_config {Untitled 16}
+add_wave {{/tb_softMC_top/uut/u_ddr4_0}} 
+restart
+run all
+run all
+close_sim
+launch_simulation
+source tb_softMC_top.tcl
+current_wave_config {Untitled 17}
+add_wave {{/tb_softMC_top/uut/u_ddr4_0}} 
+current_wave_config {Untitled 17}
+add_wave {{/tb_softMC_top/uut/i_softmc}} 
+restart
+run all

@@ -465,7 +465,8 @@ module softMC_top #
      .c0_ddr4_dqs_c        (c0_ddr4_dqs_c),
      .c0_ddr4_dqs_t        (c0_ddr4_dqs_t),
 
-     .dBufAdr              (dBufAdr),
+     //.dBufAdr              (dBufAdr),
+     .dBufAdr              (5'b000000),
      .wrData               (dfi_wrdata),
      .wrDataMask           ({64{1'b0}}),
 
@@ -502,7 +503,7 @@ module softMC_top #
      // For more information, Refer to PG150 document.
      .gt_data_ready        (1'b0),
      .winBuf               (5'b00000),
-     //.winBuf               ({4{1'b0}}),
+     //.winBuf               (winBuf),
      .winRank              (2'b00),
      .tCWL                 (tCWL),
      // Debug Port

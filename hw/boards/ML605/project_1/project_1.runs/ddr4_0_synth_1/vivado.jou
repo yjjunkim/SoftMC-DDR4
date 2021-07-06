@@ -2,11 +2,11 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Wed Jun 23 15:24:14 2021
-# Process ID: 35292
-# Current directory: C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/project_1/project_1.runs/ddr4_0_synth_1
+# Start of session at: Tue Jul  6 16:02:34 2021
+# Process ID: 17716
+# Current directory: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/ddr4_0_synth_1
 # Command line: vivado.exe -log ddr4_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ddr4_0.tcl
-# Log file: C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/project_1/project_1.runs/ddr4_0_synth_1/ddr4_0.vds
-# Journal file: C:/Users/yongj/Desktop/SoftMC-master_schematic_0622/SoftMC-master_schematic/SoftMC-master/hw/boards/ML605/project_1/project_1.runs/ddr4_0_synth_1\vivado.jou
+# Log file: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/ddr4_0_synth_1/ddr4_0.vds
+# Journal file: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/ddr4_0_synth_1\vivado.jou
 #-----------------------------------------------------------
 source ddr4_0.tcl -notrace
