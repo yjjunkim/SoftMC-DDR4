@@ -217,6 +217,7 @@ ddr4_0 u_ddr4_0
      // This signal must be asserted periodically to keep the DQS Gate aligned as voltage and temperature drift.
      // For more information, Refer to PG150 document.
      .gt_data_ready        (1'b0),
+     //.winBuf               (5'b00000),
      .winBuf               (winBuf),
      .winRank              (winRank),
      .tCWL                 (tCWL),

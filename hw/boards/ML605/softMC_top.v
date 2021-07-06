@@ -438,6 +438,10 @@ module softMC_top #
   wire c0_ddr4_reset_n_int;
   assign c0_ddr4_reset_n = c0_ddr4_reset_n_int;
   assign dBufAdr = 5'b00000;
+
+  
+  
+  
   //////////////////////////////////////////////
     ///////////////////////////////////////////DDR4///////////////////////////////////////////////
 	 ddr4_0 u_ddr4_0
@@ -524,6 +528,7 @@ module softMC_top #
 	//juh rdback fifo -> 512
 	wire[511:0] rdback_data;
 	
+	
 	`endif //SIM
 	
 	
@@ -584,7 +589,9 @@ module softMC_top #
 	//Data read back Interface
 	.rdback_fifo_empty(rdback_fifo_empty),
 	.rdback_fifo_rden(rdback_fifo_rden),
+	
 	.rdback_data(rdback_data)
+	
 );
 
 `ifndef SIM

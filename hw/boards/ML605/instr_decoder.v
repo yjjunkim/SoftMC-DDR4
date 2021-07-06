@@ -25,7 +25,7 @@ module instr_decoder #(parameter ROW_WIDTH = 15, BANK_WIDTH = 3, CS_WIDTH = 1)(
     localparam tmp_slot = {ROW_WIDTH*8{1'b1}};
     
     // for address loop
-    integer idx;
+    integer idx, i;
     
     reg [2:0] addr_add;
 	always@* begin
@@ -69,8 +69,18 @@ module instr_decoder #(parameter ROW_WIDTH = 15, BANK_WIDTH = 3, CS_WIDTH = 1)(
 			  dfi_address[(idx+1)* 8-7] = instr[idx];
 			  dfi_address[(idx+1)* 8-8] = instr[idx];
 			end
-			
-			dfi_bank = {{BANK_WIDTH*6{1'b1}}, instr[`ROW_OFFSET +: BANK_WIDTH],instr[`ROW_OFFSET +: BANK_WIDTH]}; // MSB *6 BANKWIDTH만큼 1으로 채우기, INSTR 2번 COPY
+			// jun bank  
+			//dfi_bank = {{BANK_WIDTH*6{1'b1}}, instr[`ROW_OFFSET +: BANK_WIDTH],instr[`ROW_OFFSET +: BANK_WIDTH]}; // MSB *6 BANKWIDTH만큼 1으로 채우기, INSTR 2번 COPY
+			for(i = 0; i < BANK_WIDTH ; i = i + 1)begin
+			   dfi_bank[(i+1)*8 - 1] = 1'b0;
+			   dfi_bank[(i+1)*8 - 2] = 1'b0;
+			   dfi_bank[(i+1)*8 - 3] = 1'b0;
+			   dfi_bank[(i+1)*8 - 4] = 1'b0;
+			   dfi_bank[(i+1)*8 - 5] = 1'b0;
+			   dfi_bank[(i+1)*8 - 6] = 1'b0;
+			   dfi_bank[(i+1)*8 - 7] = instr[`ROW_OFFSET + i];
+			   dfi_bank[(i+1)*8 - 8] = instr[`ROW_OFFSET + i];
+			end
 			
 			
 			// bg, TOP에서 LST 2bit 0으로 TIE 해두었음 

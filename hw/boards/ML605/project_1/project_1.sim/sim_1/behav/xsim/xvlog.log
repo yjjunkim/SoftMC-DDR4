@@ -308,7 +308,7 @@ INFO: [VRFC 10-2458] undeclared symbol dispatcher_busy, assumed default net type
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_top.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module softMC_top
 INFO: [VRFC 10-2458] undeclared symbol ddr_dm, assumed default net type wire [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_top.v:175]
-INFO: [VRFC 10-2458] undeclared symbol processing_iseq, assumed default net type wire [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_top.v:540]
-INFO: [VRFC 10-2458] undeclared symbol rdback_fifo_empty, assumed default net type wire [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_top.v:585]
+INFO: [VRFC 10-2458] undeclared symbol processing_iseq, assumed default net type wire [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_top.v:545]
+INFO: [VRFC 10-2458] undeclared symbol rdback_fifo_empty, assumed default net type wire [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_top.v:590]
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/xilinx_mig/user_design/sim/wiredly.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module WireDelay
