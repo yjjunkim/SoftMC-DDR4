@@ -258,7 +258,7 @@ module softMC_top #
    wire                              dfi_rddata_en;
 	wire 										 dfi_rddata_en_even;
 	wire 										 dfi_rddata_en_odd;
-   wire [511:0]             dfi_rddata;
+   //wire [511:0]             dfi_rddata;
    wire                              dfi_rddata_valid;
    wire                              dfi_rddata_valid_even;
    wire                              dfi_rddata_valid_odd;
@@ -400,7 +400,7 @@ module softMC_top #
     );*/
   ///////////////DDR4////////////////////////////////////////////////////////
   wire [4:0]  dBufAdr;
-  wire [511:0]  wrData;
+  //wire [511:0]  wrData;
   wire [63:0]  wrDataMask;
   wire [511:0]  rdData;
   wire [4:0]  rdDataAddr;
@@ -437,6 +437,7 @@ module softMC_top #
 
   wire c0_ddr4_reset_n_int;
   assign c0_ddr4_reset_n = c0_ddr4_reset_n_int;
+  assign dBufAdr = 5'b00000;
   //////////////////////////////////////////////
     ///////////////////////////////////////////DDR4///////////////////////////////////////////////
 	 ddr4_0 u_ddr4_0
@@ -466,7 +467,7 @@ module softMC_top #
 
      .dBufAdr              (dBufAdr),
      .wrData               (dfi_wrdata),
-     .wrDataMask           ({63{1'b0}}),
+     .wrDataMask           ({64{1'b0}}),
 
      .rdData               (rdData),
      .rdDataAddr           (rdDataAddr),
@@ -500,7 +501,8 @@ module softMC_top #
      // This signal must be asserted periodically to keep the DQS Gate aligned as voltage and temperature drift.
      // For more information, Refer to PG150 document.
      .gt_data_ready        (1'b0),
-     .winBuf               ({4{1'b0}}),
+     .winBuf               (5'b00000),
+     //.winBuf               ({4{1'b0}}),
      .winRank              (2'b00),
      .tCWL                 (tCWL),
      // Debug Port

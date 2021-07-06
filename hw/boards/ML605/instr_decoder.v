@@ -47,7 +47,7 @@ module instr_decoder #(parameter ROW_WIDTH = 15, BANK_WIDTH = 3, CS_WIDTH = 1)(
 			dfi_we_n = instr[`WE_OFFSET];
 			dfi_cas_n = instr[`CAS_OFFSET];
 			dfi_ras_n = instr[`RAS_OFFSET];
-			dfi_address = {{ROW_WIDTH*6{1'b1}}, {2{instr[ROW_WIDTH - 1:0]}}}; // MSB *6 ROWWIDTH만큼  1으로 채우기, , INSTR 2번 COPY
+			//dfi_address = {{ROW_WIDTH*6{1'b1}}, {2{instr[ROW_WIDTH - 1:0]}}}; // MSB *6 ROWWIDTH만큼  1으로 채우기, , INSTR 2번 COPY
 			
 			// ACT_n이 LOW이면 row address로 쓰이므로 0으로 전달.
 			//dfi_address[135:128] <= ((~dfi_ras_n)&(dfi_cas_n)&(dfi_we_n)) ? {{6{1'b1}}, 2'b00}  : {6'b111111, instr[`RAS_OFFSET], instr[`RAS_OFFSET]};

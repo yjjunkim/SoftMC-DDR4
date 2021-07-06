@@ -13,7 +13,8 @@
 
 
 
-`define ROW_OFFSET 17
+//`define ROW_OFFSET 17
+`define ROW_OFFSET 16
 `define WE_OFFSET 19
 `define CAS_OFFSET 20
 `define RAS_OFFSET 21

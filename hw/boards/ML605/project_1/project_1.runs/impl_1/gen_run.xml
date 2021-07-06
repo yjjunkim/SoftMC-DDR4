@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xcvu095-ffvb1760-1-i" LaunchTime="1624612906">
+<GenRun Id="impl_1" LaunchPart="xcvu095-ffvb1760-1-i" LaunchTime="1625467521">
   <File Type="PA-TCL" Name="softMC_top.tcl"/>
   <File Type="REPORTS-TCL" Name="softMC_top_reports.tcl"/>
   <File Type="BITSTR-MSK" Name="softMC_top.msk"/>
@@ -716,30 +716,6 @@
       </FileInfo>
     </File>
     <File Path="$PPRDIR/../ipcore_dir/riffa/translation_layer.v">
-      <FileInfo>
-        <Attr Name="Library" Val="xil_defaultlib"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../ipcore_dir/riffa/riffa_endpoint_64.v">
-      <FileInfo>
-        <Attr Name="Library" Val="xil_defaultlib"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../ipcore_dir/riffa/riffa_endpoint_32.v">
-      <FileInfo>
-        <Attr Name="Library" Val="xil_defaultlib"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../ipcore_dir/riffa/riffa_endpoint_128.v">
       <FileInfo>
         <Attr Name="Library" Val="xil_defaultlib"/>
         <Attr Name="UsedIn" Val="synthesis"/>

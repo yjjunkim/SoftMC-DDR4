@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="instr_fifo_synth_1" LaunchPart="xcvu095-ffvb1760-1-i" LaunchTime="1624355503">
+<GenRun Id="instr_fifo_synth_1" LaunchPart="xcvu095-ffvb1760-1-i" LaunchTime="1625467521">
   <File Type="PA-TCL" Name="instr_fifo.tcl"/>
   <File Type="REPORTS-TCL" Name="instr_fifo_reports.tcl"/>
   <File Type="RDS-RDS" Name="instr_fifo.vds"/>
@@ -7,14 +7,14 @@
   <File Type="RDS-UTIL-PB" Name="instr_fifo_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="instr_fifo.dcp"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/instr_fifo">
-    <File Path="$PSRCDIR/sources_1/ip/instr_fifo/instr_fifo.xci">
+    <File Path="$PSRCDIR/sources_1/ip/instr_fifo.xcix">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/ip/instr_fifo.xcix">
+    <File Path="$PSRCDIR/sources_1/ip/instr_fifo/instr_fifo.xci">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -27,14 +27,14 @@
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/instr_fifo">
-    <File Path="$PSRCDIR/sources_1/ip/instr_fifo/instr_fifo.xci">
+    <File Path="$PSRCDIR/sources_1/ip/instr_fifo.xcix">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/ip/instr_fifo.xcix">
+    <File Path="$PSRCDIR/sources_1/ip/instr_fifo/instr_fifo.xci">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

@@ -55,7 +55,8 @@ module tb_softMC_top;
                                     // # of Data (DQ) bits.
   parameter DQS_WIDTH             = 8;
                                     // # of DQS/DQS# bits.
-  parameter ROW_WIDTH             = 16;
+  parameter ROW_WIDTH             = 17;
+  //parameter ROW_WIDTH             = 16;
                                     // # of memory Row Address bits.
   parameter BURST_MODE            = "8";
                                     // Burst Length (Mode Register 0).
@@ -218,7 +219,8 @@ module tb_softMC_top;
   //Data read back Interface
   wire rdback_fifo_empty;
   reg rdback_fifo_rden;
-  wire[255:0] rdback_data;
+  //wire[255:0] rdback_data;
+   wire[511:0] rdback_data;
   
   reg sys_clk;
   reg clk_ref;
@@ -345,7 +347,71 @@ module tb_softMC_top;
   wire  [0:0]  c0_ddr4_ck_c_int;
   
   reg  [16:0]            c0_ddr4_adr_sdram[1:0];
+  
+  
+  reg  [31:0] cmdName;
+  localparam MRS                           = 3'b000;
+  localparam REF                           = 3'b001;
+  localparam PRE                           = 3'b010;
+  localparam ACT                           = 3'b011;
+  localparam WR                            = 3'b100;
+  localparam RD                            = 3'b101;
+  localparam ZQC                           = 3'b110;
+  localparam NOP                           = 3'b111;
   //===============DDR4==============
+  
+  
+  /*always @(*)
+    if (c0_ddr4_cs_n == 4'b1111)
+      cmdName = "DSEL";
+    else
+    if (c0_ddr4_act_n)
+      casez (DDR4_ADRMOD[0][16:14])
+       MRS:     cmdName = "MRS";
+       REF:     cmdName = "REF";
+       PRE:     cmdName = "PRE";
+       WR:      cmdName = "WR";
+       RD:      cmdName = "RD";
+       ZQC:     cmdName = "ZQC";
+       NOP:     cmdName = "NOP";
+      default:  cmdName = "***";
+      endcase
+    else
+      cmdName = "ACT";
+
+   reg wr_en ;
+   always@(posedge c0_ddr4_ck_t)begin
+     if(!c0_ddr4_reset_n)begin
+       wr_en <= #100 1'b0 ;
+     end else begin
+       if(cmdName == "WR")begin
+         wr_en <= #100 1'b1 ;
+       end else if (cmdName == "RD")begin
+         wr_en <= #100 1'b0 ;
+       end
+     end
+   end */
+
+genvar rnk;
+generate
+localparam IDX = CS_WIDTH;
+for (rnk = 0; rnk < IDX; rnk++) begin:rankup
+ always @(*)
+    if (c0_ddr4_act_n)
+      casez (c0_ddr4_adr_sdram[0][16:14])
+      WR, RD: begin
+        DDR4_ADRMOD[rnk] = c0_ddr4_adr_sdram[rnk] & 18'h1C7FF;
+      end
+      default: begin
+        DDR4_ADRMOD[rnk] = c0_ddr4_adr_sdram[rnk];
+      end
+      endcase
+    else begin
+      DDR4_ADRMOD[rnk] = c0_ddr4_adr_sdram[rnk];
+    end
+end
+endgenerate
+
   //**************************************************************************//
   // Reset Generation
   //**************************************************************************//
@@ -547,7 +613,8 @@ module tb_softMC_top;
 		.c0_ddr4_odt(c0_ddr4_odt), 
 		.c0_ddr4_reset_n(c0_ddr4_reset_n), 
 		//.ddr_parity(), 
-		.c0_ddr4_dm_dbi_n(), 
+		.c0_ddr4_dm_dbi_n(c0_ddr4_dm_dbi_n), 
+
 		.c0_ddr4_dqs_c(c0_ddr4_dqs_c), 
 		.c0_ddr4_dqs_t(c0_ddr4_dqs_t), 
 		.c0_ddr4_dq(c0_ddr4_dq),
@@ -564,7 +631,7 @@ module tb_softMC_top;
 		//.rdback_fifo_empty(rdback_fifo_empty)
 	);
 
-
+/*
    // Extra one clock pipelining for RDIMM address and
    // control signals is implemented here (Implemented external to memory model)
    always @( posedge ddr3_ck_p_sdram[0] ) begin
@@ -595,7 +662,7 @@ module tb_softMC_top;
        ddr3_cke_r <= 1'b0;
      else
        ddr3_cke_r <= #(CLK_PERIOD) ddr3_cke_sdram;
-
+*/
 //==================================DDR3======================================
 /*
   //***************************************************************************
@@ -869,7 +936,7 @@ module tb_softMC_top;
   //initial
   //  sys_clk_i = 1'b0;
   //always
-  //  sys_clk_i = #(13924/2.0) ~sys_clk_i;
+   // sys_clk_i = #(13924/2.0) ~sys_clk_i;
 
   //assign c0_sys_clk_p = sys_clk_i;
   //assign c0_sys_clk_n = ~sys_clk_i;
@@ -909,10 +976,10 @@ module tb_softMC_top;
 	localparam ADDR_WIDTH                    = 17;
 	localparam NUM_PHYSICAL_PARTS = (DQ_WIDTH/DRAM_WIDTH) ;
 	
-	//import arch_package::*;
+	import arch_package::*;
 	
 	//typedef enum {_2G=2, _4G=4, _8G=8, _16G=16} UTYPE_density;
-    //parameter UTYPE_density CONFIGURED_DENSITY = _8G;
+    parameter UTYPE_density CONFIGURED_DENSITY = _8G;
     //parameter CONFIGURED_DENSITY = 8;
     
     // DDR4 ports 
@@ -938,7 +1005,7 @@ module tb_softMC_top;
     */
 	
 	generate
-	
+	begin: mem_model_x16
     if (DQ_WIDTH/16) begin: mem
     
           DDR4_if #(.CONFIGURED_DQ_BITS (16)) iDDR4[0:(RANK_WIDTH*NUM_PHYSICAL_PARTS)-1]();
@@ -947,8 +1014,8 @@ module tb_softMC_top;
               for (i = 0; i < NUM_PHYSICAL_PARTS; i++) begin:memModel2
                 ddr4_model  #
                 (
-                 .CONFIGURED_DQ_BITS (16)
-                 //.CONFIGURED_DENSITY (CONFIGURED_DENSITY)
+                 .CONFIGURED_DQ_BITS (16),
+                 .CONFIGURED_DENSITY (CONFIGURED_DENSITY)
                  )  ddr4_model(
                     .model_enable (model_enable),
                     .iDDR4        (iDDR4[(r*NUM_PHYSICAL_PARTS)+i])
@@ -1003,7 +1070,9 @@ module tb_softMC_top;
     
         for (r = 0; r < RANK_WIDTH; r++) begin:tranADCTL_RANKS1
           for (i = 0; i < NUM_PHYSICAL_PARTS; i++) begin:tranADCTL1
-              assign iDDR4[(r*NUM_PHYSICAL_PARTS)+ i].CK = {c0_ddr4_ck_t, c0_ddr4_ck_c};
+             // assign iDDR4[(r*NUM_PHYSICAL_PARTS)+ i].CK = {c0_ddr4_ck_t, c0_ddr4_ck_t};
+               assign iDDR4[(r*NUM_PHYSICAL_PARTS)+ i].CK[0] = c0_ddr4_ck_c;
+                assign iDDR4[(r*NUM_PHYSICAL_PARTS)+ i].CK[1]=c0_ddr4_ck_t;
               assign iDDR4[(r*NUM_PHYSICAL_PARTS)+ i].ACT_n     = c0_ddr4_act_n;
               assign iDDR4[(r*NUM_PHYSICAL_PARTS)+ i].RAS_n_A16 = DDR4_ADRMOD[r][16];
               assign iDDR4[(r*NUM_PHYSICAL_PARTS)+ i].CAS_n_A15 = DDR4_ADRMOD[r][15];
@@ -1018,7 +1087,7 @@ module tb_softMC_top;
               assign iDDR4[(r*NUM_PHYSICAL_PARTS)+ i].VREF_DQ = 1'b1;
               assign iDDR4[(r*NUM_PHYSICAL_PARTS)+ i].RESET_n = c0_ddr4_reset_n;
               end
-            //end
+            end
           end
     
           if (DQ_WIDTH%16) begin: mem_extra_bits
@@ -1027,8 +1096,8 @@ module tb_softMC_top;
     
             ddr4_model  #
               (
-               .CONFIGURED_DQ_BITS (16)
-               //.CONFIGURED_DENSITY (CONFIGURED_DENSITY)
+               .CONFIGURED_DQ_BITS (16),
+               .CONFIGURED_DENSITY (CONFIGURED_DENSITY)
                )  ddr4_model(
                 .model_enable (model_enable),
                 .iDDR4        (iDDR4[(DQ_WIDTH/DRAM_WIDTH)])
@@ -1060,7 +1129,12 @@ module tb_softMC_top;
             tran bidiDM1(iDDR4[DQ_WIDTH/DRAM_WIDTH].DM_n[1], c0_ddr4_dm_dbi_n[DM_WIDTH-1]);
             `endif
     
-            assign iDDR4[DQ_WIDTH/DRAM_WIDTH].CK = {c0_ddr4_ck_t, c0_ddr4_ck_c};
+           // assign iDDR4[DQ_WIDTH/DRAM_WIDTH].CK = {c0_ddr4_ck_t, c0_ddr4_ck_t};
+            
+            assign iDDR4[DQ_WIDTH/DRAM_WIDTH].CK[0] = c0_ddr4_ck_c;
+            
+            assign iDDR4[DQ_WIDTH/DRAM_WIDTH].CK[1] = c0_ddr4_ck_t;
+            
             assign iDDR4[DQ_WIDTH/DRAM_WIDTH].ACT_n = c0_ddr4_act_n;
             assign iDDR4[DQ_WIDTH/DRAM_WIDTH].RAS_n_A16 = DDR4_ADRMOD[0][16];
             assign iDDR4[DQ_WIDTH/DRAM_WIDTH].CAS_n_A15 = DDR4_ADRMOD[0][15];
