@@ -17,7 +17,8 @@ module tb_softMC_top;
                                     //         for -2 and -3 speed grade devices.
                                     //   = 300 when design frequency >= 480 MHz
                                     //         for -2 and -3 speed grade devices.
-  parameter SIM_BYPASS_INIT_CAL   = "FAST";
+  //parameter SIM_BYPASS_INIT_CAL   = "FAST";
+  parameter SIM_BYPASS_INIT_CAL   = "OFF";
                                     // # = "OFF" -  Complete memory init &
                                     //              calibration sequence
                                     // # = "SKIP" - Skip memory init &

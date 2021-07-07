@@ -27,6 +27,10 @@ module instr_dispatcher #(parameter ROW_WIDTH = 15, BANK_WIDTH = 3, CKE_WIDTH = 
 	output[ROW_WIDTH-1:0]              dfi_address1,
 	output[BANK_WIDTH*8-1:0]             dfi_bank0,    // *8bit
 	output[BANK_WIDTH-1:0]             dfi_bank1,
+	
+	//jun bankgroup
+	output[7:0]  dfi_bankgroup0,
+	
 	output [CKE_WIDTH*8-1:0]				  dfi_cke0,    // *8bit
 	output 									  dfi_cke1,
 	output									  dfi_cas_n0,
@@ -319,6 +323,8 @@ module instr_dispatcher #(parameter ROW_WIDTH = 15, BANK_WIDTH = 3, CKE_WIDTH = 
 		
 		.dfi_address(dfi_address0),
 		.dfi_bank(dfi_bank0),
+		.dfi_bankgroup(dfi_bankgroup0),
+		
 		.dfi_cas_n(dfi_cas_n0),
 		.dfi_cs_n(dfi_cs_n0),
 		.dfi_ras_n(dfi_ras_n0),

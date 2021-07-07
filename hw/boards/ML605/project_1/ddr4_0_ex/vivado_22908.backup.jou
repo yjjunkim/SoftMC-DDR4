@@ -1,0 +1,130 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Jul  6 15:53:49 2021
+# Process ID: 22908
+# Current directory: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/ddr4_0_ex
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11216 C:\Users\yongj\Desktop\softmc_ddr4\hw\boards\ML605\project_1\ddr4_0_ex\ddr4_0_ex.xpr
+# Log file: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/ddr4_0_ex/vivado.log
+# Journal file: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/ddr4_0_ex\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/ddr4_0_ex/ddr4_0_ex.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source sim_tb_top.tcl
+current_wave_config {Untitled 1}
+add_wave {{/sim_tb_top/\mem_model_x16.mem.iDDR4[0] }} 
+restart
+run all
+run all
+run all
+current_wave_config {Untitled 1}
+add_wave {{/sim_tb_top/u_example_top/u_ddr4_0}} 
+restart
+run all
+run all
+run all
+current_wave_config {Untitled 1}
+add_wave {{/sim_tb_top/u_example_top/u_ddr4_0/inst/u_ddr_cal_top/u_ddr_mc_pi/u_ddr_mc_read}} 
+restart
+run all
+run all
+run all
+close_sim
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+launch_simulation
+source sim_tb_top.tcl
+current_wave_config {Untitled 2}
+add_wave {{/sim_tb_top/\mem_model_x16.mem.iDDR4[0] }} 
+current_wave_config {Untitled 2}
+add_wave {{/sim_tb_top/u_example_top/u_ddr4_0/inst/u_ddr_cal_top/u_ddr_mc_pi/u_ddr_mc_read}} 
+restart
+run all
+run all
+run all
+close_sim
+launch_simulation
+source sim_tb_top.tcl
+current_wave_config {Untitled 3}
+add_wave {{/sim_tb_top/u_example_top/u_ddr4_0}} 
+current_wave_config {Untitled 3}
+add_wave {{/sim_tb_top/u_example_top/u_ddr4_0}} 
+run all
+run all
+run all
+close_sim
+launch_simulation
+source sim_tb_top.tcl
+run all
+add_bp {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/ddr4_0_ex/imports/arch_package.sv} 126
+remove_bps -file {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/ddr4_0_ex/imports/arch_package.sv} -line 126
+current_wave_config {Untitled 4}
+add_wave {{/sim_tb_top/\mem_model_x16.mem.iDDR4[0] }} 
+current_wave_config {Untitled 4}
+add_wave {{/sim_tb_top/u_example_top/u_ddr4_0/inst/u_ddr_cal_top/u_ddr_mc_pi/u_ddr_mc_read}} 
+run all
+run all
+run all
+restart
+run all
+run all
+run all
+current_wave_config {Untitled 4}
+add_wave {{/sim_tb_top/u_example_top/u_ddr4_0}} 
+restart
+run all
+run all
+run all
+run all
+current_wave_config {Untitled 4}
+add_wave {{/sim_tb_top/u_example_top/u_ddr4_0}} 
+restart
+run all
+run all
+run all
+close_sim
+launch_simulation
+source sim_tb_top.tcl
+current_wave_config {Untitled 5}
+add_wave {{/sim_tb_top/u_example_top/u_ddr4_0}} 
+current_wave_config {Untitled 5}
+add_wave {{/sim_tb_top/\mem_model_x16.mem.iDDR4[0] }} 
+restart
+run all
+run all
+run all
+current_wave_config {Untitled 5}
+add_wave {{/sim_tb_top/u_example_top/u_ddr4_0/inst/u_ddr_cal_top/u_ddr_mc_pi/u_ddr_mc_read}} 
+restart
+run all
+run all
+run all
+current_wave_config {Untitled 5}
+add_wave {{/sim_tb_top/\mem_model_x16.mem.iDDR4[2] }} 
+restart
+run all
+run all
+run all
+current_wave_config {Untitled 5}
+add_wave {{/sim_tb_top/\mem_model_x16.mem.iDDR4[0] }} 
+current_wave_config {Untitled 5}
+add_wave {{/sim_tb_top/\mem_model_x16.mem.iDDR4[1] }} 
+current_wave_config {Untitled 5}
+add_wave {{/sim_tb_top/\mem_model_x16.mem.iDDR4[2] }} 
+current_wave_config {Untitled 5}
+add_wave {{/sim_tb_top/\mem_model_x16.mem.iDDR4[3] }} 
+restart
+run all
+run all
+run all
+current_wave_config {Untitled 5}
+add_wave {{/sim_tb_top/u_example_top/u_ddr4_0}} 
+current_wave_config {Untitled 5}
+add_wave {{/sim_tb_top/\mem_model_x16.mem.iDDR4[0] }} 
+restart
+run all
+run all
+run all
+close_sim

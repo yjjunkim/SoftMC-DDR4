@@ -19,6 +19,8 @@ module softMC #(parameter TCQ = 100, tCK = 2500, nCK_PER_CLK = 2, RANK_WIDTH = 1
 	output [ROW_WIDTH*8-1:0]              dfi_address0, // *8bit
 	output [ROW_WIDTH-1:0]              dfi_address1,
 	output [BANK_WIDTH*8-1:0]             dfi_bank0,  // *8bit
+	output [7:0]  dfi_bankgroup0,
+	
 	output [BANK_WIDTH-1:0]             dfi_bank1,
 	//jun ACT_n
 	output [7:0] mc_ACT_n,
@@ -222,6 +224,8 @@ module softMC #(parameter TCQ = 100, tCK = 2500, nCK_PER_CLK = 2, RANK_WIDTH = 1
     .dfi_address0(dfi_address0), 
     .dfi_address1(dfi_address1), 
     .dfi_bank0(dfi_bank0), 
+    .dfi_bankgroup0(dfi_bankgroup0),
+    
     .dfi_bank1(dfi_bank1), 
 	 .dfi_cke0(dfi_cke0),
 	 .dfi_cke1(dfi_cke1),

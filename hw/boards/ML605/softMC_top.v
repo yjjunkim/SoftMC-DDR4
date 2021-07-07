@@ -235,6 +235,8 @@ module softMC_top #
    wire [ROW_WIDTH*8-1:0]              dfi_address0;
    wire [ROW_WIDTH-1:0]              dfi_address1; 
    wire [BANK_WIDTH*8-1:0]             dfi_bank0;
+   // bank group
+   wire [7:0]             dfi_bankgroup0;
    wire [BANK_WIDTH-1:0]             dfi_bank1;
    wire 										 dfi_cas_n0;
    wire 										 dfi_cas_n1;
@@ -486,7 +488,8 @@ module softMC_top #
      .mc_ACT_n             (mc_ACT_n),
      .mc_ADR               (dfi_address0),
      .mc_BA                (dfi_bank0),
-     .mc_BG                (8'b11111100),
+     //.mc_BG                (8'b11111100),
+     .mc_BG                (dfi_bankgroup0),
      // DRAM CKE. 8 bits for each DRAM pin. The mc_CKE signal is always set to '1'.
      .mc_CKE               ({8{1'b1}}),
      .mc_CS_n              (dfi_cs_n0),
@@ -553,6 +556,8 @@ module softMC_top #
 	.mcWrCAS(mcWrCAS),
 	
 	.dfi_bank0(dfi_bank0),
+	.dfi_bankgroup0(dfi_bankgroup0),
+	
 	.dfi_bank1(dfi_bank1),
 	.dfi_cas_n0(dfi_cas_n0),
 	.dfi_cas_n1(dfi_cas_n1),

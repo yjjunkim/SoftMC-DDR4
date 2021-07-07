@@ -26,6 +26,10 @@ module iseq_dispatcher #(parameter ROW_WIDTH = 15, BANK_WIDTH = 3, CKE_WIDTH = 1
 	output [ROW_WIDTH*8-1:0]              dfi_address0,    // *8bit
 	output [ROW_WIDTH-1:0]              dfi_address1,
 	output [BANK_WIDTH*8-1:0]             dfi_bank0,   // *8bit
+	
+	//jun bankgroup
+	output [7:0]  dfi_bankgroup0,
+	
 	output [BANK_WIDTH-1:0]             dfi_bank1,
 	
 	output [CKE_WIDTH*8-1:0]	        		dfi_cke0, //JUN : not match with softMC
@@ -135,6 +139,9 @@ module iseq_dispatcher #(parameter ROW_WIDTH = 15, BANK_WIDTH = 3, CKE_WIDTH = 1
 	.dfi_address0(dfi_address0),
 	.dfi_address1(dfi_address1),
 	.dfi_bank0(dfi_bank0),
+	// jun backgroup
+	.dfi_bankgroup0(dfi_bankgroup0),
+	
 	.dfi_bank1(dfi_bank1),
 	.dfi_cke0(dfi_cke0),
 	.dfi_cke1(dfi_cke1),
