@@ -1,5 +1,5 @@
 `timescale 1ps / 1ps
-// after change device 0712
+// after change device 0712~
 `include "softMC.inc"
 
 module softMC_top #
