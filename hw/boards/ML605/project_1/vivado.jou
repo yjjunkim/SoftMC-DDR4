@@ -2,15 +2,56 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Mon Jul 12 19:25:09 2021
-# Process ID: 23432
+# Start of session at: Mon Jul 12 19:33:22 2021
+# Process ID: 21472
 # Current directory: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23428 C:\Users\yongj\Desktop\softmc_ddr4\hw\boards\ML605\project_1\project_1.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13720 C:\Users\yongj\Desktop\softmc_ddr4\hw\boards\ML605\project_1\project_1.xpr
 # Log file: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/vivado.log
 # Journal file: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.xpr
+set_property part xcvu095-ffvb2104-2-e [current_project]
+report_ip_status -name ip_status 
+upgrade_ip -srcset ddr4_0 -vlnv xilinx.com:ip:ddr4:2.2 [get_ips  ddr4_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips ddr4_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+upgrade_ip -srcset rdback_fifo -vlnv xilinx.com:ip:fifo_generator:13.2 [get_ips  rdback_fifo] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips rdback_fifo] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+upgrade_ip -srcset instr_fifo -vlnv xilinx.com:ip:fifo_generator:13.2 [get_ips  instr_fifo] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips instr_fifo] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+generate_target all [get_files C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ddr4_0.xci]
+export_ip_user_files -of_objects [get_files C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ddr4_0.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ddr4_0.xci] -directory C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files -ipstatic_source_dir C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.cache/compile_simlib/modelsim} {questa=C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.cache/compile_simlib/questa} {riviera=C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.cache/compile_simlib/riviera} {activehdl=C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_fileset -blockset ddr4_0
+set_property top ddr4_0 [get_fileset ddr4_0]
+move_files -fileset [get_fileset ddr4_0] [get_files -of_objects [get_fileset sources_1] C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ddr4_0.xci]
+generate_target all [get_files C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/rdback_fifo/rdback_fifo.xci]
+export_ip_user_files -of_objects [get_files C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/rdback_fifo/rdback_fifo.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/rdback_fifo/rdback_fifo.xci] -directory C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files -ipstatic_source_dir C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.cache/compile_simlib/modelsim} {questa=C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.cache/compile_simlib/questa} {riviera=C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.cache/compile_simlib/riviera} {activehdl=C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_fileset -blockset rdback_fifo
+set_property top rdback_fifo [get_fileset rdback_fifo]
+move_files -fileset [get_fileset rdback_fifo] [get_files -of_objects [get_fileset sources_1] C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/rdback_fifo/rdback_fifo.xci]
+generate_target all [get_files C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/instr_fifo/instr_fifo.xci]
+export_ip_user_files -of_objects [get_files C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/instr_fifo/instr_fifo.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/instr_fifo/instr_fifo.xci] -directory C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files -ipstatic_source_dir C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.cache/compile_simlib/modelsim} {questa=C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.cache/compile_simlib/questa} {riviera=C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.cache/compile_simlib/riviera} {activehdl=C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_fileset -blockset instr_fifo
+set_property top instr_fifo [get_fileset instr_fifo]
+move_files -fileset [get_fileset instr_fifo] [get_files -of_objects [get_fileset sources_1] C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/instr_fifo/instr_fifo.xci]
+launch_run {ddr4_0_synth_1 rdback_fifo_synth_1 instr_fifo_synth_1}
+wait_on_run ddr4_0_synth_1
+
 launch_simulation
 source tb_softMC_top.tcl
+close_sim
+launch_simulation
+source tb_softMC_top.tcl
+current_wave_config {Untitled 2}
+add_wave {{/tb_softMC_top/uut/u_ddr4_0}} 
+run all
+add_bp {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v} 1263
+run all
+run all
 close_sim

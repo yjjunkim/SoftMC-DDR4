@@ -1,13 +1,13 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-// Date        : Tue Jul  6 16:07:30 2021
+// Date        : Mon Jul 12 19:44:38 2021
 // Host        : DESKTOP-ILOVGO9 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
 //               c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ddr4_0_stub.v
 // Design      : ddr4_0
 // Purpose     : Stub declaration of top-level module interface
-// Device      : xcvu095-ffvb1760-1-i
+// Device      : xcvu095-ffvb2104-2-e
 // --------------------------------------------------------------------------------
 
 // This empty module with port declaration file causes synthesis tools to infer a black box for IP.

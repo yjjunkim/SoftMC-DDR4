@@ -1,13 +1,13 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-// Date        : Thu Jun 24 15:23:14 2021
+// Date        : Mon Jul 12 19:45:56 2021
 // Host        : DESKTOP-ILOVGO9 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
 //               c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/rdback_fifo/rdback_fifo_stub.v
 // Design      : rdback_fifo
 // Purpose     : Stub declaration of top-level module interface
-// Device      : xcvu095-ffvb1760-1-i
+// Device      : xcvu095-ffvb2104-2-e
 // --------------------------------------------------------------------------------
 
 // This empty module with port declaration file causes synthesis tools to infer a black box for IP.

@@ -75,7 +75,7 @@ set_msg_config  -id {[BD 41-1271]}  -suppress
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
 OPTRACE "Creating in-memory project" START { }
-create_project -in_memory -part xcvu095-ffvb1760-1-i
+create_project -in_memory -part xcvu095-ffvb2104-2-e
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
@@ -115,7 +115,7 @@ if { $cached_ip eq {} } {
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
-synth_design -top rdback_fifo -part xcvu095-ffvb1760-1-i -mode out_of_context
+synth_design -top rdback_fifo -part xcvu095-ffvb2104-2-e -mode out_of_context
 OPTRACE "synth_design" END { }
 OPTRACE "Write IP Cache" START { }
 

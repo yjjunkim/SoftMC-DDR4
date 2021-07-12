@@ -22,7 +22,7 @@
     </AddressSpace>
   </Processor>
   <Config>
-    <Option Name="Part" Val="xcvu095-ffvb1760-1-i"/>
+    <Option Name="Part" Val="xcvu095-ffvb2104-2-e"/>
   </Config>
   <DRC>
     <Rule Name="RDADDRCHANGE" Val="false"/>
