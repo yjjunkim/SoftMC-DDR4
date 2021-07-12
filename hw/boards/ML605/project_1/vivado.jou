@@ -11,3 +11,6 @@
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.xpr
+launch_simulation
+source tb_softMC_top.tcl
+close_sim
