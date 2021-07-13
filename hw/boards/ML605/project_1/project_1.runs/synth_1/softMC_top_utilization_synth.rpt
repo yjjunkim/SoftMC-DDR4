@@ -1,11 +1,11 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Fri Jun 25 18:21:37 2021
+| Date         : Tue Jul 13 20:37:19 2021
 | Host         : DESKTOP-ILOVGO9 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file softMC_top_utilization_synth.rpt -pb softMC_top_utilization_synth.pb
 | Design       : softMC_top
-| Device       : xcvu095ffvb1760-1
+| Device       : xcvu095ffvb2104-2
 | Design State : Synthesized
 ---------------------------------------------------------------------------------------------------------------
 
@@ -31,11 +31,11 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| CLB LUTs*               |  468 |     0 |    537600 |  0.09 |
-|   LUT as Logic          |  468 |     0 |    537600 |  0.09 |
+| CLB LUTs*               |  401 |     0 |    537600 |  0.07 |
+|   LUT as Logic          |  401 |     0 |    537600 |  0.07 |
 |   LUT as Memory         |    0 |     0 |     76800 |  0.00 |
-| CLB Registers           |  380 |     0 |   1075200 |  0.04 |
-|   Register as Flip Flop |  380 |     0 |   1075200 |  0.04 |
+| CLB Registers           |  378 |     0 |   1075200 |  0.04 |
+|   Register as Flip Flop |  378 |     0 |   1075200 |  0.04 |
 |   Register as Latch     |    0 |     0 |   1075200 |  0.00 |
 | CARRY8                  |    7 |     0 |     67200 |  0.01 |
 | F7 Muxes                |    0 |     0 |    268800 |  0.00 |
@@ -60,7 +60,7 @@ Table of Contents
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
 | 9     |          Yes |         Set |            - |
-| 371   |          Yes |       Reset |            - |
+| 369   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -123,12 +123,12 @@ Table of Contents
 | CMAC            |    0 |     0 |         4 |  0.00 |
 | GTHE3_CHANNEL   |    0 |     0 |        32 |  0.00 |
 | GTHE3_COMMON    |    0 |     0 |         8 |  0.00 |
-| GTYE3_CHANNEL   |    0 |     0 |        16 |  0.00 |
-| GTYE3_COMMON    |    0 |     0 |         4 |  0.00 |
-| IBUFDS_GTE3     |    0 |     0 |        24 |  0.00 |
+| GTYE3_CHANNEL   |    0 |     0 |        32 |  0.00 |
+| GTYE3_COMMON    |    0 |     0 |         8 |  0.00 |
+| IBUFDS_GTE3     |    0 |     0 |        32 |  0.00 |
 | ILKN            |    0 |     0 |         6 |  0.00 |
-| OBUFDS_GTE3     |    0 |     0 |        24 |  0.00 |
-| OBUFDS_GTE3_ADV |    0 |     0 |        24 |  0.00 |
+| OBUFDS_GTE3     |    0 |     0 |        32 |  0.00 |
+| OBUFDS_GTE3_ADV |    0 |     0 |        32 |  0.00 |
 | PCIE_3_1        |    0 |     0 |         4 |  0.00 |
 | SYSMONE1        |    0 |     0 |         1 |  0.00 |
 +-----------------+------+-------+-----------+-------+
@@ -156,13 +156,13 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     |  371 |            Register |
-| LUT6     |  178 |                 CLB |
-| LUT3     |  151 |                 CLB |
-| LUT4     |   95 |                 CLB |
-| LUT5     |   40 |                 CLB |
-| LUT1     |   24 |                 CLB |
-| LUT2     |   23 |                 CLB |
+| FDRE     |  369 |            Register |
+| LUT6     |  148 |                 CLB |
+| LUT3     |  145 |                 CLB |
+| LUT5     |   62 |                 CLB |
+| LUT2     |   34 |                 CLB |
+| LUT4     |   33 |                 CLB |
+| LUT1     |   23 |                 CLB |
 | OBUFT    |   17 |                 I/O |
 | FDSE     |    9 |            Register |
 | CARRY8   |    7 |                 CLB |

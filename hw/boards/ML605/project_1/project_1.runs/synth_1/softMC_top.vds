@@ -2,24 +2,23 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Fri Jun 25 18:20:00 2021
-# Process ID: 17760
+# Start of session at: Tue Jul 13 20:36:23 2021
+# Process ID: 28024
 # Current directory: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/synth_1
 # Command line: vivado.exe -log softMC_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source softMC_top.tcl
 # Log file: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/synth_1/softMC_top.vds
 # Journal file: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source softMC_top.tcl -notrace
-create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1088.895 ; gain = 0.000
-Command: synth_design -top softMC_top -part xcvu095-ffvb1760-1-i
+Command: synth_design -top softMC_top -part xcvu095-ffvb2104-2-e
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xcvu095'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcvu095'
-INFO: [Common 17-86] Your Synthesis license expires in 25 day(s)
-INFO: [Device 21-403] Loading part xcvu095-ffvb1760-1-i
+INFO: [Common 17-86] Your Synthesis license expires in 7 day(s)
+INFO: [Device 21-403] Loading part xcvu095-ffvb2104-2-e
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 7716
+INFO: [Synth 8-7075] Helper process launched with PID 24800
 WARNING: [Synth 8-2507] parameter declaration becomes local in pcie_clocking_v6 with formal parameter declaration list [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/pcie_clocking_v6.v:86]
 WARNING: [Synth 8-6901] identifier 'wPayloadData' is used before its declaration [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/tx_port_monitor_64.v:112]
 WARNING: [Synth 8-6901] identifier 'wPayloadData' is used before its declaration [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/tx_port_monitor_32.v:114]
@@ -30,20 +29,20 @@ WARNING: [Synth 8-6901] identifier 'wPackedSgTxDone' is used before its declarat
 WARNING: [Synth 8-6901] identifier 'wPackedSgTxErr' is used before its declaration [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/rx_port_32.v:125]
 WARNING: [Synth 8-6901] identifier 'wPackedSgTxDone' is used before its declaration [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/rx_port_128.v:125]
 WARNING: [Synth 8-6901] identifier 'wPackedSgTxErr' is used before its declaration [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/rx_port_128.v:125]
-WARNING: [Synth 8-6901] identifier 'instr0_disp_en' is used before its declaration [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/iseq_dispatcher.v:73]
-WARNING: [Synth 8-6901] identifier 'instr1_disp_en' is used before its declaration [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/iseq_dispatcher.v:73]
+WARNING: [Synth 8-6901] identifier 'instr0_disp_en' is used before its declaration [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/iseq_dispatcher.v:81]
+WARNING: [Synth 8-6901] identifier 'instr1_disp_en' is used before its declaration [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/iseq_dispatcher.v:81]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1497.859 ; gain = 254.680
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1500.027 ; gain = 256.957
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'softMC_top' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_top.v:5]
 	Parameter TCQ bound to: 100 - type: integer 
 	Parameter tCK bound to: 2500 - type: integer 
 	Parameter nCK_PER_CLK bound to: 2 - type: integer 
-	Parameter REFCLK_FREQ bound to: 200.000000 - type: double 
+	Parameter REFCLK_FREQ bound to: 100.000000 - type: double 
 	Parameter DRAM_TYPE bound to: DDR3 - type: string 
 	Parameter RST_ACT_LOW bound to: 0 - type: integer 
 	Parameter INPUT_CLK_TYPE bound to: DIFFERENTIAL - type: string 
-	Parameter CLKFBOUT_MULT_F bound to: 6 - type: integer 
+	Parameter CLKFBOUT_MULT_F bound to: 12 - type: integer 
 	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
 	Parameter CLKOUT_DIVIDE bound to: 3 - type: integer 
 	Parameter SLOT_0_CONFIG bound to: 8'b00000001 
@@ -103,8 +102,8 @@ INFO: [Synth 8-6157] synthesizing module 'softMC_top' [C:/Users/yongj/Desktop/so
 	Parameter SIMULATION bound to: OFF - type: string 
 	Parameter SYSCLK_PERIOD bound to: 5000 - type: integer 
 	Parameter MMCM_ADV_BANDWIDTH bound to: OPTIMIZED - type: string 
-INFO: [Synth 8-6157] synthesizing module 'ddr4_0' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/synth_1/.Xil/Vivado-17760-DESKTOP-ILOVGO9/realtime/ddr4_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ddr4_0' (1#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/synth_1/.Xil/Vivado-17760-DESKTOP-ILOVGO9/realtime/ddr4_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ddr4_0' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/synth_1/.Xil/Vivado-28024-DESKTOP-ILOVGO9/realtime/ddr4_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ddr4_0' (1#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/synth_1/.Xil/Vivado-28024-DESKTOP-ILOVGO9/realtime/ddr4_0_stub.v:6]
 INFO: [Synth 8-6157] synthesizing module 'softMC' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC.v:6]
 	Parameter TCQ bound to: 100 - type: integer 
 	Parameter tCK bound to: 2500 - type: integer 
@@ -200,14 +199,14 @@ INFO: [Synth 8-6157] synthesizing module 'instr_receiver' [C:/Users/yongj/Deskto
 	Parameter STATE_MAINT bound to: 2'b10 
 INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_receiver.v:52]
 INFO: [Synth 8-6155] done synthesizing module 'instr_receiver' (9#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_receiver.v:5]
-INFO: [Synth 8-6157] synthesizing module 'instr_fifo' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/synth_1/.Xil/Vivado-17760-DESKTOP-ILOVGO9/realtime/instr_fifo_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'instr_fifo' (10#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/synth_1/.Xil/Vivado-17760-DESKTOP-ILOVGO9/realtime/instr_fifo_stub.v:6]
-WARNING: [Synth 8-7071] port 'wr_rst_busy' of module 'instr_fifo' is unconnected for instance 'i_instr0_fifo' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC.v:177]
-WARNING: [Synth 8-7071] port 'rd_rst_busy' of module 'instr_fifo' is unconnected for instance 'i_instr0_fifo' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC.v:177]
-WARNING: [Synth 8-7023] instance 'i_instr0_fifo' of module 'instr_fifo' has 10 connections declared, but only 8 given [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC.v:177]
-WARNING: [Synth 8-7071] port 'wr_rst_busy' of module 'instr_fifo' is unconnected for instance 'i_instr1_fifo' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC.v:188]
-WARNING: [Synth 8-7071] port 'rd_rst_busy' of module 'instr_fifo' is unconnected for instance 'i_instr1_fifo' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC.v:188]
-WARNING: [Synth 8-7023] instance 'i_instr1_fifo' of module 'instr_fifo' has 10 connections declared, but only 8 given [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC.v:188]
+INFO: [Synth 8-6157] synthesizing module 'instr_fifo' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/synth_1/.Xil/Vivado-28024-DESKTOP-ILOVGO9/realtime/instr_fifo_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'instr_fifo' (10#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/synth_1/.Xil/Vivado-28024-DESKTOP-ILOVGO9/realtime/instr_fifo_stub.v:6]
+WARNING: [Synth 8-7071] port 'wr_rst_busy' of module 'instr_fifo' is unconnected for instance 'i_instr0_fifo' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC.v:179]
+WARNING: [Synth 8-7071] port 'rd_rst_busy' of module 'instr_fifo' is unconnected for instance 'i_instr0_fifo' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC.v:179]
+WARNING: [Synth 8-7023] instance 'i_instr0_fifo' of module 'instr_fifo' has 10 connections declared, but only 8 given [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC.v:179]
+WARNING: [Synth 8-7071] port 'wr_rst_busy' of module 'instr_fifo' is unconnected for instance 'i_instr1_fifo' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC.v:190]
+WARNING: [Synth 8-7071] port 'rd_rst_busy' of module 'instr_fifo' is unconnected for instance 'i_instr1_fifo' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC.v:190]
+WARNING: [Synth 8-7023] instance 'i_instr1_fifo' of module 'instr_fifo' has 10 connections declared, but only 8 given [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC.v:190]
 INFO: [Synth 8-6157] synthesizing module 'iseq_dispatcher' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/iseq_dispatcher.v:3]
 	Parameter ROW_WIDTH bound to: 17 - type: integer 
 	Parameter BANK_WIDTH bound to: 2 - type: integer 
@@ -230,8 +229,8 @@ INFO: [Synth 8-6157] synthesizing module 'instr_dispatcher' [C:/Users/yongj/Desk
 	Parameter TWO bound to: 2 - type: integer 
 	Parameter HIGH bound to: 1'b1 
 	Parameter LOW bound to: 1'b0 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_dispatcher.v:172]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_dispatcher.v:239]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_dispatcher.v:192]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_dispatcher.v:259]
 INFO: [Synth 8-6157] synthesizing module 'instr_decoder' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:5]
 	Parameter ROW_WIDTH bound to: 17 - type: integer 
 	Parameter BANK_WIDTH bound to: 2 - type: integer 
@@ -239,80 +238,180 @@ INFO: [Synth 8-6157] synthesizing module 'instr_decoder' [C:/Users/yongj/Desktop
 	Parameter LOW bound to: 1'b0 
 	Parameter HIGH bound to: 1'b1 
 	Parameter tmp_slot bound to: 136'b1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111 
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:60]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:61]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:62]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:69]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:70]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:71]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:72]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:73]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:74]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:75]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:76]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:69]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:70]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:71]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:72]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:73]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:74]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:75]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:76]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:69]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:70]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:71]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:72]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:73]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:74]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:75]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:76]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:69]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:70]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:71]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:72]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:73]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:74]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:75]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:76]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:69]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:70]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:71]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:72]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:73]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:74]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:75]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:76]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:69]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:70]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:71]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:72]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:73]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:74]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:75]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:76]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:69]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:70]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:71]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:72]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:73]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:74]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:75]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:76]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:69]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:70]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:71]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:72]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:73]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:74]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:75]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:76]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:69]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:70]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:71]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:72]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:73]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:74]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:75]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:76]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:69]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:70]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:71]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:72]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:73]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:74]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:75]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:76]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:69]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:70]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:71]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:72]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:73]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:74]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:75]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:76]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:69]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:70]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:71]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:72]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:73]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:74]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:75]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:76]
+WARNING: [Synth 8-6090] variable 'dfi_address' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:69]
+INFO: [Common 17-14] Message 'Synth 8-6090' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-6155] done synthesizing module 'instr_decoder' (12#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:5]
-WARNING: [Synth 8-7071] port 'mc_ACT_n' of module 'instr_decoder' is unconnected for instance 'instr_dec0' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_dispatcher.v:300]
-WARNING: [Synth 8-7071] port 'mcRdCAS' of module 'instr_decoder' is unconnected for instance 'instr_dec0' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_dispatcher.v:300]
-WARNING: [Synth 8-7071] port 'mcWrCAS' of module 'instr_decoder' is unconnected for instance 'instr_dec0' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_dispatcher.v:300]
-WARNING: [Synth 8-7023] instance 'instr_dec0' of module 'instr_decoder' has 11 connections declared, but only 8 given [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_dispatcher.v:300]
-WARNING: [Synth 8-689] width (17) of port connection 'dfi_address' does not match port width (136) of module 'instr_decoder' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_dispatcher.v:317]
-WARNING: [Synth 8-689] width (2) of port connection 'dfi_bank' does not match port width (16) of module 'instr_decoder' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_dispatcher.v:318]
-WARNING: [Synth 8-689] width (1) of port connection 'dfi_cs_n' does not match port width (8) of module 'instr_decoder' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_dispatcher.v:320]
-WARNING: [Synth 8-7071] port 'mc_ACT_n' of module 'instr_decoder' is unconnected for instance 'i_instr_dec1' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_dispatcher.v:313]
-WARNING: [Synth 8-7071] port 'mcRdCAS' of module 'instr_decoder' is unconnected for instance 'i_instr_dec1' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_dispatcher.v:313]
-WARNING: [Synth 8-7071] port 'mcWrCAS' of module 'instr_decoder' is unconnected for instance 'i_instr_dec1' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_dispatcher.v:313]
-WARNING: [Synth 8-7023] instance 'i_instr_dec1' of module 'instr_decoder' has 11 connections declared, but only 8 given [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_dispatcher.v:313]
+WARNING: [Synth 8-689] width (17) of port connection 'dfi_address' does not match port width (136) of module 'instr_decoder' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_dispatcher.v:343]
+WARNING: [Synth 8-689] width (2) of port connection 'dfi_bank' does not match port width (16) of module 'instr_decoder' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_dispatcher.v:344]
+WARNING: [Synth 8-689] width (1) of port connection 'dfi_cs_n' does not match port width (8) of module 'instr_decoder' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_dispatcher.v:346]
+WARNING: [Synth 8-7071] port 'dfi_bankgroup' of module 'instr_decoder' is unconnected for instance 'i_instr_dec1' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_dispatcher.v:339]
+WARNING: [Synth 8-7071] port 'mc_ACT_n' of module 'instr_decoder' is unconnected for instance 'i_instr_dec1' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_dispatcher.v:339]
+WARNING: [Synth 8-7071] port 'mcRdCAS' of module 'instr_decoder' is unconnected for instance 'i_instr_dec1' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_dispatcher.v:339]
+WARNING: [Synth 8-7071] port 'mcWrCAS' of module 'instr_decoder' is unconnected for instance 'i_instr_dec1' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_dispatcher.v:339]
+WARNING: [Synth 8-7023] instance 'i_instr_dec1' of module 'instr_decoder' has 12 connections declared, but only 8 given [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_dispatcher.v:339]
 INFO: [Synth 8-6155] done synthesizing module 'instr_dispatcher' (13#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_dispatcher.v:5]
 INFO: [Synth 8-6155] done synthesizing module 'iseq_dispatcher' (14#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/iseq_dispatcher.v:3]
-WARNING: [Synth 8-7071] port 'mc_ACT_n' of module 'iseq_dispatcher' is unconnected for instance 'i_iseq_disp' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC.v:202]
-WARNING: [Synth 8-7023] instance 'i_iseq_disp' of module 'iseq_dispatcher' has 43 connections declared, but only 42 given [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC.v:202]
-INFO: [Synth 8-6157] synthesizing module 'rdback_fifo' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/synth_1/.Xil/Vivado-17760-DESKTOP-ILOVGO9/realtime/rdback_fifo_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'rdback_fifo' (15#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/synth_1/.Xil/Vivado-17760-DESKTOP-ILOVGO9/realtime/rdback_fifo_stub.v:6]
-WARNING: [Synth 8-7071] port 'wr_rst_busy' of module 'rdback_fifo' is unconnected for instance 'i_rdback_fifo' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC.v:266]
-WARNING: [Synth 8-7071] port 'rd_rst_busy' of module 'rdback_fifo' is unconnected for instance 'i_rdback_fifo' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC.v:266]
-WARNING: [Synth 8-7023] instance 'i_rdback_fifo' of module 'rdback_fifo' has 11 connections declared, but only 9 given [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC.v:266]
+INFO: [Synth 8-6157] synthesizing module 'rdback_fifo' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/synth_1/.Xil/Vivado-28024-DESKTOP-ILOVGO9/realtime/rdback_fifo_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'rdback_fifo' (15#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/synth_1/.Xil/Vivado-28024-DESKTOP-ILOVGO9/realtime/rdback_fifo_stub.v:6]
+WARNING: [Synth 8-7071] port 'wr_rst_busy' of module 'rdback_fifo' is unconnected for instance 'i_rdback_fifo' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC.v:275]
+WARNING: [Synth 8-7071] port 'rd_rst_busy' of module 'rdback_fifo' is unconnected for instance 'i_rdback_fifo' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC.v:275]
+WARNING: [Synth 8-7023] instance 'i_rdback_fifo' of module 'rdback_fifo' has 11 connections declared, but only 9 given [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC.v:275]
 INFO: [Synth 8-6157] synthesizing module 'read_capturer' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/read_capturer.v:3]
 	Parameter DQ_WIDTH bound to: 64 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'read_capturer' (16#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/read_capturer.v:3]
 INFO: [Synth 8-6155] done synthesizing module 'softMC' (17#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC.v:6]
-WARNING: [Synth 8-7071] port 'iq_full' of module 'softMC' is unconnected for instance 'i_softmc' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_top.v:528]
-WARNING: [Synth 8-7071] port 'processing_iseq' of module 'softMC' is unconnected for instance 'i_softmc' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_top.v:528]
-WARNING: [Synth 8-7023] instance 'i_softmc' of module 'softMC' has 44 connections declared, but only 42 given [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_top.v:528]
+WARNING: [Synth 8-7071] port 'iq_full' of module 'softMC' is unconnected for instance 'i_softmc' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_top.v:542]
+WARNING: [Synth 8-7023] instance 'i_softmc' of module 'softMC' has 45 connections declared, but only 44 given [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_top.v:542]
 INFO: [Synth 8-6155] done synthesizing module 'softMC_top' (18#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_top.v:5]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1572.367 ; gain = 329.188
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1573.578 ; gain = 330.508
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1572.367 ; gain = 329.188
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1591.504 ; gain = 348.434
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1572.367 ; gain = 329.188
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1591.504 ; gain = 348.434
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 1572.367 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.059 . Memory (MB): peak = 1591.504 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ddr4_0/ddr4_0_in_context.xdc] for cell 'u_ddr4_0'
 Finished Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ddr4_0/ddr4_0_in_context.xdc] for cell 'u_ddr4_0'
-Parsing XDC File [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/synth_1/.Xil/Vivado-17760-DESKTOP-ILOVGO9/instr_fifo/instr_fifo/instr_fifo_in_context.xdc] for cell 'i_softmc/i_instr0_fifo'
-Finished Parsing XDC File [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/synth_1/.Xil/Vivado-17760-DESKTOP-ILOVGO9/instr_fifo/instr_fifo/instr_fifo_in_context.xdc] for cell 'i_softmc/i_instr0_fifo'
-Parsing XDC File [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/synth_1/.Xil/Vivado-17760-DESKTOP-ILOVGO9/instr_fifo/instr_fifo/instr_fifo_in_context.xdc] for cell 'i_softmc/i_instr1_fifo'
-Finished Parsing XDC File [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/synth_1/.Xil/Vivado-17760-DESKTOP-ILOVGO9/instr_fifo/instr_fifo/instr_fifo_in_context.xdc] for cell 'i_softmc/i_instr1_fifo'
 Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/rdback_fifo/rdback_fifo/rdback_fifo_in_context.xdc] for cell 'i_softmc/i_rdback_fifo'
 Finished Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/rdback_fifo/rdback_fifo/rdback_fifo_in_context.xdc] for cell 'i_softmc/i_rdback_fifo'
+Parsing XDC File [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/synth_1/.Xil/Vivado-28024-DESKTOP-ILOVGO9/instr_fifo/instr_fifo/instr_fifo_in_context.xdc] for cell 'i_softmc/i_instr0_fifo'
+Finished Parsing XDC File [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/synth_1/.Xil/Vivado-28024-DESKTOP-ILOVGO9/instr_fifo/instr_fifo/instr_fifo_in_context.xdc] for cell 'i_softmc/i_instr0_fifo'
+Parsing XDC File [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/synth_1/.Xil/Vivado-28024-DESKTOP-ILOVGO9/instr_fifo/instr_fifo/instr_fifo_in_context.xdc] for cell 'i_softmc/i_instr1_fifo'
+Finished Parsing XDC File [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/synth_1/.Xil/Vivado-28024-DESKTOP-ILOVGO9/instr_fifo/instr_fifo/instr_fifo_in_context.xdc] for cell 'i_softmc/i_instr1_fifo'
+Parsing XDC File [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/constrs_1/imports/xusps3_config/xusps3_pinout.xdc]
+WARNING: [Constraints 18-619] A clock with name 'c0_sys_clk_p' already exists, overwriting the previous clock with the same name. [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/constrs_1/imports/xusps3_config/xusps3_pinout.xdc:39]
+Finished Parsing XDC File [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/constrs_1/imports/xusps3_config/xusps3_pinout.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/constrs_1/imports/xusps3_config/xusps3_pinout.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/softMC_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/softMC_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1663.508 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1708.613 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.095 . Memory (MB): peak = 1663.508 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1708.613 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'i_softmc/i_instr0_fifo' at clock pin 'clk' is different from the actual clock period '4.284', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'i_softmc/i_instr1_fifo' at clock pin 'clk' is different from the actual clock period '4.284', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'i_softmc/i_rdback_fifo' at clock pin 'clk' is different from the actual clock period '4.284', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1668.812 ; gain = 425.633
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1709.578 ; gain = 466.508
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
-Loading part: xcvu095-ffvb1760-1-i
+Loading part: xcvu095-ffvb2104-2-e
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1668.812 ; gain = 425.633
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1709.578 ; gain = 466.508
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -552,11 +651,11 @@ Applied set_property CLOCK_BUFFER_TYPE = NONE for c0_sys_clk_n. (constraint file
 Applied set_property IO_BUFFER_TYPE = NONE for c0_sys_clk_p. (constraint file  c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ddr4_0/ddr4_0_in_context.xdc, line 236).
 Applied set_property CLOCK_BUFFER_TYPE = NONE for c0_sys_clk_p. (constraint file  c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ddr4_0/ddr4_0_in_context.xdc, line 237).
 Applied set_property KEEP_HIERARCHY = SOFT for u_ddr4_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for i_softmc/i_rdback_fifo. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for i_softmc/i_instr0_fifo. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for i_softmc/i_instr1_fifo. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for i_softmc/i_rdback_fifo. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1668.812 ; gain = 425.633
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1709.578 ; gain = 466.508
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_r_reg' in module 'instr_receiver'
 ---------------------------------------------------------------------------------------------------
@@ -567,10 +666,8 @@ INFO: [Synth 8-802] inferred FSM for state register 'state_r_reg' in module 'ins
              STATE_MAINT |                               10 |                               10
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_r_reg' using encoding 'sequential' in module 'instr_receiver'
-WARNING: [Synth 8-327] inferring latch for variable 'mcRdCAS_reg' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:54]
-WARNING: [Synth 8-327] inferring latch for variable 'mcWrCAS_reg' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:55]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1668.812 ; gain = 425.633
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1709.578 ; gain = 466.508
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -589,18 +686,18 @@ Detailed RTL Component Info :
 	                4 Bit    Registers := 1     
 	                3 Bit    Registers := 1     
 	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 32    
+	                1 Bit    Registers := 30    
 +---Muxes : 
 	   6 Input   32 Bit        Muxes := 2     
 	  15 Input   32 Bit        Muxes := 1     
-	   2 Input   32 Bit        Muxes := 12    
+	   2 Input   32 Bit        Muxes := 10    
 	   3 Input   32 Bit        Muxes := 1     
 	   2 Input   28 Bit        Muxes := 4     
 	   6 Input   28 Bit        Muxes := 2     
+	   2 Input   24 Bit        Muxes := 2     
 	   2 Input   10 Bit        Muxes := 5     
 	   6 Input   10 Bit        Muxes := 1     
-	   2 Input    8 Bit        Muxes := 5     
-	   3 Input    8 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 15    
 	   6 Input    8 Bit        Muxes := 1     
 	   2 Input    4 Bit        Muxes := 14    
 	   3 Input    4 Bit        Muxes := 1     
@@ -609,8 +706,8 @@ Detailed RTL Component Info :
 	   2 Input    2 Bit        Muxes := 5     
 	   3 Input    2 Bit        Muxes := 1     
 	   6 Input    2 Bit        Muxes := 2     
-	   2 Input    1 Bit        Muxes := 90    
-	   6 Input    1 Bit        Muxes := 32    
+	   2 Input    1 Bit        Muxes := 73    
+	   6 Input    1 Bit        Muxes := 28    
 	  12 Input    1 Bit        Muxes := 4     
 	   3 Input    1 Bit        Muxes := 9     
 	   4 Input    1 Bit        Muxes := 1     
@@ -631,25 +728,26 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1668.812 ; gain = 425.633
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1709.578 ; gain = 466.508
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
+WARNING: [Synth 8-565] redefining clock 'c0_sys_clk_p'
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:31 . Memory (MB): peak = 1795.805 ; gain = 552.625
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1807.668 ; gain = 564.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:33 . Memory (MB): peak = 1890.812 ; gain = 647.633
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1882.699 ; gain = 639.629
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:34 . Memory (MB): peak = 1900.871 ; gain = 657.691
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1893.285 ; gain = 650.215
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -666,43 +764,38 @@ Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
-CRITICAL WARNING: [Synth 8-4442] BlackBox module u_ddr4_0 has unconnected pin dBufAdr[4]
-CRITICAL WARNING: [Synth 8-4442] BlackBox module u_ddr4_0 has unconnected pin dBufAdr[3]
-CRITICAL WARNING: [Synth 8-4442] BlackBox module u_ddr4_0 has unconnected pin dBufAdr[2]
-CRITICAL WARNING: [Synth 8-4442] BlackBox module u_ddr4_0 has unconnected pin dBufAdr[1]
-CRITICAL WARNING: [Synth 8-4442] BlackBox module u_ddr4_0 has unconnected pin dBufAdr[0]
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:37 . Memory (MB): peak = 1900.871 ; gain = 657.691
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1893.285 ; gain = 650.215
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:37 . Memory (MB): peak = 1900.871 ; gain = 657.691
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1893.285 ; gain = 650.215
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:37 . Memory (MB): peak = 1900.871 ; gain = 657.691
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1893.285 ; gain = 650.215
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:37 . Memory (MB): peak = 1900.871 ; gain = 657.691
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1893.285 ; gain = 650.215
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:37 . Memory (MB): peak = 1900.871 ; gain = 657.691
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1893.285 ; gain = 650.215
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:37 . Memory (MB): peak = 1900.871 ; gain = 657.691
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1893.285 ; gain = 650.215
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -726,40 +819,39 @@ Report Cell Usage:
 |3     |instr_fifo_ |     1|
 |4     |rdback_fifo |     1|
 |5     |CARRY8      |     7|
-|6     |LUT1        |    24|
-|7     |LUT2        |    23|
-|8     |LUT3        |   151|
-|9     |LUT4        |    95|
-|10    |LUT5        |    40|
-|11    |LUT6        |   178|
-|12    |FDRE        |   371|
+|6     |LUT1        |    23|
+|7     |LUT2        |    34|
+|8     |LUT3        |   145|
+|9     |LUT4        |    33|
+|10    |LUT5        |    62|
+|11    |LUT6        |   148|
+|12    |FDRE        |   369|
 |13    |FDSE        |     9|
 |14    |IBUF        |     1|
 |15    |OBUF        |     1|
 |16    |OBUFT       |    17|
 +------+------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:37 . Memory (MB): peak = 1900.871 ; gain = 657.691
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1893.285 ; gain = 650.215
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 5 critical warnings and 2 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:35 . Memory (MB): peak = 1900.871 ; gain = 561.246
-Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:37 . Memory (MB): peak = 1900.871 ; gain = 657.691
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 1893.285 ; gain = 532.141
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1893.285 ; gain = 650.215
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 1906.734 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 1902.121 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1937.863 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1927.770 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 1 instances were transformed.
   IBUF => IBUF (IBUFCTRL, INBUF): 1 instance 
 
 INFO: [Common 17-83] Releasing license: Synthesis
-60 Infos, 51 Warnings, 5 Critical Warnings and 0 Errors encountered.
+62 Infos, 145 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:53 . Memory (MB): peak = 1937.863 ; gain = 848.969
-INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 1927.770 ; gain = 797.602
 INFO: [Common 17-1381] The checkpoint 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/synth_1/softMC_top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file softMC_top_utilization_synth.rpt -pb softMC_top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Jun 25 18:21:37 2021...
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 13 20:37:19 2021...

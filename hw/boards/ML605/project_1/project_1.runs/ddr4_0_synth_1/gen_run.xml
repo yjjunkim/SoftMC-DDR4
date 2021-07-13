@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="ddr4_0_synth_1" LaunchPart="xcvu095-ffvb2104-2-e" LaunchTime="1626086377">
+<GenRun Id="ddr4_0_synth_1" LaunchPart="xcvu095-ffvb2104-2-e" LaunchTime="1626175874">
   <File Type="PA-TCL" Name="ddr4_0.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="ddr4_0_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="ddr4_0_reports.tcl"/>
@@ -42,9 +42,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

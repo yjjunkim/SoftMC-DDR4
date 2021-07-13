@@ -4,6 +4,9 @@
 # IP: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ddr4_0.xci
 # IP: The module: 'ddr4_0' is the root of the design. Do not add the DONT_TOUCH constraint.
 
+# IP: c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/ddr4_0_phy.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ddr4_0_phy || ORIG_REF_NAME==ddr4_0_phy} -quiet] -quiet
+
 # IP: c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_0/ddr4_0_microblaze_mcs.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ddr4_0_microblaze_mcs || ORIG_REF_NAME==ddr4_0_microblaze_mcs} -quiet] -quiet
 
@@ -43,8 +46,7 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bd_9054_sec
 # IP: c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_10/bd_9054_iomodule_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bd_9054_iomodule_0_0 || ORIG_REF_NAME==bd_9054_iomodule_0_0} -quiet] -quiet
 
-# IP: c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/ddr4_0_phy.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ddr4_0_phy || ORIG_REF_NAME==ddr4_0_phy} -quiet] -quiet
+# XDC: c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/par/ddr4_0_phy_ooc.xdc
 
 # XDC: c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_0/bd_9054_microblaze_I_0.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==bd_9054_microblaze_I_0 || ORIG_REF_NAME==bd_9054_microblaze_I_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
@@ -77,8 +79,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filte
 
 # XDC: c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_0/ddr4_0_microblaze_mcs_ooc.xdc
 
-# XDC: c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/par/ddr4_0_phy_ooc.xdc
-
 # XDC: c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ddr4_0_board.xdc
 # XDC: The top module name and the constraint reference have the same name: 'ddr4_0'. Do not add the DONT_TOUCH constraint.
 set_property KEEP_HIERARCHY SOFT [get_cells inst -quiet] -quiet
@@ -89,6 +89,9 @@ set_property KEEP_HIERARCHY SOFT [get_cells inst -quiet] -quiet
 
 # IP: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ddr4_0.xci
 # IP: The module: 'ddr4_0' is the root of the design. Do not add the DONT_TOUCH constraint.
+
+# IP: c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/ddr4_0_phy.xci
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ddr4_0_phy || ORIG_REF_NAME==ddr4_0_phy} -quiet] -quiet
 
 # IP: c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_0/ddr4_0_microblaze_mcs.xci
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ddr4_0_microblaze_mcs || ORIG_REF_NAME==ddr4_0_microblaze_mcs} -quiet] -quiet
@@ -129,8 +132,7 @@ set_property KEEP_HIERARCHY SOFT [get_cells inst -quiet] -quiet
 # IP: c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_10/bd_9054_iomodule_0_0.xci
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bd_9054_iomodule_0_0 || ORIG_REF_NAME==bd_9054_iomodule_0_0} -quiet] -quiet
 
-# IP: c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/ddr4_0_phy.xci
-#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ddr4_0_phy || ORIG_REF_NAME==ddr4_0_phy} -quiet] -quiet
+# XDC: c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/par/ddr4_0_phy_ooc.xdc
 
 # XDC: c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_0/bd_9054_microblaze_I_0.xdc
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==bd_9054_microblaze_I_0 || ORIG_REF_NAME==bd_9054_microblaze_I_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
@@ -162,8 +164,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells inst -quiet] -quiet
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==ddr4_0_microblaze_mcs || ORIG_REF_NAME==ddr4_0_microblaze_mcs} -quiet] {/inst } ]/inst ] -quiet] -quiet
 
 # XDC: c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_0/ddr4_0_microblaze_mcs_ooc.xdc
-
-# XDC: c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/par/ddr4_0_phy_ooc.xdc
 
 # XDC: c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ddr4_0_board.xdc
 # XDC: The top module name and the constraint reference have the same name: 'ddr4_0'. Do not add the DONT_TOUCH constraint.

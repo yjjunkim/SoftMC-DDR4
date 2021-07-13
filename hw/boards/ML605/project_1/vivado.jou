@@ -2,12 +2,23 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Mon Jul 12 19:57:19 2021
-# Process ID: 17896
+# Start of session at: Mon Jul 12 20:07:54 2021
+# Process ID: 22928
 # Current directory: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21288 C:\Users\yongj\Desktop\softmc_ddr4\hw\boards\ML605\project_1\project_1.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20520 C:\Users\yongj\Desktop\softmc_ddr4\hw\boards\ML605\project_1\project_1.xpr
 # Log file: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/vivado.log
 # Journal file: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.xpr
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+add_files -fileset constrs_1 -norecurse C:/Users/yongj/Desktop/xusps3_config/xusps3_pinout.xdc
+import_files -fileset constrs_1 C:/Users/yongj/Desktop/xusps3_config/xusps3_pinout.xdc
+import_files -fileset constrs_1 C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_constraints.ucf
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1

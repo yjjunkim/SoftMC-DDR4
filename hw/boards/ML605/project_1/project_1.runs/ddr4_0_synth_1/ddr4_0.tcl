@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "ddr4_0_synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 3
 set_msg_config  -id {[BD 41-1306]}  -suppress 
 set_msg_config  -id {[BD 41-1271]}  -suppress 
 set_param project.vivado.isBlockSynthRun true
@@ -91,6 +92,7 @@ set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_ip -quiet C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ddr4_0.xci
+set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/par/ddr4_0_phy_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_0/bd_9054_microblaze_I_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_0/bd_9054_microblaze_I_0_ooc_debug.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_1/bd_9054_rst_0_0_board.xdc]
@@ -103,7 +105,6 @@ set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop
 set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/bd_9054_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_0/ddr4_0_microblaze_mcs_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_0/ddr4_0_microblaze_mcs_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/par/ddr4_0_phy_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ddr4_0_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/par/ddr4_0.xdc]
 

@@ -89,10 +89,10 @@ ddr4_0_sc::ddr4_0_sc(const sc_core::sc_module_name& nm) : sc_core::sc_module(nm)
     model_param_props.addLong("C0.DDR4_tCK", "1071");
     model_param_props.addLong("C0.DDR4_CLKOUT0_DIVIDE", "6");
     model_param_props.addLong("C0.DDR4_CLKOUT1_DIVIDE", "0");
-    model_param_props.addLong("C0.DDR4_CLKFBOUT_MULT", "7");
-    model_param_props.addLong("C0.DDR4_DIVCLK_DIVIDE", "2");
-    model_param_props.addLong("CAL_INPUT_CLK_PERIOD", "2499");
-    model_param_props.addLong("C0.DDR4_CLKIN_PERIOD", "2499");
+    model_param_props.addLong("C0.DDR4_CLKFBOUT_MULT", "14");
+    model_param_props.addLong("C0.DDR4_DIVCLK_DIVIDE", "1");
+    model_param_props.addLong("CAL_INPUT_CLK_PERIOD", "9996");
+    model_param_props.addLong("C0.DDR4_CLKIN_PERIOD", "9996");
     model_param_props.addLong("C0.DDR4_DCI_CASCADE_CUTOFF", "938");
     model_param_props.addLong("C0.DDR4_AXI_ID_WIDTH", "4");
     model_param_props.addLong("C0.DDR4_AXI_ADDR_WIDTH", "32");

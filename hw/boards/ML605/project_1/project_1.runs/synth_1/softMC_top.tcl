@@ -70,14 +70,11 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param synth.incrementalSynthesisCache C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/.Xil/Vivado-16164-DESKTOP-ILOVGO9/incrSyn
-set_msg_config -id {Common 17-41} -limit 10000000
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
+set_param chipscope.maxJobs 3
 set_msg_config  -id {[BD 41-1306]}  -suppress 
 set_msg_config  -id {[BD 41-1271]}  -suppress 
 OPTRACE "Creating in-memory project" START { }
-create_project -in_memory -part xcvu095-ffvb1760-1-i
+create_project -in_memory -part xcvu095-ffvb2104-2-e
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
@@ -185,9 +182,6 @@ read_verilog -library xil_defaultlib {
   C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/channel_32.v
   C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/channel_128.v
   C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/translation_layer.v
-  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/riffa_endpoint_64.v
-  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/riffa_endpoint_32.v
-  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/riffa_endpoint_128.v
   C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v
   C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_pcie_app.v
   C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/pipe_reg.v
@@ -221,13 +215,13 @@ set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop
 set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_0/mb_bootloop_le.elf]
 set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/sw/calibration_0/Debug/calibration_ddr.elf]
 
-read_ip -quiet C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/instr_fifo/instr_fifo.xci
-set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/instr_fifo/instr_fifo.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/instr_fifo/instr_fifo_ooc.xdc]
-
 read_ip -quiet C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/rdback_fifo/rdback_fifo.xci
 set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/rdback_fifo/rdback_fifo.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/rdback_fifo/rdback_fifo_ooc.xdc]
+
+read_ip -quiet C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/instr_fifo/instr_fifo.xci
+set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/instr_fifo/instr_fifo.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/instr_fifo/instr_fifo_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -238,11 +232,14 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+read_xdc C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/constrs_1/imports/xusps3_config/xusps3_pinout.xdc
+set_property used_in_implementation false [get_files C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/constrs_1/imports/xusps3_config/xusps3_pinout.xdc]
+
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
-synth_design -top softMC_top -part xcvu095-ffvb1760-1-i
+synth_design -top softMC_top -part xcvu095-ffvb2104-2-e
 OPTRACE "synth_design" END { }
 if { [get_msg_config -count -severity {CRITICAL WARNING}] > 0 } {
  send_msg_id runtcl-6 info "Synthesis results are not added to the cache due to CRITICAL_WARNING"

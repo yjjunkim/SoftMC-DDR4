@@ -7,13 +7,16 @@ module softMC_top #
 	parameter TCQ             = 100,
 	parameter tCK = 2500, //ps, TODO: let memory clok be 400 Mhz for now
 	parameter nCK_PER_CLK     = 2,       // # of memory clocks per CLK
-	parameter REFCLK_FREQ     = 200.0,   // IODELAY Reference Clock freq (MHz)
+	//parameter REFCLK_FREQ     = 200.0,   // IODELAY Reference Clock freq (MHz)
+	parameter REFCLK_FREQ     = 100.0,   // IODELAY Reference Clock freq (MHz)
 	parameter DRAM_TYPE       = "DDR3",  // Memory I/F type: "DDR3", "DDR2"
 	parameter RST_ACT_LOW = 0,
 	parameter INPUT_CLK_TYPE = "DIFFERENTIAL",
 
-	parameter CLKFBOUT_MULT_F =6,
+	//parameter CLKFBOUT_MULT_F =6,
+	parameter CLKFBOUT_MULT_F =12,
 	parameter DIVCLK_DIVIDE = 1,
+	//parameter DIVCLK_DIVIDE = 2,
 	parameter CLKOUT_DIVIDE = 3,
 	 
 	// Slot Conifg parameters
