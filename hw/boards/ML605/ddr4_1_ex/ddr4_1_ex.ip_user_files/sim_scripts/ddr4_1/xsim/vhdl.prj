@@ -1,41 +1,12 @@
-vhdl xpm  \
-"D:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_VCOMP.vhd" \
-
-vhdl microblaze_v11_0_4  \
-"../../../ipstatic/hdl/microblaze_v11_0_vh_rfs.vhd" \
-
 vhdl xil_defaultlib  \
 "../../../../ddr4_1_ex.gen/sources_1/ip/ddr4_1/bd_0/ip/ip_0/sim/bd_9c58_microblaze_I_0.vhd" \
-
-vhdl lib_cdc_v1_0_2  \
-"../../../ipstatic/hdl/lib_cdc_v1_0_rfs.vhd" \
-
-vhdl proc_sys_reset_v5_0_13  \
-"../../../ipstatic/hdl/proc_sys_reset_v5_0_vh_rfs.vhd" \
-
-vhdl xil_defaultlib  \
 "../../../../ddr4_1_ex.gen/sources_1/ip/ddr4_1/bd_0/ip/ip_1/sim/bd_9c58_rst_0_0.vhd" \
-
-vhdl lmb_v10_v3_0_11  \
-"../../../ipstatic/hdl/lmb_v10_v3_0_vh_rfs.vhd" \
-
-vhdl xil_defaultlib  \
 "../../../../ddr4_1_ex.gen/sources_1/ip/ddr4_1/bd_0/ip/ip_2/sim/bd_9c58_ilmb_0.vhd" \
 "../../../../ddr4_1_ex.gen/sources_1/ip/ddr4_1/bd_0/ip/ip_3/sim/bd_9c58_dlmb_0.vhd" \
-
-vhdl lmb_bram_if_cntlr_v4_0_19  \
-"../../../ipstatic/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd" \
-
-vhdl xil_defaultlib  \
 "../../../../ddr4_1_ex.gen/sources_1/ip/ddr4_1/bd_0/ip/ip_4/sim/bd_9c58_dlmb_cntlr_0.vhd" \
 "../../../../ddr4_1_ex.gen/sources_1/ip/ddr4_1/bd_0/ip/ip_5/sim/bd_9c58_ilmb_cntlr_0.vhd" \
 "../../../../ddr4_1_ex.gen/sources_1/ip/ddr4_1/bd_0/ip/ip_7/sim/bd_9c58_second_dlmb_cntlr_0.vhd" \
 "../../../../ddr4_1_ex.gen/sources_1/ip/ddr4_1/bd_0/ip/ip_8/sim/bd_9c58_second_ilmb_cntlr_0.vhd" \
-
-vhdl iomodule_v3_1_6  \
-"../../../ipstatic/hdl/iomodule_v3_1_vh_rfs.vhd" \
-
-vhdl xil_defaultlib  \
 "../../../../ddr4_1_ex.gen/sources_1/ip/ddr4_1/bd_0/ip/ip_10/sim/bd_9c58_iomodule_0_0.vhd" \
 
 nosort

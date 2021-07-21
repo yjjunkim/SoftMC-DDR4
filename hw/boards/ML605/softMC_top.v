@@ -99,10 +99,10 @@ module softMC_top #
    )(
 	//input sys_clk_p,
 	//input sys_clk_n,
-	input clk_ref_p,
-	input clk_ref_n,
+	//input clk_ref_p,
+	//input clk_ref_n,
 	//input sys_rst,
-	//input sys_reset_n,
+	input sys_reset_n,
 	// DDRx Output Interface
 	/*
 	output [CK_WIDTH-1:0]              ddr_ck_p,
@@ -128,9 +128,14 @@ module softMC_top #
 	output 										rdback_fifo_empty, //led 3
 	*/
 	//DDR4 ( INPUT / OUTPUT )//////////////////////////////////////////////////////////////////
-	input                             sys_rst,
+	input                             sys_rst_l,
+	//input                             sys_rst_l,
     input                             c0_sys_clk_p,
     input                             c0_sys_clk_n,
+    
+    //pci ref clk
+    input sys_clk_p,
+    input sys_clk_n,
 
    // iob<>DDR4 signals
     output                            c0_ddr4_act_n,
@@ -149,7 +154,7 @@ module softMC_top #
     inout        [7:0]      c0_ddr4_dqs_t,
 
     output                            c0_init_calib_complete,
-    output                            c0_data_compare_error,
+    //output                            c0_data_compare_error,
 	///////////////////////////////////////////////////////////////////////////////////////////////
 	//PCIE
 	
@@ -443,6 +448,8 @@ module softMC_top #
   wire c0_ddr4_reset_n_int;
   assign c0_ddr4_reset_n = c0_ddr4_reset_n_int;
   assign dBufAdr = 5'b00000;
+  
+  assign sys_rst = sys_rst_l;
 
   
   
@@ -525,7 +532,7 @@ module softMC_top #
 	 `ifndef SIM
 	//wire app_en;
 	wire app_ack;
-	//wire[31:0] app_instr;
+	wire[31:0] app_instr;
 	
 	
 	//Data read back Interface
@@ -616,9 +623,13 @@ riffa_top_v6_pcie_v2_5 #(
 
   .sys_clk_p(sys_clk_p),
   .sys_clk_n(sys_clk_n),
+  //.sys_clk_p(c0_sys_clk_p),
+  //.sys_clk_n(c0_sys_clk_n),
+  //c0_sys_clk_p
+  //.sys_reset_n(sys_reset_n),
   .sys_reset_n(sys_reset_n),
   
-	.app_clk(clk),
+	.app_clk(c0_ddr4_clk),
 	.app_en(app_en),
 	.app_ack(app_ack),
 	.app_instr(app_instr),
@@ -629,6 +640,44 @@ riffa_top_v6_pcie_v2_5 #(
 	.rdback_data(rdback_data)
 );
 */
+
+xilinx_dma_pcie_ep
+   EP (
+    // SYS Inteface
+    //.sys_clk_n(ep_sys_clk_n),
+    //.sys_clk_p(ep_sys_clk_p),
+    //.sys_rst_n(sys_rst_n),
+    
+    .sys_clk_n(sys_clk_n),
+    .sys_clk_p(sys_clk_p),
+    .sys_rst_n(sys_reset_n),
+
+  
+
+
+    // PCI-Express Serial Interface
+    //.pci_exp_txn(ep_pci_exp_txn),
+    //.pci_exp_txp(ep_pci_exp_txp),
+    //.pci_exp_rxn(rp_pci_exp_txn),
+    //.pci_exp_rxp(rp_pci_exp_txp)
+    
+    .pci_exp_txn(pci_exp_txn),
+    .pci_exp_txp(pci_exp_txp),
+    .pci_exp_rxn(pci_exp_rxn),
+    .pci_exp_rxp(pci_exp_rxp),
+    
+    ///////////softMC ///////////////
+    .app_clk(c0_ddr4_clk),
+	.app_en(app_en),
+	.app_ack(app_ack),
+	.app_instr(app_instr),
+	
+	//Data read back Interface
+	.rdback_fifo_empty(rdback_fifo_empty),
+	.rdback_fifo_rden(rdback_fifo_rden),
+	.rdback_data(rdback_data)
+  
+  );
 `endif //SIM
 
 endmodule

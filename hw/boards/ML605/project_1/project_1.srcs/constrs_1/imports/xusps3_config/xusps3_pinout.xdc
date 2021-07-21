@@ -30,33 +30,64 @@ set_property BITSTREAM.CONFIG.SPI_BUSWIDTH 4 [current_design]
 set_property BITSTREAM.CONFIG.SPI_32BIT_ADDR YES [current_design]
 set_property BITSTREAM.CONFIG.CONFIGRATE 50 [current_design]
 set_property BITSTREAM.CONFIG.SPI_FALL_EDGE YES [current_design]
-
+### PCIE #######
+set_property PACKAGE_PIN AR26 [get_ports sys_reset_n]
+#set_property IOSTANDARD LVCMOS18 [get_ports sys_reset_n]
+set_property IOSTANDARD LVCMOS12 [get_ports sys_reset_n]
+set_property PULLUP true [get_ports sys_reset_n]
+#set_property PACKAGE_PIN AR26 [get_ports sys_reset_l]
+#set_property IOSTANDARD LVCMOS18 [get_ports sys_reset_l]
+#set_property PULLUP true [get_ports sys_reset_l]
 ##############################################
 ##########      Clocks/Reset        ##########
 ##############################################
 # NOTE: Currently using 100 MHz system clock, subject to change
-#create_clock -period 9.996 [get_ports m0_sys_clk_p]
+#create_clock -period 9.996 [get_ports c0_sys_clk_p]
+#create_clock -period 9.996 [get_ports c0_sys_clk_n]
 create_clock -period 9.996 [get_ports c0_sys_clk_p]
+create_clock -period 9.996 [get_ports c0_sys_clk_n]
 
-#create_clock -period 9.996 [get_ports m1_sys_clk_p]
-#create_clock -period 9.996 [get_ports m2_sys_clk_p]
-#create_clock -period 9.996 [get_ports m3_sys_clk_p]
-
-#set_property IOSTANDARD DIFF_SSTL12_DCI [get_ports m0_sys_clk_p]
 set_property IOSTANDARD DIFF_SSTL12_DCI [get_ports c0_sys_clk_p]
+#set_property IOSTANDARD DIFF_SSTL12_DCI [get_ports c0_sys_clk_n]
 
-#set_property ODT RTT_48 [get_ports m0_sys_clk_p]
 set_property ODT RTT_48 [get_ports c0_sys_clk_p]
+#set_property ODT RTT_48 [get_ports c0_sys_clk_n]
 
-#set_property PACKAGE_PIN BB36 [get_ports m0_sys_clk_p]
-set_property PACKAGE_PIN AV18 [get_ports c0_sys_clk_p]
-
+# sodimm1_refclk_p
+set_property PACKAGE_PIN AV18 [get_ports "c0_sys_clk_p"]
+#set_property PACKAGE_PIN AW18 [get_ports "c0_sys_clk_n"] 
 #set_property IOSTANDARD LVCMOS33 [get_ports sys_rst_l]
 #set_property PACKAGE_PIN AT23 [get_ports sys_rst_l]
 #sys_reset_n
-set_property IOSTANDARD LVCMOS33 [get_ports sys_rst]
-set_property PACKAGE_PIN AT23 [get_ports sys_rst]
+#set_property IOSTANDARD LVCMOS33 [get_ports sys_rst]
+#set_property PACKAGE_PIN AT23 [get_ports "sys_rst"]
 
+set_property IOSTANDARD LVCMOS33 [get_ports sys_rst_l]
+#set_property PACKAGE_PIN BA17 [get_ports "sys_rst"]
+set_property PACKAGE_PIN AT23 [get_ports "sys_rst_l"]
+
+#create_clock -name sys_clk -period 10 [get_ports pci_sys_clk_p]
+# PCI ref clock
+#create_clock -period 10 [get_ports pcie_refclk_p_0] 
+#create_clock -period 10 [get_ports pcie_refclk_n_0]
+
+##### REFCLK_IBUF###########
+#set_property LOC AT11 [get_ports pci_sys_clk_p]
+#set_property PACKAGE_PIN AT11 [get_ports pcie_sys_clk_p]
+create_clock -period 10 [get_ports sys_clk_p] 
+#create_clock -period 10 [get_ports sys_clk_n]
+set_property PACKAGE_PIN AT11 [get_ports "sys_clk_p"]
+#set_property PACKAGE_PIN AT10 [get_ports "sys_clk_n"]
+#set_property ODT RTT_48 [get_ports sys_clk_p]
+#set_property ODT RTT_48 [get_ports sys_clk_n]
+#set_property IOSTANDARD DIFF_SSTL12_DCI [get_ports sys_clk_p]
+#set_property IOSTANDARD DIFF_SSTL12_DCI [get_ports sys_clk_n]
+
+
+#set_property IOSTANDARD LVCMOS33 [get_ports c0_data_compare_error]
+set_property IOSTANDARD LVCMOS33 [get_ports c0_init_calib_complete]
+#set_property PACKAGE_PIN AR22 [get_ports "c0_data_compare_error"]
+set_property PACKAGE_PIN AT22 [get_ports "c0_init_calib_complete"]
 ##############################################
 ##########           LEDs           ##########
 ##############################################
@@ -82,9 +113,8 @@ set_property PACKAGE_PIN AT23 [get_ports sys_rst]
 ### Bank B
 
 ### SODIMM 1
-set_property OUTPUT_IMPEDANCE RDRV_NONE_NONE [get_ports c0_ddr4_reset_n]
-set_property IOSTANDARD LVCMOS12 [get_ports c0_ddr4_reset_n]
-set_property DRIVE 8 [ get_ports c0_ddr4_reset_n ]
+#set_property OUTPUT_IMPEDANCE RDRV_NONE_NONE [get_ports c0_ddr4_reset_n]
+#set_property DRIVE 8 [ get_ports c0_ddr4_reset_n ]
 set_property IOSTANDARD DIFF_POD12_DCI [get_ports {c0_ddr4_dqs_c[0]}]
 set_property IOSTANDARD DIFF_POD12_DCI [get_ports {c0_ddr4_dqs_c[1]}]
 set_property IOSTANDARD DIFF_POD12_DCI [get_ports {c0_ddr4_dqs_c[2]}]
@@ -468,6 +498,42 @@ set_property PACKAGE_PIN BD26 [ get_ports "c0_ddr4_dqs_t[7]" ]
 #set_property PACKAGE_PIN BC19 [ get_ports "c0_ddr4_dqs_t[8]" ]
 set_property PACKAGE_PIN AW21 [ get_ports "c0_ddr4_odt[0]" ]
 #set_property PACKAGE_PIN AV19 [ get_ports "c0_ddr4_odt[1]" ]
+
+#set_property IOSTANDARD LVCMOS12 [get_ports c0_ddr4_reset_n]
 set_property PACKAGE_PIN BA17 [ get_ports "c0_ddr4_reset_n" ]
 
 ### SODIMM 2
+## PCIE
+
+set_property PACKAGE_PIN	 AP1 [ get_ports "pci_exp_rxn[0]"]  
+set_property PACKAGE_PIN	 AR3 [ get_ports "pci_exp_rxn[1]"]  
+set_property PACKAGE_PIN	 AT1 [ get_ports "pci_exp_rxn[2]"]
+set_property PACKAGE_PIN	 AU3 [ get_ports "pci_exp_rxn[3]"]
+set_property PACKAGE_PIN	 AV1 [ get_ports "pci_exp_rxn[4]"]
+set_property PACKAGE_PIN	 AW3 [ get_ports "pci_exp_rxn[5]"]
+set_property PACKAGE_PIN	 BA1 [ get_ports "pci_exp_rxn[6]"]
+set_property PACKAGE_PIN	 BC1 [ get_ports "pci_exp_rxn[7]"] 
+set_property PACKAGE_PIN	 AP2 [ get_ports "pci_exp_rxp[0]"] 
+set_property PACKAGE_PIN	 AR4 [ get_ports "pci_exp_rxp[1]"] 
+set_property PACKAGE_PIN	 AT2 [ get_ports "pci_exp_rxp[2]"]
+set_property PACKAGE_PIN	 AU4 [ get_ports "pci_exp_rxp[3]"]
+set_property PACKAGE_PIN	 AV2 [ get_ports "pci_exp_rxp[4]"]
+set_property PACKAGE_PIN	 AW4 [ get_ports "pci_exp_rxp[5]"]
+set_property PACKAGE_PIN	 BA2 [ get_ports "pci_exp_rxp[6]"]  
+set_property PACKAGE_PIN	 BC2 [ get_ports "pci_exp_rxp[7]"]
+set_property PACKAGE_PIN	 AP6 [ get_ports "pci_exp_txn[0]"]
+set_property PACKAGE_PIN	 AR8 [ get_ports "pci_exp_txn[1]"]
+set_property PACKAGE_PIN	 AT6 [ get_ports "pci_exp_txn[2]"] 
+set_property PACKAGE_PIN	 AU8 [ get_ports "pci_exp_txn[3]"]
+set_property PACKAGE_PIN	 AV6 [ get_ports "pci_exp_txn[4]"]
+set_property PACKAGE_PIN	 BB4 [ get_ports "pci_exp_txn[5]"]
+set_property PACKAGE_PIN	 BD4 [ get_ports "pci_exp_txn[6]"]
+set_property PACKAGE_PIN	 BF4 [ get_ports "pci_exp_txn[7]"]
+set_property PACKAGE_PIN	 AP7 [ get_ports "pci_exp_txp[0]"]
+set_property PACKAGE_PIN	 AR9 [ get_ports "pci_exp_txp[1]"]
+set_property PACKAGE_PIN	 AT7 [ get_ports "pci_exp_txp[2]"]
+set_property PACKAGE_PIN	 AU9 [ get_ports "pci_exp_txp[3]"]
+set_property PACKAGE_PIN	 AV7 [ get_ports "pci_exp_txp[4]"]
+set_property PACKAGE_PIN	 BB5 [ get_ports "pci_exp_txp[5]"]
+set_property PACKAGE_PIN	 BD5 [ get_ports "pci_exp_txp[6]"]
+set_property PACKAGE_PIN	 BF5 [ get_ports "pci_exp_txp[7]"]

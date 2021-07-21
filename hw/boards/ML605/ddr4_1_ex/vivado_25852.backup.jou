@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jul  5 20:53:30 2021
+# Process ID: 25852
+# Current directory: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ddr4_1_ex
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18556 C:\Users\yongj\Desktop\softmc_ddr4\hw\boards\ML605\ddr4_1_ex\ddr4_1_ex.xpr
+# Log file: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ddr4_1_ex/vivado.log
+# Journal file: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ddr4_1_ex\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ddr4_1_ex/ddr4_1_ex.xpr
+update_compile_order -fileset sources_1

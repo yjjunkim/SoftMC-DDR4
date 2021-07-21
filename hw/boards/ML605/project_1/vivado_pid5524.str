@@ -1,0 +1,1914 @@
+/*
+
+Xilinx Vivado v2020.2 (64-bit) [Major: 2020, Minor: 2]
+SW Build: 3064766 on Wed Nov 18 09:12:45 MST 2020
+IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+
+Process ID (PID): 5524
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Mon Jul 19 17:54:25 KST 2021
+Time zone: 	Korean Standard Time (Asia/Seoul)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 3840x2160
+Screen resolution (DPI): 175
+Available screens: 2
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=21
+Scale size: 37
+
+Java version: 	11.0.2 64-bit
+Java home: 	D:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2
+Java executable location: 	D:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	yongj
+User home directory: C:/Users/yongj
+User working directory: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1
+User country: 	KR
+User language: 	ko
+User locale: 	ko_KR
+
+RDI_BASEROOT: D:/Xilinx/Vivado
+HDI_APPROOT: D:/Xilinx/Vivado/2020.2
+RDI_DATADIR: D:/Xilinx/Vivado/2020.2/data
+RDI_BINDIR: D:/Xilinx/Vivado/2020.2/bin
+
+Vivado preferences file location: C:/Users/yongj/AppData/Roaming/Xilinx/Vivado/2020.2/vivado.xml
+Vivado preferences directory: C:/Users/yongj/AppData/Roaming/Xilinx/Vivado/2020.2/
+Vivado layouts directory: C:/Users/yongj/AppData/Roaming/Xilinx/Vivado/2020.2/data/layouts
+PlanAhead jar file location: 	D:/Xilinx/Vivado/2020.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/vivado.log
+Vivado journal file location: 	C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/vivado.jou
+Engine tmp dir: 	C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/.Xil/Vivado-5524-DESKTOP-ILOVGO9
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_DSP: D:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_HLS: D:/Xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: D:/Xilinx/Vivado/2020.2
+XILINX_VIVADO: D:/Xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: D:/Xilinx/Vivado/2020.2
+
+
+GUI allocated memory:	143 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,042 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 104 MB (+106835kb) [00:00:12]
+// [Engine Memory]: 1,042 MB (+941255kb) [00:00:12]
+// bz (cr):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\yongj\Desktop\softmc_ddr4\hw\boards\ML605\project_1\project_1.xpr. Version: Vivado v2020.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.xpr 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,042 MB. GUI used memory: 83 MB. Current time: 7/19/21, 5:54:26 PM KST
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 136 MB (+28068kb) [00:00:37]
+// WARNING: HEventQueue.dispatchEvent() is taking  3754 ms.
+// Tcl Message: open_project C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 1075.699 ; gain = 0.000 
+// Project name: project_1; location: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1; part: xcvu095-ffvb2104-2-e
+// [GUI Memory]: 155 MB (+12979kb) [00:00:41]
+dismissDialog("Open Project"); // bz
+// TclEventType: FILE_SET_CHANGE
+// Tcl Command: 'rdi::info_commands {device::*}'
+// TclEventType: FILE_SET_CHANGE
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 183 MB (+21136kb) [00:00:46]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,090 MB. GUI used memory: 120 MB. Current time: 7/19/21, 5:54:56 PM KST
+// [Engine Memory]: 1,095 MB (+461kb) [00:00:46]
+// Elapsed time: 479 seconds
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "IP Sources", 1); // i
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, xdma_0]", 5); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, xdma_0]", 5); // D
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // i
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, softMC_top (softMC_top.v)]", 3); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, softMC_top (softMC_top.v)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, softMC_top (softMC_top.v)]", 3, true, false, false, false, false, true); // D - Double Click - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 1,122 MB. GUI used memory: 142 MB. Current time: 7/19/21, 6:03:06 PM KST
+// Elapsed time: 37 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // u
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a
+dismissFileChooser();
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a
+// Elapsed time: 27 seconds
+dismissFileChooser();
+selectButton("BACK", "< Back"); // JButton
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "xilinx_dma_pcie_ep"); // aa
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, "SystemVerilog", 2); // cm
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Tcl Command: 'file mkdir C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/new'
+dismissDialog("Create Source File"); // F
+// Tcl Message: file mkdir C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/new 
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 61 seconds
+dismissDialog("Add Sources"); // c
+// Tcl Message: close [ open C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/new/xilinx_dma_pcie_ep.sv w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/new/xilinx_dma_pcie_ep.sv 
+// I (cr): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+selectButton("OptionPane.button", "Yes"); // JButton
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Define Module"); // I
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, xilinx_dma_pcie_ep (xilinx_dma_pcie_ep.sv)]", 95, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, xilinx_dma_pcie_ep (xilinx_dma_pcie_ep.sv)]", 95, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, xilinx_dma_pcie_ep (xilinx_dma_pcie_ep.sv)]", 95, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 717, 270); // bP
+typeControlKey((HResource) null, "xilinx_dma_pcie_ep.sv", 'v'); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 767, 514); // bP
+// Elapsed time: 21 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "softMC_top.v", 1); // m
+// Elapsed time: 31 seconds
+selectCodeEditor("softMC_top.v", 227, 1039); // bP
+typeControlKey((HResource) null, "softMC_top.v", 'v'); // bP
+selectCodeEditor("softMC_top.v", 538, 896); // bP
+selectCodeEditor("softMC_top.v", 480, 485); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("softMC_top.v", 608, 725); // bP
+selectCodeEditor("softMC_top.v", 291, 666); // bP
+selectCodeEditor("softMC_top.v", 291, 633); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xilinx_dma_pcie_ep.sv", 2); // m
+// TclEventType: DG_GRAPH_STALE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "softMC_top.v", 1); // m
+// Elapsed time: 23 seconds
+selectCodeEditor("softMC_top.v", 234, 659); // bP
+selectCodeEditor("softMC_top.v", 234, 658, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("softMC_top.v", 256, 682); // bP
+selectCodeEditor("softMC_top.v", 256, 681, false, false, false, false, true); // bP - Double Click
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, softMC_top (softMC_top.v)]", 3); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, softMC_top (softMC_top.v), EP : xilinx_dma_pcie_ep (xilinx_dma_pcie_ep.sv)]", 6); // D
+// Elapsed time: 126 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, softMC_top (softMC_top.v)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // u
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a
+dismissFileChooser();
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+// F (c): Create Source File: addNotify
+// Elapsed time: 13 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "xdma_app"); // aa
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Create Source File"); // F
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 29 seconds
+dismissDialog("Add Sources"); // c
+// Tcl Message: close [ open C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/new/xdma_app.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/new/xdma_app.v 
+// I (cr): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+selectButton("OptionPane.button", "Yes"); // JButton
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Define Module"); // I
+selectCodeEditor("softMC_top.v", 514, 666); // bP
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, softMC_top (softMC_top.v), EP : xilinx_dma_pcie_ep (xilinx_dma_pcie_ep.sv), xdma_app_i : xdma_app (xdma_app.v)]", 8, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, softMC_top (softMC_top.v), EP : xilinx_dma_pcie_ep (xilinx_dma_pcie_ep.sv), xdma_app_i : xdma_app (xdma_app.v)]", 8, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("xdma_app.v", 362, 257); // bP
+typeControlKey((HResource) null, "xdma_app.v", 'v'); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 19 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, softMC_top (softMC_top.v), EP : xilinx_dma_pcie_ep (xilinx_dma_pcie_ep.sv)]", 6, true); // D - Node
+selectCodeEditor("xdma_app.v", 736, 118); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xilinx_dma_pcie_ep.sv", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xdma_app.v", 3); // m
+// Elapsed time: 19 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xilinx_dma_pcie_ep.sv", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xdma_app.v", 3); // m
+// Elapsed time: 168 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "softMC_top.v", 1); // m
+selectCodeEditor("softMC_top.v", 265, 614); // bP
+selectCodeEditor("softMC_top.v", 265, 612, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("softMC_top.v", 244, 670); // bP
+selectCodeEditor("softMC_top.v", 244, 669, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("softMC_top.v", 243, 696); // bP
+selectCodeEditor("softMC_top.v", 243, 695, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("softMC_top.v", 305, 890); // bP
+selectCodeEditor("softMC_top.v", 305, 889, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("softMC_top.v", 259, 634); // bP
+selectCodeEditor("softMC_top.v", 259, 633, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("softMC_top.v", 271, 615); // bP
+selectCodeEditor("softMC_top.v", 271, 614, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("softMC_top.v", 118, 628); // bP
+selectCodeEditor("softMC_top.v", 118, 628, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 17 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sys_clk_n"); // l
+selectCodeEditor("softMC_top.v", 411, 464); // bP
+selectCodeEditor("softMC_top.v", 411, 462, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 15 seconds
+selectCodeEditor("softMC_top.v", 241, 173); // bP
+selectCodeEditor("softMC_top.v", 241, 173, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("softMC_top.v", 250, 220); // bP
+selectCodeEditor("softMC_top.v", 250, 219, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("softMC_top.v", 252, 213); // bP
+selectCodeEditor("softMC_top.v", 252, 212, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("softMC_top.v", 254, 212); // bP
+selectCodeEditor("softMC_top.v", 256, 213); // bP
+selectCodeEditor("softMC_top.v", 265, 234); // bP
+selectCodeEditor("softMC_top.v", 260, 209); // bP
+selectCodeEditor("softMC_top.v", 260, 208, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("softMC_top.v", 260, 207); // bP
+selectCodeEditor("softMC_top.v", 260, 243); // bP
+selectCodeEditor("softMC_top.v", 256, 209); // bP
+selectCodeEditor("softMC_top.v", 256, 208, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "softMC_top.v", 'c'); // bP
+selectCodeEditor("softMC_top.v", 375, 872); // bP
+selectCodeEditor("softMC_top.v", 400, 935); // bP
+selectCodeEditor("softMC_top.v", 395, 902); // bP
+selectCodeEditor("softMC_top.v", 334, 915); // bP
+typeControlKey((HResource) null, "softMC_top.v", 'c'); // bP
+selectCodeEditor("softMC_top.v", 74, 938); // bP
+selectCodeEditor("softMC_top.v", 78, 978); // bP
+typeControlKey((HResource) null, "softMC_top.v", 'v'); // bP
+selectCodeEditor("softMC_top.v", 53, 913); // bP
+selectCodeEditor("softMC_top.v", 252, 181); // bP
+selectCodeEditor("softMC_top.v", 262, 200); // bP
+selectCodeEditor("softMC_top.v", 262, 200, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("softMC_top.v", 277, 223); // bP
+selectCodeEditor("softMC_top.v", 291, 216); // bP
+selectCodeEditor("softMC_top.v", 294, 215); // bP
+typeControlKey((HResource) null, "softMC_top.v", 'c'); // bP
+selectCodeEditor("softMC_top.v", 249, 977); // bP
+selectCodeEditor("softMC_top.v", 249, 976, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("softMC_top.v", 249, 975); // bP
+selectCodeEditor("softMC_top.v", 260, 1001); // bP
+selectCodeEditor("softMC_top.v", 296, 968); // bP
+typeControlKey((HResource) null, "softMC_top.v", 'v'); // bP
+selectCodeEditor("softMC_top.v", 295, 1005); // bP
+typeControlKey((HResource) null, "softMC_top.v", 'v'); // bP
+selectCodeEditor("softMC_top.v", 257, 650); // bP
+selectCodeEditor("softMC_top.v", 253, 682); // bP
+selectCodeEditor("softMC_top.v", 253, 682, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("softMC_top.v", 257, 686); // bP
+selectCodeEditor("softMC_top.v", 257, 684); // bP
+selectCodeEditor("softMC_top.v", 274, 710); // bP
+selectCodeEditor("softMC_top.v", 167, 691); // bP
+// Elapsed time: 13 seconds
+selectCodeEditor("softMC_top.v", 451, 587); // bP
+selectCodeEditor("softMC_top.v", 451, 586, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "softMC_top.v", 'c'); // bP
+// Elapsed time: 10 seconds
+selectCodeEditor("softMC_top.v", 170, 871); // bP
+selectCodeEditor("softMC_top.v", 170, 870, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("softMC_top.v", 180, 880); // bP
+selectCodeEditor("softMC_top.v", 180, 880, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "softMC_top.v", 'c'); // bP
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // u
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // u
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 15, false); // u
+// am (cr): Save Project: addNotify
+dismissDialog("Save Project"); // am
+// Run Command: RDIResourceCommand.RDICommands_COPY
+selectCodeEditor("softMC_top.v", 215, 622); // bP
+selectCodeEditor("softMC_top.v", 216, 620, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("softMC_top.v", 229, 644); // bP
+selectCodeEditor("softMC_top.v", 229, 625); // bP
+selectCodeEditor("softMC_top.v", 229, 624, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "softMC_top.v", 'v'); // bP
+typeControlKey(null, null, 'z');
+selectCodeEditor("softMC_top.v", 161, 295); // bP
+selectCodeEditor("softMC_top.v", 161, 294, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("softMC_top.v", 184, 305); // bP
+selectCodeEditor("softMC_top.v", 184, 305, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("softMC_top.v", 203, 322); // bP
+selectCodeEditor("softMC_top.v", 187, 299); // bP
+selectCodeEditor("softMC_top.v", 187, 297, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "softMC_top.v", 'c'); // bP
+selectCodeEditor("softMC_top.v", 218, 619); // bP
+selectCodeEditor("softMC_top.v", 218, 618, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("softMC_top.v", 233, 636); // bP
+selectCodeEditor("softMC_top.v", 229, 625); // bP
+selectCodeEditor("softMC_top.v", 229, 625, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("softMC_top.v", 261, 626); // bP
+typeControlKey((HResource) null, "softMC_top.v", 'v'); // bP
+selectCodeEditor("softMC_top.v", 331, 623); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("softMC_top.v", 2095, 879); // bP
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "pci", true); // l
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "pci"); // l
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "pci"); // l
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "pci"); // l
+// [GUI Memory]: 194 MB (+1541kb) [00:21:37]
+selectCodeEditor("softMC_top.v", 404, 285); // bP
+typeControlKey((HResource) null, "softMC_top.v", 'c'); // bP
+selectCodeEditor("softMC_top.v", 390, 911); // bP
+typeControlKey((HResource) null, "softMC_top.v", 'v'); // bP
+selectCodeEditor("softMC_top.v", 316, 972); // bP
+selectCodeEditor("softMC_top.v", 316, 972, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "softMC_top.v", 'c'); // bP
+selectCodeEditor("softMC_top.v", 305, 851); // bP
+selectCodeEditor("softMC_top.v", 305, 849, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("softMC_top.v", 368, 934); // bP
+selectCodeEditor("softMC_top.v", 373, 908); // bP
+typeControlKey((HResource) null, "softMC_top.v", 'c'); // bP
+selectCodeEditor("softMC_top.v", 406, 904); // bP
+typeControlKey((HResource) null, "softMC_top.v", 'v'); // bP
+selectCodeEditor("softMC_top.v", 49, 626); // bP
+selectCodeEditor("softMC_top.v", 289, 952); // bP
+selectCodeEditor("softMC_top.v", 289, 952, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("softMC_top.v", 319, 949); // bP
+selectCodeEditor("softMC_top.v", 319, 948, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "softMC_top.v", 'c'); // bP
+selectCodeEditor("softMC_top.v", 296, 810); // bP
+selectCodeEditor("softMC_top.v", 296, 810, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "softMC_top.v", 'v'); // bP
+selectCodeEditor("softMC_top.v", 309, 978); // bP
+selectCodeEditor("softMC_top.v", 309, 977, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "softMC_top.v", 'c'); // bP
+selectCodeEditor("softMC_top.v", 287, 774); // bP
+selectCodeEditor("softMC_top.v", 287, 773, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "softMC_top.v", 'v'); // bP
+selectCodeEditor("softMC_top.v", 317, 1004); // bP
+selectCodeEditor("softMC_top.v", 317, 1004, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("softMC_top.v", 318, 1003); // bP
+selectCodeEditor("softMC_top.v", 318, 1003, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "softMC_top.v", 'c'); // bP
+selectCodeEditor("softMC_top.v", 298, 886); // bP
+selectCodeEditor("softMC_top.v", 298, 885, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "softMC_top.v", 'v'); // bP
+selectCodeEditor("softMC_top.v", 304, 1027); // bP
+selectCodeEditor("softMC_top.v", 304, 1027, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "softMC_top.v", 'c'); // bP
+selectCodeEditor("softMC_top.v", 285, 851); // bP
+selectCodeEditor("softMC_top.v", 285, 851, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "softMC_top.v", 'v'); // bP
+selectCodeEditor("softMC_top.v", 383, 1034); // bP
+selectCodeEditor("softMC_top.v", 374, 887); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 15, false); // u
+// A (cr): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // A
+// Tcl Message: wait_on_run xdma_0_synth_1 
+// Tcl Message: [Mon Jul 19 18:16:26 2021] Waiting for xdma_0_synth_1 to finish... 
+// Tcl Message: [Mon Jul 19 18:16:31 2021] Waiting for xdma_0_synth_1 to finish... 
+// Tcl Message: [Mon Jul 19 18:16:36 2021] Waiting for xdma_0_synth_1 to finish... 
+// Tcl Message: [Mon Jul 19 18:16:41 2021] Waiting for xdma_0_synth_1 to finish... 
+// Tcl Message: [Mon Jul 19 18:16:51 2021] Waiting for xdma_0_synth_1 to finish... 
+// Tcl Message: [Mon Jul 19 18:17:01 2021] Waiting for xdma_0_synth_1 to finish... 
+// Tcl Message: [Mon Jul 19 18:17:11 2021] Waiting for xdma_0_synth_1 to finish... 
+// Tcl Message: [Mon Jul 19 18:17:21 2021] Waiting for xdma_0_synth_1 to finish... 
+// Tcl Message: [Mon Jul 19 18:17:42 2021] Waiting for xdma_0_synth_1 to finish... 
+// Elapsed time: 76 seconds
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+selectCodeEditor("softMC_top.v", 115, 656); // bP
+selectCodeEditor("softMC_top.v", 115, 655, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("softMC_top.v", 290, 519); // bP
+selectCodeEditor("softMC_top.v", 179, 336); // bP
+selectCodeEditor("softMC_top.v", 113, 316); // bP
+selectCodeEditor("softMC_top.v", 111, 329); // bP
+selectCodeEditor("softMC_top.v", 340, 591); // bP
+selectCodeEditor("softMC_top.v", 292, 586); // bP
+selectCodeEditor("softMC_top.v", 343, 605); // bP
+selectCodeEditor("softMC_top.v", 352, 600); // bP
+typeControlKey((HResource) null, "softMC_top.v", 'c'); // bP
+selectCodeEditor("softMC_top.v", 345, 967); // bP
+typeControlKey((HResource) null, "softMC_top.v", 'v'); // bP
+selectCodeEditor("softMC_top.v", 379, 800); // bP
+// Tcl Message: [Mon Jul 19 18:18:02 2021] Waiting for xdma_0_synth_1 to finish... 
+selectCodeEditor("softMC_top.v", 393, 787); // bP
+selectCodeEditor("softMC_top.v", 449, 674); // bP
+selectCodeEditor("softMC_top.v", 433, 646); // bP
+selectCodeEditor("softMC_top.v", 69, 656); // bP
+selectCodeEditor("softMC_top.v", 315, 657); // bP
+selectCodeEditor("softMC_top.v", 518, 658); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("softMC_top.v", 165, 650); // bP
+selectCodeEditor("softMC_top.v", 448, 669); // bP
+// Tcl Message: [Mon Jul 19 18:18:22 2021] Waiting for xdma_0_synth_1 to finish... 
+selectCodeEditor("softMC_top.v", 239, 333); // bP
+selectCodeEditor("softMC_top.v", 239, 333, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("softMC_top.v", 250, 346); // bP
+selectCodeEditor("softMC_top.v", 250, 345, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("softMC_top.v", 273, 389); // bP
+selectCodeEditor("softMC_top.v", 417, 685); // bP
+selectCodeEditor("softMC_top.v", 425, 811); // bP
+selectCodeEditor("softMC_top.v", 457, 979); // bP
+selectCodeEditor("softMC_top.v", 615, 1037); // bP
+selectCodeEditor("softMC_top.v", 560, 1016); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xilinx_dma_pcie_ep.sv", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "softMC_top.v", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xilinx_dma_pcie_ep.sv", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "softMC_top.v", 1); // m
+// Tcl Message: [Mon Jul 19 18:18:42 2021] Waiting for xdma_0_synth_1 to finish... 
+// Tcl Message: [Mon Jul 19 18:19:22 2021] Waiting for xdma_0_synth_1 to finish... 
+// Elapsed time: 85 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xilinx_dma_pcie_ep.sv", 2); // m
+// Tcl Message: [Mon Jul 19 18:20:03 2021] Waiting for xdma_0_synth_1 to finish... 
+// Elapsed time: 29 seconds
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 516, 639); // bP
+typeControlKey((HResource) null, "xilinx_dma_pcie_ep.sv", 'v'); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 16, 746); // bP
+typeControlKey(null, null, 'z');
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 486, 616); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 481, 680); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 24, 754); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 24, 774); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 42, 811); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 45, 965); // bP
+// Tcl Message: [Mon Jul 19 18:20:43 2021] Waiting for xdma_0_synth_1 to finish... 
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 96, 977); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 124, 987); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 145, 983); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 145, 983, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 194, 983); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 442, 975); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 49, 972); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 42, 975); // bP
+typeControlKey((HResource) null, "xilinx_dma_pcie_ep.sv", 'c'); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 475, 975); // bP
+typeControlKey((HResource) null, "xilinx_dma_pcie_ep.sv", 'v'); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 50, 1001); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 158, 974); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 158, 973, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 210, 979); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 260, 977); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 388, 968); // bP
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "softMC_top.v", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xilinx_dma_pcie_ep.sv", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "softMC_top.v", 1); // m
+selectButton("HStatusBar_ProgressStatusItem_Cancel", "Cancel"); // NullButton
+// Tcl Message: INFO: [Common 17-41] Interrupt caught. Command should exit soon. 
+// Tcl Message: [Mon Jul 19 18:21:18 2021] Interrupt received 
+// Tcl Message: INFO: [Common 17-344] 'wait_on_run' was cancelled 
+// OpenDesignTask elapsed time: 293.4s
+// U (cr): Critical Messages: addNotify
+dismissDialog("Open Elaborated Design"); // bz
+// HMemoryUtils.trashcanNow. Engine heap size: 1,146 MB. GUI used memory: 133 MB. Current time: 7/19/21, 6:21:21 PM KST
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Critical Messages"); // U
+// [Engine Memory]: 1,154 MB (+4397kb) [00:27:12]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 15, false); // u
+// A (cr): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // A
+// Tcl Message: wait_on_run xdma_0_synth_1 
+// Tcl Message: [Mon Jul 19 18:21:24 2021] Waiting for xdma_0_synth_1 to finish... 
+// Tcl Message: [Mon Jul 19 18:21:29 2021] Waiting for xdma_0_synth_1 to finish... 
+// Tcl Message: [Mon Jul 19 18:21:34 2021] Waiting for xdma_0_synth_1 to finish... 
+// Tcl Message: [Mon Jul 19 18:21:39 2021] Waiting for xdma_0_synth_1 to finish... 
+// Elapsed time: 20 seconds
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xilinx_dma_pcie_ep.sv", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "softMC_top.v", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xilinx_dma_pcie_ep.sv", 2); // m
+// Tcl Message: [Mon Jul 19 18:21:49 2021] Waiting for xdma_0_synth_1 to finish... 
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "softMC_top.v", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xilinx_dma_pcie_ep.sv", 2); // m
+// Tcl Message: [Mon Jul 19 18:21:59 2021] Waiting for xdma_0_synth_1 to finish... 
+// Tcl Message: [Mon Jul 19 18:22:09 2021] Waiting for xdma_0_synth_1 to finish... 
+// Elapsed time: 23 seconds
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 370, 476); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 577, 518); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 594, 559); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 604, 614); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 562, 710); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 536, 769); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 531, 812); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 497, 927); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 482, 892); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 489, 922); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 474, 953); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 467, 966); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 481, 958); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 482, 933); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 493, 888); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 482, 959); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 286, 936); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 286, 936, false, false, false, false, true); // bP - Double Click
+// Tcl Message: [Mon Jul 19 18:22:19 2021] Waiting for xdma_0_synth_1 to finish... 
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, softMC_top (softMC_top.v), EP : xilinx_dma_pcie_ep (xilinx_dma_pcie_ep.sv), xdma_0_i : xdma_0 (xdma_0.xci)]", 7, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, softMC_top (softMC_top.v), EP : xilinx_dma_pcie_ep (xilinx_dma_pcie_ep.sv), xdma_0_i : xdma_0 (xdma_0.xci)]", 7, false); // D
+// HMemoryUtils.trashcanNow. Engine heap size: 1,164 MB. GUI used memory: 133 MB. Current time: 7/19/21, 6:22:36 PM KST
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, softMC_top (softMC_top.v), EP : xilinx_dma_pcie_ep (xilinx_dma_pcie_ep.sv), xdma_0_i : xdma_0 (xdma_0.xci)]", 7, false, false, false, false, false, true); // D - Double Click
+// Tcl Message: [Mon Jul 19 18:22:39 2021] Waiting for xdma_0_synth_1 to finish... 
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xdma_app.v", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xilinx_dma_pcie_ep.sv", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "softMC_top.v", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xilinx_dma_pcie_ep.sv", 2); // m
+// Tcl Message: [Mon Jul 19 18:22:59 2021] Waiting for xdma_0_synth_1 to finish... 
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 1479, 204); // bP
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 2); // i
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "IP Sources", 1); // i
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, pcie_endpoint]", 3, true); // D - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, pcie_endpoint]", 3); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, pcie_endpoint, Synthesis]", 5); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, pcie_endpoint, Synthesis]", 5); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, pcie_endpoint]", 3); // D
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // i
+// Tcl Message: [Mon Jul 19 18:23:20 2021] Waiting for xdma_0_synth_1 to finish... 
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "IP Sources", 1); // i
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, rdback_fifo]", 4); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, rdback_fifo]", 4); // D
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // i
+// Elapsed time: 10 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, softMC_top (softMC_top.v), EP : xilinx_dma_pcie_ep (xilinx_dma_pcie_ep.sv)]", 6); // D
+// Tcl Message: [Mon Jul 19 18:23:40 2021] Waiting for xdma_0_synth_1 to finish... 
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 2); // i
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "IP Sources", 1); // i
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // i
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, GTX_RX_VALID_FILTER_V6 (gtx_rx_valid_filter_v6.v)]", 9, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, GTX_DRP_CHANALIGN_FIX_3752_V6 (gtx_drp_chanalign_fix_3752_v6.v)]", 8, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, riffa_top_v6_pcie_v2_5 (riffa_top_v6_pcie_v2_5.v)]", 7, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, GTX_DRP_CHANALIGN_FIX_3752_V6 (gtx_drp_chanalign_fix_3752_v6.v)]", 8, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, GTX_RX_VALID_FILTER_V6 (gtx_rx_valid_filter_v6.v)]", 9, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, async_cmp (async_fifo.v)]", 11, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, async_fifo_fwft (async_fifo_fwft.v)]", 13, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, GTX_DRP_CHANALIGN_FIX_3752_V6 (gtx_drp_chanalign_fix_3752_v6.v)]", 8, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, riffa_top_v6_pcie_v2_5 (riffa_top_v6_pcie_v2_5.v)]", 7, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, GTX_DRP_CHANALIGN_FIX_3752_V6 (gtx_drp_chanalign_fix_3752_v6.v)]", 8, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, GTX_RX_VALID_FILTER_V6 (gtx_rx_valid_filter_v6.v)]", 9, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, GTX_TX_SYNC_RATE_V6 (gtx_tx_sync_rate_v6.v)]", 10, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, async_cmp (async_fifo.v)]", 11, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, async_fifo (async_fifo.v)]", 12, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, async_fifo_fwft (async_fifo_fwft.v)]", 13, false); // D
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 2); // i
+// Tcl Message: [Mon Jul 19 18:24:20 2021] Waiting for xdma_0_synth_1 to finish... 
+// Tcl Message: [Mon Jul 19 18:25:00 2021] Waiting for xdma_0_synth_1 to finish... 
+// Tcl Message: [Mon Jul 19 18:25:40 2021] Waiting for xdma_0_synth_1 to finish... 
+// Tcl Message: [Mon Jul 19 18:26:21 2021] Waiting for xdma_0_synth_1 to finish... 
+// Tcl Message: [Mon Jul 19 18:27:41 2021] Waiting for xdma_0_synth_1 to finish... 
+// Tcl Message: [Mon Jul 19 18:29:02 2021] Waiting for xdma_0_synth_1 to finish... 
+// Tcl Message: [Mon Jul 19 18:30:22 2021] Waiting for xdma_0_synth_1 to finish... 
+// Tcl Message: [Mon Jul 19 18:31:43 2021] Waiting for xdma_0_synth_1 to finish... 
+// Tcl Message: [Mon Jul 19 18:34:24 2021] Waiting for xdma_0_synth_1 to finish... 
+// Tcl Message: [Mon Jul 19 18:37:05 2021] Waiting for xdma_0_synth_1 to finish... 
+// Tcl Message: [Mon Jul 19 18:39:46 2021] Waiting for xdma_0_synth_1 to finish... 
+// Tcl Message: [Mon Jul 19 18:42:27 2021] Waiting for xdma_0_synth_1 to finish... 
+// Tcl Message: [Mon Jul 19 18:47:49 2021] Waiting for xdma_0_synth_1 to finish... 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,167 MB. GUI used memory: 175 MB. Current time: 7/19/21, 6:52:36 PM KST
+// Tcl Message: [Mon Jul 19 18:53:12 2021] Waiting for xdma_0_synth_1 to finish... 
+// Elapsed time: 1963 seconds
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 1098, 200); // bP
+selectButton("HStatusBar_ProgressStatusItem_Cancel", "Cancel"); // NullButton
+// Tcl Message: INFO: [Common 17-41] Interrupt caught. Command should exit soon. 
+// OpenDesignTask elapsed time: 2129.8s
+// Tcl Message: [Mon Jul 19 18:56:53 2021] Interrupt received 
+// Tcl Message: INFO: [Common 17-344] 'wait_on_run' was cancelled 
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 0); // i
+// U (cr): Critical Messages: addNotify
+dismissDialog("Open Elaborated Design"); // bz
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // i
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Critical Messages"); // U
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 2); // i
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "IP Sources", 1); // i
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, pcie_endpoint]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, pcie_endpoint]", 3, true, false, false, false, true, false); // D - Popup Trigger - Node
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ak
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cr): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Remove Sources"); // aE
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/pcie_endpoint/pcie_endpoint.xco] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// aE (cr): Remove Sources: addNotify
+// bz (aE):  Remove Sources : addNotify
+// Tcl Message: remove_files  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/pcie_endpoint/pcie_endpoint.xco 
+dismissDialog("Remove Sources"); // bz
+// HMemoryUtils.trashcanNow. Engine heap size: 1,190 MB. GUI used memory: 139 MB. Current time: 7/19/21, 6:57:06 PM KST
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, softMC_top (softMC_top.v), EP : xilinx_dma_pcie_ep (xilinx_dma_pcie_ep.sv)]", 6); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, softMC_top (softMC_top.v), EP : xilinx_dma_pcie_ep (xilinx_dma_pcie_ep.sv)]", 6); // D
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 2); // i
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "IP Sources", 1); // i
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // i
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // i
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "IP Sources", 1); // i
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // i
+selectButton(PAResourceEtoH.FileSetPanel_MESSAGES, "274"); // h
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // m
+selectButton(PAResourceQtoS.RunGadget_SHOW_ERROR, "11 errors"); // h
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xilinx_dma_pcie_ep.sv", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "softMC_top.v", 1); // m
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h
+// bz (cr):  Resetting Runs : addNotify
+selectButton("OptionPane.button", "Cancel Process"); // JButton
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run xdma_0_synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bz
+// Elapsed time: 101 seconds
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // u
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // u
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 15, false); // u
+// A (cr): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // A
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run xdma_0_synth_1 
+// Tcl Message: launch_runs xdma_0_synth_1 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// [Engine Memory]: 1,218 MB (+6500kb) [01:05:23]
+// Tcl Message: [Mon Jul 19 18:59:33 2021] Launched xdma_0_synth_1... Run output will be captured here: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/xdma_0_synth_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1245.578 ; gain = 5.414 
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: wait_on_run xdma_0_synth_1 
+// Tcl Message: [Mon Jul 19 18:59:33 2021] Waiting for xdma_0_synth_1 to finish... 
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Mon Jul 19 18:59:38 2021] Waiting for xdma_0_synth_1 to finish... 
+// Tcl Message: [Mon Jul 19 18:59:43 2021] Waiting for xdma_0_synth_1 to finish... 
+// Tcl Message: [Mon Jul 19 18:59:48 2021] Waiting for xdma_0_synth_1 to finish... 
+// Tcl Message: [Mon Jul 19 18:59:58 2021] Waiting for xdma_0_synth_1 to finish... 
+// Tcl Message: [Mon Jul 19 19:00:08 2021] Waiting for xdma_0_synth_1 to finish... 
+// Tcl Message: [Mon Jul 19 19:00:18 2021] Waiting for xdma_0_synth_1 to finish... 
+// Tcl Message: [Mon Jul 19 19:00:28 2021] Waiting for xdma_0_synth_1 to finish... 
+// Tcl Message: [Mon Jul 19 19:00:48 2021] Waiting for xdma_0_synth_1 to finish... 
+// Tcl Message: [Mon Jul 19 19:01:09 2021] Waiting for xdma_0_synth_1 to finish... 
+// Tcl Message: [Mon Jul 19 19:01:29 2021] Waiting for xdma_0_synth_1 to finish... 
+// Tcl Message: [Mon Jul 19 19:01:49 2021] Waiting for xdma_0_synth_1 to finish... 
+// Tcl Message: [Mon Jul 19 19:02:29 2021] Waiting for xdma_0_synth_1 to finish... 
+// Elapsed time: 195 seconds
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, softMC_top (softMC_top.v), EP : xilinx_dma_pcie_ep (xilinx_dma_pcie_ep.sv)]", 6); // D
+// Elapsed time: 10 seconds
+selectCodeEditor("softMC_top.v", 343, 170); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // m
+selectButton(PAResourceQtoS.RunGadget_SHOW_WARNING_AND_ERROR_MESSAGES_IN_MESSAGES, "1106 warnings"); // h
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-6901] identifier 'wPayloadData' is used before its declaration [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/riffa/tx_port_monitor_64.v:112]. ]", 9, true); // ah - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [IP_Flow 19-2162] IP 'pcie_endpoint' is locked:. * IP definition 'v6_pcie (2.5)' for IP 'pcie_endpoint' was not found in the IP Catalog. * Current project part 'xcvu095-ffvb2104-2-e' and the part 'xc6vlx240tff1156-1' used to customize the IP 'pcie_endpoint' do not match.. ]", 8, false); // ah
+// Tcl Message: [Mon Jul 19 19:03:09 2021] Waiting for xdma_0_synth_1 to finish... 
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Vivado_Tcl 4-393] The 'Synthesis' target of the following IPs are stale, please generate the output products using the generate_target or synth_ip command before running synth_design.. C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/pcie_endpoint/pcie_endpoint.xco. . ]", 7, false); // ah
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-327] inferring latch for variable 'CHNL_TX_DATA_VALID_reg' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_pcie_app.v:121]. ]", 23, false); // ah
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-565] redefining clock 'c0_sys_clk_p'. ]", 24, false); // ah
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, Out-of-Context Module Runs]", 26, true); // ah - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-5753] loadless multi-driven net pcie_2_0_i/pcie_gt_i/gtx_v6_i/RxData_dummy[15] with 1st driver pin 'i_pcie_top/core/pcie_2_0_i/pcie_gt_i/gtx_v6_i/no_of_lanes.GTXD[0].GTX/RXDATA[31]' [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/pcie_endpoint/pcie_endpoint/source/gtx_wrapper_v6.v:461]. ]", 25, true); // ah - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "softMC_top.v", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xilinx_dma_pcie_ep.sv", 2); // m
+// Elapsed time: 23 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "softMC_top.v", 1); // m
+// Tcl Message: [Mon Jul 19 19:03:50 2021] Waiting for xdma_0_synth_1 to finish... 
+// Elapsed time: 35 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xilinx_dma_pcie_ep.sv", 2); // m
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 465, 300); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 428, 286); // bP
+// Tcl Message: [Mon Jul 19 19:04:30 2021] Waiting for xdma_0_synth_1 to finish... 
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 417, 300); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 536, 382); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 573, 451); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 558, 438); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 545, 491); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 541, 538); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 526, 611); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 535, 670); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 518, 750); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 497, 792); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 522, 659); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 548, 699); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 560, 726); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 564, 765); // bP
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xdma_app.v", 3); // m
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1033 ms. Increasing delay to 3000 ms.
+// Tcl Message: [Mon Jul 19 19:04:56 2021] xdma_0_synth_1 finished 
+// Tcl Message: wait_on_run: Time (s): cpu = 00:00:27 ; elapsed = 00:05:23 . Memory (MB): peak = 1269.762 ; gain = 24.184 
+// Tcl Message: synth_design -rtl -rtl_skip_mlo -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -rtl_skip_mlo -name rtl_1 Starting synth_design Using part: xcvu095-ffvb2104-2-e Top: softMC_top 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,620 MB. GUI used memory: 133 MB. Current time: 7/19/21, 7:05:02 PM KST
+// [Engine Memory]: 2,138 MB (+901407kb) [01:10:55]
+// TclEventType: ELABORATE_START
+// TclEventType: ELABORATE_FINISH
+// HMemoryUtils.trashcanNow. Engine heap size: 2,323 MB. GUI used memory: 133 MB. Current time: 7/19/21, 7:05:32 PM KST
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_INTERFACE_ADD
+// TclEventType: SIGNAL_HIERARCHY_CHANGED
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// [Engine Memory]: 2,428 MB (+191754kb) [01:11:29]
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,478 MB. GUI used memory: 133 MB. Current time: 7/19/21, 7:05:41 PM KST
+// TclEventType: DESIGN_NEW
+// [GUI Memory]: 223 MB (+20269kb) [01:11:33]
+// [Engine Memory]: 2,568 MB (+19925kb) [01:11:33]
+// Xgd.load filename: D:/Xilinx/Vivado/2020.2/data/parts/xilinx/virtexu/devint/virtexu/xcvu095/xcvu095.xgd; ZipEntry: xcvu095_detail.xgd elapsed time: 1.3s
+// [GUI Memory]: 257 MB (+24071kb) [01:11:33]
+// DeviceModel: Load Xgds SwingWorker Join Forever elapsed time: 1.5s
+// [Engine Memory]: 2,738 MB (+43385kb) [01:11:34]
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  3663 ms.
+// TclEventType: CURR_DESIGN_SET
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgdAndInitRouteStorage elapsed time: 2.8s
+// Tcl Message: INFO: [Device 21-403] Loading part xcvu095-ffvb2104-2-e 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2187.562 ; gain = 249.039 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'softMC_top' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_top.v:5] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'ddr4_0' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/.Xil/Vivado-5524-DESKTOP-ILOVGO9/realtime/ddr4_0_stub.v:6] INFO: [Synth 8-6155] done synthesizing module 'ddr4_0' (1#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/.Xil/Vivado-5524-DESKTOP-ILOVGO9/realtime/ddr4_0_stub.v:6] INFO: [Synth 8-6157] synthesizing module 'softMC' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC.v:6] 
+// Tcl Message: 	Parameter TCQ bound to: 100 - type: integer  	Parameter tCK bound to: 2500 - type: integer  	Parameter nCK_PER_CLK bound to: 2 - type: integer  	Parameter RANK_WIDTH bound to: 1 - type: integer  	Parameter ROW_WIDTH bound to: 17 - type: integer  	Parameter BANK_WIDTH bound to: 2 - type: integer  	Parameter CKE_WIDTH bound to: 1 - type: integer  	Parameter CS_WIDTH bound to: 1 - type: integer  	Parameter nCS_PER_RANK bound to: 1 - type: integer  	Parameter DQ_WIDTH bound to: 64 - type: integer  	Parameter MAINT_PRESCALER_PERIOD bound to: 200000 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'maint_ctrl_top' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_ctrl.v:4] 
+// Tcl Message: 	Parameter RANK_WIDTH bound to: 1 - type: integer  	Parameter TCQ bound to: 100 - type: integer  	Parameter tCK bound to: 2500 - type: integer  	Parameter nCK_PER_CLK bound to: 2 - type: integer  	Parameter MAINT_PRESCALER_PERIOD bound to: 200000 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'maint_ctrl' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_ctrl.v:73] 
+// Tcl Message: 	Parameter TCQ bound to: 100 - type: integer  	Parameter tCK bound to: 2500 - type: integer  	Parameter nCK_PER_CLK bound to: 2 - type: integer  	Parameter MAINT_PRESCALER_PERIOD bound to: 200000 - type: integer  	Parameter MAINT_PRESCALER_DIV bound to: 40 - type: integer  	Parameter MAINT_PRESCALER_WIDTH bound to: 6 - type: integer  	Parameter ONE bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'maint_ctrl' (2#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_ctrl.v:73] INFO: [Synth 8-6157] synthesizing module 'periodic_rd_ctrl' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_ctrl.v:119] 
+// Tcl Message: 	Parameter tCK bound to: 2500 - type: integer  	Parameter nCK_PER_CLK bound to: 2 - type: integer  	Parameter TCQ bound to: 100 - type: integer  	Parameter MAINT_PRESCALER_PERIOD bound to: 200000 - type: integer  	Parameter tPRDI bound to: 1000000 - type: integer  	Parameter PERIODIC_RD_TIMER_DIV bound to: 5 - type: integer  	Parameter PERIODIC_RD_TIMER_WIDTH bound to: 3 - type: integer  	Parameter ONE bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'periodic_rd_ctrl' (3#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_ctrl.v:119] INFO: [Synth 8-6157] synthesizing module 'zq_calib_ctrl' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_ctrl.v:175] 
+// Tcl Message: 	Parameter TCQ bound to: 100 - type: integer  	Parameter MAINT_PRESCALER_PERIOD bound to: 200000 - type: integer  	Parameter MAINT_PRESCALER_PERIOD_NS bound to: 200 - type: integer  	Parameter tZQI bound to: 128000000 - type: integer  	Parameter ZQ_TIMER_DIV bound to: 640000 - type: integer  	Parameter ZQ_TIMER_WIDTH bound to: 20 - type: integer  	Parameter ONE bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'zq_calib_ctrl' (4#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_ctrl.v:175] INFO: [Synth 8-6157] synthesizing module 'autoref_ctrl' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_ctrl.v:242] 
+// Tcl Message: 	Parameter TCQ bound to: 100 - type: integer  	Parameter ONE bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'autoref_ctrl' (5#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_ctrl.v:242] INFO: [Synth 8-6155] done synthesizing module 'maint_ctrl_top' (6#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_ctrl.v:4] INFO: [Synth 8-6157] synthesizing module 'maint_handler' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_handler.v:5] 
+// Tcl Message: INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_handler.v:97] 
+// Tcl Message: INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_handler.v:212] 
+// Tcl Message: INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_handler.v:267] INFO: [Synth 8-6155] done synthesizing module 'maint_handler' (7#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_handler.v:5] INFO: [Synth 8-6157] synthesizing module 'autoref_config' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/autoref_config.v:4] INFO: [Synth 8-6155] done synthesizing module 'autoref_config' (8#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/autoref_config.v:4] INFO: [Synth 8-6157] synthesizing module 'instr_receiver' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_receiver.v:5] 
+// Tcl Message: 	Parameter STATE_IDLE bound to: 2'b00  	Parameter STATE_APP bound to: 2'b01  	Parameter STATE_MAINT bound to: 2'b10  
+// Tcl Message: INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_receiver.v:52] INFO: [Synth 8-6155] done synthesizing module 'instr_receiver' (9#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_receiver.v:5] INFO: [Synth 8-6157] synthesizing module 'instr_fifo' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/.Xil/Vivado-5524-DESKTOP-ILOVGO9/realtime/instr_fifo_stub.v:6] INFO: [Synth 8-6155] done synthesizing module 'instr_fifo' (10#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/.Xil/Vivado-5524-DESKTOP-ILOVGO9/realtime/instr_fifo_stub.v:6] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'iseq_dispatcher' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/iseq_dispatcher.v:3] 
+// Tcl Message: 	Parameter ROW_WIDTH bound to: 17 - type: integer  	Parameter BANK_WIDTH bound to: 2 - type: integer  	Parameter CKE_WIDTH bound to: 1 - type: integer  	Parameter CS_WIDTH bound to: 1 - type: integer  	Parameter nCS_PER_RANK bound to: 1 - type: integer  	Parameter DQ_WIDTH bound to: 64 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'pipe_reg' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/pipe_reg.v:3] 
+// Tcl Message: 	Parameter WIDTH bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'pipe_reg' (11#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/pipe_reg.v:3] INFO: [Synth 8-6157] synthesizing module 'instr_dispatcher' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_dispatcher.v:5] 
+// Tcl Message: 	Parameter ROW_WIDTH bound to: 17 - type: integer  	Parameter BANK_WIDTH bound to: 2 - type: integer  	Parameter CKE_WIDTH bound to: 1 - type: integer  	Parameter RANK_WIDTH bound to: 1 - type: integer  	Parameter CS_WIDTH bound to: 1 - type: integer  	Parameter nCS_PER_RANK bound to: 1 - type: integer  	Parameter DQ_WIDTH bound to: 64 - type: integer  	Parameter ONE bound to: 1 - type: integer  	Parameter TWO bound to: 2 - type: integer  	Parameter HIGH bound to: 1'b1  	Parameter LOW bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_dispatcher.v:192] INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_dispatcher.v:259] INFO: [Synth 8-6157] synthesizing module 'instr_decoder' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:5] 
+// Tcl Message: 	Parameter ROW_WIDTH bound to: 17 - type: integer  	Parameter BANK_WIDTH bound to: 2 - type: integer  	Parameter CS_WIDTH bound to: 1 - type: integer  	Parameter LOW bound to: 1'b0  	Parameter HIGH bound to: 1'b1  	Parameter tmp_slot bound to: 136'b1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111  
+// Tcl Message: INFO: [Common 17-14] Message 'Synth 8-6090' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. INFO: [Synth 8-6155] done synthesizing module 'instr_decoder' (12#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:5] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'instr_dispatcher' (13#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_dispatcher.v:5] INFO: [Synth 8-6155] done synthesizing module 'iseq_dispatcher' (14#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/iseq_dispatcher.v:3] INFO: [Synth 8-6157] synthesizing module 'rdback_fifo' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/.Xil/Vivado-5524-DESKTOP-ILOVGO9/realtime/rdback_fifo_stub.v:6] INFO: [Synth 8-6155] done synthesizing module 'rdback_fifo' (15#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/.Xil/Vivado-5524-DESKTOP-ILOVGO9/realtime/rdback_fifo_stub.v:6] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'read_capturer' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/read_capturer.v:3] 
+// Tcl Message: 	Parameter DQ_WIDTH bound to: 64 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'read_capturer' (16#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/read_capturer.v:3] INFO: [Synth 8-6155] done synthesizing module 'softMC' (17#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC.v:6] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'xilinx_dma_pcie_ep' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/new/xilinx_dma_pcie_ep.sv:57] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'IBUFDS_GTE3' [D:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:33156] 
+// Tcl Message: 	Parameter REFCLK_EN_TX_PATH bound to: 1'b0  	Parameter REFCLK_HROW_CK_SEL bound to: 2'b00  	Parameter REFCLK_ICNTL_RX bound to: 2'b00  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'IBUFDS_GTE3' (18#1) [D:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:33156] INFO: [Synth 8-6157] synthesizing module 'IBUF' [D:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:32983] 
+// Tcl Message: 	Parameter CAPACITANCE bound to: DONT_CARE - type: string  	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string  	Parameter IBUF_LOW_PWR bound to: TRUE - type: string  	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string  	Parameter IOSTANDARD bound to: DEFAULT - type: string  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'IBUF' (19#1) [D:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:32983] INFO: [Synth 8-6157] synthesizing module 'xdma_0' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/.Xil/Vivado-5524-DESKTOP-ILOVGO9/realtime/xdma_0_stub.v:6] INFO: [Synth 8-6155] done synthesizing module 'xdma_0' (20#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/.Xil/Vivado-5524-DESKTOP-ILOVGO9/realtime/xdma_0_stub.v:6] INFO: [Synth 8-6157] synthesizing module 'xdma_app' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/new/xdma_app.v:57] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'xdma_app' (21#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/new/xdma_app.v:57] INFO: [Synth 8-6155] done synthesizing module 'xilinx_dma_pcie_ep' (22#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/new/xilinx_dma_pcie_ep.sv:57] INFO: [Synth 8-6155] done synthesizing module 'softMC_top' (23#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_top.v:5] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2267.035 ; gain = 328.512 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2289.930 ; gain = 351.406 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2289.930 ; gain = 351.406 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2327.336 ; gain = 0.000 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 1187 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2020.2 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_0/bd_9054_microblaze_I_0.xdc] for cell 'u_ddr4_0/inst/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0' Finished Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_0/bd_9054_microblaze_I_0.xdc] for cell 'u_ddr4_0/inst/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0' 
+// Tcl Message: INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_0/bd_9054_microblaze_I_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/softMC_top_propImpl.xdc]. Resolution: To avoid this warning, move constraints listed in [.Xil/softMC_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis. 
+// Tcl Message: Finished Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/par/ddr4_0.xdc] for cell 'u_ddr4_0/inst' 
+// Tcl Message: INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/par/ddr4_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/softMC_top_propImpl.xdc]. Resolution: To avoid this warning, move constraints listed in [.Xil/softMC_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis. 
+// Tcl Message: INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/ip_0/ip_0/synth/xdma_0_pcie3_ip_gt.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/softMC_top_propImpl.xdc]. Resolution: To avoid this warning, move constraints listed in [.Xil/softMC_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis. 
+// Tcl Message: Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip-PCIE_X0Y0.xdc] for cell 'EP/xdma_0_i/inst/pcie3_ip_i/inst' Finished Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip-PCIE_X0Y0.xdc] for cell 'EP/xdma_0_i/inst/pcie3_ip_i/inst' 
+// Tcl Message: INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip-PCIE_X0Y0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/softMC_top_propImpl.xdc]. Resolution: To avoid this warning, move constraints listed in [.Xil/softMC_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis. 
+// Tcl Message: Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/xdma_0_board.xdc] for cell 'EP/xdma_0_i/inst' Finished Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/xdma_0_board.xdc] for cell 'EP/xdma_0_i/inst' Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/source/xdma_0_pcie3_us_ip.xdc] for cell 'EP/xdma_0_i/inst' Finished Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/source/xdma_0_pcie3_us_ip.xdc] for cell 'EP/xdma_0_i/inst' 
+// Tcl Message: INFO: [Timing 38-2] Deriving generated clocks 
+// Tcl Message: Parsing XDC File [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/constrs_1/imports/xusps3_config/xusps3_pinout.xdc] 
+// Tcl Message: Finished Parsing XDC File [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/constrs_1/imports/xusps3_config/xusps3_pinout.xdc] Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ddr4_0_board.xdc] for cell 'u_ddr4_0/inst' Finished Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ddr4_0_board.xdc] for cell 'u_ddr4_0/inst' 
+// Tcl Message: INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/softMC_top_propImpl.xdc]. Resolution: To avoid this warning, move constraints listed in [.Xil/softMC_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis. INFO: [Project 1-1715] 2 XPM XDC files have been applied to the design. 
+// Tcl Message: Completed Processing XDC Constraints  
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 2711.375 ; gain = 0.000 
+// OpenDesignTask elapsed time: 379.2s
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:54 ; elapsed = 00:00:39 . Memory (MB): peak = 3074.172 ; gain = 1135.648 
+// Tcl Message: 70 Infos, 155 Warnings, 219 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:01:02 ; elapsed = 00:00:48 . Memory (MB): peak = 3074.172 ; gain = 1804.410 
+// [Engine Memory]: 2,890 MB (+15931kb) [01:11:37]
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// U (cr): Critical Messages: addNotify
+// Elapsed time: 58 seconds
+dismissDialog("Open Elaborated Design"); // bz
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Critical Messages"); // U
+// [GUI Memory]: 290 MB (+20899kb) [01:11:54]
+// PAPropertyPanels.initPanels (c0_sys_clk_n) elapsed time: 0.2s
+// PAPropertyPanels.initPanels (EP (xilinx_dma_pcie_ep)) elapsed time: 0.2s
+// [GUI Memory]: 308 MB (+3596kb) [01:12:48]
+// PAPropertyPanels.initPanels (c0_ddr4_clk) elapsed time: 0.2s
+// Elapsed time: 80 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xdma_app.v", 4); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (2)", 5); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xdma_app.v", 4); // m
+// Elapsed time: 13 seconds
+selectCodeEditor("xdma_app.v", 506, 958); // bP
+selectCodeEditor("xdma_app.v", 517, 976); // bP
+typeControlKey((HResource) null, "xdma_app.v", 'v'); // bP
+selectCodeEditor("xdma_app.v", 43, 724); // bP
+selectCodeEditor("xdma_app.v", 339, 605); // bP
+selectCodeEditor("xdma_app.v", 45, 720); // bP
+typeControlKey(null, null, 'z');
+selectCodeEditor("xdma_app.v", 43, 748); // bP
+// Elapsed time: 13 seconds
+selectCodeEditor("xdma_app.v", 366, 888); // bP
+selectCodeEditor("xdma_app.v", 176, 912); // bP
+selectCodeEditor("xdma_app.v", 176, 912, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 245, 917); // bP
+selectCodeEditor("xdma_app.v", 243, 818); // bP
+selectCodeEditor("xdma_app.v", 478, 837); // bP
+selectCodeEditor("xdma_app.v", 484, 826); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("xdma_app.v", 365, 572); // bP
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (2)", 5); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xdma_app.v", 4); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (2)", 5); // m
+// Elapsed time: 90 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xdma_app.v", 4); // m
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (2)", 5); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xilinx_dma_pcie_ep.sv", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (2)", 5); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xdma_app.v", 4); // m
+selectCodeEditor("xdma_app.v", 262, 822); // bP
+selectCodeEditor("xdma_app.v", 262, 821, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 273, 816); // bP
+selectCodeEditor("xdma_app.v", 273, 815, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 283, 815); // bP
+selectCodeEditor("xdma_app.v", 283, 814, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 300, 847); // bP
+selectCodeEditor("xdma_app.v", 300, 846, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 304, 873); // bP
+selectCodeEditor("xdma_app.v", 304, 873, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 307, 915); // bP
+selectCodeEditor("xdma_app.v", 307, 914, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 307, 929); // bP
+selectCodeEditor("xdma_app.v", 307, 929, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 509, 835); // bP
+selectCodeEditor("xdma_app.v", 509, 835, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 511, 820); // bP
+selectCodeEditor("xdma_app.v", 511, 820, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 118, 718); // bP
+selectCodeEditor("xdma_app.v", 118, 717, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 155, 710); // bP
+selectCodeEditor("xdma_app.v", 155, 710, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 153, 719); // bP
+selectCodeEditor("xdma_app.v", 153, 718, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 10 seconds
+selectCodeEditor("xdma_app.v", 153, 683); // bP
+selectCodeEditor("xdma_app.v", 153, 683, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 618, 937); // bP
+selectCodeEditor("xdma_app.v", 118, 366); // bP
+selectCodeEditor("xdma_app.v", 118, 366, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 152, 663); // bP
+selectCodeEditor("xdma_app.v", 109, 761); // bP
+selectCodeEditor("xdma_app.v", 65, 804); // bP
+selectCodeEditor("xdma_app.v", 64, 813); // bP
+typeControlKey((HResource) null, "xdma_app.v", 'c'); // bP
+selectCodeEditor("xdma_app.v", 639, 943); // bP
+typeControlKey((HResource) null, "xdma_app.v", 'v'); // bP
+selectCodeEditor("xdma_app.v", 62, 552); // bP
+selectCodeEditor("xdma_app.v", 67, 582); // bP
+// Elapsed time: 19 seconds
+selectCodeEditor("xdma_app.v", 87, 756); // bP
+selectCodeEditor("xdma_app.v", 626, 752); // bP
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 89 seconds
+selectCodeEditor("xdma_app.v", 311, 266); // bP
+selectCodeEditor("xdma_app.v", 311, 266, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 18 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (2)", 5); // m
+// Elapsed time: 106 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xdma_app.v", 4); // m
+// Elapsed time: 91 seconds
+selectCodeEditor("xdma_app.v", 640, 883); // bP
+selectCodeEditor("xdma_app.v", 333, 820); // bP
+selectCodeEditor("xdma_app.v", 429, 756); // bP
+selectCodeEditor("xdma_app.v", 430, 755, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 232, 764); // bP
+selectCodeEditor("xdma_app.v", 232, 764, false, false, false, false, true); // bP - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (2)", 5); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xdma_app.v", 4); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (2)", 5); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xdma_app.v", 4); // m
+// Elapsed time: 12 seconds
+selectCodeEditor("xdma_app.v", 660, 883); // bP
+selectCodeEditor("xdma_app.v", 565, 811); // bP
+selectCodeEditor("xdma_app.v", 565, 810, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "xdma_app.v", 'c'); // bP
+selectCodeEditor("xdma_app.v", 377, 934); // bP
+typeControlKey((HResource) null, "xdma_app.v", 'v'); // bP
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (2)", 5); // m
+// Elapsed time: 20 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xdma_app.v", 4); // m
+selectCodeEditor("xdma_app.v", 590, 648); // bP
+selectCodeEditor("xdma_app.v", 590, 647, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 600, 650); // bP
+selectCodeEditor("xdma_app.v", 601, 650, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 312, 732); // bP
+selectCodeEditor("xdma_app.v", 312, 732, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 322, 746); // bP
+selectCodeEditor("xdma_app.v", 322, 746, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 304, 778); // bP
+selectCodeEditor("xdma_app.v", 304, 778, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 460, 779); // bP
+selectCodeEditor("xdma_app.v", 460, 779, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 281, 785); // bP
+selectCodeEditor("xdma_app.v", 281, 785, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 286, 782); // bP
+selectCodeEditor("xdma_app.v", 286, 782, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 296, 781); // bP
+selectCodeEditor("xdma_app.v", 296, 780, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 82 seconds
+selectCodeEditor("xdma_app.v", 528, 654); // bP
+selectCodeEditor("xdma_app.v", 528, 652, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "xdma_app.v", 'c'); // bP
+selectCodeEditor("xdma_app.v", 567, 841); // bP
+typeControlKey((HResource) null, "xdma_app.v", 'v'); // bP
+// Elapsed time: 16 seconds
+selectCodeEditor("xdma_app.v", 555, 712); // bP
+selectCodeEditor("xdma_app.v", 555, 711, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 559, 713); // bP
+selectCodeEditor("xdma_app.v", 559, 712, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 561, 715); // bP
+selectCodeEditor("xdma_app.v", 339, 715); // bP
+selectCodeEditor("xdma_app.v", 339, 714, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "xdma_app.v", 'c'); // bP
+selectCodeEditor("xdma_app.v", 583, 808); // bP
+typeControlKey((HResource) null, "xdma_app.v", 'v'); // bP
+selectCodeEditor("xdma_app.v", 110, 811); // bP
+selectCodeEditor("xdma_app.v", 110, 811, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 113, 828); // bP
+selectCodeEditor("xdma_app.v", 113, 828, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 71, 885); // bP
+selectCodeEditor("xdma_app.v", 711, 885); // bP
+selectCodeEditor("xdma_app.v", 513, 757); // bP
+selectCodeEditor("xdma_app.v", 517, 859); // bP
+selectCodeEditor("xdma_app.v", 525, 773); // bP
+selectCodeEditor("xdma_app.v", 633, 701); // bP
+selectCodeEditor("xdma_app.v", 521, 702); // bP
+selectCodeEditor("xdma_app.v", 661, 723); // bP
+selectCodeEditor("xdma_app.v", 645, 723); // bP
+selectCodeEditor("xdma_app.v", 724, 708); // bP
+selectCodeEditor("xdma_app.v", 703, 720); // bP
+selectCodeEditor("xdma_app.v", 407, 591); // bP
+selectCodeEditor("xdma_app.v", 516, 626); // bP
+selectCodeEditor("xdma_app.v", 523, 647); // bP
+selectCodeEditor("xdma_app.v", 611, 706); // bP
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("xdma_app.v", 265, 708); // bP
+selectCodeEditor("xdma_app.v", 265, 706, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 352, 650); // bP
+selectCodeEditor("xdma_app.v", 352, 649, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 354, 658); // bP
+selectCodeEditor("xdma_app.v", 354, 658, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 363, 671); // bP
+selectCodeEditor("xdma_app.v", 363, 671, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 361, 667); // bP
+selectCodeEditor("xdma_app.v", 360, 666, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 327, 510); // bP
+selectCodeEditor("xdma_app.v", 327, 509, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 340, 529); // bP
+selectCodeEditor("xdma_app.v", 340, 529, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 331, 641); // bP
+selectCodeEditor("xdma_app.v", 331, 639, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 343, 663); // bP
+selectCodeEditor("xdma_app.v", 343, 663, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 359, 663); // bP
+selectCodeEditor("xdma_app.v", 359, 661, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 127 seconds
+selectCodeEditor("xdma_app.v", 753, 770); // bP
+selectCodeEditor("xdma_app.v", 746, 826); // bP
+selectCodeEditor("xdma_app.v", 692, 975); // bP
+selectCodeEditor("xdma_app.v", 627, 1091); // bP
+selectCodeEditor("xdma_app.v", 622, 1052); // bP
+selectCodeEditor("xdma_app.v", 636, 1024); // bP
+selectCodeEditor("xdma_app.v", 655, 1049); // bP
+// Elapsed time: 99 seconds
+selectCodeEditor("xdma_app.v", 333, 914); // bP
+selectCodeEditor("xdma_app.v", 333, 914, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 333, 910); // bP
+selectCodeEditor("xdma_app.v", 333, 909, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 556, 773); // bP
+selectCodeEditor("xdma_app.v", 702, 713); // bP
+// Elapsed time: 465 seconds
+selectCodeEditor("xdma_app.v", 306, 667); // bP
+selectCodeEditor("xdma_app.v", 306, 665, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 259, 791); // bP
+selectCodeEditor("xdma_app.v", 259, 791, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 276, 783); // bP
+selectCodeEditor("xdma_app.v", 276, 782, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 278, 812); // bP
+selectCodeEditor("xdma_app.v", 278, 812, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 288, 950); // bP
+selectCodeEditor("xdma_app.v", 288, 950, false, false, false, false, true); // bP - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 2,980 MB. GUI used memory: 244 MB. Current time: 7/19/21, 7:35:42 PM KST
+// Elapsed time: 246 seconds
+selectCodeEditor("xdma_app.v", 1552, 369); // bP
+selectCodeEditor("xdma_app.v", 486, 908); // bP
+selectCodeEditor("xdma_app.v", 768, 664); // bP
+typeControlKey(null, null, 'z');
+selectCodeEditor("xdma_app.v", 725, 814); // bP
+// Elapsed time: 33 seconds
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h
+// bz (cr):  Reloading : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: refresh_design 
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (2)", 5); // m
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 3297.238 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: ELABORATE_FINISH
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'softMC_top' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_top.v:5] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'ddr4_0' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/.Xil/Vivado-5524-DESKTOP-ILOVGO9/realtime/ddr4_0_stub.v:6] INFO: [Synth 8-6155] done synthesizing module 'ddr4_0' (1#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/.Xil/Vivado-5524-DESKTOP-ILOVGO9/realtime/ddr4_0_stub.v:6] INFO: [Synth 8-6157] synthesizing module 'softMC' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC.v:6] 
+// Tcl Message: 	Parameter TCQ bound to: 100 - type: integer  	Parameter tCK bound to: 2500 - type: integer  	Parameter nCK_PER_CLK bound to: 2 - type: integer  	Parameter RANK_WIDTH bound to: 1 - type: integer  	Parameter ROW_WIDTH bound to: 17 - type: integer  	Parameter BANK_WIDTH bound to: 2 - type: integer  	Parameter CKE_WIDTH bound to: 1 - type: integer  	Parameter CS_WIDTH bound to: 1 - type: integer  	Parameter nCS_PER_RANK bound to: 1 - type: integer  	Parameter DQ_WIDTH bound to: 64 - type: integer  	Parameter MAINT_PRESCALER_PERIOD bound to: 200000 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'maint_ctrl_top' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_ctrl.v:4] 
+// Tcl Message: 	Parameter RANK_WIDTH bound to: 1 - type: integer  	Parameter TCQ bound to: 100 - type: integer  	Parameter tCK bound to: 2500 - type: integer  	Parameter nCK_PER_CLK bound to: 2 - type: integer  	Parameter MAINT_PRESCALER_PERIOD bound to: 200000 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'maint_ctrl' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_ctrl.v:73] 
+// Tcl Message: 	Parameter TCQ bound to: 100 - type: integer  	Parameter tCK bound to: 2500 - type: integer  	Parameter nCK_PER_CLK bound to: 2 - type: integer  	Parameter MAINT_PRESCALER_PERIOD bound to: 200000 - type: integer  	Parameter MAINT_PRESCALER_DIV bound to: 40 - type: integer  	Parameter MAINT_PRESCALER_WIDTH bound to: 6 - type: integer  	Parameter ONE bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'maint_ctrl' (2#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_ctrl.v:73] INFO: [Synth 8-6157] synthesizing module 'periodic_rd_ctrl' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_ctrl.v:119] 
+// Tcl Message: 	Parameter tCK bound to: 2500 - type: integer  	Parameter nCK_PER_CLK bound to: 2 - type: integer  	Parameter TCQ bound to: 100 - type: integer  	Parameter MAINT_PRESCALER_PERIOD bound to: 200000 - type: integer  	Parameter tPRDI bound to: 1000000 - type: integer  	Parameter PERIODIC_RD_TIMER_DIV bound to: 5 - type: integer  	Parameter PERIODIC_RD_TIMER_WIDTH bound to: 3 - type: integer  	Parameter ONE bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'periodic_rd_ctrl' (3#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_ctrl.v:119] INFO: [Synth 8-6157] synthesizing module 'zq_calib_ctrl' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_ctrl.v:175] 
+// Tcl Message: 	Parameter TCQ bound to: 100 - type: integer  	Parameter MAINT_PRESCALER_PERIOD bound to: 200000 - type: integer  	Parameter MAINT_PRESCALER_PERIOD_NS bound to: 200 - type: integer  	Parameter tZQI bound to: 128000000 - type: integer  	Parameter ZQ_TIMER_DIV bound to: 640000 - type: integer  	Parameter ZQ_TIMER_WIDTH bound to: 20 - type: integer  	Parameter ONE bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'zq_calib_ctrl' (4#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_ctrl.v:175] INFO: [Synth 8-6157] synthesizing module 'autoref_ctrl' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_ctrl.v:242] 
+// Tcl Message: 	Parameter TCQ bound to: 100 - type: integer  	Parameter ONE bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'autoref_ctrl' (5#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_ctrl.v:242] INFO: [Synth 8-6155] done synthesizing module 'maint_ctrl_top' (6#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_ctrl.v:4] INFO: [Synth 8-6157] synthesizing module 'maint_handler' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_handler.v:5] 
+// Tcl Message: INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_handler.v:97] 
+// Tcl Message: INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_handler.v:212] 
+// Tcl Message: INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_handler.v:267] INFO: [Synth 8-6155] done synthesizing module 'maint_handler' (7#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_handler.v:5] INFO: [Synth 8-6157] synthesizing module 'autoref_config' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/autoref_config.v:4] INFO: [Synth 8-6155] done synthesizing module 'autoref_config' (8#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/autoref_config.v:4] INFO: [Synth 8-6157] synthesizing module 'instr_receiver' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_receiver.v:5] 
+// Tcl Message: 	Parameter STATE_IDLE bound to: 2'b00  	Parameter STATE_APP bound to: 2'b01  	Parameter STATE_MAINT bound to: 2'b10  
+// Tcl Message: INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_receiver.v:52] INFO: [Synth 8-6155] done synthesizing module 'instr_receiver' (9#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_receiver.v:5] INFO: [Synth 8-6157] synthesizing module 'instr_fifo' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/.Xil/Vivado-5524-DESKTOP-ILOVGO9/realtime/instr_fifo_stub.v:6] INFO: [Synth 8-6155] done synthesizing module 'instr_fifo' (10#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/.Xil/Vivado-5524-DESKTOP-ILOVGO9/realtime/instr_fifo_stub.v:6] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'iseq_dispatcher' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/iseq_dispatcher.v:3] 
+// Tcl Message: 	Parameter ROW_WIDTH bound to: 17 - type: integer  	Parameter BANK_WIDTH bound to: 2 - type: integer  	Parameter CKE_WIDTH bound to: 1 - type: integer  	Parameter CS_WIDTH bound to: 1 - type: integer  	Parameter nCS_PER_RANK bound to: 1 - type: integer  	Parameter DQ_WIDTH bound to: 64 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'pipe_reg' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/pipe_reg.v:3] 
+// Tcl Message: 	Parameter WIDTH bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'pipe_reg' (11#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/pipe_reg.v:3] INFO: [Synth 8-6157] synthesizing module 'instr_dispatcher' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_dispatcher.v:5] 
+// Tcl Message: 	Parameter ROW_WIDTH bound to: 17 - type: integer  	Parameter BANK_WIDTH bound to: 2 - type: integer  	Parameter CKE_WIDTH bound to: 1 - type: integer  	Parameter RANK_WIDTH bound to: 1 - type: integer  	Parameter CS_WIDTH bound to: 1 - type: integer  	Parameter nCS_PER_RANK bound to: 1 - type: integer  	Parameter DQ_WIDTH bound to: 64 - type: integer  	Parameter ONE bound to: 1 - type: integer  	Parameter TWO bound to: 2 - type: integer  	Parameter HIGH bound to: 1'b1  	Parameter LOW bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_dispatcher.v:192] INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_dispatcher.v:259] INFO: [Synth 8-6157] synthesizing module 'instr_decoder' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:5] 
+// Tcl Message: 	Parameter ROW_WIDTH bound to: 17 - type: integer  	Parameter BANK_WIDTH bound to: 2 - type: integer  	Parameter CS_WIDTH bound to: 1 - type: integer  	Parameter LOW bound to: 1'b0  	Parameter HIGH bound to: 1'b1  	Parameter tmp_slot bound to: 136'b1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111  
+// Tcl Message: INFO: [Common 17-14] Message 'Synth 8-6090' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. INFO: [Synth 8-6155] done synthesizing module 'instr_decoder' (12#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:5] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'instr_dispatcher' (13#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_dispatcher.v:5] INFO: [Synth 8-6155] done synthesizing module 'iseq_dispatcher' (14#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/iseq_dispatcher.v:3] INFO: [Synth 8-6157] synthesizing module 'rdback_fifo' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/.Xil/Vivado-5524-DESKTOP-ILOVGO9/realtime/rdback_fifo_stub.v:6] INFO: [Synth 8-6155] done synthesizing module 'rdback_fifo' (15#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/.Xil/Vivado-5524-DESKTOP-ILOVGO9/realtime/rdback_fifo_stub.v:6] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'read_capturer' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/read_capturer.v:3] 
+// Tcl Message: 	Parameter DQ_WIDTH bound to: 64 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'read_capturer' (16#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/read_capturer.v:3] INFO: [Synth 8-6155] done synthesizing module 'softMC' (17#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC.v:6] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'xilinx_dma_pcie_ep' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/new/xilinx_dma_pcie_ep.sv:57] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'IBUFDS_GTE3' [D:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:33156] 
+// Tcl Message: 	Parameter REFCLK_EN_TX_PATH bound to: 1'b0  	Parameter REFCLK_HROW_CK_SEL bound to: 2'b00  	Parameter REFCLK_ICNTL_RX bound to: 2'b00  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'IBUFDS_GTE3' (18#1) [D:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:33156] INFO: [Synth 8-6157] synthesizing module 'IBUF' [D:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:32983] 
+// Tcl Message: 	Parameter CAPACITANCE bound to: DONT_CARE - type: string  	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string  	Parameter IBUF_LOW_PWR bound to: TRUE - type: string  	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string  	Parameter IOSTANDARD bound to: DEFAULT - type: string  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'IBUF' (19#1) [D:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:32983] INFO: [Synth 8-6157] synthesizing module 'xdma_0' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/.Xil/Vivado-5524-DESKTOP-ILOVGO9/realtime/xdma_0_stub.v:6] INFO: [Synth 8-6155] done synthesizing module 'xdma_0' (20#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/.Xil/Vivado-5524-DESKTOP-ILOVGO9/realtime/xdma_0_stub.v:6] INFO: [Synth 8-6157] synthesizing module 'xdma_app' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/new/xdma_app.v:57] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'xdma_app' (21#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/new/xdma_app.v:57] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'xilinx_dma_pcie_ep' (22#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/new/xilinx_dma_pcie_ep.sv:57] INFO: [Synth 8-6155] done synthesizing module 'softMC_top' (23#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_top.v:5] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 3297.238 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 3302.973 ; gain = 5.734 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 3302.973 ; gain = 5.734 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Project 1-454] Reading design checkpoint 'c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ddr4_0.dcp' for cell 'u_ddr4_0' INFO: [Project 1-454] Reading design checkpoint 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/.Xil/Vivado-5524-DESKTOP-ILOVGO9/instr_fifo/instr_fifo.dcp' for cell 'i_softmc/i_instr0_fifo' INFO: [Project 1-454] Reading design checkpoint 'c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/rdback_fifo/rdback_fifo.dcp' for cell 'i_softmc/i_rdback_fifo' 
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 2,980 MB. GUI used memory: 240 MB. Current time: 7/19/21, 7:37:18 PM KST
+// Engine heap size: 2,980 MB. GUI used memory: 241 MB. Current time: 7/19/21, 7:37:18 PM KST
+// WARNING: HEventQueue.dispatchEvent() is taking  1104 ms.
+// Tcl Message: INFO: [Project 1-454] Reading design checkpoint 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/.Xil/Vivado-5524-DESKTOP-ILOVGO9/xdma_0/xdma_0.dcp' for cell 'EP/xdma_0_i' 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_INTERFACE_ADD
+// TclEventType: SIGNAL_HIERARCHY_CHANGED
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// Elapsed time: 30 seconds
+selectCodeEditor("xdma_app.v", 329, 592); // bP
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+selectCodeEditor("xdma_app.v", 329, 592, false, false, false, false, true); // bP - Double Click
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+selectCodeEditor("xdma_app.v", 344, 597); // bP
+selectCodeEditor("xdma_app.v", 344, 597, false, false, false, false, true); // bP - Double Click
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 2,980 MB. GUI used memory: 172 MB. Current time: 7/19/21, 7:37:34 PM KST
+// Xgd.load filename: D:/Xilinx/Vivado/2020.2/data/parts/xilinx/virtexu/devint/virtexu/xcvu095/xcvu095.xgd; ZipEntry: xcvu095_detail.xgd elapsed time: 1.4s
+// DeviceModel: Load Xgds SwingWorker Join Forever elapsed time: 1.5s
+// Schematic: addNotify
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  2529 ms.
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3344.664 ; gain = 0.000 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 1187 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2020.2 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_0/bd_9054_microblaze_I_0.xdc] for cell 'u_ddr4_0/inst/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0' Finished Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_0/bd_9054_microblaze_I_0.xdc] for cell 'u_ddr4_0/inst/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0' 
+// Tcl Message: INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_0/bd_9054_microblaze_I_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/softMC_top_propImpl.xdc]. Resolution: To avoid this warning, move constraints listed in [.Xil/softMC_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis. 
+// Tcl Message: Finished Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/par/ddr4_0.xdc] for cell 'u_ddr4_0/inst' 
+// Tcl Message: INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/par/ddr4_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/softMC_top_propImpl.xdc]. Resolution: To avoid this warning, move constraints listed in [.Xil/softMC_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis. 
+// Tcl Message: INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/ip_0/ip_0/synth/xdma_0_pcie3_ip_gt.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/softMC_top_propImpl.xdc]. Resolution: To avoid this warning, move constraints listed in [.Xil/softMC_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis. 
+// Tcl Message: Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip-PCIE_X0Y0.xdc] for cell 'EP/xdma_0_i/inst/pcie3_ip_i/inst' Finished Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip-PCIE_X0Y0.xdc] for cell 'EP/xdma_0_i/inst/pcie3_ip_i/inst' 
+// Tcl Message: INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip-PCIE_X0Y0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/softMC_top_propImpl.xdc]. Resolution: To avoid this warning, move constraints listed in [.Xil/softMC_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis. 
+// Tcl Message: Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/xdma_0_board.xdc] for cell 'EP/xdma_0_i/inst' Finished Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/xdma_0_board.xdc] for cell 'EP/xdma_0_i/inst' Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/source/xdma_0_pcie3_us_ip.xdc] for cell 'EP/xdma_0_i/inst' Finished Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/source/xdma_0_pcie3_us_ip.xdc] for cell 'EP/xdma_0_i/inst' 
+// Tcl Message: INFO: [Timing 38-2] Deriving generated clocks 
+// Tcl Message: Parsing XDC File [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/constrs_1/imports/xusps3_config/xusps3_pinout.xdc] 
+// Tcl Message: Finished Parsing XDC File [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/constrs_1/imports/xusps3_config/xusps3_pinout.xdc] Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ddr4_0_board.xdc] for cell 'u_ddr4_0/inst' Finished Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ddr4_0_board.xdc] for cell 'u_ddr4_0/inst' 
+// Tcl Message: INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/softMC_top_propImpl.xdc]. Resolution: To avoid this warning, move constraints listed in [.Xil/softMC_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis. INFO: [Project 1-1715] 2 XPM XDC files have been applied to the design. 
+// Tcl Message: Completed Processing XDC Constraints  
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:51 ; elapsed = 00:00:37 . Memory (MB): peak = 3344.664 ; gain = 47.426 
+// U (cr): Critical Messages: addNotify
+dismissDialog("Reloading"); // bz
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgdAndInitRouteStorage elapsed time: 2.5s
+dismissDialog("Critical Messages"); // U
+// [Engine Memory]: 3,082 MB (+49829kb) [01:43:31]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xdma_app.v", 4); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (2)", 5); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xdma_app.v", 4); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (2)", 5); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xdma_app.v", 4); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (2)", 5); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xdma_app.v", 4); // m
+// Elapsed time: 76 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "softMC_top.v", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xilinx_dma_pcie_ep.sv", 3); // m
+// Elapsed time: 13 seconds
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 178, 749); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 176, 747, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 20 seconds
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 428, 906); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 429, 920); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 429, 932); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 389, 884); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 348, 844); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 373, 876); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 390, 905); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 385, 932); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 375, 910); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 375, 881); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 360, 833); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xdma_app.v", 4); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xilinx_dma_pcie_ep.sv", 3); // m
+// Elapsed time: 26 seconds
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 410, 994); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 413, 1001); // bP
+typeControlKey((HResource) null, "xilinx_dma_pcie_ep.sv", 'v'); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 321, 823); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 23, 913); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 370, 964); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 94, 966); // bP
+// Elapsed time: 11 seconds
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 207, 835); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 165, 841); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 494, 821); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 505, 829); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 23 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xdma_app.v", 4); // m
+// Elapsed time: 32 seconds
+selectCodeEditor("xdma_app.v", 326, 492); // bP
+selectCodeEditor("xdma_app.v", 325, 491, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "xdma_app.v", 'c'); // bP
+// Elapsed time: 13 seconds
+selectCodeEditor("xdma_app.v", 635, 747); // bP
+typeControlKey((HResource) null, "xdma_app.v", 'v'); // bP
+// Elapsed time: 17 seconds
+selectCodeEditor("xdma_app.v", 123, 750); // bP
+selectCodeEditor("xdma_app.v", 123, 749, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "xdma_app.v", 'c'); // bP
+selectCodeEditor("xdma_app.v", 60, 783); // bP
+typeControlKey((HResource) null, "xdma_app.v", 'v'); // bP
+selectCodeEditor("xdma_app.v", 568, 799); // bP
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 375 seconds
+selectCodeEditor("xdma_app.v", 292, 684); // bP
+selectCodeEditor("xdma_app.v", 292, 684, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 305, 687); // bP
+selectCodeEditor("xdma_app.v", 305, 687, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 320, 844); // bP
+selectCodeEditor("xdma_app.v", 320, 844, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 328, 850); // bP
+selectCodeEditor("xdma_app.v", 328, 849, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 36 seconds
+selectCodeEditor("xdma_app.v", 318, 278); // bP
+selectCodeEditor("xdma_app.v", 318, 277, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "xdma_app.v", 'c'); // bP
+selectCodeEditor("xdma_app.v", 351, 336); // bP
+selectCodeEditor("xdma_app.v", 349, 336, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 349, 336); // bP
+selectCodeEditor("xdma_app.v", 362, 328); // bP
+selectCodeEditor("xdma_app.v", 362, 327, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 329, 400); // bP
+selectCodeEditor("xdma_app.v", 319, 333); // bP
+selectCodeEditor("xdma_app.v", 319, 332, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "xdma_app.v", 'c'); // bP
+selectCodeEditor("xdma_app.v", 489, 943); // bP
+typeControlKey((HResource) null, "xdma_app.v", 'v'); // bP
+selectCodeEditor("xdma_app.v", 103, 937); // bP
+selectCodeEditor("xdma_app.v", 103, 935, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "xdma_app.v", 'c'); // bP
+selectCodeEditor("xdma_app.v", 64, 964); // bP
+typeControlKey((HResource) null, "xdma_app.v", 'v'); // bP
+selectCodeEditor("xdma_app.v", 348, 946); // bP
+typeControlKey((HResource) null, "xdma_app.v", 'c'); // bP
+selectCodeEditor("xdma_app.v", 420, 975); // bP
+typeControlKey((HResource) null, "xdma_app.v", 'v'); // bP
+selectCodeEditor("xdma_app.v", 505, 966); // bP
+selectCodeEditor("xdma_app.v", 548, 1047); // bP
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 48 seconds
+selectCodeEditor("xdma_app.v", 439, 946); // bP
+typeControlKey((HResource) null, "xdma_app.v", 'c'); // bP
+selectCodeEditor("xdma_app.v", 527, 974); // bP
+typeControlKey((HResource) null, "xdma_app.v", 'v'); // bP
+selectCodeEditor("xdma_app.v", 450, 947); // bP
+selectCodeEditor("xdma_app.v", 514, 1077); // bP
+typeControlKey((HResource) null, "xdma_app.v", 'c'); // bP
+selectCodeEditor("xdma_app.v", 527, 913); // bP
+typeControlKey((HResource) null, "xdma_app.v", 'v'); // bP
+selectCodeEditor("xdma_app.v", 525, 1091); // bP
+selectCodeEditor("xdma_app.v", 329, 861); // bP
+// Elapsed time: 19 seconds
+selectCodeEditor("xdma_app.v", 405, 844); // bP
+typeControlKey((HResource) null, "xdma_app.v", 'c'); // bP
+selectCodeEditor("xdma_app.v", 427, 1006); // bP
+typeControlKey((HResource) null, "xdma_app.v", 'v'); // bP
+selectCodeEditor("xdma_app.v", 106, 1040); // bP
+selectCodeEditor("xdma_app.v", 151, 1035); // bP
+selectCodeEditor("xdma_app.v", 436, 1038); // bP
+selectCodeEditor("xdma_app.v", 424, 1038); // bP
+// Elapsed time: 18 seconds
+selectCodeEditor("xdma_app.v", 249, 854); // bP
+selectCodeEditor("xdma_app.v", 338, 867); // bP
+selectCodeEditor("xdma_app.v", 338, 842); // bP
+selectCodeEditor("xdma_app.v", 160, 1040); // bP
+selectCodeEditor("xdma_app.v", 383, 1039); // bP
+selectCodeEditor("xdma_app.v", 73, 947); // bP
+selectCodeEditor("xdma_app.v", 635, 931); // bP
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("xdma_app.v", 237, 631); // bP
+selectCodeEditor("xdma_app.v", 237, 631, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 252, 707); // bP
+selectCodeEditor("xdma_app.v", 252, 707, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 323, 720); // bP
+selectCodeEditor("xdma_app.v", 323, 719, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 321, 750); // bP
+selectCodeEditor("xdma_app.v", 321, 749, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 299, 638); // bP
+selectCodeEditor("xdma_app.v", 299, 637, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 310, 636); // bP
+selectCodeEditor("xdma_app.v", 310, 635, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 333, 656); // bP
+selectCodeEditor("xdma_app.v", 333, 656, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 321, 622); // bP
+selectCodeEditor("xdma_app.v", 321, 622, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 332, 630); // bP
+selectCodeEditor("xdma_app.v", 332, 630, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 11 seconds
+selectCodeEditor("xdma_app.v", 511, 901); // bP
+selectCodeEditor("xdma_app.v", 130, 917); // bP
+selectCodeEditor("xdma_app.v", 130, 916, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "xdma_app.v", 'c'); // bP
+selectCodeEditor("xdma_app.v", 104, 932); // bP
+typeControlKey((HResource) null, "xdma_app.v", 'v'); // bP
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("xdma_app.v", 241, 660); // bP
+selectCodeEditor("xdma_app.v", 241, 659, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 305, 749); // bP
+selectCodeEditor("xdma_app.v", 305, 748, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 351, 883); // bP
+selectCodeEditor("xdma_app.v", 352, 882, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 352, 882); // bP
+selectCodeEditor("xdma_app.v", 352, 881, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 391, 911); // bP
+selectCodeEditor("xdma_app.v", 391, 911, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 323, 966); // bP
+selectCodeEditor("xdma_app.v", 323, 965, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 638, 726); // bP
+// Elapsed time: 19 seconds
+selectCodeEditor("xdma_app.v", 329, 476); // bP
+selectCodeEditor("xdma_app.v", 329, 475, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 39, 433); // bP
+selectCodeEditor("xdma_app.v", 43, 620); // bP
+selectCodeEditor("xdma_app.v", 402, 685); // bP
+selectCodeEditor("xdma_app.v", 324, 253); // bP
+selectCodeEditor("xdma_app.v", 324, 253, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 337, 247); // bP
+selectCodeEditor("xdma_app.v", 336, 246, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 331, 180); // bP
+selectCodeEditor("xdma_app.v", 331, 178, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 338, 390); // bP
+selectCodeEditor("xdma_app.v", 338, 390, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 342, 393); // bP
+selectCodeEditor("xdma_app.v", 342, 392); // bP
+selectCodeEditor("xdma_app.v", 355, 398); // bP
+selectCodeEditor("xdma_app.v", 383, 454); // bP
+selectCodeEditor("xdma_app.v", 356, 408); // bP
+selectCodeEditor("xdma_app.v", 356, 407, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 350, 875); // bP
+selectCodeEditor("xdma_app.v", 350, 875, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 376, 880); // bP
+selectCodeEditor("xdma_app.v", 376, 880, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 412, 916); // bP
+selectCodeEditor("xdma_app.v", 412, 916, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 528, 995); // bP
+// Elapsed time: 12 seconds
+selectCodeEditor("xdma_app.v", 319, 370); // bP
+selectCodeEditor("xdma_app.v", 462, 363); // bP
+selectCodeEditor("xdma_app.v", 462, 363, false, false, false, false, true); // bP - Double Click
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "assign"); // l
+selectCodeEditor("xdma_app.v", 540, 151); // bP
+selectCodeEditor("xdma_app.v", 526, 70); // bP
+selectCodeEditor("xdma_app.v", 526, 69, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 13 seconds
+selectCodeEditor("xdma_app.v", 548, 721); // bP
+selectCodeEditor("xdma_app.v", 550, 655); // bP
+selectCodeEditor("xdma_app.v", 160, 664); // bP
+selectCodeEditor("xdma_app.v", 160, 664, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 177, 680); // bP
+selectCodeEditor("xdma_app.v", 177, 680, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 424, 737); // bP
+selectCodeEditor("xdma_app.v", 424, 737, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 264, 765); // bP
+selectCodeEditor("xdma_app.v", 264, 766, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 274, 792); // bP
+selectCodeEditor("xdma_app.v", 274, 792, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 14 seconds
+selectCodeEditor("xdma_app.v", 417, 742); // bP
+selectCodeEditor("xdma_app.v", 417, 742, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 447, 809); // bP
+selectCodeEditor("xdma_app.v", 445, 824); // bP
+selectCodeEditor("xdma_app.v", 443, 833); // bP
+selectCodeEditor("xdma_app.v", 509, 878); // bP
+selectCodeEditor("xdma_app.v", 328, 874); // bP
+selectCodeEditor("xdma_app.v", 328, 874, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 365, 853); // bP
+selectCodeEditor("xdma_app.v", 332, 167); // bP
+selectCodeEditor("xdma_app.v", 332, 167, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 354, 182); // bP
+selectCodeEditor("xdma_app.v", 354, 181, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 356, 178); // bP
+selectCodeEditor("xdma_app.v", 356, 178, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 383, 180); // bP
+selectCodeEditor("xdma_app.v", 387, 185); // bP
+typeControlKey((HResource) null, "xdma_app.v", 'c'); // bP
+selectCodeEditor("xdma_app.v", 223, 873); // bP
+typeControlKey((HResource) null, "xdma_app.v", 'v'); // bP
+selectCodeEditor("xdma_app.v", 215, 867); // bP
+selectCodeEditor("xdma_app.v", 215, 865, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 402, 878); // bP
+selectCodeEditor("xdma_app.v", 63, 886); // bP
+selectCodeEditor("xdma_app.v", 640, 880); // bP
+selectCodeEditor("xdma_app.v", 462, 884); // bP
+selectCodeEditor("xdma_app.v", 462, 884, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 465, 878); // bP
+selectCodeEditor("xdma_app.v", 465, 878, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 239, 817); // bP
+selectCodeEditor("xdma_app.v", 239, 816, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "xdma_app.v", 'c'); // bP
+selectCodeEditor("xdma_app.v", 469, 648); // bP
+selectCodeEditor("xdma_app.v", 469, 647, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "xdma_app.v", 'v'); // bP
+selectCodeEditor("xdma_app.v", 659, 655); // bP
+// Elapsed time: 12 seconds
+selectCodeEditor("xdma_app.v", 340, 404); // bP
+selectCodeEditor("xdma_app.v", 340, 403, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 470, 485); // bP
+selectCodeEditor("xdma_app.v", 470, 483, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 500, 520); // bP
+selectCodeEditor("xdma_app.v", 500, 519); // bP
+selectCodeEditor("xdma_app.v", 499, 502); // bP
+selectCodeEditor("xdma_app.v", 499, 502, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 514, 518); // bP
+selectCodeEditor("xdma_app.v", 515, 518, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 322, 465); // bP
+selectCodeEditor("xdma_app.v", 322, 464, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 475, 599); // bP
+// Elapsed time: 20 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "data"); // l
+selectCodeEditor("xdma_app.v", 526, 338); // bP
+selectCodeEditor("xdma_app.v", 526, 336, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 533, 500); // bP
+selectCodeEditor("xdma_app.v", 533, 500, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 544, 338); // bP
+selectCodeEditor("xdma_app.v", 544, 337, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "xdma_app.v", 'c'); // bP
+selectCodeEditor("xdma_app.v", 664, 635); // bP
+typeControlKey((HResource) null, "xdma_app.v", 'v'); // bP
+selectCodeEditor("xdma_app.v", 395, 437); // bP
+selectCodeEditor("xdma_app.v", 395, 437, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 392, 642); // bP
+selectCodeEditor("xdma_app.v", 241, 711); // bP
+selectCodeEditor("xdma_app.v", 241, 710, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "xdma_app.v", 'c'); // bP
+selectCodeEditor("xdma_app.v", 443, 743); // bP
+typeControlKey((HResource) null, "xdma_app.v", 'v'); // bP
+selectCodeEditor("xdma_app.v", 63, 754); // bP
+selectCodeEditor("xdma_app.v", 580, 753); // bP
+selectCodeEditor("xdma_app.v", 605, 725); // bP
+selectCodeEditor("xdma_app.v", 623, 763); // bP
+selectCodeEditor("xdma_app.v", 248, 727); // bP
+selectCodeEditor("xdma_app.v", 248, 726, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 338, 685); // bP
+selectCodeEditor("xdma_app.v", 348, 527); // bP
+selectCodeEditor("xdma_app.v", 348, 525, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "xdma_app.v", 'c'); // bP
+typeControlKey((HResource) null, "xdma_app.v", 'c'); // bP
+selectCodeEditor("xdma_app.v", 616, 653); // bP
+typeControlKey((HResource) null, "xdma_app.v", 'v'); // bP
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey((HResource) null, "xdma_app.v", 'v'); // bP
+selectCodeEditor("xdma_app.v", 237, 496); // bP
+selectCodeEditor("xdma_app.v", 237, 495, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "xdma_app.v", 'c'); // bP
+selectCodeEditor("xdma_app.v", 63, 587); // bP
+typeControlKey((HResource) null, "xdma_app.v", 'v'); // bP
+selectCodeEditor("xdma_app.v", 627, 613); // bP
+selectCodeEditor("xdma_app.v", 626, 589); // bP
+selectCodeEditor("xdma_app.v", 66, 594); // bP
+selectCodeEditor("xdma_app.v", 397, 634); // bP
+selectCodeEditor("xdma_app.v", 623, 597); // bP
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("xdma_app.v", 232, 653); // bP
+selectCodeEditor("xdma_app.v", 78, 659); // bP
+selectCodeEditor("xdma_app.v", 707, 564); // bP
+selectCodeEditor("xdma_app.v", 633, 630); // bP
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("xdma_app.v", 573, 444); // bP
+selectCodeEditor("xdma_app.v", 573, 443, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 588, 434); // bP
+selectCodeEditor("xdma_app.v", 588, 433, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 588, 436); // bP
+selectCodeEditor("xdma_app.v", 588, 435, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 346, 440); // bP
+selectCodeEditor("xdma_app.v", 346, 439, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 346, 437); // bP
+selectCodeEditor("xdma_app.v", 346, 437); // bP
+selectCodeEditor("xdma_app.v", 457, 431); // bP
+selectCodeEditor("xdma_app.v", 411, 432); // bP
+selectCodeEditor("xdma_app.v", 403, 463); // bP
+// Elapsed time: 57 seconds
+selectCodeEditor("xdma_app.v", 464, 378); // bP
+// Elapsed time: 14 seconds
+selectCodeEditor("xdma_app.v", 284, 366); // bP
+selectCodeEditor("xdma_app.v", 285, 586); // bP
+selectCodeEditor("xdma_app.v", 574, 604); // bP
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("xdma_app.v", 306, 509); // bP
+selectCodeEditor("xdma_app.v", 305, 737); // bP
+selectCodeEditor("xdma_app.v", 305, 736, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 480, 503); // bP
+selectCodeEditor("xdma_app.v", 585, 438); // bP
+selectCodeEditor("xdma_app.v", 677, 524); // bP
+selectCodeEditor("xdma_app.v", 542, 368); // bP
+selectCodeEditor("xdma_app.v", 375, 377); // bP
+// Elapsed time: 11 seconds
+selectCodeEditor("xdma_app.v", 551, 756); // bP
+selectCodeEditor("xdma_app.v", 569, 782); // bP
+// Elapsed time: 10 seconds
+selectCodeEditor("xdma_app.v", 373, 351); // bP
+selectCodeEditor("xdma_app.v", 381, 361); // bP
+selectCodeEditor("xdma_app.v", 530, 833); // bP
+// Elapsed time: 10 seconds
+selectCodeEditor("xdma_app.v", 542, 865); // bP
+selectCodeEditor("xdma_app.v", 469, 855); // bP
+selectCodeEditor("xdma_app.v", 419, 879); // bP
+selectCodeEditor("xdma_app.v", 79, 847); // bP
+selectCodeEditor("xdma_app.v", 543, 839); // bP
+selectCodeEditor("xdma_app.v", 761, 821); // bP
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h
+// bz (cr):  Reloading : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: refresh_design 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 3473.863 ; gain = 19.391 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: ELABORATE_FAIL
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'softMC_top' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_top.v:5] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'ddr4_0' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/.Xil/Vivado-5524-DESKTOP-ILOVGO9/realtime/ddr4_0_stub.v:6] INFO: [Synth 8-6155] done synthesizing module 'ddr4_0' (1#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/.Xil/Vivado-5524-DESKTOP-ILOVGO9/realtime/ddr4_0_stub.v:6] INFO: [Synth 8-6157] synthesizing module 'softMC' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC.v:6] 
+// Tcl Message: 	Parameter TCQ bound to: 100 - type: integer  	Parameter tCK bound to: 2500 - type: integer  	Parameter nCK_PER_CLK bound to: 2 - type: integer  	Parameter RANK_WIDTH bound to: 1 - type: integer  	Parameter ROW_WIDTH bound to: 17 - type: integer  	Parameter BANK_WIDTH bound to: 2 - type: integer  	Parameter CKE_WIDTH bound to: 1 - type: integer  	Parameter CS_WIDTH bound to: 1 - type: integer  	Parameter nCS_PER_RANK bound to: 1 - type: integer  	Parameter DQ_WIDTH bound to: 64 - type: integer  	Parameter MAINT_PRESCALER_PERIOD bound to: 200000 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'maint_ctrl_top' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_ctrl.v:4] 
+// Tcl Message: 	Parameter RANK_WIDTH bound to: 1 - type: integer  	Parameter TCQ bound to: 100 - type: integer  	Parameter tCK bound to: 2500 - type: integer  	Parameter nCK_PER_CLK bound to: 2 - type: integer  	Parameter MAINT_PRESCALER_PERIOD bound to: 200000 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'maint_ctrl' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_ctrl.v:73] 
+// Tcl Message: 	Parameter TCQ bound to: 100 - type: integer  	Parameter tCK bound to: 2500 - type: integer  	Parameter nCK_PER_CLK bound to: 2 - type: integer  	Parameter MAINT_PRESCALER_PERIOD bound to: 200000 - type: integer  	Parameter MAINT_PRESCALER_DIV bound to: 40 - type: integer  	Parameter MAINT_PRESCALER_WIDTH bound to: 6 - type: integer  	Parameter ONE bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'maint_ctrl' (2#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_ctrl.v:73] INFO: [Synth 8-6157] synthesizing module 'periodic_rd_ctrl' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_ctrl.v:119] 
+// Tcl Message: 	Parameter tCK bound to: 2500 - type: integer  	Parameter nCK_PER_CLK bound to: 2 - type: integer  	Parameter TCQ bound to: 100 - type: integer  	Parameter MAINT_PRESCALER_PERIOD bound to: 200000 - type: integer  	Parameter tPRDI bound to: 1000000 - type: integer  	Parameter PERIODIC_RD_TIMER_DIV bound to: 5 - type: integer  	Parameter PERIODIC_RD_TIMER_WIDTH bound to: 3 - type: integer  	Parameter ONE bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'periodic_rd_ctrl' (3#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_ctrl.v:119] INFO: [Synth 8-6157] synthesizing module 'zq_calib_ctrl' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_ctrl.v:175] 
+// Tcl Message: 	Parameter TCQ bound to: 100 - type: integer  	Parameter MAINT_PRESCALER_PERIOD bound to: 200000 - type: integer  	Parameter MAINT_PRESCALER_PERIOD_NS bound to: 200 - type: integer  	Parameter tZQI bound to: 128000000 - type: integer  	Parameter ZQ_TIMER_DIV bound to: 640000 - type: integer  	Parameter ZQ_TIMER_WIDTH bound to: 20 - type: integer  	Parameter ONE bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'zq_calib_ctrl' (4#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_ctrl.v:175] INFO: [Synth 8-6157] synthesizing module 'autoref_ctrl' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_ctrl.v:242] 
+// Tcl Message: 	Parameter TCQ bound to: 100 - type: integer  	Parameter ONE bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'autoref_ctrl' (5#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_ctrl.v:242] INFO: [Synth 8-6155] done synthesizing module 'maint_ctrl_top' (6#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_ctrl.v:4] INFO: [Synth 8-6157] synthesizing module 'maint_handler' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_handler.v:5] 
+// Tcl Message: INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_handler.v:97] 
+// Tcl Message: INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_handler.v:212] 
+// Tcl Message: INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_handler.v:267] INFO: [Synth 8-6155] done synthesizing module 'maint_handler' (7#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_handler.v:5] INFO: [Synth 8-6157] synthesizing module 'autoref_config' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/autoref_config.v:4] INFO: [Synth 8-6155] done synthesizing module 'autoref_config' (8#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/autoref_config.v:4] INFO: [Synth 8-6157] synthesizing module 'instr_receiver' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_receiver.v:5] 
+// Tcl Message: 	Parameter STATE_IDLE bound to: 2'b00  	Parameter STATE_APP bound to: 2'b01  	Parameter STATE_MAINT bound to: 2'b10  
+// Tcl Message: INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_receiver.v:52] INFO: [Synth 8-6155] done synthesizing module 'instr_receiver' (9#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_receiver.v:5] INFO: [Synth 8-6157] synthesizing module 'instr_fifo' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/.Xil/Vivado-5524-DESKTOP-ILOVGO9/realtime/instr_fifo_stub.v:6] INFO: [Synth 8-6155] done synthesizing module 'instr_fifo' (10#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/.Xil/Vivado-5524-DESKTOP-ILOVGO9/realtime/instr_fifo_stub.v:6] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'iseq_dispatcher' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/iseq_dispatcher.v:3] 
+// Tcl Message: 	Parameter ROW_WIDTH bound to: 17 - type: integer  	Parameter BANK_WIDTH bound to: 2 - type: integer  	Parameter CKE_WIDTH bound to: 1 - type: integer  	Parameter CS_WIDTH bound to: 1 - type: integer  	Parameter nCS_PER_RANK bound to: 1 - type: integer  	Parameter DQ_WIDTH bound to: 64 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'pipe_reg' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/pipe_reg.v:3] 
+// Tcl Message: 	Parameter WIDTH bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'pipe_reg' (11#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/pipe_reg.v:3] INFO: [Synth 8-6157] synthesizing module 'instr_dispatcher' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_dispatcher.v:5] 
+// Tcl Message: 	Parameter ROW_WIDTH bound to: 17 - type: integer  	Parameter BANK_WIDTH bound to: 2 - type: integer  	Parameter CKE_WIDTH bound to: 1 - type: integer  	Parameter RANK_WIDTH bound to: 1 - type: integer  	Parameter CS_WIDTH bound to: 1 - type: integer  	Parameter nCS_PER_RANK bound to: 1 - type: integer  	Parameter DQ_WIDTH bound to: 64 - type: integer  	Parameter ONE bound to: 1 - type: integer  	Parameter TWO bound to: 2 - type: integer  	Parameter HIGH bound to: 1'b1  	Parameter LOW bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_dispatcher.v:192] INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_dispatcher.v:259] INFO: [Synth 8-6157] synthesizing module 'instr_decoder' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:5] 
+// Tcl Message: 	Parameter ROW_WIDTH bound to: 17 - type: integer  	Parameter BANK_WIDTH bound to: 2 - type: integer  	Parameter CS_WIDTH bound to: 1 - type: integer  	Parameter LOW bound to: 1'b0  	Parameter HIGH bound to: 1'b1  	Parameter tmp_slot bound to: 136'b1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111  
+// Tcl Message: INFO: [Common 17-14] Message 'Synth 8-6090' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. INFO: [Synth 8-6155] done synthesizing module 'instr_decoder' (12#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:5] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'instr_dispatcher' (13#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_dispatcher.v:5] INFO: [Synth 8-6155] done synthesizing module 'iseq_dispatcher' (14#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/iseq_dispatcher.v:3] INFO: [Synth 8-6157] synthesizing module 'rdback_fifo' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/.Xil/Vivado-5524-DESKTOP-ILOVGO9/realtime/rdback_fifo_stub.v:6] INFO: [Synth 8-6155] done synthesizing module 'rdback_fifo' (15#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/.Xil/Vivado-5524-DESKTOP-ILOVGO9/realtime/rdback_fifo_stub.v:6] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'read_capturer' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/read_capturer.v:3] 
+// Tcl Message: 	Parameter DQ_WIDTH bound to: 64 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'read_capturer' (16#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/read_capturer.v:3] INFO: [Synth 8-6155] done synthesizing module 'softMC' (17#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC.v:6] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'xilinx_dma_pcie_ep' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/new/xilinx_dma_pcie_ep.sv:57] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'IBUFDS_GTE3' [D:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:33156] 
+// Tcl Message: 	Parameter REFCLK_EN_TX_PATH bound to: 1'b0  	Parameter REFCLK_HROW_CK_SEL bound to: 2'b00  	Parameter REFCLK_ICNTL_RX bound to: 2'b00  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'IBUFDS_GTE3' (18#1) [D:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:33156] INFO: [Synth 8-6157] synthesizing module 'IBUF' [D:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:32983] 
+// Tcl Message: 	Parameter CAPACITANCE bound to: DONT_CARE - type: string  	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string  	Parameter IBUF_LOW_PWR bound to: TRUE - type: string  	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string  	Parameter IOSTANDARD bound to: DEFAULT - type: string  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'IBUF' (19#1) [D:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:32983] INFO: [Synth 8-6157] synthesizing module 'xdma_0' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/.Xil/Vivado-5524-DESKTOP-ILOVGO9/realtime/xdma_0_stub.v:6] INFO: [Synth 8-6155] done synthesizing module 'xdma_0' (20#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/.Xil/Vivado-5524-DESKTOP-ILOVGO9/realtime/xdma_0_stub.v:6] INFO: [Synth 8-6157] synthesizing module 'xdma_app' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/new/xdma_app.v:57] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'xdma_app' (21#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/new/xdma_app.v:57] 
+// Tcl Message: ERROR: [Synth 8-448] named port connection 'app_clk' does not exist for instance 'xdma_app_i' of module 'xdma_app' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/new/xilinx_dma_pcie_ep.sv:325] ERROR: [Synth 8-6156] failed synthesizing module 'xilinx_dma_pcie_ep' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/new/xilinx_dma_pcie_ep.sv:57] ERROR: [Synth 8-6156] failed synthesizing module 'softMC_top' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_top.v:5] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 3473.863 ; gain = 19.391 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: RTL Elaboration failed 
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 3473.863 ; gain = 19.391 
+// Tcl Message: ERROR: [Common 17-39] 'refresh_design' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'refresh_design' failed due to earlier errors.  
+// U (cr): Critical Messages: addNotify
+dismissDialog("Reloading"); // bz
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Critical Messages"); // U
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, false); // g: FALSE
+selectCheckBox(PAResourceItoN.MsgView_ERROR_MESSAGES, (String) null, true); // g: TRUE
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, rtl_1, General Messages, [Synth 8-448] named port connection 'app_clk' does not exist for instance 'xdma_app_i' of module 'xdma_app' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/new/xilinx_dma_pcie_ep.sv:325]. ]", 5, false); // ah
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, rtl_1, General Messages, [Synth 8-448] named port connection 'app_clk' does not exist for instance 'xdma_app_i' of module 'xdma_app' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/new/xilinx_dma_pcie_ep.sv:325]. ]", 5, false); // ah
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\yongj\Desktop\softmc_ddr4\hw\boards\ML605\project_1\project_1.srcs\sources_1\new\xilinx_dma_pcie_ep.sv;-;;-;16;-;line;-;325;-;;-;16;-;"); // ah
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xdma_app.v", 4); // m
+// [GUI Memory]: 324 MB (+285kb) [02:06:33]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xilinx_dma_pcie_ep.sv", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xdma_app.v", 4); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xilinx_dma_pcie_ep.sv", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xdma_app.v", 4); // m
+selectCodeEditor("xdma_app.v", 315, 207); // bP
+selectCodeEditor("xdma_app.v", 315, 206, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 323, 221); // bP
+selectCodeEditor("xdma_app.v", 323, 221, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 325, 235); // bP
+selectCodeEditor("xdma_app.v", 325, 235, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 300, 305); // bP
+selectCodeEditor("xdma_app.v", 300, 305, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 321, 535); // bP
+selectCodeEditor("xdma_app.v", 321, 535, false, false, false, false, true); // bP - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xilinx_dma_pcie_ep.sv", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xdma_app.v", 4); // m
+selectCodeEditor("xdma_app.v", 310, 496); // bP
+selectCodeEditor("xdma_app.v", 310, 496, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 343, 405); // bP
+selectCodeEditor("xdma_app.v", 343, 405, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xdma_app.v", 308, 251); // bP
+selectCodeEditor("xdma_app.v", 308, 250, false, false, false, false, true); // bP - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xilinx_dma_pcie_ep.sv", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xdma_app.v", 4); // m
+selectCodeEditor("xdma_app.v", 304, 495); // bP
+selectCodeEditor("xdma_app.v", 304, 495, false, false, false, false, true); // bP - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xilinx_dma_pcie_ep.sv", 3); // m
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 245, 305); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 245, 305, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 230, 307); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 230, 306, false, false, false, false, true); // bP - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xdma_app.v", 4); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xilinx_dma_pcie_ep.sv", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xdma_app.v", 4); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xilinx_dma_pcie_ep.sv", 3); // m
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, rtl_1, General Messages, [Synth 8-448] named port connection 'app_clk' does not exist for instance 'xdma_app_i' of module 'xdma_app' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/new/xilinx_dma_pcie_ep.sv:325]. ]", 5, false); // ah
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\yongj\Desktop\softmc_ddr4\hw\boards\ML605\project_1\project_1.srcs\sources_1\new\xilinx_dma_pcie_ep.sv;-;;-;16;-;line;-;325;-;;-;16;-;"); // ah
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xdma_app.v", 4); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xilinx_dma_pcie_ep.sv", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xdma_app.v", 4); // m
+// Elapsed time: 48 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xilinx_dma_pcie_ep.sv", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xdma_app.v", 4); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xilinx_dma_pcie_ep.sv", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xdma_app.v", 4); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xilinx_dma_pcie_ep.sv", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xdma_app.v", 4); // m
+// Elapsed time: 176 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xilinx_dma_pcie_ep.sv", 3); // m
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 73, 521); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 386, 520); // bP
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 241, 522); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 241, 521, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 253, 535); // bP
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 254, 533, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 12 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "app_clk"); // l
+// Elapsed time: 27 seconds
+selectCodeEditor("xilinx_dma_pcie_ep.sv", 1543, 82); // bP
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h
+// bz (cr):  Reloading : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: refresh_design 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3492.934 ; gain = 14.074 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: ELABORATE_FINISH
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'softMC_top' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_top.v:5] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'ddr4_0' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/.Xil/Vivado-5524-DESKTOP-ILOVGO9/realtime/ddr4_0_stub.v:6] INFO: [Synth 8-6155] done synthesizing module 'ddr4_0' (1#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/.Xil/Vivado-5524-DESKTOP-ILOVGO9/realtime/ddr4_0_stub.v:6] INFO: [Synth 8-6157] synthesizing module 'softMC' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC.v:6] 
+// Tcl Message: 	Parameter TCQ bound to: 100 - type: integer  	Parameter tCK bound to: 2500 - type: integer  	Parameter nCK_PER_CLK bound to: 2 - type: integer  	Parameter RANK_WIDTH bound to: 1 - type: integer  	Parameter ROW_WIDTH bound to: 17 - type: integer  	Parameter BANK_WIDTH bound to: 2 - type: integer  	Parameter CKE_WIDTH bound to: 1 - type: integer  	Parameter CS_WIDTH bound to: 1 - type: integer  	Parameter nCS_PER_RANK bound to: 1 - type: integer  	Parameter DQ_WIDTH bound to: 64 - type: integer  	Parameter MAINT_PRESCALER_PERIOD bound to: 200000 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'maint_ctrl_top' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_ctrl.v:4] 
+// Tcl Message: 	Parameter RANK_WIDTH bound to: 1 - type: integer  	Parameter TCQ bound to: 100 - type: integer  	Parameter tCK bound to: 2500 - type: integer  	Parameter nCK_PER_CLK bound to: 2 - type: integer  	Parameter MAINT_PRESCALER_PERIOD bound to: 200000 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'maint_ctrl' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_ctrl.v:73] 
+// Tcl Message: 	Parameter TCQ bound to: 100 - type: integer  	Parameter tCK bound to: 2500 - type: integer  	Parameter nCK_PER_CLK bound to: 2 - type: integer  	Parameter MAINT_PRESCALER_PERIOD bound to: 200000 - type: integer  	Parameter MAINT_PRESCALER_DIV bound to: 40 - type: integer  	Parameter MAINT_PRESCALER_WIDTH bound to: 6 - type: integer  	Parameter ONE bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'maint_ctrl' (2#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_ctrl.v:73] INFO: [Synth 8-6157] synthesizing module 'periodic_rd_ctrl' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_ctrl.v:119] 
+// Tcl Message: 	Parameter tCK bound to: 2500 - type: integer  	Parameter nCK_PER_CLK bound to: 2 - type: integer  	Parameter TCQ bound to: 100 - type: integer  	Parameter MAINT_PRESCALER_PERIOD bound to: 200000 - type: integer  	Parameter tPRDI bound to: 1000000 - type: integer  	Parameter PERIODIC_RD_TIMER_DIV bound to: 5 - type: integer  	Parameter PERIODIC_RD_TIMER_WIDTH bound to: 3 - type: integer  	Parameter ONE bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'periodic_rd_ctrl' (3#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_ctrl.v:119] INFO: [Synth 8-6157] synthesizing module 'zq_calib_ctrl' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_ctrl.v:175] 
+// Tcl Message: 	Parameter TCQ bound to: 100 - type: integer  	Parameter MAINT_PRESCALER_PERIOD bound to: 200000 - type: integer  	Parameter MAINT_PRESCALER_PERIOD_NS bound to: 200 - type: integer  	Parameter tZQI bound to: 128000000 - type: integer  	Parameter ZQ_TIMER_DIV bound to: 640000 - type: integer  	Parameter ZQ_TIMER_WIDTH bound to: 20 - type: integer  	Parameter ONE bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'zq_calib_ctrl' (4#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_ctrl.v:175] INFO: [Synth 8-6157] synthesizing module 'autoref_ctrl' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_ctrl.v:242] 
+// Tcl Message: 	Parameter TCQ bound to: 100 - type: integer  	Parameter ONE bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'autoref_ctrl' (5#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_ctrl.v:242] INFO: [Synth 8-6155] done synthesizing module 'maint_ctrl_top' (6#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_ctrl.v:4] INFO: [Synth 8-6157] synthesizing module 'maint_handler' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_handler.v:5] 
+// Tcl Message: INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_handler.v:97] 
+// Tcl Message: INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_handler.v:212] 
+// Tcl Message: INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_handler.v:267] INFO: [Synth 8-6155] done synthesizing module 'maint_handler' (7#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_handler.v:5] INFO: [Synth 8-6157] synthesizing module 'autoref_config' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/autoref_config.v:4] INFO: [Synth 8-6155] done synthesizing module 'autoref_config' (8#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/autoref_config.v:4] INFO: [Synth 8-6157] synthesizing module 'instr_receiver' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_receiver.v:5] 
+// Tcl Message: 	Parameter STATE_IDLE bound to: 2'b00  	Parameter STATE_APP bound to: 2'b01  	Parameter STATE_MAINT bound to: 2'b10  
+// Tcl Message: INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_receiver.v:52] INFO: [Synth 8-6155] done synthesizing module 'instr_receiver' (9#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_receiver.v:5] INFO: [Synth 8-6157] synthesizing module 'instr_fifo' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/.Xil/Vivado-5524-DESKTOP-ILOVGO9/realtime/instr_fifo_stub.v:6] INFO: [Synth 8-6155] done synthesizing module 'instr_fifo' (10#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/.Xil/Vivado-5524-DESKTOP-ILOVGO9/realtime/instr_fifo_stub.v:6] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'iseq_dispatcher' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/iseq_dispatcher.v:3] 
+// Tcl Message: 	Parameter ROW_WIDTH bound to: 17 - type: integer  	Parameter BANK_WIDTH bound to: 2 - type: integer  	Parameter CKE_WIDTH bound to: 1 - type: integer  	Parameter CS_WIDTH bound to: 1 - type: integer  	Parameter nCS_PER_RANK bound to: 1 - type: integer  	Parameter DQ_WIDTH bound to: 64 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'pipe_reg' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/pipe_reg.v:3] 
+// Tcl Message: 	Parameter WIDTH bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'pipe_reg' (11#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/pipe_reg.v:3] INFO: [Synth 8-6157] synthesizing module 'instr_dispatcher' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_dispatcher.v:5] 
+// Tcl Message: 	Parameter ROW_WIDTH bound to: 17 - type: integer  	Parameter BANK_WIDTH bound to: 2 - type: integer  	Parameter CKE_WIDTH bound to: 1 - type: integer  	Parameter RANK_WIDTH bound to: 1 - type: integer  	Parameter CS_WIDTH bound to: 1 - type: integer  	Parameter nCS_PER_RANK bound to: 1 - type: integer  	Parameter DQ_WIDTH bound to: 64 - type: integer  	Parameter ONE bound to: 1 - type: integer  	Parameter TWO bound to: 2 - type: integer  	Parameter HIGH bound to: 1'b1  	Parameter LOW bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_dispatcher.v:192] INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_dispatcher.v:259] INFO: [Synth 8-6157] synthesizing module 'instr_decoder' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:5] 
+// Tcl Message: 	Parameter ROW_WIDTH bound to: 17 - type: integer  	Parameter BANK_WIDTH bound to: 2 - type: integer  	Parameter CS_WIDTH bound to: 1 - type: integer  	Parameter LOW bound to: 1'b0  	Parameter HIGH bound to: 1'b1  	Parameter tmp_slot bound to: 136'b1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111  
+// Tcl Message: INFO: [Common 17-14] Message 'Synth 8-6090' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. INFO: [Synth 8-6155] done synthesizing module 'instr_decoder' (12#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v:5] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'instr_dispatcher' (13#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_dispatcher.v:5] INFO: [Synth 8-6155] done synthesizing module 'iseq_dispatcher' (14#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/iseq_dispatcher.v:3] INFO: [Synth 8-6157] synthesizing module 'rdback_fifo' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/.Xil/Vivado-5524-DESKTOP-ILOVGO9/realtime/rdback_fifo_stub.v:6] INFO: [Synth 8-6155] done synthesizing module 'rdback_fifo' (15#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/.Xil/Vivado-5524-DESKTOP-ILOVGO9/realtime/rdback_fifo_stub.v:6] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'read_capturer' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/read_capturer.v:3] 
+// Tcl Message: 	Parameter DQ_WIDTH bound to: 64 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'read_capturer' (16#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/read_capturer.v:3] INFO: [Synth 8-6155] done synthesizing module 'softMC' (17#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC.v:6] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'xilinx_dma_pcie_ep' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/new/xilinx_dma_pcie_ep.sv:57] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'IBUFDS_GTE3' [D:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:33156] 
+// Tcl Message: 	Parameter REFCLK_EN_TX_PATH bound to: 1'b0  	Parameter REFCLK_HROW_CK_SEL bound to: 2'b00  	Parameter REFCLK_ICNTL_RX bound to: 2'b00  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'IBUFDS_GTE3' (18#1) [D:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:33156] INFO: [Synth 8-6157] synthesizing module 'IBUF' [D:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:32983] 
+// Tcl Message: 	Parameter CAPACITANCE bound to: DONT_CARE - type: string  	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string  	Parameter IBUF_LOW_PWR bound to: TRUE - type: string  	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string  	Parameter IOSTANDARD bound to: DEFAULT - type: string  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'IBUF' (19#1) [D:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:32983] INFO: [Synth 8-6157] synthesizing module 'xdma_0' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/.Xil/Vivado-5524-DESKTOP-ILOVGO9/realtime/xdma_0_stub.v:6] INFO: [Synth 8-6155] done synthesizing module 'xdma_0' (20#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/.Xil/Vivado-5524-DESKTOP-ILOVGO9/realtime/xdma_0_stub.v:6] INFO: [Synth 8-6157] synthesizing module 'xdma_app' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/new/xdma_app.v:57] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'xdma_app' (21#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/new/xdma_app.v:57] INFO: [Synth 8-6155] done synthesizing module 'xilinx_dma_pcie_ep' (22#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/new/xilinx_dma_pcie_ep.sv:57] INFO: [Synth 8-6155] done synthesizing module 'softMC_top' (23#1) [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_top.v:5] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 3492.934 ; gain = 14.074 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 3510.410 ; gain = 31.551 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 3510.410 ; gain = 31.551 
+// Tcl Message: --------------------------------------------------------------------------------- 
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2020.2 (64-bit)
+# SW Build: 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Current time: Mon Jul 19 20:06:52 KST 2021
+# Process ID (PID): 5524
+# OS: Windows 10
+# User: yongj
+# Project: project_1
+# Part: xcvu095-ffvb2104-2-e
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+ui.utils.e: Error: Wrapper with null DB pointer (See C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/vivado_pid5524.debug)
+*/

@@ -1,0 +1,48 @@
+verilog xil_defaultlib --include "D:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" --include "../../../ipstatic/hdl/verilog" \
+"../../../ip/xdma_0/ip_0/ip_0/sim/gtwizard_ultrascale_v1_7_gthe3_channel.v" \
+"../../../ip/xdma_0/ip_0/ip_0/sim/xdma_0_pcie3_ip_gt_gthe3_channel_wrapper.v" \
+"../../../ip/xdma_0/ip_0/ip_0/sim/xdma_0_pcie3_ip_gt_gtwizard_gthe3.v" \
+"../../../ip/xdma_0/ip_0/ip_0/sim/xdma_0_pcie3_ip_gt_gtwizard_top.v" \
+"../../../ip/xdma_0/ip_0/ip_0/sim/xdma_0_pcie3_ip_gt.v" \
+"../../../ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_tph_tbl.v" \
+"../../../ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_pipe_lane.v" \
+"../../../ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_bram_16k.v" \
+"../../../ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_bram_rep_8k.v" \
+"../../../ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_bram_req_8k.v" \
+"../../../ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_gt_channel.v" \
+"../../../ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_pipe_pipeline.v" \
+"../../../ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_pipe_misc.v" \
+"../../../ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_init_ctrl.v" \
+"../../../ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_gt_common.v" \
+"../../../ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_bram_8k.v" \
+"../../../ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_bram_rep.v" \
+"../../../ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_bram_req.v" \
+"../../../ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_phy_sync.v" \
+"../../../ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_bram_cpl.v" \
+"../../../ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_sys_clk_gen.v" \
+"../../../ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_phy_rst.v" \
+"../../../ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_phy_txeq.v" \
+"../../../ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_phy_clk.v" \
+"../../../ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_bram.v" \
+"../../../ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_phy_rxeq.v" \
+"../../../ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_gtwizard_top.v" \
+"../../../ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_phy_wrapper.v" \
+"../../../ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_pcie3_uscale_wrapper.v" \
+"../../../ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_pcie3_uscale_top.v" \
+"../../../ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_phy_sync_cell.v" \
+"../../../ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_rxcdrhold.v" \
+"../../../ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_pcie3_uscale_core_top.v" \
+"../../../ip/xdma_0/ip_0/sim/xdma_0_pcie3_ip.v" \
+"../../../ip/xdma_0/ip_1/sim/xdma_v4_1_8_blk_mem_64_reg_be.v" \
+"../../../ip/xdma_0/ip_2/sim/xdma_v4_1_8_blk_mem_64_noreg_be.v" \
+
+sv xil_defaultlib --include "D:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" --include "../../../ipstatic/hdl/verilog" \
+"../../../ip/xdma_0/xdma_v4_1/hdl/verilog/xdma_0_dma_bram_wrap.sv" \
+"../../../ip/xdma_0/xdma_v4_1/hdl/verilog/xdma_0_dma_bram_wrap_1024.sv" \
+"../../../ip/xdma_0/xdma_v4_1/hdl/verilog/xdma_0_dma_bram_wrap_2048.sv" \
+"../../../ip/xdma_0/xdma_v4_1/hdl/verilog/xdma_0_core_top.sv" \
+"../../../ip/xdma_0/sim/xdma_0.sv" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort
