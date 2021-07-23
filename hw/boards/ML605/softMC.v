@@ -63,7 +63,7 @@ module softMC #(parameter TCQ = 100, tCK = 2500, nCK_PER_CLK = 2, RANK_WIDTH = 1
 	//Data read back Interface
 	output rdback_fifo_empty,
 	input rdback_fifo_rden,
-	output[DQ_WIDTH*8 - 1:0] rdback_data
+	output[511:0] rdback_data
 );
 	 
 	 //DFI constants
@@ -277,14 +277,20 @@ module softMC #(parameter TCQ = 100, tCK = 2500, nCK_PER_CLK = 2, RANK_WIDTH = 1
 	  .srst(rst), // input srst
 	  .din(rdback_fifo_wrdata), // input [255 : 0] din
 	  .wr_en(rdback_fifo_wren), // input wr_en
+	  //.wr_en(1'b1), // input wr_en
 	  .rd_en(rdback_fifo_rden), // input rd_en
+	  //.rd_en(1'b1), // input rd_en
 	  .dout(rdback_fifo_out), // output [255 : 0] dout
 	  .full(rdback_fifo_full), // output full
 	  .almost_full(rdback_fifo_almost_full),
+	  //.full(1'b0), // output full
+	  //.almost_full(1'b0),
 	  .empty(rdback_fifo_empty) // output empty
+	  //.empty(1'b0) // output empty
 	);
 	assign rdback_data = rdback_fifo_out;
-
+	
+    //assign rdback_data = {512{1'b1}};
 	wire read_capturer_dfi_clk_disable;
 	read_capturer #(.DQ_WIDTH(DQ_WIDTH)) i_rd_capturer (
 	.clk(clk),

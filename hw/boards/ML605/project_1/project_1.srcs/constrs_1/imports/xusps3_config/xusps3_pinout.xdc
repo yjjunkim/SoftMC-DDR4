@@ -45,7 +45,7 @@ set_property PULLUP true [get_ports sys_reset_n]
 #create_clock -period 9.996 [get_ports c0_sys_clk_p]
 #create_clock -period 9.996 [get_ports c0_sys_clk_n]
 create_clock -period 9.996 [get_ports c0_sys_clk_p]
-create_clock -period 9.996 [get_ports c0_sys_clk_n]
+#create_clock -period 9.996 [get_ports c0_sys_clk_n]
 
 set_property IOSTANDARD DIFF_SSTL12_DCI [get_ports c0_sys_clk_p]
 #set_property IOSTANDARD DIFF_SSTL12_DCI [get_ports c0_sys_clk_n]
@@ -87,18 +87,18 @@ set_property PACKAGE_PIN AT11 [get_ports "sys_clk_p"]
 #set_property IOSTANDARD LVCMOS33 [get_ports c0_data_compare_error]
 set_property IOSTANDARD LVCMOS33 [get_ports c0_init_calib_complete]
 #set_property PACKAGE_PIN AR22 [get_ports "c0_data_compare_error"]
-set_property PACKAGE_PIN AT22 [get_ports "c0_init_calib_complete"]
+set_property PACKAGE_PIN AV22 [get_ports "c0_init_calib_complete"]
 ##############################################
 ##########           LEDs           ##########
 ##############################################
-#set_property IOSTANDARD LVCMOS33 [get_ports {led[0]}]
-#set_property IOSTANDARD LVCMOS33 [get_ports {led[1]}]
-#set_property IOSTANDARD LVCMOS33 [get_ports {led[2]}]
-#set_property IOSTANDARD LVCMOS33 [get_ports {led[3]}]
-#set_property PACKAGE_PIN AR22 [get_ports {led[0]}]
-#set_property PACKAGE_PIN AT22 [get_ports {led[1]}]
-#set_property PACKAGE_PIN AR23 [get_ports {led[2]}]
-#set_property PACKAGE_PIN AV22 [get_ports {led[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {leds[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {leds[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {leds[2]}]
+#set_property IOSTANDARD LVCMOS33 [get_ports {leds[3]}]
+set_property PACKAGE_PIN AR22 [get_ports {leds[0]}]
+set_property PACKAGE_PIN AT22 [get_ports {leds[1]}]
+set_property PACKAGE_PIN AR23 [get_ports {leds[2]}]
+#set_property PACKAGE_PIN AV22 [get_ports {leds[3]}]
 
 ##############################################
 ##########    Global Properties     ##########

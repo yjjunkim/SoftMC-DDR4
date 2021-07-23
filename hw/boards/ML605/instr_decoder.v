@@ -57,9 +57,9 @@ module instr_decoder #(parameter ROW_WIDTH = 15, BANK_WIDTH = 3, CS_WIDTH = 1)(
 			
 			// ACT_n이 LOW이면 row address로 쓰이므로 0으로 전달.
 			//dfi_address[135:128] <= ((~dfi_ras_n)&(dfi_cas_n)&(dfi_we_n)) ? {{6{1'b1}}, 2'b00}  : {6'b111111, instr[`RAS_OFFSET], instr[`RAS_OFFSET]};
-			dfi_address[135:128] <= ((~dfi_ras_n)&(dfi_cas_n)&(dfi_we_n)) ? {8{1'b0}}  : {6'b111111, instr[`RAS_OFFSET], instr[`RAS_OFFSET]};
-			dfi_address[127:120] <= ((~dfi_ras_n)&(dfi_cas_n)&(dfi_we_n)) ? {8{1'b0}}  : {6'b111111, instr[`CAS_OFFSET], instr[`CAS_OFFSET]};
-			dfi_address[119:112] <= ((~dfi_ras_n)&(dfi_cas_n)&(dfi_we_n)) ? {8{1'b0}}  : {6'b111111, instr[`WE_OFFSET], instr[`WE_OFFSET]};
+			dfi_address[135:128] = ((~dfi_ras_n)&(dfi_cas_n)&(dfi_we_n)) ? {8{1'b0}}  : {6'b111111, instr[`RAS_OFFSET], instr[`RAS_OFFSET]};
+			dfi_address[127:120] = ((~dfi_ras_n)&(dfi_cas_n)&(dfi_we_n)) ? {8{1'b0}}  : {6'b111111, instr[`CAS_OFFSET], instr[`CAS_OFFSET]};
+			dfi_address[119:112] = ((~dfi_ras_n)&(dfi_cas_n)&(dfi_we_n)) ? {8{1'b0}}  : {6'b111111, instr[`WE_OFFSET], instr[`WE_OFFSET]};
 			
 			//dfi_address[111:0] <= 1;
 			//dfi_address[(idx+1)* 8] = {6'b000000, instr[idx], instr[idx]};

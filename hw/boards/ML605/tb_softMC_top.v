@@ -10,7 +10,8 @@ endmodule
 
 module tb_softMC_top;
 	
-  parameter REFCLK_FREQ           = 200;
+  //parameter REFCLK_FREQ           = 200;
+  parameter REFCLK_FREQ           = 100;
                                     // # = 200 for all design frequencies of
                                     //         -1 speed grade devices
                                     //   = 200 when design frequency < 480 MHz
@@ -598,6 +599,7 @@ endgenerate
 		.clk_ref_p(clk_ref_p), 
 		.clk_ref_n(clk_ref_n), 
 		.sys_rst(sys_rst), 
+		//.sys_rst_l(sys_rst_l),
 		//.c0_ddr4_reset_n(1'b1),
 		//.c0_ddr4_reset_n(c0_ddr4_reset_n),
 		.c0_ddr4_ck_c(c0_ddr4_ck_c_int),  // 0625 c? t?

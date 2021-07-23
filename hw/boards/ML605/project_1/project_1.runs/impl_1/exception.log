@@ -1,4 +1,0 @@
-ERROR: Exception caught trying to open file C:\Users\yongj\Desktop\softmc_ddr4\hw\boards\ML605\project_1\project_1.runs\impl_1/runme.log
-	Exception name: Error
-	Exception error code: 70
-	Exception message: 사용 권한이 없습니다.

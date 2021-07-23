@@ -99,8 +99,8 @@ module softMC_top #
    )(
 	//input sys_clk_p,
 	//input sys_clk_n,
-	//input clk_ref_p,
-	//input clk_ref_n,
+	input clk_ref_p,
+	input clk_ref_n,
 	//input sys_rst,
 	input sys_reset_n,
 	// DDRx Output Interface
@@ -129,7 +129,7 @@ module softMC_top #
 	*/
 	//DDR4 ( INPUT / OUTPUT )//////////////////////////////////////////////////////////////////
 	input                             sys_rst_l,
-	//input                             sys_rst_l,
+	//input                             sys_rst,
     input                             c0_sys_clk_p,
     input                             c0_sys_clk_n,
     
@@ -157,7 +157,7 @@ module softMC_top #
     //output                            c0_data_compare_error,
 	///////////////////////////////////////////////////////////////////////////////////////////////
 	//PCIE
-	
+	output [2:0] leds,
 	`ifndef SIM //we dont want to simulate PCIe core
 	
 	output  [7:0]    pci_exp_txp,
@@ -177,6 +177,9 @@ module softMC_top #
 	
 	//output[DQ_WIDTH*4 - 1:0] rdback_data
     output[511:0] rdback_data
+    
+    //output [3:0] leds;
+    
 	`endif //SIM
     );
 	 
@@ -449,7 +452,7 @@ module softMC_top #
   assign c0_ddr4_reset_n = c0_ddr4_reset_n_int;
   assign dBufAdr = 5'b00000;
   
-  assign sys_rst = sys_rst_l;
+  assign sys_rst = ~sys_rst_l;
 
   
   
@@ -553,7 +556,7 @@ module softMC_top #
 	//App Command Interface
 	.app_en(app_en),
 	.app_ack(app_ack),
-	.app_instr(app_instr), 
+	.app_instr(app_instr),
 	//.iq_full(iq_full),
 	.processing_iseq(processing_iseq),
 	
@@ -675,9 +678,12 @@ xilinx_dma_pcie_ep
 	//Data read back Interface
 	.rdback_fifo_empty(rdback_fifo_empty),
 	.rdback_fifo_rden(rdback_fifo_rden),
-	.rdback_data(rdback_data)
+	.rdback_data(rdback_data),
+	
+	.leds(leds)
   
   );
+  
 `endif //SIM
 
 endmodule

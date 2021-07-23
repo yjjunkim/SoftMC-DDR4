@@ -1,23 +1,21 @@
 Vivado Simulator 2020.2
 Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto b05a631014b24489b6600b177fa38575 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L microblaze_v11_0_4 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L lmb_v10_v3_0_11 -L lmb_bram_if_cntlr_v4_0_19 -L blk_mem_gen_v8_4_4 -L iomodule_v3_1_6 -L fifo_generator_v13_2_5 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_softMC_top_behav xil_defaultlib.tb_softMC_top xil_defaultlib.glbl -log elaborate.log 
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto b05a631014b24489b6600b177fa38575 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L microblaze_v11_0_4 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L lmb_v10_v3_0_11 -L lmb_bram_if_cntlr_v4_0_19 -L blk_mem_gen_v8_4_4 -L iomodule_v3_1_6 -L fifo_generator_v13_2_5 -L gtwizard_ultrascale_v1_7_9 -L xdma_v4_1_8 -L uvm -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_softMC_top_behav xil_defaultlib.tb_softMC_top xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named BM_CNT_WIDTH [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:573]
-WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named tPRDI [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:583]
-WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named tREFI [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:584]
-WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named tZQI [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:585]
-WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named ADDR_CMD_MODE [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:586]
-WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named ORDERING [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:587]
-WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named STARVE_LIMIT [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:588]
-WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named ECC [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:590]
-WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named ECC_TEST [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:591]
-WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named DATA_WIDTH [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:593]
-WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named PAYLOAD_WIDTH [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:594]
-WARNING: [VRFC 10-3091] actual bit length 17 differs from formal bit length 136 for port 'dfi_address' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_dispatcher.v:343]
-WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 16 for port 'dfi_bank' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_dispatcher.v:344]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'dfi_cs_n' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_dispatcher.v:346]
+WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named BM_CNT_WIDTH [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:574]
+WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named tPRDI [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:584]
+WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named tREFI [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:585]
+WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named tZQI [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:586]
+WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named ADDR_CMD_MODE [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:587]
+WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named ORDERING [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:588]
+WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named STARVE_LIMIT [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:589]
+WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named ECC [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:591]
+WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named ECC_TEST [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:592]
+WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named DATA_WIDTH [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:594]
+WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named PAYLOAD_WIDTH [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:595]
+WARNING: [VRFC 10-5021] port 'sys_reset_n' is not connected on this instance [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:554]
 Completed static elaboration
 Starting simulation data flow analysis
 WARNING: [XSIM 43-4398] File "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_cplx.sv" Line 855 : The System Verilog Assertion  will be ignored as it appears inside another process. This assertion is not yet supported.
@@ -30,7 +28,7 @@ Compiling package xil_defaultlib.proj_package
 Compiling module xil_defaultlib.DDR4_if(CONFIGURED_DQ_BITS=16)
 Compiling module xil_defaultlib.WireDelay(Delay_g=0.0,Delay_rd=0...
 Compiling module unisims_ver.BUFG
-Compiling module unisims_ver.MMCME3_ADV(CLKFBOUT_MULT_F=7.0,C...
+Compiling module unisims_ver.MMCME3_ADV(CLKFBOUT_MULT_F=14.0,...
 Compiling module xil_defaultlib.ddr4_v2_2_10_infrastructure(CLKI...
 Compiling module unisims_ver.OBUF
 Compiling module unisims_ver.IBUFDS(IBUF_LOW_PWR="FALSE")

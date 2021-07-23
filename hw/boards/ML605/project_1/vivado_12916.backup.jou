@@ -1,0 +1,84 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jul 22 17:38:00 2021
+# Process ID: 12916
+# Current directory: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12688 C:\Users\yongj\Desktop\softmc_ddr4\hw\boards\ML605\project_1\project_1.xpr
+# Log file: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/vivado.log
+# Journal file: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.xpr
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+open_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+launch_simulation
+launch_simulation
+source tb_softMC_top.tcl
+current_wave_config {Untitled 1}
+add_wave {{/tb_softMC_top/uut/u_ddr4_0}} 
+current_wave_config {Untitled 1}
+add_wave {{/tb_softMC_top/uut/i_softmc}} 
+run all
+run all
+run all
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source tb_softMC_top.tcl
+current_wave_config {Untitled 2}
+add_wave {{/tb_softMC_top/uut/u_ddr4_0}} 
+current_wave_config {Untitled 2}
+add_wave {{/tb_softMC_top/uut/i_softmc}} 
+current_wave_config {Untitled 2}
+add_wave {{/tb_softMC_top/uut/i_softmc}} 
+run all
+run all
+run all
+close_sim
+launch_simulation
+source tb_softMC_top.tcl
+current_wave_config {Untitled 3}
+add_wave {{/tb_softMC_top/uut}} 
+current_wave_config {Untitled 3}
+add_wave {{/tb_softMC_top/uut/u_ddr4_0}} 
+current_wave_config {Untitled 3}
+add_wave {{/tb_softMC_top/uut/i_softmc}} 
+run all
+close_sim
+launch_simulation
+source tb_softMC_top.tcl
+current_wave_config {Untitled 4}
+add_wave {{/tb_softMC_top/uut/u_ddr4_0}} 
+current_wave_config {Untitled 4}
+add_wave {{/tb_softMC_top/uut/i_softmc}} 
+run all
+run all
+close_sim
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+close_design
+close_design
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1

@@ -1,11 +1,11 @@
 # compile verilog/system verilog design source files
-verilog xil_defaultlib  --include "../../../../../" --include "../../../../../ipcore_dir/riffa" --include "../../../../../ipcore_dir/xilinx_mig/user_design/sim" --include "../../../../project_1.srcs/sim_1/imports/imports" --include "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/map" --include "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/ip_top" --include "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal" \
+verilog xil_defaultlib  --include "../../../../../" --include "../../../../../ipcore_dir/riffa" --include "../../../../../ipcore_dir/xilinx_mig/user_design/sim" --include "../../../../project_1.ip_user_files/ipstatic/hdl/verilog" --include "../../../../project_1.srcs/sim_1/imports/imports" --include "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/map" --include "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/ip_top" --include "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal" --include "D:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
 "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_6/sim/bd_9054_lmb_bram_I_0.v" \
 "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_9/sim/bd_9054_second_lmb_bram_I_0.v" \
 "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/sim/bd_9054.v" \
 "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/ip_0/sim/ddr4_0_microblaze_mcs.v" \
 
-sv xil_defaultlib  --include "../../../../../" --include "../../../../../ipcore_dir/riffa" --include "../../../../../ipcore_dir/xilinx_mig/user_design/sim" --include "../../../../project_1.srcs/sim_1/imports/imports" --include "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/map" --include "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/ip_top" --include "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal" \
+sv xil_defaultlib  --include "../../../../../" --include "../../../../../ipcore_dir/riffa" --include "../../../../../ipcore_dir/xilinx_mig/user_design/sim" --include "../../../../project_1.ip_user_files/ipstatic/hdl/verilog" --include "../../../../project_1.srcs/sim_1/imports/imports" --include "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/map" --include "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/ip_top" --include "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal" --include "D:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
 "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/phy/ddr4_0_phy_ddr4.sv" \
 "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/phy/ddr4_phy_v2_2_xiphy_behav.sv" \
 "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/phy/ddr4_phy_v2_2_xiphy.sv" \
@@ -43,94 +43,9 @@ sv xil_defaultlib  --include "../../../../../" --include "../../../../../ipcore_
 "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/ip_top/ddr4_0.sv" \
 "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/tb/microblaze_mcs_0.sv" \
 
-verilog xil_defaultlib  --include "../../../../../" --include "../../../../../ipcore_dir/riffa" --include "../../../../../ipcore_dir/xilinx_mig/user_design/sim" --include "../../../../project_1.srcs/sim_1/imports/imports" --include "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/map" --include "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/ip_top" --include "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal" \
+verilog xil_defaultlib  --include "../../../../../" --include "../../../../../ipcore_dir/riffa" --include "../../../../../ipcore_dir/xilinx_mig/user_design/sim" --include "../../../../project_1.ip_user_files/ipstatic/hdl/verilog" --include "../../../../project_1.srcs/sim_1/imports/imports" --include "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/map" --include "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/ip_top" --include "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal" --include "D:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
 "../../../../project_1.srcs/sources_1/ip/rdback_fifo/sim/rdback_fifo.v" \
 "../../../../project_1.ip_user_files/ip/instr_fifo/sim/instr_fifo.v" \
-"../../../../../ipcore_dir/riffa/axi_basic_tx_thrtl_ctl.v" \
-"../../../../../ipcore_dir/riffa/axi_basic_tx_pipeline.v" \
-"../../../../../ipcore_dir/riffa/pcie_pipe_misc_v6.v" \
-"../../../../../ipcore_dir/riffa/axi_basic_tx.v" \
-"../../../../../ipcore_dir/riffa/pcie_reset_delay_v6.v" \
-"../../../../../ipcore_dir/riffa/gtx_drp_chanalign_fix_3752_v6.v" \
-"../../../../../ipcore_dir/riffa/chnl_tester.v" \
-"../../../../../ipcore_dir/riffa/gtx_rx_valid_filter_v6.v" \
-"../../../../../ipcore_dir/riffa/gtx_tx_sync_rate_v6.v" \
-"../../../../../ipcore_dir/riffa/gtx_wrapper_v6.v" \
-"../../../../../ipcore_dir/riffa/pcie_upconfig_fix_3451_v6.v" \
-"../../../../../ipcore_dir/riffa/pcie_clocking_v6.v" \
-"../../../../../ipcore_dir/xilinx_mig/user_design/sim/ddr3_model.v" \
-"../../../../../ipcore_dir/riffa/pcie_pipe_lane_v6.v" \
-"../../../../../ipcore_dir/riffa/axi_basic_rx_null_gen.v" \
-"../../../../../ipcore_dir/riffa/axi_basic_rx_pipeline.v" \
-"../../../../../ipcore_dir/riffa/axi_basic_rx.v" \
-"../../../../../ipcore_dir/riffa/axi_basic_top.v" \
-"../../../../../ipcore_dir/riffa/ff.v" \
-"../../../../../ipcore_dir/riffa/syncff.v" \
-"../../../../../ipcore_dir/riffa/ram_2clk_1w_1r.v" \
-"../../../../../ipcore_dir/riffa/ram_1clk_1w_1r.v" \
-"../../../../../ipcore_dir/riffa/sync_fifo.v" \
-"../../../../../ipcore_dir/riffa/cross_domain_signal.v" \
-"../../../../../ipcore_dir/riffa/async_fifo.v" \
-"../../../../../ipcore_dir/riffa/tx_port_writer.v" \
-"../../../../../ipcore_dir/riffa/tx_port_monitor_64.v" \
-"../../../../../ipcore_dir/riffa/tx_port_monitor_32.v" \
-"../../../../../ipcore_dir/riffa/tx_port_monitor_128.v" \
-"../../../../../ipcore_dir/riffa/tx_port_channel_gate_64.v" \
-"../../../../../ipcore_dir/riffa/tx_port_channel_gate_32.v" \
-"../../../../../ipcore_dir/riffa/tx_port_channel_gate_128.v" \
-"../../../../../ipcore_dir/riffa/tx_port_buffer_64.v" \
-"../../../../../ipcore_dir/riffa/tx_port_buffer_32.v" \
-"../../../../../ipcore_dir/riffa/tx_port_buffer_128.v" \
-"../../../../../ipcore_dir/riffa/tx_engine_selector.v" \
-"../../../../../ipcore_dir/riffa/tx_engine_formatter_64.v" \
-"../../../../../ipcore_dir/riffa/tx_engine_formatter_32.v" \
-"../../../../../ipcore_dir/riffa/tx_engine_formatter_128.v" \
-"../../../../../ipcore_dir/riffa/sg_list_requester.v" \
-"../../../../../ipcore_dir/riffa/sg_list_reader_64.v" \
-"../../../../../ipcore_dir/riffa/sg_list_reader_32.v" \
-"../../../../../ipcore_dir/riffa/sg_list_reader_128.v" \
-"../../../../../ipcore_dir/riffa/rx_port_requester_mux.v" \
-"../../../../../ipcore_dir/riffa/rx_port_reader.v" \
-"../../../../../ipcore_dir/riffa/rx_port_channel_gate.v" \
-"../../../../../ipcore_dir/riffa/reorder_queue_output.v" \
-"../../../../../ipcore_dir/riffa/reorder_queue_input.v" \
-"../../../../../ipcore_dir/riffa/fifo_packer_64.v" \
-"../../../../../ipcore_dir/riffa/fifo_packer_32.v" \
-"../../../../../ipcore_dir/riffa/fifo_packer_128.v" \
-"../../../../../ipcore_dir/riffa/async_fifo_fwft.v" \
-"../../../../../ipcore_dir/riffa/tx_qword_aligner_64.v" \
-"../../../../../ipcore_dir/riffa/tx_qword_aligner_128.v" \
-"../../../../../ipcore_dir/riffa/tx_port_64.v" \
-"../../../../../ipcore_dir/riffa/tx_port_32.v" \
-"../../../../../ipcore_dir/riffa/tx_port_128.v" \
-"../../../../../ipcore_dir/riffa/tx_engine_upper_64.v" \
-"../../../../../ipcore_dir/riffa/tx_engine_upper_32.v" \
-"../../../../../ipcore_dir/riffa/tx_engine_upper_128.v" \
-"../../../../../ipcore_dir/riffa/tx_engine_lower_64.v" \
-"../../../../../ipcore_dir/riffa/tx_engine_lower_32.v" \
-"../../../../../ipcore_dir/riffa/tx_engine_lower_128.v" \
-"../../../../../ipcore_dir/riffa/rx_port_64.v" \
-"../../../../../ipcore_dir/riffa/rx_port_32.v" \
-"../../../../../ipcore_dir/riffa/rx_port_128.v" \
-"../../../../../ipcore_dir/riffa/rx_engine_req.v" \
-"../../../../../ipcore_dir/riffa/reorder_queue.v" \
-"../../../../../ipcore_dir/riffa/interrupt_controller.v" \
-"../../../../../ipcore_dir/riffa/tx_engine_64.v" \
-"../../../../../ipcore_dir/riffa/tx_engine_32.v" \
-"../../../../../ipcore_dir/riffa/tx_engine_128.v" \
-"../../../../../ipcore_dir/riffa/translation_layer_64.v" \
-"../../../../../ipcore_dir/riffa/translation_layer_32.v" \
-"../../../../../ipcore_dir/riffa/translation_layer_128.v" \
-"../../../../../ipcore_dir/riffa/rx_engine_64.v" \
-"../../../../../ipcore_dir/riffa/rx_engine_32.v" \
-"../../../../../ipcore_dir/riffa/rx_engine_128.v" \
-"../../../../../ipcore_dir/riffa/recv_credit_flow_ctrl.v" \
-"../../../../../ipcore_dir/riffa/interrupt.v" \
-"../../../../../ipcore_dir/riffa/demux_1_to_n.v" \
-"../../../../../ipcore_dir/riffa/channel_64.v" \
-"../../../../../ipcore_dir/riffa/channel_32.v" \
-"../../../../../ipcore_dir/riffa/channel_128.v" \
-"../../../../../ipcore_dir/riffa/translation_layer.v" \
 "../../../../../instr_decoder.v" \
 "../../../../../softMC_pcie_app.v" \
 "../../../../../pipe_reg.v" \
@@ -143,9 +58,60 @@ verilog xil_defaultlib  --include "../../../../../" --include "../../../../../ip
 "../../../../../autoref_config.v" \
 "../../../../../softMC.v" \
 "../../../../../softMC_top.v" \
+
+sv xil_defaultlib  --include "../../../../../" --include "../../../../../ipcore_dir/riffa" --include "../../../../../ipcore_dir/xilinx_mig/user_design/sim" --include "../../../../project_1.ip_user_files/ipstatic/hdl/verilog" --include "../../../../project_1.srcs/sim_1/imports/imports" --include "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/map" --include "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/ip_top" --include "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal" --include "D:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
+"../../../../project_1.srcs/sources_1/new/xilinx_dma_pcie_ep.sv" \
+
+verilog xil_defaultlib  --include "../../../../../" --include "../../../../../ipcore_dir/riffa" --include "../../../../../ipcore_dir/xilinx_mig/user_design/sim" --include "../../../../project_1.ip_user_files/ipstatic/hdl/verilog" --include "../../../../project_1.srcs/sim_1/imports/imports" --include "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/map" --include "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/ip_top" --include "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal" --include "D:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
+"../../../../project_1.srcs/sources_1/new/xdma_app.v" \
+"../../../../project_1.ip_user_files/ip/xdma_0/ip_0/ip_0/sim/gtwizard_ultrascale_v1_7_gthe3_channel.v" \
+"../../../../project_1.ip_user_files/ip/xdma_0/ip_0/ip_0/sim/xdma_0_pcie3_ip_gt_gthe3_channel_wrapper.v" \
+"../../../../project_1.ip_user_files/ip/xdma_0/ip_0/ip_0/sim/xdma_0_pcie3_ip_gt_gtwizard_gthe3.v" \
+"../../../../project_1.ip_user_files/ip/xdma_0/ip_0/ip_0/sim/xdma_0_pcie3_ip_gt_gtwizard_top.v" \
+"../../../../project_1.ip_user_files/ip/xdma_0/ip_0/ip_0/sim/xdma_0_pcie3_ip_gt.v" \
+"../../../../project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_tph_tbl.v" \
+"../../../../project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_pipe_lane.v" \
+"../../../../project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_bram_16k.v" \
+"../../../../project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_bram_rep_8k.v" \
+"../../../../project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_bram_req_8k.v" \
+"../../../../project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_gt_channel.v" \
+"../../../../project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_pipe_pipeline.v" \
+"../../../../project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_pipe_misc.v" \
+"../../../../project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_init_ctrl.v" \
+"../../../../project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_gt_common.v" \
+"../../../../project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_bram_8k.v" \
+"../../../../project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_bram_rep.v" \
+"../../../../project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_bram_req.v" \
+"../../../../project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_phy_sync.v" \
+"../../../../project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_bram_cpl.v" \
+"../../../../project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_sys_clk_gen.v" \
+"../../../../project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_phy_rst.v" \
+"../../../../project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_phy_txeq.v" \
+"../../../../project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_phy_clk.v" \
+"../../../../project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_bram.v" \
+"../../../../project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_phy_rxeq.v" \
+"../../../../project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_gtwizard_top.v" \
+"../../../../project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_phy_wrapper.v" \
+"../../../../project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_pcie3_uscale_wrapper.v" \
+"../../../../project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_pcie3_uscale_top.v" \
+"../../../../project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_phy_sync_cell.v" \
+"../../../../project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_rxcdrhold.v" \
+"../../../../project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_pcie3_uscale_core_top.v" \
+"../../../../project_1.ip_user_files/ip/xdma_0/ip_0/sim/xdma_0_pcie3_ip.v" \
+"../../../../project_1.ip_user_files/ip/xdma_0/ip_1/sim/xdma_v4_1_8_blk_mem_64_reg_be.v" \
+"../../../../project_1.ip_user_files/ip/xdma_0/ip_2/sim/xdma_v4_1_8_blk_mem_64_noreg_be.v" \
+
+sv xil_defaultlib  --include "../../../../../" --include "../../../../../ipcore_dir/riffa" --include "../../../../../ipcore_dir/xilinx_mig/user_design/sim" --include "../../../../project_1.ip_user_files/ipstatic/hdl/verilog" --include "../../../../project_1.srcs/sim_1/imports/imports" --include "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/map" --include "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/ip_top" --include "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal" --include "D:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
+"../../../../project_1.ip_user_files/ip/xdma_0/xdma_v4_1/hdl/verilog/xdma_0_dma_bram_wrap.sv" \
+"../../../../project_1.ip_user_files/ip/xdma_0/xdma_v4_1/hdl/verilog/xdma_0_dma_bram_wrap_1024.sv" \
+"../../../../project_1.ip_user_files/ip/xdma_0/xdma_v4_1/hdl/verilog/xdma_0_dma_bram_wrap_2048.sv" \
+"../../../../project_1.ip_user_files/ip/xdma_0/xdma_v4_1/hdl/verilog/xdma_0_core_top.sv" \
+"../../../../project_1.ip_user_files/ip/xdma_0/sim/xdma_0.sv" \
+
+verilog xil_defaultlib  --include "../../../../../" --include "../../../../../ipcore_dir/riffa" --include "../../../../../ipcore_dir/xilinx_mig/user_design/sim" --include "../../../../project_1.ip_user_files/ipstatic/hdl/verilog" --include "../../../../project_1.srcs/sim_1/imports/imports" --include "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/map" --include "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/ip_top" --include "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal" --include "D:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
 "../../../../../ipcore_dir/xilinx_mig/user_design/sim/wiredly.v" \
 
-sv xil_defaultlib  --include "../../../../../" --include "../../../../../ipcore_dir/riffa" --include "../../../../../ipcore_dir/xilinx_mig/user_design/sim" --include "../../../../project_1.srcs/sim_1/imports/imports" --include "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/map" --include "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/ip_top" --include "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal" \
+sv xil_defaultlib  --include "../../../../../" --include "../../../../../ipcore_dir/riffa" --include "../../../../../ipcore_dir/xilinx_mig/user_design/sim" --include "../../../../project_1.ip_user_files/ipstatic/hdl/verilog" --include "../../../../project_1.srcs/sim_1/imports/imports" --include "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/map" --include "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/ip_top" --include "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal" --include "D:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
 "../../../../../tb_softMC_top.v" \
 "../../../../project_1.srcs/sim_1/imports/imports/arch_package.sv" \
 "../../../../project_1.srcs/sim_1/imports/imports/ddr4_sdram_model_wrapper.sv" \

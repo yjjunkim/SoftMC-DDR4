@@ -335,7 +335,7 @@ module instr_dispatcher #(parameter ROW_WIDTH = 15, BANK_WIDTH = 3, CKE_WIDTH = 
         .mcWrCAS              (mcWrCAS),
 		.dfi_we_n(dfi_we_n0)
 	);
-	
+	/*
 	instr_decoder #(.ROW_WIDTH(ROW_WIDTH), .BANK_WIDTH(BANK_WIDTH), .CS_WIDTH(CS_WIDTH)) i_instr_dec1(
 		.en(dec1_en),
 		.instr(dec1_instr),
@@ -350,7 +350,7 @@ module instr_dispatcher #(parameter ROW_WIDTH = 15, BANK_WIDTH = 3, CKE_WIDTH = 
 	    //.mcRdCAS              (mcRdCAS),
         //.mcWrCAS              (mcWrCAS),
 		.dfi_we_n(dfi_we_n1)
-	);
+	); */
 	
 	assign dfi_wrdata_mask = 0;
 	//assign dfi_wrdata = dfi_cas_n0 ? {8*(DQ_WIDTH/8){write_burst_data_r}} : {8*(DQ_WIDTH/8){write_burst_data_ns}};

@@ -60,7 +60,9 @@ module read_capturer #(parameter DQ_WIDTH = 64) (
 	
 	// jun : odd, even condtion 무시하고 직접 dfi signal 전달.
 	assign rdback_fifo_wren = dfi_rddata_valid;
+	//assign rdback_fifo_wren = 1'b1;
 	assign rdback_fifo_wrdata = dfi_rddata;
+	//assign rdback_fifo_wrdata = {512{1'b1}};
 	
 	assign dfi_clk_disable = rdback_fifo_full_r;
 

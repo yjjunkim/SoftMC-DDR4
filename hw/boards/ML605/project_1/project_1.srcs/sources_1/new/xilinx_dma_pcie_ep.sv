@@ -92,8 +92,9 @@ module xilinx_dma_pcie_ep #
 	//Data read back Interface
 	input rdback_fifo_empty,
 	output rdback_fifo_rden,
-	input[511:0] rdback_data
-	//input[DQ_WIDTH*4 - 1:0] rdback_data
+	input[511:0] rdback_data,
+	
+	output [2:0] leds
  );
 
    //-----------------------------------------------------------------------------------------------------------------------
@@ -201,7 +202,9 @@ module xilinx_dma_pcie_ep #
     wire          msi_enable;
 
       // AXI streaming ports
-    wire [C_DATA_WIDTH-1:0]	m_axis_h2c_tdata_0;
+    //wire [C_DATA_WIDTH-1:0]	m_axis_h2c_tdata_0;
+    wire [31:0] m_axis_h2c_tdata_0;
+    
     wire 			m_axis_h2c_tlast_0;
     wire 			m_axis_h2c_tvalid_0;
     wire 			m_axis_h2c_tready_0;
@@ -212,7 +215,7 @@ module xilinx_dma_pcie_ep #
     wire s_axis_c2h_tready_0;
     wire [C_DATA_WIDTH/8-1:0] s_axis_c2h_tkeep_0; 
 
-    wire [3:0]                  leds;
+    //wire [3:0]                  leds;
 
  wire free_run_clock;
     
@@ -320,7 +323,7 @@ module xilinx_dma_pcie_ep #
       .user_lnk_up(user_lnk_up),
       .sys_rst_n(sys_rst_n_c),
 
-      .leds(),
+      .leds(leds),
       ///////// softMC ///////////
       //.app_clk(app_clk),
       .user_clk(app_clk),
