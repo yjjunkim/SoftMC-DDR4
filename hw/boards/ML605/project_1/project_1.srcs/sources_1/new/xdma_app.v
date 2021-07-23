@@ -84,8 +84,8 @@ module xdma_app #(
     output reg s_axis_c2h_tvalid_0,
     input  wire s_axis_c2h_tready_0,
     output wire [C_DATA_WIDTH/8-1:0] s_axis_c2h_tkeep_0, // [15:0]
-    //input  wire [C_DATA_WIDTH-1:0] m_axis_h2c_tdata_0,
-    input  wire [31:0] m_axis_h2c_tdata_0,  // softMC : PCI_DATA_WIDTH
+    input  wire [C_DATA_WIDTH-1:0] m_axis_h2c_tdata_0,
+    //input  wire [31:0] m_axis_h2c_tdata_0,  // softMC : PCI_DATA_WIDTH
     //input  wire [128:0] m_axis_h2c_tdata_0,  // softMC : PCI_DATA_WIDTH
     input  wire m_axis_h2c_tlast_0,
     input  wire m_axis_h2c_tvalid_0,
@@ -120,10 +120,11 @@ module xdma_app #(
   
   ////// softmc Port list ///////
   reg app_en_r;
-  reg[31:0] rx_data_r;
+  //reg[31:0] rx_data_r;
+  reg[C_DATA_WIDTH-1:0] rx_data_r;
   
   //softmc led test
-  
+  /*
   always @(posedge user_clk)begin
     if(!sys_resetn)begin
         leds = 3'b111;
@@ -132,6 +133,7 @@ module xdma_app #(
         leds = 3'b000;
     end
   end
+  */
   
 
 
@@ -191,7 +193,7 @@ module xdma_app #(
       
       //////// softMC signal : reg connection /////////////
       assign s_axis_c2h_tkeep_0 = 16'b1111111111111111;
-      assign s_axis_c2h_tlast_0 =  m_axis_h2c_tlast_0;
+      assign s_axis_c2h_tlast_0 =  1'b1;
       
       assign m_axis_h2c_tready_0 = ~app_en_r | app_ack;
       always@(posedge user_clk)begin
@@ -209,7 +211,8 @@ module xdma_app #(
       localparam RECV_BUSY = 1'b1;
       
       reg sender_ack;
-      reg[511:0] send_data_r;
+      //reg[511:0] send_data_r;
+      reg[64*8 -1:0] send_data_r;
       
       reg recv_state = RECV_IDLE;
       assign rdback_fifo_rden = (recv_state == RECV_IDLE);
@@ -236,8 +239,10 @@ module xdma_app #(
         end
         
         
-        reg[2:0] sender_state = 0; //edit this if DQ_WIDTH or C_PCI_DATA_WIDTH changes
-        reg[2:0] sender_state_ns;
+        //reg[2:0] sender_state = 0; //edit this if DQ_WIDTH or C_PCI_DATA_WIDTH changes
+        //reg[2:0] sender_state_ns;
+        reg[3:0] sender_state = 0; //edit this if DQ_WIDTH or C_PCI_DATA_WIDTH changes
+        reg[3:0] sender_state_ns;
         
         //reg s_axis_c2h_tvalid_0; // softmc : for always statements
         
@@ -255,9 +260,10 @@ module xdma_app #(
                 
                 //if(CHNL_TX_DATA_REN) begin
                 if(s_axis_c2h_tready_0) begin
-                    sender_state_ns = sender_state + 3'd1;
+                    sender_state_ns = sender_state + 4'd1;
                     
-                    if(sender_state[1:0] == 2'b11)
+                    //if(sender_state[1:0] == 2'b11)
+                    if(sender_state[2:0] == 3'b111)
                         sender_ack = 1'b1;
                 end
             end
@@ -275,11 +281,14 @@ module xdma_app #(
     //wire[7:0] offset = {6'd0, sender_state[1:0]} << 6;
     //assign CHNL_TX_DATA = send_data_r[offset +: 64];  
     //wire[7:0] offset = {7'd0, sender_state[1:0]} << 7;
-    wire[8:0] offset = {7'd0, sender_state[1:0]} << 7;
+    //wire[8:0] offset = {7'd0, sender_state[1:0]} << 7;
     //assign s_axis_c2h_tdata_0 = send_data_r[offset +: 128];
     
+    wire[8:0] offset = {6'd0, sender_state[2:0]} << 6;
+    assign s_axis_c2h_tdata_0 = send_data_r[offset +: 64];
+    
     //assign s_axis_c2h_tdata_0 = {4{return_app_instr}};
-    assign s_axis_c2h_tdata_0 = m_axis_h2c_tdata_0;
+    //assign s_axis_c2h_tdata_0 = m_axis_h2c_tdata_0;
     
       
 

@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Fri Jul 23 18:30:24 2021
+| Date         : Fri Jul 23 21:04:48 2021
 | Host         : DESKTOP-ILOVGO9 running 64-bit major release  (build 9200)
 | Command      : report_drc -file softMC_top_drc_routed.rpt -pb softMC_top_drc_routed.pb -rpx softMC_top_drc_routed.rpx
 | Design       : softMC_top
@@ -41,12 +41,12 @@ u_ddr4_0/inst/u_ddr_cal_top/u_ddr_cal/u_xsdb_arbiter/Q[14],
 u_ddr4_0/inst/u_ddr_cal_top/u_ddr_cal/u_xsdb_arbiter/Q[15],
 u_ddr4_0/inst/u_phy2clb_fixdly_rdy_low/SYNC[0].sync_reg[1],
 u_ddr4_0/inst/u_phy2clb_fixdly_rdy_low/SYNC[1].sync_reg[1],
+u_ddr4_0/inst/u_phy2clb_fixdly_rdy_low/SYNC[2].sync_reg[1],
 u_ddr4_0/inst/u_phy2clb_fixdly_rdy_upp/SYNC[0].sync_reg[1],
 u_ddr4_0/inst/u_phy2clb_fixdly_rdy_upp/SYNC[1].sync_reg[1],
 u_ddr4_0/inst/u_phy2clb_fixdly_rdy_upp/SYNC[2].sync_reg[1],
 u_ddr4_0/inst/u_phy2clb_phy_rdy_low/SYNC[0].sync_reg[1],
 u_ddr4_0/inst/u_phy2clb_phy_rdy_low/SYNC[1].sync_reg[1],
-u_ddr4_0/inst/u_phy2clb_phy_rdy_low/SYNC[2].sync_reg[1],
 u_ddr4_0/inst/u_phy2clb_phy_rdy_upp/SYNC[0].sync_reg[1],
 u_ddr4_0/inst/u_phy2clb_phy_rdy_upp/SYNC[1].sync_reg[1],
 u_ddr4_0/inst/u_phy2clb_phy_rdy_upp/SYNC[2].sync_reg[1]
