@@ -91,6 +91,8 @@ module xdma_app #(
     input  wire m_axis_h2c_tvalid_0,
     output wire m_axis_h2c_tready_0,
     input  wire [C_DATA_WIDTH/8-1:0] m_axis_h2c_tkeep_0,
+    
+    //input wire [31:0] return_app_instr,
 
   // System IO signals
   input  wire         user_resetn,
@@ -274,9 +276,10 @@ module xdma_app #(
     //assign CHNL_TX_DATA = send_data_r[offset +: 64];  
     //wire[7:0] offset = {7'd0, sender_state[1:0]} << 7;
     wire[8:0] offset = {7'd0, sender_state[1:0]} << 7;
-    assign s_axis_c2h_tdata_0 = send_data_r[offset +: 128];
+    //assign s_axis_c2h_tdata_0 = send_data_r[offset +: 128];
     
-    //assign s_axis_c2h_tdata_0 = m_axis_h2c_tdata_0;
+    //assign s_axis_c2h_tdata_0 = {4{return_app_instr}};
+    assign s_axis_c2h_tdata_0 = m_axis_h2c_tdata_0;
     
       
 

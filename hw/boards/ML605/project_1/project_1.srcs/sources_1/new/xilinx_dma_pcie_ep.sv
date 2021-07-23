@@ -76,8 +76,8 @@ module xilinx_dma_pcie_ep #
 
 //VU9P_TUL_EX_String= FALSE
 
-
-
+    
+    
 
     input 					 sys_clk_p,
     input 					 sys_clk_n,
@@ -93,6 +93,9 @@ module xilinx_dma_pcie_ep #
 	input rdback_fifo_empty,
 	output rdback_fifo_rden,
 	input[511:0] rdback_data,
+	
+	//for pci test
+	//input [31:0] return_app_instr,
 	
 	output [2:0] leds
  );
@@ -298,7 +301,7 @@ module xilinx_dma_pcie_ep #
       .user_lnk_up     ( user_lnk_up )
     );
 
-
+  
   // XDMA taget application
   xdma_app #(
     .C_M_AXI_ID_WIDTH(C_M_AXI_ID_WIDTH)
@@ -330,6 +333,8 @@ module xilinx_dma_pcie_ep #
       .app_en(app_en),
       .app_ack(app_ack),
       .app_instr(app_instr),
+      
+      //.return_app_instr(return_app_instr),
 	
 	//Data read back Interface
 	  .rdback_fifo_empty(rdback_fifo_empty),

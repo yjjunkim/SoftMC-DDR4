@@ -547,7 +547,9 @@ module softMC_top #
 	
 	`endif //SIM
 	
-	
+	//for pci test
+    //wire [31:0] return_app_instr;
+    
 	 softMC #(.TCQ(TCQ), .tCK(tCK), .nCK_PER_CLK(nCK_PER_CLK), .RANK_WIDTH(RANK_WIDTH), .ROW_WIDTH(ROW_WIDTH), .BANK_WIDTH(BANK_WIDTH), 
 								.CKE_WIDTH(CKE_WIDTH), .CS_WIDTH(CS_WIDTH), .nCS_PER_RANK(nCS_PER_RANK), .DQ_WIDTH(DQ_WIDTH)) i_softmc(
 	.clk(c0_ddr4_clk),
@@ -604,6 +606,8 @@ module softMC_top #
 	.io_config_strobe(io_config_strobe),
 	.io_config(io_config),
 	
+	//.return_app_instr(return_app_instr),
+	
 	//Data read back Interface
 	.rdback_fifo_empty(rdback_fifo_empty),
 	.rdback_fifo_rden(rdback_fifo_rden),
@@ -643,7 +647,6 @@ riffa_top_v6_pcie_v2_5 #(
 	.rdback_data(rdback_data)
 );
 */
-
 xilinx_dma_pcie_ep
    EP (
     // SYS Inteface
@@ -680,7 +683,10 @@ xilinx_dma_pcie_ep
 	.rdback_fifo_rden(rdback_fifo_rden),
 	.rdback_data(rdback_data),
 	
+	//.return_app_instr(return_app_instr),
+	
 	.leds(leds)
+	
   
   );
   

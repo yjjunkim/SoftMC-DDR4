@@ -60,11 +60,17 @@ module softMC #(parameter TCQ = 100, tCK = 2500, nCK_PER_CLK = 2, RANK_WIDTH = 1
 	output                              io_config_strobe,
 	output [RANK_WIDTH:0]               io_config,
 	
+	//for pci test
+	//output [31:0] return_app_instr,
+	
 	//Data read back Interface
 	output rdback_fifo_empty,
 	input rdback_fifo_rden,
 	output[511:0] rdback_data
+	
 );
+	 //for pci test
+	 //assign return_app_instr = app_instr;
 	 
 	 //DFI constants
 	 assign dfi_reset_n = 1;
