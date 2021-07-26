@@ -5,7 +5,8 @@
 module softMC_top #
   (
 	parameter TCQ             = 100,
-	parameter tCK = 2500, //ps, TODO: let memory clok be 400 Mhz for now
+	//parameter tCK = 2500, //ps, TODO: let memory clok be 400 Mhz for now
+	parameter tCK = 1250, //ps, TODO: let memory clok be 400 Mhz for now
 	parameter nCK_PER_CLK     = 2,       // # of memory clocks per CLK
 	//parameter REFCLK_FREQ     = 200.0,   // IODELAY Reference Clock freq (MHz)
 	parameter REFCLK_FREQ     = 100.0,   // IODELAY Reference Clock freq (MHz)

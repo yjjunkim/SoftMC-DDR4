@@ -193,6 +193,7 @@ module xdma_app #(
       
       //////// softMC signal : reg connection /////////////
       assign s_axis_c2h_tkeep_0 = 16'b1111111111111111;
+      //assign s_axis_c2h_tlast_0 = m_axis_h2c_tlast_0;
       assign s_axis_c2h_tlast_0 =  1'b1;
       
       assign m_axis_h2c_tready_0 = ~app_en_r | app_ack;
@@ -257,6 +258,7 @@ module xdma_app #(
                 //CHNL_TX = 1'b1;
                 //CHNL_TX_DATA_VALID = 1'b1;
                 s_axis_c2h_tvalid_0 = 1'b1;
+                
                 
                 //if(CHNL_TX_DATA_REN) begin
                 if(s_axis_c2h_tready_0) begin

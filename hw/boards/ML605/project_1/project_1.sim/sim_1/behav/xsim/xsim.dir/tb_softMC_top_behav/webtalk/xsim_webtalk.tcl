@@ -1,6 +1,6 @@
 webtalk_init -webtalk_dir C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.sim/sim_1/behav/xsim/xsim.dir/tb_softMC_top_behav/webtalk/
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "Thu Jul 22 21:52:46 2021" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "Mon Jul 26 11:13:51 2021" -context "software_version_and_target_device"
 webtalk_add_data -client project -key product_version -value "XSIM v2020.2 (64-bit)" -context "software_version_and_target_device"
 webtalk_add_data -client project -key build_version -value "3064766" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_platform -value "WIN64" -context "software_version_and_target_device"
@@ -14,7 +14,7 @@ webtalk_add_data -client project -key target_package -value "not_applicable" -co
 webtalk_add_data -client project -key target_speed -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key random_id -value "1b4a3cad-3b86-41f9-ae58-7b4e173cc4fb" -context "software_version_and_target_device"
 webtalk_add_data -client project -key project_id -value "b05a631014b24489b6600b177fa38575" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_iteration -value "90" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_iteration -value "98" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_name -value "Windows Server 2016 or Windows 10" -context "user_environment"
 webtalk_add_data -client project -key os_release -value "major release  (build 9200)" -context "user_environment"
 webtalk_add_data -client project -key cpu_name -value "Intel(R) Core(TM) i5-10400 CPU @ 2.90GHz" -context "user_environment"
@@ -26,9 +26,9 @@ webtalk_add_data -client xsim -key runall -value "true" -context "xsim\\command_
 webtalk_add_data -client xsim -key runall -value "true" -context "xsim\\command_line_options"
 webtalk_add_data -client xsim -key Command -value "xsim" -context "xsim\\command_line_options"
 webtalk_add_data -client xsim -key trace_waveform -value "true" -context "xsim\\usage"
-webtalk_add_data -client xsim -key runtime -value "9262185 ps" -context "xsim\\usage"
-webtalk_add_data -client xsim -key iteration -value "3" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Time -value "37.56_sec" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Memory -value "340856_KB" -context "xsim\\usage"
-webtalk_transmit -clientid 3885287288 -regid "212246431_1777563735_210746078_924" -xml C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.sim/sim_1/behav/xsim/xsim.dir/tb_softMC_top_behav/webtalk/usage_statistics_ext_xsim.xml -html C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.sim/sim_1/behav/xsim/xsim.dir/tb_softMC_top_behav/webtalk/usage_statistics_ext_xsim.html -wdm C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.sim/sim_1/behav/xsim/xsim.dir/tb_softMC_top_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
+webtalk_add_data -client xsim -key runtime -value "5600858 ps" -context "xsim\\usage"
+webtalk_add_data -client xsim -key iteration -value "2" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Simulation_Time -value "34.80_sec" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Simulation_Memory -value "351660_KB" -context "xsim\\usage"
+webtalk_transmit -clientid 215097715 -regid "212246431_1777563735_210746078_924" -xml C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.sim/sim_1/behav/xsim/xsim.dir/tb_softMC_top_behav/webtalk/usage_statistics_ext_xsim.xml -html C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.sim/sim_1/behav/xsim/xsim.dir/tb_softMC_top_behav/webtalk/usage_statistics_ext_xsim.html -wdm C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.sim/sim_1/behav/xsim/xsim.dir/tb_softMC_top_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
 webtalk_terminate

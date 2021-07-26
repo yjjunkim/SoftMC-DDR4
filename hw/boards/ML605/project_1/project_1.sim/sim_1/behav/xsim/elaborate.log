@@ -4,18 +4,18 @@ Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto b05a631014
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named BM_CNT_WIDTH [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:574]
-WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named tPRDI [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:584]
-WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named tREFI [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:585]
-WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named tZQI [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:586]
-WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named ADDR_CMD_MODE [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:587]
-WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named ORDERING [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:588]
-WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named STARVE_LIMIT [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:589]
-WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named ECC [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:591]
-WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named ECC_TEST [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:592]
-WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named DATA_WIDTH [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:594]
-WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named PAYLOAD_WIDTH [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:595]
-WARNING: [VRFC 10-5021] port 'sys_reset_n' is not connected on this instance [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:554]
+WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named BM_CNT_WIDTH [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:576]
+WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named tPRDI [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:586]
+WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named tREFI [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:587]
+WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named tZQI [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:588]
+WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named ADDR_CMD_MODE [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:589]
+WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named ORDERING [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:590]
+WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named STARVE_LIMIT [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:591]
+WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named ECC [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:593]
+WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named ECC_TEST [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:594]
+WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named DATA_WIDTH [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:596]
+WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named PAYLOAD_WIDTH [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:597]
+WARNING: [VRFC 10-5021] port 'sys_reset_n' is not connected on this instance [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:556]
 Completed static elaboration
 Starting simulation data flow analysis
 WARNING: [XSIM 43-4398] File "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_cplx.sv" Line 855 : The System Verilog Assertion  will be ignored as it appears inside another process. This assertion is not yet supported.
@@ -44,8 +44,8 @@ Compiling module xil_defaultlib.ddr4_phy_v2_2_0_iob_byte(IOBTYPE...
 Compiling module xil_defaultlib.ddr4_phy_v2_2_0_iob_byte(IOBTYPE...
 Compiling module xil_defaultlib.ddr4_phy_v2_2_0_iob(BYTES=10,IOB...
 Compiling module xil_defaultlib.ddr4_phy_v2_2_0_fifo_sv(DEPTH=16...
-Compiling module xil_defaultlib.ddr4_phy_v2_2_0_bitslice_behav(t...
-Compiling module xil_defaultlib.ddr4_phy_v2_2_0_xiphy_behav(tCK=...
+Compiling module xil_defaultlib.ddr4_phy_v2_2_0_bitslice_behav
+Compiling module xil_defaultlib.ddr4_phy_v2_2_0_xiphy_behav(BYTE...
 Compiling module xil_defaultlib.ddr4_0_phy_ddr4_default
 Compiling module xil_defaultlib.ddr4_0_phy
 Compiling module xil_defaultlib.ddr4_v2_2_10_cal_debug_microblaz...
@@ -111,11 +111,11 @@ Compiling module xil_defaultlib.ddr4_v2_2_10_cal_sync(WIDTH=32,T...
 Compiling module xil_defaultlib.ddr4_v2_2_10_cal_sync(WIDTH=20,T...
 Compiling module xil_defaultlib.ddr4_0_ddr4_default
 Compiling module xil_defaultlib.ddr4_0
-Compiling module xil_defaultlib.maint_ctrl(tCK=2499)
-Compiling module xil_defaultlib.periodic_rd_ctrl(tCK=2499)
+Compiling module xil_defaultlib.maint_ctrl(tCK=1250)
+Compiling module xil_defaultlib.periodic_rd_ctrl(tCK=1250)
 Compiling module xil_defaultlib.zq_calib_ctrl_default
 Compiling module xil_defaultlib.autoref_ctrl
-Compiling module xil_defaultlib.maint_ctrl_top(tCK=2499)
+Compiling module xil_defaultlib.maint_ctrl_top(tCK=1250)
 Compiling module xil_defaultlib.maint_handler
 Compiling module xil_defaultlib.autoref_config
 Compiling module xil_defaultlib.instr_receiver
@@ -134,8 +134,8 @@ Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_CONV_VER(...
 Compiling module fifo_generator_v13_2_5.fifo_generator_vlog_beh(C_COMMON...
 Compiling module xil_defaultlib.rdback_fifo
 Compiling module xil_defaultlib.read_capturer
-Compiling module xil_defaultlib.softMC(tCK=2499,ROW_WIDTH=17,BAN...
-Compiling module xil_defaultlib.softMC_top(tCK=2499,REFCLK_FREQ=...
+Compiling module xil_defaultlib.softMC(tCK=1250,ROW_WIDTH=17,BAN...
+Compiling module xil_defaultlib.softMC_top(REFCLK_FREQ=100,CLKFB...
 Compiling module xil_defaultlib.short
 Compiling module xil_defaultlib.tb_softMC_top
 Compiling module xil_defaultlib.glbl

@@ -102,14 +102,14 @@
   MEM_CORE_VER = "xilinx.com:ip:mem:1.4",
   PhyIP_CUSTOM_PART_ATTRIBUTES = "NONE",
   ControllerType = "ddr4_sdram",
-  PhyIP_TimePeriod = 1071,
-  PhyIP_InputClockPeriod = 9996,
+  PhyIP_TimePeriod = 1250,
+  PhyIP_InputClockPeriod = 10000,
   PhyIP_MemoryType = "SODIMMs",
   PhyIP_MemoryPart = "MTA4ATF51264HZ-2G6",
   PhyIP_PhyClockRatio = "4:1",
   PhyIP_ECC = "false",
-  PhyIP_CasLatency = 14,
-  PhyIP_CasWriteLatency = 12,
+  PhyIP_CasLatency = 11,
+  PhyIP_CasWriteLatency = 11,
   PhyIP_DataWidth = 64,
   PhyIP_ChipSelect = "true",
   PhyIP_Slot = "Single",
@@ -119,7 +119,7 @@
   PhyIP_PARTIAL_RECONFIG_FLOW_MIG = "false",
   PhyIP_CLKFBOUT_MULT = "14",
   PhyIP_DIVCLK_DIVIDE = "1",
-  PhyIP_CLKOUT0_DIVIDE = "6",
+  PhyIP_CLKOUT0_DIVIDE = "7",
   PhyIP_CLKOUT1_DIVIDE = "0",
   PhyIP_CLKOUT2_DIVIDE = "0",
   PhyIP_CLKOUT3_DIVIDE = "0",
@@ -151,7 +151,7 @@
   PhyIP_CS_WIDTH = 1,
   PhyIP_CLAMSHELL = "false",
   PhyIP_RANK_WIDTH = 1,
-  PhyIP_tCK = 1071,
+  PhyIP_tCK = 1250,
   PhyIP_HR_MIN_FREQ = 0,
   PhyIP_DCI_CASCADE_CUTOFF = 938,
   PhyIP_IS_FASTER_SPEED_RAM = "No",
@@ -199,12 +199,12 @@
     parameter         DDR4_DB_HIF_VREF        = 8'b0001_1011,
     parameter         DDR4_DB_DIF_VREF        = 8'b0001_1011,
 
-    parameter         tCK                     = 1071,  // Memory clock period (DDR4 clock cycle)
-    parameter         ODTWRDEL                = 5'd12,
+    parameter         tCK                     = 1250,  // Memory clock period (DDR4 clock cycle)
+    parameter         ODTWRDEL                = 5'd11,
     parameter         ODTWRDUR                = 4'd6,
     parameter         ODTWRODEL               = 5'd9,
     parameter         ODTWRODUR               = 4'd6,
-    parameter         ODTRDDEL                = 5'd14,
+    parameter         ODTRDDEL                = 5'd11,
     parameter         ODTRDDUR                = 4'd6,
     parameter         ODTRDODEL               = 5'd9,
     parameter         ODTRDODUR               = 4'd6,
@@ -217,15 +217,15 @@
     parameter         EXTRA_CMD_DELAY         = 0,
     parameter         nCK_PER_CLK             = 4,
 
-    parameter         CLKIN_PERIOD_MMCM        = 9996,
+    parameter         CLKIN_PERIOD_MMCM        = 10000,
     parameter         CLKFBOUT_MULT_MMCM       = 14,
     parameter         DIVCLK_DIVIDE_MMCM       = 1,
-    parameter         CLKOUT0_DIVIDE_MMCM      = 6,
-    parameter         CLKOUT1_DIVIDE_MMCM      = 6,
-    parameter         CLKOUT2_DIVIDE_MMCM      = 6,
-    parameter         CLKOUT3_DIVIDE_MMCM      = 6,
-    parameter         CLKOUT4_DIVIDE_MMCM      = 6,
-    parameter         CLKOUT6_DIVIDE_MMCM      = 12,
+    parameter         CLKOUT0_DIVIDE_MMCM      = 7,
+    parameter         CLKOUT1_DIVIDE_MMCM      = 7,
+    parameter         CLKOUT2_DIVIDE_MMCM      = 7,
+    parameter         CLKOUT3_DIVIDE_MMCM      = 7,
+    parameter         CLKOUT4_DIVIDE_MMCM      = 7,
+    parameter         CLKOUT6_DIVIDE_MMCM      = 14,
     parameter         CLKOUTPHY_MODE           = "VCO_2X",
     parameter         C_FAMILY                 = "virtexu",
 
@@ -272,7 +272,7 @@
     parameter DDR4_REG_PARITY_ENABLE            = "OFF",
     parameter integer DBYTES                    = 8,
  
-    parameter         MR0                       = 13'b0011100100100,
+    parameter         MR0                       = 13'b0001100010000,
 
     parameter         ODTWR                     = 16'h0001, 
     parameter         ODTRD                     = 16'h0000,
@@ -282,8 +282,8 @@
     parameter         MR6                       = 13'b0010000011011,
 
 
-    parameter         MR2                       = 13'b0000000011000,
-    parameter         MR3                       = 13'b0001000000000,
+    parameter         MR2                       = 13'b0000000010000,
+    parameter         MR3                       = 13'b0000000000000,
     parameter         MR4                       = 13'b0000000000000,
 
     parameter         RD_VREF_VAL               = 7'h27,
@@ -300,11 +300,11 @@
     parameter         DDR4_REG_RC04             = {9'b0_0000_0100, 4'b0000},
 
     parameter         DDR4_REG_RC05             = {9'b0_0000_0101, 4'b0000},
-    parameter         tXPR                      = 85, // In fabric clock cycles
+    parameter         tXPR                      = 72, // In fabric clock cycles
     parameter         tMOD                      = 6, // In fabric clock cycles
     parameter         tMRD                      = 2, // In fabric clock cycles
     parameter         tZQINIT                   = 256, // In fabric clock cycles
-    parameter         tRFC                    = 327, //In DDR4 clock cycles
+    parameter         tRFC                    = 280, //In DDR4 clock cycles
     parameter         MEM_CODE                  = 0,
     parameter         C_DEBUG_ENABLED           = 0,
     parameter         CPLX_PAT_LENGTH           = "LONG",
@@ -363,8 +363,8 @@
     parameter         CAL_WR_VREF_PATTERN       = "SIMPLE",
     parameter         CAL_DQS_TRACKING          = "FULL",
     parameter         CAL_JITTER                = "FULL",
-    parameter         t200us                    = 46686, // In fabric clock cycles
-    parameter         t500us                    = 116714 // In fabric clock cycles
+    parameter         t200us                    = 40000, // In fabric clock cycles
+    parameter         t500us                    = 100000 // In fabric clock cycles
   `endif
   ) 
   (

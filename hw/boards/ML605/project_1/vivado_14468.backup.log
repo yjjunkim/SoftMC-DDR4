@@ -1,0 +1,1372 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Jul 24 16:30:03 2021
+# Process ID: 14468
+# Current directory: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent28340 C:\Users\yongj\Desktop\softmc_ddr4\hw\boards\ML605\project_1\project_1.xpr
+# Log file: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/vivado.log
+# Journal file: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.xpr
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'C:/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'ddr4_0' generated file not found 'c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ddr4_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'ddr4_0' generated file not found 'c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ddr4_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'ddr4_0' generated file not found 'c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ddr4_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'ddr4_0' generated file not found 'c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ddr4_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'ddr4_0' generated file not found 'c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ddr4_0_sim_netlist.vhdl'. Please regenerate to continue.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1379.906 ; gain = 0.000
+INFO: [Device 21-403] Loading part xcvu095-ffvb2104-2-e
+set_property -dict [list CONFIG.C0.DDR4_CLKFBOUT_MULT {8} CONFIG.C0.DDR4_CLKOUT0_DIVIDE {3}] [get_ips ddr4_0]
+generate_target all [get_files  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ddr4_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ddr4_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ddr4_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ddr4_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ddr4_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ddr4_0'...
+Exporting to file c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/hw_handoff/ddr4_0_microblaze_mcs.hwh
+Generated Block Design Tcl file c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/hw_handoff/ddr4_0_microblaze_mcs_bd.tcl
+Generated Hardware Definition File c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/synth/ddr4_0_microblaze_mcs.hwdef
+generate_target: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2097.371 ; gain = 21.617
+catch { config_ip_cache -export [get_ips -all ddr4_0] }
+export_ip_user_files -of_objects [get_files C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ddr4_0.xci] -no_script -sync -force -quiet
+launch_runs ddr4_0_synth_1 -jobs 8
+[Sat Jul 24 16:32:50 2021] Launched ddr4_0_synth_1...
+Run output will be captured here: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/ddr4_0_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ddr4_0.xci] -directory C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files -ipstatic_source_dir C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.cache/compile_simlib/modelsim} {questa=C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.cache/compile_simlib/questa} {riviera=C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.cache/compile_simlib/riviera} {activehdl=C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/xdma_0.xci' is already up-to-date
+[Sat Jul 24 16:33:07 2021] Launched ddr4_0_synth_1, synth_1...
+Run output will be captured here:
+ddr4_0_synth_1: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/ddr4_0_synth_1/runme.log
+synth_1: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/synth_1/runme.log
+[Sat Jul 24 16:33:07 2021] Launched impl_1...
+Run output will be captured here: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 04 2020-06:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 2201.562 ; gain = 13.828
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00000000000000
+set_property PROGRAM.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.bit} [get_hw_devices xcvu095_0]
+set_property PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
+set_property FULL_PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
+current_hw_device [get_hw_devices xcvu095_0]
+refresh_hw_device [lindex [get_hw_devices xcvu095_0] 0]
+CRITICAL WARNING: [Xicom 50-46] One or more detected MIG version registers have empty values: MIG properties will not be built.
+Parameter Map Version: 0, Error Map Version: 0, Calibration Map Version: 0, Warning Map Version: 0
+CRITICAL WARNING: [Xicom 50-46] One or more detected MIG version registers have empty values: MIG properties will not be built.
+Parameter Map Version: 0, Error Map Version: 0, Calibration Map Version: 0, Warning Map Version: 0
+INFO: [Labtools 27-2302] Device xcvu095 (JTAG device index = 0) is programmed with a design that has 6 MIG core(s).
+set_property PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
+set_property FULL_PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
+set_property PROGRAM.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.bit} [get_hw_devices xcvu095_0]
+program_hw_devices [get_hw_devices xcvu095_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 3800.500 ; gain = 1.445
+refresh_hw_device [lindex [get_hw_devices xcvu095_0] 0]
+WARNING: [Labtools 27-3410] Calibration Failed.
+Resolution: For further debugging information, please refer to the Debug Guide that can be found from the following URL - https://www.xilinx.com/support/answers/68937.html
+INFO: [Labtools 27-2302] Device xcvu095 (JTAG device index = 0) is programmed with a design that has 1 MIG core(s).
+close_hw_manager
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+warning: cannot open library ftd2xx.dll, first required symbol FT_Close, Digilent FTDI based JTAG cables cannot be supported
+warning: cannot open library ftd2xx.dll, first required symbol FT_Close, Xilinx FTDI based JTAG cables cannot be supported
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 04 2020-06:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 3892.539 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00000000000000
+set_property PROGRAM.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.bit} [get_hw_devices xcvu095_0]
+set_property PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
+set_property FULL_PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
+current_hw_device [get_hw_devices xcvu095_0]
+refresh_hw_device [lindex [get_hw_devices xcvu095_0] 0]
+WARNING: [Labtools 27-3410] Calibration Failed.
+Resolution: For further debugging information, please refer to the Debug Guide that can be found from the following URL - https://www.xilinx.com/support/answers/68937.html
+INFO: [Labtools 27-2302] Device xcvu095 (JTAG device index = 0) is programmed with a design that has 1 MIG core(s).
+get_hw_migs
+localhost:3121/xilinx_tcf/Xilinx/00000000000000/0_1/MIG_1
+report_property [lindex [get_hw_migs] x]
+bad index "x": must be integer?[+-]integer? or end?[+-]integer?
+refresh_hw_mig [lindex [get_hw_migs] x]
+bad index "x": must be integer?[+-]integer? or end?[+-]integer?
+refresh_hw_mig [lindex [get_hw_migs] 00000000000000]
+close_hw_target {localhost:3121/xilinx_tcf/Xilinx/00000000000000}
+INFO: [Labtoolstcl 44-464] Closing hw_target localhost:3121/xilinx_tcf/Xilinx/00000000000000
+refresh_hw_server {localhost:3121}
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00000000000000
+set_property PROGRAM.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.bit} [get_hw_devices xcvu095_0]
+set_property PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
+set_property FULL_PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
+current_hw_device [get_hw_devices xcvu095_0]
+refresh_hw_device [lindex [get_hw_devices xcvu095_0] 0]
+WARNING: [Labtools 27-3410] Calibration Failed.
+Resolution: For further debugging information, please refer to the Debug Guide that can be found from the following URL - https://www.xilinx.com/support/answers/68937.html
+INFO: [Labtools 27-2302] Device xcvu095 (JTAG device index = 0) is programmed with a design that has 1 MIG core(s).
+refresh_hw_target {localhost:3121/xilinx_tcf/Xilinx/00000000000000}
+refresh_hw_target {localhost:3121/xilinx_tcf/Xilinx/00000000000000}
+close_hw_target {localhost:3121/xilinx_tcf/Xilinx/00000000000000}
+INFO: [Labtoolstcl 44-464] Closing hw_target localhost:3121/xilinx_tcf/Xilinx/00000000000000
+refresh_hw_server {localhost:3121}
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 3924.176 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00000000000000
+set_property PROGRAM.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.bit} [get_hw_devices xcvu095_0]
+set_property PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
+set_property FULL_PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
+current_hw_device [get_hw_devices xcvu095_0]
+refresh_hw_device [lindex [get_hw_devices xcvu095_0] 0]
+WARNING: [Labtools 27-3410] Calibration Failed.
+Resolution: For further debugging information, please refer to the Debug Guide that can be found from the following URL - https://www.xilinx.com/support/answers/68937.html
+INFO: [Labtools 27-2302] Device xcvu095 (JTAG device index = 0) is programmed with a design that has 1 MIG core(s).
+set_property EFUSE_TEST_MODE 1 [get_hw_servers localhost:3121]
+set_property EFUSE_TEST_MODE 0 [get_hw_servers localhost:3121]
+set_property EFUSE_TEST_MODE 1 [get_hw_servers localhost:3121]
+set_property EFUSE_TEST_MODE 0 [get_hw_servers localhost:3121]
+set_property EFUSE_TEST_MODE 1 [get_hw_servers localhost:3121]
+close_hw_target {localhost:3121/xilinx_tcf/Xilinx/00000000000000}
+INFO: [Labtoolstcl 44-464] Closing hw_target localhost:3121/xilinx_tcf/Xilinx/00000000000000
+refresh_hw_server {localhost:3121}
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00000000000000
+set_property PROGRAM.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.bit} [get_hw_devices xcvu095_0]
+set_property PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
+set_property FULL_PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
+current_hw_device [get_hw_devices xcvu095_0]
+refresh_hw_device [lindex [get_hw_devices xcvu095_0] 0]
+WARNING: [Labtools 27-3410] Calibration Failed.
+Resolution: For further debugging information, please refer to the Debug Guide that can be found from the following URL - https://www.xilinx.com/support/answers/68937.html
+INFO: [Labtools 27-2302] Device xcvu095 (JTAG device index = 0) is programmed with a design that has 1 MIG core(s).
+set_property EFUSE_TEST_MODE 0 [get_hw_servers localhost:3121]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/xdma_0.xci' is already up-to-date
+[Sat Jul 24 17:08:53 2021] Launched synth_1...
+Run output will be captured here: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/synth_1/runme.log
+[Sat Jul 24 17:08:53 2021] Launched impl_1...
+Run output will be captured here: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/runme.log
+close_hw_manager
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 04 2020-06:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 3924.176 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00000000000000
+current_hw_device [get_hw_devices xcvu095_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xcvu095_0] 0]
+WARNING: [Labtools 27-3410] Calibration Failed.
+Resolution: For further debugging information, please refer to the Debug Guide that can be found from the following URL - https://www.xilinx.com/support/answers/68937.html
+INFO: [Labtools 27-2302] Device xcvu095 (JTAG device index = 0) is programmed with a design that has 1 MIG core(s).
+close_hw_manager
+open_example_project -force -dir C:/Users/yongj/Desktop/xusps3_test [get_ips  ddr4_0]
+INFO: [IP_Flow 19-1686] Generating 'Examples' target for IP 'ddr4_0'...
+open_example_project: Time (s): cpu = 00:00:03 ; elapsed = 00:01:17 . Memory (MB): peak = 3937.266 ; gain = 13.090
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+warning: cannot open library ftd2xx.dll, first required symbol FT_Close, Digilent FTDI based JTAG cables cannot be supported
+warning: cannot open library ftd2xx.dll, first required symbol FT_Close, Xilinx FTDI based JTAG cables cannot be supported
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 04 2020-06:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 3937.266 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00000000000000
+set_property PROGRAM.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.bit} [get_hw_devices xcvu095_0]
+set_property PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
+set_property FULL_PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
+current_hw_device [get_hw_devices xcvu095_0]
+refresh_hw_device [lindex [get_hw_devices xcvu095_0] 0]
+WARNING: [Labtools 27-3410] Calibration Failed.
+Resolution: For further debugging information, please refer to the Debug Guide that can be found from the following URL - https://www.xilinx.com/support/answers/68937.html
+INFO: [Labtools 27-2302] Device xcvu095 (JTAG device index = 0) is programmed with a design that has 1 MIG core(s).
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/xdma_0.xci' is already up-to-date
+[Sat Jul 24 17:26:20 2021] Launched synth_1...
+Run output will be captured here: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/synth_1/runme.log
+[Sat Jul 24 17:26:20 2021] Launched impl_1...
+Run output will be captured here: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/runme.log
+close_hw_manager
+reset_run impl_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/xdma_0.xci' is already up-to-date
+[Sat Jul 24 17:30:42 2021] Launched synth_1...
+Run output will be captured here: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/synth_1/runme.log
+[Sat Jul 24 17:30:42 2021] Launched impl_1...
+Run output will be captured here: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/runme.log
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-50] Design contains embedded sources, generating MEM files for simulation...
+Generating merged BMM file for the design top 'ddr4_0'...
+Generating merged BMM file for the design top 'ddr4_0'...
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_softMC_top' in fileset 'sim_1'...
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/instr_fifo/instr_fifo.xml'
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/xdma_0.xml'
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/ip_0/xdma_0_pcie3_ip.xml'
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/ip_2/xdma_v4_1_8_blk_mem_64_noreg_be.xml'
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/ip_1/xdma_v4_1_8_blk_mem_64_reg_be.xml'
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/ip_0/ip_0/xdma_0_pcie3_ip_gt.xml'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -L xilinx_vip -prj tb_softMC_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_6/sim/bd_9054_lmb_bram_I_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9054_lmb_bram_I_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_9/sim/bd_9054_second_lmb_bram_I_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9054_second_lmb_bram_I_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/sim/bd_9054.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9054
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_0/sim/ddr4_0_microblaze_mcs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_0_microblaze_mcs
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/phy/ddr4_0_phy_ddr4.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_0_phy_ddr4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/phy/ddr4_phy_v2_2_xiphy_behav.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_0_xiphy_behav
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_0_bitslice_behav
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_0_fifo_sv
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/phy/ddr4_phy_v2_2_xiphy.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_0_xiphy
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/iob/ddr4_phy_v2_2_iob_byte.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_0_iob_byte
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/iob/ddr4_phy_v2_2_iob.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_0_iob
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/clocking/ddr4_phy_v2_2_pll.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_0_pll
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/xiphy_files/ddr4_phy_v2_2_xiphy_tristate_wrapper.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_0_xiphy_tristate_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/xiphy_files/ddr4_phy_v2_2_xiphy_riuor_wrapper.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_0_xiphy_riuor_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/xiphy_files/ddr4_phy_v2_2_xiphy_control_wrapper.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_0_xiphy_control_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/xiphy_files/ddr4_phy_v2_2_xiphy_byte_wrapper.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_0_xiphy_byte_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/xiphy_files/ddr4_phy_v2_2_xiphy_bitslice_wrapper.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_0_xiphy_bitslice_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/ip_top/ddr4_0_phy.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_0_phy
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/clocking/ddr4_v2_2_infrastructure.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_infrastructure
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_xsdb_bram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_xsdb_bram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_write.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_write
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_wr_byte.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_wr_byte
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_wr_bit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_wr_bit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_sync.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_sync
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_read.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_read
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_rd_en.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_rd_en
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_pi.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_pi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_mc_odt.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_mc_odt
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_debug_microblaze.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_debug_microblaze
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_cplx_data.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_cplx_data
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_cplx.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_cplx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_config_rom.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_config_rom
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_addr_decode
+WARNING: [VRFC 10-8426] non-net output port 'io_ready_lvl' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:165]
+WARNING: [VRFC 10-8426] non-net output port 'ub_ready' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:166]
+WARNING: [VRFC 10-8426] non-net output port 'cal_DMOut_n' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:235]
+WARNING: [VRFC 10-8426] non-net output port 'casSlot' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:267]
+WARNING: [VRFC 10-8426] non-net output port 'rdCAS' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:269]
+WARNING: [VRFC 10-8426] non-net output port 'wrCAS' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:272]
+WARNING: [VRFC 10-8426] non-net output port 'lowCL0' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:276]
+WARNING: [VRFC 10-8426] non-net output port 'lowCL1' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:277]
+WARNING: [VRFC 10-8426] non-net output port 'lowCL2' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:278]
+WARNING: [VRFC 10-8426] non-net output port 'lowCL3' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:279]
+WARNING: [VRFC 10-8426] non-net output port 'uppCL0' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:280]
+WARNING: [VRFC 10-8426] non-net output port 'uppCL1' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:281]
+WARNING: [VRFC 10-8426] non-net output port 'uppCL2' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:282]
+WARNING: [VRFC 10-8426] non-net output port 'uppCL3' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:283]
+WARNING: [VRFC 10-8426] non-net output port 'win_status' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:320]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_top
+WARNING: [VRFC 10-8426] non-net output port 'cal_RESET_n' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_top.sv:323]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_xsdb_arbiter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_xsdb_arbiter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_chipscope_xsdb_slave.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_chipscope_xsdb_slave
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_dp_AB9.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cfg_mem_mod
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_bram_tdp
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/ip_top/ddr4_0_ddr4.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_0_ddr4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_0_ddr4_cal_riu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_0_ddr4_cal_riu
+WARNING: [VRFC 10-8426] non-net output port 'io_addr_strobe_lvl_riuclk' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_0_ddr4_cal_riu.sv:115]
+WARNING: [VRFC 10-8426] non-net output port 'io_write_strobe_riuclk' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_0_ddr4_cal_riu.sv:118]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/ip_top/ddr4_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/tb/microblaze_mcs_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_0_microblaze_mcs
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'ddr4_0_microblaze_mcs' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/tb/microblaze_mcs_0.sv:36]
+INFO: [VRFC 10-311] analyzing module microblaze_mcs
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/rdback_fifo/sim/rdback_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rdback_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/instr_fifo/sim/instr_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instr_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instr_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_pcie_app.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module softMC_pcie_app
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/pipe_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pipe_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_dispatcher.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instr_dispatcher
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/read_capturer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module read_capturer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_handler.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module maint_handler
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module maint_ctrl_top
+INFO: [VRFC 10-311] analyzing module maint_ctrl
+INFO: [VRFC 10-311] analyzing module periodic_rd_ctrl
+INFO: [VRFC 10-311] analyzing module zq_calib_ctrl
+INFO: [VRFC 10-311] analyzing module autoref_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/iseq_dispatcher.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module iseq_dispatcher
+WARNING: [VRFC 10-3380] identifier 'instr0_disp_en' is used before its declaration [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/iseq_dispatcher.v:81]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_receiver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instr_receiver
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/autoref_config.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module autoref_config
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module softMC
+INFO: [VRFC 10-2458] undeclared symbol dispatcher_busy, assumed default net type wire [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC.v:166]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module softMC_top
+INFO: [VRFC 10-2458] undeclared symbol ddr_dm, assumed default net type wire [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_top.v:186]
+INFO: [VRFC 10-2458] undeclared symbol sys_rst, assumed default net type wire [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_top.v:455]
+INFO: [VRFC 10-2458] undeclared symbol app_en, assumed default net type wire [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_top.v:559]
+INFO: [VRFC 10-2458] undeclared symbol processing_iseq, assumed default net type wire [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_top.v:563]
+INFO: [VRFC 10-2458] undeclared symbol rdback_fifo_empty, assumed default net type wire [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_top.v:612]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/new/xilinx_dma_pcie_ep.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xilinx_dma_pcie_ep
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/new/xdma_app.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_app
+INFO: [VRFC 10-2458] undeclared symbol sys_resetn, assumed default net type wire [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/new/xdma_app.v:141]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/ip_0/sim/gtwizard_ultrascale_v1_7_gthe3_channel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gtwizard_ultrascale_v1_7_9_gthe3_channel
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/ip_0/sim/xdma_0_pcie3_ip_gt_gthe3_channel_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_gt_gthe3_channel_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/ip_0/sim/xdma_0_pcie3_ip_gt_gtwizard_gthe3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_gt_gtwizard_gthe3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/ip_0/sim/xdma_0_pcie3_ip_gt_gtwizard_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_gt_gtwizard_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/ip_0/sim/xdma_0_pcie3_ip_gt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_gt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_tph_tbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_tph_tbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_pipe_lane.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_pipe_lane
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_bram_16k.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_bram_16k
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_bram_rep_8k.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_bram_rep_8k
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_bram_req_8k.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_bram_req_8k
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_gt_channel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_gt_channel
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_pipe_pipeline.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_pipe_pipeline
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_pipe_misc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_pipe_misc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_init_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_init_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_gt_common.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_gt_common
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_bram_8k.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_bram_8k
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_bram_rep.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_bram_rep
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_bram_req.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_bram_req
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_phy_sync.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_phy_sync
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_bram_cpl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_bram_cpl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_sys_clk_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_sys_clk_gen_ps
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_phy_rst.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_phy_rst
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_phy_txeq.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_phy_txeq
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_phy_clk.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_phy_clk
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_bram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_phy_rxeq.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_phy_rxeq
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_gtwizard_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_gtwizard_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_phy_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_phy_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_pcie3_uscale_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_pcie3_uscale_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_pcie3_uscale_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_pcie3_uscale_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_phy_sync_cell.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_phy_sync_cell
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_rxcdrhold.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_rxcdrhold
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_pcie3_uscale_core_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_pcie3_uscale_core_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/sim/xdma_0_pcie3_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_1/sim/xdma_v4_1_8_blk_mem_64_reg_be.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_v4_1_8_blk_mem_64_reg_be
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_2/sim/xdma_v4_1_8_blk_mem_64_noreg_be.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_v4_1_8_blk_mem_64_noreg_be
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/xilinx_mig/user_design/sim/wiredly.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WireDelay
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module short
+INFO: [VRFC 10-311] analyzing module tb_softMC_top
+WARNING: [VRFC 10-3248] data object 'c0_ddr4_ck_t' is already declared [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:325]
+WARNING: [VRFC 10-3703] second declaration of 'c0_ddr4_ck_t' ignored [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:325]
+WARNING: [VRFC 10-3028] 'c0_ddr4_ck_t' was previously declared with a range [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:325]
+WARNING: [VRFC 10-3248] data object 'c0_ddr4_ck_c' is already declared [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:326]
+WARNING: [VRFC 10-3703] second declaration of 'c0_ddr4_ck_c' ignored [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:326]
+WARNING: [VRFC 10-3028] 'c0_ddr4_ck_c' was previously declared with a range [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:326]
+WARNING: [VRFC 10-3380] identifier 'ADDR_WIDTH' is used before its declaration [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:342]
+WARNING: [VRFC 10-3380] identifier 'ADDR_WIDTH' is used before its declaration [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:953]
+WARNING: [VRFC 10-2821] generate block is allowed only inside loop and conditional generate in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:1011]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/imports/arch_package.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3264] design element 'arch_package' is previously defined, ignoring this definition [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/imports/arch_package.sv:5]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/imports/ddr4_sdram_model_wrapper.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/imports/proj_package.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/imports/ddr4_model.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module StateTable
+INFO: [VRFC 10-311] analyzing module ddr4_model
+WARNING: [VRFC 10-2821] generate block is allowed only inside loop and conditional generate in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/imports/ddr4_model.sv:340]
+WARNING: [VRFC 10-2821] generate block is allowed only inside loop and conditional generate in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/imports/ddr4_model.sv:1535]
+WARNING: [VRFC 10-2821] generate block is allowed only inside loop and conditional generate in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/imports/ddr4_model.sv:1582]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/imports/interface.sv" into library xil_defaultlib
+"xvhdl --incr --relax -prj tb_softMC_top_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_0/sim/bd_9054_microblaze_I_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'bd_9054_microblaze_I_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_1/sim/bd_9054_rst_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'bd_9054_rst_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_2/sim/bd_9054_ilmb_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'bd_9054_ilmb_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_3/sim/bd_9054_dlmb_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'bd_9054_dlmb_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_4/sim/bd_9054_dlmb_cntlr_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'bd_9054_dlmb_cntlr_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_5/sim/bd_9054_ilmb_cntlr_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'bd_9054_ilmb_cntlr_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_7/sim/bd_9054_second_dlmb_cntlr_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'bd_9054_second_dlmb_cntlr_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_8/sim/bd_9054_second_ilmb_cntlr_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'bd_9054_second_ilmb_cntlr_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_10/sim/bd_9054_iomodule_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'bd_9054_iomodule_0_0'
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:27 . Memory (MB): peak = 3958.676 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '27' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto b05a631014b24489b6600b177fa38575 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L microblaze_v11_0_4 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L lmb_v10_v3_0_11 -L lmb_bram_if_cntlr_v4_0_19 -L blk_mem_gen_v8_4_4 -L iomodule_v3_1_6 -L fifo_generator_v13_2_5 -L gtwizard_ultrascale_v1_7_9 -L xdma_v4_1_8 -L uvm -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_softMC_top_behav xil_defaultlib.tb_softMC_top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto b05a631014b24489b6600b177fa38575 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L microblaze_v11_0_4 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L lmb_v10_v3_0_11 -L lmb_bram_if_cntlr_v4_0_19 -L blk_mem_gen_v8_4_4 -L iomodule_v3_1_6 -L fifo_generator_v13_2_5 -L gtwizard_ultrascale_v1_7_9 -L xdma_v4_1_8 -L uvm -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_softMC_top_behav xil_defaultlib.tb_softMC_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3180] cannot find port 'rdback_data' on this module [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:633]
+ERROR: [VRFC 10-3180] cannot find port 'rdback_fifo_rden' on this module [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:632]
+ERROR: [VRFC 10-3180] cannot find port 'app_instr' on this module [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:630]
+ERROR: [VRFC 10-3180] cannot find port 'app_ack' on this module [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:629]
+ERROR: [VRFC 10-3180] cannot find port 'app_en' on this module [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:628]
+ERROR: [VRFC 10-3180] cannot find port 'sys_rst' on this module [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:601]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:22 . Memory (MB): peak = 3958.676 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '22' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:01:01 . Memory (MB): peak = 3958.676 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+reset_run impl_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-50] Design contains embedded sources, generating MEM files for simulation...
+Generating merged BMM file for the design top 'ddr4_0'...
+Generating merged BMM file for the design top 'ddr4_0'...
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_softMC_top' in fileset 'sim_1'...
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/instr_fifo/instr_fifo.xml'
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/xdma_0.xml'
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/ip_0/xdma_0_pcie3_ip.xml'
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/ip_2/xdma_v4_1_8_blk_mem_64_noreg_be.xml'
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/ip_1/xdma_v4_1_8_blk_mem_64_reg_be.xml'
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/ip_0/ip_0/xdma_0_pcie3_ip_gt.xml'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -L xilinx_vip -prj tb_softMC_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_6/sim/bd_9054_lmb_bram_I_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9054_lmb_bram_I_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_9/sim/bd_9054_second_lmb_bram_I_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9054_second_lmb_bram_I_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/sim/bd_9054.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9054
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_0/sim/ddr4_0_microblaze_mcs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_0_microblaze_mcs
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/phy/ddr4_0_phy_ddr4.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_0_phy_ddr4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/phy/ddr4_phy_v2_2_xiphy_behav.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_0_xiphy_behav
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_0_bitslice_behav
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_0_fifo_sv
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/phy/ddr4_phy_v2_2_xiphy.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_0_xiphy
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/iob/ddr4_phy_v2_2_iob_byte.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_0_iob_byte
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/iob/ddr4_phy_v2_2_iob.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_0_iob
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/clocking/ddr4_phy_v2_2_pll.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_0_pll
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/xiphy_files/ddr4_phy_v2_2_xiphy_tristate_wrapper.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_0_xiphy_tristate_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/xiphy_files/ddr4_phy_v2_2_xiphy_riuor_wrapper.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_0_xiphy_riuor_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/xiphy_files/ddr4_phy_v2_2_xiphy_control_wrapper.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_0_xiphy_control_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/xiphy_files/ddr4_phy_v2_2_xiphy_byte_wrapper.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_0_xiphy_byte_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/xiphy_files/ddr4_phy_v2_2_xiphy_bitslice_wrapper.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_0_xiphy_bitslice_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/ip_top/ddr4_0_phy.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_0_phy
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/clocking/ddr4_v2_2_infrastructure.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_infrastructure
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_xsdb_bram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_xsdb_bram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_write.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_write
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_wr_byte.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_wr_byte
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_wr_bit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_wr_bit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_sync.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_sync
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_read.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_read
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_rd_en.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_rd_en
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_pi.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_pi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_mc_odt.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_mc_odt
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_debug_microblaze.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_debug_microblaze
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_cplx_data.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_cplx_data
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_cplx.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_cplx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_config_rom.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_config_rom
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_addr_decode
+WARNING: [VRFC 10-8426] non-net output port 'io_ready_lvl' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:165]
+WARNING: [VRFC 10-8426] non-net output port 'ub_ready' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:166]
+WARNING: [VRFC 10-8426] non-net output port 'cal_DMOut_n' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:235]
+WARNING: [VRFC 10-8426] non-net output port 'casSlot' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:267]
+WARNING: [VRFC 10-8426] non-net output port 'rdCAS' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:269]
+WARNING: [VRFC 10-8426] non-net output port 'wrCAS' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:272]
+WARNING: [VRFC 10-8426] non-net output port 'lowCL0' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:276]
+WARNING: [VRFC 10-8426] non-net output port 'lowCL1' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:277]
+WARNING: [VRFC 10-8426] non-net output port 'lowCL2' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:278]
+WARNING: [VRFC 10-8426] non-net output port 'lowCL3' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:279]
+WARNING: [VRFC 10-8426] non-net output port 'uppCL0' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:280]
+WARNING: [VRFC 10-8426] non-net output port 'uppCL1' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:281]
+WARNING: [VRFC 10-8426] non-net output port 'uppCL2' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:282]
+WARNING: [VRFC 10-8426] non-net output port 'uppCL3' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:283]
+WARNING: [VRFC 10-8426] non-net output port 'win_status' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:320]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_top
+WARNING: [VRFC 10-8426] non-net output port 'cal_RESET_n' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_top.sv:323]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_xsdb_arbiter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_xsdb_arbiter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_chipscope_xsdb_slave.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_chipscope_xsdb_slave
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_dp_AB9.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cfg_mem_mod
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_bram_tdp
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/ip_top/ddr4_0_ddr4.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_0_ddr4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_0_ddr4_cal_riu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_0_ddr4_cal_riu
+WARNING: [VRFC 10-8426] non-net output port 'io_addr_strobe_lvl_riuclk' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_0_ddr4_cal_riu.sv:115]
+WARNING: [VRFC 10-8426] non-net output port 'io_write_strobe_riuclk' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_0_ddr4_cal_riu.sv:118]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/ip_top/ddr4_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/tb/microblaze_mcs_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_0_microblaze_mcs
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'ddr4_0_microblaze_mcs' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/tb/microblaze_mcs_0.sv:36]
+INFO: [VRFC 10-311] analyzing module microblaze_mcs
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/rdback_fifo/sim/rdback_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rdback_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/instr_fifo/sim/instr_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instr_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instr_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_pcie_app.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module softMC_pcie_app
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/pipe_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pipe_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_dispatcher.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instr_dispatcher
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/read_capturer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module read_capturer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_handler.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module maint_handler
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module maint_ctrl_top
+INFO: [VRFC 10-311] analyzing module maint_ctrl
+INFO: [VRFC 10-311] analyzing module periodic_rd_ctrl
+INFO: [VRFC 10-311] analyzing module zq_calib_ctrl
+INFO: [VRFC 10-311] analyzing module autoref_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/iseq_dispatcher.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module iseq_dispatcher
+WARNING: [VRFC 10-3380] identifier 'instr0_disp_en' is used before its declaration [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/iseq_dispatcher.v:81]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_receiver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instr_receiver
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/autoref_config.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module autoref_config
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module softMC
+INFO: [VRFC 10-2458] undeclared symbol dispatcher_busy, assumed default net type wire [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC.v:166]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module softMC_top
+INFO: [VRFC 10-2458] undeclared symbol ddr_dm, assumed default net type wire [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_top.v:186]
+INFO: [VRFC 10-2458] undeclared symbol sys_rst, assumed default net type wire [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_top.v:455]
+INFO: [VRFC 10-2458] undeclared symbol app_en, assumed default net type wire [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_top.v:559]
+INFO: [VRFC 10-2458] undeclared symbol processing_iseq, assumed default net type wire [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_top.v:563]
+INFO: [VRFC 10-2458] undeclared symbol rdback_fifo_empty, assumed default net type wire [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_top.v:612]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/xilinx_mig/user_design/sim/wiredly.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WireDelay
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module short
+INFO: [VRFC 10-311] analyzing module tb_softMC_top
+WARNING: [VRFC 10-3248] data object 'c0_ddr4_ck_t' is already declared [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:325]
+WARNING: [VRFC 10-3703] second declaration of 'c0_ddr4_ck_t' ignored [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:325]
+WARNING: [VRFC 10-3028] 'c0_ddr4_ck_t' was previously declared with a range [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:325]
+WARNING: [VRFC 10-3248] data object 'c0_ddr4_ck_c' is already declared [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:326]
+WARNING: [VRFC 10-3703] second declaration of 'c0_ddr4_ck_c' ignored [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:326]
+WARNING: [VRFC 10-3028] 'c0_ddr4_ck_c' was previously declared with a range [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:326]
+WARNING: [VRFC 10-3380] identifier 'ADDR_WIDTH' is used before its declaration [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:342]
+WARNING: [VRFC 10-3380] identifier 'ADDR_WIDTH' is used before its declaration [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:953]
+WARNING: [VRFC 10-2821] generate block is allowed only inside loop and conditional generate in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:1011]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/imports/arch_package.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3264] design element 'arch_package' is previously defined, ignoring this definition [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/imports/arch_package.sv:5]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/imports/ddr4_sdram_model_wrapper.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/imports/proj_package.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/imports/ddr4_model.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module StateTable
+INFO: [VRFC 10-311] analyzing module ddr4_model
+WARNING: [VRFC 10-2821] generate block is allowed only inside loop and conditional generate in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/imports/ddr4_model.sv:340]
+WARNING: [VRFC 10-2821] generate block is allowed only inside loop and conditional generate in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/imports/ddr4_model.sv:1535]
+WARNING: [VRFC 10-2821] generate block is allowed only inside loop and conditional generate in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/imports/ddr4_model.sv:1582]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/imports/interface.sv" into library xil_defaultlib
+"xvhdl --incr --relax -prj tb_softMC_top_vhdl.prj"
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 3958.676 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '12' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto b05a631014b24489b6600b177fa38575 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L microblaze_v11_0_4 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L lmb_v10_v3_0_11 -L lmb_bram_if_cntlr_v4_0_19 -L blk_mem_gen_v8_4_4 -L iomodule_v3_1_6 -L fifo_generator_v13_2_5 -L gtwizard_ultrascale_v1_7_9 -L xdma_v4_1_8 -L uvm -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_softMC_top_behav xil_defaultlib.tb_softMC_top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto b05a631014b24489b6600b177fa38575 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L microblaze_v11_0_4 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L lmb_v10_v3_0_11 -L lmb_bram_if_cntlr_v4_0_19 -L blk_mem_gen_v8_4_4 -L iomodule_v3_1_6 -L fifo_generator_v13_2_5 -L gtwizard_ultrascale_v1_7_9 -L xdma_v4_1_8 -L uvm -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_softMC_top_behav xil_defaultlib.tb_softMC_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3180] cannot find port 'rdback_data' on this module [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:633]
+ERROR: [VRFC 10-3180] cannot find port 'rdback_fifo_rden' on this module [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:632]
+ERROR: [VRFC 10-3180] cannot find port 'app_instr' on this module [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:630]
+ERROR: [VRFC 10-3180] cannot find port 'app_ack' on this module [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:629]
+ERROR: [VRFC 10-3180] cannot find port 'app_en' on this module [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:628]
+ERROR: [VRFC 10-3180] cannot find port 'sys_rst' on this module [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:601]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 3958.676 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:23 . Memory (MB): peak = 3958.676 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-50] Design contains embedded sources, generating MEM files for simulation...
+Generating merged BMM file for the design top 'ddr4_0'...
+Generating merged BMM file for the design top 'ddr4_0'...
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_softMC_top' in fileset 'sim_1'...
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/instr_fifo/instr_fifo.xml'
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/xdma_0.xml'
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/ip_0/xdma_0_pcie3_ip.xml'
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/ip_2/xdma_v4_1_8_blk_mem_64_noreg_be.xml'
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/ip_1/xdma_v4_1_8_blk_mem_64_reg_be.xml'
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/ip_0/ip_0/xdma_0_pcie3_ip_gt.xml'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -L xilinx_vip -prj tb_softMC_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_6/sim/bd_9054_lmb_bram_I_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9054_lmb_bram_I_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_9/sim/bd_9054_second_lmb_bram_I_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9054_second_lmb_bram_I_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/sim/bd_9054.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9054
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_0/sim/ddr4_0_microblaze_mcs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_0_microblaze_mcs
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/phy/ddr4_0_phy_ddr4.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_0_phy_ddr4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/phy/ddr4_phy_v2_2_xiphy_behav.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_0_xiphy_behav
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_0_bitslice_behav
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_0_fifo_sv
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/phy/ddr4_phy_v2_2_xiphy.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_0_xiphy
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/iob/ddr4_phy_v2_2_iob_byte.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_0_iob_byte
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/iob/ddr4_phy_v2_2_iob.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_0_iob
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/clocking/ddr4_phy_v2_2_pll.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_0_pll
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/xiphy_files/ddr4_phy_v2_2_xiphy_tristate_wrapper.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_0_xiphy_tristate_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/xiphy_files/ddr4_phy_v2_2_xiphy_riuor_wrapper.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_0_xiphy_riuor_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/xiphy_files/ddr4_phy_v2_2_xiphy_control_wrapper.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_0_xiphy_control_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/xiphy_files/ddr4_phy_v2_2_xiphy_byte_wrapper.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_0_xiphy_byte_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/xiphy_files/ddr4_phy_v2_2_xiphy_bitslice_wrapper.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_0_xiphy_bitslice_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/ip_top/ddr4_0_phy.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_0_phy
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/clocking/ddr4_v2_2_infrastructure.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_infrastructure
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_xsdb_bram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_xsdb_bram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_write.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_write
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_wr_byte.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_wr_byte
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_wr_bit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_wr_bit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_sync.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_sync
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_read.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_read
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_rd_en.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_rd_en
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_pi.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_pi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_mc_odt.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_mc_odt
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_debug_microblaze.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_debug_microblaze
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_cplx_data.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_cplx_data
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_cplx.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_cplx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_config_rom.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_config_rom
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_addr_decode
+WARNING: [VRFC 10-8426] non-net output port 'io_ready_lvl' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:165]
+WARNING: [VRFC 10-8426] non-net output port 'ub_ready' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:166]
+WARNING: [VRFC 10-8426] non-net output port 'cal_DMOut_n' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:235]
+WARNING: [VRFC 10-8426] non-net output port 'casSlot' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:267]
+WARNING: [VRFC 10-8426] non-net output port 'rdCAS' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:269]
+WARNING: [VRFC 10-8426] non-net output port 'wrCAS' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:272]
+WARNING: [VRFC 10-8426] non-net output port 'lowCL0' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:276]
+WARNING: [VRFC 10-8426] non-net output port 'lowCL1' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:277]
+WARNING: [VRFC 10-8426] non-net output port 'lowCL2' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:278]
+WARNING: [VRFC 10-8426] non-net output port 'lowCL3' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:279]
+WARNING: [VRFC 10-8426] non-net output port 'uppCL0' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:280]
+WARNING: [VRFC 10-8426] non-net output port 'uppCL1' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:281]
+WARNING: [VRFC 10-8426] non-net output port 'uppCL2' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:282]
+WARNING: [VRFC 10-8426] non-net output port 'uppCL3' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:283]
+WARNING: [VRFC 10-8426] non-net output port 'win_status' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:320]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_top
+WARNING: [VRFC 10-8426] non-net output port 'cal_RESET_n' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_top.sv:323]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_xsdb_arbiter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_xsdb_arbiter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_chipscope_xsdb_slave.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_chipscope_xsdb_slave
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_dp_AB9.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cfg_mem_mod
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_bram_tdp
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/ip_top/ddr4_0_ddr4.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_0_ddr4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_0_ddr4_cal_riu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_0_ddr4_cal_riu
+WARNING: [VRFC 10-8426] non-net output port 'io_addr_strobe_lvl_riuclk' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_0_ddr4_cal_riu.sv:115]
+WARNING: [VRFC 10-8426] non-net output port 'io_write_strobe_riuclk' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_0_ddr4_cal_riu.sv:118]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/ip_top/ddr4_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/tb/microblaze_mcs_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_0_microblaze_mcs
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'ddr4_0_microblaze_mcs' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/tb/microblaze_mcs_0.sv:36]
+INFO: [VRFC 10-311] analyzing module microblaze_mcs
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/rdback_fifo/sim/rdback_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rdback_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/instr_fifo/sim/instr_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instr_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instr_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_pcie_app.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module softMC_pcie_app
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/pipe_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pipe_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_dispatcher.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instr_dispatcher
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/read_capturer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module read_capturer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_handler.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module maint_handler
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/maint_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module maint_ctrl_top
+INFO: [VRFC 10-311] analyzing module maint_ctrl
+INFO: [VRFC 10-311] analyzing module periodic_rd_ctrl
+INFO: [VRFC 10-311] analyzing module zq_calib_ctrl
+INFO: [VRFC 10-311] analyzing module autoref_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/iseq_dispatcher.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module iseq_dispatcher
+WARNING: [VRFC 10-3380] identifier 'instr0_disp_en' is used before its declaration [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/iseq_dispatcher.v:81]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/instr_receiver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instr_receiver
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/autoref_config.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module autoref_config
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module softMC
+INFO: [VRFC 10-2458] undeclared symbol dispatcher_busy, assumed default net type wire [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC.v:166]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module softMC_top
+INFO: [VRFC 10-2458] undeclared symbol ddr_dm, assumed default net type wire [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_top.v:186]
+INFO: [VRFC 10-2458] undeclared symbol sys_rst, assumed default net type wire [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_top.v:455]
+INFO: [VRFC 10-2458] undeclared symbol processing_iseq, assumed default net type wire [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_top.v:563]
+INFO: [VRFC 10-2458] undeclared symbol rdback_fifo_empty, assumed default net type wire [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_top.v:612]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/ipcore_dir/xilinx_mig/user_design/sim/wiredly.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WireDelay
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module short
+INFO: [VRFC 10-311] analyzing module tb_softMC_top
+WARNING: [VRFC 10-3248] data object 'c0_ddr4_ck_t' is already declared [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:325]
+WARNING: [VRFC 10-3703] second declaration of 'c0_ddr4_ck_t' ignored [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:325]
+WARNING: [VRFC 10-3028] 'c0_ddr4_ck_t' was previously declared with a range [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:325]
+WARNING: [VRFC 10-3248] data object 'c0_ddr4_ck_c' is already declared [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:326]
+WARNING: [VRFC 10-3703] second declaration of 'c0_ddr4_ck_c' ignored [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:326]
+WARNING: [VRFC 10-3028] 'c0_ddr4_ck_c' was previously declared with a range [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:326]
+WARNING: [VRFC 10-3380] identifier 'ADDR_WIDTH' is used before its declaration [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:342]
+WARNING: [VRFC 10-3380] identifier 'ADDR_WIDTH' is used before its declaration [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:953]
+WARNING: [VRFC 10-2821] generate block is allowed only inside loop and conditional generate in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:1011]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/imports/arch_package.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3264] design element 'arch_package' is previously defined, ignoring this definition [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/imports/arch_package.sv:5]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/imports/ddr4_sdram_model_wrapper.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/imports/proj_package.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/imports/ddr4_model.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module StateTable
+INFO: [VRFC 10-311] analyzing module ddr4_model
+WARNING: [VRFC 10-2821] generate block is allowed only inside loop and conditional generate in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/imports/ddr4_model.sv:340]
+WARNING: [VRFC 10-2821] generate block is allowed only inside loop and conditional generate in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/imports/ddr4_model.sv:1535]
+WARNING: [VRFC 10-2821] generate block is allowed only inside loop and conditional generate in SystemVerilog mode [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/imports/ddr4_model.sv:1582]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sim_1/imports/imports/interface.sv" into library xil_defaultlib
+"xvhdl --incr --relax -prj tb_softMC_top_vhdl.prj"
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 3958.676 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '13' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto b05a631014b24489b6600b177fa38575 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L microblaze_v11_0_4 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L lmb_v10_v3_0_11 -L lmb_bram_if_cntlr_v4_0_19 -L blk_mem_gen_v8_4_4 -L iomodule_v3_1_6 -L fifo_generator_v13_2_5 -L gtwizard_ultrascale_v1_7_9 -L xdma_v4_1_8 -L uvm -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_softMC_top_behav xil_defaultlib.tb_softMC_top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto b05a631014b24489b6600b177fa38575 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L microblaze_v11_0_4 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L lmb_v10_v3_0_11 -L lmb_bram_if_cntlr_v4_0_19 -L blk_mem_gen_v8_4_4 -L iomodule_v3_1_6 -L fifo_generator_v13_2_5 -L gtwizard_ultrascale_v1_7_9 -L xdma_v4_1_8 -L uvm -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_softMC_top_behav xil_defaultlib.tb_softMC_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3180] cannot find port 'sys_rst' on this module [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:601]
+WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named BM_CNT_WIDTH [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:574]
+WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named tPRDI [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:584]
+WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named tREFI [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:585]
+WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named tZQI [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:586]
+WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named ADDR_CMD_MODE [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:587]
+WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named ORDERING [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:588]
+WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named STARVE_LIMIT [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:589]
+WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named ECC [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:591]
+WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named ECC_TEST [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:592]
+WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named DATA_WIDTH [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:594]
+WARNING: [VRFC 10-2861] module 'softMC_top' does not have a parameter named PAYLOAD_WIDTH [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v:595]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 3958.676 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:21 . Memory (MB): peak = 3958.676 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/xdma_0.xci' is already up-to-date
+[Sat Jul 24 17:34:50 2021] Launched synth_1...
+Run output will be captured here: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/synth_1/runme.log
+[Sat Jul 24 17:34:50 2021] Launched impl_1...
+Run output will be captured here: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/runme.log
+open_hw_manager
+open_hw_manager: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 3959.445 ; gain = 0.000
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00000000000000
+set_property PROGRAM.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.bit} [get_hw_devices xcvu095_0]
+set_property PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
+set_property FULL_PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
+current_hw_device [get_hw_devices xcvu095_0]
+refresh_hw_device [lindex [get_hw_devices xcvu095_0] 0]
+CRITICAL WARNING: [Xicom 50-46] One or more detected MIG version registers have empty values: MIG properties will not be built.
+Parameter Map Version: 0, Error Map Version: 0, Calibration Map Version: 0, Warning Map Version: 0
+INFO: [Labtools 27-2302] Device xcvu095 (JTAG device index = 0) is programmed with a design that has 1 MIG core(s).
+set_property PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
+set_property FULL_PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
+set_property PROGRAM.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.bit} [get_hw_devices xcvu095_0]
+program_hw_devices [get_hw_devices xcvu095_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:19 ; elapsed = 00:00:18 . Memory (MB): peak = 4029.559 ; gain = 0.066
+refresh_hw_device [lindex [get_hw_devices xcvu095_0] 0]
+WARNING: [Labtools 27-3410] Calibration Failed.
+Resolution: For further debugging information, please refer to the Debug Guide that can be found from the following URL - https://www.xilinx.com/support/answers/68937.html
+INFO: [Labtools 27-2302] Device xcvu095 (JTAG device index = 0) is programmed with a design that has 1 MIG core(s).
+close_hw_manager
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 4281.980 ; gain = 5.211
+INFO: [Netlist 29-17] Analyzing 1224 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'u_ddr4_0/inst/u_mig_ddr4_phy/cal_RESET_n[0]' is not directly connected to top level port. Synthesis is ignored for DRIVE but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'u_ddr4_0/inst/u_mig_ddr4_phy/cal_RESET_n[0]' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'u_ddr4_0/inst/u_mig_ddr4_phy/mmcm_clk_in' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 4929.195 ; gain = 39.719
+Restored from archive | CPU: 9.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 4929.195 ; gain = 39.719
+Generating merged BMM file for the design top 'ddr4_0'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/sw/calibration_0/Debug/calibration_ddr.elf 
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 4953.719 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 350 instances were transformed.
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 3 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 1 instance 
+  IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instance 
+  IOBUFDS => IOBUFDS (DIFFINBUF, IBUFCTRL, INV, OBUFT(x2)): 8 instances
+  IOBUFE3 => IOBUFE3 (IBUFCTRL, INBUF, OBUFT_DCIEN): 72 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 31 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUF(x2)): 1 instance 
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 33 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 16 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 165 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 10 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 9 instances
+
+open_run: Time (s): cpu = 00:01:04 ; elapsed = 00:01:35 . Memory (MB): peak = 5377.449 ; gain = 1261.172
+open_report: Time (s): cpu = 00:00:34 ; elapsed = 00:00:22 . Memory (MB): peak = 6045.016 ; gain = 667.566
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+close_design
+set_property -dict [list CONFIG.C0.DDR4_TimePeriod {1250} CONFIG.C0.DDR4_InputClockPeriod {10000} CONFIG.C0.DDR4_Specify_MandD {false} CONFIG.C0.DDR4_CLKOUT0_DIVIDE {7} CONFIG.C0.DDR4_CasLatency {11} CONFIG.C0.DDR4_CasWriteLatency {11}] [get_ips ddr4_0]
+generate_target all [get_files  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ddr4_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ddr4_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ddr4_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ddr4_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ddr4_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ddr4_0'...
+Exporting to file c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/hw_handoff/ddr4_0_microblaze_mcs.hwh
+Generated Block Design Tcl file c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/hw_handoff/ddr4_0_microblaze_mcs_bd.tcl
+Generated Hardware Definition File c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/synth/ddr4_0_microblaze_mcs.hwdef
+generate_target: Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 7386.359 ; gain = 0.000
+catch { config_ip_cache -export [get_ips -all ddr4_0] }
+export_ip_user_files -of_objects [get_files C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ddr4_0.xci] -no_script -sync -force -quiet
+reset_run ddr4_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/ddr4_0_synth_1
+
+launch_runs ddr4_0_synth_1 -jobs 8
+[Sat Jul 24 18:03:35 2021] Launched ddr4_0_synth_1...
+Run output will be captured here: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/ddr4_0_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ddr4_0.xci] -directory C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files -ipstatic_source_dir C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.cache/compile_simlib/modelsim} {questa=C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.cache/compile_simlib/questa} {riviera=C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.cache/compile_simlib/riviera} {activehdl=C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run ddr4_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/ddr4_0_synth_1
+
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/xdma_0.xci' is already up-to-date
+[Sat Jul 24 18:05:10 2021] Launched ddr4_0_synth_1, synth_1...
+Run output will be captured here:
+ddr4_0_synth_1: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/ddr4_0_synth_1/runme.log
+synth_1: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/synth_1/runme.log
+[Sat Jul 24 18:05:10 2021] Launched impl_1...
+Run output will be captured here: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00000000000000
+set_property PROGRAM.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.bit} [get_hw_devices xcvu095_0]
+set_property PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
+set_property FULL_PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
+current_hw_device [get_hw_devices xcvu095_0]
+refresh_hw_device [lindex [get_hw_devices xcvu095_0] 0]
+WARNING: [Labtools 27-3410] Calibration Failed.
+Resolution: For further debugging information, please refer to the Debug Guide that can be found from the following URL - https://www.xilinx.com/support/answers/68937.html
+INFO: [Labtools 27-2302] Device xcvu095 (JTAG device index = 0) is programmed with a design that has 1 MIG core(s).
+set_property PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
+set_property FULL_PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
+set_property PROGRAM.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.bit} [get_hw_devices xcvu095_0]
+program_hw_devices [get_hw_devices xcvu095_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 7386.359 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xcvu095_0] 0]
+WARNING: [Labtools 27-3089] Calibration is still in-progress.
+INFO: [Labtools 27-2302] Device xcvu095 (JTAG device index = 0) is programmed with a design that has 1 MIG core(s).
+INFO: [Labtools 27-3143] Calibration status change detected, refreshing MIG_1
+close_hw_manager
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00000000000000
+set_property PROGRAM.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.bit} [get_hw_devices xcvu095_0]
+set_property PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
+set_property FULL_PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
+current_hw_device [get_hw_devices xcvu095_0]
+refresh_hw_device [lindex [get_hw_devices xcvu095_0] 0]
+INFO: [Labtools 27-1434] Device xcvu095 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
+set_property FULL_PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
+set_property PROGRAM.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.bit} [get_hw_devices xcvu095_0]
+program_hw_devices [get_hw_devices xcvu095_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 7386.359 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xcvu095_0] 0]
+WARNING: [Labtools 27-3089] Calibration is still in-progress.
+INFO: [Labtools 27-2302] Device xcvu095 (JTAG device index = 0) is programmed with a design that has 1 MIG core(s).
+INFO: [Labtools 27-3143] Calibration status change detected, refreshing MIG_1
+close_hw_manager
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xcvu095-ffvb2104-2-e
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ddr4_0.dcp' for cell 'u_ddr4_0'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/.Xil/Vivado-14468-DESKTOP-ILOVGO9/xdma_0/xdma_0.dcp' for cell 'EP/xdma_0_i'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/.Xil/Vivado-14468-DESKTOP-ILOVGO9/instr_fifo/instr_fifo.dcp' for cell 'i_softmc/i_instr0_fifo'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/rdback_fifo/rdback_fifo.dcp' for cell 'i_softmc/i_rdback_fifo'
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 7386.359 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1261 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Chipscope 16-324] Core: u_ddr4_0 UUID: 3fd6d934-2c58-576c-8b83-36d6fdf59d81 
+Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/ip_0/ip_0/synth/xdma_0_pcie3_ip_gt.xdc] for cell 'EP/xdma_0_i/inst/pcie3_ip_i/inst/xdma_0_pcie3_ip_gt_top_i/gt_wizard.gtwizard_top_i/xdma_0_pcie3_ip_gt_i/inst'
+Finished Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/ip_0/ip_0/synth/xdma_0_pcie3_ip_gt.xdc] for cell 'EP/xdma_0_i/inst/pcie3_ip_i/inst/xdma_0_pcie3_ip_gt_top_i/gt_wizard.gtwizard_top_i/xdma_0_pcie3_ip_gt_i/inst'
+Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip-PCIE_X0Y0.xdc] for cell 'EP/xdma_0_i/inst/pcie3_ip_i/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip-PCIE_X0Y0.xdc:200]
+Finished Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip-PCIE_X0Y0.xdc] for cell 'EP/xdma_0_i/inst/pcie3_ip_i/inst'
+Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/xdma_0_board.xdc] for cell 'EP/xdma_0_i/inst'
+Finished Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/xdma_0_board.xdc] for cell 'EP/xdma_0_i/inst'
+Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/source/xdma_0_pcie3_us_ip.xdc] for cell 'EP/xdma_0_i/inst'
+Finished Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/source/xdma_0_pcie3_us_ip.xdc] for cell 'EP/xdma_0_i/inst'
+Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_0/bd_9054_microblaze_I_0.xdc] for cell 'u_ddr4_0/inst/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0'
+Finished Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_0/bd_9054_microblaze_I_0.xdc] for cell 'u_ddr4_0/inst/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0'
+Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_1/bd_9054_rst_0_0_board.xdc] for cell 'u_ddr4_0/inst/u_ddr_cal_riu/mcs0/inst/rst_0/U0'
+Finished Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_1/bd_9054_rst_0_0_board.xdc] for cell 'u_ddr4_0/inst/u_ddr_cal_riu/mcs0/inst/rst_0/U0'
+Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_1/bd_9054_rst_0_0.xdc] for cell 'u_ddr4_0/inst/u_ddr_cal_riu/mcs0/inst/rst_0/U0'
+Finished Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_1/bd_9054_rst_0_0.xdc] for cell 'u_ddr4_0/inst/u_ddr_cal_riu/mcs0/inst/rst_0/U0'
+Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_2/bd_9054_ilmb_0.xdc] for cell 'u_ddr4_0/inst/u_ddr_cal_riu/mcs0/inst/ilmb/U0'
+Finished Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_2/bd_9054_ilmb_0.xdc] for cell 'u_ddr4_0/inst/u_ddr_cal_riu/mcs0/inst/ilmb/U0'
+Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_3/bd_9054_dlmb_0.xdc] for cell 'u_ddr4_0/inst/u_ddr_cal_riu/mcs0/inst/dlmb/U0'
+Finished Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_3/bd_9054_dlmb_0.xdc] for cell 'u_ddr4_0/inst/u_ddr_cal_riu/mcs0/inst/dlmb/U0'
+Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_10/bd_9054_iomodule_0_0_board.xdc] for cell 'u_ddr4_0/inst/u_ddr_cal_riu/mcs0/inst/iomodule_0/U0'
+Finished Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_10/bd_9054_iomodule_0_0_board.xdc] for cell 'u_ddr4_0/inst/u_ddr_cal_riu/mcs0/inst/iomodule_0/U0'
+Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_0/ddr4_0_microblaze_mcs_board.xdc] for cell 'u_ddr4_0/inst/u_ddr_cal_riu/mcs0/inst'
+Finished Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_0/ddr4_0_microblaze_mcs_board.xdc] for cell 'u_ddr4_0/inst/u_ddr_cal_riu/mcs0/inst'
+Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/par/ddr4_0.xdc] for cell 'u_ddr4_0/inst'
+Finished Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/par/ddr4_0.xdc] for cell 'u_ddr4_0/inst'
+Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/rdback_fifo/rdback_fifo.xdc] for cell 'i_softmc/i_rdback_fifo/U0'
+Finished Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/rdback_fifo/rdback_fifo.xdc] for cell 'i_softmc/i_rdback_fifo/U0'
+Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/instr_fifo/instr_fifo.xdc] for cell 'i_softmc/i_instr0_fifo/U0'
+Finished Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/instr_fifo/instr_fifo.xdc] for cell 'i_softmc/i_instr0_fifo/U0'
+Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/instr_fifo/instr_fifo.xdc] for cell 'i_softmc/i_instr1_fifo/U0'
+Finished Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/instr_fifo/instr_fifo.xdc] for cell 'i_softmc/i_instr1_fifo/U0'
+Parsing XDC File [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/constrs_1/imports/xusps3_config/xusps3_pinout.xdc]
+WARNING: [Constraints 18-619] A clock with name 'c0_sys_clk_p' already exists, overwriting the previous clock with the same name. [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/constrs_1/imports/xusps3_config/xusps3_pinout.xdc:47]
+Finished Parsing XDC File [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/constrs_1/imports/xusps3_config/xusps3_pinout.xdc]
+Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ddr4_0_board.xdc] for cell 'u_ddr4_0/inst'
+Finished Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ddr4_0_board.xdc] for cell 'u_ddr4_0/inst'
+INFO: [Project 1-1715] 2 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Generating merged BMM file for the design top 'ddr4_0'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/sw/calibration_0/Debug/calibration_ddr.elf 
+INFO: [Project 1-1687] 4 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 7386.359 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 361 instances were transformed.
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 3 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 1 instance 
+  IBUF => IBUF_ANALOG: 1 instance 
+  IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instance 
+  IOBUFDS => IOBUFDS (DIFFINBUF, IBUFCTRL, INV, OBUFT(x2)): 8 instances
+  IOBUFE3 => IOBUFE3 (IBUFCTRL, INBUF, OBUFT_DCIEN): 72 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 31 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUF(x2)): 1 instance 
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 33 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 16 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 175 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 10 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 9 instances
+
+open_run: Time (s): cpu = 00:00:57 ; elapsed = 00:01:07 . Memory (MB): peak = 7386.359 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/xdma_0.xci' is already up-to-date
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sat Jul 24 20:05:33 2021] Launched synth_1...
+Run output will be captured here: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/synth_1/runme.log
+[Sat Jul 24 20:05:33 2021] Launched impl_1...
+Run output will be captured here: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/runme.log
+close_design
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00000000000000
+set_property PROGRAM.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.bit} [get_hw_devices xcvu095_0]
+set_property PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
+set_property FULL_PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
+current_hw_device [get_hw_devices xcvu095_0]
+refresh_hw_device [lindex [get_hw_devices xcvu095_0] 0]
+INFO: [Labtools 27-2302] Device xcvu095 (JTAG device index = 0) is programmed with a design that has 1 MIG core(s).
+set_property PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
+set_property FULL_PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
+set_property PROGRAM.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.bit} [get_hw_devices xcvu095_0]
+program_hw_devices [get_hw_devices xcvu095_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 7386.359 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xcvu095_0] 0]
+WARNING: [Labtools 27-3089] Calibration is still in-progress.
+INFO: [Labtools 27-2302] Device xcvu095 (JTAG device index = 0) is programmed with a design that has 1 MIG core(s).
+INFO: [Labtools 27-3143] Calibration status change detected, refreshing MIG_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/xdma_0.xci' is already up-to-date
+[Sat Jul 24 20:27:11 2021] Launched synth_1...
+Run output will be captured here: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/synth_1/runme.log
+[Sat Jul 24 20:27:11 2021] Launched impl_1...
+Run output will be captured here: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/xdma_0.xci' is already up-to-date
+[Sat Jul 24 20:27:40 2021] Launched synth_1...
+Run output will be captured here: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/synth_1/runme.log
+[Sat Jul 24 20:27:40 2021] Launched impl_1...
+Run output will be captured here: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/xdma_0.xci' is already up-to-date
+[Sat Jul 24 20:32:13 2021] Launched synth_1...
+Run output will be captured here: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/synth_1/runme.log
+[Sat Jul 24 20:32:13 2021] Launched impl_1...
+Run output will be captured here: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/runme.log
+set_property PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
+set_property FULL_PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
+set_property PROGRAM.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.bit} [get_hw_devices xcvu095_0]
+program_hw_devices [get_hw_devices xcvu095_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:19 ; elapsed = 00:00:18 . Memory (MB): peak = 7386.359 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xcvu095_0] 0]
+WARNING: [Labtools 27-3089] Calibration is still in-progress.
+INFO: [Labtools 27-2302] Device xcvu095 (JTAG device index = 0) is programmed with a design that has 1 MIG core(s).
+INFO: [Labtools 27-3143] Calibration status change detected, refreshing MIG_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Jul 24 20:59:36 2021...
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.

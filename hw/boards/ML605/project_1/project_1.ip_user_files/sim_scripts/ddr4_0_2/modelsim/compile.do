@@ -1,6 +1,7 @@
 vlib modelsim_lib/work
 vlib modelsim_lib/msim
 
+vlib modelsim_lib/msim/xilinx_vip
 vlib modelsim_lib/msim/xpm
 vlib modelsim_lib/msim/microblaze_v11_0_4
 vlib modelsim_lib/msim/xil_defaultlib
@@ -11,6 +12,7 @@ vlib modelsim_lib/msim/lmb_bram_if_cntlr_v4_0_19
 vlib modelsim_lib/msim/blk_mem_gen_v8_4_4
 vlib modelsim_lib/msim/iomodule_v3_1_6
 
+vmap xilinx_vip modelsim_lib/msim/xilinx_vip
 vmap xpm modelsim_lib/msim/xpm
 vmap microblaze_v11_0_4 modelsim_lib/msim/microblaze_v11_0_4
 vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib
@@ -21,8 +23,20 @@ vmap lmb_bram_if_cntlr_v4_0_19 modelsim_lib/msim/lmb_bram_if_cntlr_v4_0_19
 vmap blk_mem_gen_v8_4_4 modelsim_lib/msim/blk_mem_gen_v8_4_4
 vmap iomodule_v3_1_6 modelsim_lib/msim/iomodule_v3_1_6
 
-vlog -work xpm  -incr -sv "+incdir+../../../../project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/map" "+incdir+../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/ip_top" "+incdir+../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal" \
+vlog -work xilinx_vip  -incr -sv -L xilinx_vip "+incdir+D:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
+"D:/Xilinx/Vivado/2020.2/data/xilinx_vip/hdl/axi4stream_vip_axi4streampc.sv" \
+"D:/Xilinx/Vivado/2020.2/data/xilinx_vip/hdl/axi_vip_axi4pc.sv" \
+"D:/Xilinx/Vivado/2020.2/data/xilinx_vip/hdl/xil_common_vip_pkg.sv" \
+"D:/Xilinx/Vivado/2020.2/data/xilinx_vip/hdl/axi4stream_vip_pkg.sv" \
+"D:/Xilinx/Vivado/2020.2/data/xilinx_vip/hdl/axi_vip_pkg.sv" \
+"D:/Xilinx/Vivado/2020.2/data/xilinx_vip/hdl/axi4stream_vip_if.sv" \
+"D:/Xilinx/Vivado/2020.2/data/xilinx_vip/hdl/axi_vip_if.sv" \
+"D:/Xilinx/Vivado/2020.2/data/xilinx_vip/hdl/clk_vip_if.sv" \
+"D:/Xilinx/Vivado/2020.2/data/xilinx_vip/hdl/rst_vip_if.sv" \
+
+vlog -work xpm  -incr -sv -L xilinx_vip "+incdir+../../../../project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/map" "+incdir+../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/ip_top" "+incdir+../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal" "+incdir+D:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
 "D:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+"D:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv" \
 "D:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
 
 vcom -work xpm  -93 \
@@ -57,17 +71,17 @@ vcom -work xil_defaultlib  -93 \
 "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_4/sim/bd_9054_dlmb_cntlr_0.vhd" \
 "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_5/sim/bd_9054_ilmb_cntlr_0.vhd" \
 
-vlog -work blk_mem_gen_v8_4_4  -incr "+incdir+../../../../project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/map" "+incdir+../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/ip_top" "+incdir+../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal" \
+vlog -work blk_mem_gen_v8_4_4  -incr "+incdir+../../../../project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/map" "+incdir+../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/ip_top" "+incdir+../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal" "+incdir+D:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
 "../../../ipstatic/simulation/blk_mem_gen_v8_4.v" \
 
-vlog -work xil_defaultlib  -incr "+incdir+../../../../project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/map" "+incdir+../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/ip_top" "+incdir+../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal" \
+vlog -work xil_defaultlib  -incr "+incdir+../../../../project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/map" "+incdir+../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/ip_top" "+incdir+../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal" "+incdir+D:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
 "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_6/sim/bd_9054_lmb_bram_I_0.v" \
 
 vcom -work xil_defaultlib  -93 \
 "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_7/sim/bd_9054_second_dlmb_cntlr_0.vhd" \
 "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_8/sim/bd_9054_second_ilmb_cntlr_0.vhd" \
 
-vlog -work xil_defaultlib  -incr "+incdir+../../../../project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/map" "+incdir+../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/ip_top" "+incdir+../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal" \
+vlog -work xil_defaultlib  -incr "+incdir+../../../../project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/map" "+incdir+../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/ip_top" "+incdir+../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal" "+incdir+D:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
 "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_9/sim/bd_9054_second_lmb_bram_I_0.v" \
 
 vcom -work iomodule_v3_1_6  -93 \
@@ -76,11 +90,11 @@ vcom -work iomodule_v3_1_6  -93 \
 vcom -work xil_defaultlib  -93 \
 "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_10/sim/bd_9054_iomodule_0_0.vhd" \
 
-vlog -work xil_defaultlib  -incr "+incdir+../../../../project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/map" "+incdir+../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/ip_top" "+incdir+../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal" \
+vlog -work xil_defaultlib  -incr "+incdir+../../../../project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/map" "+incdir+../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/ip_top" "+incdir+../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal" "+incdir+D:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
 "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/sim/bd_9054.v" \
 "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/ip_0/sim/ddr4_0_microblaze_mcs.v" \
 
-vlog -work xil_defaultlib  -incr -sv "+incdir+../../../../project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/map" "+incdir+../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/ip_top" "+incdir+../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal" \
+vlog -work xil_defaultlib  -incr -sv -L xilinx_vip "+incdir+../../../../project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/map" "+incdir+../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/ip_top" "+incdir+../../../../project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal" "+incdir+D:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
 "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/phy/ddr4_0_phy_ddr4.sv" \
 "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/phy/ddr4_phy_v2_2_xiphy_behav.sv" \
 "../../../../project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/phy/ddr4_phy_v2_2_xiphy.sv" \

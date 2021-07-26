@@ -27,6 +27,7 @@ module tb_softMC_top;
                                     // # = "FAST" - Skip memory init & use
                                     //              abbreviated calib sequence
   parameter RST_ACT_LOW           = 0;
+  //parameter RST_ACT_LOW           = 1;
                                     // =1 for active low reset,
                                     // =0 for active fhigh.
   parameter IODELAY_GRP           = "IODELAY_MIG";
@@ -89,14 +90,17 @@ module tb_softMC_top;
   parameter REG_CTRL              = "OFF";
                                     // # = "ON" - RDIMMs,
                                     //   = "OFF" - Components, SODIMMs, UDIMMs.
-  parameter CLKFBOUT_MULT_F       = 6;
+  parameter CLKFBOUT_MULT_F       = 14;
+  //parameter CLKFBOUT_MULT_F       = 6;
                                     // write PLL VCO multiplier.
   parameter DIVCLK_DIVIDE         = 1;
                                     // write PLL VCO divisor.
-  parameter CLKOUT_DIVIDE         = 3;
+  //parameter CLKOUT_DIVIDE         = 3;
+  parameter CLKOUT_DIVIDE         = 7;
                                     // VCO output divisor for fast (memory) clocks.
   //parameter tCK                   = 2500;
-  parameter tCK                   = 2499;
+  //parameter tCK                   = 2499;
+  parameter tCK                   = 1250;
                                     // memory tCK paramter.
                                     // # = Clock Period.
   parameter DEBUG_PORT            = "OFF";
@@ -598,7 +602,7 @@ endgenerate
 		.c0_sys_clk_n(sys_clk_n), 
 		.clk_ref_p(clk_ref_p), 
 		.clk_ref_n(clk_ref_n), 
-		.sys_rst(sys_rst), 
+		.sys_rst_l(sys_rst_n), 
 		//.sys_rst_l(sys_rst_l),
 		//.c0_ddr4_reset_n(1'b1),
 		//.c0_ddr4_reset_n(c0_ddr4_reset_n),

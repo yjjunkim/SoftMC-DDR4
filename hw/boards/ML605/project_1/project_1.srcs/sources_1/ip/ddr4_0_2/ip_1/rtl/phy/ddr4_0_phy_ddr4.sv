@@ -106,7 +106,7 @@ module ddr4_0_phy_ddr4 #
    ,parameter integer DM_WIDTH             = 8
    ,parameter         C_FAMILY             = "virtexu"
 
-   ,parameter         tCK                  = 1071
+   ,parameter         tCK                  = 1250
    ,parameter real    TCQ                  = 100
 
    ,parameter         USE_DYNAMIC_DCI      = 1

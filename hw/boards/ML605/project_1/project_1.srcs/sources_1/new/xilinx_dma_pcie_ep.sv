@@ -205,8 +205,8 @@ module xilinx_dma_pcie_ep #
     wire          msi_enable;
 
       // AXI streaming ports
-    //wire [C_DATA_WIDTH-1:0]	m_axis_h2c_tdata_0;
-    wire [31:0] m_axis_h2c_tdata_0;
+    wire [C_DATA_WIDTH-1:0]	m_axis_h2c_tdata_0;
+    //wire [31:0] m_axis_h2c_tdata_0;
     
     wire 			m_axis_h2c_tlast_0;
     wire 			m_axis_h2c_tvalid_0;

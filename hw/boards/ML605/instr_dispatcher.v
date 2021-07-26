@@ -357,7 +357,10 @@ module instr_dispatcher #(parameter ROW_WIDTH = 15, BANK_WIDTH = 3, CKE_WIDTH = 
 	//assign dfi_wrdata = dfi_cas_n0 ? {8*(DQ_WIDTH/8){write_burst_data_r}} : {8*(DQ_WIDTH/8){write_burst_data_r}};
 	//jun : wrData burstlength 8
 	//assign dfi_wrdata = {8*(DQ_WIDTH/8){write_burst_data_r}};
-	assign dfi_wrdata = {64{write_burst_data_r}};
+	//jun : 0724
+	//assign dfi_wrdata = {64{write_burst_data_r}};
+	assign dfi_wrdata = {64{write_burst_data_ns}};
+	
 	
 	always@(posedge clk) begin
 		pr_rd_ack_r <= pr_rd_ack_ns;

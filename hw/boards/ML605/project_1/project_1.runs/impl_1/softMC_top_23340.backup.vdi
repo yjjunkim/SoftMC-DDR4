@@ -1,0 +1,1068 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jul 26 10:19:39 2021
+# Process ID: 23340
+# Current directory: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1
+# Command line: vivado.exe -log softMC_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source softMC_top.tcl -notrace
+# Log file: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.vdi
+# Journal file: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source softMC_top.tcl -notrace
+Command: link_design -top softMC_top -part xcvu095-ffvb2104-2-e
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xcvu095-ffvb2104-2-e
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ddr4_0.dcp' for cell 'u_ddr4_0'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/.Xil/Vivado-23340-DESKTOP-ILOVGO9/xdma_0/xdma_0.dcp' for cell 'EP/xdma_0_i'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/.Xil/Vivado-23340-DESKTOP-ILOVGO9/instr_fifo/instr_fifo.dcp' for cell 'i_softmc/i_instr0_fifo'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/rdback_fifo/rdback_fifo.dcp' for cell 'i_softmc/i_rdback_fifo'
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1455.922 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1197 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Chipscope 16-324] Core: u_ddr4_0 UUID: 3fd6d934-2c58-576c-8b83-36d6fdf59d81 
+Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/ip_0/ip_0/synth/xdma_0_pcie3_ip_gt.xdc] for cell 'EP/xdma_0_i/inst/pcie3_ip_i/inst/xdma_0_pcie3_ip_gt_top_i/gt_wizard.gtwizard_top_i/xdma_0_pcie3_ip_gt_i/inst'
+Finished Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/ip_0/ip_0/synth/xdma_0_pcie3_ip_gt.xdc] for cell 'EP/xdma_0_i/inst/pcie3_ip_i/inst/xdma_0_pcie3_ip_gt_top_i/gt_wizard.gtwizard_top_i/xdma_0_pcie3_ip_gt_i/inst'
+Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip-PCIE_X0Y0.xdc] for cell 'EP/xdma_0_i/inst/pcie3_ip_i/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip-PCIE_X0Y0.xdc:200]
+Finished Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip-PCIE_X0Y0.xdc] for cell 'EP/xdma_0_i/inst/pcie3_ip_i/inst'
+Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/xdma_0_board.xdc] for cell 'EP/xdma_0_i/inst'
+Finished Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/xdma_0_board.xdc] for cell 'EP/xdma_0_i/inst'
+Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/source/xdma_0_pcie3_us_ip.xdc] for cell 'EP/xdma_0_i/inst'
+Finished Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/source/xdma_0_pcie3_us_ip.xdc] for cell 'EP/xdma_0_i/inst'
+Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_0/bd_9054_microblaze_I_0.xdc] for cell 'u_ddr4_0/inst/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0'
+Finished Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_0/bd_9054_microblaze_I_0.xdc] for cell 'u_ddr4_0/inst/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0'
+Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_1/bd_9054_rst_0_0_board.xdc] for cell 'u_ddr4_0/inst/u_ddr_cal_riu/mcs0/inst/rst_0/U0'
+Finished Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_1/bd_9054_rst_0_0_board.xdc] for cell 'u_ddr4_0/inst/u_ddr_cal_riu/mcs0/inst/rst_0/U0'
+Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_1/bd_9054_rst_0_0.xdc] for cell 'u_ddr4_0/inst/u_ddr_cal_riu/mcs0/inst/rst_0/U0'
+Finished Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_1/bd_9054_rst_0_0.xdc] for cell 'u_ddr4_0/inst/u_ddr_cal_riu/mcs0/inst/rst_0/U0'
+Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_2/bd_9054_ilmb_0.xdc] for cell 'u_ddr4_0/inst/u_ddr_cal_riu/mcs0/inst/ilmb/U0'
+Finished Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_2/bd_9054_ilmb_0.xdc] for cell 'u_ddr4_0/inst/u_ddr_cal_riu/mcs0/inst/ilmb/U0'
+Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_3/bd_9054_dlmb_0.xdc] for cell 'u_ddr4_0/inst/u_ddr_cal_riu/mcs0/inst/dlmb/U0'
+Finished Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_3/bd_9054_dlmb_0.xdc] for cell 'u_ddr4_0/inst/u_ddr_cal_riu/mcs0/inst/dlmb/U0'
+Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_10/bd_9054_iomodule_0_0_board.xdc] for cell 'u_ddr4_0/inst/u_ddr_cal_riu/mcs0/inst/iomodule_0/U0'
+Finished Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_10/bd_9054_iomodule_0_0_board.xdc] for cell 'u_ddr4_0/inst/u_ddr_cal_riu/mcs0/inst/iomodule_0/U0'
+Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_0/ddr4_0_microblaze_mcs_board.xdc] for cell 'u_ddr4_0/inst/u_ddr_cal_riu/mcs0/inst'
+Finished Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_0/ddr4_0_microblaze_mcs_board.xdc] for cell 'u_ddr4_0/inst/u_ddr_cal_riu/mcs0/inst'
+Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/par/ddr4_0.xdc] for cell 'u_ddr4_0/inst'
+Finished Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/par/ddr4_0.xdc] for cell 'u_ddr4_0/inst'
+Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/rdback_fifo/rdback_fifo.xdc] for cell 'i_softmc/i_rdback_fifo/U0'
+Finished Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/rdback_fifo/rdback_fifo.xdc] for cell 'i_softmc/i_rdback_fifo/U0'
+Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/instr_fifo/instr_fifo.xdc] for cell 'i_softmc/i_instr0_fifo/U0'
+Finished Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/instr_fifo/instr_fifo.xdc] for cell 'i_softmc/i_instr0_fifo/U0'
+Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/instr_fifo/instr_fifo.xdc] for cell 'i_softmc/i_instr1_fifo/U0'
+Finished Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/instr_fifo/instr_fifo.xdc] for cell 'i_softmc/i_instr1_fifo/U0'
+Parsing XDC File [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/constrs_1/imports/xusps3_config/xusps3_pinout.xdc]
+WARNING: [Constraints 18-619] A clock with name 'c0_sys_clk_p' already exists, overwriting the previous clock with the same name. [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/constrs_1/imports/xusps3_config/xusps3_pinout.xdc:47]
+Finished Parsing XDC File [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/constrs_1/imports/xusps3_config/xusps3_pinout.xdc]
+Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ddr4_0_board.xdc] for cell 'u_ddr4_0/inst'
+Finished Parsing XDC File [c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ddr4_0_board.xdc] for cell 'u_ddr4_0/inst'
+INFO: [Project 1-1715] 2 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Generating merged BMM file for the design top 'softMC_top'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/sw/calibration_0/Debug/calibration_ddr.elf 
+INFO: [Project 1-1687] 4 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1980.992 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 361 instances were transformed.
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 3 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 1 instance 
+  IBUF => IBUF_ANALOG: 1 instance 
+  IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instance 
+  IOBUFDS => IOBUFDS (DIFFINBUF, IBUFCTRL, INV, OBUFT(x2)): 8 instances
+  IOBUFE3 => IOBUFE3 (IBUFCTRL, INBUF, OBUFT_DCIEN): 72 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 31 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUF(x2)): 1 instance 
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 33 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 16 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 175 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 10 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 9 instances
+
+15 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:42 . Memory (MB): peak = 1980.992 ; gain = 870.531
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcvu095'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcvu095'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1980.992 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1a766f4ab
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 1980.992 ; gain = 0.000
+
+Starting Logic Optimization Task
+
+Phase 1 Generate And Synthesize MIG Cores
+INFO: [Mig 66-454] Using cached IP synthesis design for IP xilinx.com:ip:ddr4_phy:2.2, cache-ID = 780b5a76edcb9509.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 2276.902 ; gain = 0.000
+Phase 1 Generate And Synthesize MIG Cores | Checksum: a29f1a85
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 2276.902 ; gain = 66.875
+
+Phase 2 Generate And Synthesize Debug Cores
+INFO: [Chipscope 16-329] Generating Script for core instance : dbg_hub 
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:3.0 for cell dbg_hub_CV.
+INFO: [Chipscope 16-469] Using cached IP synthesis design for IP xilinx.com:ip:xsdbm:3.0, cache-ID = 13ad87c1e83703d5.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.067 . Memory (MB): peak = 2276.902 ; gain = 0.000
+Phase 2 Generate And Synthesize Debug Cores | Checksum: 5778fd5d
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:46 . Memory (MB): peak = 2276.902 ; gain = 66.875
+
+Phase 3 Retarget
+INFO: [Opt 31-138] Pushed 112 inverter(s) to 6306 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 17ba3d687
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:52 . Memory (MB): peak = 2276.902 ; gain = 66.875
+INFO: [Opt 31-389] Phase Retarget created 585 cells and removed 2450 cells
+INFO: [Opt 31-1021] In phase Retarget, 86 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 5 inverter(s) to 5 load pin(s).
+Phase 4 Constant propagation | Checksum: 1bb476427
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:52 . Memory (MB): peak = 2276.902 ; gain = 66.875
+INFO: [Opt 31-389] Phase Constant propagation created 670 cells and removed 1448 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 74 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 Sweep
+Phase 5 Sweep | Checksum: 1677c0be5
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:57 . Memory (MB): peak = 2276.902 ; gain = 66.875
+INFO: [Opt 31-389] Phase Sweep created 1 cells and removed 2877 cells
+INFO: [Opt 31-1021] In phase Sweep, 2081 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 6 BUFG optimization
+INFO: [Opt 31-1077] Phase BUFG optimization inserted 0 global clock buffer(s) for CLOCK_LOW_FANOUT.
+Phase 6 BUFG optimization | Checksum: 1677c0be5
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:58 . Memory (MB): peak = 2276.902 ; gain = 66.875
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 1677c0be5
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:58 . Memory (MB): peak = 2276.902 ; gain = 66.875
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: da5c0dd4
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:59 . Memory (MB): peak = 2276.902 ; gain = 66.875
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 1 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 186 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |             585  |            2450  |                                             86  |
+|  Constant propagation         |             670  |            1448  |                                             74  |
+|  Sweep                        |               1  |            2877  |                                           2081  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               1  |                                            186  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.079 . Memory (MB): peak = 2276.902 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: f820e91a
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:01:00 . Memory (MB): peak = 2276.902 ; gain = 66.875
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Power 33-23] Power model is not available for xiphy_riu_or
+INFO: [Power 33-23] Power model is not available for genVref.u_hpio_vref
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 3 BRAM(s) out of a total of 59 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 5 WE to EN ports
+Number of BRAM Ports augmented: 13 newly gated: 31 Total Ports: 118
+Ending PowerOpt Patch Enables Task | Checksum: 854e4634
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.586 . Memory (MB): peak = 4294.355 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 854e4634
+
+Time (s): cpu = 00:01:02 ; elapsed = 00:00:48 . Memory (MB): peak = 4294.355 ; gain = 2017.453
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 854e4634
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4294.355 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.383 . Memory (MB): peak = 4294.355 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 100a8a7c9
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.383 . Memory (MB): peak = 4294.355 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+56 Infos, 16 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:02:03 ; elapsed = 00:01:57 . Memory (MB): peak = 4294.355 ; gain = 2313.363
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.231 . Memory (MB): peak = 4294.355 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:22 ; elapsed = 00:00:13 . Memory (MB): peak = 4294.355 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_drc -file softMC_top_drc_opted.rpt -pb softMC_top_drc_opted.pb -rpx softMC_top_drc_opted.rpx
+Command: report_drc -file softMC_top_drc_opted.rpt -pb softMC_top_drc_opted.pb -rpx softMC_top_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:18 ; elapsed = 00:00:12 . Memory (MB): peak = 4294.355 ; gain = 0.000
+INFO: [Chipscope 16-240] Debug cores have already been implemented
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcvu095'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcvu095'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 4294.355 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 5699cad7
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.122 . Memory (MB): peak = 4294.355 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 4294.355 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 132167fe5
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 4294.355 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 140b7f021
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:24 . Memory (MB): peak = 4294.355 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 140b7f021
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:24 . Memory (MB): peak = 4294.355 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 140b7f021
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:24 . Memory (MB): peak = 4294.355 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 17a964745
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:28 . Memory (MB): peak = 4294.355 ; gain = 0.000
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 1fcf32005
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:30 . Memory (MB): peak = 4294.355 ; gain = 0.000
+
+Phase 2.3 Global Placement Core
+
+Phase 2.3.1 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 57 LUTNM shape to break, 1010 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 32, two critical 25, total 57, new lutff created 7
+INFO: [Physopt 32-775] End 1 Pass. Optimized 434 nets or cells. Created 57 new cells, deleted 377 existing cells and moved 0 existing cell
+INFO: [Physopt 32-76] Pass 1. Identified 1 candidate net for fanout optimization.
+INFO: [Physopt 32-81] Processed net u_ddr4_0/inst/u_ddr_cal_top/u_ddr_cal/u_ddr_cal_addr_decode/u_ddr_cal_cplx/cplx_cal. Replicated 7 times.
+INFO: [Physopt 32-232] Optimized 1 net. Created 7 new instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 1 net or cell. Created 7 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.077 . Memory (MB): peak = 4294.355 ; gain = 0.000
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 4294.355 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |           57  |            377  |                   434  |           0  |           1  |  00:00:01  |
+|  Very High Fanout                                 |            7  |              0  |                     1  |           0  |           1  |  00:00:01  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |           64  |            377  |                   435  |           0  |           8  |  00:00:02  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.3.1 Physical Synthesis In Placer | Checksum: 1a6aef3b2
+
+Time (s): cpu = 00:01:52 ; elapsed = 00:01:13 . Memory (MB): peak = 4294.355 ; gain = 0.000
+Phase 2.3 Global Placement Core | Checksum: 1c05ff55b
+
+Time (s): cpu = 00:01:54 ; elapsed = 00:01:14 . Memory (MB): peak = 4294.355 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 1c05ff55b
+
+Time (s): cpu = 00:01:54 ; elapsed = 00:01:14 . Memory (MB): peak = 4294.355 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 164385448
+
+Time (s): cpu = 00:01:58 ; elapsed = 00:01:17 . Memory (MB): peak = 4294.355 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 115559ae6
+
+Time (s): cpu = 00:02:04 ; elapsed = 00:01:21 . Memory (MB): peak = 4294.355 ; gain = 0.000
+
+Phase 3.3 Small Shape DP
+
+Phase 3.3.1 Small Shape Clustering
+Phase 3.3.1 Small Shape Clustering | Checksum: 1df6cbd79
+
+Time (s): cpu = 00:02:22 ; elapsed = 00:01:35 . Memory (MB): peak = 4294.355 ; gain = 0.000
+
+Phase 3.3.2 DP Optimization
+Phase 3.3.2 DP Optimization | Checksum: 1671b16e0
+
+Time (s): cpu = 00:02:44 ; elapsed = 00:01:48 . Memory (MB): peak = 4294.355 ; gain = 0.000
+
+Phase 3.3.3 Flow Legalize Slice Clusters
+Phase 3.3.3 Flow Legalize Slice Clusters | Checksum: 10657a4d4
+
+Time (s): cpu = 00:02:44 ; elapsed = 00:01:48 . Memory (MB): peak = 4294.355 ; gain = 0.000
+
+Phase 3.3.4 Slice Area Swap
+Phase 3.3.4 Slice Area Swap | Checksum: 1c987f979
+
+Time (s): cpu = 00:02:47 ; elapsed = 00:01:50 . Memory (MB): peak = 4294.355 ; gain = 0.000
+Phase 3.3 Small Shape DP | Checksum: 1bb8519f1
+
+Time (s): cpu = 00:02:57 ; elapsed = 00:01:56 . Memory (MB): peak = 4294.355 ; gain = 0.000
+
+Phase 3.4 Re-assign LUT pins
+Phase 3.4 Re-assign LUT pins | Checksum: 1a652f77a
+
+Time (s): cpu = 00:02:59 ; elapsed = 00:01:58 . Memory (MB): peak = 4294.355 ; gain = 0.000
+
+Phase 3.5 Pipeline Register Optimization
+Phase 3.5 Pipeline Register Optimization | Checksum: 1972297a0
+
+Time (s): cpu = 00:02:59 ; elapsed = 00:01:59 . Memory (MB): peak = 4294.355 ; gain = 0.000
+
+Phase 3.6 Fast Optimization
+Phase 3.6 Fast Optimization | Checksum: 1bfd50e45
+
+Time (s): cpu = 00:03:52 ; elapsed = 00:02:45 . Memory (MB): peak = 4294.355 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 1bfd50e45
+
+Time (s): cpu = 00:03:52 ; elapsed = 00:02:46 . Memory (MB): peak = 4294.355 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 13cd0c580
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.611 | TNS=-293.763 |
+Phase 1 Physical Synthesis Initialization | Checksum: 1aa6ba716
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 4294.355 ; gain = 0.000
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Ending Physical Synthesis Task | Checksum: 1732a6e3d
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 4294.355 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: 13cd0c580
+
+Time (s): cpu = 00:04:24 ; elapsed = 00:03:05 . Memory (MB): peak = 4294.355 ; gain = 0.000
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-3.203. For the most accurate timing information please run report_timing.
+
+Time (s): cpu = 00:05:04 ; elapsed = 00:03:46 . Memory (MB): peak = 4294.355 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 185048482
+
+Time (s): cpu = 00:05:04 ; elapsed = 00:03:47 . Memory (MB): peak = 4294.355 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 4294.355 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 2831fe781
+
+Time (s): cpu = 00:05:10 ; elapsed = 00:03:51 . Memory (MB): peak = 4294.355 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ____________________________________________________
+|           | Global Congestion | Short Congestion  |
+| Direction | Region Size       | Region Size       |
+|___________|___________________|___________________|
+|      North|                4x4|              16x16|
+|___________|___________________|___________________|
+|      South|                8x8|                8x8|
+|___________|___________________|___________________|
+|       East|                4x4|              16x16|
+|___________|___________________|___________________|
+|       West|                4x4|              16x16|
+|___________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 2831fe781
+
+Time (s): cpu = 00:05:10 ; elapsed = 00:03:51 . Memory (MB): peak = 4294.355 ; gain = 0.000
+Phase 4.3 Placer Reporting | Checksum: 2831fe781
+
+Time (s): cpu = 00:05:10 ; elapsed = 00:03:51 . Memory (MB): peak = 4294.355 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 4294.355 ; gain = 0.000
+
+Time (s): cpu = 00:05:10 ; elapsed = 00:03:51 . Memory (MB): peak = 4294.355 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 24dc469b9
+
+Time (s): cpu = 00:05:10 ; elapsed = 00:03:51 . Memory (MB): peak = 4294.355 ; gain = 0.000
+Ending Placer Task | Checksum: 192bd7c93
+
+Time (s): cpu = 00:05:10 ; elapsed = 00:03:51 . Memory (MB): peak = 4294.355 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+98 Infos, 16 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:05:19 ; elapsed = 00:03:58 . Memory (MB): peak = 4294.355 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:09 ; elapsed = 00:00:03 . Memory (MB): peak = 4294.355 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:19 ; elapsed = 00:00:10 . Memory (MB): peak = 4294.355 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_io -file softMC_top_io_placed.rpt
+report_io: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.235 . Memory (MB): peak = 4294.355 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file softMC_top_utilization_placed.rpt -pb softMC_top_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file softMC_top_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.194 . Memory (MB): peak = 4294.355 ; gain = 0.000
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcvu095'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcvu095'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 4294.355 ; gain = 0.000
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.203 | TNS=-266.621 |
+Phase 1 Physical Synthesis Initialization | Checksum: 1ef7429a7
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 4294.355 ; gain = 0.000
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.203 | TNS=-266.621 |
+
+Phase 2 DSP Register Optimization
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 2 DSP Register Optimization | Checksum: 1ef7429a7
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 4294.355 ; gain = 0.000
+
+Phase 3 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.203 | TNS=-266.621 |
+INFO: [Physopt 32-663] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/m_axis_h2c_tdata[22].  Re-placed instance EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/axi_dat_100_reg[22]
+INFO: [Physopt 32-735] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/m_axis_h2c_tdata[22]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.203 | TNS=-266.496 |
+INFO: [Physopt 32-663] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/m_axis_h2c_tdata[24].  Re-placed instance EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/axi_dat_100_reg[24]
+INFO: [Physopt 32-735] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/m_axis_h2c_tdata[24]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.203 | TNS=-266.369 |
+INFO: [Physopt 32-663] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/m_axis_h2c_tdata[26].  Re-placed instance EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/axi_dat_100_reg[26]
+INFO: [Physopt 32-735] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/m_axis_h2c_tdata[26]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.200 | TNS=-266.243 |
+INFO: [Physopt 32-663] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/m_axis_h2c_tdata[28].  Re-placed instance EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/axi_dat_100_reg[28]
+INFO: [Physopt 32-735] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/m_axis_h2c_tdata[28]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.200 | TNS=-266.120 |
+INFO: [Physopt 32-663] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/m_axis_h2c_tdata[30].  Re-placed instance EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/axi_dat_100_reg[30]
+INFO: [Physopt 32-735] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/m_axis_h2c_tdata[30]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.197 | TNS=-266.004 |
+INFO: [Physopt 32-663] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/m_axis_h2c_tdata[14].  Re-placed instance EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/axi_dat_100_reg[14]
+INFO: [Physopt 32-735] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/m_axis_h2c_tdata[14]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.197 | TNS=-265.891 |
+INFO: [Physopt 32-663] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/m_axis_h2c_tdata[16].  Re-placed instance EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/axi_dat_100_reg[16]
+INFO: [Physopt 32-735] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/m_axis_h2c_tdata[16]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.197 | TNS=-265.778 |
+INFO: [Physopt 32-663] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/m_axis_h2c_tdata[18].  Re-placed instance EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/axi_dat_100_reg[18]
+INFO: [Physopt 32-735] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/m_axis_h2c_tdata[18]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.197 | TNS=-265.666 |
+INFO: [Physopt 32-663] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/m_axis_h2c_tdata[20].  Re-placed instance EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/axi_dat_100_reg[20]
+INFO: [Physopt 32-735] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/m_axis_h2c_tdata[20]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.197 | TNS=-265.604 |
+INFO: [Physopt 32-663] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/m_axis_h2c_tdata[23].  Re-placed instance EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/axi_dat_100_reg[23]
+INFO: [Physopt 32-735] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/m_axis_h2c_tdata[23]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.197 | TNS=-265.543 |
+INFO: [Physopt 32-663] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/m_axis_h2c_tdata[25].  Re-placed instance EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/axi_dat_100_reg[25]
+INFO: [Physopt 32-735] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/m_axis_h2c_tdata[25]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.197 | TNS=-265.482 |
+INFO: [Physopt 32-663] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/m_axis_h2c_tdata[27].  Re-placed instance EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/axi_dat_100_reg[27]
+INFO: [Physopt 32-735] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/m_axis_h2c_tdata[27]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.196 | TNS=-265.422 |
+INFO: [Physopt 32-662] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/m_axis_h2c_tdata[29].  Did not re-place instance EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/axi_dat_100_reg[29]
+INFO: [Physopt 32-702] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/m_axis_h2c_tdata[29]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net i_softmc/i_iseq_disp/dispatcher_busy_r_reg_0.  Re-placed instance i_softmc/i_iseq_disp/dispatcher_busy_r_reg
+INFO: [Physopt 32-735] Processed net i_softmc/i_iseq_disp/dispatcher_busy_r_reg_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.137 | TNS=-260.171 |
+INFO: [Physopt 32-662] Processed net i_softmc/i_iseq_disp/dispatcher_busy_r_reg_0.  Did not re-place instance i_softmc/i_iseq_disp/dispatcher_busy_r_reg
+INFO: [Physopt 32-702] Processed net i_softmc/i_iseq_disp/dispatcher_busy_r_reg_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/wpl_rd.  Did not re-place instance EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/axi_eop_100_i_1
+INFO: [Physopt 32-702] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/wpl_rd. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/axi_eop_100_i_2_n_0.  Did not re-place instance EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/axi_eop_100_i_2
+INFO: [Physopt 32-702] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/axi_eop_100_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net i_softmc/i_instr_recv/E[0].  Did not re-place instance i_softmc/i_instr_recv/xdma_0_i_i_1
+INFO: [Physopt 32-702] Processed net i_softmc/i_instr_recv/E[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/mst_sm_cur_100_reg[1][0].  Did not re-place instance EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/axi_dat_100[127]_i_2
+INFO: [Physopt 32-702] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/mst_sm_cur_100_reg[1][0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.137 | TNS=-260.171 |
+Phase 3 Critical Path Optimization | Checksum: 1ef7429a7
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:13 . Memory (MB): peak = 4294.355 ; gain = 0.000
+
+Phase 4 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.137 | TNS=-260.171 |
+INFO: [Physopt 32-663] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/m_axis_h2c_tdata[29].  Re-placed instance EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/axi_dat_100_reg[29]
+INFO: [Physopt 32-735] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/m_axis_h2c_tdata[29]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.137 | TNS=-260.114 |
+INFO: [Physopt 32-663] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/m_axis_h2c_tdata[31].  Re-placed instance EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/axi_dat_100_reg[31]
+INFO: [Physopt 32-735] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/m_axis_h2c_tdata[31]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.134 | TNS=-260.058 |
+INFO: [Physopt 32-663] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/m_axis_h2c_tdata[15].  Re-placed instance EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/axi_dat_100_reg[15]
+INFO: [Physopt 32-735] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/m_axis_h2c_tdata[15]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.134 | TNS=-260.005 |
+INFO: [Physopt 32-663] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/m_axis_h2c_tdata[17].  Re-placed instance EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/axi_dat_100_reg[17]
+INFO: [Physopt 32-735] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/m_axis_h2c_tdata[17]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.134 | TNS=-259.952 |
+INFO: [Physopt 32-662] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/m_axis_h2c_tdata[19].  Did not re-place instance EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/axi_dat_100_reg[19]
+INFO: [Physopt 32-702] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/m_axis_h2c_tdata[19]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net i_softmc/i_iseq_disp/dispatcher_busy_r_reg_0.  Did not re-place instance i_softmc/i_iseq_disp/dispatcher_busy_r_reg
+INFO: [Physopt 32-81] Processed net i_softmc/i_iseq_disp/dispatcher_busy_r_reg_0. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net i_softmc/i_iseq_disp/dispatcher_busy_r_reg_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.099 | TNS=-256.837 |
+INFO: [Physopt 32-662] Processed net i_softmc/i_iseq_disp/dispatcher_busy_r_reg_0_repN.  Did not re-place instance i_softmc/i_iseq_disp/dispatcher_busy_r_reg_replica
+INFO: [Physopt 32-702] Processed net i_softmc/i_iseq_disp/dispatcher_busy_r_reg_0_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/wpl_rd was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/wpl_rd.  Did not re-place instance EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/axi_eop_100_i_1
+INFO: [Physopt 32-710] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/mst_sm_cur_100_reg[1][0]. Critical path length was reduced through logic transformation on cell EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/axi_dat_100[127]_i_2_comp.
+INFO: [Physopt 32-735] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/wpl_rd. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.004 | TNS=-252.823 |
+INFO: [Physopt 32-662] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/axi_eop_100_i_2_n_0.  Did not re-place instance EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/axi_eop_100_i_2
+INFO: [Physopt 32-710] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/mst_sm_cur_100_reg[1][0]. Critical path length was reduced through logic transformation on cell EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/axi_dat_100[127]_i_2_comp_1.
+INFO: [Physopt 32-735] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/axi_eop_100_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.972 | TNS=-244.760 |
+INFO: [Physopt 32-662] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/FifoCntrRd_reg[1].  Did not re-place instance EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/FifoCntrWr_reg[1]
+INFO: [Physopt 32-702] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/FifoCntrRd_reg[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/wpl_rd was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/wpl_rd.  Did not re-place instance EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/axi_eop_100_i_1
+INFO: [Physopt 32-710] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/FifoCntrWr[3]_i_1__4_n_0. Critical path length was reduced through logic transformation on cell EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/FifoCntrWr[3]_i_1__4_comp.
+INFO: [Physopt 32-735] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/wpl_rd. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.941 | TNS=-244.372 |
+INFO: [Physopt 32-663] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/axi_rid_100[1].  Re-placed instance EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/axi_rid_100_reg[1]
+INFO: [Physopt 32-735] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/axi_rid_100[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.941 | TNS=-244.160 |
+INFO: [Physopt 32-663] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/axi_rid_100[3].  Re-placed instance EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/axi_rid_100_reg[3]
+INFO: [Physopt 32-735] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/axi_rid_100[3]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.937 | TNS=-243.948 |
+INFO: [Physopt 32-663] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/axi_rid_100[2].  Re-placed instance EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/axi_rid_100_reg[2]
+INFO: [Physopt 32-735] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/axi_rid_100[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.937 | TNS=-243.740 |
+INFO: [Physopt 32-663] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/axi_rid_100[4].  Re-placed instance EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/axi_rid_100_reg[4]
+INFO: [Physopt 32-735] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/axi_rid_100[4]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.897 | TNS=-243.532 |
+INFO: [Physopt 32-662] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WPL_FIFO/FifoCntrRd_reg[1].  Did not re-place instance EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WPL_FIFO/FifoCntrWr_reg[1]
+INFO: [Physopt 32-702] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WPL_FIFO/FifoCntrRd_reg[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/axi_xfr_10010_in.  Did not re-place instance EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/RdPtr[2]_i_2__3
+INFO: [Physopt 32-710] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/wpl_wren_nn3_reg[0]. Critical path length was reduced through logic transformation on cell EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/FifoCntrWr[3]_i_1__5_comp.
+INFO: [Physopt 32-735] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/axi_xfr_10010_in. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.897 | TNS=-242.734 |
+INFO: [Physopt 32-663] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/axi_rid_100[0].  Re-placed instance EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/axi_rid_100_reg[0]
+INFO: [Physopt 32-735] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/axi_rid_100[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.887 | TNS=-242.564 |
+INFO: [Physopt 32-662] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/wpl_dat_cnt_nn1_reg[3].  Did not re-place instance EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/wpl_dat_cnt_nn1_reg[3]
+INFO: [Physopt 32-702] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/wpl_dat_cnt_nn1_reg[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/axi_xfr_10010_in.  Did not re-place instance EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/RdPtr[2]_i_2__3
+INFO: [Physopt 32-710] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/E[0]. Critical path length was reduced through logic transformation on cell EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/wpl_dat_cnt_nn1[4]_i_1_comp.
+INFO: [Physopt 32-735] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/axi_xfr_10010_in. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.881 | TNS=-242.230 |
+INFO: [Physopt 32-662] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/axi_eop_100_i_2_n_0.  Did not re-place instance EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/axi_eop_100_i_2
+INFO: [Physopt 32-710] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/FifoCntrWr[3]_i_1__4_n_0. Critical path length was reduced through logic transformation on cell EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/FifoCntrWr[3]_i_1__4_comp_1.
+INFO: [Physopt 32-735] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/axi_eop_100_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.842 | TNS=-241.768 |
+INFO: [Physopt 32-662] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/wpl_dat_cnt_nn1[4]_i_3_n_0.  Did not re-place instance EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/wpl_dat_cnt_nn1[4]_i_3
+INFO: [Physopt 32-572] Net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/wpl_dat_cnt_nn1[4]_i_3_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/wpl_dat_cnt_nn1[4]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/axi_xfr_10010_in.  Did not re-place instance EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/RdPtr[2]_i_2__3
+INFO: [Physopt 32-710] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/wpl_dat_cnt_nn1[4]_i_3_n_0. Critical path length was reduced through logic transformation on cell EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/wpl_dat_cnt_nn1[4]_i_3_comp.
+INFO: [Physopt 32-735] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/axi_xfr_10010_in. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.839 | TNS=-241.508 |
+INFO: [Physopt 32-702] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/empty_ff_reg_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/empty_ff_i_2__9_n_0.  Re-placed instance EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/empty_ff_i_2__9
+INFO: [Physopt 32-735] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/empty_ff_i_2__9_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.820 | TNS=-241.465 |
+INFO: [Physopt 32-572] Net i_softmc/i_instr_recv/E[0] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net i_softmc/i_instr_recv/E[0].  Did not re-place instance i_softmc/i_instr_recv/xdma_0_i_i_1
+INFO: [Physopt 32-710] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/E[0]. Critical path length was reduced through logic transformation on cell EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/wpl_dat_cnt_nn1[4]_i_1_comp_1.
+INFO: [Physopt 32-735] Processed net i_softmc/i_instr_recv/E[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.814 | TNS=-240.322 |
+INFO: [Physopt 32-662] Processed net i_softmc/i_instr_recv/E[0].  Did not re-place instance i_softmc/i_instr_recv/xdma_0_i_i_1
+INFO: [Physopt 32-702] Processed net i_softmc/i_instr_recv/E[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/mst_sm_cur_100_reg[1][0] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/mst_sm_cur_100_reg[1][0].  Did not re-place instance EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/axi_dat_100[127]_i_2_comp_1
+INFO: [Physopt 32-702] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/mst_sm_cur_100_reg[1][0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/m_axis_h2c_tdata[19].  Re-placed instance EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/axi_dat_100_reg[19]
+INFO: [Physopt 32-735] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/m_axis_h2c_tdata[19]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.814 | TNS=-240.251 |
+INFO: [Physopt 32-663] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/m_axis_h2c_tdata[21].  Re-placed instance EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/axi_dat_100_reg[21]
+INFO: [Physopt 32-735] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/m_axis_h2c_tdata[21]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.795 | TNS=-240.180 |
+INFO: [Physopt 32-702] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/empty_ff_reg_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net i_softmc/i_iseq_disp/dispatcher_busy_r_reg_0_repN.  Did not re-place instance i_softmc/i_iseq_disp/dispatcher_busy_r_reg_replica
+INFO: [Physopt 32-702] Processed net i_softmc/i_iseq_disp/dispatcher_busy_r_reg_0_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/empty_ff_i_2__9_n_0.  Did not re-place instance EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/empty_ff_i_2__9
+INFO: [Physopt 32-702] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/empty_ff_i_2__9_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/wpl_rd.  Did not re-place instance EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/axi_eop_100_i_1
+INFO: [Physopt 32-702] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/wpl_rd. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/axi_eop_100_i_2_n_0.  Did not re-place instance EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/axi_eop_100_i_2
+INFO: [Physopt 32-702] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/axi_eop_100_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net i_softmc/i_instr_recv/E[0].  Did not re-place instance i_softmc/i_instr_recv/xdma_0_i_i_1
+INFO: [Physopt 32-702] Processed net i_softmc/i_instr_recv/E[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net EP/xdma_0_i/inst/udma_wrapper/dma_top/dma_enable.axist.dma_axist/axist_h2c[0].dma_axist_mst/WRQ_FIFO/empty_ff_i_1__12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.795 | TNS=-240.180 |
+Phase 4 Critical Path Optimization | Checksum: 1ef7429a7
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:21 . Memory (MB): peak = 4294.355 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.239 . Memory (MB): peak = 4294.355 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 4294.355 ; gain = 0.000
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-2.795 | TNS=-240.180 |
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization   |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  DSP Register   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Path  |          0.408  |         26.442  |            1  |              0  |                    34  |           0  |           2  |  00:00:13  |
+|  Total          |          0.408  |         26.442  |            1  |              0  |                    34  |           0  |           3  |  00:00:14  |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 4294.355 ; gain = 0.000
+Ending Physical Synthesis Task | Checksum: 1cfb642c9
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:22 . Memory (MB): peak = 4294.355 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+272 Infos, 16 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:01:02 ; elapsed = 00:00:38 . Memory (MB): peak = 4294.355 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 4294.355 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top_physopt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:19 ; elapsed = 00:00:10 . Memory (MB): peak = 4294.355 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcvu095'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcvu095'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: 201c2b05 ConstDB: 0 ShapeSum: 80f3ce22 RouteDB: f52ebd63
+
+Phase 1 Build RT Design
+Nodegraph reading from file.  Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 4294.355 ; gain = 0.000
+Phase 1 Build RT Design | Checksum: 6e523385
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 4294.355 ; gain = 0.000
+Post Restoration Checksum: NetGraph: 34d78670 NumContArr: 6a75584b Constraints: a7d8a7fc Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 1472586b7
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 4294.355 ; gain = 0.000
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 1472586b7
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 4294.355 ; gain = 0.000
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 1472586b7
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 4294.355 ; gain = 0.000
+
+Phase 2.4 Global Clock Net Routing
+ Number of Nodes with overlaps = 0
+Phase 2.4 Global Clock Net Routing | Checksum: 1fbb4642e
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 4294.355 ; gain = 0.000
+
+Phase 2.5 Update Timing
+Phase 2.5 Update Timing | Checksum: 25ac9dce3
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:27 . Memory (MB): peak = 4294.355 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-2.635 | TNS=-225.630| WHS=-0.832 | THS=-70.804|
+
+
+Phase 2.6 Update Timing for Bus Skew
+
+Phase 2.6.1 Update Timing
+Phase 2.6.1 Update Timing | Checksum: 1ab6c500d
+
+Time (s): cpu = 00:01:25 ; elapsed = 00:00:53 . Memory (MB): peak = 4294.355 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-2.635 | TNS=-225.432| WHS=N/A    | THS=N/A    |
+
+Phase 2.6 Update Timing for Bus Skew | Checksum: 267f9846c
+
+Time (s): cpu = 00:01:25 ; elapsed = 00:00:53 . Memory (MB): peak = 4294.355 ; gain = 0.000
+Phase 2 Router Initialization | Checksum: 260b35c46
+
+Time (s): cpu = 00:01:25 ; elapsed = 00:00:53 . Memory (MB): peak = 4294.355 ; gain = 0.000
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.000254252 %
+  Global Horizontal Routing Utilization  = 0.000284349 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 54781
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 48641
+  Number of Partially Routed Nets     = 6140
+  Number of Node Overlaps             = 0
+
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+Phase 3.1 Global Routing | Checksum: 260b35c46
+
+Time (s): cpu = 00:01:28 ; elapsed = 00:00:55 . Memory (MB): peak = 4294.355 ; gain = 0.000
+Phase 3 Initial Routing | Checksum: 1faf28615
+
+Time (s): cpu = 00:03:05 ; elapsed = 00:01:47 . Memory (MB): peak = 4294.355 ; gain = 0.000
+INFO: [Route 35-580] Design has 37 pins with tight setup and hold constraints.
+
+The top 5 pins with tight setup and hold constraints:
+
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|                 axi_aclk |             mmcm_clkout0 |                                                                         EP/xdma_app_i/rx_data_r_reg[20]/D|
+|                 axi_aclk |             mmcm_clkout0 |                                                                          EP/xdma_app_i/rx_data_r_reg[9]/D|
+|                 axi_aclk |             mmcm_clkout0 |                                                                          EP/xdma_app_i/rx_data_r_reg[5]/D|
+|                 axi_aclk |             mmcm_clkout0 |                                                                         EP/xdma_app_i/rx_data_r_reg[29]/D|
+|                 axi_aclk |             mmcm_clkout0 |                                                                         EP/xdma_app_i/rx_data_r_reg[11]/D|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+
+File with complete list of pins: tight_setup_hold_pins.txt
+
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 6758
+ Number of Nodes with overlaps = 351
+ Number of Nodes with overlaps = 26
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-2.748 | TNS=-271.674| WHS=-0.139 | THS=-3.283 |
+
+Phase 4.1 Global Iteration 0 | Checksum: 1e7bdfe2b
+
+Time (s): cpu = 00:07:46 ; elapsed = 00:04:29 . Memory (MB): peak = 4294.355 ; gain = 0.000
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 51
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-2.765 | TNS=-282.432| WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 203c91c1d
+
+Time (s): cpu = 00:08:00 ; elapsed = 00:04:39 . Memory (MB): peak = 4294.355 ; gain = 0.000
+
+Phase 4.3 Global Iteration 2
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-2.736 | TNS=-283.020| WHS=N/A    | THS=N/A    |
+
+Phase 4.3 Global Iteration 2 | Checksum: 24130a14f
+
+Time (s): cpu = 00:08:08 ; elapsed = 00:04:46 . Memory (MB): peak = 4294.355 ; gain = 0.000
+
+Phase 4.4 Global Iteration 3
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-2.710 | TNS=-280.850| WHS=N/A    | THS=N/A    |
+
+Phase 4.4 Global Iteration 3 | Checksum: 1c384659a
+
+Time (s): cpu = 00:08:13 ; elapsed = 00:04:50 . Memory (MB): peak = 4294.355 ; gain = 0.000
+Phase 4 Rip-up And Reroute | Checksum: 1c384659a
+
+Time (s): cpu = 00:08:14 ; elapsed = 00:04:51 . Memory (MB): peak = 4294.355 ; gain = 0.000
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 1701ea4d2
+
+Time (s): cpu = 00:08:25 ; elapsed = 00:04:57 . Memory (MB): peak = 4294.355 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-2.710 | TNS=-280.850| WHS=0.025  | THS=0.000  |
+
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: 2de01556f
+
+Time (s): cpu = 00:08:31 ; elapsed = 00:05:01 . Memory (MB): peak = 4294.355 ; gain = 0.000
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 2de01556f
+
+Time (s): cpu = 00:08:32 ; elapsed = 00:05:01 . Memory (MB): peak = 4294.355 ; gain = 0.000
+Phase 5 Delay and Skew Optimization | Checksum: 2de01556f
+
+Time (s): cpu = 00:08:32 ; elapsed = 00:05:01 . Memory (MB): peak = 4294.355 ; gain = 0.000
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 2882b090a
+
+Time (s): cpu = 00:08:44 ; elapsed = 00:05:08 . Memory (MB): peak = 4294.355 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-2.707 | TNS=-276.948| WHS=-0.025 | THS=-0.052 |
+
+Phase 6.1 Hold Fix Iter | Checksum: 20f231616
+
+Time (s): cpu = 00:08:50 ; elapsed = 00:05:11 . Memory (MB): peak = 4294.355 ; gain = 0.000
+WARNING: [Route 35-468] The router encountered 38 pins that are both setup-critical and hold-critical and tried to fix hold violations at the expense of setup slack. Such pins are:
+	EP/xdma_app_i/sender_state[2]_i_2/I1
+	EP/xdma_app_i/recv_state_i_1/I4
+	EP/xdma_app_i/sender_state_reg[0]/CE
+	EP/xdma_app_i/sender_state_reg[1]/CE
+	EP/xdma_app_i/sender_state_reg[2]/CE
+	EP/xdma_app_i/rx_data_r_reg[0]/D
+	EP/xdma_app_i/rx_data_r_reg[4]/D
+	EP/xdma_app_i/rx_data_r_reg[5]/D
+	EP/xdma_app_i/rx_data_r_reg[9]/D
+	EP/xdma_app_i/rx_data_r_reg[14]/D
+	.. and 28 more pins.
+
+Phase 6 Post Hold Fix | Checksum: 29e19de94
+
+Time (s): cpu = 00:08:50 ; elapsed = 00:05:11 . Memory (MB): peak = 4294.355 ; gain = 0.000
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 1.49485 %
+  Global Horizontal Routing Utilization  = 1.1332 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 79.2373%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 69.6203%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 62.5%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 60.5769%, No Congested Regions.
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+
+Phase 7 Route finalize | Checksum: 1f5dcad29
+
+Time (s): cpu = 00:08:54 ; elapsed = 00:05:14 . Memory (MB): peak = 4294.355 ; gain = 0.000
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 1f5dcad29
+
+Time (s): cpu = 00:08:54 ; elapsed = 00:05:14 . Memory (MB): peak = 4294.355 ; gain = 0.000
+
+Phase 9 Depositing Routes
+INFO: [Route 35-467] Router swapped GT pin EP/xdma_0_i/inst/pcie3_ip_i/inst/xdma_0_pcie3_ip_gt_top_i/gt_wizard.gtwizard_top_i/xdma_0_pcie3_ip_gt_i/inst/gen_gtwizard_gthe3_top.xdma_0_pcie3_ip_gt_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/gthe3_channel_gen.gen_gthe3_channel_inst[0].GTHE3_CHANNEL_PRIM_INST/GTREFCLK0 to physical pin GTHE3_CHANNEL_X0Y0/SOUTHREFCLK1
+INFO: [Route 35-467] Router swapped GT pin EP/xdma_0_i/inst/pcie3_ip_i/inst/xdma_0_pcie3_ip_gt_top_i/gt_wizard.gtwizard_top_i/xdma_0_pcie3_ip_gt_i/inst/gen_gtwizard_gthe3_top.xdma_0_pcie3_ip_gt_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/gthe3_channel_gen.gen_gthe3_channel_inst[1].GTHE3_CHANNEL_PRIM_INST/GTREFCLK0 to physical pin GTHE3_CHANNEL_X0Y1/SOUTHREFCLK1
+INFO: [Route 35-467] Router swapped GT pin EP/xdma_0_i/inst/pcie3_ip_i/inst/xdma_0_pcie3_ip_gt_top_i/gt_wizard.gtwizard_top_i/xdma_0_pcie3_ip_gt_i/inst/gen_gtwizard_gthe3_top.xdma_0_pcie3_ip_gt_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/gthe3_channel_gen.gen_gthe3_channel_inst[2].GTHE3_CHANNEL_PRIM_INST/GTREFCLK0 to physical pin GTHE3_CHANNEL_X0Y2/SOUTHREFCLK1
+INFO: [Route 35-467] Router swapped GT pin EP/xdma_0_i/inst/pcie3_ip_i/inst/xdma_0_pcie3_ip_gt_top_i/gt_wizard.gtwizard_top_i/xdma_0_pcie3_ip_gt_i/inst/gen_gtwizard_gthe3_top.xdma_0_pcie3_ip_gt_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/gthe3_channel_gen.gen_gthe3_channel_inst[3].GTHE3_CHANNEL_PRIM_INST/GTREFCLK0 to physical pin GTHE3_CHANNEL_X0Y3/SOUTHREFCLK1
+Phase 9 Depositing Routes | Checksum: 1f5dcad29
+
+Time (s): cpu = 00:08:57 ; elapsed = 00:05:17 . Memory (MB): peak = 4294.355 ; gain = 0.000
+
+Phase 10 Post Router Timing
+
+Phase 10.1 Update Timing
+Phase 10.1 Update Timing | Checksum: 2520347b7
+
+Time (s): cpu = 00:09:09 ; elapsed = 00:05:24 . Memory (MB): peak = 4294.355 ; gain = 0.000
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-2.707 | TNS=-279.576| WHS=0.025  | THS=0.000  |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 10 Post Router Timing | Checksum: 2520347b7
+
+Time (s): cpu = 00:09:09 ; elapsed = 00:05:24 . Memory (MB): peak = 4294.355 ; gain = 0.000
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:09:09 ; elapsed = 00:05:24 . Memory (MB): peak = 4294.355 ; gain = 0.000
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+298 Infos, 18 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:09:23 ; elapsed = 00:05:32 . Memory (MB): peak = 4294.355 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:12 ; elapsed = 00:00:04 . Memory (MB): peak = 4294.355 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:21 ; elapsed = 00:00:11 . Memory (MB): peak = 4294.355 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_drc -file softMC_top_drc_routed.rpt -pb softMC_top_drc_routed.pb -rpx softMC_top_drc_routed.rpx
+Command: report_drc -file softMC_top_drc_routed.rpt -pb softMC_top_drc_routed.pb -rpx softMC_top_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top_drc_routed.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:28 ; elapsed = 00:00:15 . Memory (MB): peak = 4294.355 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_methodology -file softMC_top_methodology_drc_routed.rpt -pb softMC_top_methodology_drc_routed.pb -rpx softMC_top_methodology_drc_routed.rpx
+Command: report_methodology -file softMC_top_methodology_drc_routed.rpt -pb softMC_top_methodology_drc_routed.pb -rpx softMC_top_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:48 ; elapsed = 00:00:25 . Memory (MB): peak = 4294.355 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_power -file softMC_top_power_routed.rpt -pb softMC_top_power_summary_routed.pb -rpx softMC_top_power_routed.rpx
+Command: report_power -file softMC_top_power_routed.rpt -pb softMC_top_power_summary_routed.pb -rpx softMC_top_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+310 Infos, 19 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:32 ; elapsed = 00:00:18 . Memory (MB): peak = 4294.355 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_route_status -file softMC_top_route_status.rpt -pb softMC_top_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file softMC_top_timing_summary_routed.rpt -pb softMC_top_timing_summary_routed.pb -rpx softMC_top_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+WARNING: [Timing 38-453] Line(s) in the report have been truncated to keep line length below 5000 characters.
+report_timing_summary: Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 4294.355 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_incremental_reuse -file softMC_top_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file softMC_top_clock_utilization_routed.rpt
+report_clock_utilization: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 4294.355 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file softMC_top_bus_skew_routed.rpt -pb softMC_top_bus_skew_routed.pb -rpx softMC_top_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Common 17-206] Exiting Vivado at Mon Jul 26 10:34:47 2021...
