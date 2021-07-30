@@ -230,36 +230,20 @@ module xdma_app #(
     assign s_axis_c2h_tdata_r = send_data_r[offset +: 64];
     
     //assign s_axis_c2h_tdata_r = send_data_r[0 +: 64];
-    
 
-    /*
-      axis_clock_converter_0 H2C_CONVERT(
-      //.s_axis_aresetn(),
-      //.m_axis_aresetn(),
-      .s_axis_aclk(softmc_clk), // in
-      .s_axis_tvalid(m_axis_h2c_tvalid_w), // in
-      .s_axis_tready(m_axis_h2c_tready_w), // out
-      .s_axis_tdata(m_axis_h2c_tdata_w),  // in
-      
-      .m_axis_aclk(axi_clk),        // in
-      .m_axis_tvalid(m_axis_h2c_tvalid_0),  // out
-      .m_axis_tready(m_axis_h2c_tready_0),  // in
-      .m_axis_tdata(m_axis_h2c_tdata_0)  // out
-    );
-    */
-    
-    
-      axis_clock_converter_0 H2C_CONVERT(
+    axis_clock_converter_0 H2C_CONVERT(
       //.s_axis_aresetn(1'b0),
       //.m_axis_aresetn(1'b0),
-      .s_axis_aresetn(~softmc_rst),
-      .m_axis_aresetn(axi_rst_n),
-      .s_axis_aclk(softmc_clk), // in
+      
+      .s_axis_aresetn(axi_rst_n),
+      .m_axis_aresetn(~softmc_rst),
+      .s_axis_aclk(axi_clk), // in
+      .m_axis_aclk(softmc_clk), // in
+           
       .s_axis_tvalid(m_axis_h2c_tvalid_0), // in
       .s_axis_tready(m_axis_h2c_tready_0), // out
       .s_axis_tdata(m_axis_h2c_tdata_0),  // in
 
-      .m_axis_aclk(axi_clk),        // in
       .m_axis_tvalid(m_axis_h2c_tvalid_w),  // out
       .m_axis_tready(m_axis_h2c_tready_w),  // in
       .m_axis_tdata(m_axis_h2c_tdata_w)  // out
@@ -269,14 +253,17 @@ module xdma_app #(
       axis_clock_converter_0 C2H_CONVERT(
       //.s_axis_aresetn(1'b0),
       //.m_axis_aresetn(1'b0),
-      .s_axis_aresetn(axi_rst_n),
-      .m_axis_aresetn(~softmc_rst),
-      .s_axis_aclk(axi_clk), // in
+      
+      
+      .s_axis_aresetn(~softmc_rst),
+      .m_axis_aresetn(axi_rst_n),
+      .s_axis_aclk(softmc_clk), // in
+      .m_axis_aclk(axi_clk),        // in
+      
       .s_axis_tvalid(s_axis_c2h_tvalid_r), // in
       .s_axis_tready(s_axis_c2h_tready_r), // out
       .s_axis_tdata(s_axis_c2h_tdata_r),  // in
-      
-      .m_axis_aclk(softmc_clk), // in
+
       .m_axis_tvalid(s_axis_c2h_tvalid_0), // out
       .m_axis_tready(s_axis_c2h_tready_0), // in
       .m_axis_tdata(s_axis_c2h_tdata_0)  // out

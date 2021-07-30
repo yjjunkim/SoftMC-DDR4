@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Thu Jul 29 18:49:41 2021">
+<application name="pa" timeStamp="Fri Jul 30 11:47:33 2021">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="5a10ec3c1c1d423f9f2a629cfce8f797" type="ProjectID"/>
 <property name="ProjectIteration" value="1" type="ProjectIteration"/>
@@ -30,7 +30,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="EditPaste" value="14" type="JavaHandler"/>
 <property name="EditProperties" value="20" type="JavaHandler"/>
 <property name="EditUndo" value="9" type="JavaHandler"/>
-<property name="ExitApp" value="82" type="JavaHandler"/>
+<property name="ExitApp" value="83" type="JavaHandler"/>
 <property name="ImportPorts" value="1" type="JavaHandler"/>
 <property name="InferPorts" value="2" type="JavaHandler"/>
 <property name="LaunchOpenTarget" value="1" type="JavaHandler"/>
@@ -132,7 +132,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="FPGAChooser_RESET_ALL_FILTERS" value="1" type="GuiHandlerData"/>
 <property name="FPGAChooser_SPEED" value="6" type="GuiHandlerData"/>
 <property name="FPGAChooser_TEMPERATURE" value="4" type="GuiHandlerData"/>
-<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="4509" type="GuiHandlerData"/>
+<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="4513" type="GuiHandlerData"/>
 <property name="FileSetPanel_MESSAGES" value="1" type="GuiHandlerData"/>
 <property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="1131" type="GuiHandlerData"/>
 <property name="GettingStartedView_CLEAR_LIST" value="1" type="GuiHandlerData"/>
@@ -389,9 +389,9 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="XPG_IPSymbol_SHOW_DISABLED_PORTS" value="4" type="GuiHandlerData"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="145" type="GuiMode"/>
+<property name="GuiMode" value="147" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="91" type="TclMode"/>
+<property name="TclMode" value="93" type="TclMode"/>
 </item>
 </section>
 </application>
