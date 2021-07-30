@@ -2,89 +2,57 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Mon Jul 26 10:16:48 2021
-# Process ID: 13892
+# Start of session at: Thu Jul 29 18:51:00 2021
+# Process ID: 3012
 # Current directory: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent31820 C:\Users\yongj\Desktop\softmc_ddr4\hw\boards\ML605\project_1\project_1.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent32344 C:\Users\yongj\Desktop\softmc_ddr4\hw\boards\ML605\project_1\project_1.xpr
 # Log file: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/vivado.log
 # Journal file: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.xpr
-reset_run synth_1
-launch_runs impl_1 -jobs 8
-wait_on_run impl_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-open_hw_manager
-connect_hw_server -allow_non_jtag
-open_hw_target
-set_property PROGRAM.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.bit} [get_hw_devices xcvu095_0]
-set_property PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
-set_property FULL_PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
-current_hw_device [get_hw_devices xcvu095_0]
-refresh_hw_device [lindex [get_hw_devices xcvu095_0] 0]
-set_property PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
-set_property FULL_PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
-set_property PROGRAM.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.bit} [get_hw_devices xcvu095_0]
-program_hw_devices [get_hw_devices xcvu095_0]
-refresh_hw_device [lindex [get_hw_devices xcvu095_0] 0]
-launch_simulation
-close_hw_manager
 launch_simulation
 launch_simulation
+launch_simulation
+launch_simulation
+save_project_as project_2_softmc_ddr4 C:/Users/yongj/Desktop/xusps3_test/project_2_softmc_ddr4 -force
+import_files
+launch_simulation
+launch_simulation
+launch_simulation
+set_property used_in_implementation false [get_files  C:/Users/yongj/Desktop/xusps3_test/project_2_softmc_ddr4/project_2_softmc_ddr4.srcs/sim_1/imports/imports/arch_package.sv]
+set_property used_in_implementation true [get_files  C:/Users/yongj/Desktop/xusps3_test/project_2_softmc_ddr4/project_2_softmc_ddr4.srcs/sim_1/imports/imports/arch_package.sv]
+set_property used_in_synthesis true [get_files  C:/Users/yongj/Desktop/xusps3_test/project_2_softmc_ddr4/project_2_softmc_ddr4.srcs/sim_1/imports/imports/arch_package.sv]
+set_property used_in_synthesis false [get_files  C:/Users/yongj/Desktop/xusps3_test/project_2_softmc_ddr4/project_2_softmc_ddr4.srcs/sim_1/imports/imports/arch_package.sv]
+set_property IS_GLOBAL_INCLUDE 1 [get_files C:/Users/yongj/Desktop/xusps3_test/project_2_softmc_ddr4/project_2_softmc_ddr4.srcs/sim_1/imports/imports/arch_package.sv]
+launch_simulation
+open_wave_config C:/Users/yongj/Desktop/xusps3_test/project_2_softmc_ddr4/project_2_softmc_ddr4.srcs/sim_1/imports/ML605/project_1/tb_softMC_top_behav.wcfg
 source tb_softMC_top.tcl
-run all
-current_wave_config {Untitled 1}
-add_wave {{/tb_softMC_top/uut/u_ddr4_0}} 
-current_wave_config {Untitled 1}
+current_wave_config {tb_softMC_top_behav.wcfg}
+add_wave {{/tb_softMC_top/uut/EP}} 
+current_wave_config {tb_softMC_top_behav.wcfg}
 add_wave {{/tb_softMC_top/uut/i_softmc}} 
+run all
+run all
+restart
 run all
 restart
 run all
 close_sim
 launch_simulation
-source tb_softMC_top.tcl
-current_wave_config {Untitled 2}
-add_wave {{/tb_softMC_top/uut/u_ddr4_0}} 
-current_wave_config {Untitled 2}
-add_wave {{/tb_softMC_top/uut/i_softmc}} 
-run all
-close_sim
 launch_simulation
+open_wave_config C:/Users/yongj/Desktop/xusps3_test/project_2_softmc_ddr4/project_2_softmc_ddr4.srcs/sim_1/imports/ML605/project_1/tb_softMC_top_behav.wcfg
 source tb_softMC_top.tcl
-current_wave_config {Untitled 3}
+current_wave_config {tb_softMC_top_behav.wcfg}
 add_wave {{/tb_softMC_top/uut/u_ddr4_0}} 
-current_wave_config {Untitled 3}
+current_wave_config {tb_softMC_top_behav.wcfg}
 add_wave {{/tb_softMC_top/uut/i_softmc}} 
+current_wave_config {tb_softMC_top_behav.wcfg}
+add_wave {{/tb_softMC_top/uut/EP}} 
+current_wave_config {tb_softMC_top_behav.wcfg}
+add_wave {{/tb_softMC_top/uut/EP}} 
+current_wave_config {tb_softMC_top_behav.wcfg}
+add_wave {{/tb_softMC_top/uut/i_softmc}} 
+restart
 run all
 close_sim
-launch_simulation
-source tb_softMC_top.tcl
-current_wave_config {Untitled 4}
-add_wave {{/tb_softMC_top/uut/u_ddr4_0}} 
-current_wave_config {Untitled 4}
-add_wave {{/tb_softMC_top/uut/i_softmc}} 
-run all
-run all
-close_sim
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-open_hw_manager
-connect_hw_server -allow_non_jtag
-open_hw_target
-set_property PROGRAM.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.bit} [get_hw_devices xcvu095_0]
-set_property PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
-set_property FULL_PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
-current_hw_device [get_hw_devices xcvu095_0]
-refresh_hw_device [lindex [get_hw_devices xcvu095_0] 0]
-set_property PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
-set_property FULL_PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
-set_property PROGRAM.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.bit} [get_hw_devices xcvu095_0]
-program_hw_devices [get_hw_devices xcvu095_0]
-refresh_hw_device [lindex [get_hw_devices xcvu095_0] 0]
-close_hw_manager

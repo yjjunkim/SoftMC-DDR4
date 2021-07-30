@@ -58,7 +58,7 @@ module xdma_app #(
   parameter TCQ                         = 1,
   parameter C_M_AXI_ID_WIDTH            = 4,
   parameter PL_LINK_CAP_MAX_LINK_WIDTH  = 8,
-  parameter C_DATA_WIDTH                = 128,
+  parameter C_DATA_WIDTH                = 64,
   parameter C_M_AXI_DATA_WIDTH          = C_DATA_WIDTH,
   parameter C_S_AXI_DATA_WIDTH          = C_DATA_WIDTH,
   parameter C_S_AXIS_DATA_WIDTH         = C_DATA_WIDTH,
@@ -80,10 +80,12 @@ module xdma_app #(
       // AXI streaming ports
     output wire [C_DATA_WIDTH-1:0] s_axis_c2h_tdata_0,  
     output wire s_axis_c2h_tlast_0,
-    //output wire s_axis_c2h_tvalid_0,
-    output reg s_axis_c2h_tvalid_0,
+    //output reg s_axis_c2h_tlast_0,
+    output wire s_axis_c2h_tvalid_0,
+    //output reg s_axis_c2h_tvalid_0,
     input  wire s_axis_c2h_tready_0,
     output wire [C_DATA_WIDTH/8-1:0] s_axis_c2h_tkeep_0, // [15:0]
+    
     input  wire [C_DATA_WIDTH-1:0] m_axis_h2c_tdata_0,
     //input  wire [31:0] m_axis_h2c_tdata_0,  // softMC : PCI_DATA_WIDTH
     //input  wire [128:0] m_axis_h2c_tdata_0,  // softMC : PCI_DATA_WIDTH
@@ -95,13 +97,15 @@ module xdma_app #(
     //input wire [31:0] return_app_instr,
 
   // System IO signals
-  input  wire         user_resetn,
-  input  wire         sys_rst_n,
- 
-  input  wire         user_clk,
-  input  wire         user_lnk_up,
+  input wire axi_clk,
+  input  wire         axi_rst_n,
+  
+  input  wire         softmc_clk,
+  input wire softmc_rst,
+  
+  
   //output wire   [3:0] leds,
-  output reg   [2:0] leds,
+  output  [2:0] leds,
   
   ///////////softMC///////////////////
   output  app_en,
@@ -116,91 +120,38 @@ module xdma_app #(
 );
   // wire/reg declarations
   wire            sys_reset;
-  reg  [25:0]     user_clk_heartbeat;
   
   ////// softmc Port list ///////
   reg app_en_r;
   //reg[31:0] rx_data_r;
   reg[C_DATA_WIDTH-1:0] rx_data_r;
   
-  //softmc led test
-  /*
-  always @(posedge user_clk)begin
-    if(!sys_resetn)begin
-        leds = 3'b111;
-    end
-    else if(m_axis_h2c_tdata_0 == {128{1'b1}})begin
-        leds = 3'b000;
-    end
-  end
-  */
+  wire m_axis_h2c_tvalid_w;
+  wire m_axis_h2c_tready_w;
+  wire [C_DATA_WIDTH-1:0] m_axis_h2c_tdata_w;
   
+  //wire s_axis_c2h_tvalid_r;
+  reg s_axis_c2h_tvalid_r;
+  wire s_axis_c2h_tready_r;
+  wire [C_DATA_WIDTH-1:0] s_axis_c2h_tdata_r;
+  
+  // clock convert rest test
+  assign leds[0] = softmc_rst;
+  assign leds[1] = ~axi_rst_n;
 
-
-  // The sys_rst_n input is active low based on the core configuration
-  assign sys_resetn = sys_rst_n;
-
-  // Create a Clock Heartbeat
-  always @(posedge user_clk) begin
-    if(!sys_resetn) begin
-      user_clk_heartbeat <= #TCQ 26'd0;
-    end else begin
-      user_clk_heartbeat <= #TCQ user_clk_heartbeat + 1'b1;
-    end
-  end
-
-  // LEDs for observation
-  //assign leds[0] = sys_resetn;
-  //assign leds[1] = user_resetn;
-  //assign leds[2] = user_lnk_up;
-  //assign leds[3] = user_clk_heartbeat[25];
-
-      // AXI streaming portss
-      /*
-      //assign s_axis_c2h_tdata_0 =  m_axis_h2c_tdata_0;   
-      assign s_axis_c2h_tdata_0 =  {128{1'b1}};  
-      //assign s_axis_c2h_tlast_0 =  m_axis_h2c_tlast_0;
-      assign s_axis_c2h_tlast_0 =  1'b1;
-      //assign s_axis_c2h_tvalid_0 =  m_axis_h2c_tvalid_0;  
-      assign s_axis_c2h_tvalid_0 =  1'b1; 
-      //assign s_axis_c2h_tkeep_0 =  m_axis_h2c_tkeep_0;  
-      assign s_axis_c2h_tkeep_0 = 16'b1111111111111111;
-      //assign m_axis_h2c_tready_0 = s_axis_c2h_tready_0;
-      assign m_axis_h2c_tready_0 = 1'b1;
-      */
-      
-      
-      ////////////softMC signal : Direct connection//////////
-      /*
-      //assign s_axis_c2h_tkeep_0 =  m_axis_h2c_tkeep_0;   // ?
-      assign s_axis_c2h_tkeep_0 = 16'b1111111111111111;
-      
-      /////h2c : host to card - RX/////
-      assign app_en = m_axis_h2c_tvalid_0;
-      assign app_instr = m_axis_h2c_tdata_0;
-      
-      assign m_axis_h2c_tready_0 = app_ack;
-      //assign m_axis_h2c_tlast_0 = 1'b1;
-      
-      /////c2h : card to host - TX/////
-      assign s_axis_c2h_tvalid_0 = ~rdback_fifo_empty;
-      assign s_axis_c2h_tdata_0 = rdback_data;
-      
-      assign rdback_fifo_rden = s_axis_c2h_tready_0;
-      assign s_axis_c2h_tlast_0 = 1'b1;
-      */
-      
-      
       //////// softMC signal : reg connection /////////////
-      assign s_axis_c2h_tkeep_0 = 16'b1111111111111111;
+      assign s_axis_c2h_tkeep_0 = 8'b11111111;
       //assign s_axis_c2h_tlast_0 = m_axis_h2c_tlast_0;
       assign s_axis_c2h_tlast_0 =  1'b1;
       
-      assign m_axis_h2c_tready_0 = ~app_en_r | app_ack;
-      always@(posedge user_clk)begin
-            if(~app_en_r | app_ack) begin
-                app_en_r <= m_axis_h2c_tvalid_0;
-                rx_data_r <= m_axis_h2c_tdata_0;
+      assign m_axis_h2c_tready_w = ~app_en_r | app_ack;
+      always@(posedge softmc_clk)begin
+            if(softmc_rst)begin
+                app_en_r <=1'b0;
+            end 
+            else if(~app_en_r | app_ack) begin
+                app_en_r <= m_axis_h2c_tvalid_w;
+                rx_data_r <= m_axis_h2c_tdata_w;
             end
       end
       //send to the MC
@@ -213,12 +164,12 @@ module xdma_app #(
       
       reg sender_ack;
       //reg[511:0] send_data_r;
-      reg[64*8 -1:0] send_data_r;
+      reg[511:0] send_data_r;
       
       reg recv_state = RECV_IDLE;
       assign rdback_fifo_rden = (recv_state == RECV_IDLE);
-      always@(posedge user_clk) begin
-            if(!sys_rst_n) begin // rst n?
+      always@(posedge softmc_clk) begin
+            if(softmc_rst) begin // rst n?
                 recv_state <= RECV_IDLE;
             end
             else begin
@@ -226,7 +177,6 @@ module xdma_app #(
                     RECV_IDLE: begin
                         if(~rdback_fifo_empty) begin
                             send_data_r <= rdback_data;
-                            //send_data_r <= {512{1'b1}};
                             recv_state <= RECV_BUSY;
                         end
                     end //RECV_IDLE
@@ -240,39 +190,33 @@ module xdma_app #(
         end
         
         
-        //reg[2:0] sender_state = 0; //edit this if DQ_WIDTH or C_PCI_DATA_WIDTH changes
-        //reg[2:0] sender_state_ns;
+
         reg[3:0] sender_state = 0; //edit this if DQ_WIDTH or C_PCI_DATA_WIDTH changes
         reg[3:0] sender_state_ns;
         
-        //reg s_axis_c2h_tvalid_0; // softmc : for always statements
+
         
         always@* begin
             sender_ack = 1'b0;
             sender_state_ns = sender_state;
-            //CHNL_TX = sender_state[2];
-            
-            //CHNL_TX_LEN = 16;
-            
+            //s_axis_c2h_tlast_0 =  1'b0;
+             s_axis_c2h_tvalid_r = 1'b0;
             if(recv_state == RECV_BUSY) begin
-                //CHNL_TX = 1'b1;
-                //CHNL_TX_DATA_VALID = 1'b1;
-                s_axis_c2h_tvalid_0 = 1'b1;
-                
-                
-                //if(CHNL_TX_DATA_REN) begin
-                if(s_axis_c2h_tready_0) begin
+                s_axis_c2h_tvalid_r = 1'b1;
+                if(s_axis_c2h_tready_r) begin
                     sender_state_ns = sender_state + 4'd1;
                     
                     //if(sender_state[1:0] == 2'b11)
-                    if(sender_state[2:0] == 3'b111)
+                    if(sender_state[2:0] == 3'b111)begin
                         sender_ack = 1'b1;
+                        //s_axis_c2h_tlast_0 =  1'b1;
+                    end
                 end
             end
         end
       
-    always@(posedge user_clk) begin
-        if(!sys_resetn) begin
+    always@(posedge softmc_clk) begin
+        if(softmc_rst) begin
             sender_state <= 0;
         end
         else begin
@@ -280,20 +224,64 @@ module xdma_app #(
         end
     end
 
-    //wire[7:0] offset = {6'd0, sender_state[1:0]} << 6;
-    //assign CHNL_TX_DATA = send_data_r[offset +: 64];  
-    //wire[7:0] offset = {7'd0, sender_state[1:0]} << 7;
-    //wire[8:0] offset = {7'd0, sender_state[1:0]} << 7;
-    //assign s_axis_c2h_tdata_0 = send_data_r[offset +: 128];
+
     
     wire[8:0] offset = {6'd0, sender_state[2:0]} << 6;
-    assign s_axis_c2h_tdata_0 = send_data_r[offset +: 64];
+    assign s_axis_c2h_tdata_r = send_data_r[offset +: 64];
     
-    //assign s_axis_c2h_tdata_0 = {4{return_app_instr}};
-    //assign s_axis_c2h_tdata_0 = m_axis_h2c_tdata_0;
+    //assign s_axis_c2h_tdata_r = send_data_r[0 +: 64];
     
-      
 
+    /*
+      axis_clock_converter_0 H2C_CONVERT(
+      //.s_axis_aresetn(),
+      //.m_axis_aresetn(),
+      .s_axis_aclk(softmc_clk), // in
+      .s_axis_tvalid(m_axis_h2c_tvalid_w), // in
+      .s_axis_tready(m_axis_h2c_tready_w), // out
+      .s_axis_tdata(m_axis_h2c_tdata_w),  // in
+      
+      .m_axis_aclk(axi_clk),        // in
+      .m_axis_tvalid(m_axis_h2c_tvalid_0),  // out
+      .m_axis_tready(m_axis_h2c_tready_0),  // in
+      .m_axis_tdata(m_axis_h2c_tdata_0)  // out
+    );
+    */
+    
+    
+      axis_clock_converter_0 H2C_CONVERT(
+      //.s_axis_aresetn(1'b0),
+      //.m_axis_aresetn(1'b0),
+      .s_axis_aresetn(~softmc_rst),
+      .m_axis_aresetn(axi_rst_n),
+      .s_axis_aclk(softmc_clk), // in
+      .s_axis_tvalid(m_axis_h2c_tvalid_0), // in
+      .s_axis_tready(m_axis_h2c_tready_0), // out
+      .s_axis_tdata(m_axis_h2c_tdata_0),  // in
+
+      .m_axis_aclk(axi_clk),        // in
+      .m_axis_tvalid(m_axis_h2c_tvalid_w),  // out
+      .m_axis_tready(m_axis_h2c_tready_w),  // in
+      .m_axis_tdata(m_axis_h2c_tdata_w)  // out
+    );
+    
+    
+      axis_clock_converter_0 C2H_CONVERT(
+      //.s_axis_aresetn(1'b0),
+      //.m_axis_aresetn(1'b0),
+      .s_axis_aresetn(axi_rst_n),
+      .m_axis_aresetn(~softmc_rst),
+      .s_axis_aclk(axi_clk), // in
+      .s_axis_tvalid(s_axis_c2h_tvalid_r), // in
+      .s_axis_tready(s_axis_c2h_tready_r), // out
+      .s_axis_tdata(s_axis_c2h_tdata_r),  // in
+      
+      .m_axis_aclk(softmc_clk), // in
+      .m_axis_tvalid(s_axis_c2h_tvalid_0), // out
+      .m_axis_tready(s_axis_c2h_tready_0), // in
+      .m_axis_tdata(s_axis_c2h_tdata_0)  // out
+    );
+    
 
 
 

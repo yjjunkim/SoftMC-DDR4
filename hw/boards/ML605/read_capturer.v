@@ -41,6 +41,7 @@ module read_capturer #(parameter DQ_WIDTH = 64) (
 		end
 		else begin
 			rd_data_r <= dfi_rddata;
+			//rd_data_r <= {8{64'h1234567890abcdef}};
 			rd_data_r2 <= rd_data_r;
 			rd_data_en_r <= dfi_rddata_valid;
 			rd_data_en_even_r <= dfi_rddata_valid_even;
@@ -59,10 +60,12 @@ module read_capturer #(parameter DQ_WIDTH = 64) (
 	//assign rdback_fifo_wrdata = rd_data_en_even_r ? {rd_data_r[DQ_WIDTH*2 - 1:0], rd_data_r2[DQ_WIDTH*2 +: DQ_WIDTH*2]} : rd_data_r;
 	
 	// jun : odd, even condtion 무시하고 직접 dfi signal 전달.
-	assign rdback_fifo_wren = dfi_rddata_valid;
-	//assign rdback_fifo_wren = 1'b1;
-	assign rdback_fifo_wrdata = dfi_rddata;
-	//assign rdback_fifo_wrdata = {512{1'b1}};
+	//assign rdback_fifo_wren = dfi_rddata_valid;
+	//assign rdback_fifo_wrdata = dfi_rddata;
+	
+	assign rdback_fifo_wren = rd_data_en_r;
+	assign rdback_fifo_wrdata = rd_data_r;
+	
 	
 	assign dfi_clk_disable = rdback_fifo_full_r;
 

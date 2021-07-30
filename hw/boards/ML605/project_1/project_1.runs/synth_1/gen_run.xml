@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xcvu095-ffvb2104-2-e" LaunchTime="1627265914">
+<GenRun Id="synth_1" LaunchPart="xcvu095-ffvb2104-2-e" LaunchTime="1627550479">
   <File Type="PA-TCL" Name="softMC_top.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="softMC_top_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="softMC_top_reports.tcl"/>
   <File Type="RDS-RDS" Name="softMC_top.vds"/>
   <File Type="RDS-UTIL" Name="softMC_top_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="softMC_top_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="softMC_top.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="softMC_top_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="softMC_top_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/ip/xilinx_mig/xilinx_mig/user_design/mig.prj">
@@ -163,6 +160,48 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/ip/instr_fifo.xcix">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/instr_fifo/instr_fifo.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/axis_clock_converter_c2h.xcix">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/axis_clock_converter_c2h/axis_clock_converter_c2h.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/axis_clock_converter_0/axis_clock_converter_0.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/axis_clock_converter_0.xcix">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="softMC_top"/>
@@ -200,5 +239,4 @@
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="ddr4_0"/>
   <BlockFileSet Type="BlockSrcs" Name="rdback_fifo"/>
-  <BlockFileSet Type="BlockSrcs" Name="instr_fifo"/>
 </GenRun>

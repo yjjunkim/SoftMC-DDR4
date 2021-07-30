@@ -1,6 +1,6 @@
 `timescale 1ps / 1ps
 
-module pipe_reg #(parameter WIDTH = 8) (
+module pipe_reg #(parameter WIDTH = 32) (
         input clk,
         input rst,
         

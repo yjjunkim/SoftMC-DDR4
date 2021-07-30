@@ -31,7 +31,7 @@ module instr_decoder #(parameter ROW_WIDTH = 15, BANK_WIDTH = 3, CS_WIDTH = 1)(
     
     reg [2:0] addr_add;
 	always@* begin
-		dfi_address = {ROW_WIDTH*8{1'bx}};
+		dfi_address = {ROW_WIDTH*8{1'bx}};    
 		dfi_bank = {BANK_WIDTH*8{1'bx}};
 		dfi_bankgroup = {8{1'bx}};
 		

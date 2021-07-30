@@ -1,7 +1,8 @@
 //uncomment the line below to run a simulation using "tb_softMC_top"
-//`define SIM
+`define SIM
 
-`define tCK 2500
+//`define tCK 2500
+`define tCK 1250
 
 // instruction opcodes
 `define DDR_INSTR 4'b1xxx

@@ -59,7 +59,7 @@ module xilinx_dma_pcie_ep #
    parameter PL_LINK_CAP_MAX_LINK_WIDTH          = 8,            // 1- X1; 2 - X2; 4 - X4; 8 - X8
    parameter PL_SIM_FAST_LINK_TRAINING           = "FALSE",      // Simulation Speedup
    parameter PL_LINK_CAP_MAX_LINK_SPEED          = 1,             // 1- GEN1; 2 - GEN2; 4 - GEN3
-   parameter C_DATA_WIDTH                        = 128 ,
+   parameter C_DATA_WIDTH                        = 64 ,
    parameter EXT_PIPE_SIM                        = "FALSE",  // This Parameter has effect on selecting Enable External PIPE Interface in GUI.
    parameter C_ROOT_PORT                         = "FALSE",      // PCIe block is in root port mode
    parameter C_DEVICE_NUMBER                     = 0,            // Device number for Root Port configurations only
@@ -84,7 +84,9 @@ module xilinx_dma_pcie_ep #
     input 					 sys_rst_n,
     
     
-    input app_clk,
+    input softmc_clk,
+    input softmc_rst,
+    //input app_clk,
     output  app_en,
     input app_ack,
 	output[31:0] app_instr,
@@ -320,16 +322,16 @@ module xilinx_dma_pcie_ep #
       .m_axis_h2c_tready_0(m_axis_h2c_tready_0),
       .m_axis_h2c_tkeep_0(m_axis_h2c_tkeep_0),
 
-
-      //.user_clk(user_clk),
-      .user_resetn(user_resetn),
-      .user_lnk_up(user_lnk_up),
-      .sys_rst_n(sys_rst_n_c),
-
       .leds(leds),
-      ///////// softMC ///////////
-      //.app_clk(app_clk),
-      .user_clk(app_clk),
+      
+      //axi clock
+      .axi_rst_n(user_resetn),
+      .axi_clk(user_clk),
+
+      //softmc clock
+      .softmc_clk(softmc_clk),
+      .softmc_rst(softmc_rst),
+
       .app_en(app_en),
       .app_ack(app_ack),
       .app_instr(app_instr),

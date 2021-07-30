@@ -6,8 +6,10 @@ module softMC_top #
   (
 	parameter TCQ             = 100,
 	//parameter tCK = 2500, //ps, TODO: let memory clok be 400 Mhz for now
-	parameter tCK = 1250, //ps, TODO: let memory clok be 400 Mhz for now
-	parameter nCK_PER_CLK     = 2,       // # of memory clocks per CLK
+	//parameter tCK = 1250, //ps, TODO: let memory clok be 400 Mhz for now
+	parameter tCK = 10000, //ps, TODO: let memory clok be 400 Mhz for now
+	//parameter nCK_PER_CLK     = 2,       // # of memory clocks per CLK
+	parameter nCK_PER_CLK     = 4,       // # of memory clocks per CLK
 	//parameter REFCLK_FREQ     = 200.0,   // IODELAY Reference Clock freq (MHz)
 	parameter REFCLK_FREQ     = 100.0,   // IODELAY Reference Clock freq (MHz)
 	parameter DRAM_TYPE       = "DDR3",  // Memory I/F type: "DDR3", "DDR2"
@@ -100,8 +102,8 @@ module softMC_top #
    )(
 	//input sys_clk_p,
 	//input sys_clk_n,
-	input clk_ref_p,
-	input clk_ref_n,
+	//input clk_ref_p,
+	//input clk_ref_n,
 	//input sys_rst,
 	input sys_reset_n,
 	// DDRx Output Interface
@@ -198,6 +200,10 @@ module softMC_top #
 	 wire iodelay_ctrl_rdy;
 	 wire mmcm_clk;
 	 wire sys_clk = 0;
+	 
+	 
+	 //wire ui_clk;
+	 //assign ui_clk = c0_sys_clk_p;
 	 /*
 	 //use 200MHZ refrence clock to generate mmcm_clk
 	 iodelay_ctrl #
@@ -453,7 +459,7 @@ module softMC_top #
   assign c0_ddr4_reset_n = c0_ddr4_reset_n_int;
   assign dBufAdr = 5'b00000;
   
-  assign sys_rst = ~sys_rst_l;
+  //assign sys_rst = ~sys_rst_l;
 
   
   
@@ -462,7 +468,8 @@ module softMC_top #
     ///////////////////////////////////////////DDR4///////////////////////////////////////////////
 	 ddr4_0 u_ddr4_0
     (
-     .sys_rst              (sys_rst),
+     //.sys_rst              (sys_rst),
+     .sys_rst              (~sys_rst_l),
      .c0_sys_clk_p         (c0_sys_clk_p),
      .c0_sys_clk_n         (c0_sys_clk_n),
 
@@ -554,6 +561,7 @@ module softMC_top #
 	 softMC #(.TCQ(TCQ), .tCK(tCK), .nCK_PER_CLK(nCK_PER_CLK), .RANK_WIDTH(RANK_WIDTH), .ROW_WIDTH(ROW_WIDTH), .BANK_WIDTH(BANK_WIDTH), 
 								.CKE_WIDTH(CKE_WIDTH), .CS_WIDTH(CS_WIDTH), .nCS_PER_RANK(nCS_PER_RANK), .DQ_WIDTH(DQ_WIDTH)) i_softmc(
 	.clk(c0_ddr4_clk),
+	//.clk(ui_clk),
 	.rst(c0_ddr4_rst),
 	
 	//App Command Interface
@@ -598,6 +606,7 @@ module softMC_top #
 	.dfi_rddata_en_odd(dfi_rddata_en_odd),
 	.dfi_rddata(rdData),
 	.dfi_rddata_valid(rdDataEn),
+	//.dfi_rddata_valid(1'b0),
 	.dfi_rddata_valid_even(dfi_rddata_valid_even),
 	.dfi_rddata_valid_odd(dfi_rddata_valid_odd),
 	// DFI Initialization Status / CLK Disable
@@ -617,7 +626,7 @@ module softMC_top #
 	
 );
 
-`ifndef SIM
+//`ifndef SIM
 /*
 riffa_top_v6_pcie_v2_5 #(
   .C_DATA_WIDTH(64),            // RX/TX interface data width
@@ -648,6 +657,10 @@ riffa_top_v6_pcie_v2_5 #(
 	.rdback_data(rdback_data)
 );
 */
+
+	
+
+`ifndef SIM
 xilinx_dma_pcie_ep
    EP (
     // SYS Inteface
@@ -655,12 +668,13 @@ xilinx_dma_pcie_ep
     //.sys_clk_p(ep_sys_clk_p),
     //.sys_rst_n(sys_rst_n),
     
-    .sys_clk_n(sys_clk_n),
-    .sys_clk_p(sys_clk_p),
+     .sys_clk_n(sys_clk_n),
+     .sys_clk_p(sys_clk_p),
     .sys_rst_n(sys_reset_n),
-
-  
-
+    //.sys_clk_n(c0_sys_clk_n),
+    //.sys_clk_p(c0_sys_clk_p),
+    //.sys_rst_n(sys_rst_l),
+ 
 
     // PCI-Express Serial Interface
     //.pci_exp_txn(ep_pci_exp_txn),
@@ -674,7 +688,9 @@ xilinx_dma_pcie_ep
     .pci_exp_rxp(pci_exp_rxp),
     
     ///////////softMC ///////////////
-    .app_clk(c0_ddr4_clk),
+    .softmc_clk(c0_ddr4_clk),
+    .softmc_rst(c0_ddr4_rst),
+    //.app_clk(ui_clk),
 	.app_en(app_en),
 	.app_ack(app_ack),
 	.app_instr(app_instr),
@@ -690,7 +706,49 @@ xilinx_dma_pcie_ep
 	
   
   );
+`else
+xilinx_dma_pcie_ep
+   EP (
+    // SYS Inteface
+    //.sys_clk_n(ep_sys_clk_n),
+    //.sys_clk_p(ep_sys_clk_p),
+    //.sys_rst_n(sys_rst_n),
+    
+    .sys_clk_n(sys_clk_n),
+    .sys_clk_p(sys_clk_p),
+    .sys_rst_n(sys_reset_n),
+
   
+    // PCI-Express Serial Interface
+    //.pci_exp_txn(ep_pci_exp_txn),
+    //.pci_exp_txp(ep_pci_exp_txp),
+    //.pci_exp_rxn(rp_pci_exp_txn),
+    //.pci_exp_rxp(rp_pci_exp_txp)
+    
+    .pci_exp_txn(pci_exp_txn),
+    .pci_exp_txp(pci_exp_txp),
+    .pci_exp_rxn(pci_exp_rxn),
+    .pci_exp_rxp(pci_exp_rxp),
+    
+    ///////////softMC ///////////////
+    .softmc_clk(c0_ddr4_clk),
+    //.app_clk(ui_clk),
+	//.app_en(app_en),
+	.app_ack(app_ack),
+	//.app_instr(app_instr),
+	
+	//Data read back Interface
+	.rdback_fifo_empty(rdback_fifo_empty),
+	.rdback_fifo_rden(rdback_fifo_rden),
+	.rdback_data(rdback_data),
+	
+	//.return_app_instr(return_app_instr),
+	
+	.leds(leds)
+	
+  
+  );
+
 `endif //SIM
 
 endmodule

@@ -1,7 +1,7 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-// Date        : Mon Jul 19 19:04:30 2021
+// Date        : Mon Jul 26 15:44:41 2021
 // Host        : DESKTOP-ILOVGO9 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub -rename_top xdma_0 -prefix
 //               xdma_0_ xdma_0_stub.v
@@ -22,7 +22,7 @@ module xdma_0(sys_clk, sys_clk_gt, sys_rst_n, user_lnk_up,
   s_axis_c2h_tlast_0, s_axis_c2h_tvalid_0, s_axis_c2h_tready_0, s_axis_c2h_tkeep_0, 
   m_axis_h2c_tdata_0, m_axis_h2c_tlast_0, m_axis_h2c_tvalid_0, m_axis_h2c_tready_0, 
   m_axis_h2c_tkeep_0)
-/* synthesis syn_black_box black_box_pad_pin="sys_clk,sys_clk_gt,sys_rst_n,user_lnk_up,pci_exp_txp[7:0],pci_exp_txn[7:0],pci_exp_rxp[7:0],pci_exp_rxn[7:0],axi_aclk,axi_aresetn,usr_irq_req[0:0],usr_irq_ack[0:0],msi_enable,msi_vector_width[2:0],cfg_mgmt_addr[18:0],cfg_mgmt_write,cfg_mgmt_write_data[31:0],cfg_mgmt_byte_enable[3:0],cfg_mgmt_read,cfg_mgmt_read_data[31:0],cfg_mgmt_read_write_done,cfg_mgmt_type1_cfg_reg_access,s_axis_c2h_tdata_0[127:0],s_axis_c2h_tlast_0,s_axis_c2h_tvalid_0,s_axis_c2h_tready_0,s_axis_c2h_tkeep_0[15:0],m_axis_h2c_tdata_0[127:0],m_axis_h2c_tlast_0,m_axis_h2c_tvalid_0,m_axis_h2c_tready_0,m_axis_h2c_tkeep_0[15:0]" */;
+/* synthesis syn_black_box black_box_pad_pin="sys_clk,sys_clk_gt,sys_rst_n,user_lnk_up,pci_exp_txp[7:0],pci_exp_txn[7:0],pci_exp_rxp[7:0],pci_exp_rxn[7:0],axi_aclk,axi_aresetn,usr_irq_req[0:0],usr_irq_ack[0:0],msi_enable,msi_vector_width[2:0],cfg_mgmt_addr[18:0],cfg_mgmt_write,cfg_mgmt_write_data[31:0],cfg_mgmt_byte_enable[3:0],cfg_mgmt_read,cfg_mgmt_read_data[31:0],cfg_mgmt_read_write_done,cfg_mgmt_type1_cfg_reg_access,s_axis_c2h_tdata_0[63:0],s_axis_c2h_tlast_0,s_axis_c2h_tvalid_0,s_axis_c2h_tready_0,s_axis_c2h_tkeep_0[7:0],m_axis_h2c_tdata_0[63:0],m_axis_h2c_tlast_0,m_axis_h2c_tvalid_0,m_axis_h2c_tready_0,m_axis_h2c_tkeep_0[7:0]" */;
   input sys_clk;
   input sys_clk_gt;
   input sys_rst_n;
@@ -45,14 +45,14 @@ module xdma_0(sys_clk, sys_clk_gt, sys_rst_n, user_lnk_up,
   output [31:0]cfg_mgmt_read_data;
   output cfg_mgmt_read_write_done;
   input cfg_mgmt_type1_cfg_reg_access;
-  input [127:0]s_axis_c2h_tdata_0;
+  input [63:0]s_axis_c2h_tdata_0;
   input s_axis_c2h_tlast_0;
   input s_axis_c2h_tvalid_0;
   output s_axis_c2h_tready_0;
-  input [15:0]s_axis_c2h_tkeep_0;
-  output [127:0]m_axis_h2c_tdata_0;
+  input [7:0]s_axis_c2h_tkeep_0;
+  output [63:0]m_axis_h2c_tdata_0;
   output m_axis_h2c_tlast_0;
   output m_axis_h2c_tvalid_0;
   input m_axis_h2c_tready_0;
-  output [15:0]m_axis_h2c_tkeep_0;
+  output [7:0]m_axis_h2c_tkeep_0;
 endmodule

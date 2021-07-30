@@ -77,16 +77,16 @@ xdma_0 your_instance_name (
   .cfg_mgmt_read_data(cfg_mgmt_read_data),                        // output wire [31 : 0] cfg_mgmt_read_data
   .cfg_mgmt_read_write_done(cfg_mgmt_read_write_done),            // output wire cfg_mgmt_read_write_done
   .cfg_mgmt_type1_cfg_reg_access(cfg_mgmt_type1_cfg_reg_access),  // input wire cfg_mgmt_type1_cfg_reg_access
-  .s_axis_c2h_tdata_0(s_axis_c2h_tdata_0),                        // input wire [127 : 0] s_axis_c2h_tdata_0
+  .s_axis_c2h_tdata_0(s_axis_c2h_tdata_0),                        // input wire [63 : 0] s_axis_c2h_tdata_0
   .s_axis_c2h_tlast_0(s_axis_c2h_tlast_0),                        // input wire s_axis_c2h_tlast_0
   .s_axis_c2h_tvalid_0(s_axis_c2h_tvalid_0),                      // input wire s_axis_c2h_tvalid_0
   .s_axis_c2h_tready_0(s_axis_c2h_tready_0),                      // output wire s_axis_c2h_tready_0
-  .s_axis_c2h_tkeep_0(s_axis_c2h_tkeep_0),                        // input wire [15 : 0] s_axis_c2h_tkeep_0
-  .m_axis_h2c_tdata_0(m_axis_h2c_tdata_0),                        // output wire [127 : 0] m_axis_h2c_tdata_0
+  .s_axis_c2h_tkeep_0(s_axis_c2h_tkeep_0),                        // input wire [7 : 0] s_axis_c2h_tkeep_0
+  .m_axis_h2c_tdata_0(m_axis_h2c_tdata_0),                        // output wire [63 : 0] m_axis_h2c_tdata_0
   .m_axis_h2c_tlast_0(m_axis_h2c_tlast_0),                        // output wire m_axis_h2c_tlast_0
   .m_axis_h2c_tvalid_0(m_axis_h2c_tvalid_0),                      // output wire m_axis_h2c_tvalid_0
   .m_axis_h2c_tready_0(m_axis_h2c_tready_0),                      // input wire m_axis_h2c_tready_0
-  .m_axis_h2c_tkeep_0(m_axis_h2c_tkeep_0)                        // output wire [15 : 0] m_axis_h2c_tkeep_0
+  .m_axis_h2c_tkeep_0(m_axis_h2c_tkeep_0)                        // output wire [7 : 0] m_axis_h2c_tkeep_0
 );
 // INST_TAG_END ------ End INSTANTIATION Template ---------
 

@@ -1,2 +1,0 @@
-Breakpoint File Version 1.0
-1263,true,"C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/tb_softMC_top.v"

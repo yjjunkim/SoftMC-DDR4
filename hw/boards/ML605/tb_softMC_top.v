@@ -32,7 +32,9 @@ module tb_softMC_top;
                                     // =0 for active fhigh.
   parameter IODELAY_GRP           = "IODELAY_MIG";
                                     //to phy_top
-  parameter nCK_PER_CLK           = 2;
+ //MODIFIED by SH, 07
+ // parameter nCK_PER_CLK           = 2;
+   parameter nCK_PER_CLK           = 4;
                                     // # of memory CKs per fabric clock.
                                     // # = 2, 1.
   parameter nCS_PER_RANK          = 1;
@@ -598,10 +600,10 @@ endgenerate
      .DATA_WIDTH                (DATA_WIDTH),
      .PAYLOAD_WIDTH             (PAYLOAD_WIDTH)
      ) uut (
-		.c0_sys_clk_p(sys_clk_p), 
-		.c0_sys_clk_n(sys_clk_n), 
-		.clk_ref_p(clk_ref_p), 
-		.clk_ref_n(clk_ref_n), 
+		.c0_sys_clk_p(clk_ref_p), 
+		.c0_sys_clk_n(clk_ref_n), 
+		//.clk_ref_p(clk_ref_p), 
+		//.clk_ref_n(clk_ref_n), 
 		.sys_rst_l(sys_rst_n), 
 		//.sys_rst_l(sys_rst_l),
 		//.c0_ddr4_reset_n(1'b1),
@@ -628,7 +630,9 @@ endgenerate
 		.c0_init_calib_complete(phy_init_done),
 		//.iq_full(iq_full),
 		//.processing_iseq(processing_iseq),
-		
+		.sys_clk_p(clk_ref_p),
+		.sys_clk_n(clk_ref_n),
+		.sys_reset_n(sys_rst_n),
 		.app_en(app_en),
 		.app_ack(app_ack),
 		.app_instr(app_instr),
@@ -1179,97 +1183,152 @@ endgenerate
 			  
 	  app_en = 0;
 	  #(APP_CLK_PERIOD*1000);
-	  
+	  //read
 	  #APP_CLK_PERIOD;
-		app_en = 1;
-		app_instr = 32'b00010000000000000000000000000010; //busdir
+	    //app_en = 1;
+		//app_instr = 32'b00010000000000000000000000000010; //busdir
 
 		#APP_CLK_PERIOD;
 		app_en = 1;
-		app_instr = 32'b01000000000000000000000000000101; //wait
+		app_instr = 32'b10000001000100000000000000000000 ; // precharge
 
 		#APP_CLK_PERIOD;
 		app_en = 1;
-		app_instr = 32'b10010001000100110000000000000000; //act
+		app_instr = 32'b01000000000000000000000000001111; //wait
 
 		#APP_CLK_PERIOD;
 		app_en = 1;
-		app_instr = 32'b01000000000000000000000000000110; //wait
+		app_instr = 32'b10000001000110000000000000000000 ; //act
 
 		#APP_CLK_PERIOD;
 		app_en = 1;
-		app_instr = 32'b10010001000110110000000010110010; //read
+		app_instr = 32'b01000000000000000000000000001111;  //wait
 
 		#APP_CLK_PERIOD;
 		app_en = 1;
-		app_instr = 32'b01000000000000000000000000000101; //wait
+		app_instr = 32'b11111111001000001101000000000000  ; //write
 
 		#APP_CLK_PERIOD;
 		app_en = 1;
-		app_instr = 32'b10101101001000111000000000001110;
+		app_instr = 32'b01000000000000000000000000001110 ; //wait
+		
+		
+
 
 		#APP_CLK_PERIOD;
 		app_en = 1;
-		app_instr = 32'b01000000000000000000000000000110;
+		app_instr = 32'b01000000000000000000000000001000  ; //wait
 
 		#APP_CLK_PERIOD;
 		app_en = 1;
-		app_instr = 32'b11010011001000110100000000001000;
+		app_instr = 32'b10000001000100000000000000000000  ; //precharge
 
 		#APP_CLK_PERIOD;
 		app_en = 1;
-		app_instr = 32'b01000000000000000000000000001010;
+		app_instr = 32'b01000000000000000000000000001111  ; //wait
+
+		//#APP_CLK_PERIOD;
+		app_en = 1;
+		app_instr = 32'b00000000000000000000000000000000;  //end
+		
+		//#APP_CLK_PERIOD;
+		//app_en = 1;
+		//app_instr = 32'b00010000000000000000000000000000;
+		#APP_CLK_PERIOD;#APP_CLK_PERIOD;#APP_CLK_PERIOD;#APP_CLK_PERIOD;#APP_CLK_PERIOD;#APP_CLK_PERIOD;
+		#APP_CLK_PERIOD;#APP_CLK_PERIOD;#APP_CLK_PERIOD;#APP_CLK_PERIOD;#APP_CLK_PERIOD;#APP_CLK_PERIOD;
+		#APP_CLK_PERIOD;#APP_CLK_PERIOD;#APP_CLK_PERIOD;#APP_CLK_PERIOD;#APP_CLK_PERIOD;#APP_CLK_PERIOD;
+		#APP_CLK_PERIOD;#APP_CLK_PERIOD;#APP_CLK_PERIOD;#APP_CLK_PERIOD;#APP_CLK_PERIOD;#APP_CLK_PERIOD;
+		#APP_CLK_PERIOD;#APP_CLK_PERIOD;#APP_CLK_PERIOD;#APP_CLK_PERIOD;#APP_CLK_PERIOD;#APP_CLK_PERIOD;
+		
+		
+        // read
+		#APP_CLK_PERIOD;
+		app_en = 1;
+		app_instr = 32'b10000001000100000000000000000000 ; //pre
 
 		#APP_CLK_PERIOD;
 		app_en = 1;
-		app_instr = 32'b10010001000100110000000000000000;
+		app_instr = 32'b01000000000000000000000000001111 ; //wait
 
 		#APP_CLK_PERIOD;
 		app_en = 1;
-		app_instr = 32'b01000000000000000000000000000101;
+		app_instr = 32'b10000001000110000000000000000000 ; //act
 
 		#APP_CLK_PERIOD;
 		app_en = 1;
-		app_instr = 32'b00010000000000000000000000000000;
+		app_instr = 32'b01000000000000000000000000001111 ; //wait
 
 		#APP_CLK_PERIOD;
 		app_en = 1;
-		app_instr = 32'b01000000000000000000000000000101;
+		app_instr = 32'b10000001001010000001000000000000 ; //read
 
 		#APP_CLK_PERIOD;
 		app_en = 1;
-		app_instr = 32'b10010001000110110000000010110010;
+		app_instr = 32'b01000000000000000000000000001110 ; //wait
+		
+		
+		/////////
+		#APP_CLK_PERIOD;
+		app_en = 1;
+		app_instr = 32'b10000001001010000001000000000000 ; //read
 
 		#APP_CLK_PERIOD;
 		app_en = 1;
-		app_instr = 32'b01000000000000000000000000000101;
+		app_instr = 32'b01000000000000000000000000001110 ; //wait
+		
+		#APP_CLK_PERIOD;
+		app_en = 1;
+		app_instr = 32'b10000001001010000001000000000000 ; //read
 
 		#APP_CLK_PERIOD;
 		app_en = 1;
-		app_instr = 32'b10000001001010110000000000001000;
+		app_instr = 32'b01000000000000000000000000001110 ; //wait
+		
+		#APP_CLK_PERIOD;
+		app_en = 1;
+		app_instr = 32'b10000001001010000001000000000000 ; //read
 
 		#APP_CLK_PERIOD;
 		app_en = 1;
-		app_instr = 32'b01000000000000000000000000001010;
+		app_instr = 32'b01000000000000000000000000001110 ; //wait
+		
+		#APP_CLK_PERIOD;
+		app_en = 1;
+		app_instr = 32'b10000001001010000001000000000000 ; //read
 
 		#APP_CLK_PERIOD;
 		app_en = 1;
-		app_instr = 32'b01000000000000000000000000000011;
+		app_instr = 32'b01000000000000000000000000001110 ; //wait
+		///////////
+		
 
 		#APP_CLK_PERIOD;
 		app_en = 1;
-		app_instr = 32'b10010001000100110000000000000000;
+		app_instr = 32'b01000000000000000000000000001000 ; //wait
 
 		#APP_CLK_PERIOD;
 		app_en = 1;
-		app_instr = 32'b01000000000000000000000000000101;
+		app_instr = 32'b10000001000100000000000000000000 ; //pre
 
 		#APP_CLK_PERIOD;
 		app_en = 1;
-		app_instr = 32'b00000000000000000000000000000000;
+		app_instr = 32'b01000000000000000000000000001111; //wait
 
+		#APP_CLK_PERIOD;
+		app_en = 1;
+		app_instr = 32'b00000000000000000000000000000000; //end
+		
+
+
+
+
+
+
+		
 		#APP_CLK_PERIOD;
 		app_en = 0;
+		
+		//rdback_fifo_rden = 1;
         end
   end
       

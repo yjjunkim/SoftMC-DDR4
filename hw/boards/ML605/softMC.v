@@ -167,9 +167,10 @@ module softMC #(parameter TCQ = 100, tCK = 2500, nCK_PER_CLK = 2, RANK_WIDTH = 1
 		
 		.app_en(app_en),
 		.app_ack(app_ack),
-		.app_instr(app_instr), 
-		
-		.maint_en(maint_en),
+		.app_instr(app_instr),
+		 
+		//.maint_en(maint_en),
+		.maint_en(1'b0),
 		.maint_ack(maint_ack),
 		.maint_instr(maint_instr),
 		
@@ -278,6 +279,8 @@ module softMC #(parameter TCQ = 100, tCK = 2500, nCK_PER_CLK = 2, RANK_WIDTH = 1
 	wire rdback_fifo_full, rdback_fifo_almost_full;
 	wire rdback_fifo_wren;
 	
+	reg [511:0] test_data;
+	
 	rdback_fifo i_rdback_fifo (
 	  .clk(clk), // input clk
 	  .srst(rst), // input srst
@@ -294,9 +297,31 @@ module softMC #(parameter TCQ = 100, tCK = 2500, nCK_PER_CLK = 2, RANK_WIDTH = 1
 	  .empty(rdback_fifo_empty) // output empty
 	  //.empty(1'b0) // output empty
 	);
+	/*
+	always@(posedge clk)begin
+	   if(rst)begin
+	       test_data <= 0;
+	   end
+	   else begin
+	       test_data <= test_data + 1;
+	   end
+	end
+	*/
+	
+	/*
+	always@(posedge dfi_rddata_valid or posedge rst)begin
+	   if(rst)begin
+	       test_data <= 0;
+	   end
+	   else if(dfi_rddata_valid)begin
+	       test_data <= test_data + 1;
+	   end
+	end
+	assign rdback_data = test_data;
+	*/
 	assign rdback_data = rdback_fifo_out;
 	
-    //assign rdback_data = {512{1'b1}};
+    //assign rdback_data = {8{64'h1234567890abcdef}};
 	wire read_capturer_dfi_clk_disable;
 	read_capturer #(.DQ_WIDTH(DQ_WIDTH)) i_rd_capturer (
 	.clk(clk),

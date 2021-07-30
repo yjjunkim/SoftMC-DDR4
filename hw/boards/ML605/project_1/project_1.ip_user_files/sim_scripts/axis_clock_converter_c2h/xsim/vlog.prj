@@ -1,0 +1,6 @@
+verilog xil_defaultlib --include "D:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" --include "../../../ipstatic/hdl" \
+"../../../ip/axis_clock_converter_c2h/sim/axis_clock_converter_c2h.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

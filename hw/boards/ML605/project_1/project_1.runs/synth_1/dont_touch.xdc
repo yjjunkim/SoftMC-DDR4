@@ -5,3 +5,19 @@
 
 # IP: ip/xdma_0/xdma_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==xdma_0 || ORIG_REF_NAME==xdma_0} -quiet] -quiet
+
+# IP: ip/instr_fifo/instr_fifo.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==instr_fifo || ORIG_REF_NAME==instr_fifo} -quiet] -quiet
+
+# IP: ip/axis_clock_converter_c2h/axis_clock_converter_c2h.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==axis_clock_converter_c2h || ORIG_REF_NAME==axis_clock_converter_c2h} -quiet] -quiet
+
+# IP: ip/axis_clock_converter_0/axis_clock_converter_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==axis_clock_converter_0 || ORIG_REF_NAME==axis_clock_converter_0} -quiet] -quiet
+
+# XDC: ip/instr_fifo/instr_fifo.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==instr_fifo || ORIG_REF_NAME==instr_fifo} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: ip/axis_clock_converter_c2h/axis_clock_converter_c2h_ooc.xdc
+
+# XDC: ip/axis_clock_converter_0/axis_clock_converter_0_ooc.xdc

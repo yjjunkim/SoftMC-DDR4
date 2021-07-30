@@ -75,16 +75,22 @@ module iseq_dispatcher #(parameter ROW_WIDTH = 15, BANK_WIDTH = 3, CKE_WIDTH = 1
 
 	reg dispatcher_busy_r = 1'b0, dispatcher_busy_ns;
 	
+	wire instr0_disp_en;
+	wire instr0_disp_ack, instr1_disp_ack;
+	wire[31:0] instr0, instr1;
+	
 	//check conditions and start transaction
+	//always@*
+	//	dispatcher_busy_ns = ~rst & process_iseq | (dispatcher_busy_r & (~(instr0_fifo_empty & instr1_fifo_empty) 
+	//								| instr0_disp_en | instr1_disp_en));
 	always@*
-		dispatcher_busy_ns = ~rst & process_iseq | (dispatcher_busy_r & (~(instr0_fifo_empty & instr1_fifo_empty) 
-									| instr0_disp_en | instr1_disp_en));
+		dispatcher_busy_ns = ~rst & process_iseq | (dispatcher_busy_r & (~(instr0_fifo_empty) | instr0_disp_en));								
 	always@(posedge clk)
 			dispatcher_busy_r <= dispatcher_busy_ns;
 	
-	wire instr0_disp_en, instr1_disp_en;
-	wire instr0_disp_ack, instr1_disp_ack;
-	wire[31:0] instr0, instr1;
+	//wire instr0_disp_en;
+	//wire instr0_disp_ack, instr1_disp_ack;
+	//wire[31:0] instr0, instr1;
 	
 	wire instr0_ready, instr1_ready;
 	
@@ -102,7 +108,7 @@ module iseq_dispatcher #(parameter ROW_WIDTH = 15, BANK_WIDTH = 3, CKE_WIDTH = 1
         .data_out(instr0),
         .ready_out(instr0_ready)
     );
-	 
+	 /*
 	 pipe_reg #(.WIDTH(32)) i_instr1_reg(
         .clk(clk),
         .rst(rst),
@@ -114,6 +120,7 @@ module iseq_dispatcher #(parameter ROW_WIDTH = 15, BANK_WIDTH = 3, CKE_WIDTH = 1
         .data_out(instr1),
         .ready_out(instr1_ready)
     );
+    */
 	
 	
 	//Command Dispatcher Instantiation
@@ -128,7 +135,7 @@ module iseq_dispatcher #(parameter ROW_WIDTH = 15, BANK_WIDTH = 3, CKE_WIDTH = 1
 	.en_ack0(instr0_disp_ack),
 	.instr_in0(instr0),
 	
-	.en_in1(instr1_disp_en), 
+	//.en_in1(instr1_disp_en), 
 	.en_ack1(instr1_disp_ack),
 	.instr_in1(instr1),
 	

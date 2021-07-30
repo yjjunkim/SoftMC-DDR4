@@ -1,0 +1,1 @@
+--relax --debug typical --mt auto -L axis_infrastructure_v1_1_0 -L axis_clock_converter_v1_1_23 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot axis_clock_converter_0 xil_defaultlib.axis_clock_converter_0 xil_defaultlib.glbl -log elaborate.log
