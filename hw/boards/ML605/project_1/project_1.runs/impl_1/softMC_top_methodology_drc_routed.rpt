@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Thu Jul 29 18:32:53 2021
+| Date         : Sat Jul 31 05:19:19 2021
 | Host         : DESKTOP-ILOVGO9 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file softMC_top_methodology_drc_routed.rpt -pb softMC_top_methodology_drc_routed.pb -rpx softMC_top_methodology_drc_routed.rpx
 | Design       : softMC_top
@@ -23,21 +23,32 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 28
+             Violations found: 22
 +-----------+----------+--------------------------------------------------------+------------+
 | Rule      | Severity | Description                                            | Violations |
 +-----------+----------+--------------------------------------------------------+------------+
+| AVAL-324  | Warning  | Hard_blocks_needs_LOCs                                 | 2          |
 | LUTAR-1   | Warning  | LUT drives async reset alert                           | 11         |
 | TIMING-9  | Warning  | Unknown CDC Logic                                      | 1          |
 | TIMING-10 | Warning  | Missing property on synchronizer                       | 1          |
 | TIMING-18 | Warning  | Missing input or output delay                          | 1          |
-| TIMING-24 | Warning  | Overridden Max delay datapath only                     | 12         |
+| TIMING-24 | Warning  | Overridden Max delay datapath only                     | 4          |
 | XDCC-1    | Warning  | Scoped Clock constraint overwritten with the same name | 1          |
 | XDCC-7    | Warning  | Scoped Clock constraint overwritten on the same source | 1          |
 +-----------+----------+--------------------------------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
+AVAL-324#1 Warning
+Hard_blocks_needs_LOCs  
+The hard block GTHE3_COMMON cell EP/xdma_0_i/inst/pcie3_ip_i/inst/xdma_0_pcie3_ip_gt_top_i/gt_wizard.gtwizard_top_i/xdma_0_pcie3_ip_gt_i/inst/gen_gtwizard_gthe3_top.xdma_0_pcie3_ip_gt_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_common.gen_common_container[0].gen_enabled_common.gthe3_common_wrapper_inst/common_inst/gthe3_common_gen.GTHE3_COMMON_PRIM_INST is missing a valid LOC constraint for placement assignment, normally supplied by IP generation or manually assigned using the LOC property. Unguided placement of this block may cause problems in routing. Please set a valid LOC for this block to avoid these problem.
+Related violations: <none>
+
+AVAL-324#2 Warning
+Hard_blocks_needs_LOCs  
+The hard block GTHE3_COMMON cell EP/xdma_0_i/inst/pcie3_ip_i/inst/xdma_0_pcie3_ip_gt_top_i/gt_wizard.gtwizard_top_i/xdma_0_pcie3_ip_gt_i/inst/gen_gtwizard_gthe3_top.xdma_0_pcie3_ip_gt_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_common.gen_common_container[1].gen_enabled_common.gthe3_common_wrapper_inst/common_inst/gthe3_common_gen.GTHE3_COMMON_PRIM_INST is missing a valid LOC constraint for placement assignment, normally supplied by IP generation or manually assigned using the LOC property. Unguided placement of this block may cause problems in routing. Please set a valid LOC for this block to avoid these problem.
+Related violations: <none>
+
 LUTAR-1#1 Warning
 LUT drives async reset alert  
 LUT cell EP/xdma_0_i/inst/pcie3_ip_i/inst/xdma_0_pcie3_ip_gt_top_i/gt_wizard.gtwizard_top_i/bufg_gt_userclk_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) EP/xdma_0_i/inst/pcie3_ip_i/inst/xdma_0_pcie3_ip_gt_top_i/gt_wizard.gtwizard_top_i/xdma_0_pcie3_ip_gt_i/inst/gen_gtwizard_gthe3_top.xdma_0_pcie3_ip_gt_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[1].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/BUFG_GT_SYNC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
@@ -128,81 +139,41 @@ Related violations: <none>
 
 TIMING-18#1 Warning
 Missing input or output delay  
-An input delay is missing on sys_rst_l relative to clock(s) c0_sys_clk_p
+An input delay is missing on phy_rst_n relative to clock(s) phy_clk_p
 Related violations: <none>
 
 TIMING-24#1 Warning
 Overridden Max delay datapath only  
-An asynchronous set_clock_groups or a set_false path (see constraint position 74 in the Timing Constraints window in Vivado IDE) between clocks dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK and mmcm_clkout5 overrides a set_max_delay -datapath_only (position 106). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+An asynchronous set_clock_groups or a set_false path (see constraint position 75 in the Timing Constraints window in Vivado IDE) between clocks dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK and mmcm_clkout5 overrides a set_max_delay -datapath_only (position 83). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
 Related violations: <none>
 
 TIMING-24#2 Warning
 Overridden Max delay datapath only  
-An asynchronous set_clock_groups or a set_false path (see constraint position 74 in the Timing Constraints window in Vivado IDE) between clocks dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK and mmcm_clkout5 overrides a set_max_delay -datapath_only (position 113). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+An asynchronous set_clock_groups or a set_false path (see constraint position 75 in the Timing Constraints window in Vivado IDE) between clocks dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK and mmcm_clkout5 overrides a set_max_delay -datapath_only (position 90). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
 Related violations: <none>
 
 TIMING-24#3 Warning
 Overridden Max delay datapath only  
-An asynchronous set_clock_groups or a set_false path (see constraint position 74 in the Timing Constraints window in Vivado IDE) between clocks mmcm_clkout0 and txoutclk_out[0] overrides a set_max_delay -datapath_only (position 79). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+An asynchronous set_clock_groups or a set_false path (see constraint position 75 in the Timing Constraints window in Vivado IDE) between clocks mmcm_clkout5 and dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK overrides a set_max_delay -datapath_only (position 85). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
 Related violations: <none>
 
 TIMING-24#4 Warning
 Overridden Max delay datapath only  
-An asynchronous set_clock_groups or a set_false path (see constraint position 74 in the Timing Constraints window in Vivado IDE) between clocks mmcm_clkout0 and txoutclk_out[0] overrides a set_max_delay -datapath_only (position 81). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
-Related violations: <none>
-
-TIMING-24#5 Warning
-Overridden Max delay datapath only  
-An asynchronous set_clock_groups or a set_false path (see constraint position 74 in the Timing Constraints window in Vivado IDE) between clocks mmcm_clkout5 and dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK overrides a set_max_delay -datapath_only (position 108). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
-Related violations: <none>
-
-TIMING-24#6 Warning
-Overridden Max delay datapath only  
-An asynchronous set_clock_groups or a set_false path (see constraint position 74 in the Timing Constraints window in Vivado IDE) between clocks mmcm_clkout5 and dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK overrides a set_max_delay -datapath_only (position 111). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
-Related violations: <none>
-
-TIMING-24#7 Warning
-Overridden Max delay datapath only  
-An asynchronous set_clock_groups or a set_false path (see constraint position 74 in the Timing Constraints window in Vivado IDE) between clocks txoutclk_out[0] and mmcm_clkout0 overrides a set_max_delay -datapath_only (position 83). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
-Related violations: <none>
-
-TIMING-24#8 Warning
-Overridden Max delay datapath only  
-An asynchronous set_clock_groups or a set_false path (see constraint position 74 in the Timing Constraints window in Vivado IDE) between clocks txoutclk_out[0] and mmcm_clkout0 overrides a set_max_delay -datapath_only (position 85). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
-Related violations: <none>
-
-TIMING-24#9 Warning
-Overridden Max delay datapath only  
-An asynchronous set_clock_groups or a set_false path (see constraint position 76 in the Timing Constraints window in Vivado IDE) between clocks mmcm_clkout0 and txoutclk_out[0] overrides a set_max_delay -datapath_only (position 79). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
-Related violations: <none>
-
-TIMING-24#10 Warning
-Overridden Max delay datapath only  
-An asynchronous set_clock_groups or a set_false path (see constraint position 76 in the Timing Constraints window in Vivado IDE) between clocks mmcm_clkout0 and txoutclk_out[0] overrides a set_max_delay -datapath_only (position 81). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
-Related violations: <none>
-
-TIMING-24#11 Warning
-Overridden Max delay datapath only  
-An asynchronous set_clock_groups or a set_false path (see constraint position 76 in the Timing Constraints window in Vivado IDE) between clocks txoutclk_out[0] and mmcm_clkout0 overrides a set_max_delay -datapath_only (position 83). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
-Related violations: <none>
-
-TIMING-24#12 Warning
-Overridden Max delay datapath only  
-An asynchronous set_clock_groups or a set_false path (see constraint position 76 in the Timing Constraints window in Vivado IDE) between clocks txoutclk_out[0] and mmcm_clkout0 overrides a set_max_delay -datapath_only (position 85). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+An asynchronous set_clock_groups or a set_false path (see constraint position 75 in the Timing Constraints window in Vivado IDE) between clocks mmcm_clkout5 and dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK overrides a set_max_delay -datapath_only (position 88). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
 Related violations: <none>
 
 XDCC-1#1 Warning
 Scoped Clock constraint overwritten with the same name  
 A new clock constraint create_clock overrides a previous scoped clock constraint with the same name. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
-New: create_clock -period 10.000 [get_ports c0_sys_clk_p] (Source: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/constrs_1/imports/xusps3_config/xusps3_pinout.xdc (Line: 47))
-Previous: create_clock -period 10.000 [get_ports c0_sys_clk_p] (Source: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/par/ddr4_0.xdc (Line: 7))
+New: create_clock -period 10.000 [get_ports phy_clk_p] (Source: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/constrs_1/imports/xusps3_config/xusps3_pinout.xdc (Line: 44))
+Previous: create_clock -period 10.000 [get_ports phy_clk_p] (Source: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/par/ddr4_0.xdc (Line: 7))
 Related violations: <none>
 
 XDCC-7#1 Warning
 Scoped Clock constraint overwritten on the same source  
 A new clock constraint create_clock overrides a previous scoped clock constraint defined on the same source. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
-New: create_clock -period 10.000 [get_ports c0_sys_clk_p] (Source: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/constrs_1/imports/xusps3_config/xusps3_pinout.xdc (Line: 47))
-Previous: create_clock -period 10.000 [get_ports c0_sys_clk_p] (Source: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/par/ddr4_0.xdc (Line: 7))
+New: create_clock -period 10.000 [get_ports phy_clk_p] (Source: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/constrs_1/imports/xusps3_config/xusps3_pinout.xdc (Line: 44))
+Previous: create_clock -period 10.000 [get_ports phy_clk_p] (Source: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/par/ddr4_0.xdc (Line: 7))
 Related violations: <none>
 
 

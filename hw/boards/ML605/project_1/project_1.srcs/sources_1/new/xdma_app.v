@@ -58,7 +58,9 @@ module xdma_app #(
   parameter TCQ                         = 1,
   parameter C_M_AXI_ID_WIDTH            = 4,
   parameter PL_LINK_CAP_MAX_LINK_WIDTH  = 8,
-  parameter C_DATA_WIDTH                = 64,
+  //parameter C_DATA_WIDTH                = 64,
+  //parameter C_DATA_WIDTH                = 256,
+  parameter C_DATA_WIDTH                = 128,
   parameter C_M_AXI_DATA_WIDTH          = C_DATA_WIDTH,
   parameter C_S_AXI_DATA_WIDTH          = C_DATA_WIDTH,
   parameter C_S_AXIS_DATA_WIDTH         = C_DATA_WIDTH,
@@ -78,10 +80,10 @@ module xdma_app #(
 
 
       // AXI streaming ports
-    output wire [C_DATA_WIDTH-1:0] s_axis_c2h_tdata_0,  
+    output reg [C_DATA_WIDTH-1:0] s_axis_c2h_tdata_0,  
     output wire s_axis_c2h_tlast_0,
     //output reg s_axis_c2h_tlast_0,
-    output wire s_axis_c2h_tvalid_0,
+    output reg s_axis_c2h_tvalid_0,
     //output reg s_axis_c2h_tvalid_0,
     input  wire s_axis_c2h_tready_0,
     output wire [C_DATA_WIDTH/8-1:0] s_axis_c2h_tkeep_0, // [15:0]
@@ -91,7 +93,7 @@ module xdma_app #(
     //input  wire [128:0] m_axis_h2c_tdata_0,  // softMC : PCI_DATA_WIDTH
     input  wire m_axis_h2c_tlast_0,
     input  wire m_axis_h2c_tvalid_0,
-    output wire m_axis_h2c_tready_0,
+    output reg m_axis_h2c_tready_0,
     input  wire [C_DATA_WIDTH/8-1:0] m_axis_h2c_tkeep_0,
     
     //input wire [31:0] return_app_instr,
@@ -126,13 +128,13 @@ module xdma_app #(
   //reg[31:0] rx_data_r;
   reg[C_DATA_WIDTH-1:0] rx_data_r;
   
-  wire m_axis_h2c_tvalid_w;
+  reg m_axis_h2c_tvalid_w;
   wire m_axis_h2c_tready_w;
-  wire [C_DATA_WIDTH-1:0] m_axis_h2c_tdata_w;
+  reg [C_DATA_WIDTH-1:0] m_axis_h2c_tdata_w;
   
   //wire s_axis_c2h_tvalid_r;
   reg s_axis_c2h_tvalid_r;
-  wire s_axis_c2h_tready_r;
+  reg s_axis_c2h_tready_r;
   wire [C_DATA_WIDTH-1:0] s_axis_c2h_tdata_r;
   
   // clock convert rest test
@@ -140,19 +142,19 @@ module xdma_app #(
   assign leds[1] = ~axi_rst_n;
 
       //////// softMC signal : reg connection /////////////
-      assign s_axis_c2h_tkeep_0 = 8'b11111111;
-      //assign s_axis_c2h_tlast_0 = m_axis_h2c_tlast_0;
+      assign s_axis_c2h_tkeep_0 = 16'b1111111111111111;
       assign s_axis_c2h_tlast_0 =  1'b1;
       
+   
       assign m_axis_h2c_tready_w = ~app_en_r | app_ack;
-      always@(posedge softmc_clk)begin
-            if(softmc_rst)begin
-                app_en_r <=1'b0;
-            end 
-            else if(~app_en_r | app_ack) begin
-                app_en_r <= m_axis_h2c_tvalid_w;
-                rx_data_r <= m_axis_h2c_tdata_w;
-            end
+      always@(posedge softmc_clk)begin // app_en_r 초기화 취소 0730
+                if(softmc_rst) begin
+                    app_en_r <=1'b0;
+                end
+                else if(~app_en_r | app_ack) begin
+                    app_en_r <= m_axis_h2c_tvalid_w;
+                    rx_data_r <= m_axis_h2c_tdata_w;
+                end
       end
       //send to the MC
       assign app_en = app_en_r;
@@ -171,6 +173,8 @@ module xdma_app #(
       always@(posedge softmc_clk) begin
             if(softmc_rst) begin // rst n?
                 recv_state <= RECV_IDLE;
+                send_data_r <= 512'b0;
+               // s_axis_c2h_tvalid_r = 1'b0;
             end
             else begin
                 case(recv_state)
@@ -190,26 +194,36 @@ module xdma_app #(
         end
         
         
-
-        reg[3:0] sender_state = 0; //edit this if DQ_WIDTH or C_PCI_DATA_WIDTH changes
-        reg[3:0] sender_state_ns;
+        //64 bit width
+        //reg[3:0] sender_state = 0; //edit this if DQ_WIDTH or C_PCI_DATA_WIDTH changes
+        //reg[3:0] sender_state_ns;
         
-
+        //256bit width
+        //reg[1:0] sender_state = 0; //edit this if DQ_WIDTH or C_PCI_DATA_WIDTH changes
+        //reg[1:0] sender_state_ns;
+        
+        //128bit width
+        reg[2:0] sender_state = 0; //edit this if DQ_WIDTH or C_PCI_DATA_WIDTH changes
+        reg[2:0] sender_state_ns;
+        
+        //reg sender_state = 0; //edit this if DQ_WIDTH or C_PCI_DATA_WIDTH changes
+        //reg sender_state_ns;
+        
+         //sendaer state 왜 한비트 추가?
         
         always@* begin
             sender_ack = 1'b0;
             sender_state_ns = sender_state;
-            //s_axis_c2h_tlast_0 =  1'b0;
-             s_axis_c2h_tvalid_r = 1'b0;
+            s_axis_c2h_tvalid_r = 1'b0;
+             
             if(recv_state == RECV_BUSY) begin
                 s_axis_c2h_tvalid_r = 1'b1;
+                
                 if(s_axis_c2h_tready_r) begin
-                    sender_state_ns = sender_state + 4'd1;
+                    sender_state_ns = sender_state + 3'd1;
                     
-                    //if(sender_state[1:0] == 2'b11)
-                    if(sender_state[2:0] == 3'b111)begin
+                    if(sender_state[1:0] ==  2'b11)begin
                         sender_ack = 1'b1;
-                        //s_axis_c2h_tlast_0 =  1'b1;
                     end
                 end
             end
@@ -226,12 +240,81 @@ module xdma_app #(
 
 
     
-    wire[8:0] offset = {6'd0, sender_state[2:0]} << 6;
-    assign s_axis_c2h_tdata_r = send_data_r[offset +: 64];
+    //wire[8:0] offset = {8'd0, sender_state} << 8;
+    //assign s_axis_c2h_tdata_r = send_data_r[offset +: 256];
     
+    //wire[8:0] offset = {6'd0, sender_state[2:0]} << 6;
+    //assign s_axis_c2h_tdata_r = send_data_r[offset +: 128];
+    
+    wire[8:0] offset = {7'd0, sender_state[1:0]} << 7;
+    assign s_axis_c2h_tdata_r = send_data_r[offset +: 128];
+    
+    //wire[8:0] offset = {6'd0, sender_state[2:0]} << 6;
+    //assign s_axis_c2h_tdata_r = send_data_r[offset +: 64];
     //assign s_axis_c2h_tdata_r = send_data_r[0 +: 64];
-
-    axis_clock_converter_0 H2C_CONVERT(
+    
+     reg m_axis_h2c_tvalid_n;
+     reg [127:0]m_axis_h2c_tdata_n;
+     reg m_axis_h2c_tready_n;
+   
+     reg s_axis_c2h_tvalid_n;
+     reg [127:0] s_axis_c2h_tdata_n;
+     reg s_axis_c2h_tready_n;
+     
+    //SOFTMC-->PCIE  
+    always@(posedge softmc_clk)begin
+        if(softmc_rst)begin
+            m_axis_h2c_tdata_n=0;
+            m_axis_h2c_tvalid_n=0;
+            s_axis_c2h_tready_n=0;
+        end
+        else begin
+            m_axis_h2c_tdata_n=#1 m_axis_h2c_tdata_0;
+            m_axis_h2c_tvalid_n=#1 m_axis_h2c_tvalid_0;
+            s_axis_c2h_tready_n=#1 s_axis_c2h_tready_0;
+        end
+    end
+    
+      always@(posedge softmc_clk)
+      begin
+        m_axis_h2c_tdata_w=#1 m_axis_h2c_tdata_n;
+           m_axis_h2c_tvalid_w=#1 m_axis_h2c_tvalid_n;
+           s_axis_c2h_tready_r=#1 s_axis_c2h_tready_n;
+       end
+       
+    
+      //PCIE--> SOFTMC    
+      always@(posedge axi_clk)begin
+        if(~axi_rst_n)begin
+            s_axis_c2h_tdata_n=0;
+            s_axis_c2h_tvalid_n=0;
+            m_axis_h2c_tready_n=0;
+        end
+        else begin
+            s_axis_c2h_tdata_n=#1 s_axis_c2h_tdata_r;
+            s_axis_c2h_tvalid_n=#1 s_axis_c2h_tvalid_r;
+            m_axis_h2c_tready_n=#1 m_axis_h2c_tready_w;
+        end
+    end
+    
+      always@(posedge axi_clk)
+      begin
+           s_axis_c2h_tdata_0=#1 s_axis_c2h_tdata_n;
+           s_axis_c2h_tvalid_0=#1 s_axis_c2h_tvalid_n;
+           m_axis_h2c_tready_0=#1 m_axis_h2c_tready_n;
+       end
+    
+    
+       
+   // assign m_axis_h2c_tvalid_w=m_axis_h2c_tvalid_0;
+ //   assign m_axis_h2c_tdata_w=m_axis_h2c_tdata_0;
+ //   assign m_axis_h2c_tready_0=m_axis_h2c_tready_w;
+    
+   // assign s_axis_c2h_tvalid_0=s_axis_c2h_tvalid_r;
+   // assign s_axis_c2h_tdata_0=s_axis_c2h_tdata_r;
+  //  assign s_axis_c2h_tready_r=s_axis_c2h_tready_0;
+    
+   /* axis_clock_converter_0 H2C_CONVERT(
       //.s_axis_aresetn(1'b0),
       //.m_axis_aresetn(1'b0),
       
@@ -263,13 +346,10 @@ module xdma_app #(
       .s_axis_tvalid(s_axis_c2h_tvalid_r), // in
       .s_axis_tready(s_axis_c2h_tready_r), // out
       .s_axis_tdata(s_axis_c2h_tdata_r),  // in
-
+     // .s_axis_tdata(tmep_data),  // in
       .m_axis_tvalid(s_axis_c2h_tvalid_0), // out
       .m_axis_tready(s_axis_c2h_tready_0), // in
       .m_axis_tdata(s_axis_c2h_tdata_0)  // out
-    );
+    );*/
     
-
-
-
 endmodule

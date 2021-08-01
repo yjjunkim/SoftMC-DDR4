@@ -76,16 +76,19 @@ COMPONENT xdma_0
     cfg_mgmt_read_data : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
     cfg_mgmt_read_write_done : OUT STD_LOGIC;
     cfg_mgmt_type1_cfg_reg_access : IN STD_LOGIC;
-    s_axis_c2h_tdata_0 : IN STD_LOGIC_VECTOR(63 DOWNTO 0);
+    s_axis_c2h_tdata_0 : IN STD_LOGIC_VECTOR(127 DOWNTO 0);
     s_axis_c2h_tlast_0 : IN STD_LOGIC;
     s_axis_c2h_tvalid_0 : IN STD_LOGIC;
     s_axis_c2h_tready_0 : OUT STD_LOGIC;
-    s_axis_c2h_tkeep_0 : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
-    m_axis_h2c_tdata_0 : OUT STD_LOGIC_VECTOR(63 DOWNTO 0);
+    s_axis_c2h_tkeep_0 : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+    m_axis_h2c_tdata_0 : OUT STD_LOGIC_VECTOR(127 DOWNTO 0);
     m_axis_h2c_tlast_0 : OUT STD_LOGIC;
     m_axis_h2c_tvalid_0 : OUT STD_LOGIC;
     m_axis_h2c_tready_0 : IN STD_LOGIC;
-    m_axis_h2c_tkeep_0 : OUT STD_LOGIC_VECTOR(7 DOWNTO 0)
+    m_axis_h2c_tkeep_0 : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
+    int_qpll1lock_out : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
+    int_qpll1outrefclk_out : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
+    int_qpll1outclk_out : OUT STD_LOGIC_VECTOR(1 DOWNTO 0)
   );
 END COMPONENT;
 -- COMP_TAG_END ------ End COMPONENT Declaration ------------
@@ -127,7 +130,10 @@ your_instance_name : xdma_0
     m_axis_h2c_tlast_0 => m_axis_h2c_tlast_0,
     m_axis_h2c_tvalid_0 => m_axis_h2c_tvalid_0,
     m_axis_h2c_tready_0 => m_axis_h2c_tready_0,
-    m_axis_h2c_tkeep_0 => m_axis_h2c_tkeep_0
+    m_axis_h2c_tkeep_0 => m_axis_h2c_tkeep_0,
+    int_qpll1lock_out => int_qpll1lock_out,
+    int_qpll1outrefclk_out => int_qpll1outrefclk_out,
+    int_qpll1outclk_out => int_qpll1outclk_out
   );
 -- INST_TAG_END ------ End INSTANTIATION Template ---------
 

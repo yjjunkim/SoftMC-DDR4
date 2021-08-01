@@ -54,12 +54,16 @@
 //-----------------------------------------------------------------------------
 `timescale 1ps / 1ps
 
+`include "softMC.inc"
 module xilinx_dma_pcie_ep #
   (
    parameter PL_LINK_CAP_MAX_LINK_WIDTH          = 8,            // 1- X1; 2 - X2; 4 - X4; 8 - X8
    parameter PL_SIM_FAST_LINK_TRAINING           = "FALSE",      // Simulation Speedup
    parameter PL_LINK_CAP_MAX_LINK_SPEED          = 1,             // 1- GEN1; 2 - GEN2; 4 - GEN3
-   parameter C_DATA_WIDTH                        = 64 ,
+   //parameter PL_LINK_CAP_MAX_LINK_SPEED          = 2,             // 1- GEN1; 2 - GEN2; 4 - GEN3
+   //parameter C_DATA_WIDTH                        = 64 ,
+   //parameter C_DATA_WIDTH                        = 256 ,
+   parameter C_DATA_WIDTH                        = 128 ,
    parameter EXT_PIPE_SIM                        = "FALSE",  // This Parameter has effect on selecting Enable External PIPE Interface in GUI.
    parameter C_ROOT_PORT                         = "FALSE",      // PCIe block is in root port mode
    parameter C_DEVICE_NUMBER                     = 0,            // Device number for Root Port configurations only
@@ -100,6 +104,7 @@ module xilinx_dma_pcie_ep #
 	//input [31:0] return_app_instr,
 	
 	output [2:0] leds
+	
  );
 
    //-----------------------------------------------------------------------------------------------------------------------
@@ -124,8 +129,13 @@ module xilinx_dma_pcie_ep #
    //  AXI Interface                                                                                                 //
    //----------------------------------------------------------------------------------------------------------------//
    
-   wire 					   user_clk;
-   wire 					   user_resetn;
+   `ifdef USE_XDMA
+      wire 					   user_clk;
+      wire 					   user_resetn;
+  `else
+     reg 					   user_clk;
+     reg 					   user_resetn;
+   `endif
    
   // Wires for Avery HOT/WARM and COLD RESET
    wire 					   avy_sys_rst_n_c;
@@ -198,33 +208,33 @@ module xilinx_dma_pcie_ep #
      wire 			     m_axi_rvalid;
      wire 			     m_axi_rready;
 
-
-
-
-
-
     wire [2:0]    msi_vector_width;
     wire          msi_enable;
 
       // AXI streaming ports
-    wire [C_DATA_WIDTH-1:0]	m_axis_h2c_tdata_0;
-    //wire [31:0] m_axis_h2c_tdata_0;
-    
-    wire 			m_axis_h2c_tlast_0;
-    wire 			m_axis_h2c_tvalid_0;
+   
+    //wire [31:0] m_axis_h2c_tdata_0;   
+    wire 			m_axis_h2c_tlast_0; 
     wire 			m_axis_h2c_tready_0;
     wire [C_DATA_WIDTH/8-1:0]	m_axis_h2c_tkeep_0;
     wire [C_DATA_WIDTH-1:0] s_axis_c2h_tdata_0; 
     wire s_axis_c2h_tlast_0;
     wire s_axis_c2h_tvalid_0;
-    wire s_axis_c2h_tready_0;
+    
+    `ifdef USE_XDMA
+     wire s_axis_c2h_tready_0;
+     wire [C_DATA_WIDTH-1:0]	m_axis_h2c_tdata_0;
+     wire 			m_axis_h2c_tvalid_0;
+    `else
+    reg s_axis_c2h_tready_0;
+    reg  [C_DATA_WIDTH-1:0] m_axis_h2c_tdata_0;
+    reg m_axis_h2c_tvalid_0;
+    `endif
     wire [C_DATA_WIDTH/8-1:0] s_axis_c2h_tkeep_0; 
 
     //wire [3:0]                  leds;
-
- wire free_run_clock;
-    
-  wire [5:0]                          cfg_ltssm_state;
+    wire free_run_clock;
+    wire [5:0]                          cfg_ltssm_state;
 
   // Ref clock buffer
   IBUFDS_GTE3 # (.REFCLK_HROW_CK_SEL(2'b00)) refclk_ibuf (.O(sys_clk_gt), .ODIV2(sys_clk), .I(sys_clk_p), .CEB(1'b0), .IB(sys_clk_n));
@@ -232,11 +242,8 @@ module xilinx_dma_pcie_ep #
   IBUF   sys_reset_n_ibuf (.O(sys_rst_n_c), .I(sys_rst_n));
      
 
-
-
-
-
   // Core Top Level Wrapper
+`ifdef USE_XDMA
   xdma_0 xdma_0_i 
      (
       //---------------------------------------------------------------------------------------//
@@ -295,21 +302,16 @@ module xilinx_dma_pcie_ep #
       .axi_aclk        ( user_clk ),
       .axi_aresetn     ( user_resetn ),
   
-
-
-
-
-
       .user_lnk_up     ( user_lnk_up )
     );
 
+  `endif
+  
   
   // XDMA taget application
   xdma_app #(
     .C_M_AXI_ID_WIDTH(C_M_AXI_ID_WIDTH)
   ) xdma_app_i (
-
-
       // AXI streaming ports
       .s_axis_c2h_tdata_0(s_axis_c2h_tdata_0),  
       .s_axis_c2h_tlast_0(s_axis_c2h_tlast_0),

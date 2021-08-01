@@ -1,0 +1,261 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Jul 30 11:49:13 2021
+# Process ID: 30596
+# Current directory: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent25468 C:\Users\yongj\Desktop\softmc_ddr4\hw\boards\ML605\project_1\project_1.xpr
+# Log file: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/vivado.log
+# Journal file: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.xpr
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'C:/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:09 . Memory (MB): peak = 1110.047 ; gain = 0.000
+not writing pins
+set_property -dict [list CONFIG.pl_link_cap_max_link_speed {5.0_GT/s} CONFIG.axi_data_width {256_bit} CONFIG.axisten_freq {125} CONFIG.pf0_device_id {8028} CONFIG.plltype {QPLL1} CONFIG.PF0_DEVICE_ID_mqdma {9028} CONFIG.PF2_DEVICE_ID_mqdma {9028} CONFIG.PF3_DEVICE_ID_mqdma {9028}] [get_ips xdma_0]
+INFO: [Device 21-403] Loading part xcvu095-ffvb2104-2-e
+xit::create_sub_core: Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 1916.352 ; gain = 694.211
+generate_target all [get_files  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/xdma_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'xdma_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'xdma_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'xdma_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'xdma_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'xdma_0'...
+generate_target: Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 1962.121 ; gain = 12.691
+catch { config_ip_cache -export [get_ips -all xdma_0] }
+export_ip_user_files -of_objects [get_files C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/xdma_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/xdma_0.xci]
+launch_runs xdma_0_synth_1 -jobs 8
+[Fri Jul 30 11:54:15 2021] Launched xdma_0_synth_1...
+Run output will be captured here: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/xdma_0_synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1978.137 ; gain = 16.016
+export_simulation -of_objects [get_files C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/xdma_0.xci] -directory C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files -ipstatic_source_dir C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.cache/compile_simlib/modelsim} {questa=C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.cache/compile_simlib/questa} {riviera=C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.cache/compile_simlib/riviera} {activehdl=C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+open_example_project -dir C:/Users/yongj/Desktop/xusps3_test [get_ips  xdma_0]
+INFO: [IP_Flow 19-1686] Generating 'Examples' target for IP 'xdma_0'...
+ERROR: [Common 17-69] Command failed: Example project already exists in the indicated location.  Please specify the force option to overwrite the existing project.
+open_example_project -force -dir C:/Users/yongj/Desktop/xusps3_test/clock-convert/pci_width_256 [get_ips  xdma_0]
+INFO: [IP_Flow 19-1686] Generating 'Examples' target for IP 'xdma_0'...
+open_example_project: Time (s): cpu = 00:00:30 ; elapsed = 00:01:32 . Memory (MB): peak = 2148.094 ; gain = 35.902
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Jul 30 13:08:25 2021] Launched synth_1...
+Run output will be captured here: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/synth_1/runme.log
+[Fri Jul 30 13:08:25 2021] Launched impl_1...
+Run output will be captured here: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/runme.log
+reset_run impl_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Jul 30 13:16:27 2021] Launched synth_1...
+Run output will be captured here: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/synth_1/runme.log
+[Fri Jul 30 13:16:27 2021] Launched impl_1...
+Run output will be captured here: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/runme.log
+not writing pins
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+warning: cannot open library ftd2xx.dll, first required symbol FT_Close, Digilent FTDI based JTAG cables cannot be supported
+warning: cannot open library ftd2xx.dll, first required symbol FT_Close, Xilinx FTDI based JTAG cables cannot be supported
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 04 2020-06:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:02 ; elapsed = 00:00:16 . Memory (MB): peak = 2148.094 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00000000000000
+set_property PROGRAM.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.bit} [get_hw_devices xcvu095_0]
+set_property PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
+set_property FULL_PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
+current_hw_device [get_hw_devices xcvu095_0]
+refresh_hw_device [lindex [get_hw_devices xcvu095_0] 0]
+INFO: [Labtools 27-1434] Device xcvu095 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
+set_property FULL_PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
+set_property PROGRAM.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.bit} [get_hw_devices xcvu095_0]
+program_hw_devices [get_hw_devices xcvu095_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 3732.934 ; gain = 0.199
+refresh_hw_device [lindex [get_hw_devices xcvu095_0] 0]
+WARNING: [Labtools 27-3089] Calibration is still in-progress.
+INFO: [Labtools 27-2302] Device xcvu095 (JTAG device index = 0) is programmed with a design that has 1 MIG core(s).
+INFO: [Labtools 27-3143] Calibration status change detected, refreshing MIG_1
+close_hw_manager
+not writing pins
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+warning: cannot open library ftd2xx.dll, first required symbol FT_Close, Digilent FTDI based JTAG cables cannot be supported
+warning: cannot open library ftd2xx.dll, first required symbol FT_Close, Xilinx FTDI based JTAG cables cannot be supported
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 04 2020-06:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 3809.125 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00000000000000
+set_property PROGRAM.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.bit} [get_hw_devices xcvu095_0]
+set_property PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
+set_property FULL_PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
+current_hw_device [get_hw_devices xcvu095_0]
+refresh_hw_device [lindex [get_hw_devices xcvu095_0] 0]
+INFO: [Labtools 27-1434] Device xcvu095 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
+set_property FULL_PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
+set_property PROGRAM.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.bit} [get_hw_devices xcvu095_0]
+program_hw_devices [get_hw_devices xcvu095_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 3809.125 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xcvu095_0] 0]
+WARNING: [Labtools 27-3089] Calibration is still in-progress.
+INFO: [Labtools 27-2302] Device xcvu095 (JTAG device index = 0) is programmed with a design that has 1 MIG core(s).
+INFO: [Labtools 27-3143] Calibration status change detected, refreshing MIG_1
+close_hw_manager
+not writing pins
+set_property -dict [list CONFIG.TDATA_NUM_BYTES {32}] [get_ips axis_clock_converter_0]
+generate_target all [get_files  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/axis_clock_converter_0/axis_clock_converter_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'axis_clock_converter_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'axis_clock_converter_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'axis_clock_converter_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'axis_clock_converter_0'...
+export_ip_user_files -of_objects [get_files C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/axis_clock_converter_0/axis_clock_converter_0.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/axis_clock_converter_0/axis_clock_converter_0.xci] -directory C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files -ipstatic_source_dir C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.cache/compile_simlib/modelsim} {questa=C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.cache/compile_simlib/questa} {riviera=C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.cache/compile_simlib/riviera} {activehdl=C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+not writing pins
+set_property -dict [list CONFIG.pl_link_cap_max_link_speed {2.5_GT/s} CONFIG.axi_data_width {128_bit} CONFIG.pf0_device_id {8018} CONFIG.plltype {CPLL} CONFIG.PF0_DEVICE_ID_mqdma {9018} CONFIG.PF2_DEVICE_ID_mqdma {9018} CONFIG.PF3_DEVICE_ID_mqdma {9018}] [get_ips xdma_0]
+generate_target all [get_files  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/xdma_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'xdma_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'xdma_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'xdma_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'xdma_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'xdma_0'...
+generate_target: Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 3905.504 ; gain = 0.000
+catch { config_ip_cache -export [get_ips -all xdma_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP xdma_0, cache-ID = 8b03319e5292d716; cache size = 474.384 MB.
+config_ip_cache: Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 3927.789 ; gain = 22.285
+catch { [ delete_ip_run [get_ips -all xdma_0] ] }
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/xdma_0_synth_1
+
+INFO: [Project 1-386] Moving file 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/xdma_0.xci' from fileset 'xdma_0' to fileset 'sources_1'.
+INFO: [Project 1-386] Moving file 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0.xcix' from fileset 'xdma_0' to fileset 'sources_1'.
+export_ip_user_files -of_objects [get_files C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/xdma_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/xdma_0.xci]
+INFO: [Vivado 12-3453] The given sub-design is up-to-date, no action was taken.  If a run is still desired, use the '-force' option for the file:'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/xdma_0.xci'
+export_simulation -of_objects [get_files C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/xdma_0.xci] -directory C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files -ipstatic_source_dir C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.cache/compile_simlib/modelsim} {questa=C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.cache/compile_simlib/questa} {riviera=C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.cache/compile_simlib/riviera} {activehdl=C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.TDATA_NUM_BYTES {16}] [get_ips axis_clock_converter_0]
+generate_target all [get_files  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/axis_clock_converter_0/axis_clock_converter_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'axis_clock_converter_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'axis_clock_converter_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'axis_clock_converter_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'axis_clock_converter_0'...
+export_ip_user_files -of_objects [get_files C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/axis_clock_converter_0/axis_clock_converter_0.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/axis_clock_converter_0/axis_clock_converter_0.xci] -directory C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files -ipstatic_source_dir C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.cache/compile_simlib/modelsim} {questa=C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.cache/compile_simlib/questa} {riviera=C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.cache/compile_simlib/riviera} {activehdl=C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/xdma_0.xci' is already up-to-date
+[Fri Jul 30 14:21:27 2021] Launched synth_1...
+Run output will be captured here: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/synth_1/runme.log
+[Fri Jul 30 14:21:27 2021] Launched impl_1...
+Run output will be captured here: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/synth_1
+
+launch_runs impl_1 -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/xdma_0.xci' is already up-to-date
+[Fri Jul 30 14:32:55 2021] Launched synth_1...
+Run output will be captured here: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/synth_1/runme.log
+[Fri Jul 30 14:32:56 2021] Launched impl_1...
+Run output will be captured here: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/synth_1
+
+launch_runs impl_1 -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/xdma_0.xci' is already up-to-date
+[Fri Jul 30 14:34:16 2021] Launched synth_1...
+Run output will be captured here: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/synth_1/runme.log
+[Fri Jul 30 14:34:16 2021] Launched impl_1...
+Run output will be captured here: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/xdma_0.xci' is already up-to-date
+[Fri Jul 30 14:47:38 2021] Launched impl_1...
+Run output will be captured here: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00000000000000
+current_hw_device [get_hw_devices xcvu095_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xcvu095_0] 0]
+INFO: [Labtools 27-2302] Device xcvu095 (JTAG device index = 0) is programmed with a design that has 1 MIG core(s).
+set_property PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
+set_property FULL_PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
+set_property PROGRAM.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.bit} [get_hw_devices xcvu095_0]
+program_hw_devices [get_hw_devices xcvu095_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 3927.789 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xcvu095_0] 0]
+WARNING: [Labtools 27-3089] Calibration is still in-progress.
+INFO: [Labtools 27-2302] Device xcvu095 (JTAG device index = 0) is programmed with a design that has 1 MIG core(s).
+INFO: [Labtools 27-3143] Calibration status change detected, refreshing MIG_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 30 14:51:10 2021...

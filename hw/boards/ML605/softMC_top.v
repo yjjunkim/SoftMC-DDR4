@@ -7,7 +7,8 @@ module softMC_top #
 	parameter TCQ             = 100,
 	//parameter tCK = 2500, //ps, TODO: let memory clok be 400 Mhz for now
 	//parameter tCK = 1250, //ps, TODO: let memory clok be 400 Mhz for now
-	parameter tCK = 10000, //ps, TODO: let memory clok be 400 Mhz for now
+	//parameter tCK = 10000, //ps, TODO: let memory clok be 400 Mhz for now ??
+	parameter tCK = 1000, //ps, TODO: let memory clok be 400 Mhz for now
 	//parameter nCK_PER_CLK     = 2,       // # of memory clocks per CLK
 	parameter nCK_PER_CLK     = 4,       // # of memory clocks per CLK
 	//parameter REFCLK_FREQ     = 200.0,   // IODELAY Reference Clock freq (MHz)
@@ -100,12 +101,8 @@ module softMC_top #
 	
 	parameter SIMULATION = "OFF"
    )(
-	//input sys_clk_p,
-	//input sys_clk_n,
-	//input clk_ref_p,
-	//input clk_ref_n,
-	//input sys_rst,
-	input sys_reset_n,
+	
+	input pci_rst_n,
 	// DDRx Output Interface
 	/*
 	output [CK_WIDTH-1:0]              ddr_ck_p,
@@ -131,14 +128,19 @@ module softMC_top #
 	output 										rdback_fifo_empty, //led 3
 	*/
 	//DDR4 ( INPUT / OUTPUT )//////////////////////////////////////////////////////////////////
-	input                             sys_rst_l,
-	//input                             sys_rst,
-    input                             c0_sys_clk_p,
-    input                             c0_sys_clk_n,
+	//output                             dfi_init_complete, //led 0
+	//output										processing_iseq, //led 1
+	//output 										iq_full, //led 2
+	//output 										rdback_fifo_empty, //led 3
+	
+	input  phy_rst_n,
+	
+    input                             phy_clk_p,
+    input                             phy_clk_n,
     
-    //pci ref clk
-    input sys_clk_p,
-    input sys_clk_n,
+    //pci ref clk 
+    input pci_clk_p,
+    input pci_clk_n,
 
    // iob<>DDR4 signals
     output                            c0_ddr4_act_n,
@@ -170,12 +172,12 @@ module softMC_top #
   
 	`else
 
-	input  app_en,
-	output app_ack,
-	input[31:0] app_instr,
+	//input  app_en,
+	//output app_ack,
+	//input[31:0] app_instr,
 
 	//Data read back Interface
-	//output rdback_fifo_empty,
+	output rdback_fifo_empty,
 	input rdback_fifo_rden,
 	
 	//output[DQ_WIDTH*4 - 1:0] rdback_data
@@ -202,53 +204,6 @@ module softMC_top #
 	 wire sys_clk = 0;
 	 
 	 
-	 //wire ui_clk;
-	 //assign ui_clk = c0_sys_clk_p;
-	 /*
-	 //use 200MHZ refrence clock to generate mmcm_clk
-	 iodelay_ctrl #
-    (
-     .TCQ            (TCQ),
-     .IODELAY_GRP    (IODELAY_GRP),
-     .INPUT_CLK_TYPE (INPUT_CLK_TYPE),
-     .RST_ACT_LOW    (RST_ACT_LOW)
-     )
-    u_iodelay_ctrl
-      (
-       .clk_ref_p        (clk_ref_p), //input
-       .clk_ref_n        (clk_ref_n), //input
-       .clk_ref          (clk_ref), //input
-       .sys_rst          (sys_rst), //input
-		 .clk_200			(mmcm_clk),
-       .iodelay_ctrl_rdy (iodelay_ctrl_rdy) //output
-       );
-		 
-	 infrastructure #
-    (
-     .TCQ                (TCQ),
-     .CLK_PERIOD         (SYSCLK_PERIOD),
-     .nCK_PER_CLK        (nCK_PER_CLK),
-     .MMCM_ADV_BANDWIDTH (MMCM_ADV_BANDWIDTH),
-     .CLKFBOUT_MULT_F    (CLKFBOUT_MULT_F),
-     .DIVCLK_DIVIDE      (DIVCLK_DIVIDE),
-     .CLKOUT_DIVIDE      (CLKOUT_DIVIDE),
-     .RST_ACT_LOW        (RST_ACT_LOW)
-     )
-    u_infrastructure
-      (
-       .clk_mem          (clk_mem), //output
-       .clk              (clk), //output
-       .clk_rd_base      (clk_rd_base), //output
-       .rstdiv0          (rst), //output
-		 
-       .mmcm_clk         (mmcm_clk), //input
-       .sys_rst          (sys_rst), //input
-       .iodelay_ctrl_rdy (iodelay_ctrl_rdy), //input
-       .PSDONE           (pd_PSDONE), //output
-       .PSEN             (pd_PSEN), //input
-       .PSINCDEC         (pd_PSINCDEC) //input
-       );
-		 */
 		 
    wire [ROW_WIDTH*8-1:0]              dfi_address0;
    wire [ROW_WIDTH-1:0]              dfi_address1; 
@@ -469,9 +424,9 @@ module softMC_top #
 	 ddr4_0 u_ddr4_0
     (
      //.sys_rst              (sys_rst),
-     .sys_rst              (~sys_rst_l),
-     .c0_sys_clk_p         (c0_sys_clk_p),
-     .c0_sys_clk_n         (c0_sys_clk_n),
+     .sys_rst              (~phy_rst_n),
+     .c0_sys_clk_p         (phy_clk_p),
+     .c0_sys_clk_n         (phy_clk_n),
 
      .c0_ddr4_ui_clk       (c0_ddr4_clk),
      .c0_ddr4_ui_clk_sync_rst (c0_ddr4_rst),
@@ -540,20 +495,19 @@ module softMC_top #
      );
      //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	 //App Command Interface
-	 `ifndef SIM
-	//wire app_en;
-	wire app_ack;
-	wire[31:0] app_instr;
 	
+	 `ifndef SIM
 	
 	//Data read back Interface
 	wire rdback_fifo_rden;
 	//wire[DQ_WIDTH*4 - 1:0] rdback_data;
 	//juh rdback fifo -> 512
 	wire[511:0] rdback_data;
-	
-	
+	wire rdback_fifo_empty;
 	`endif //SIM
+	
+	wire app_ack;
+	wire[31:0] app_instr;
 	
 	//for pci test
     //wire [31:0] return_app_instr;
@@ -626,61 +580,21 @@ module softMC_top #
 	
 );
 
-//`ifndef SIM
-/*
-riffa_top_v6_pcie_v2_5 #(
-  .C_DATA_WIDTH(64),            // RX/TX interface data width
-  .DQ_WIDTH(DQ_WIDTH)
-) i_pcie_top
-(
-  .pci_exp_txp(pci_exp_txp),
-  .pci_exp_txn(pci_exp_txn),
-  .pci_exp_rxp(pci_exp_rxp),
-  .pci_exp_rxn(pci_exp_rxn),
-
-  .sys_clk_p(sys_clk_p),
-  .sys_clk_n(sys_clk_n),
-  //.sys_clk_p(c0_sys_clk_p),
-  //.sys_clk_n(c0_sys_clk_n),
-  //c0_sys_clk_p
-  //.sys_reset_n(sys_reset_n),
-  .sys_reset_n(sys_reset_n),
-  
-	.app_clk(c0_ddr4_clk),
-	.app_en(app_en),
-	.app_ack(app_ack),
-	.app_instr(app_instr),
-	
-	//Data read back Interface
-	.rdback_fifo_empty(rdback_fifo_empty),
-	.rdback_fifo_rden(rdback_fifo_rden),
-	.rdback_data(rdback_data)
-);
-*/
-
-	
-
 `ifndef SIM
 xilinx_dma_pcie_ep
    EP (
     // SYS Inteface
-    //.sys_clk_n(ep_sys_clk_n),
-    //.sys_clk_p(ep_sys_clk_p),
-    //.sys_rst_n(sys_rst_n),
     
-     .sys_clk_n(sys_clk_n),
-     .sys_clk_p(sys_clk_p),
-    .sys_rst_n(sys_reset_n),
-    //.sys_clk_n(c0_sys_clk_n),
-    //.sys_clk_p(c0_sys_clk_p),
-    //.sys_rst_n(sys_rst_l),
+    // .sys_clk_n(pci_clk_n),
+   //  .sys_clk_p(pci_clk_p),
+   // .sys_rst_n(pci_rst_n),
+    
+    .sys_clk_n(pci_clk_n),
+    .sys_clk_p(pci_clk_p),
+    .sys_rst_n(pci_rst_n),
  
 
     // PCI-Express Serial Interface
-    //.pci_exp_txn(ep_pci_exp_txn),
-    //.pci_exp_txp(ep_pci_exp_txp),
-    //.pci_exp_rxn(rp_pci_exp_txn),
-    //.pci_exp_rxp(rp_pci_exp_txp)
     
     .pci_exp_txn(pci_exp_txn),
     .pci_exp_txp(pci_exp_txp),
@@ -709,21 +623,9 @@ xilinx_dma_pcie_ep
 `else
 xilinx_dma_pcie_ep
    EP (
-    // SYS Inteface
-    //.sys_clk_n(ep_sys_clk_n),
-    //.sys_clk_p(ep_sys_clk_p),
-    //.sys_rst_n(sys_rst_n),
-    
-    .sys_clk_n(sys_clk_n),
-    .sys_clk_p(sys_clk_p),
-    .sys_rst_n(sys_reset_n),
-
-  
-    // PCI-Express Serial Interface
-    //.pci_exp_txn(ep_pci_exp_txn),
-    //.pci_exp_txp(ep_pci_exp_txp),
-    //.pci_exp_rxn(rp_pci_exp_txn),
-    //.pci_exp_rxp(rp_pci_exp_txp)
+     .sys_clk_n(pci_clk_n),
+     .sys_clk_p(pci_clk_p),
+    .sys_rst_n(pci_rst_n),
     
     .pci_exp_txn(pci_exp_txn),
     .pci_exp_txp(pci_exp_txp),
@@ -732,10 +634,11 @@ xilinx_dma_pcie_ep
     
     ///////////softMC ///////////////
     .softmc_clk(c0_ddr4_clk),
-    //.app_clk(ui_clk),
-	//.app_en(app_en),
+    .softmc_rst(c0_ddr4_rst),
+
 	.app_ack(app_ack),
-	//.app_instr(app_instr),
+	.app_en(app_en),
+	.app_instr(app_instr),
 	
 	//Data read back Interface
 	.rdback_fifo_empty(rdback_fifo_empty),

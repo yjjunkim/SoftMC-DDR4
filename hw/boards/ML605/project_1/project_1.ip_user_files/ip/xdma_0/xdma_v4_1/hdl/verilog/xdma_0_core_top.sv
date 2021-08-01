@@ -5128,6 +5128,10 @@ xdma_v4_1_8_udma_ram_top
 
 
 
+   //---------- Shared Logic Internal -------------------------
+    .int_qpll1lock_out                         (int_qpll1lock_out),   
+    .int_qpll1outrefclk_out                    (int_qpll1outrefclk_out),
+    .int_qpll1outclk_out                       (int_qpll1outclk_out),
 
     //--------------------------------------------------------------------------------------//
     //  System(SYS) Interface                                                               //
@@ -5180,9 +5184,6 @@ xdma_v4_1_8_udma_ram_top
    assign startup_di = 4'b0000;
    assign startup_eos = 1'b0;
    assign startup_preq = 1'b0;
-   assign int_qpll1lock_out = 0;
-   assign int_qpll1outclk_out = 0;
-   assign int_qpll1outrefclk_out = 0;
 
 
 

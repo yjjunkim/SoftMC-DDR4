@@ -5,7 +5,6 @@
    <db_ref_list>
       <db_ref path="tb_softMC_top_behav.wdb" id="1">
          <top_modules>
-            <top_module name="\$unit_xdma_0_dma_bram_wrap_sv " />
             <top_module name="arch_package" />
             <top_module name="glbl" />
             <top_module name="proj_package" />
@@ -14,473 +13,313 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="8850000fs"></ZoomStartTime>
-      <ZoomEndTime time="15200001fs"></ZoomEndTime>
-      <Cursor1Time time="15000000fs"></Cursor1Time>
+      <ZoomStartTime time="8127549fs"></ZoomStartTime>
+      <ZoomEndTime time="8213150fs"></ZoomEndTime>
+      <Cursor1Time time="8184100fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="464"></NameColumnWidth>
-      <ValueColumnWidth column_width="173"></ValueColumnWidth>
+      <NameColumnWidth column_width="339"></NameColumnWidth>
+      <ValueColumnWidth column_width="182"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="115" />
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/clk" type="logic">
-      <obj_property name="ElementShortName">clk</obj_property>
-      <obj_property name="ObjectShortName">clk</obj_property>
+   <WVObjectSize size="75" />
+   <wvobject fp_name="/tb_softMC_top/uut/EP/xdma_app_i/axi_clk" type="logic">
+      <obj_property name="ElementShortName">axi_clk</obj_property>
+      <obj_property name="ObjectShortName">axi_clk</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/rst" type="logic">
-      <obj_property name="ElementShortName">rst</obj_property>
-      <obj_property name="ObjectShortName">rst</obj_property>
+   <wvobject fp_name="/tb_softMC_top/uut/EP/xdma_app_i/m_axis_h2c_tdata_0" type="array">
+      <obj_property name="ElementShortName">m_axis_h2c_tdata_0[127:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_h2c_tdata_0[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/EP/xdma_app_i/m_axis_h2c_tdata_n" type="array">
+      <obj_property name="ElementShortName">m_axis_h2c_tdata_n[127:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_h2c_tdata_n[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/EP/xdma_app_i/m_axis_h2c_tdata_w" type="array">
+      <obj_property name="ElementShortName">m_axis_h2c_tdata_w[127:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_h2c_tdata_w[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/EP/xdma_app_i/softmc_clk" type="logic">
+      <obj_property name="ElementShortName">softmc_clk</obj_property>
+      <obj_property name="ObjectShortName">softmc_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/EP/xdma_app_i/m_axis_h2c_tvalid_0" type="logic">
+      <obj_property name="ElementShortName">m_axis_h2c_tvalid_0</obj_property>
+      <obj_property name="ObjectShortName">m_axis_h2c_tvalid_0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/EP/xdma_app_i/m_axis_h2c_tvalid_n" type="logic">
+      <obj_property name="ElementShortName">m_axis_h2c_tvalid_n</obj_property>
+      <obj_property name="ObjectShortName">m_axis_h2c_tvalid_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/EP/xdma_app_i/m_axis_h2c_tvalid_w" type="logic">
+      <obj_property name="ElementShortName">m_axis_h2c_tvalid_w</obj_property>
+      <obj_property name="ObjectShortName">m_axis_h2c_tvalid_w</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_softMC_top/uut/i_softmc/app_en" type="logic">
       <obj_property name="ElementShortName">app_en</obj_property>
       <obj_property name="ObjectShortName">app_en</obj_property>
    </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/EP/app_instr" type="array">
+      <obj_property name="ElementShortName">app_instr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">app_instr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/app_instr" type="array">
+      <obj_property name="ElementShortName">app_instr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">app_instr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/app_instr" type="array">
+      <obj_property name="ElementShortName">app_instr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">app_instr[31:0]</obj_property>
+   </wvobject>
    <wvobject fp_name="/tb_softMC_top/uut/i_softmc/app_ack" type="logic">
       <obj_property name="ElementShortName">app_ack</obj_property>
       <obj_property name="ObjectShortName">app_ack</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/app_instr" type="array">
-      <obj_property name="ElementShortName">app_instr[31:0]</obj_property>
-      <obj_property name="ObjectShortName">app_instr[31:0]</obj_property>
+   <wvobject fp_name="/tb_softMC_top/uut/EP/xdma_app_i/s_axis_c2h_tready_0" type="logic">
+      <obj_property name="ElementShortName">s_axis_c2h_tready_0</obj_property>
+      <obj_property name="ObjectShortName">s_axis_c2h_tready_0</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/iq_full" type="logic">
-      <obj_property name="ElementShortName">iq_full</obj_property>
-      <obj_property name="ObjectShortName">iq_full</obj_property>
+   <wvobject fp_name="/tb_softMC_top/uut/EP/xdma_app_i/s_axis_c2h_tready_n" type="logic">
+      <obj_property name="ElementShortName">s_axis_c2h_tready_n</obj_property>
+      <obj_property name="ObjectShortName">s_axis_c2h_tready_n</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/processing_iseq" type="logic">
-      <obj_property name="ElementShortName">processing_iseq</obj_property>
-      <obj_property name="ObjectShortName">processing_iseq</obj_property>
+   <wvobject fp_name="/tb_softMC_top/uut/EP/xdma_app_i/s_axis_c2h_tready_r" type="logic">
+      <obj_property name="ElementShortName">s_axis_c2h_tready_r</obj_property>
+      <obj_property name="ObjectShortName">s_axis_c2h_tready_r</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/dfi_address0" type="array">
-      <obj_property name="ElementShortName">dfi_address0[135:0]</obj_property>
-      <obj_property name="ObjectShortName">dfi_address0[135:0]</obj_property>
+   <wvobject fp_name="/tb_softMC_top/uut/EP/xdma_app_i/s_axis_c2h_tdata_r" type="array">
+      <obj_property name="ElementShortName">s_axis_c2h_tdata_r[127:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_c2h_tdata_r[127:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/dfi_address1" type="array">
-      <obj_property name="ElementShortName">dfi_address1[16:0]</obj_property>
-      <obj_property name="ObjectShortName">dfi_address1[16:0]</obj_property>
+   <wvobject fp_name="/tb_softMC_top/uut/EP/xdma_app_i/s_axis_c2h_tdata_n" type="array">
+      <obj_property name="ElementShortName">s_axis_c2h_tdata_n[127:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_c2h_tdata_n[127:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/dfi_bank0" type="array">
-      <obj_property name="ElementShortName">dfi_bank0[15:0]</obj_property>
-      <obj_property name="ObjectShortName">dfi_bank0[15:0]</obj_property>
+   <wvobject fp_name="/tb_softMC_top/uut/EP/xdma_app_i/s_axis_c2h_tdata_0" type="array">
+      <obj_property name="ElementShortName">s_axis_c2h_tdata_0[127:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_c2h_tdata_0[127:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/dfi_bankgroup0" type="array">
-      <obj_property name="ElementShortName">dfi_bankgroup0[7:0]</obj_property>
-      <obj_property name="ObjectShortName">dfi_bankgroup0[7:0]</obj_property>
+   <wvobject fp_name="/tb_softMC_top/uut/EP/xdma_app_i/s_axis_c2h_tvalid_r" type="logic">
+      <obj_property name="ElementShortName">s_axis_c2h_tvalid_r</obj_property>
+      <obj_property name="ObjectShortName">s_axis_c2h_tvalid_r</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/dfi_bank1" type="array">
-      <obj_property name="ElementShortName">dfi_bank1[1:0]</obj_property>
-      <obj_property name="ObjectShortName">dfi_bank1[1:0]</obj_property>
+   <wvobject fp_name="/tb_softMC_top/uut/EP/xdma_app_i/s_axis_c2h_tvalid_n" type="logic">
+      <obj_property name="ElementShortName">s_axis_c2h_tvalid_n</obj_property>
+      <obj_property name="ObjectShortName">s_axis_c2h_tvalid_n</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/mc_ACT_n" type="array">
+   <wvobject fp_name="/tb_softMC_top/uut/EP/xdma_app_i/s_axis_c2h_tvalid_0" type="logic">
+      <obj_property name="ElementShortName">s_axis_c2h_tvalid_0</obj_property>
+      <obj_property name="ObjectShortName">s_axis_c2h_tvalid_0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/EP/xdma_app_i/m_axis_h2c_tready_w" type="logic">
+      <obj_property name="ElementShortName">m_axis_h2c_tready_w</obj_property>
+      <obj_property name="ObjectShortName">m_axis_h2c_tready_w</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/EP/xdma_app_i/m_axis_h2c_tready_n" type="logic">
+      <obj_property name="ElementShortName">m_axis_h2c_tready_n</obj_property>
+      <obj_property name="ObjectShortName">m_axis_h2c_tready_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/EP/xdma_app_i/m_axis_h2c_tready_0" type="logic">
+      <obj_property name="ElementShortName">m_axis_h2c_tready_0</obj_property>
+      <obj_property name="ObjectShortName">m_axis_h2c_tready_0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/u_ddr4_0/sys_rst" type="logic">
+      <obj_property name="ElementShortName">sys_rst</obj_property>
+      <obj_property name="ObjectShortName">sys_rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/u_ddr4_0/c0_sys_clk_p" type="logic">
+      <obj_property name="ElementShortName">c0_sys_clk_p</obj_property>
+      <obj_property name="ObjectShortName">c0_sys_clk_p</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/u_ddr4_0/c0_sys_clk_n" type="logic">
+      <obj_property name="ElementShortName">c0_sys_clk_n</obj_property>
+      <obj_property name="ObjectShortName">c0_sys_clk_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/u_ddr4_0/c0_ddr4_ui_clk" type="logic">
+      <obj_property name="ElementShortName">c0_ddr4_ui_clk</obj_property>
+      <obj_property name="ObjectShortName">c0_ddr4_ui_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/u_ddr4_0/c0_ddr4_ui_clk_sync_rst" type="logic">
+      <obj_property name="ElementShortName">c0_ddr4_ui_clk_sync_rst</obj_property>
+      <obj_property name="ObjectShortName">c0_ddr4_ui_clk_sync_rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/u_ddr4_0/dbg_clk" type="logic">
+      <obj_property name="ElementShortName">dbg_clk</obj_property>
+      <obj_property name="ObjectShortName">dbg_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/u_ddr4_0/c0_ddr4_act_n" type="logic">
+      <obj_property name="ElementShortName">c0_ddr4_act_n</obj_property>
+      <obj_property name="ObjectShortName">c0_ddr4_act_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/u_ddr4_0/c0_ddr4_adr" type="array">
+      <obj_property name="ElementShortName">c0_ddr4_adr[16:0]</obj_property>
+      <obj_property name="ObjectShortName">c0_ddr4_adr[16:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/u_ddr4_0/c0_ddr4_ba" type="array">
+      <obj_property name="ElementShortName">c0_ddr4_ba[1:0]</obj_property>
+      <obj_property name="ObjectShortName">c0_ddr4_ba[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/u_ddr4_0/c0_ddr4_bg" type="array">
+      <obj_property name="ElementShortName">c0_ddr4_bg[0:0]</obj_property>
+      <obj_property name="ObjectShortName">c0_ddr4_bg[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/u_ddr4_0/c0_ddr4_cke" type="array">
+      <obj_property name="ElementShortName">c0_ddr4_cke[0:0]</obj_property>
+      <obj_property name="ObjectShortName">c0_ddr4_cke[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/u_ddr4_0/c0_ddr4_odt" type="array">
+      <obj_property name="ElementShortName">c0_ddr4_odt[0:0]</obj_property>
+      <obj_property name="ObjectShortName">c0_ddr4_odt[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/u_ddr4_0/c0_ddr4_cs_n" type="array">
+      <obj_property name="ElementShortName">c0_ddr4_cs_n[0:0]</obj_property>
+      <obj_property name="ObjectShortName">c0_ddr4_cs_n[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/u_ddr4_0/c0_ddr4_ck_t" type="array">
+      <obj_property name="ElementShortName">c0_ddr4_ck_t[0:0]</obj_property>
+      <obj_property name="ObjectShortName">c0_ddr4_ck_t[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/u_ddr4_0/c0_ddr4_ck_c" type="array">
+      <obj_property name="ElementShortName">c0_ddr4_ck_c[0:0]</obj_property>
+      <obj_property name="ObjectShortName">c0_ddr4_ck_c[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/u_ddr4_0/c0_ddr4_reset_n" type="logic">
+      <obj_property name="ElementShortName">c0_ddr4_reset_n</obj_property>
+      <obj_property name="ObjectShortName">c0_ddr4_reset_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/u_ddr4_0/c0_ddr4_dm_dbi_n" type="array">
+      <obj_property name="ElementShortName">c0_ddr4_dm_dbi_n[7:0]</obj_property>
+      <obj_property name="ObjectShortName">c0_ddr4_dm_dbi_n[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/u_ddr4_0/c0_ddr4_dq" type="array">
+      <obj_property name="ElementShortName">c0_ddr4_dq[63:0]</obj_property>
+      <obj_property name="ObjectShortName">c0_ddr4_dq[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/u_ddr4_0/c0_ddr4_dqs_c" type="array">
+      <obj_property name="ElementShortName">c0_ddr4_dqs_c[7:0]</obj_property>
+      <obj_property name="ObjectShortName">c0_ddr4_dqs_c[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/u_ddr4_0/c0_ddr4_dqs_t" type="array">
+      <obj_property name="ElementShortName">c0_ddr4_dqs_t[7:0]</obj_property>
+      <obj_property name="ObjectShortName">c0_ddr4_dqs_t[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/u_ddr4_0/c0_init_calib_complete" type="logic">
+      <obj_property name="ElementShortName">c0_init_calib_complete</obj_property>
+      <obj_property name="ObjectShortName">c0_init_calib_complete</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/u_ddr4_0/dBufAdr" type="array">
+      <obj_property name="ElementShortName">dBufAdr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">dBufAdr[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/u_ddr4_0/wrData" type="array">
+      <obj_property name="ElementShortName">wrData[511:0]</obj_property>
+      <obj_property name="ObjectShortName">wrData[511:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/u_ddr4_0/wrDataMask" type="array">
+      <obj_property name="ElementShortName">wrDataMask[63:0]</obj_property>
+      <obj_property name="ObjectShortName">wrDataMask[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/u_ddr4_0/rdData" type="array">
+      <obj_property name="ElementShortName">rdData[511:0]</obj_property>
+      <obj_property name="ObjectShortName">rdData[511:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/u_ddr4_0/rdDataAddr" type="array">
+      <obj_property name="ElementShortName">rdDataAddr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rdDataAddr[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/u_ddr4_0/rdDataEn" type="array">
+      <obj_property name="ElementShortName">rdDataEn[0:0]</obj_property>
+      <obj_property name="ObjectShortName">rdDataEn[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/u_ddr4_0/rdDataEnd" type="array">
+      <obj_property name="ElementShortName">rdDataEnd[0:0]</obj_property>
+      <obj_property name="ObjectShortName">rdDataEnd[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/u_ddr4_0/per_rd_done" type="array">
+      <obj_property name="ElementShortName">per_rd_done[0:0]</obj_property>
+      <obj_property name="ObjectShortName">per_rd_done[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/u_ddr4_0/rmw_rd_done" type="array">
+      <obj_property name="ElementShortName">rmw_rd_done[0:0]</obj_property>
+      <obj_property name="ObjectShortName">rmw_rd_done[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/u_ddr4_0/wrDataAddr" type="array">
+      <obj_property name="ElementShortName">wrDataAddr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">wrDataAddr[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/u_ddr4_0/wrDataEn" type="array">
+      <obj_property name="ElementShortName">wrDataEn[0:0]</obj_property>
+      <obj_property name="ObjectShortName">wrDataEn[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/u_ddr4_0/mc_ACT_n" type="array">
       <obj_property name="ElementShortName">mc_ACT_n[7:0]</obj_property>
       <obj_property name="ObjectShortName">mc_ACT_n[7:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/mcRdCAS" type="logic">
-      <obj_property name="ElementShortName">mcRdCAS</obj_property>
-      <obj_property name="ObjectShortName">mcRdCAS</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/mcWrCAS" type="logic">
-      <obj_property name="ElementShortName">mcWrCAS</obj_property>
-      <obj_property name="ObjectShortName">mcWrCAS</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/dfi_cas_n0" type="logic">
-      <obj_property name="ElementShortName">dfi_cas_n0</obj_property>
-      <obj_property name="ObjectShortName">dfi_cas_n0</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/dfi_cas_n1" type="logic">
-      <obj_property name="ElementShortName">dfi_cas_n1</obj_property>
-      <obj_property name="ObjectShortName">dfi_cas_n1</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/dfi_cke0" type="array">
-      <obj_property name="ElementShortName">dfi_cke0[7:0]</obj_property>
-      <obj_property name="ObjectShortName">dfi_cke0[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/dfi_cke1" type="array">
-      <obj_property name="ElementShortName">dfi_cke1[0:0]</obj_property>
-      <obj_property name="ObjectShortName">dfi_cke1[0:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/dfi_cs_n0" type="array">
-      <obj_property name="ElementShortName">dfi_cs_n0[7:0]</obj_property>
-      <obj_property name="ObjectShortName">dfi_cs_n0[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/dfi_cs_n1" type="array">
-      <obj_property name="ElementShortName">dfi_cs_n1[0:0]</obj_property>
-      <obj_property name="ObjectShortName">dfi_cs_n1[0:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/dfi_odt0" type="array">
-      <obj_property name="ElementShortName">dfi_odt0[7:0]</obj_property>
-      <obj_property name="ObjectShortName">dfi_odt0[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/dfi_odt1" type="array">
-      <obj_property name="ElementShortName">dfi_odt1[0:0]</obj_property>
-      <obj_property name="ObjectShortName">dfi_odt1[0:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/dfi_ras_n0" type="logic">
-      <obj_property name="ElementShortName">dfi_ras_n0</obj_property>
-      <obj_property name="ObjectShortName">dfi_ras_n0</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/dfi_ras_n1" type="logic">
-      <obj_property name="ElementShortName">dfi_ras_n1</obj_property>
-      <obj_property name="ObjectShortName">dfi_ras_n1</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/dfi_reset_n" type="logic">
-      <obj_property name="ElementShortName">dfi_reset_n</obj_property>
-      <obj_property name="ObjectShortName">dfi_reset_n</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/dfi_we_n0" type="logic">
-      <obj_property name="ElementShortName">dfi_we_n0</obj_property>
-      <obj_property name="ObjectShortName">dfi_we_n0</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/dfi_we_n1" type="logic">
-      <obj_property name="ElementShortName">dfi_we_n1</obj_property>
-      <obj_property name="ObjectShortName">dfi_we_n1</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/dfi_wrdata_en" type="logic">
-      <obj_property name="ElementShortName">dfi_wrdata_en</obj_property>
-      <obj_property name="ObjectShortName">dfi_wrdata_en</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/dfi_wrdata" type="array">
-      <obj_property name="ElementShortName">dfi_wrdata[511:0]</obj_property>
-      <obj_property name="ObjectShortName">dfi_wrdata[511:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/dfi_wrdata_mask" type="array">
-      <obj_property name="ElementShortName">dfi_wrdata_mask[31:0]</obj_property>
-      <obj_property name="ObjectShortName">dfi_wrdata_mask[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/dfi_rddata_en" type="logic">
-      <obj_property name="ElementShortName">dfi_rddata_en</obj_property>
-      <obj_property name="ObjectShortName">dfi_rddata_en</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/dfi_rddata_en_even" type="logic">
-      <obj_property name="ElementShortName">dfi_rddata_en_even</obj_property>
-      <obj_property name="ObjectShortName">dfi_rddata_en_even</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/dfi_rddata_en_odd" type="logic">
-      <obj_property name="ElementShortName">dfi_rddata_en_odd</obj_property>
-      <obj_property name="ObjectShortName">dfi_rddata_en_odd</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/pci_exp_txn" type="logic">
-      <obj_property name="ElementShortName">pci_exp_txn</obj_property>
-      <obj_property name="ObjectShortName">pci_exp_txn</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/pci_exp_txp" type="logic">
-      <obj_property name="ElementShortName">pci_exp_txp</obj_property>
-      <obj_property name="ObjectShortName">pci_exp_txp</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/pci_exp_rxn" type="logic">
-      <obj_property name="ElementShortName">pci_exp_rxn</obj_property>
-      <obj_property name="ObjectShortName">pci_exp_rxn</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/pci_exp_rxp" type="logic">
-      <obj_property name="ElementShortName">pci_exp_rxp</obj_property>
-      <obj_property name="ObjectShortName">pci_exp_rxp</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/i_iseq_disp/process_iseq" type="logic">
-      <obj_property name="ElementShortName">process_iseq</obj_property>
-      <obj_property name="ObjectShortName">process_iseq</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/i_iseq_disp/dispatcher_busy_r" type="logic">
-      <obj_property name="ElementShortName">dispatcher_busy_r</obj_property>
-      <obj_property name="ObjectShortName">dispatcher_busy_r</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/i_iseq_disp/dispatcher_busy_ns" type="logic">
-      <obj_property name="ElementShortName">dispatcher_busy_ns</obj_property>
-      <obj_property name="ObjectShortName">dispatcher_busy_ns</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/i_iseq_disp/dispatcher_busy_r" type="logic">
-      <obj_property name="ElementShortName">dispatcher_busy_r</obj_property>
-      <obj_property name="ObjectShortName">dispatcher_busy_r</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/i_iseq_disp/instr0_fifo_rd" type="logic">
-      <obj_property name="ElementShortName">instr0_fifo_rd</obj_property>
-      <obj_property name="ObjectShortName">instr0_fifo_rd</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/i_instr0_fifo/srst" type="logic">
-      <obj_property name="ElementShortName">srst</obj_property>
-      <obj_property name="ObjectShortName">srst</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/i_instr0_fifo/wr_rst_busy" type="logic">
-      <obj_property name="ElementShortName">wr_rst_busy</obj_property>
-      <obj_property name="ObjectShortName">wr_rst_busy</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/i_instr0_fifo/rd_rst_busy" type="logic">
-      <obj_property name="ElementShortName">rd_rst_busy</obj_property>
-      <obj_property name="ObjectShortName">rd_rst_busy</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/app_instr" type="array">
-      <obj_property name="ElementShortName">app_instr[31:0]</obj_property>
-      <obj_property name="ObjectShortName">app_instr[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/i_instr0_fifo/din" type="array">
-      <obj_property name="ElementShortName">din[31:0]</obj_property>
-      <obj_property name="ObjectShortName">din[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/i_instr0_fifo/dout" type="array">
-      <obj_property name="ElementShortName">dout[31:0]</obj_property>
-      <obj_property name="ObjectShortName">dout[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/i_instr0_fifo/clk" type="logic">
-      <obj_property name="ElementShortName">clk</obj_property>
-      <obj_property name="ObjectShortName">clk</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/i_instr0_fifo/wr_en" type="logic">
-      <obj_property name="ElementShortName">wr_en</obj_property>
-      <obj_property name="ObjectShortName">wr_en</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/i_instr0_fifo/empty" type="logic">
-      <obj_property name="ElementShortName">empty</obj_property>
-      <obj_property name="ObjectShortName">empty</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/i_instr0_fifo/rd_en" type="logic">
-      <obj_property name="ElementShortName">rd_en</obj_property>
-      <obj_property name="ObjectShortName">rd_en</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/i_iseq_disp/instr0_fifo_empty" type="logic">
-      <obj_property name="ElementShortName">instr0_fifo_empty</obj_property>
-      <obj_property name="ObjectShortName">instr0_fifo_empty</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/dfi_rddata" type="array">
-      <obj_property name="ElementShortName">dfi_rddata[511:0]</obj_property>
-      <obj_property name="ObjectShortName">dfi_rddata[511:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/dfi_rddata_valid" type="logic">
-      <obj_property name="ElementShortName">dfi_rddata_valid</obj_property>
-      <obj_property name="ObjectShortName">dfi_rddata_valid</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/dfi_rddata_valid_even" type="logic">
-      <obj_property name="ElementShortName">dfi_rddata_valid_even</obj_property>
-      <obj_property name="ObjectShortName">dfi_rddata_valid_even</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/dfi_rddata_valid_odd" type="logic">
-      <obj_property name="ElementShortName">dfi_rddata_valid_odd</obj_property>
-      <obj_property name="ObjectShortName">dfi_rddata_valid_odd</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/dfi_dram_clk_disable" type="logic">
-      <obj_property name="ElementShortName">dfi_dram_clk_disable</obj_property>
-      <obj_property name="ObjectShortName">dfi_dram_clk_disable</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/dfi_init_complete" type="logic">
-      <obj_property name="ElementShortName">dfi_init_complete</obj_property>
-      <obj_property name="ObjectShortName">dfi_init_complete</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/io_config_strobe" type="logic">
-      <obj_property name="ElementShortName">io_config_strobe</obj_property>
-      <obj_property name="ObjectShortName">io_config_strobe</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/io_config" type="array">
-      <obj_property name="ElementShortName">io_config[1:0]</obj_property>
-      <obj_property name="ObjectShortName">io_config[1:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/rdback_fifo_empty" type="logic">
-      <obj_property name="ElementShortName">rdback_fifo_empty</obj_property>
-      <obj_property name="ObjectShortName">rdback_fifo_empty</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/rdback_fifo_rden" type="logic">
-      <obj_property name="ElementShortName">rdback_fifo_rden</obj_property>
-      <obj_property name="ObjectShortName">rdback_fifo_rden</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/rdback_data" type="array">
-      <obj_property name="ElementShortName">rdback_data[511:0]</obj_property>
-      <obj_property name="ObjectShortName">rdback_data[511:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/instr0_fifo_en" type="logic">
-      <obj_property name="ElementShortName">instr0_fifo_en</obj_property>
-      <obj_property name="ObjectShortName">instr0_fifo_en</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/instr0_fifo_full" type="logic">
-      <obj_property name="ElementShortName">instr0_fifo_full</obj_property>
-      <obj_property name="ObjectShortName">instr0_fifo_full</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/instr0_fifo_empty" type="logic">
-      <obj_property name="ElementShortName">instr0_fifo_empty</obj_property>
-      <obj_property name="ObjectShortName">instr0_fifo_empty</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/instr0_fifo_data" type="array">
-      <obj_property name="ElementShortName">instr0_fifo_data[31:0]</obj_property>
-      <obj_property name="ObjectShortName">instr0_fifo_data[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/instr0_fifo_out" type="array">
-      <obj_property name="ElementShortName">instr0_fifo_out[31:0]</obj_property>
-      <obj_property name="ObjectShortName">instr0_fifo_out[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/instr0_fifo_rd_en" type="logic">
-      <obj_property name="ElementShortName">instr0_fifo_rd_en</obj_property>
-      <obj_property name="ObjectShortName">instr0_fifo_rd_en</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/instr1_fifo_en" type="logic">
-      <obj_property name="ElementShortName">instr1_fifo_en</obj_property>
-      <obj_property name="ObjectShortName">instr1_fifo_en</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/instr1_fifo_full" type="logic">
-      <obj_property name="ElementShortName">instr1_fifo_full</obj_property>
-      <obj_property name="ObjectShortName">instr1_fifo_full</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/instr1_fifo_empty" type="logic">
-      <obj_property name="ElementShortName">instr1_fifo_empty</obj_property>
-      <obj_property name="ObjectShortName">instr1_fifo_empty</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/instr1_fifo_data" type="array">
-      <obj_property name="ElementShortName">instr1_fifo_data[31:0]</obj_property>
-      <obj_property name="ObjectShortName">instr1_fifo_data[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/instr1_fifo_out" type="array">
-      <obj_property name="ElementShortName">instr1_fifo_out[31:0]</obj_property>
-      <obj_property name="ObjectShortName">instr1_fifo_out[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/instr1_fifo_rd_en" type="logic">
-      <obj_property name="ElementShortName">instr1_fifo_rd_en</obj_property>
-      <obj_property name="ObjectShortName">instr1_fifo_rd_en</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/process_iseq" type="logic">
-      <obj_property name="ElementShortName">process_iseq</obj_property>
-      <obj_property name="ObjectShortName">process_iseq</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/pr_rd_req" type="logic">
-      <obj_property name="ElementShortName">pr_rd_req</obj_property>
-      <obj_property name="ObjectShortName">pr_rd_req</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/zq_req" type="logic">
-      <obj_property name="ElementShortName">zq_req</obj_property>
-      <obj_property name="ObjectShortName">zq_req</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/autoref_req" type="logic">
-      <obj_property name="ElementShortName">autoref_req</obj_property>
-      <obj_property name="ObjectShortName">autoref_req</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/pr_rd_ack" type="logic">
-      <obj_property name="ElementShortName">pr_rd_ack</obj_property>
-      <obj_property name="ObjectShortName">pr_rd_ack</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/zq_ack" type="logic">
-      <obj_property name="ElementShortName">zq_ack</obj_property>
-      <obj_property name="ObjectShortName">zq_ack</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/autoref_ack" type="logic">
-      <obj_property name="ElementShortName">autoref_ack</obj_property>
-      <obj_property name="ObjectShortName">autoref_ack</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/aref_en" type="logic">
-      <obj_property name="ElementShortName">aref_en</obj_property>
-      <obj_property name="ObjectShortName">aref_en</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/aref_interval" type="array">
-      <obj_property name="ElementShortName">aref_interval[27:0]</obj_property>
-      <obj_property name="ObjectShortName">aref_interval[27:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/aref_trfc" type="array">
-      <obj_property name="ElementShortName">aref_trfc[27:0]</obj_property>
-      <obj_property name="ObjectShortName">aref_trfc[27:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/aref_set_interval" type="logic">
-      <obj_property name="ElementShortName">aref_set_interval</obj_property>
-      <obj_property name="ObjectShortName">aref_set_interval</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/aref_set_trfc" type="logic">
-      <obj_property name="ElementShortName">aref_set_trfc</obj_property>
-      <obj_property name="ObjectShortName">aref_set_trfc</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/aref_interval_in" type="array">
-      <obj_property name="ElementShortName">aref_interval_in[27:0]</obj_property>
-      <obj_property name="ObjectShortName">aref_interval_in[27:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/aref_trfc_in" type="array">
-      <obj_property name="ElementShortName">aref_trfc_in[27:0]</obj_property>
-      <obj_property name="ObjectShortName">aref_trfc_in[27:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/periodic_read_lock" type="logic">
-      <obj_property name="ElementShortName">periodic_read_lock</obj_property>
-      <obj_property name="ObjectShortName">periodic_read_lock</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/maint_en" type="logic">
-      <obj_property name="ElementShortName">maint_en</obj_property>
-      <obj_property name="ObjectShortName">maint_en</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/maint_ack" type="logic">
-      <obj_property name="ElementShortName">maint_ack</obj_property>
-      <obj_property name="ObjectShortName">maint_ack</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/maint_instr" type="array">
-      <obj_property name="ElementShortName">maint_instr[31:0]</obj_property>
-      <obj_property name="ObjectShortName">maint_instr[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/dfi_ready" type="logic">
-      <obj_property name="ElementShortName">dfi_ready</obj_property>
-      <obj_property name="ObjectShortName">dfi_ready</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/rdback_fifo_wrdata" type="array">
-      <obj_property name="ElementShortName">rdback_fifo_wrdata[511:0]</obj_property>
-      <obj_property name="ObjectShortName">rdback_fifo_wrdata[511:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/rdback_fifo_out" type="array">
-      <obj_property name="ElementShortName">rdback_fifo_out[511:0]</obj_property>
-      <obj_property name="ObjectShortName">rdback_fifo_out[511:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/rdback_fifo_full" type="logic">
-      <obj_property name="ElementShortName">rdback_fifo_full</obj_property>
-      <obj_property name="ObjectShortName">rdback_fifo_full</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/rdback_fifo_almost_full" type="logic">
-      <obj_property name="ElementShortName">rdback_fifo_almost_full</obj_property>
-      <obj_property name="ObjectShortName">rdback_fifo_almost_full</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/rdback_fifo_wren" type="logic">
-      <obj_property name="ElementShortName">rdback_fifo_wren</obj_property>
-      <obj_property name="ObjectShortName">rdback_fifo_wren</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/test_data" type="array">
-      <obj_property name="ElementShortName">test_data[511:0]</obj_property>
-      <obj_property name="ObjectShortName">test_data[511:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/read_capturer_dfi_clk_disable" type="logic">
-      <obj_property name="ElementShortName">read_capturer_dfi_clk_disable</obj_property>
-      <obj_property name="ObjectShortName">read_capturer_dfi_clk_disable</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/dispatcher_busy" type="logic">
-      <obj_property name="ElementShortName">dispatcher_busy</obj_property>
-      <obj_property name="ObjectShortName">dispatcher_busy</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/TCQ" type="array">
-      <obj_property name="ElementShortName">TCQ[31:0]</obj_property>
-      <obj_property name="ObjectShortName">TCQ[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/tCK" type="array">
-      <obj_property name="ElementShortName">tCK[31:0]</obj_property>
-      <obj_property name="ObjectShortName">tCK[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/nCK_PER_CLK" type="array">
-      <obj_property name="ElementShortName">nCK_PER_CLK[31:0]</obj_property>
-      <obj_property name="ObjectShortName">nCK_PER_CLK[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/RANK_WIDTH" type="array">
-      <obj_property name="ElementShortName">RANK_WIDTH[31:0]</obj_property>
-      <obj_property name="ObjectShortName">RANK_WIDTH[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/ROW_WIDTH" type="array">
-      <obj_property name="ElementShortName">ROW_WIDTH[31:0]</obj_property>
-      <obj_property name="ObjectShortName">ROW_WIDTH[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/BANK_WIDTH" type="array">
-      <obj_property name="ElementShortName">BANK_WIDTH[31:0]</obj_property>
-      <obj_property name="ObjectShortName">BANK_WIDTH[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/CKE_WIDTH" type="array">
-      <obj_property name="ElementShortName">CKE_WIDTH[31:0]</obj_property>
-      <obj_property name="ObjectShortName">CKE_WIDTH[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/CS_WIDTH" type="array">
-      <obj_property name="ElementShortName">CS_WIDTH[31:0]</obj_property>
-      <obj_property name="ObjectShortName">CS_WIDTH[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/nCS_PER_RANK" type="array">
-      <obj_property name="ElementShortName">nCS_PER_RANK[31:0]</obj_property>
-      <obj_property name="ObjectShortName">nCS_PER_RANK[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/DQ_WIDTH" type="array">
-      <obj_property name="ElementShortName">DQ_WIDTH[31:0]</obj_property>
-      <obj_property name="ObjectShortName">DQ_WIDTH[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_softMC_top/uut/i_softmc/MAINT_PRESCALER_PERIOD" type="array">
-      <obj_property name="ElementShortName">MAINT_PRESCALER_PERIOD[31:0]</obj_property>
-      <obj_property name="ObjectShortName">MAINT_PRESCALER_PERIOD[31:0]</obj_property>
+   <wvobject fp_name="/tb_softMC_top/uut/u_ddr4_0/mc_ADR" type="array">
+      <obj_property name="ElementShortName">mc_ADR[135:0]</obj_property>
+      <obj_property name="ObjectShortName">mc_ADR[135:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/u_ddr4_0/mc_BA" type="array">
+      <obj_property name="ElementShortName">mc_BA[15:0]</obj_property>
+      <obj_property name="ObjectShortName">mc_BA[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/u_ddr4_0/mc_BG" type="array">
+      <obj_property name="ElementShortName">mc_BG[7:0]</obj_property>
+      <obj_property name="ObjectShortName">mc_BG[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/u_ddr4_0/mc_CKE" type="array">
+      <obj_property name="ElementShortName">mc_CKE[7:0]</obj_property>
+      <obj_property name="ObjectShortName">mc_CKE[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/u_ddr4_0/mc_CS_n" type="array">
+      <obj_property name="ElementShortName">mc_CS_n[7:0]</obj_property>
+      <obj_property name="ObjectShortName">mc_CS_n[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/u_ddr4_0/mc_ODT" type="array">
+      <obj_property name="ElementShortName">mc_ODT[7:0]</obj_property>
+      <obj_property name="ObjectShortName">mc_ODT[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/u_ddr4_0/mcCasSlot" type="array">
+      <obj_property name="ElementShortName">mcCasSlot[1:0]</obj_property>
+      <obj_property name="ObjectShortName">mcCasSlot[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/u_ddr4_0/mcCasSlot2" type="array">
+      <obj_property name="ElementShortName">mcCasSlot2[0:0]</obj_property>
+      <obj_property name="ObjectShortName">mcCasSlot2[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/u_ddr4_0/mcRdCAS" type="array">
+      <obj_property name="ElementShortName">mcRdCAS[0:0]</obj_property>
+      <obj_property name="ObjectShortName">mcRdCAS[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/u_ddr4_0/mcWrCAS" type="array">
+      <obj_property name="ElementShortName">mcWrCAS[0:0]</obj_property>
+      <obj_property name="ObjectShortName">mcWrCAS[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/u_ddr4_0/winInjTxn" type="array">
+      <obj_property name="ElementShortName">winInjTxn[0:0]</obj_property>
+      <obj_property name="ObjectShortName">winInjTxn[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/u_ddr4_0/winRmw" type="array">
+      <obj_property name="ElementShortName">winRmw[0:0]</obj_property>
+      <obj_property name="ObjectShortName">winRmw[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/u_ddr4_0/gt_data_ready" type="logic">
+      <obj_property name="ElementShortName">gt_data_ready</obj_property>
+      <obj_property name="ObjectShortName">gt_data_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/u_ddr4_0/winBuf" type="array">
+      <obj_property name="ElementShortName">winBuf[4:0]</obj_property>
+      <obj_property name="ObjectShortName">winBuf[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/u_ddr4_0/winRank" type="array">
+      <obj_property name="ElementShortName">winRank[1:0]</obj_property>
+      <obj_property name="ObjectShortName">winRank[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/u_ddr4_0/tCWL" type="array">
+      <obj_property name="ElementShortName">tCWL[5:0]</obj_property>
+      <obj_property name="ObjectShortName">tCWL[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_softMC_top/uut/u_ddr4_0/dbg_bus" type="array">
+      <obj_property name="ElementShortName">dbg_bus[511:0]</obj_property>
+      <obj_property name="ObjectShortName">dbg_bus[511:0]</obj_property>
    </wvobject>
 </wave_config>

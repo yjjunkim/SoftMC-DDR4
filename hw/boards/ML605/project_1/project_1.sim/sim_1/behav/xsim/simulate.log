@@ -1,0 +1,886 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+Loading timesets for 'tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[0].ddr4_model .LoadTiming' @0
+	Loaded timeset:TS_1875
+	Loaded timeset:TS_1500
+	Loaded timeset:TS_1250
+	Loaded timeset:TS_1072
+	Loaded timeset:TS_938
+	Loaded timeset:TS_833
+	Loaded timeset:TS_750
+	Loaded timeset:TS_682
+	Loaded timeset:TS_625
+Model based on DDR4 DDS version 0.999 6/06/2014 (build data 5/06/2016)
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[0].ddr4_model :Configured as x16 8G stack:1
+Loading timesets for 'tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[1].ddr4_model .LoadTiming' @0
+	Loaded timeset:TS_1875
+	Loaded timeset:TS_1500
+	Loaded timeset:TS_1250
+	Loaded timeset:TS_1072
+	Loaded timeset:TS_938
+	Loaded timeset:TS_833
+	Loaded timeset:TS_750
+	Loaded timeset:TS_682
+	Loaded timeset:TS_625
+Model based on DDR4 DDS version 0.999 6/06/2014 (build data 5/06/2016)
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[1].ddr4_model :Configured as x16 8G stack:1
+Loading timesets for 'tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[2].ddr4_model .LoadTiming' @0
+	Loaded timeset:TS_1875
+	Loaded timeset:TS_1500
+	Loaded timeset:TS_1250
+	Loaded timeset:TS_1072
+	Loaded timeset:TS_938
+	Loaded timeset:TS_833
+	Loaded timeset:TS_750
+	Loaded timeset:TS_682
+	Loaded timeset:TS_625
+Model based on DDR4 DDS version 0.999 6/06/2014 (build data 5/06/2016)
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[2].ddr4_model :Configured as x16 8G stack:1
+Loading timesets for 'tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[3].ddr4_model .LoadTiming' @0
+	Loaded timeset:TS_1875
+	Loaded timeset:TS_1500
+	Loaded timeset:TS_1250
+	Loaded timeset:TS_1072
+	Loaded timeset:TS_938
+	Loaded timeset:TS_833
+	Loaded timeset:TS_750
+	Loaded timeset:TS_682
+	Loaded timeset:TS_625
+Model based on DDR4 DDS version 0.999 6/06/2014 (build data 5/06/2016)
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[3].ddr4_model :Configured as x16 8G stack:1
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: tb_softMC_top.uut.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[0].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: tb_softMC_top.uut.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[1].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: tb_softMC_top.uut.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[4].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: tb_softMC_top.uut.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[5].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: tb_softMC_top.uut.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[6].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: tb_softMC_top.uut.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[7].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: tb_softMC_top.uut.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[8].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: tb_softMC_top.uut.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[9].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[0].ddr4_model .always_diff_ck.if_diff_ck:Initialization complete @3853438
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[1].ddr4_model .always_diff_ck.if_diff_ck:Initialization complete @3853438
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[2].ddr4_model .always_diff_ck.if_diff_ck:Initialization complete @3853438
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[3].ddr4_model .always_diff_ck.if_diff_ck:Initialization complete @3853438
+Calibration Done
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[0].ddr4_model .VerifyMR:ERROR:SPEC_VIOLATION tWR/tRTP tWR spec:13 loaded:12 tRTP spec:7482 loaded:7482 @8287185
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[1].ddr4_model .VerifyMR:ERROR:SPEC_VIOLATION tWR/tRTP tWR spec:13 loaded:12 tRTP spec:7482 loaded:7482 @8287185
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[2].ddr4_model .VerifyMR:ERROR:SPEC_VIOLATION tWR/tRTP tWR spec:13 loaded:12 tRTP spec:7482 loaded:7482 @8287185
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[3].ddr4_model .VerifyMR:ERROR:SPEC_VIOLATION tWR/tRTP tWR spec:13 loaded:12 tRTP spec:7482 loaded:7482 @8287185
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[0].ddr4_model .VerifyMR:ERROR:SPEC_VIOLATION tWR/tRTP tWR spec:13 loaded:12 tRTP spec:7482 loaded:7482 @8337185
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[0].ddr4_model .always_diff_ck.if_diff_ck:VIOLATION: cmdACT BG:1 B:0 A:0 (BL:8 WL:11 RL:11) @8337185 Required:
+	tRP - 3 clocks.
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[1].ddr4_model .VerifyMR:ERROR:SPEC_VIOLATION tWR/tRTP tWR spec:13 loaded:12 tRTP spec:7482 loaded:7482 @8337185
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[1].ddr4_model .always_diff_ck.if_diff_ck:VIOLATION: cmdACT BG:1 B:0 A:0 (BL:8 WL:11 RL:11) @8337185 Required:
+	tRP - 3 clocks.
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[2].ddr4_model .VerifyMR:ERROR:SPEC_VIOLATION tWR/tRTP tWR spec:13 loaded:12 tRTP spec:7482 loaded:7482 @8337185
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[2].ddr4_model .always_diff_ck.if_diff_ck:VIOLATION: cmdACT BG:1 B:0 A:0 (BL:8 WL:11 RL:11) @8337185 Required:
+	tRP - 3 clocks.
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[3].ddr4_model .VerifyMR:ERROR:SPEC_VIOLATION tWR/tRTP tWR spec:13 loaded:12 tRTP spec:7482 loaded:7482 @8337185
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[3].ddr4_model .always_diff_ck.if_diff_ck:VIOLATION: cmdACT BG:1 B:0 A:0 (BL:8 WL:11 RL:11) @8337185 Required:
+	tRP - 3 clocks.
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[0].ddr4_model .always_diff_ck.if_diff_ck:VIOLATION: cmdRD BG:1 B:0 A:0 (BL:8 WL:11 RL:11) @8417185 Required:
+	tCCD_L (RD) - 1 clocks.
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[1].ddr4_model .always_diff_ck.if_diff_ck:VIOLATION: cmdRD BG:1 B:0 A:0 (BL:8 WL:11 RL:11) @8417185 Required:
+	tCCD_L (RD) - 1 clocks.
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[2].ddr4_model .always_diff_ck.if_diff_ck:VIOLATION: cmdRD BG:1 B:0 A:0 (BL:8 WL:11 RL:11) @8417185 Required:
+	tCCD_L (RD) - 1 clocks.
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[3].ddr4_model .always_diff_ck.if_diff_ck:VIOLATION: cmdRD BG:1 B:0 A:0 (BL:8 WL:11 RL:11) @8417185 Required:
+	tCCD_L (RD) - 1 clocks.
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[0].ddr4_model .always_diff_ck.if_diff_ck:VIOLATION: cmdPRE BG:1 B:0 A:0 (BL:8 WL:11 RL:11) @8422187 Required:
+	tRTP + AL - 2 clocks.
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[1].ddr4_model .always_diff_ck.if_diff_ck:VIOLATION: cmdPRE BG:1 B:0 A:0 (BL:8 WL:11 RL:11) @8422187 Required:
+	tRTP + AL - 2 clocks.
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[2].ddr4_model .always_diff_ck.if_diff_ck:VIOLATION: cmdPRE BG:1 B:0 A:0 (BL:8 WL:11 RL:11) @8422187 Required:
+	tRTP + AL - 2 clocks.
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[3].ddr4_model .always_diff_ck.if_diff_ck:VIOLATION: cmdPRE BG:1 B:0 A:0 (BL:8 WL:11 RL:11) @8422187 Required:
+	tRTP + AL - 2 clocks.
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:0 @8425311
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:1 @8425311
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:0 @8425311
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:1 @8425311
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:0 @8425311
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:1 @8425311
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:0 @8425311
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:1 @8425311
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:0 @8425936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:1 @8425936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:0 @8425936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:1 @8425936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:0 @8425936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:1 @8425936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:0 @8425936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:1 @8425936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:0 @8426561
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:1 @8426561
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:0 @8426561
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:1 @8426561
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:0 @8426561
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:1 @8426561
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:0 @8426561
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:1 @8426561
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:0 @8427185
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:1 @8427185
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:0 @8427185
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:1 @8427185
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:0 @8427185
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:1 @8427185
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:0 @8427185
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:1 @8427185
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:0 @8427810
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:1 @8427810
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:0 @8427810
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:1 @8427810
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:0 @8427810
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:1 @8427810
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:0 @8427810
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:1 @8427810
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:0 @8428434
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:1 @8428434
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:0 @8428434
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:1 @8428434
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:0 @8428434
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:1 @8428434
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:0 @8428434
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:1 @8428434
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:0 @8429059
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:1 @8429059
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:0 @8429059
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:1 @8429059
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:0 @8429059
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:1 @8429059
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:0 @8429059
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:1 @8429059
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:0 @8429683
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:1 @8429683
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:0 @8429683
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:1 @8429683
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:0 @8429683
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:1 @8429683
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:0 @8429683
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:1 @8429683
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:0 @8430312
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:1 @8430312
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:0 @8430312
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:1 @8430312
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:0 @8430312
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:1 @8430312
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:0 @8430312
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:1 @8430312
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:0 @8430936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:1 @8430936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:0 @8430936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:1 @8430936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:0 @8430936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:1 @8430936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:0 @8430936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:1 @8430936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:0 @8431562
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:1 @8431562
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:0 @8431562
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:1 @8431562
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:0 @8431562
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:1 @8431562
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:0 @8431562
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:1 @8431562
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:0 @8432187
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:1 @8432187
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:0 @8432187
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:1 @8432187
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:0 @8432187
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:1 @8432187
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:0 @8432187
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:1 @8432187
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:0 @8432813
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:1 @8432813
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:0 @8432813
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:1 @8432813
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:0 @8432813
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:1 @8432813
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:0 @8432813
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:1 @8432813
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:0 @8433438
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:1 @8433438
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:0 @8433438
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:1 @8433438
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:0 @8433438
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:1 @8433438
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:0 @8433438
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:1 @8433438
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:0 @8434064
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:1 @8434064
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:0 @8434064
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:1 @8434064
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:0 @8434064
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:1 @8434064
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:0 @8434064
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:1 @8434064
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:0 @8434689
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:1 @8434689
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:0 @8434689
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:1 @8434689
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:0 @8434689
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:1 @8434689
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:0 @8434689
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:1 @8434689
+Loading timesets for 'tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[0].ddr4_model .LoadTiming' @0
+	Loaded timeset:TS_1875
+	Loaded timeset:TS_1500
+	Loaded timeset:TS_1250
+	Loaded timeset:TS_1072
+	Loaded timeset:TS_938
+	Loaded timeset:TS_833
+	Loaded timeset:TS_750
+	Loaded timeset:TS_682
+	Loaded timeset:TS_625
+Model based on DDR4 DDS version 0.999 6/06/2014 (build data 5/06/2016)
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[0].ddr4_model :Configured as x16 8G stack:1
+Loading timesets for 'tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[1].ddr4_model .LoadTiming' @0
+	Loaded timeset:TS_1875
+	Loaded timeset:TS_1500
+	Loaded timeset:TS_1250
+	Loaded timeset:TS_1072
+	Loaded timeset:TS_938
+	Loaded timeset:TS_833
+	Loaded timeset:TS_750
+	Loaded timeset:TS_682
+	Loaded timeset:TS_625
+Model based on DDR4 DDS version 0.999 6/06/2014 (build data 5/06/2016)
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[1].ddr4_model :Configured as x16 8G stack:1
+Loading timesets for 'tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[2].ddr4_model .LoadTiming' @0
+	Loaded timeset:TS_1875
+	Loaded timeset:TS_1500
+	Loaded timeset:TS_1250
+	Loaded timeset:TS_1072
+	Loaded timeset:TS_938
+	Loaded timeset:TS_833
+	Loaded timeset:TS_750
+	Loaded timeset:TS_682
+	Loaded timeset:TS_625
+Model based on DDR4 DDS version 0.999 6/06/2014 (build data 5/06/2016)
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[2].ddr4_model :Configured as x16 8G stack:1
+Loading timesets for 'tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[3].ddr4_model .LoadTiming' @0
+	Loaded timeset:TS_1875
+	Loaded timeset:TS_1500
+	Loaded timeset:TS_1250
+	Loaded timeset:TS_1072
+	Loaded timeset:TS_938
+	Loaded timeset:TS_833
+	Loaded timeset:TS_750
+	Loaded timeset:TS_682
+	Loaded timeset:TS_625
+Model based on DDR4 DDS version 0.999 6/06/2014 (build data 5/06/2016)
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[3].ddr4_model :Configured as x16 8G stack:1
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: tb_softMC_top.uut.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[0].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: tb_softMC_top.uut.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[1].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: tb_softMC_top.uut.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[4].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: tb_softMC_top.uut.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[5].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: tb_softMC_top.uut.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[6].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: tb_softMC_top.uut.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[7].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: tb_softMC_top.uut.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[8].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: tb_softMC_top.uut.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[9].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[0].ddr4_model .always_diff_ck.if_diff_ck:Initialization complete @3853438
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[1].ddr4_model .always_diff_ck.if_diff_ck:Initialization complete @3853438
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[2].ddr4_model .always_diff_ck.if_diff_ck:Initialization complete @3853438
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[3].ddr4_model .always_diff_ck.if_diff_ck:Initialization complete @3853438
+Calibration Done
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[0].ddr4_model .VerifyMR:ERROR:SPEC_VIOLATION tWR/tRTP tWR spec:13 loaded:12 tRTP spec:7482 loaded:7482 @8287185
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[1].ddr4_model .VerifyMR:ERROR:SPEC_VIOLATION tWR/tRTP tWR spec:13 loaded:12 tRTP spec:7482 loaded:7482 @8287185
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[2].ddr4_model .VerifyMR:ERROR:SPEC_VIOLATION tWR/tRTP tWR spec:13 loaded:12 tRTP spec:7482 loaded:7482 @8287185
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[3].ddr4_model .VerifyMR:ERROR:SPEC_VIOLATION tWR/tRTP tWR spec:13 loaded:12 tRTP spec:7482 loaded:7482 @8287185
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[0].ddr4_model .VerifyMR:ERROR:SPEC_VIOLATION tWR/tRTP tWR spec:13 loaded:12 tRTP spec:7482 loaded:7482 @8337185
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[0].ddr4_model .always_diff_ck.if_diff_ck:VIOLATION: cmdACT BG:1 B:0 A:0 (BL:8 WL:11 RL:11) @8337185 Required:
+	tRP - 3 clocks.
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[1].ddr4_model .VerifyMR:ERROR:SPEC_VIOLATION tWR/tRTP tWR spec:13 loaded:12 tRTP spec:7482 loaded:7482 @8337185
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[1].ddr4_model .always_diff_ck.if_diff_ck:VIOLATION: cmdACT BG:1 B:0 A:0 (BL:8 WL:11 RL:11) @8337185 Required:
+	tRP - 3 clocks.
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[2].ddr4_model .VerifyMR:ERROR:SPEC_VIOLATION tWR/tRTP tWR spec:13 loaded:12 tRTP spec:7482 loaded:7482 @8337185
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[2].ddr4_model .always_diff_ck.if_diff_ck:VIOLATION: cmdACT BG:1 B:0 A:0 (BL:8 WL:11 RL:11) @8337185 Required:
+	tRP - 3 clocks.
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[3].ddr4_model .VerifyMR:ERROR:SPEC_VIOLATION tWR/tRTP tWR spec:13 loaded:12 tRTP spec:7482 loaded:7482 @8337185
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[3].ddr4_model .always_diff_ck.if_diff_ck:VIOLATION: cmdACT BG:1 B:0 A:0 (BL:8 WL:11 RL:11) @8337185 Required:
+	tRP - 3 clocks.
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[0].ddr4_model .always_diff_ck.if_diff_ck:VIOLATION: cmdRD BG:1 B:0 A:0 (BL:8 WL:11 RL:11) @8417185 Required:
+	tCCD_L (RD) - 1 clocks.
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[1].ddr4_model .always_diff_ck.if_diff_ck:VIOLATION: cmdRD BG:1 B:0 A:0 (BL:8 WL:11 RL:11) @8417185 Required:
+	tCCD_L (RD) - 1 clocks.
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[2].ddr4_model .always_diff_ck.if_diff_ck:VIOLATION: cmdRD BG:1 B:0 A:0 (BL:8 WL:11 RL:11) @8417185 Required:
+	tCCD_L (RD) - 1 clocks.
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[3].ddr4_model .always_diff_ck.if_diff_ck:VIOLATION: cmdRD BG:1 B:0 A:0 (BL:8 WL:11 RL:11) @8417185 Required:
+	tCCD_L (RD) - 1 clocks.
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[0].ddr4_model .always_diff_ck.if_diff_ck:VIOLATION: cmdPRE BG:1 B:0 A:0 (BL:8 WL:11 RL:11) @8422187 Required:
+	tRTP + AL - 2 clocks.
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[1].ddr4_model .always_diff_ck.if_diff_ck:VIOLATION: cmdPRE BG:1 B:0 A:0 (BL:8 WL:11 RL:11) @8422187 Required:
+	tRTP + AL - 2 clocks.
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[2].ddr4_model .always_diff_ck.if_diff_ck:VIOLATION: cmdPRE BG:1 B:0 A:0 (BL:8 WL:11 RL:11) @8422187 Required:
+	tRTP + AL - 2 clocks.
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[3].ddr4_model .always_diff_ck.if_diff_ck:VIOLATION: cmdPRE BG:1 B:0 A:0 (BL:8 WL:11 RL:11) @8422187 Required:
+	tRTP + AL - 2 clocks.
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:0 @8425311
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:1 @8425311
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:0 @8425311
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:1 @8425311
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:0 @8425311
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:1 @8425311
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:0 @8425311
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:1 @8425311
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:0 @8425936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:1 @8425936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:0 @8425936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:1 @8425936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:0 @8425936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:1 @8425936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:0 @8425936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:1 @8425936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:0 @8426561
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:1 @8426561
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:0 @8426561
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:1 @8426561
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:0 @8426561
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:1 @8426561
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:0 @8426561
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:1 @8426561
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:0 @8427185
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:1 @8427185
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:0 @8427185
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:1 @8427185
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:0 @8427185
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:1 @8427185
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:0 @8427185
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:1 @8427185
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:0 @8427810
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:1 @8427810
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:0 @8427810
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:1 @8427810
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:0 @8427810
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:1 @8427810
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:0 @8427810
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:1 @8427810
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:0 @8428434
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:1 @8428434
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:0 @8428434
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:1 @8428434
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:0 @8428434
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:1 @8428434
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:0 @8428434
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:1 @8428434
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:0 @8429059
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:1 @8429059
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:0 @8429059
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:1 @8429059
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:0 @8429059
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:1 @8429059
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:0 @8429059
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:1 @8429059
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:0 @8429683
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:1 @8429683
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:0 @8429683
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:1 @8429683
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:0 @8429683
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:1 @8429683
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:0 @8429683
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:1 @8429683
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:0 @8430312
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:1 @8430312
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:0 @8430312
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:1 @8430312
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:0 @8430312
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:1 @8430312
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:0 @8430312
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:1 @8430312
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:0 @8430936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:1 @8430936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:0 @8430936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:1 @8430936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:0 @8430936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:1 @8430936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:0 @8430936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:1 @8430936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:0 @8431562
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:1 @8431562
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:0 @8431562
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:1 @8431562
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:0 @8431562
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:1 @8431562
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:0 @8431562
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:1 @8431562
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:0 @8432187
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:1 @8432187
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:0 @8432187
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:1 @8432187
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:0 @8432187
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:1 @8432187
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:0 @8432187
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:1 @8432187
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:0 @8432813
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:1 @8432813
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:0 @8432813
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:1 @8432813
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:0 @8432813
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:1 @8432813
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:0 @8432813
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:1 @8432813
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:0 @8433438
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:1 @8433438
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:0 @8433438
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:1 @8433438
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:0 @8433438
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:1 @8433438
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:0 @8433438
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:1 @8433438
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:0 @8434064
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:1 @8434064
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:0 @8434064
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:1 @8434064
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:0 @8434064
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:1 @8434064
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:0 @8434064
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:1 @8434064
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:0 @8434689
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:1 @8434689
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:0 @8434689
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:1 @8434689
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:0 @8434689
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:1 @8434689
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:0 @8434689
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:1 @8434689
+Loading timesets for 'tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[0].ddr4_model .LoadTiming' @0
+	Loaded timeset:TS_1875
+	Loaded timeset:TS_1500
+	Loaded timeset:TS_1250
+	Loaded timeset:TS_1072
+	Loaded timeset:TS_938
+	Loaded timeset:TS_833
+	Loaded timeset:TS_750
+	Loaded timeset:TS_682
+	Loaded timeset:TS_625
+Model based on DDR4 DDS version 0.999 6/06/2014 (build data 5/06/2016)
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[0].ddr4_model :Configured as x16 8G stack:1
+Loading timesets for 'tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[1].ddr4_model .LoadTiming' @0
+	Loaded timeset:TS_1875
+	Loaded timeset:TS_1500
+	Loaded timeset:TS_1250
+	Loaded timeset:TS_1072
+	Loaded timeset:TS_938
+	Loaded timeset:TS_833
+	Loaded timeset:TS_750
+	Loaded timeset:TS_682
+	Loaded timeset:TS_625
+Model based on DDR4 DDS version 0.999 6/06/2014 (build data 5/06/2016)
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[1].ddr4_model :Configured as x16 8G stack:1
+Loading timesets for 'tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[2].ddr4_model .LoadTiming' @0
+	Loaded timeset:TS_1875
+	Loaded timeset:TS_1500
+	Loaded timeset:TS_1250
+	Loaded timeset:TS_1072
+	Loaded timeset:TS_938
+	Loaded timeset:TS_833
+	Loaded timeset:TS_750
+	Loaded timeset:TS_682
+	Loaded timeset:TS_625
+Model based on DDR4 DDS version 0.999 6/06/2014 (build data 5/06/2016)
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[2].ddr4_model :Configured as x16 8G stack:1
+Loading timesets for 'tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[3].ddr4_model .LoadTiming' @0
+	Loaded timeset:TS_1875
+	Loaded timeset:TS_1500
+	Loaded timeset:TS_1250
+	Loaded timeset:TS_1072
+	Loaded timeset:TS_938
+	Loaded timeset:TS_833
+	Loaded timeset:TS_750
+	Loaded timeset:TS_682
+	Loaded timeset:TS_625
+Model based on DDR4 DDS version 0.999 6/06/2014 (build data 5/06/2016)
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[3].ddr4_model :Configured as x16 8G stack:1
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: tb_softMC_top.uut.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[0].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: tb_softMC_top.uut.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[1].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: tb_softMC_top.uut.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[4].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: tb_softMC_top.uut.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[5].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: tb_softMC_top.uut.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[6].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: tb_softMC_top.uut.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[7].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: tb_softMC_top.uut.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[8].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: tb_softMC_top.uut.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[9].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[0].ddr4_model .always_diff_ck.if_diff_ck:Initialization complete @3853438
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[1].ddr4_model .always_diff_ck.if_diff_ck:Initialization complete @3853438
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[2].ddr4_model .always_diff_ck.if_diff_ck:Initialization complete @3853438
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[3].ddr4_model .always_diff_ck.if_diff_ck:Initialization complete @3853438
+Calibration Done
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[0].ddr4_model .VerifyMR:ERROR:SPEC_VIOLATION tWR/tRTP tWR spec:13 loaded:12 tRTP spec:7482 loaded:7482 @8287185
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[1].ddr4_model .VerifyMR:ERROR:SPEC_VIOLATION tWR/tRTP tWR spec:13 loaded:12 tRTP spec:7482 loaded:7482 @8287185
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[2].ddr4_model .VerifyMR:ERROR:SPEC_VIOLATION tWR/tRTP tWR spec:13 loaded:12 tRTP spec:7482 loaded:7482 @8287185
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[3].ddr4_model .VerifyMR:ERROR:SPEC_VIOLATION tWR/tRTP tWR spec:13 loaded:12 tRTP spec:7482 loaded:7482 @8287185
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[0].ddr4_model .VerifyMR:ERROR:SPEC_VIOLATION tWR/tRTP tWR spec:13 loaded:12 tRTP spec:7482 loaded:7482 @8337185
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[0].ddr4_model .always_diff_ck.if_diff_ck:VIOLATION: cmdACT BG:1 B:0 A:0 (BL:8 WL:11 RL:11) @8337185 Required:
+	tRP - 3 clocks.
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[1].ddr4_model .VerifyMR:ERROR:SPEC_VIOLATION tWR/tRTP tWR spec:13 loaded:12 tRTP spec:7482 loaded:7482 @8337185
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[1].ddr4_model .always_diff_ck.if_diff_ck:VIOLATION: cmdACT BG:1 B:0 A:0 (BL:8 WL:11 RL:11) @8337185 Required:
+	tRP - 3 clocks.
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[2].ddr4_model .VerifyMR:ERROR:SPEC_VIOLATION tWR/tRTP tWR spec:13 loaded:12 tRTP spec:7482 loaded:7482 @8337185
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[2].ddr4_model .always_diff_ck.if_diff_ck:VIOLATION: cmdACT BG:1 B:0 A:0 (BL:8 WL:11 RL:11) @8337185 Required:
+	tRP - 3 clocks.
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[3].ddr4_model .VerifyMR:ERROR:SPEC_VIOLATION tWR/tRTP tWR spec:13 loaded:12 tRTP spec:7482 loaded:7482 @8337185
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[3].ddr4_model .always_diff_ck.if_diff_ck:VIOLATION: cmdACT BG:1 B:0 A:0 (BL:8 WL:11 RL:11) @8337185 Required:
+	tRP - 3 clocks.
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[0].ddr4_model .always_diff_ck.if_diff_ck:VIOLATION: cmdRD BG:1 B:0 A:0 (BL:8 WL:11 RL:11) @8417185 Required:
+	tCCD_L (RD) - 1 clocks.
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[1].ddr4_model .always_diff_ck.if_diff_ck:VIOLATION: cmdRD BG:1 B:0 A:0 (BL:8 WL:11 RL:11) @8417185 Required:
+	tCCD_L (RD) - 1 clocks.
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[2].ddr4_model .always_diff_ck.if_diff_ck:VIOLATION: cmdRD BG:1 B:0 A:0 (BL:8 WL:11 RL:11) @8417185 Required:
+	tCCD_L (RD) - 1 clocks.
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[3].ddr4_model .always_diff_ck.if_diff_ck:VIOLATION: cmdRD BG:1 B:0 A:0 (BL:8 WL:11 RL:11) @8417185 Required:
+	tCCD_L (RD) - 1 clocks.
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[0].ddr4_model .always_diff_ck.if_diff_ck:VIOLATION: cmdPRE BG:1 B:0 A:0 (BL:8 WL:11 RL:11) @8422187 Required:
+	tRTP + AL - 2 clocks.
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[1].ddr4_model .always_diff_ck.if_diff_ck:VIOLATION: cmdPRE BG:1 B:0 A:0 (BL:8 WL:11 RL:11) @8422187 Required:
+	tRTP + AL - 2 clocks.
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[2].ddr4_model .always_diff_ck.if_diff_ck:VIOLATION: cmdPRE BG:1 B:0 A:0 (BL:8 WL:11 RL:11) @8422187 Required:
+	tRTP + AL - 2 clocks.
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[3].ddr4_model .always_diff_ck.if_diff_ck:VIOLATION: cmdPRE BG:1 B:0 A:0 (BL:8 WL:11 RL:11) @8422187 Required:
+	tRTP + AL - 2 clocks.
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:0 @8425311
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:1 @8425311
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:0 @8425311
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:1 @8425311
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:0 @8425311
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:1 @8425311
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:0 @8425311
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:1 @8425311
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:0 @8425936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:1 @8425936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:0 @8425936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:1 @8425936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:0 @8425936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:1 @8425936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:0 @8425936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:1 @8425936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:0 @8426561
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:1 @8426561
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:0 @8426561
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:1 @8426561
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:0 @8426561
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:1 @8426561
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:0 @8426561
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:1 @8426561
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:0 @8427185
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:1 @8427185
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:0 @8427185
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:1 @8427185
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:0 @8427185
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:1 @8427185
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:0 @8427185
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:1 @8427185
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:0 @8427810
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:1 @8427810
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:0 @8427810
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:1 @8427810
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:0 @8427810
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:1 @8427810
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:0 @8427810
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:1 @8427810
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:0 @8428434
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:1 @8428434
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:0 @8428434
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:1 @8428434
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:0 @8428434
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:1 @8428434
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:0 @8428434
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:1 @8428434
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:0 @8429059
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:1 @8429059
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:0 @8429059
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:1 @8429059
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:0 @8429059
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:1 @8429059
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:0 @8429059
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:1 @8429059
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:0 @8429683
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:1 @8429683
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:0 @8429683
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:1 @8429683
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:0 @8429683
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:1 @8429683
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:0 @8429683
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:1 @8429683
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:0 @8430312
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:1 @8430312
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:0 @8430312
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:1 @8430312
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:0 @8430312
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:1 @8430312
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:0 @8430312
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:1 @8430312
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:0 @8430936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:1 @8430936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:0 @8430936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:1 @8430936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:0 @8430936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:1 @8430936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:0 @8430936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:1 @8430936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:0 @8431562
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:1 @8431562
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:0 @8431562
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:1 @8431562
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:0 @8431562
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:1 @8431562
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:0 @8431562
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:1 @8431562
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:0 @8432187
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:1 @8432187
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:0 @8432187
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:1 @8432187
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:0 @8432187
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:1 @8432187
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:0 @8432187
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:1 @8432187
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:0 @8432813
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:1 @8432813
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:0 @8432813
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:1 @8432813
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:0 @8432813
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:1 @8432813
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:0 @8432813
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:1 @8432813
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:0 @8433438
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:1 @8433438
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:0 @8433438
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:1 @8433438
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:0 @8433438
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:1 @8433438
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:0 @8433438
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:1 @8433438
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:0 @8434064
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:1 @8434064
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:0 @8434064
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:1 @8434064
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:0 @8434064
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:1 @8434064
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:0 @8434064
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:1 @8434064
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:0 @8434689
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:1 @8434689
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:0 @8434689
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:1 @8434689
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:0 @8434689
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:1 @8434689
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:0 @8434689
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:1 @8434689
+Loading timesets for 'tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[0].ddr4_model .LoadTiming' @0
+	Loaded timeset:TS_1875
+	Loaded timeset:TS_1500
+	Loaded timeset:TS_1250
+	Loaded timeset:TS_1072
+	Loaded timeset:TS_938
+	Loaded timeset:TS_833
+	Loaded timeset:TS_750
+	Loaded timeset:TS_682
+	Loaded timeset:TS_625
+Model based on DDR4 DDS version 0.999 6/06/2014 (build data 5/06/2016)
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[0].ddr4_model :Configured as x16 8G stack:1
+Loading timesets for 'tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[1].ddr4_model .LoadTiming' @0
+	Loaded timeset:TS_1875
+	Loaded timeset:TS_1500
+	Loaded timeset:TS_1250
+	Loaded timeset:TS_1072
+	Loaded timeset:TS_938
+	Loaded timeset:TS_833
+	Loaded timeset:TS_750
+	Loaded timeset:TS_682
+	Loaded timeset:TS_625
+Model based on DDR4 DDS version 0.999 6/06/2014 (build data 5/06/2016)
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[1].ddr4_model :Configured as x16 8G stack:1
+Loading timesets for 'tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[2].ddr4_model .LoadTiming' @0
+	Loaded timeset:TS_1875
+	Loaded timeset:TS_1500
+	Loaded timeset:TS_1250
+	Loaded timeset:TS_1072
+	Loaded timeset:TS_938
+	Loaded timeset:TS_833
+	Loaded timeset:TS_750
+	Loaded timeset:TS_682
+	Loaded timeset:TS_625
+Model based on DDR4 DDS version 0.999 6/06/2014 (build data 5/06/2016)
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[2].ddr4_model :Configured as x16 8G stack:1
+Loading timesets for 'tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[3].ddr4_model .LoadTiming' @0
+	Loaded timeset:TS_1875
+	Loaded timeset:TS_1500
+	Loaded timeset:TS_1250
+	Loaded timeset:TS_1072
+	Loaded timeset:TS_938
+	Loaded timeset:TS_833
+	Loaded timeset:TS_750
+	Loaded timeset:TS_682
+	Loaded timeset:TS_625
+Model based on DDR4 DDS version 0.999 6/06/2014 (build data 5/06/2016)
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[3].ddr4_model :Configured as x16 8G stack:1
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: tb_softMC_top.uut.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[0].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: tb_softMC_top.uut.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[1].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: tb_softMC_top.uut.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[4].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: tb_softMC_top.uut.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[5].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: tb_softMC_top.uut.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[6].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: tb_softMC_top.uut.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[7].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: tb_softMC_top.uut.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[8].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: tb_softMC_top.uut.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[9].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[0].ddr4_model .always_diff_ck.if_diff_ck:Initialization complete @3853438
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[1].ddr4_model .always_diff_ck.if_diff_ck:Initialization complete @3853438
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[2].ddr4_model .always_diff_ck.if_diff_ck:Initialization complete @3853438
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[3].ddr4_model .always_diff_ck.if_diff_ck:Initialization complete @3853438
+Calibration Done
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[0].ddr4_model .VerifyMR:ERROR:SPEC_VIOLATION tWR/tRTP tWR spec:13 loaded:12 tRTP spec:7482 loaded:7482 @8287185
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[1].ddr4_model .VerifyMR:ERROR:SPEC_VIOLATION tWR/tRTP tWR spec:13 loaded:12 tRTP spec:7482 loaded:7482 @8287185
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[2].ddr4_model .VerifyMR:ERROR:SPEC_VIOLATION tWR/tRTP tWR spec:13 loaded:12 tRTP spec:7482 loaded:7482 @8287185
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[3].ddr4_model .VerifyMR:ERROR:SPEC_VIOLATION tWR/tRTP tWR spec:13 loaded:12 tRTP spec:7482 loaded:7482 @8287185
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[0].ddr4_model .VerifyMR:ERROR:SPEC_VIOLATION tWR/tRTP tWR spec:13 loaded:12 tRTP spec:7482 loaded:7482 @8337185
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[0].ddr4_model .always_diff_ck.if_diff_ck:VIOLATION: cmdACT BG:1 B:0 A:0 (BL:8 WL:11 RL:11) @8337185 Required:
+	tRP - 3 clocks.
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[1].ddr4_model .VerifyMR:ERROR:SPEC_VIOLATION tWR/tRTP tWR spec:13 loaded:12 tRTP spec:7482 loaded:7482 @8337185
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[1].ddr4_model .always_diff_ck.if_diff_ck:VIOLATION: cmdACT BG:1 B:0 A:0 (BL:8 WL:11 RL:11) @8337185 Required:
+	tRP - 3 clocks.
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[2].ddr4_model .VerifyMR:ERROR:SPEC_VIOLATION tWR/tRTP tWR spec:13 loaded:12 tRTP spec:7482 loaded:7482 @8337185
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[2].ddr4_model .always_diff_ck.if_diff_ck:VIOLATION: cmdACT BG:1 B:0 A:0 (BL:8 WL:11 RL:11) @8337185 Required:
+	tRP - 3 clocks.
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[3].ddr4_model .VerifyMR:ERROR:SPEC_VIOLATION tWR/tRTP tWR spec:13 loaded:12 tRTP spec:7482 loaded:7482 @8337185
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[3].ddr4_model .always_diff_ck.if_diff_ck:VIOLATION: cmdACT BG:1 B:0 A:0 (BL:8 WL:11 RL:11) @8337185 Required:
+	tRP - 3 clocks.
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[0].ddr4_model .always_diff_ck.if_diff_ck:VIOLATION: cmdRD BG:1 B:0 A:0 (BL:8 WL:11 RL:11) @8417185 Required:
+	tCCD_L (RD) - 1 clocks.
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[1].ddr4_model .always_diff_ck.if_diff_ck:VIOLATION: cmdRD BG:1 B:0 A:0 (BL:8 WL:11 RL:11) @8417185 Required:
+	tCCD_L (RD) - 1 clocks.
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[2].ddr4_model .always_diff_ck.if_diff_ck:VIOLATION: cmdRD BG:1 B:0 A:0 (BL:8 WL:11 RL:11) @8417185 Required:
+	tCCD_L (RD) - 1 clocks.
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[3].ddr4_model .always_diff_ck.if_diff_ck:VIOLATION: cmdRD BG:1 B:0 A:0 (BL:8 WL:11 RL:11) @8417185 Required:
+	tCCD_L (RD) - 1 clocks.
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[0].ddr4_model .always_diff_ck.if_diff_ck:VIOLATION: cmdPRE BG:1 B:0 A:0 (BL:8 WL:11 RL:11) @8422187 Required:
+	tRTP + AL - 2 clocks.
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[1].ddr4_model .always_diff_ck.if_diff_ck:VIOLATION: cmdPRE BG:1 B:0 A:0 (BL:8 WL:11 RL:11) @8422187 Required:
+	tRTP + AL - 2 clocks.
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[2].ddr4_model .always_diff_ck.if_diff_ck:VIOLATION: cmdPRE BG:1 B:0 A:0 (BL:8 WL:11 RL:11) @8422187 Required:
+	tRTP + AL - 2 clocks.
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[3].ddr4_model .always_diff_ck.if_diff_ck:VIOLATION: cmdPRE BG:1 B:0 A:0 (BL:8 WL:11 RL:11) @8422187 Required:
+	tRTP + AL - 2 clocks.
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:0 @8425311
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:1 @8425311
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:0 @8425311
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:1 @8425311
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:0 @8425311
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:1 @8425311
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:0 @8425311
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:1 @8425311
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:0 @8425936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:1 @8425936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:0 @8425936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:1 @8425936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:0 @8425936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:1 @8425936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:0 @8425936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:1 @8425936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:0 @8426561
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:1 @8426561
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:0 @8426561
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:1 @8426561
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:0 @8426561
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:1 @8426561
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:0 @8426561
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:1 @8426561
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:0 @8427185
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:1 @8427185
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:0 @8427185
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:1 @8427185
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:0 @8427185
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:1 @8427185
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:0 @8427185
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:1 @8427185
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:0 @8427810
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:1 @8427810
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:0 @8427810
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:1 @8427810
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:0 @8427810
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:1 @8427810
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:0 @8427810
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:1 @8427810
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:0 @8428434
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:1 @8428434
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:0 @8428434
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:1 @8428434
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:0 @8428434
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:1 @8428434
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:0 @8428434
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:1 @8428434
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:0 @8429059
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:1 @8429059
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:0 @8429059
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:1 @8429059
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:0 @8429059
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:1 @8429059
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:0 @8429059
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:1 @8429059
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:0 @8429683
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:1 @8429683
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:0 @8429683
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:1 @8429683
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:0 @8429683
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:1 @8429683
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:0 @8429683
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:1 @8429683
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:0 @8430312
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:1 @8430312
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:0 @8430312
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:1 @8430312
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:0 @8430312
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:1 @8430312
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:0 @8430312
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:0 dm:1 @8430312
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:0 @8430936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:1 @8430936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:0 @8430936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:1 @8430936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:0 @8430936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:1 @8430936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:0 @8430936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:1 dm:1 @8430936
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:0 @8431562
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:1 @8431562
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:0 @8431562
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:1 @8431562
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:0 @8431562
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:1 @8431562
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:0 @8431562
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:2 dm:1 @8431562
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:0 @8432187
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:1 @8432187
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:0 @8432187
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:1 @8432187
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:0 @8432187
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:1 @8432187
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:0 @8432187
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:3 dm:1 @8432187
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:0 @8432813
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:1 @8432813
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:0 @8432813
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:1 @8432813
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:0 @8432813
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:1 @8432813
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:0 @8432813
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:4 dm:1 @8432813
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:0 @8433438
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:1 @8433438
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:0 @8433438
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:1 @8433438
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:0 @8433438
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:1 @8433438
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:0 @8433438
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:5 dm:1 @8433438
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:0 @8434064
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:1 @8434064
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:0 @8434064
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:1 @8434064
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:0 @8434064
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:1 @8434064
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:0 @8434064
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:6 dm:1 @8434064
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:0 @8434689
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:1 @8434689
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:0 @8434689
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:1 @8434689
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:0 @8434689
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:1 @8434689
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:0 @8434689
+Model:WARNING: Reading unwritten address: C:0 BG:1 B:0 R:0 C:7 dm:1 @8434689

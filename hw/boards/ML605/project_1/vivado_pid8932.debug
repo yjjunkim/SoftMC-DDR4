@@ -1,0 +1,67 @@
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2020.2 (64-bit)
+# SW Build: 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Current time: Sat Jul 31 00:30:01 KST 2021
+# Process ID (PID): 8932
+# User: yongj
+# OS: Windows 10
+# Project: project_1
+# Part: xcvu095-ffvb2104-2-e
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+Sat Jul 31 00:30:01 KST 2021
+ui.utils.e: ui.frmwork.cmd.CommandFailedException: Unknown exception occurred ui.frmwork.cmd.CommandFailedException: Unknown exception occurred
+	at ui.views.simulator.executive.simulationi.SimulationExecutive_getCallStacksData(Native Method)
+	at ui.views.N.c.a.jJP(SourceFile:1302)
+	at ui.views.N.a.z.reset(SourceFile:393)
+	at ui.views.N.a.y.reset(SourceFile:274)
+	at ui.views.N.a.w.reset(SourceFile:67)
+	at ui.views.N.a.B.reset(SourceFile:124)
+	at ui.views.N.a.B.handleTclEvent(SourceFile:114)
+	at ui.frmwork.a.o.c(SourceFile:42)
+	at ui.frmwork.E.i(SourceFile:253)
+	at ui.frmwork.E.fireTclEvent(SourceFile:350)
+	at ui.views.simulator.executive.simulationi.SimulationExecutive_mouseSelectTreeWindowEvent(Native Method)
+	at ui.views.N.c.a.a(SourceFile:818)
+	at ui.views.N.h.c.a(SourceFile:300)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:313)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:770)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:721)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:715)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:740)
+	at ui.frmwork.a.d.dispatchEvent(SourceFile:92)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+
+	at ui.utils.d.c.p(SourceFile:918)
+	at ui.utils.d.c.i(SourceFile:278)
+	at ui.utils.q.i(SourceFile:257)
+	at ui.frmwork.E.fireTclEvent(SourceFile:353)
+	at ui.views.simulator.executive.simulationi.SimulationExecutive_mouseSelectTreeWindowEvent(Native Method)
+	at ui.views.N.c.a.a(SourceFile:818)
+	at ui.views.N.h.c.a(SourceFile:300)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:313)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:770)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:721)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:715)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:740)
+	at ui.frmwork.a.d.dispatchEvent(SourceFile:92)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+

@@ -2,14 +2,15 @@ set_property SRC_FILE_INFO {cfile:c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/M
 set_property SRC_FILE_INFO {cfile:c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip-PCIE_X0Y0.xdc rfile:../project_1.srcs/sources_1/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip-PCIE_X0Y0.xdc id:2 order:EARLY scoped_inst:EP/xdma_0_i/inst/pcie3_ip_i/inst} [current_design]
 set_property SRC_FILE_INFO {cfile:c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_0/bd_9054_microblaze_I_0.xdc rfile:../project_1.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_0/bd_9054_microblaze_I_0.xdc id:3 order:EARLY scoped_inst:u_ddr4_0/inst/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0} [current_design]
 set_property SRC_FILE_INFO {cfile:c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/par/ddr4_0.xdc rfile:../project_1.srcs/sources_1/ip/ddr4_0_2/par/ddr4_0.xdc id:4 order:EARLY scoped_inst:u_ddr4_0/inst} [current_design]
-set_property SRC_FILE_INFO {cfile:D:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl rfile:D:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl id:5 order:LATE scoped_inst:EP/xdma_app_i/C2H_CONVERT/inst/gen_async_conv.axisc_async_clock_converter_0/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst unmanaged:yes} [current_design]
-set_property SRC_FILE_INFO {cfile:D:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl rfile:D:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl id:6 order:LATE scoped_inst:EP/xdma_app_i/C2H_CONVERT/inst/gen_async_conv.axisc_async_clock_converter_0/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst unmanaged:yes} [current_design]
-set_property SRC_FILE_INFO {cfile:D:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl rfile:D:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl id:7 order:LATE scoped_inst:EP/xdma_app_i/H2C_CONVERT/inst/gen_async_conv.axisc_async_clock_converter_0/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst unmanaged:yes} [current_design]
-set_property SRC_FILE_INFO {cfile:D:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl rfile:D:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl id:8 order:LATE scoped_inst:EP/xdma_app_i/H2C_CONVERT/inst/gen_async_conv.axisc_async_clock_converter_0/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst unmanaged:yes} [current_design]
-set_property SRC_FILE_INFO {cfile:D:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl rfile:D:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl id:9 order:LATE scoped_inst:EP/xdma_app_i/C2H_CONVERT/inst/gen_async_conv.axisc_async_clock_converter_0/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst unmanaged:yes} [current_design]
-set_property SRC_FILE_INFO {cfile:D:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl rfile:D:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl id:10 order:LATE scoped_inst:EP/xdma_app_i/H2C_CONVERT/inst/gen_async_conv.axisc_async_clock_converter_0/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst unmanaged:yes} [current_design]
-set_property SRC_FILE_INFO {cfile:D:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl rfile:D:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl id:11 order:LATE scoped_inst:EP/xdma_app_i/C2H_CONVERT/inst/gen_async_conv.axisc_async_clock_converter_0/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst unmanaged:yes} [current_design]
-set_property SRC_FILE_INFO {cfile:D:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl rfile:D:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl id:12 order:LATE scoped_inst:EP/xdma_app_i/H2C_CONVERT/inst/gen_async_conv.axisc_async_clock_converter_0/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst unmanaged:yes} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/constrs_1/imports/xusps3_config/xusps3_pinout.xdc rfile:../project_1.srcs/constrs_1/imports/xusps3_config/xusps3_pinout.xdc id:5} [current_design]
+set_property SRC_FILE_INFO {cfile:D:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl rfile:D:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl id:6 order:LATE scoped_inst:EP/xdma_app_i/C2H_CONVERT/inst/gen_async_conv.axisc_async_clock_converter_0/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst unmanaged:yes} [current_design]
+set_property SRC_FILE_INFO {cfile:D:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl rfile:D:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl id:7 order:LATE scoped_inst:EP/xdma_app_i/C2H_CONVERT/inst/gen_async_conv.axisc_async_clock_converter_0/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst unmanaged:yes} [current_design]
+set_property SRC_FILE_INFO {cfile:D:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl rfile:D:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl id:8 order:LATE scoped_inst:EP/xdma_app_i/H2C_CONVERT/inst/gen_async_conv.axisc_async_clock_converter_0/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst unmanaged:yes} [current_design]
+set_property SRC_FILE_INFO {cfile:D:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl rfile:D:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl id:9 order:LATE scoped_inst:EP/xdma_app_i/H2C_CONVERT/inst/gen_async_conv.axisc_async_clock_converter_0/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst unmanaged:yes} [current_design]
+set_property SRC_FILE_INFO {cfile:D:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl rfile:D:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl id:10 order:LATE scoped_inst:EP/xdma_app_i/C2H_CONVERT/inst/gen_async_conv.axisc_async_clock_converter_0/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst unmanaged:yes} [current_design]
+set_property SRC_FILE_INFO {cfile:D:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl rfile:D:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl id:11 order:LATE scoped_inst:EP/xdma_app_i/H2C_CONVERT/inst/gen_async_conv.axisc_async_clock_converter_0/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst unmanaged:yes} [current_design]
+set_property SRC_FILE_INFO {cfile:D:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl rfile:D:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl id:12 order:LATE scoped_inst:EP/xdma_app_i/C2H_CONVERT/inst/gen_async_conv.axisc_async_clock_converter_0/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst unmanaged:yes} [current_design]
+set_property SRC_FILE_INFO {cfile:D:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl rfile:D:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl id:13 order:LATE scoped_inst:EP/xdma_app_i/H2C_CONVERT/inst/gen_async_conv.axisc_async_clock_converter_0/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst unmanaged:yes} [current_design]
 current_instance EP/xdma_0_i/inst/pcie3_ip_i/inst/xdma_0_pcie3_ip_gt_top_i/gt_wizard.gtwizard_top_i/xdma_0_pcie3_ip_gt_i/inst
 set_property src_info {type:SCOPED_XDC file:1 line:57 export:INPUT save:INPUT read:READ} [current_design]
 set_property LOC GTHE3_CHANNEL_X0Y0 [get_cells -hierarchical -filter {NAME =~ *gen_channel_container[0].*gen_gthe3_channel_inst[0].GTHE3_CHANNEL_PRIM_INST}]
@@ -68,7 +69,7 @@ set_property src_info {type:SCOPED_XDC file:2 line:125 export:INPUT save:INPUT r
 set_case_analysis 0 [get_pins [list {EP/xdma_0_i/inst/pcie3_ip_i/inst/xdma_0_pcie3_ip_gt_top_i/gt_wizard.gtwizard_top_i/xdma_0_pcie3_ip_gt_i/inst/gen_gtwizard_gthe3_top.xdma_0_pcie3_ip_gt_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/gthe3_channel_gen.gen_gthe3_channel_inst[0].GTHE3_CHANNEL_PRIM_INST/RXRATE[1]} {EP/xdma_0_i/inst/pcie3_ip_i/inst/xdma_0_pcie3_ip_gt_top_i/gt_wizard.gtwizard_top_i/xdma_0_pcie3_ip_gt_i/inst/gen_gtwizard_gthe3_top.xdma_0_pcie3_ip_gt_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/gthe3_channel_gen.gen_gthe3_channel_inst[1].GTHE3_CHANNEL_PRIM_INST/RXRATE[1]} {EP/xdma_0_i/inst/pcie3_ip_i/inst/xdma_0_pcie3_ip_gt_top_i/gt_wizard.gtwizard_top_i/xdma_0_pcie3_ip_gt_i/inst/gen_gtwizard_gthe3_top.xdma_0_pcie3_ip_gt_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/gthe3_channel_gen.gen_gthe3_channel_inst[2].GTHE3_CHANNEL_PRIM_INST/RXRATE[1]} {EP/xdma_0_i/inst/pcie3_ip_i/inst/xdma_0_pcie3_ip_gt_top_i/gt_wizard.gtwizard_top_i/xdma_0_pcie3_ip_gt_i/inst/gen_gtwizard_gthe3_top.xdma_0_pcie3_ip_gt_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/gthe3_channel_gen.gen_gthe3_channel_inst[3].GTHE3_CHANNEL_PRIM_INST/RXRATE[1]} {EP/xdma_0_i/inst/pcie3_ip_i/inst/xdma_0_pcie3_ip_gt_top_i/gt_wizard.gtwizard_top_i/xdma_0_pcie3_ip_gt_i/inst/gen_gtwizard_gthe3_top.xdma_0_pcie3_ip_gt_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[1].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/gthe3_channel_gen.gen_gthe3_channel_inst[0].GTHE3_CHANNEL_PRIM_INST/RXRATE[1]} {EP/xdma_0_i/inst/pcie3_ip_i/inst/xdma_0_pcie3_ip_gt_top_i/gt_wizard.gtwizard_top_i/xdma_0_pcie3_ip_gt_i/inst/gen_gtwizard_gthe3_top.xdma_0_pcie3_ip_gt_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[1].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/gthe3_channel_gen.gen_gthe3_channel_inst[1].GTHE3_CHANNEL_PRIM_INST/RXRATE[1]} {EP/xdma_0_i/inst/pcie3_ip_i/inst/xdma_0_pcie3_ip_gt_top_i/gt_wizard.gtwizard_top_i/xdma_0_pcie3_ip_gt_i/inst/gen_gtwizard_gthe3_top.xdma_0_pcie3_ip_gt_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[1].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/gthe3_channel_gen.gen_gthe3_channel_inst[2].GTHE3_CHANNEL_PRIM_INST/RXRATE[1]} {EP/xdma_0_i/inst/pcie3_ip_i/inst/xdma_0_pcie3_ip_gt_top_i/gt_wizard.gtwizard_top_i/xdma_0_pcie3_ip_gt_i/inst/gen_gtwizard_gthe3_top.xdma_0_pcie3_ip_gt_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[1].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/gthe3_channel_gen.gen_gthe3_channel_inst[3].GTHE3_CHANNEL_PRIM_INST/RXRATE[1]}]]
 current_instance EP/xdma_0_i/inst/pcie3_ip_i/inst
 set_property src_info {type:SCOPED_XDC file:2 line:130 export:INPUT save:INPUT read:READ} [current_design]
-set_case_analysis 0 [get_pins {xdma_0_pcie3_ip_gt_top_i/phy_clk_i/bufg_gt_userclk/DIV[0]}]
+set_case_analysis 1 [get_pins {xdma_0_pcie3_ip_gt_top_i/phy_clk_i/bufg_gt_userclk/DIV[0]}]
 set_property src_info {type:SCOPED_XDC file:2 line:131 export:INPUT save:INPUT read:READ} [current_design]
 set_case_analysis 0 [get_pins {xdma_0_pcie3_ip_gt_top_i/phy_clk_i/bufg_gt_userclk/DIV[1]}]
 set_property src_info {type:SCOPED_XDC file:2 line:132 export:INPUT save:INPUT read:READ} [current_design]
@@ -178,34 +179,98 @@ create_waiver -internal -user DDR4 -tags "1010162" -scope -type METHODOLOGY -id 
 set_property src_info {type:SCOPED_XDC file:4 line:311 export:INPUT save:INPUT read:READ} [current_design]
 create_waiver -internal -user DDR4 -tags "1010162" -scope -type METHODOLOGY -id CLKC-40 -description "MMCM is driven through a BUFGCE" -objects [get_cells -hierarchical "*gen_mmcme*.u_mmcme_adv_inst*" -filter {NAME =~ *inst/u_ddr4_infrastructure*}]
 current_instance
+set_property src_info {type:XDC file:5 line:511 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN	 AP1 [ get_ports "pci_exp_rxn[0]"]
+set_property src_info {type:XDC file:5 line:512 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN	 AR3 [ get_ports "pci_exp_rxn[1]"]
+set_property src_info {type:XDC file:5 line:513 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN	 AT1 [ get_ports "pci_exp_rxn[2]"]
+set_property src_info {type:XDC file:5 line:514 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN	 AU3 [ get_ports "pci_exp_rxn[3]"]
+set_property src_info {type:XDC file:5 line:515 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN	 AV1 [ get_ports "pci_exp_rxn[4]"]
+set_property src_info {type:XDC file:5 line:516 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN	 AW3 [ get_ports "pci_exp_rxn[5]"]
+set_property src_info {type:XDC file:5 line:517 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN	 BA1 [ get_ports "pci_exp_rxn[6]"]
+set_property src_info {type:XDC file:5 line:518 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN	 BC1 [ get_ports "pci_exp_rxn[7]"]
+set_property src_info {type:XDC file:5 line:519 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN	 AP2 [ get_ports "pci_exp_rxp[0]"]
+set_property src_info {type:XDC file:5 line:520 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN	 AR4 [ get_ports "pci_exp_rxp[1]"]
+set_property src_info {type:XDC file:5 line:521 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN	 AT2 [ get_ports "pci_exp_rxp[2]"]
+set_property src_info {type:XDC file:5 line:522 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN	 AU4 [ get_ports "pci_exp_rxp[3]"]
+set_property src_info {type:XDC file:5 line:523 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN	 AV2 [ get_ports "pci_exp_rxp[4]"]
+set_property src_info {type:XDC file:5 line:524 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN	 AW4 [ get_ports "pci_exp_rxp[5]"]
+set_property src_info {type:XDC file:5 line:525 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN	 BA2 [ get_ports "pci_exp_rxp[6]"]
+set_property src_info {type:XDC file:5 line:526 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN	 BC2 [ get_ports "pci_exp_rxp[7]"]
+set_property src_info {type:XDC file:5 line:527 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN	 AP6 [ get_ports "pci_exp_txn[0]"]
+set_property src_info {type:XDC file:5 line:528 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN	 AR8 [ get_ports "pci_exp_txn[1]"]
+set_property src_info {type:XDC file:5 line:529 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN	 AT6 [ get_ports "pci_exp_txn[2]"]
+set_property src_info {type:XDC file:5 line:530 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN	 AU8 [ get_ports "pci_exp_txn[3]"]
+set_property src_info {type:XDC file:5 line:531 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN	 AV6 [ get_ports "pci_exp_txn[4]"]
+set_property src_info {type:XDC file:5 line:532 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN	 BB4 [ get_ports "pci_exp_txn[5]"]
+set_property src_info {type:XDC file:5 line:533 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN	 BD4 [ get_ports "pci_exp_txn[6]"]
+set_property src_info {type:XDC file:5 line:534 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN	 BF4 [ get_ports "pci_exp_txn[7]"]
+set_property src_info {type:XDC file:5 line:535 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN	 AP7 [ get_ports "pci_exp_txp[0]"]
+set_property src_info {type:XDC file:5 line:536 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN	 AR9 [ get_ports "pci_exp_txp[1]"]
+set_property src_info {type:XDC file:5 line:537 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN	 AT7 [ get_ports "pci_exp_txp[2]"]
+set_property src_info {type:XDC file:5 line:538 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN	 AU9 [ get_ports "pci_exp_txp[3]"]
+set_property src_info {type:XDC file:5 line:539 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN	 AV7 [ get_ports "pci_exp_txp[4]"]
+set_property src_info {type:XDC file:5 line:540 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN	 BB5 [ get_ports "pci_exp_txp[5]"]
+set_property src_info {type:XDC file:5 line:541 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN	 BD5 [ get_ports "pci_exp_txp[6]"]
+set_property src_info {type:XDC file:5 line:542 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN	 BF5 [ get_ports "pci_exp_txp[7]"]
 current_instance EP/xdma_app_i/C2H_CONVERT/inst/gen_async_conv.axisc_async_clock_converter_0/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst
-set_property src_info {type:SCOPED_XDC file:5 line:23 export:INPUT save:NONE read:READ} [current_design]
-create_waiver -internal -scoped -type CDC -id {CDC-6} -user "xpm_cdc" -tags "1009444" -desc "The CDC-6 warning is waived as it is safe in the context of XPM_CDC_GRAY." -from [get_pins -quiet {src_gray_ff_reg*/C}] -to [get_pins -quiet {dest_graysync_ff_reg*/D}]
-current_instance
-current_instance EP/xdma_app_i/C2H_CONVERT/inst/gen_async_conv.axisc_async_clock_converter_0/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst
 set_property src_info {type:SCOPED_XDC file:6 line:23 export:INPUT save:NONE read:READ} [current_design]
 create_waiver -internal -scoped -type CDC -id {CDC-6} -user "xpm_cdc" -tags "1009444" -desc "The CDC-6 warning is waived as it is safe in the context of XPM_CDC_GRAY." -from [get_pins -quiet {src_gray_ff_reg*/C}] -to [get_pins -quiet {dest_graysync_ff_reg*/D}]
 current_instance
-current_instance EP/xdma_app_i/H2C_CONVERT/inst/gen_async_conv.axisc_async_clock_converter_0/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst
+current_instance EP/xdma_app_i/C2H_CONVERT/inst/gen_async_conv.axisc_async_clock_converter_0/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst
 set_property src_info {type:SCOPED_XDC file:7 line:23 export:INPUT save:NONE read:READ} [current_design]
 create_waiver -internal -scoped -type CDC -id {CDC-6} -user "xpm_cdc" -tags "1009444" -desc "The CDC-6 warning is waived as it is safe in the context of XPM_CDC_GRAY." -from [get_pins -quiet {src_gray_ff_reg*/C}] -to [get_pins -quiet {dest_graysync_ff_reg*/D}]
 current_instance
-current_instance EP/xdma_app_i/H2C_CONVERT/inst/gen_async_conv.axisc_async_clock_converter_0/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst
+current_instance EP/xdma_app_i/H2C_CONVERT/inst/gen_async_conv.axisc_async_clock_converter_0/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst
 set_property src_info {type:SCOPED_XDC file:8 line:23 export:INPUT save:NONE read:READ} [current_design]
 create_waiver -internal -scoped -type CDC -id {CDC-6} -user "xpm_cdc" -tags "1009444" -desc "The CDC-6 warning is waived as it is safe in the context of XPM_CDC_GRAY." -from [get_pins -quiet {src_gray_ff_reg*/C}] -to [get_pins -quiet {dest_graysync_ff_reg*/D}]
 current_instance
-current_instance EP/xdma_app_i/C2H_CONVERT/inst/gen_async_conv.axisc_async_clock_converter_0/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst
+current_instance EP/xdma_app_i/H2C_CONVERT/inst/gen_async_conv.axisc_async_clock_converter_0/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst
 set_property src_info {type:SCOPED_XDC file:9 line:23 export:INPUT save:NONE read:READ} [current_design]
 create_waiver -internal -scoped -type CDC -id {CDC-6} -user "xpm_cdc" -tags "1009444" -desc "The CDC-6 warning is waived as it is safe in the context of XPM_CDC_GRAY." -from [get_pins -quiet {src_gray_ff_reg*/C}] -to [get_pins -quiet {dest_graysync_ff_reg*/D}]
 current_instance
-current_instance EP/xdma_app_i/H2C_CONVERT/inst/gen_async_conv.axisc_async_clock_converter_0/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst
+current_instance EP/xdma_app_i/C2H_CONVERT/inst/gen_async_conv.axisc_async_clock_converter_0/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst
 set_property src_info {type:SCOPED_XDC file:10 line:23 export:INPUT save:NONE read:READ} [current_design]
 create_waiver -internal -scoped -type CDC -id {CDC-6} -user "xpm_cdc" -tags "1009444" -desc "The CDC-6 warning is waived as it is safe in the context of XPM_CDC_GRAY." -from [get_pins -quiet {src_gray_ff_reg*/C}] -to [get_pins -quiet {dest_graysync_ff_reg*/D}]
 current_instance
-current_instance EP/xdma_app_i/C2H_CONVERT/inst/gen_async_conv.axisc_async_clock_converter_0/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst
+current_instance EP/xdma_app_i/H2C_CONVERT/inst/gen_async_conv.axisc_async_clock_converter_0/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst
 set_property src_info {type:SCOPED_XDC file:11 line:23 export:INPUT save:NONE read:READ} [current_design]
 create_waiver -internal -scoped -type CDC -id {CDC-6} -user "xpm_cdc" -tags "1009444" -desc "The CDC-6 warning is waived as it is safe in the context of XPM_CDC_GRAY." -from [get_pins -quiet {src_gray_ff_reg*/C}] -to [get_pins -quiet {dest_graysync_ff_reg*/D}]
 current_instance
-current_instance EP/xdma_app_i/H2C_CONVERT/inst/gen_async_conv.axisc_async_clock_converter_0/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst
+current_instance EP/xdma_app_i/C2H_CONVERT/inst/gen_async_conv.axisc_async_clock_converter_0/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst
 set_property src_info {type:SCOPED_XDC file:12 line:23 export:INPUT save:NONE read:READ} [current_design]
+create_waiver -internal -scoped -type CDC -id {CDC-6} -user "xpm_cdc" -tags "1009444" -desc "The CDC-6 warning is waived as it is safe in the context of XPM_CDC_GRAY." -from [get_pins -quiet {src_gray_ff_reg*/C}] -to [get_pins -quiet {dest_graysync_ff_reg*/D}]
+current_instance
+current_instance EP/xdma_app_i/H2C_CONVERT/inst/gen_async_conv.axisc_async_clock_converter_0/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst
+set_property src_info {type:SCOPED_XDC file:13 line:23 export:INPUT save:NONE read:READ} [current_design]
 create_waiver -internal -scoped -type CDC -id {CDC-6} -user "xpm_cdc" -tags "1009444" -desc "The CDC-6 warning is waived as it is safe in the context of XPM_CDC_GRAY." -from [get_pins -quiet {src_gray_ff_reg*/C}] -to [get_pins -quiet {dest_graysync_ff_reg*/D}]

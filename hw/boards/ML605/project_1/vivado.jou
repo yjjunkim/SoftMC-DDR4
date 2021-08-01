@@ -2,12 +2,73 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Fri Jul 30 11:44:21 2021
-# Process ID: 31532
+# Start of session at: Sat Jul 31 00:32:04 2021
+# Process ID: 14600
 # Current directory: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent28340 C:\Users\yongj\Desktop\softmc_ddr4\hw\boards\ML605\project_1\project_1.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17140 C:\Users\yongj\Desktop\softmc_ddr4\hw\boards\ML605\project_1\project_1.xpr
 # Log file: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/vivado.log
 # Journal file: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.xpr
+launch_simulation
+open_wave_config C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/tb_softMC_top_behav.wcfg
+source tb_softMC_top.tcl
+restart
+run all
+restart
+run all
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+close_sim
+launch_simulation
+reset_run impl_1 -prev_step 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_project {C:/Users/yongj/Desktop/Bittware_Doc/pcie_xdma_ddr4 (1)/example_designs/vu095/pcie_xdma_ddr4/pcie_xdma_ddr4.xpr}
+update_compile_order -fileset sources_1
+close_project
+open_project C:/Users/yongj/Desktop/pcie3_ultrascale_0_ex/pcie3_ultrascale_0_ex.xpr
+update_compile_order -fileset sources_1
+current_project project_1
+current_project pcie3_ultrascale_0_ex
+close_project
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_param general.maxThreads 8
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.bit} [get_hw_devices xcvu095_0]
+set_property PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
+set_property FULL_PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
+current_hw_device [get_hw_devices xcvu095_0]
+refresh_hw_device [lindex [get_hw_devices xcvu095_0] 0]
+set_property PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
+set_property FULL_PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
+set_property PROGRAM.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.bit} [get_hw_devices xcvu095_0]
+program_hw_devices [get_hw_devices xcvu095_0]
+refresh_hw_device [lindex [get_hw_devices xcvu095_0] 0]
+close_hw_manager
+save_project_as project_3 C:/Users/yongj/Desktop/project_3 -force
+import_files
+save_project_as project_4 C:/Users/yongj/Desktop/project_4 -force
+import_files
+reset_run impl_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_simulation
+reset_run synth_1

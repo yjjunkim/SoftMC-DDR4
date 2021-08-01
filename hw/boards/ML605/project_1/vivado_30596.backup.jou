@@ -1,0 +1,94 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Jul 30 11:49:13 2021
+# Process ID: 30596
+# Current directory: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent25468 C:\Users\yongj\Desktop\softmc_ddr4\hw\boards\ML605\project_1\project_1.xpr
+# Log file: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/vivado.log
+# Journal file: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.xpr
+set_property -dict [list CONFIG.pl_link_cap_max_link_speed {5.0_GT/s} CONFIG.axi_data_width {256_bit} CONFIG.axisten_freq {125} CONFIG.pf0_device_id {8028} CONFIG.plltype {QPLL1} CONFIG.PF0_DEVICE_ID_mqdma {9028} CONFIG.PF2_DEVICE_ID_mqdma {9028} CONFIG.PF3_DEVICE_ID_mqdma {9028}] [get_ips xdma_0]
+generate_target all [get_files  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/xdma_0.xci]
+catch { config_ip_cache -export [get_ips -all xdma_0] }
+export_ip_user_files -of_objects [get_files C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/xdma_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/xdma_0.xci]
+launch_runs xdma_0_synth_1 -jobs 8
+wait_on_run xdma_0_synth_1
+export_simulation -of_objects [get_files C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/xdma_0.xci] -directory C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files -ipstatic_source_dir C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.cache/compile_simlib/modelsim} {questa=C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.cache/compile_simlib/questa} {riviera=C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.cache/compile_simlib/riviera} {activehdl=C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+open_example_project -dir C:/Users/yongj/Desktop/xusps3_test [get_ips  xdma_0]
+open_example_project -force -dir C:/Users/yongj/Desktop/xusps3_test/clock-convert/pci_width_256 [get_ips  xdma_0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.bit} [get_hw_devices xcvu095_0]
+set_property PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
+set_property FULL_PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
+current_hw_device [get_hw_devices xcvu095_0]
+refresh_hw_device [lindex [get_hw_devices xcvu095_0] 0]
+set_property PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
+set_property FULL_PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
+set_property PROGRAM.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.bit} [get_hw_devices xcvu095_0]
+program_hw_devices [get_hw_devices xcvu095_0]
+refresh_hw_device [lindex [get_hw_devices xcvu095_0] 0]
+close_hw_manager
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.bit} [get_hw_devices xcvu095_0]
+set_property PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
+set_property FULL_PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
+current_hw_device [get_hw_devices xcvu095_0]
+refresh_hw_device [lindex [get_hw_devices xcvu095_0] 0]
+set_property PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
+set_property FULL_PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
+set_property PROGRAM.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.bit} [get_hw_devices xcvu095_0]
+program_hw_devices [get_hw_devices xcvu095_0]
+refresh_hw_device [lindex [get_hw_devices xcvu095_0] 0]
+close_hw_manager
+set_property -dict [list CONFIG.TDATA_NUM_BYTES {32}] [get_ips axis_clock_converter_0]
+generate_target all [get_files  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/axis_clock_converter_0/axis_clock_converter_0.xci]
+export_ip_user_files -of_objects [get_files C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/axis_clock_converter_0/axis_clock_converter_0.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/axis_clock_converter_0/axis_clock_converter_0.xci] -directory C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files -ipstatic_source_dir C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.cache/compile_simlib/modelsim} {questa=C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.cache/compile_simlib/questa} {riviera=C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.cache/compile_simlib/riviera} {activehdl=C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.pl_link_cap_max_link_speed {2.5_GT/s} CONFIG.axi_data_width {128_bit} CONFIG.pf0_device_id {8018} CONFIG.plltype {CPLL} CONFIG.PF0_DEVICE_ID_mqdma {9018} CONFIG.PF2_DEVICE_ID_mqdma {9018} CONFIG.PF3_DEVICE_ID_mqdma {9018}] [get_ips xdma_0]
+generate_target all [get_files  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/xdma_0.xci]
+catch { config_ip_cache -export [get_ips -all xdma_0] }
+catch { [ delete_ip_run [get_ips -all xdma_0] ] }
+export_ip_user_files -of_objects [get_files C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/xdma_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/xdma_0.xci]
+export_simulation -of_objects [get_files C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/xdma_0.xci] -directory C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files -ipstatic_source_dir C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.cache/compile_simlib/modelsim} {questa=C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.cache/compile_simlib/questa} {riviera=C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.cache/compile_simlib/riviera} {activehdl=C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.TDATA_NUM_BYTES {16}] [get_ips axis_clock_converter_0]
+generate_target all [get_files  C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/axis_clock_converter_0/axis_clock_converter_0.xci]
+export_ip_user_files -of_objects [get_files C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/axis_clock_converter_0/axis_clock_converter_0.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/axis_clock_converter_0/axis_clock_converter_0.xci] -directory C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files -ipstatic_source_dir C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.cache/compile_simlib/modelsim} {questa=C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.cache/compile_simlib/questa} {riviera=C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.cache/compile_simlib/riviera} {activehdl=C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+current_hw_device [get_hw_devices xcvu095_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xcvu095_0] 0]
+set_property PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
+set_property FULL_PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
+set_property PROGRAM.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.bit} [get_hw_devices xcvu095_0]
+program_hw_devices [get_hw_devices xcvu095_0]
+refresh_hw_device [lindex [get_hw_devices xcvu095_0] 0]

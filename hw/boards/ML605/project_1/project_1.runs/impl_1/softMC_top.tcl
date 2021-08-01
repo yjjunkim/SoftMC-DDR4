@@ -115,8 +115,6 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 set_msg_config  -id {[BD 41-1306]}  -suppress 
 set_msg_config  -id {[BD 41-1271]}  -suppress 
 
@@ -127,7 +125,6 @@ set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 3
-  set_param synth.incrementalSynthesisCache C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/.Xil/Vivado-1568-DESKTOP-ILOVGO9/incrSyn
   set_param xicom.use_bs_reader 1
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xcvu095-ffvb2104-2-e
@@ -143,10 +140,10 @@ OPTRACE "set parameters" START { }
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
   add_files -quiet C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/synth_1/softMC_top.dcp
-  read_ip -quiet C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/xdma_0.xci
   read_ip -quiet C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/instr_fifo/instr_fifo.xci
-  read_ip -quiet c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/axis_clock_converter_c2h/axis_clock_converter_c2h.xci
-  read_ip -quiet c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/axis_clock_converter_0/axis_clock_converter_0.xci
+  read_ip -quiet C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/axis_clock_converter_c2h/axis_clock_converter_c2h.xci
+  read_ip -quiet C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/axis_clock_converter_0/axis_clock_converter_0.xci
+  read_ip -quiet C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/xdma_0.xci
   read_ip -quiet C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ddr4_0.xci
   read_ip -quiet C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/rdback_fifo/rdback_fifo.xci
 OPTRACE "read constraints: implementation" START { }

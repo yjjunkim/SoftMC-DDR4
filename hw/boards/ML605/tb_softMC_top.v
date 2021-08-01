@@ -12,6 +12,7 @@ module tb_softMC_top;
 	
   //parameter REFCLK_FREQ           = 200;
   parameter REFCLK_FREQ           = 100;
+  parameter PCIE_USER_CLK         = 250;
                                     // # = 200 for all design frequencies of
                                     //         -1 speed grade devices
                                     //   = 200 when design frequency < 480 MHz
@@ -186,6 +187,7 @@ module tb_softMC_top;
   localparam NUM_COMP = DQ_WIDTH/MEMORY_WIDTH;
   localparam real CLK_PERIOD = tCK;
   localparam real REFCLK_PERIOD = (1000000.0/(2*REFCLK_FREQ));
+  localparam real PCIECLK_PERIOD = (1000000.0/(2*PCIE_USER_CLK));
   localparam DRAM_DEVICE = "SODIMM";
                          // DRAM_TYPE: "UDIMM", "RDIMM", "COMPS"
 
@@ -227,15 +229,15 @@ module tb_softMC_top;
   //Data read back Interface
   wire rdback_fifo_empty;
   reg rdback_fifo_rden;
-  //wire[255:0] rdback_data;
    wire[511:0] rdback_data;
   
-  reg sys_clk;
+  //reg sys_clk;
   reg clk_ref;
-  reg sys_rst_n;
+  reg phy_rst;
+  reg pci_rst_n;
 
-  wire sys_clk_p;
-  wire sys_clk_n;
+  //wire sys_clk_p;
+ // wire sys_clk_n;
   wire clk_ref_p;
   wire clk_ref_n;
 
@@ -328,8 +330,8 @@ module tb_softMC_top;
   //=============DDR4 PORT ============================
   parameter CA_MIRROR                      = "OFF";
   
-  wire    c0_ddr4_ck_t;
-  wire    c0_ddr4_ck_c;
+ //// wire    c0_ddr4_ck_t;
+ // wire    c0_ddr4_ck_c;
   wire                 c0_ddr4_reset_n;
   wire  [7:0]          c0_ddr4_dm_dbi_n;
   wire  [63:0]          c0_ddr4_dq;
@@ -356,6 +358,7 @@ module tb_softMC_top;
   
   reg  [16:0]            c0_ddr4_adr_sdram[1:0];
   
+
   
   reg  [31:0] cmdName;
   localparam MRS                           = 3'b000;
@@ -443,26 +446,27 @@ endgenerate
   //**************************************************************************//
 
   initial begin
-    sys_clk   = 1'b0;
+  //  sys_clk   = 1'b0;
     clk_ref   = 1'b1;
-    sys_rst_n = 1'b0;
-
+    phy_rst = 1'b0;
+    pci_rst_n = 1'b0;
     #120000
-      sys_rst_n = 1'b1;
+      phy_rst = 1'b1;
+      pci_rst_n = 1'b1;
   end
 
-   assign sys_rst = RST_ACT_LOW ? sys_rst_n : ~sys_rst_n;
+   assign sys_rst = RST_ACT_LOW ? phy_rst : ~phy_rst;
 
   // Generate system clock = twice rate of CLK
-  always
-    sys_clk = #(CLK_PERIOD/2.0) ~sys_clk;
+ // always
+   // sys_clk = #(CLK_PERIOD/2.0) ~sys_clk;
 
   // Generate IDELAYCTRL reference clock (200MHz)
   always
     clk_ref = #REFCLK_PERIOD ~clk_ref;
 
-  assign sys_clk_p = sys_clk;
-  assign sys_clk_n = ~sys_clk;
+  //assign sys_clk_p = sys_clk;
+ // assign sys_clk_n = ~sys_clk;
 
   assign clk_ref_p = clk_ref;
   assign clk_ref_n = ~clk_ref;
@@ -500,7 +504,7 @@ endgenerate
        (
         .A     (ddr3_dq_fpga[dqwd]),
         .B     (ddr3_dq_sdram[dqwd]),
-        .reset (sys_rst_n),
+        .reset (phy_rst),
         .phy_init_done (phy_init_done)
        );
      end
@@ -514,7 +518,7 @@ endgenerate
        (
         .A     (ddr3_dq_fpga[0]),
         .B     (ddr3_dq_sdram[0]),
-        .reset (sys_rst_n),
+        .reset (phy_rst),
         .phy_init_done (phy_init_done)
        );
 
@@ -533,7 +537,7 @@ endgenerate
        (
         .A     (ddr3_dqs_p_fpga[dqswd]),
         .B     (ddr3_dqs_p_sdram[dqswd]),
-        .reset (sys_rst_n),
+        .reset (phy_rst),
         .phy_init_done (phy_init_done)
        );
 
@@ -547,7 +551,7 @@ endgenerate
        (
         .A     (ddr3_dqs_n_fpga[dqswd]),
         .B     (ddr3_dqs_n_sdram[dqswd]),
-        .reset (sys_rst_n),
+        .reset (phy_rst),
         .phy_init_done (phy_init_done)
        );
     end
@@ -600,11 +604,14 @@ endgenerate
      .DATA_WIDTH                (DATA_WIDTH),
      .PAYLOAD_WIDTH             (PAYLOAD_WIDTH)
      ) uut (
-		.c0_sys_clk_p(clk_ref_p), 
-		.c0_sys_clk_n(clk_ref_n), 
+		.phy_clk_p(clk_ref_p), 
+		.phy_clk_n(clk_ref_n), 
+		.pci_clk_p(clk_ref_p),
+		.pci_clk_n(clk_ref_n),
 		//.clk_ref_p(clk_ref_p), 
 		//.clk_ref_n(clk_ref_n), 
-		.sys_rst_l(sys_rst_n), 
+		.phy_rst_n(phy_rst), 
+		.pci_rst_n(pci_rst_n), 
 		//.sys_rst_l(sys_rst_l),
 		//.c0_ddr4_reset_n(1'b1),
 		//.c0_ddr4_reset_n(c0_ddr4_reset_n),
@@ -613,9 +620,6 @@ endgenerate
 		.c0_ddr4_adr(c0_ddr4_adr), 
 		.c0_ddr4_ba(c0_ddr4_ba), // add ba, bg
 		.c0_ddr4_bg(c0_ddr4_bg), // add ba, bg
-		//.ddr_ras_n(ddr3_ras_n_fpga), 
-		//.ddr_cas_n(ddr3_cas_n_fpga), 
-		//.ddr_we_n(ddr3_we_n_fpga), 
 		.c0_ddr4_act_n(c0_ddr4_act_n),
 		.c0_ddr4_cs_n(c0_ddr4_cs_n), 
 		.c0_ddr4_cke(c0_ddr4_cke), 
@@ -630,315 +634,32 @@ endgenerate
 		.c0_init_calib_complete(phy_init_done),
 		//.iq_full(iq_full),
 		//.processing_iseq(processing_iseq),
-		.sys_clk_p(clk_ref_p),
-		.sys_clk_n(clk_ref_n),
-		.sys_reset_n(sys_rst_n),
-		.app_en(app_en),
-		.app_ack(app_ack),
-		.app_instr(app_instr),
+		//.sys_clk_p(clk_ref_p),
+		//.sys_clk_n(clk_ref_n),
+	   // .app_en(app_en),
+		//.app_ack(app_ack),
+		//.app_instr(app_instr),
 		
 		.rdback_fifo_rden(rdback_fifo_rden),
-		.rdback_data(rdback_data)
-		//.rdback_fifo_empty(rdback_fifo_empty)
+		.rdback_data(rdback_data),
+		.rdback_fifo_empty(rdback_fifo_empty)
 	);
-
-/*
-   // Extra one clock pipelining for RDIMM address and
-   // control signals is implemented here (Implemented external to memory model)
-   always @( posedge ddr3_ck_p_sdram[0] ) begin
-     if ( ddr3_reset_n == 1'b0 ) begin
-       ddr3_ras_n_r <= 1'b1;
-       ddr3_cas_n_r <= 1'b1;
-       ddr3_we_n_r  <= 1'b1;
-       ddr3_cs_n_r  <= {(CS_WIDTH*nCS_PER_RANK){1'b1}};
-       ddr3_odt_r   <= 1'b0;
-     end
-     else begin
-       ddr3_addr_r  <= #(CLK_PERIOD/2) ddr3_addr_sdram;
-       ddr3_ba_r    <= #(CLK_PERIOD/2) ddr3_ba_sdram;
-       ddr3_ras_n_r <= #(CLK_PERIOD/2) ddr3_ras_n_sdram;
-       ddr3_cas_n_r <= #(CLK_PERIOD/2) ddr3_cas_n_sdram;
-       ddr3_we_n_r  <= #(CLK_PERIOD/2) ddr3_we_n_sdram;
-       if (~(ddr3_cs_n_sdram[0] | ddr3_cs_n_sdram[1]) & ~phy_init_done)
-         ddr3_cs_n_r  <= #(CLK_PERIOD/2) {(CS_WIDTH*nCS_PER_RANK){1'b1}};
-       else
-         ddr3_cs_n_r  <= #(CLK_PERIOD/2) ddr3_cs_n_sdram;
-       ddr3_odt_r   <= #(CLK_PERIOD/2) ddr3_odt_sdram;
-     end
-   end
-
-   // to avoid tIS violations on CKE when reset is deasserted
-   always @( posedge ddr3_ck_n_sdram[0] )
-     if ( ddr3_reset_n == 1'b0 )
-       ddr3_cke_r <= 1'b0;
-     else
-       ddr3_cke_r <= #(CLK_PERIOD) ddr3_cke_sdram;
-*/
-//==================================DDR3======================================
-/*
-  //***************************************************************************
-  // Instantiate memories
-  //***************************************************************************
-
-  genvar r,i,dqs_x;
-  generate
-    if(DRAM_DEVICE == "COMP") begin : comp_inst
-      for (r = 0; r < CS_WIDTH; r = r+1) begin: mem_rnk
-        if(MEMORY_WIDTH == 16) begin: mem_16
-          if(DQ_WIDTH/16) begin: gen_mem
-            for (i = 0; i < NUM_COMP; i = i + 1) begin: gen_mem
-              ddr3_model u_comp_ddr3
-                (
-                 .rst_n   (ddr3_reset_n),
-                 .ck      (ddr3_ck_p_sdram),
-                 .ck_n    (ddr3_ck_n_sdram),
-                 .cke     (ddr3_cke_sdram[r]),
-                 .cs_n    (ddr3_cs_n_sdram[r]),
-                 .ras_n   (ddr3_ras_n_sdram),
-                 .cas_n   (ddr3_cas_n_sdram),
-                 .we_n    (ddr3_we_n_sdram),
-                 .dm_tdqs (ddr3_dm_sdram[(2*(i+1)-1):(2*i)]),
-                 .ba      (ddr3_ba_sdram),
-                 .addr    (ddr3_addr_sdram),
-                 .dq      (ddr3_dq_sdram[16*(i+1)-1:16*(i)]),
-                 .dqs     (ddr3_dqs_p_sdram[(2*(i+1)-1):(2*i)]),
-                 .dqs_n   (ddr3_dqs_n_sdram[(2*(i+1)-1):(2*i)]),
-                 .tdqs_n  (),
-                 .odt     (ddr3_odt_sdram[r])
-                 );
-            end
-          end
-          if (DQ_WIDTH%16) begin: gen_mem_extrabits
-            ddr3_model u_comp_ddr3
-              (
-               .rst_n   (ddr3_reset_n),
-               .ck      (ddr3_ck_p_sdram),
-               .ck_n    (ddr3_ck_n_sdram),
-               .cke     (ddr3_cke_sdram[r]),
-               .cs_n    (ddr3_cs_n_sdram[r]),
-               .ras_n   (ddr3_ras_n_sdram),
-               .cas_n   (ddr3_cas_n_sdram),
-               .we_n    (ddr3_we_n_sdram),
-               .dm_tdqs ({ddr3_dm_sdram[DM_WIDTH-1],ddr3_dm_sdram[DM_WIDTH-1]}),
-               .ba      (ddr3_ba_sdram),
-               .addr    (ddr3_addr_sdram),
-               .dq      ({ddr3_dq_sdram[DQ_WIDTH-1:(DQ_WIDTH-8)],
-                          ddr3_dq_sdram[DQ_WIDTH-1:(DQ_WIDTH-8)]}),
-               .dqs     ({ddr3_dqs_p_sdram[DQS_WIDTH-1],
-                          ddr3_dqs_p_sdram[DQS_WIDTH-1]}),
-               .dqs_n   ({ddr3_dqs_n_sdram[DQS_WIDTH-1],
-                          ddr3_dqs_n_sdram[DQS_WIDTH-1]}),
-               .tdqs_n  (),
-               .odt     (ddr3_odt_sdram[r])
-               );
-          end
-        end
-        else if((MEMORY_WIDTH == 8) || (MEMORY_WIDTH == 4)) begin: mem_8_4
-          for (i = 0; i < NUM_COMP; i = i + 1) begin: gen_mem
-            ddr3_model u_comp_ddr3
-              (
-               .rst_n   (ddr3_reset_n),
-               .ck      (ddr3_ck_p_sdram),
-               .ck_n    (ddr3_ck_n_sdram),
-               .cke     (ddr3_cke_sdram[r]),
-               .cs_n    (ddr3_cs_n_sdram[r]),
-               .ras_n   (ddr3_ras_n_sdram),
-               .cas_n   (ddr3_cas_n_sdram),
-               .we_n    (ddr3_we_n_sdram),
-               .dm_tdqs (ddr3_dm_sdram[i]),
-               .ba      (ddr3_ba_sdram),
-               .addr    (ddr3_addr_sdram),
-               .dq      (ddr3_dq_sdram[MEMORY_WIDTH*(i+1)-1:MEMORY_WIDTH*(i)]),
-               .dqs     (ddr3_dqs_p_sdram[i]),
-               .dqs_n   (ddr3_dqs_n_sdram[i]),
-               .tdqs_n  (),
-               .odt     (ddr3_odt_sdram[r])
-               );
-          end
-        end
-      end
+	 
+	`ifndef USE_XDMA
+	
+	initial begin
+	   uut.EP.user_clk=1'b0;
+	   uut.EP.user_resetn=1'b0;
+	   uut.EP.s_axis_c2h_tready_0=1'b1;
+	   #10000
+       uut.EP.user_resetn=1'b1;
+    
     end
-    else if(DRAM_DEVICE == "RDIMM") begin: rdimm_inst
-      for (r = 0; r < CS_WIDTH; r = r+1) begin: mem_rnk
-        if((MEMORY_WIDTH == 8) || (MEMORY_WIDTH == 4)) begin: mem_8_4
-          for (i = 0; i < NUM_COMP; i = i + 1) begin: gen_mem
-            ddr3_model u_comp_ddr3
-              (
-               .rst_n   (ddr3_reset_n),
-               .ck      (ddr3_ck_p_sdram[(i*MEMORY_WIDTH)/72]),
-               .ck_n    (ddr3_ck_n_sdram[(i*MEMORY_WIDTH)/72]),
-               .cke     (ddr3_cke_r[((i*MEMORY_WIDTH)/72)+(nCS_PER_RANK*r)]),
-               .cs_n    (ddr3_cs_n_r[((i*MEMORY_WIDTH)/72)+(nCS_PER_RANK*r)]),
-               .ras_n   (ddr3_ras_n_r),
-               .cas_n   (ddr3_cas_n_r),
-               .we_n    (ddr3_we_n_r),
-               .dm_tdqs (ddr3_dm_sdram[i]),
-               .ba      (ddr3_ba_r),
-               .addr    (ddr3_addr_r),
-               .dq      (ddr3_dq_sdram[MEMORY_WIDTH*(i+1)-1:MEMORY_WIDTH*(i)]),
-               .dqs     (ddr3_dqs_p_sdram[i]),
-               .dqs_n   (ddr3_dqs_n_sdram[i]),
-               .tdqs_n  (),
-               .odt     (ddr3_odt_r[((i*MEMORY_WIDTH)/72)+(nCS_PER_RANK*r)])
-               );
-          end
-        end
-      end
-    end
-    else if(DRAM_DEVICE == "UDIMM") begin: udimm_inst
-      for (r = 0; r < CS_WIDTH; r = r+1) begin: mem_rnk
-        if(MEMORY_WIDTH == 16) begin: mem_16
-          if(DQ_WIDTH/16) begin: gen_mem
-            for (i = 0; i < NUM_COMP; i = i + 1) begin: gen_mem
-              ddr3_model u_comp_ddr3
-                (
-                 .rst_n   (ddr3_reset_n),
-                 .ck      (ddr3_ck_p_sdram[(i*MEMORY_WIDTH)/72]),
-                 .ck_n    (ddr3_ck_n_sdram[(i*MEMORY_WIDTH)/72]),
-                 .cke     (ddr3_cke_sdram[((i*MEMORY_WIDTH)/72)+(nCS_PER_RANK*r)]),
-                 .cs_n    (ddr3_cs_n_sdram[((i*MEMORY_WIDTH)/72)+(nCS_PER_RANK*r)]),
-                 .ras_n   (ddr3_ras_n_sdram),
-                 .cas_n   (ddr3_cas_n_sdram),
-                 .we_n    (ddr3_we_n_sdram),
-                 .dm_tdqs (ddr3_dm_sdram[(2*(i+1)-1):(2*i)]),
-                 .ba      (ddr3_ba_sdram),
-                 .addr    (ddr3_addr_sdram),
-                 .dq      (ddr3_dq_sdram[MEMORY_WIDTH*(i+1)-1:MEMORY_WIDTH*(i)]),
-                 .dqs     (ddr3_dqs_p_sdram[(2*(i+1)-1):(2*i)]),
-                 .dqs_n   (ddr3_dqs_n_sdram[(2*(i+1)-1):(2*i)]),
-                 .tdqs_n  (),
-                 .odt     (ddr3_odt_sdram[((i*MEMORY_WIDTH)/72)+(nCS_PER_RANK*r)])
-                 );
-            end
-          end
-          if (DQ_WIDTH%16) begin: gen_mem_extrabits
-            ddr3_model u_comp_ddr3
-              (
-               .rst_n   (ddr3_reset_n),
-               .ck      (ddr3_ck_p_sdram[(DQ_WIDTH-1)/72]),
-               .ck_n    (ddr3_ck_n_sdram[(DQ_WIDTH-1)/72]),
-               .cke     (ddr3_cke_sdram[((DQ_WIDTH-1)/72)+(nCS_PER_RANK*r)]),
-               .cs_n    (ddr3_cs_n_sdram[((DQ_WIDTH-1)/72)+(nCS_PER_RANK*r)]),
-               .ras_n   (ddr3_ras_n_sdram),
-               .cas_n   (ddr3_cas_n_sdram),
-               .we_n    (ddr3_we_n_sdram),
-               .dm_tdqs ({ddr3_dm_sdram[DM_WIDTH-1],ddr3_dm_sdram[DM_WIDTH-1]}),
-               .ba      (ddr3_ba_sdram),
-               .addr    (ddr3_addr_sdram),
-               .dq      ({ddr3_dq_sdram[DQ_WIDTH-1:(DQ_WIDTH-8)],
-                          ddr3_dq_sdram[DQ_WIDTH-1:(DQ_WIDTH-8)]}),
-               .dqs     ({ddr3_dqs_p_sdram[DQS_WIDTH-1],
-                          ddr3_dqs_p_sdram[DQS_WIDTH-1]}),
-               .dqs_n   ({ddr3_dqs_n_sdram[DQS_WIDTH-1],
-                          ddr3_dqs_n_sdram[DQS_WIDTH-1]}),
-               .tdqs_n  (),
-               .odt     (ddr3_odt_sdram[((DQ_WIDTH-1)/72)+(nCS_PER_RANK*r)])
-               );
-          end
-        end
-        else if((MEMORY_WIDTH == 8) || (MEMORY_WIDTH == 4)) begin: mem_8_4
-          for (i = 0; i < NUM_COMP; i = i + 1) begin: gen_mem
-            ddr3_model u_comp_ddr3
-              (
-               .rst_n   (ddr3_reset_n),
-               .ck      (ddr3_ck_p_sdram[(i*MEMORY_WIDTH)/72]),
-               .ck_n    (ddr3_ck_n_sdram[(i*MEMORY_WIDTH)/72]),
-               .cke     (ddr3_cke_sdram[((i*MEMORY_WIDTH)/72)+(nCS_PER_RANK*r)]),
-               .cs_n    (ddr3_cs_n_sdram[((i*MEMORY_WIDTH)/72)+(nCS_PER_RANK*r)]),
-               .ras_n   (ddr3_ras_n_sdram),
-               .cas_n   (ddr3_cas_n_sdram),
-               .we_n    (ddr3_we_n_sdram),
-               .dm_tdqs (ddr3_dm_sdram[i]),
-               .ba      (ddr3_ba_sdram),
-               .addr    (ddr3_addr_sdram),
-               .dq      (ddr3_dq_sdram[MEMORY_WIDTH*(i+1)-1:MEMORY_WIDTH*(i)]),
-               .dqs     (ddr3_dqs_p_sdram[i]),
-               .dqs_n   (ddr3_dqs_n_sdram[i]),
-               .tdqs_n  (),
-               .odt     (ddr3_odt_sdram[((i*MEMORY_WIDTH)/72)+(nCS_PER_RANK*r)])
-               );
-          end
-        end
-      end
-    end
-    else if(DRAM_DEVICE == "SODIMM") begin: sodimm_inst
-      for (r = 0; r < CS_WIDTH; r = r+1) begin: mem_rnk
-        if(MEMORY_WIDTH == 16) begin: mem_16
-          if(DQ_WIDTH/16) begin: gen_mem
-            for (i = 0; i < NUM_COMP; i = i + 1) begin: gen_mem
-              ddr3_model u_comp_ddr3
-                (
-                 .rst_n   (ddr3_reset_n),
-                 .ck      (ddr3_ck_p_sdram[(i*MEMORY_WIDTH)/72]),
-                 .ck_n    (ddr3_ck_n_sdram[(i*MEMORY_WIDTH)/72]),
-                 .cke     (ddr3_cke_sdram[((i*MEMORY_WIDTH)/72)+(nCS_PER_RANK*r)]),
-                 .cs_n    (ddr3_cs_n_sdram[((i*MEMORY_WIDTH)/72)+(nCS_PER_RANK*r)]),
-                 .ras_n   (ddr3_ras_n_sdram),
-                 .cas_n   (ddr3_cas_n_sdram),
-                 .we_n    (ddr3_we_n_sdram),
-                 .dm_tdqs (ddr3_dm_sdram[(2*(i+1)-1):(2*i)]),
-                 .ba      (ddr3_ba_sdram),
-                 .addr    (ddr3_addr_sdram),
-                 .dq      (ddr3_dq_sdram[MEMORY_WIDTH*(i+1)-1:MEMORY_WIDTH*(i)]),
-                 .dqs     (ddr3_dqs_p_sdram[(2*(i+1)-1):(2*i)]),
-                 .dqs_n   (ddr3_dqs_n_sdram[(2*(i+1)-1):(2*i)]),
-                 .tdqs_n  (),
-                 .odt     (ddr3_odt_sdram[((i*MEMORY_WIDTH)/72)+(nCS_PER_RANK*r)])
-                 );
-            end
-          end
-          if (DQ_WIDTH%16) begin: gen_mem_extrabits
-            ddr3_model u_comp_ddr3
-              (
-               .rst_n   (ddr3_reset_n),
-               .ck      (ddr3_ck_p_sdram[(DQ_WIDTH-1)/72]),
-               .ck_n    (ddr3_ck_n_sdram[(DQ_WIDTH-1)/72]),
-               .cke     (ddr3_cke_sdram[((DQ_WIDTH-1)/72)+(nCS_PER_RANK*r)]),
-               .cs_n    (ddr3_cs_n_sdram[((DQ_WIDTH-1)/72)+(nCS_PER_RANK*r)]),
-               .ras_n   (ddr3_ras_n_sdram),
-               .cas_n   (ddr3_cas_n_sdram),
-               .we_n    (ddr3_we_n_sdram),
-               .dm_tdqs ({ddr3_dm_sdram[DM_WIDTH-1],ddr3_dm_sdram[DM_WIDTH-1]}),
-               .ba      (ddr3_ba_sdram),
-               .addr    (ddr3_addr_sdram),
-               .dq      ({ddr3_dq_sdram[DQ_WIDTH-1:(DQ_WIDTH-8)],
-                          ddr3_dq_sdram[DQ_WIDTH-1:(DQ_WIDTH-8)]}),
-               .dqs     ({ddr3_dqs_p_sdram[DQS_WIDTH-1],
-                          ddr3_dqs_p_sdram[DQS_WIDTH-1]}),
-               .dqs_n   ({ddr3_dqs_n_sdram[DQS_WIDTH-1],
-                          ddr3_dqs_n_sdram[DQS_WIDTH-1]}),
-               .tdqs_n  (),
-               .odt     (ddr3_odt_sdram[((DQ_WIDTH-1)/72)+(nCS_PER_RANK*r)])
-               );
-          end
-        end
-        if((MEMORY_WIDTH == 8) || (MEMORY_WIDTH == 4)) begin: mem_8_4
-          for (i = 0; i < NUM_COMP; i = i + 1) begin: gen_mem
-            ddr3_model u_comp_ddr3
-              (
-               .rst_n   (ddr3_reset_n),
-               .ck      (ddr3_ck_p_sdram[(i*MEMORY_WIDTH)/72]),
-               .ck_n    (ddr3_ck_n_sdram[(i*MEMORY_WIDTH)/72]),
-               .cke     (ddr3_cke_sdram[((i*MEMORY_WIDTH)/72)+(nCS_PER_RANK*r)]),
-               .cs_n    (ddr3_cs_n_sdram[((i*MEMORY_WIDTH)/72)+(nCS_PER_RANK*r)]),
-               .ras_n   (ddr3_ras_n_sdram),
-               .cas_n   (ddr3_cas_n_sdram),
-               .we_n    (ddr3_we_n_sdram),
-               .dm_tdqs (ddr3_dm_sdram[i]),
-               .ba      (ddr3_ba_sdram),
-               .addr    (ddr3_addr_sdram),
-               .dq      (ddr3_dq_sdram[MEMORY_WIDTH*(i+1)-1:MEMORY_WIDTH*(i)]),
-               .dqs     (ddr3_dqs_p_sdram[i]),
-               .dqs_n   (ddr3_dqs_n_sdram[i]),
-               .tdqs_n  (),
-               .odt     (ddr3_odt_sdram[((i*MEMORY_WIDTH)/72)+(nCS_PER_RANK*r)])
-               );
-          end
-        end
-      end
-    end
-  endgenerate
-	*/
+    
+    always
+       uut.EP.user_clk = #(PCIECLK_PERIOD) ~uut.EP.user_clk;
+       
+    `endif
 	//==========================DDR4====================================
 	//**************************************************************************//
   // Clock Generation
@@ -1170,9 +891,165 @@ endgenerate
   // Reporting the test case status
   //***************************************************************************
   localparam APP_CLK_PERIOD = tCK * nCK_PER_CLK;
+  
+  
   initial
   begin : Logging
+		 uut.EP.m_axis_h2c_tdata_0= 32'b00000000000000000000000000000000 ;
+		 uut.EP.m_axis_h2c_tvalid_0=1'b0;
+		 uut.EP.s_axis_c2h_tready_0=1'b1;
+		//rdback_fifo_rden = 0;
+        begin : calibration_done
+           wait (phy_init_done);
+           $display("Calibration Done");
+			  
+         //  #1000000;
+			  
+			  
+	 
+	  #(PCIECLK_PERIOD*1000);
+	  //read
+	  #PCIECLK_PERIOD;
+	    //app_en = 1;
+		//app_instr = 32'b00010000000000000000000000000010; //busdir
+
+		#PCIECLK_PERIOD;
+		uut.EP.m_axis_h2c_tvalid_0=1'b1;
+		uut.EP.m_axis_h2c_tdata_0 = 32'b10000001000100000000000000000000 ; // precharge  
+
+		#PCIECLK_PERIOD;
+		uut.EP.m_axis_h2c_tvalid_0 = 1;
+		uut.EP.m_axis_h2c_tdata_0 = 32'b01000000000000000000000000001111; //wait
+
+		#PCIECLK_PERIOD;
+		uut.EP.m_axis_h2c_tvalid_0 = 1;
+		uut.EP.m_axis_h2c_tdata_0 = 32'b10000001000110000000000000000000 ; //act
+
+		#PCIECLK_PERIOD;
+		uut.EP.m_axis_h2c_tvalid_0 = 1;
+		uut.EP.m_axis_h2c_tdata_0 = 32'b01000000000000000000000000001111;  //wait
+
+		#PCIECLK_PERIOD;
+		uut.EP.m_axis_h2c_tvalid_0= 1;
+		uut.EP.m_axis_h2c_tdata_0 = 32'b11111111001000001101000000000000  ; //write
+
+		#PCIECLK_PERIOD;
+		uut.EP.m_axis_h2c_tvalid_0= 1;
+		uut.EP.m_axis_h2c_tdata_0 = 32'b01000000000000000000000000001110 ; //wait
+		
+		
+
+
+		#PCIECLK_PERIOD;
+		uut.EP.m_axis_h2c_tvalid_0 = 1;
+		uut.EP.m_axis_h2c_tdata_0 = 32'b01000000000000000000000000001000  ; //wait
+
+		#PCIECLK_PERIOD;
+		uut.EP.m_axis_h2c_tvalid_0 = 1;
+		uut.EP.m_axis_h2c_tdata_0 = 32'b10000001000100000000000000000000  ; //precharge
+
+		#PCIECLK_PERIOD;
+		uut.EP.m_axis_h2c_tvalid_0 = 1;
+		uut.EP.m_axis_h2c_tdata_0 = 32'b01000000000000000000000000001111  ; //wait
+
+		//#PCIECLK_PERIOD;
+		//app_en = 1;
+		//uut.EP.m_axis_h2c_tdata_0 = 32'b00000000000000000000000000000000;  //end
+		
+		//#PCIECLK_PERIOD;
+		//app_en = 1;
+		//uut.EP.m_axis_h2c_tdata_0 = 32'b00010000000000000000000000000000;
+		#PCIECLK_PERIOD;
+		
+		
+        // read
+		#PCIECLK_PERIOD;
+		uut.EP.m_axis_h2c_tvalid_0= 1;
+		uut.EP.m_axis_h2c_tdata_0 = 32'b10000001000100000000000000000000 ; //pre
+
+		#PCIECLK_PERIOD;
+		uut.EP.m_axis_h2c_tvalid_0 = 1;
+		uut.EP.m_axis_h2c_tdata_0 = 32'b01000000000000000000000000001111 ; //wait
+
+		#PCIECLK_PERIOD;
+		uut.EP.m_axis_h2c_tvalid_0 = 1;
+		uut.EP.m_axis_h2c_tdata_0 = 32'b10000001000110000000000000000000 ; //act
+
+		#PCIECLK_PERIOD;
+		uut.EP.m_axis_h2c_tvalid_0 = 1;
+		uut.EP.m_axis_h2c_tdata_0 = 32'b01000000000000000000000000001111 ; //wait
+
+		#PCIECLK_PERIOD;
+		uut.EP.m_axis_h2c_tvalid_0 = 1;
+		uut.EP.m_axis_h2c_tdata_0 = 32'b10000001001010000001000000000000 ; //read
+
+		#PCIECLK_PERIOD;
+		uut.EP.m_axis_h2c_tvalid_0 = 1;
+		uut.EP.m_axis_h2c_tdata_0 = 32'b01000000000000000000000000001110 ; //wait
+		
+		
+		/////////
+		#PCIECLK_PERIOD;
+		uut.EP.m_axis_h2c_tvalid_0 = 1;
+		uut.EP.m_axis_h2c_tdata_0 = 32'b10000001001010000001000000000000 ; //read
+
+		#PCIECLK_PERIOD;
+		uut.EP.m_axis_h2c_tvalid_0 = 1;
+		uut.EP.m_axis_h2c_tdata_0 = 32'b01000000000000000000000000001110 ; //wait
+		
+		#PCIECLK_PERIOD;
+		uut.EP.m_axis_h2c_tvalid_0 = 1;
+		uut.EP.m_axis_h2c_tdata_0 = 32'b10000001001010000001000000000000 ; //read
+
+		#PCIECLK_PERIOD;
+		uut.EP.m_axis_h2c_tvalid_0 = 1;
+		uut.EP.m_axis_h2c_tdata_0 = 32'b01000000000000000000000000001110 ; //wait
+		
+		#PCIECLK_PERIOD;
+		uut.EP.m_axis_h2c_tvalid_0= 1;
+		uut.EP.m_axis_h2c_tdata_0 = 32'b10000001001010000001000000000000 ; //read
+
+		#PCIECLK_PERIOD;
+		uut.EP.m_axis_h2c_tvalid_0= 1;
+		uut.EP.m_axis_h2c_tdata_0 = 32'b01000000000000000000000000001110 ; //wait
+		
+		#PCIECLK_PERIOD;
+		uut.EP.m_axis_h2c_tvalid_0= 1;
+		uut.EP.m_axis_h2c_tdata_0 = 32'b10000001001010000001000000000000 ; //read
+
+		#PCIECLK_PERIOD;
+		uut.EP.m_axis_h2c_tvalid_0= 1;
+		uut.EP.m_axis_h2c_tdata_0 = 32'b01000000000000000000000000001110 ; //wait
+		///////////
+		
+
+		#PCIECLK_PERIOD;
+		uut.EP.m_axis_h2c_tvalid_0 = 1;
+		uut.EP.m_axis_h2c_tdata_0 = 32'b01000000000000000000000000001000 ; //wait
+
+		#PCIECLK_PERIOD;
+		uut.EP.m_axis_h2c_tvalid_0 = 1;
+		uut.EP.m_axis_h2c_tdata_0 = 32'b10000001000100000000000000000000 ; //pre
+
+		#PCIECLK_PERIOD;
+		uut.EP.m_axis_h2c_tvalid_0 = 1;
+		uut.EP.m_axis_h2c_tdata_0 = 32'b01000000000000000000000000001111; //wait
+
+		#PCIECLK_PERIOD;
+		uut.EP.m_axis_h2c_tvalid_0 = 1;
+		uut.EP.m_axis_h2c_tdata_0 = 32'b00000000000000000000000000000000; //end
+		
+
+		#PCIECLK_PERIOD;
+		uut.EP.m_axis_h2c_tvalid_0 = 0;
+		
+		//rdback_fifo_rden = 1;
+        end
+  end
+ /* initial
+  begin : Logging
 		app_en = 0;
+		app_instr= 32'b10000001000100000000000000000000 ;
 		rdback_fifo_rden = 0;
         begin : calibration_done
            wait (phy_init_done);
@@ -1228,17 +1105,13 @@ endgenerate
 		app_instr = 32'b01000000000000000000000000001111  ; //wait
 
 		//#APP_CLK_PERIOD;
-		app_en = 1;
-		app_instr = 32'b00000000000000000000000000000000;  //end
+		//app_en = 1;
+		//app_instr = 32'b00000000000000000000000000000000;  //end
 		
 		//#APP_CLK_PERIOD;
 		//app_en = 1;
 		//app_instr = 32'b00010000000000000000000000000000;
-		#APP_CLK_PERIOD;#APP_CLK_PERIOD;#APP_CLK_PERIOD;#APP_CLK_PERIOD;#APP_CLK_PERIOD;#APP_CLK_PERIOD;
-		#APP_CLK_PERIOD;#APP_CLK_PERIOD;#APP_CLK_PERIOD;#APP_CLK_PERIOD;#APP_CLK_PERIOD;#APP_CLK_PERIOD;
-		#APP_CLK_PERIOD;#APP_CLK_PERIOD;#APP_CLK_PERIOD;#APP_CLK_PERIOD;#APP_CLK_PERIOD;#APP_CLK_PERIOD;
-		#APP_CLK_PERIOD;#APP_CLK_PERIOD;#APP_CLK_PERIOD;#APP_CLK_PERIOD;#APP_CLK_PERIOD;#APP_CLK_PERIOD;
-		#APP_CLK_PERIOD;#APP_CLK_PERIOD;#APP_CLK_PERIOD;#APP_CLK_PERIOD;#APP_CLK_PERIOD;#APP_CLK_PERIOD;
+		#APP_CLK_PERIOD;
 		
 		
         // read
@@ -1319,18 +1192,12 @@ endgenerate
 		app_instr = 32'b00000000000000000000000000000000; //end
 		
 
-
-
-
-
-
-		
 		#APP_CLK_PERIOD;
 		app_en = 0;
 		
 		//rdback_fifo_rden = 1;
         end
-  end
+  end*/
       
 endmodule
 

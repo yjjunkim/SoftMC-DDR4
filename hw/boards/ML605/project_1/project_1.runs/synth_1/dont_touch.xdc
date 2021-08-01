@@ -3,9 +3,6 @@
 
 # XDC: imports/xusps3_config/xusps3_pinout.xdc
 
-# IP: ip/xdma_0/xdma_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==xdma_0 || ORIG_REF_NAME==xdma_0} -quiet] -quiet
-
 # IP: ip/instr_fifo/instr_fifo.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==instr_fifo || ORIG_REF_NAME==instr_fifo} -quiet] -quiet
 
@@ -15,9 +12,49 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==axis_clock_
 # IP: ip/axis_clock_converter_0/axis_clock_converter_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==axis_clock_converter_0 || ORIG_REF_NAME==axis_clock_converter_0} -quiet] -quiet
 
+# IP: ip/xdma_0/xdma_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==xdma_0 || ORIG_REF_NAME==xdma_0} -quiet] -quiet
+
+# IP: ip/xdma_0/ip_2/xdma_v4_1_8_blk_mem_64_noreg_be.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==xdma_v4_1_8_blk_mem_64_noreg_be || ORIG_REF_NAME==xdma_v4_1_8_blk_mem_64_noreg_be} -quiet] -quiet
+
+# IP: ip/xdma_0/ip_1/xdma_v4_1_8_blk_mem_64_reg_be.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==xdma_v4_1_8_blk_mem_64_reg_be || ORIG_REF_NAME==xdma_v4_1_8_blk_mem_64_reg_be} -quiet] -quiet
+
+# IP: ip/xdma_0/ip_0/xdma_0_pcie3_ip.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==xdma_0_pcie3_ip || ORIG_REF_NAME==xdma_0_pcie3_ip} -quiet] -quiet
+
+# IP: ip/xdma_0/ip_0/ip_0/xdma_0_pcie3_ip_gt.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==xdma_0_pcie3_ip_gt || ORIG_REF_NAME==xdma_0_pcie3_ip_gt} -quiet] -quiet
+
+# IP: ip/ddr4_0_2/ddr4_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ddr4_0 || ORIG_REF_NAME==ddr4_0} -quiet] -quiet
+
 # XDC: ip/instr_fifo/instr_fifo.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==instr_fifo || ORIG_REF_NAME==instr_fifo} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
 # XDC: ip/axis_clock_converter_c2h/axis_clock_converter_c2h_ooc.xdc
 
 # XDC: ip/axis_clock_converter_0/axis_clock_converter_0_ooc.xdc
+
+# XDC: ip/xdma_0/ip_2/xdma_v4_1_8_blk_mem_64_noreg_be_ooc.xdc
+
+# XDC: ip/xdma_0/ip_1/xdma_v4_1_8_blk_mem_64_reg_be_ooc.xdc
+
+# XDC: ip/xdma_0/ip_0/ip_0/synth/xdma_0_pcie3_ip_gt_ooc.xdc
+
+# XDC: ip/xdma_0/ip_0/ip_0/synth/xdma_0_pcie3_ip_gt.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==xdma_0_pcie3_ip_gt || ORIG_REF_NAME==xdma_0_pcie3_ip_gt} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: ip/xdma_0/ip_0/source/xdma_0_pcie3_ip-PCIE_X0Y0.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==xdma_0_pcie3_ip || ORIG_REF_NAME==xdma_0_pcie3_ip} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: ip/xdma_0/ip_0/synth/xdma_0_pcie3_ip_ooc.xdc
+
+# XDC: ip/xdma_0/xdma_0_board.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==xdma_0 || ORIG_REF_NAME==xdma_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: ip/xdma_0/source/xdma_0_pcie3_us_ip.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==xdma_0 || ORIG_REF_NAME==xdma_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: ip/xdma_0/synth/xdma_0_ooc.xdc

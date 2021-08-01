@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xcvu095-ffvb2104-2-e" LaunchTime="1627550479">
+<GenRun Id="synth_1" LaunchPart="xcvu095-ffvb2104-2-e" LaunchTime="1627675361">
   <File Type="PA-TCL" Name="softMC_top.tcl"/>
   <File Type="REPORTS-TCL" Name="softMC_top_reports.tcl"/>
   <File Type="RDS-RDS" Name="softMC_top.vds"/>
@@ -146,20 +146,6 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/ip/xdma_0.xcix">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/ip/xdma_0/xdma_0.xci">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/ip/instr_fifo.xcix">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -188,6 +174,13 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/ip/axis_clock_converter_0.xcix">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/ip/axis_clock_converter_0/axis_clock_converter_0.xci">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -195,7 +188,21 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/ip/axis_clock_converter_0.xcix">
+    <File Path="$PSRCDIR/sources_1/ip/xdma_0.xcix">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/xdma_0/xdma_0.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/ddr4_0_2/ddr4_0.xci">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -237,6 +244,5 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="ddr4_0"/>
   <BlockFileSet Type="BlockSrcs" Name="rdback_fifo"/>
 </GenRun>

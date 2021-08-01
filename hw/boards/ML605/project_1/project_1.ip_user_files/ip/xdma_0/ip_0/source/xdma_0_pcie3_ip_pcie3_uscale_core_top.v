@@ -416,7 +416,7 @@ module xdma_0_pcie3_ip_pcie3_uscale_core_top
   parameter  BMD_PIO_MODE="FALSE",
   parameter  ENABLE_GT_V1_5 = "FALSE",
   parameter  EXT_XVC_VSEC_ENABLE = "FALSE",
-  parameter PIPE_PIPELINE_STAGES = 0,
+  parameter PIPE_PIPELINE_STAGES = 1,
   parameter MCAP_CONFIGURE_OVERRIDE = "FALSE",
   parameter MCAP_ENABLE = "FALSE",
   parameter MCAP_EOS_DESIGN_SWITCH = "FALSE",

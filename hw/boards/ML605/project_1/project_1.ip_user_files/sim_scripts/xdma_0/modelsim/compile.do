@@ -62,6 +62,8 @@ vlog -work gtwizard_ultrascale_v1_7_9  -incr "+incdir+../../../ipstatic/hdl/veri
 vlog -work xil_defaultlib  -incr "+incdir+../../../ipstatic/hdl/verilog" "+incdir+D:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
 "../../../ip/xdma_0/ip_0/ip_0/sim/gtwizard_ultrascale_v1_7_gthe3_channel.v" \
 "../../../ip/xdma_0/ip_0/ip_0/sim/xdma_0_pcie3_ip_gt_gthe3_channel_wrapper.v" \
+"../../../ip/xdma_0/ip_0/ip_0/sim/gtwizard_ultrascale_v1_7_gthe3_common.v" \
+"../../../ip/xdma_0/ip_0/ip_0/sim/xdma_0_pcie3_ip_gt_gthe3_common_wrapper.v" \
 "../../../ip/xdma_0/ip_0/ip_0/sim/xdma_0_pcie3_ip_gt_gtwizard_gthe3.v" \
 "../../../ip/xdma_0/ip_0/ip_0/sim/xdma_0_pcie3_ip_gt_gtwizard_top.v" \
 "../../../ip/xdma_0/ip_0/ip_0/sim/xdma_0_pcie3_ip_gt.v" \

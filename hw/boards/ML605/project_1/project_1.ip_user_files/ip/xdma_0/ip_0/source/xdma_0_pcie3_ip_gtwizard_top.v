@@ -482,8 +482,8 @@ endgenerate
     wire [(PHY_LANE* 18)-1:0] gtwiz_gthe3_cpll_cal_txoutclk_period_in;
     wire [(PHY_LANE* 18)-1:0] gtwiz_gthe3_cpll_cal_cnt_tol_in;
     wire [(PHY_LANE*  1)-1:0] gtwiz_gthe3_cpll_cal_bufg_ce_in;
-    assign gtwiz_gthe3_cpll_cal_txoutclk_period_in = {PHY_LANE{18'd5000}};  
-    assign gtwiz_gthe3_cpll_cal_cnt_tol_in         = {PHY_LANE{18'd50}};    
+    assign gtwiz_gthe3_cpll_cal_txoutclk_period_in = {PHY_LANE{18'd4000}}; 
+    assign gtwiz_gthe3_cpll_cal_cnt_tol_in         = {PHY_LANE{18'd40}};    
     assign gtwiz_userclk_tx_reset_in               = bufgtreset_out[21];
     assign gtwiz_gthe3_cpll_cal_bufg_ce_in         = {PHY_LANE{bufgtce_out[21]}};
 
@@ -504,7 +504,7 @@ endgenerate
     assign qpll0refclk_in = 0;
 //    assign rxlpmen_in = GT_RXLPMEN; 
 
-    assign qpll1lock_all   = 0;  // CPLL
+    assign qpll1lock_all   = &qpll1lock_out;
     assign txsyncallin_all = &txphaligndone_out;    
     
     assign gtwiz_userclk_tx_active_in = 1'd0;                                                
@@ -570,6 +570,7 @@ endgenerate
    .gthtxn_out(gthtxn_out),
    .gthtxp_out(gthtxp_out),
    .gtpowergood_out(gtpowergood_out),
+   .gtrefclk01_in(gtrefclk01_in),
    .gtrefclk0_in(gtrefclk0_in),
    .gtrxreset_in(gtrxreset_in),
    .gttxreset_in(gttxreset_in),
@@ -593,6 +594,13 @@ endgenerate
    .pcsrsvdin_in(pcsrsvdin_in),
    .pcsrsvdout_out(pcsrsvdout_out),
    .phystatus_out(phystatus_out),
+   .qpll1lock_out(qpll1lock_out),
+   .qpll1outclk_out(qpll1outclk_out),
+   .qpll1outrefclk_out(qpll1outrefclk_out),
+   .qpll1pd_in(qpll1pd_in),
+   .qpll1reset_in(qpll1reset_in),
+   .qpllrsvd2_in(qpllrsvd2_in),
+   .qpllrsvd3_in(qpllrsvd3_in),
    .rx8b10ben_in(rx8b10ben_in),
    .rxbufreset_in(rxbufreset_in),
    .rxbufstatus_out(rxbufstatus_out),
@@ -902,9 +910,9 @@ endgenerate
     assign GT_PCIERATEQPLLRESET = {pcierateqpllreset_out[1:0],pcierateqpllreset_out[3:2],pcierateqpllreset_out[5:4],pcierateqpllreset_out[7:6],pcierateqpllreset_out[9:8],pcierateqpllreset_out[11:10],pcierateqpllreset_out[13:12],pcierateqpllreset_out[15:14]};    
 
 //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    assign GTCOM_QPLL1LOCK      = 0;
-    assign GTCOM_QPLL1OUTCLK    = 0;
-    assign GTCOM_QPLL1OUTREFCLK = 0;
+    assign GTCOM_QPLL1LOCK      = qpll1lock_out;
+    assign GTCOM_QPLL1OUTCLK    = qpll1outclk_out;
+    assign GTCOM_QPLL1OUTREFCLK = qpll1outrefclk_out;
     assign GTCOM_DRPRDY = 0;    
     assign GTCOM_DRPDO  = 0;         
 

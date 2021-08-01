@@ -71,10 +71,7 @@ proc create_report { reportName command } {
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 3
-set_param synth.incrementalSynthesisCache C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/.Xil/Vivado-1568-DESKTOP-ILOVGO9/incrSyn
 set_param xicom.use_bs_reader 1
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 set_msg_config  -id {[BD 41-1306]}  -suppress 
 set_msg_config  -id {[BD 41-1271]}  -suppress 
 OPTRACE "Creating in-memory project" START { }
@@ -116,6 +113,15 @@ read_verilog -library xil_defaultlib {
   C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_top.v
   C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/new/xdma_app.v
 }
+read_ip -quiet C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/instr_fifo/instr_fifo.xci
+set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/instr_fifo/instr_fifo.xdc]
+
+read_ip -quiet C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/axis_clock_converter_c2h/axis_clock_converter_c2h.xci
+set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/axis_clock_converter_c2h/axis_clock_converter_c2h_ooc.xdc]
+
+read_ip -quiet C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/axis_clock_converter_0/axis_clock_converter_0.xci
+set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/axis_clock_converter_0/axis_clock_converter_0_ooc.xdc]
+
 read_ip -quiet C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/xdma_0.xci
 set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/ip_2/xdma_v4_1_8_blk_mem_64_noreg_be_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/ip_1/xdma_v4_1_8_blk_mem_64_reg_be_ooc.xdc]
@@ -126,15 +132,6 @@ set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop
 set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/xdma_0_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/source/xdma_0_pcie3_us_ip.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/synth/xdma_0_ooc.xdc]
-
-read_ip -quiet C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/instr_fifo/instr_fifo.xci
-set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/instr_fifo/instr_fifo.xdc]
-
-read_ip -quiet c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/axis_clock_converter_c2h/axis_clock_converter_c2h.xci
-set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/axis_clock_converter_c2h/axis_clock_converter_c2h_ooc.xdc]
-
-read_ip -quiet c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/axis_clock_converter_0/axis_clock_converter_0.xci
-set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/axis_clock_converter_0/axis_clock_converter_0_ooc.xdc]
 
 read_ip -quiet C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ddr4_0.xci
 set_property used_in_implementation false [get_files -all c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/ip_1/par/ddr4_0_phy_ooc.xdc]

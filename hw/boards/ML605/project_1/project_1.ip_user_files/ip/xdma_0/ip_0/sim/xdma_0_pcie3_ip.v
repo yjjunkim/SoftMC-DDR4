@@ -191,6 +191,9 @@ module xdma_0_pcie3_ip (
   pcie_perstn1_in,
   pcie_perstn0_out,
   pcie_perstn1_out,
+  int_qpll1lock_out,
+  int_qpll1outrefclk_out,
+  int_qpll1outclk_out,
   phy_rdy_out
 );
 
@@ -210,55 +213,55 @@ output wire user_clk;
 output wire user_reset;
 output wire user_lnk_up;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis_rq TDATA" *)
-input wire [63 : 0] s_axis_rq_tdata;
+input wire [127 : 0] s_axis_rq_tdata;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis_rq TKEEP" *)
-input wire [1 : 0] s_axis_rq_tkeep;
+input wire [3 : 0] s_axis_rq_tkeep;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis_rq TLAST" *)
 input wire s_axis_rq_tlast;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis_rq TREADY" *)
 output wire [3 : 0] s_axis_rq_tready;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis_rq TUSER" *)
 input wire [59 : 0] s_axis_rq_tuser;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME s_axis_rq, TDATA_NUM_BYTES 8, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 60, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.000, LAYERED_METADATA undef, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME s_axis_rq, TDATA_NUM_BYTES 16, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 60, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.000, LAYERED_METADATA undef, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis_rq TVALID" *)
 input wire s_axis_rq_tvalid;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_rc TDATA" *)
-output wire [63 : 0] m_axis_rc_tdata;
+output wire [127 : 0] m_axis_rc_tdata;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_rc TKEEP" *)
-output wire [1 : 0] m_axis_rc_tkeep;
+output wire [3 : 0] m_axis_rc_tkeep;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_rc TLAST" *)
 output wire m_axis_rc_tlast;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_rc TREADY" *)
 input wire m_axis_rc_tready;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_rc TUSER" *)
 output wire [74 : 0] m_axis_rc_tuser;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME m_axis_rc, TDATA_NUM_BYTES 8, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 75, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.000, LAYERED_METADATA undef, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME m_axis_rc, TDATA_NUM_BYTES 16, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 75, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.000, LAYERED_METADATA undef, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_rc TVALID" *)
 output wire m_axis_rc_tvalid;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_cq TDATA" *)
-output wire [63 : 0] m_axis_cq_tdata;
+output wire [127 : 0] m_axis_cq_tdata;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_cq TKEEP" *)
-output wire [1 : 0] m_axis_cq_tkeep;
+output wire [3 : 0] m_axis_cq_tkeep;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_cq TLAST" *)
 output wire m_axis_cq_tlast;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_cq TREADY" *)
 input wire m_axis_cq_tready;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_cq TUSER" *)
 output wire [84 : 0] m_axis_cq_tuser;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME m_axis_cq, TDATA_NUM_BYTES 8, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 85, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.000, LAYERED_METADATA undef, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME m_axis_cq, TDATA_NUM_BYTES 16, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 85, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.000, LAYERED_METADATA undef, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_cq TVALID" *)
 output wire m_axis_cq_tvalid;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis_cc TDATA" *)
-input wire [63 : 0] s_axis_cc_tdata;
+input wire [127 : 0] s_axis_cc_tdata;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis_cc TKEEP" *)
-input wire [1 : 0] s_axis_cc_tkeep;
+input wire [3 : 0] s_axis_cc_tkeep;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis_cc TLAST" *)
 input wire s_axis_cc_tlast;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis_cc TREADY" *)
 output wire [3 : 0] s_axis_cc_tready;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis_cc TUSER" *)
 input wire [32 : 0] s_axis_cc_tuser;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME s_axis_cc, TDATA_NUM_BYTES 8, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 33, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.000, LAYERED_METADATA undef, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME s_axis_cc, TDATA_NUM_BYTES 16, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 33, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.000, LAYERED_METADATA undef, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis_cc TVALID" *)
 input wire s_axis_cc_tvalid;
 (* X_INTERFACE_INFO = "xilinx.com:interface:pcie3_cfg_status:1.0 pcie3_cfg_status rq_seq_num" *)
@@ -473,19 +476,25 @@ input wire sys_reset;
 input wire pcie_perstn1_in;
 output wire pcie_perstn0_out;
 output wire pcie_perstn1_out;
+(* X_INTERFACE_INFO = "xilinx.com:display_pcie3_ultrascale:int_shared_logic:1.0 pcie3_us_int_shared_logic ints_qpll1lock_out" *)
+output wire [1 : 0] int_qpll1lock_out;
+(* X_INTERFACE_INFO = "xilinx.com:display_pcie3_ultrascale:int_shared_logic:1.0 pcie3_us_int_shared_logic ints_qpll1outrefclk_out" *)
+output wire [1 : 0] int_qpll1outrefclk_out;
+(* X_INTERFACE_INFO = "xilinx.com:display_pcie3_ultrascale:int_shared_logic:1.0 pcie3_us_int_shared_logic ints_qpll1outclk_out" *)
+output wire [1 : 0] int_qpll1outclk_out;
 output wire phy_rdy_out;
 
   xdma_0_pcie3_ip_pcie3_uscale_core_top #(
-    .PL_LINK_CAP_MAX_LINK_SPEED(1),
+    .PL_LINK_CAP_MAX_LINK_SPEED(2),
     .PL_LINK_CAP_MAX_LINK_WIDTH(8),
     .USER_CLK_FREQ(3),
     .CORE_CLK_FREQ(1),
-    .PLL_TYPE(0),
+    .PLL_TYPE(2),
     .PF0_LINK_CAP_ASPM_SUPPORT(0),
-    .C_DATA_WIDTH(64),
+    .C_DATA_WIDTH(128),
     .REF_CLK_FREQ(0),
-    .PCIE_LINK_SPEED(2),
-    .KEEP_WIDTH(2),
+    .PCIE_LINK_SPEED(3),
+    .KEEP_WIDTH(4),
     .ARI_CAP_ENABLE("FALSE"),
     .PF0_ARI_CAP_NEXT_FUNC(8'H00),
     .AXISTEN_IF_CC_ALIGNMENT_MODE("TRUE"),
@@ -520,7 +529,7 @@ output wire phy_rdy_out;
     .PF0_CAPABILITY_POINTER(8'H80),
     .PF0_CLASS_CODE(24'H070001),
     .PF0_VENDOR_ID(16'H10EE),
-    .PF0_DEVICE_ID(16'H8018),
+    .PF0_DEVICE_ID(16'H8028),
     .PF0_DEV_CAP2_128B_CAS_ATOMIC_COMPLETER_SUPPORT("FALSE"),
     .PF0_DEV_CAP2_32B_ATOMIC_COMPLETER_SUPPORT("FALSE"),
     .PF0_DEV_CAP2_64B_ATOMIC_COMPLETER_SUPPORT("FALSE"),
@@ -1043,9 +1052,9 @@ output wire phy_rdy_out;
     .ext_qpll1lock_out(2'B0),
     .ext_qpll1outclk_out(2'B0),
     .ext_qpll1outrefclk_out(2'B0),
-    .int_qpll1lock_out(),
-    .int_qpll1outrefclk_out(),
-    .int_qpll1outclk_out(),
+    .int_qpll1lock_out(int_qpll1lock_out),
+    .int_qpll1outrefclk_out(int_qpll1outrefclk_out),
+    .int_qpll1outclk_out(int_qpll1outclk_out),
     .common_commands_in(26'B0),
     .pipe_rx_0_sigs(84'B0),
     .pipe_rx_1_sigs(84'B0),

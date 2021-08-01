@@ -2,10 +2,10 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Fri Jul 30 11:44:21 2021
-# Process ID: 31532
+# Start of session at: Sat Jul 31 00:32:04 2021
+# Process ID: 14600
 # Current directory: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent28340 C:\Users\yongj\Desktop\softmc_ddr4\hw\boards\ML605\project_1\project_1.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17140 C:\Users\yongj\Desktop\softmc_ddr4\hw\boards\ML605\project_1\project_1.xpr
 # Log file: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/vivado.log
 # Journal file: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1\vivado.jou
 #-----------------------------------------------------------
@@ -17,6 +17,1222 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
-open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1073.891 ; gain = 0.000
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 1085.973 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-50] Design contains embedded sources, generating MEM files for simulation...
+Generating merged BMM file for the design top 'ddr4_0'...
+Generating merged BMM file for the design top 'ddr4_0'...
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_softMC_top' in fileset 'sim_1'...
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/axis_clock_converter_0/axis_clock_converter_0.xml'
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/axis_clock_converter_c2h/axis_clock_converter_c2h.xml'
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/instr_fifo/instr_fifo.xml'
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/xdma_0.xml'
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/ip_0/xdma_0_pcie3_ip.xml'
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/ip_2/xdma_v4_1_8_blk_mem_64_noreg_be.xml'
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/ip_1/xdma_v4_1_8_blk_mem_64_reg_be.xml'
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/ip_0/ip_0/xdma_0_pcie3_ip_gt.xml'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -L xilinx_vip -prj tb_softMC_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/new/xilinx_dma_pcie_ep.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xilinx_dma_pcie_ep
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/new/xdma_app.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_app
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/instr_fifo/sim/instr_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instr_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/axis_clock_converter_c2h/sim/axis_clock_converter_c2h.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axis_clock_converter_c2h
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/axis_clock_converter_0/sim/axis_clock_converter_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axis_clock_converter_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/ip_0/sim/gtwizard_ultrascale_v1_7_gthe3_channel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gtwizard_ultrascale_v1_7_9_gthe3_channel
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/ip_0/sim/xdma_0_pcie3_ip_gt_gthe3_channel_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_gt_gthe3_channel_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/ip_0/sim/xdma_0_pcie3_ip_gt_gtwizard_gthe3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_gt_gtwizard_gthe3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/ip_0/sim/xdma_0_pcie3_ip_gt_gtwizard_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_gt_gtwizard_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/ip_0/sim/xdma_0_pcie3_ip_gt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_gt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_tph_tbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_tph_tbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_pipe_lane.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_pipe_lane
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_bram_16k.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_bram_16k
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_bram_rep_8k.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_bram_rep_8k
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_bram_req_8k.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_bram_req_8k
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_gt_channel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_gt_channel
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_pipe_pipeline.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_pipe_pipeline
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_pipe_misc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_pipe_misc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_init_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_init_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_gt_common.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_gt_common
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_bram_8k.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_bram_8k
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_bram_rep.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_bram_rep
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_bram_req.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_bram_req
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_phy_sync.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_phy_sync
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_bram_cpl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_bram_cpl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_sys_clk_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_sys_clk_gen_ps
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_phy_rst.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_phy_rst
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_phy_txeq.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_phy_txeq
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_phy_clk.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_phy_clk
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_bram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_phy_rxeq.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_phy_rxeq
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_gtwizard_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_gtwizard_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_phy_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_phy_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_pcie3_uscale_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_pcie3_uscale_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_pcie3_uscale_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_pcie3_uscale_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_phy_sync_cell.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_phy_sync_cell
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_rxcdrhold.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_rxcdrhold
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_pcie3_uscale_core_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_pcie3_uscale_core_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/sim/xdma_0_pcie3_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_1/sim/xdma_v4_1_8_blk_mem_64_reg_be.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_v4_1_8_blk_mem_64_reg_be
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_2/sim/xdma_v4_1_8_blk_mem_64_noreg_be.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_v4_1_8_blk_mem_64_noreg_be
+"xvhdl --incr --relax -prj tb_softMC_top_vhdl.prj"
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1136.547 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto b05a631014b24489b6600b177fa38575 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L microblaze_v11_0_4 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L lmb_v10_v3_0_11 -L lmb_bram_if_cntlr_v4_0_19 -L blk_mem_gen_v8_4_4 -L iomodule_v3_1_6 -L fifo_generator_v13_2_5 -L axis_infrastructure_v1_1_0 -L axis_clock_converter_v1_1_23 -L gtwizard_ultrascale_v1_7_9 -L xdma_v4_1_8 -L uvm -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_softMC_top_behav xil_defaultlib.tb_softMC_top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto b05a631014b24489b6600b177fa38575 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L microblaze_v11_0_4 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L lmb_v10_v3_0_11 -L lmb_bram_if_cntlr_v4_0_19 -L blk_mem_gen_v8_4_4 -L iomodule_v3_1_6 -L fifo_generator_v13_2_5 -L axis_infrastructure_v1_1_0 -L axis_clock_converter_v1_1_23 -L gtwizard_ultrascale_v1_7_9 -L xdma_v4_1_8 -L uvm -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_softMC_top_behav xil_defaultlib.tb_softMC_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'pci_exp_txn' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_top.v:630]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'pci_exp_txp' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_top.v:631]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'pci_exp_rxn' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_top.v:632]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'pci_exp_rxp' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/softMC_top.v:633]
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 6 for port 'rbar_bar_size_sd' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/sim/xdma_0.sv:1486]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'rbar_function_number_sd' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/sim/xdma_0.sv:1487]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'cfg_max_payload_sd' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/sim/xdma_0.sv:1499]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 252 for port 'cfg_vf_flr_done' [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/xdma_v4_1/hdl/xdma_v4_1_vl_rfs.sv:45506]
+WARNING: [VRFC 10-3091] actual bit length 256 differs from formal bit length 64 for port 'cfg_interrupt_msix_address' [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/xdma_v4_1/hdl/xdma_v4_1_vl_rfs.sv:45897]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 1 for port 'm_axis_rq_tready' [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/xdma_v4_1/hdl/xdma_v4_1_vl_rfs.sv:44087]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CFG_MSIEN_IN' [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/xdma_v4_1/hdl/xdma_v4_1_vl_rfs.sv:44394]
+WARNING: [VRFC 10-3091] actual bit length 256 differs from formal bit length 4 for port 'cfg_flr_done' [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/xdma_v4_1/hdl/xdma_v4_1_vl_rfs.sv:44449]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'axi_rrq_rdy' [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/xdma_v4_1/hdl/xdma_v4_1_vl_rfs.sv:42987]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'axi_rrq_vld' [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/xdma_v4_1/hdl/xdma_v4_1_vl_rfs.sv:42988]
+WARNING: [VRFC 10-3091] actual bit length 242 differs from formal bit length 121 for port 'axi_rrq_req' [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/xdma_v4_1/hdl/xdma_v4_1_vl_rfs.sv:42989]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'RST_QPLL0LOCK' [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_phy_wrapper.v:531]
+WARNING: [VRFC 10-5021] port 'cfg_fc_vc_sel' is not connected on this instance [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/sim/xdma_0.sv:159]
+WARNING: [VRFC 10-3027] 'cfg_max_payload' was previously declared with a different range [C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.ip_user_files/ip/xdma_0/xdma_v4_1/hdl/verilog/xdma_0_core_top.sv:3717]
+WARNING: [VRFC 10-3705] select index 1 into 'h2c_dat_bram_in' is out of bounds [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/xdma_v4_1/hdl/xdma_v4_1_vl_rfs.sv:41959]
+WARNING: [VRFC 10-3705] select index 1 into 'h2c_dat_bram_in' is out of bounds [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/xdma_v4_1/hdl/xdma_v4_1_vl_rfs.sv:41960]
+WARNING: [VRFC 10-3705] select index 1 into 'h2c_dat_bram_out' is out of bounds [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/xdma_v4_1/hdl/xdma_v4_1_vl_rfs.sv:41961]
+WARNING: [VRFC 10-3705] select index 1 into 'h2c_dat_bram_out' is out of bounds [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/xdma_v4_1/hdl/xdma_v4_1_vl_rfs.sv:41962]
+WARNING: [VRFC 10-3705] select index 1 into 'h2c_dat_bram_cmd_out' is out of bounds [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/xdma_v4_1/hdl/xdma_v4_1_vl_rfs.sv:41963]
+WARNING: [VRFC 10-3705] select index 1 into 'h2c_dat_bram_cmd_out' is out of bounds [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/xdma_v4_1/hdl/xdma_v4_1_vl_rfs.sv:41964]
+WARNING: [VRFC 10-3705] select index 1 into 'h2c_dat_bram_cmd_out' is out of bounds [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/xdma_v4_1/hdl/xdma_v4_1_vl_rfs.sv:41966]
+WARNING: [VRFC 10-3705] select index 2 into 'h2c_dat_bram_in' is out of bounds [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/xdma_v4_1/hdl/xdma_v4_1_vl_rfs.sv:41968]
+WARNING: [VRFC 10-3705] select index 2 into 'h2c_dat_bram_in' is out of bounds [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/xdma_v4_1/hdl/xdma_v4_1_vl_rfs.sv:41969]
+WARNING: [VRFC 10-3705] select index 2 into 'h2c_dat_bram_out' is out of bounds [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/xdma_v4_1/hdl/xdma_v4_1_vl_rfs.sv:41970]
+WARNING: [VRFC 10-3705] select index 2 into 'h2c_dat_bram_out' is out of bounds [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/xdma_v4_1/hdl/xdma_v4_1_vl_rfs.sv:41971]
+WARNING: [VRFC 10-3705] select index 2 into 'h2c_dat_bram_cmd_out' is out of bounds [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/xdma_v4_1/hdl/xdma_v4_1_vl_rfs.sv:41972]
+WARNING: [VRFC 10-3705] select index 2 into 'h2c_dat_bram_cmd_out' is out of bounds [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/xdma_v4_1/hdl/xdma_v4_1_vl_rfs.sv:41973]
+WARNING: [VRFC 10-3705] select index 2 into 'h2c_dat_bram_cmd_out' is out of bounds [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/xdma_v4_1/hdl/xdma_v4_1_vl_rfs.sv:41975]
+WARNING: [VRFC 10-3705] select index 3 into 'h2c_dat_bram_in' is out of bounds [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/xdma_v4_1/hdl/xdma_v4_1_vl_rfs.sv:41977]
+WARNING: [VRFC 10-3705] select index 3 into 'h2c_dat_bram_in' is out of bounds [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/xdma_v4_1/hdl/xdma_v4_1_vl_rfs.sv:41978]
+WARNING: [VRFC 10-3705] select index 3 into 'h2c_dat_bram_out' is out of bounds [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/xdma_v4_1/hdl/xdma_v4_1_vl_rfs.sv:41979]
+WARNING: [VRFC 10-3705] select index 3 into 'h2c_dat_bram_out' is out of bounds [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/xdma_v4_1/hdl/xdma_v4_1_vl_rfs.sv:41980]
+WARNING: [VRFC 10-3705] select index 3 into 'h2c_dat_bram_cmd_out' is out of bounds [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/xdma_v4_1/hdl/xdma_v4_1_vl_rfs.sv:41981]
+WARNING: [VRFC 10-3705] select index 3 into 'h2c_dat_bram_cmd_out' is out of bounds [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/xdma_v4_1/hdl/xdma_v4_1_vl_rfs.sv:41982]
+WARNING: [VRFC 10-3705] select index 3 into 'h2c_dat_bram_cmd_out' is out of bounds [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/xdma_v4_1/hdl/xdma_v4_1_vl_rfs.sv:41984]
+WARNING: [VRFC 10-3705] select index 1 into 'c2h_dat_bram_in' is out of bounds [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/xdma_v4_1/hdl/xdma_v4_1_vl_rfs.sv:41995]
+WARNING: [VRFC 10-3705] select index 1 into 'c2h_dat_bram_in' is out of bounds [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/xdma_v4_1/hdl/xdma_v4_1_vl_rfs.sv:41996]
+WARNING: [VRFC 10-3705] select index 1 into 'c2h_dat_bram_out' is out of bounds [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/xdma_v4_1/hdl/xdma_v4_1_vl_rfs.sv:41997]
+WARNING: [VRFC 10-3705] select index 1 into 'c2h_dat_bram_out' is out of bounds [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/xdma_v4_1/hdl/xdma_v4_1_vl_rfs.sv:41998]
+WARNING: [VRFC 10-3705] select index 1 into 'c2h_dat_bram_cmd_out' is out of bounds [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/xdma_v4_1/hdl/xdma_v4_1_vl_rfs.sv:41999]
+WARNING: [VRFC 10-3705] select index 1 into 'c2h_dat_bram_cmd_out' is out of bounds [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/xdma_v4_1/hdl/xdma_v4_1_vl_rfs.sv:42000]
+WARNING: [VRFC 10-3705] select index 1 into 'c2h_dat_bram_cmd_out' is out of bounds [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/xdma_v4_1/hdl/xdma_v4_1_vl_rfs.sv:42002]
+WARNING: [VRFC 10-3705] select index 2 into 'c2h_dat_bram_in' is out of bounds [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/xdma_v4_1/hdl/xdma_v4_1_vl_rfs.sv:42004]
+WARNING: [VRFC 10-3705] select index 2 into 'c2h_dat_bram_in' is out of bounds [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/xdma_v4_1/hdl/xdma_v4_1_vl_rfs.sv:42005]
+WARNING: [VRFC 10-3705] select index 2 into 'c2h_dat_bram_out' is out of bounds [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/xdma_v4_1/hdl/xdma_v4_1_vl_rfs.sv:42006]
+WARNING: [VRFC 10-3705] select index 2 into 'c2h_dat_bram_out' is out of bounds [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/xdma_v4_1/hdl/xdma_v4_1_vl_rfs.sv:42007]
+WARNING: [VRFC 10-3705] select index 2 into 'c2h_dat_bram_cmd_out' is out of bounds [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/xdma_v4_1/hdl/xdma_v4_1_vl_rfs.sv:42008]
+WARNING: [VRFC 10-3705] select index 2 into 'c2h_dat_bram_cmd_out' is out of bounds [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/xdma_v4_1/hdl/xdma_v4_1_vl_rfs.sv:42009]
+WARNING: [VRFC 10-3705] select index 2 into 'c2h_dat_bram_cmd_out' is out of bounds [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/xdma_v4_1/hdl/xdma_v4_1_vl_rfs.sv:42011]
+WARNING: [VRFC 10-3705] select index 3 into 'c2h_dat_bram_in' is out of bounds [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/xdma_v4_1/hdl/xdma_v4_1_vl_rfs.sv:42013]
+WARNING: [VRFC 10-3705] select index 3 into 'c2h_dat_bram_in' is out of bounds [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/xdma_v4_1/hdl/xdma_v4_1_vl_rfs.sv:42014]
+WARNING: [VRFC 10-3705] select index 3 into 'c2h_dat_bram_out' is out of bounds [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/xdma_v4_1/hdl/xdma_v4_1_vl_rfs.sv:42015]
+WARNING: [VRFC 10-3705] select index 3 into 'c2h_dat_bram_out' is out of bounds [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/xdma_v4_1/hdl/xdma_v4_1_vl_rfs.sv:42016]
+WARNING: [VRFC 10-3705] select index 3 into 'c2h_dat_bram_cmd_out' is out of bounds [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/xdma_v4_1/hdl/xdma_v4_1_vl_rfs.sv:42017]
+WARNING: [VRFC 10-3705] select index 3 into 'c2h_dat_bram_cmd_out' is out of bounds [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/xdma_v4_1/hdl/xdma_v4_1_vl_rfs.sv:42018]
+WARNING: [VRFC 10-3705] select index 3 into 'c2h_dat_bram_cmd_out' is out of bounds [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/xdma_v4_1/hdl/xdma_v4_1_vl_rfs.sv:42020]
+WARNING: [VRFC 10-3705] select index 119 into 's_axis_cq_tuser' is out of bounds [/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/xdma_v4_1/hdl/xdma_v4_1_vl_rfs.sv:28417]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4398] File "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_cplx.sv" Line 855 : The System Verilog Assertion  will be ignored as it appears inside another process. This assertion is not yet supported.
+WARNING: [XSIM 43-4398] File "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_top.sv" Line 1812 : The System Verilog Assertion  will be ignored as it appears inside another process. This assertion is not yet supported.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.arch_package
+Compiling package xil_defaultlib.$unit_xdma_0_dma_bram_wrap_sv
+Compiling package xdma_v4_1_8.$unit_xdma_v4_1_vl_rfs_sv
+Compiling package xil_defaultlib.MemArray
+Compiling package xil_defaultlib.proj_package
+Compiling module xil_defaultlib.DDR4_if(CONFIGURED_DQ_BITS=16)
+Compiling module xil_defaultlib.WireDelay(Delay_g=0.0,Delay_rd=0...
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.MMCME3_ADV(CLKFBOUT_MULT_F=14.0,...
+Compiling module xil_defaultlib.ddr4_v2_2_10_infrastructure(CLKI...
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.IBUFDS(IBUF_LOW_PWR="FALSE")
+Compiling module unisims_ver.PLLE3_ADV(CLKFBOUT_MULT=4,CLKFBO...
+Compiling module xil_defaultlib.ddr4_phy_v2_2_0_pll(BACKBONE_ROU...
+Compiling module unisims_ver.HPIO_VREF(VREF_CNTR="FABRIC_RANG...
+Compiling module unisims_ver.IOBUFE3_default
+Compiling module unisims_ver.IOBUFDS
+Compiling module xil_defaultlib.ddr4_phy_v2_2_0_iob_byte(IOBTYPE...
+Compiling module unisims_ver.OBUFDS
+Compiling module xil_defaultlib.ddr4_phy_v2_2_0_iob_byte(IOBTYPE...
+Compiling module xil_defaultlib.ddr4_phy_v2_2_0_iob_byte(IOBTYPE...
+Compiling module xil_defaultlib.ddr4_phy_v2_2_0_iob_byte(IOBTYPE...
+Compiling module xil_defaultlib.ddr4_phy_v2_2_0_iob(BYTES=10,IOB...
+Compiling module xil_defaultlib.ddr4_phy_v2_2_0_fifo_sv(DEPTH=16...
+Compiling module xil_defaultlib.ddr4_phy_v2_2_0_bitslice_behav
+Compiling module xil_defaultlib.ddr4_phy_v2_2_0_xiphy_behav(BYTE...
+Compiling module xil_defaultlib.ddr4_0_phy_ddr4_default
+Compiling module xil_defaultlib.ddr4_0_phy
+Compiling module xil_defaultlib.ddr4_v2_2_10_cal_debug_microblaz...
+Compiling module xil_defaultlib.ddr4_v2_2_10_cal_cplx_data(DBYTE...
+Compiling module xil_defaultlib.ddr4_v2_2_10_cal_cplx(DBYTES=8,A...
+Compiling module xil_defaultlib.ddr4_v2_2_10_cal_mc_odt(ODTWR=16...
+Compiling module xil_defaultlib.ddr4_v2_2_10_cal_addr_decode(MEM...
+Compiling module xil_defaultlib.ddr4_v2_2_10_cal_config_rom(MEM0...
+Compiling module xil_defaultlib.ddr4_v2_2_10_chipscope_xsdb_slav...
+Compiling module xil_defaultlib.ddr4_v2_2_10_cal_sync(WIDTH=1)
+Compiling module xil_defaultlib.ddr4_v2_2_10_cal_sync(WIDTH=16)
+Compiling module xil_defaultlib.ddr4_v2_2_10_cal_sync(WIDTH=9)
+Compiling module xil_defaultlib.ddr4_v2_2_10_cal_xsdb_arbiter
+Compiling module xil_defaultlib.ddr4_v2_2_10_bram_tdp(INIT=2304'...
+Compiling module xil_defaultlib.ddr4_v2_2_10_cfg_mem_mod(SIZE=36...
+Compiling module xil_defaultlib.ddr4_v2_2_10_cal_xsdb_bram(SPREA...
+Compiling module xil_defaultlib.ddr4_v2_2_10_cal(ABITS=17,BGBITS...
+Compiling module xil_defaultlib.ddr4_v2_2_10_cal_rd_en(RL=32'b01...
+Compiling module xil_defaultlib.ddr4_v2_2_10_cal_read(DBYTES=8,R...
+Compiling module xil_defaultlib.ddr4_v2_2_10_cal_wr_bit
+Compiling module xil_defaultlib.ddr4_v2_2_10_cal_wr_byte_default
+Compiling module xil_defaultlib.ddr4_v2_2_10_cal_write(DBYTES=8,...
+Compiling module xil_defaultlib.ddr4_v2_2_10_cal_pi(DBYTES=8,RL=...
+Compiling module xil_defaultlib.ddr4_v2_2_10_cal_top(ABITS=17,BG...
+Compiling module unisims_ver.VCC
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.FDRE_default
+Compiling module unisims_ver.FDR
+Compiling module unisims_ver.FDSE_default
+Compiling module unisims_ver.FDS
+Compiling module unisims_ver.FD
+Compiling module unisims_ver.FDRE(INIT=1'b1)
+Compiling module unisims_ver.FD(INIT=1'b1)
+Compiling module unisims_ver.RAM32X1D
+Compiling module unisims_ver.FDE
+Compiling module unisims_ver.LUT6_2
+Compiling module unisims_ver.MUXCY
+Compiling module unisims_ver.MUXCY_L
+Compiling module unisims_ver.XORCY
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.MULT_AND
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.MUXF5
+Compiling module unisims_ver.SRL16E_default
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.FDSE(INIT=1'b0)
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module unisims_ver.MUXF7
+Compiling module unisims_ver.INV
+Compiling module unisims_ver.RB36_INTERNAL_VLOG(READ_WIDTH_A=...
+Compiling module unisims_ver.RAMB36E1(READ_WIDTH_A=2,READ_WID...
+Compiling module unisims_ver.RAMB36(READ_WIDTH_A=2,READ_WIDTH...
+Compiling module xil_defaultlib.microblaze_mcs
+Compiling module xil_defaultlib.ddr4_0_microblaze_mcs
+Compiling module xil_defaultlib.ddr4_0_ddr4_cal_riu(TCQ=100.0)
+Compiling module xil_defaultlib.ddr4_v2_2_10_cal_sync(WIDTH=1,TC...
+Compiling module xil_defaultlib.ddr4_v2_2_10_cal_sync(WIDTH=32,T...
+Compiling module xil_defaultlib.ddr4_v2_2_10_cal_sync(WIDTH=20,T...
+Compiling module xil_defaultlib.ddr4_0_ddr4_default
+Compiling module xil_defaultlib.ddr4_0
+Compiling module xil_defaultlib.maint_ctrl(tCK=1250,nCK_PER_CLK=...
+Compiling module xil_defaultlib.periodic_rd_ctrl(tCK=1250,nCK_PE...
+Compiling module xil_defaultlib.zq_calib_ctrl_default
+Compiling module xil_defaultlib.autoref_ctrl
+Compiling module xil_defaultlib.maint_ctrl_top(tCK=1250,nCK_PER_...
+Compiling module xil_defaultlib.maint_handler
+Compiling module xil_defaultlib.autoref_config
+Compiling module xil_defaultlib.instr_receiver
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_bhv_ver_s...
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_bhv_ver_p...
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_CONV_VER(...
+Compiling module fifo_generator_v13_2_5.fifo_generator_vlog_beh(C_COMMON...
+Compiling module xil_defaultlib.instr_fifo
+Compiling module xil_defaultlib.pipe_reg
+Compiling module xil_defaultlib.instr_decoder(ROW_WIDTH=17,BANK_...
+Compiling module xil_defaultlib.instr_dispatcher(ROW_WIDTH=17,BA...
+Compiling module xil_defaultlib.iseq_dispatcher(ROW_WIDTH=17,BAN...
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_bhv_ver_s...
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_bhv_ver_p...
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_CONV_VER(...
+Compiling module fifo_generator_v13_2_5.fifo_generator_vlog_beh(C_COMMON...
+Compiling module xil_defaultlib.rdback_fifo
+Compiling module xil_defaultlib.read_capturer
+Compiling module xil_defaultlib.softMC(tCK=1250,nCK_PER_CLK=4,RO...
+Compiling module unisims_ver.IBUFDS_GTE3_default
+Compiling module unisims_ver.IBUF
+Compiling module xil_defaultlib.dma_pcie_axis_rq_if(DATA_WIDTH=1...
+Compiling module xil_defaultlib.dma_pcie_axis_cc_if(DATA_WIDTH=1...
+Compiling module xil_defaultlib.dma_pcie_axis_rc_if(DATA_WIDTH=1...
+Compiling module xil_defaultlib.dma_pcie_axis_cq_if(DATA_WIDTH=1...
+Compiling module xil_defaultlib.dma_pcie_misc_output_if
+Compiling module xil_defaultlib.dma_pcie_misc_input_if
+Compiling module xil_defaultlib.dma_pcie_gic_if
+Compiling module xil_defaultlib.dma_pcie_fabric_output_if
+Compiling module xil_defaultlib.dma_pcie_fabric_input_if
+Compiling module xil_defaultlib.dma_pcie_mi_4Bx2048_4Bwe_ram_if
+Compiling module xil_defaultlib.dma_pcie_mi_16Bx2048_4Bwe_ram_if
+Compiling module xil_defaultlib.dma_pcie_mi_2Bx2048_ram_if
+Compiling module xil_defaultlib.dma_pcie_mi_8Bx2048_4Bwe_ram_if
+Compiling module xil_defaultlib.dma_pcie_mi_dsc_cpli_if
+Compiling module xil_defaultlib.dma_pcie_mi_dsc_cpld_if
+Compiling module xil_defaultlib.dma_pcie_dsc_in_if
+Compiling module xil_defaultlib.dma_pcie_dsc_out_if
+Compiling module xil_defaultlib.dma_pcie_mi_64Bx256_32Bwe_ram_if
+Compiling module xil_defaultlib.dma_pcie_mi_64Bx512_32Bwe_ram_if
+Compiling module xil_defaultlib.dma_pcie_mi_64Bx2048_32Bwe_ram_i...
+Compiling module xil_defaultlib.dma_pcie_mi_64Bx1024_32Bwe_ram_i...
+Compiling module xdma_v4_1_8.xdma_v4_1_8_GenericFIFOHead(BUF_...
+Compiling module xdma_v4_1_8.xdma_v4_1_8_GenericFIFOHead(BUF_...
+Compiling module xdma_v4_1_8.xdma_v4_1_8_GenericFIFOHead(BUF_...
+Compiling module xdma_v4_1_8.xdma_v4_1_8_GenericFIFO(BUF_DATA...
+Compiling module xdma_v4_1_8.xdma_v4_1_8_GenericFIFO(BUF_DATA...
+Compiling module xdma_v4_1_8.xdma_v4_1_8_GenericFIFOAsync(BUF...
+Compiling module xdma_v4_1_8.xdma_v4_1_8_GenericFIFOHead(BUF_...
+Compiling module xdma_v4_1_8.xdma_v4_1_8_GenericFIFO(BUF_DATA...
+Compiling module xdma_v4_1_8.xdma_v4_1_8_GenericFIFO(BUF_DATA...
+Compiling module xdma_v4_1_8.xdma_v4_1_8_GenericFIFOAsync(BUF...
+Compiling module xdma_v4_1_8.xdma_v4_1_8_GenericFIFOAsync(BUF...
+Compiling module xdma_v4_1_8.xdma_v4_1_8_GenericFIFO(BUF_DATA...
+Compiling module xdma_v4_1_8.xdma_v4_1_8_GenericFIFOHead2(BUF...
+Compiling module xdma_v4_1_8.xdma_v4_1_8_GenericFIFO(BUF_DATA...
+Compiling module xpm.xpm_cdc_single(SRC_INPUT_REG=0)
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_axi_regs_fwd_v8_4(C_DATA...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="vir...
+Compiling module xil_defaultlib.xdma_v4_1_8_blk_mem_64_reg_be
+Compiling module xil_defaultlib.xdma_v4_1_8_dma_bram_wrap(DATA_W...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="vir...
+Compiling module xil_defaultlib.xdma_v4_1_8_blk_mem_64_noreg_be
+Compiling module xil_defaultlib.xdma_v4_1_8_dma_bram_wrap(DATA_W...
+Compiling module unisims_ver.BUFG_GT
+Compiling module unisims_ver.BUFG_GT_SYNC
+Compiling module xpm.xpm_cdc_async_rst(DEST_SYNC_FF=2...
+Compiling module xpm.xpm_cdc_async_rst(DEST_SYNC_FF=2...
+Compiling module xil_defaultlib.xdma_0_pcie3_ip_phy_sync_cell(ST...
+Compiling module xil_defaultlib.xdma_0_pcie3_ip_phy_sync(STAGE=3...
+Compiling module xil_defaultlib.xdma_0_pcie3_ip_rxcdrhold
+Compiling module xil_defaultlib.xdma_0_pcie3_ip_phy_clk
+Compiling module xil_defaultlib.xdma_0_pcie3_ip_phy_sync(WIDTH=8...
+Compiling module xil_defaultlib.xdma_0_pcie3_ip_phy_sync(WIDTH=2...
+Compiling module xil_defaultlib.xdma_0_pcie3_ip_phy_rst(PHY_MAX_...
+Compiling module xil_defaultlib.xdma_0_pcie3_ip_phy_sync_cell
+Compiling module xil_defaultlib.xdma_0_pcie3_ip_phy_sync(WIDTH=2...
+Compiling module xil_defaultlib.xdma_0_pcie3_ip_phy_sync(WIDTH=4...
+Compiling module xil_defaultlib.xdma_0_pcie3_ip_phy_sync(WIDTH=6...
+Compiling module xil_defaultlib.xdma_0_pcie3_ip_phy_txeq
+Compiling module xil_defaultlib.xdma_0_pcie3_ip_phy_sync(WIDTH=3...
+Compiling module xil_defaultlib.xdma_0_pcie3_ip_phy_rxeq(PHY_SIM...
+Compiling module unisims_ver.GTHE3_CHANNEL(ALIGN_COMMA_ENABLE...
+Compiling module xil_defaultlib.gtwizard_ultrascale_v1_7_9_gthe3...
+Compiling module xil_defaultlib.xdma_0_pcie3_ip_gt_gthe3_channel...
+Compiling module xil_defaultlib.xdma_0_pcie3_ip_gt_gtwizard_gthe...
+Compiling module xil_defaultlib.xdma_0_pcie3_ip_gt_gtwizard_top(...
+Compiling module xil_defaultlib.xdma_0_pcie3_ip_gt
+Compiling module xil_defaultlib.xdma_0_pcie3_ip_gtwizard_top(PHY...
+Compiling module xil_defaultlib.xdma_0_pcie3_ip_phy_wrapper(SHAR...
+Compiling module xil_defaultlib.xdma_0_pcie3_ip_init_ctrl_defaul...
+Compiling module unisims_ver.RAMB36E2(DOB_REG=0,READ_WIDTH_A=...
+Compiling module xil_defaultlib.xdma_0_pcie3_ip_tph_tbl
+Compiling module xil_defaultlib.xdma_0_pcie3_ip_pipe_misc_defaul...
+Compiling module xil_defaultlib.xdma_0_pcie3_ip_pipe_lane_defaul...
+Compiling module xil_defaultlib.xdma_0_pcie3_ip_pipe_pipeline(PL...
+Compiling module unisims_ver.RAMB36E2(READ_WIDTH_A=36,READ_WI...
+Compiling module xil_defaultlib.xdma_0_pcie3_ip_bram_rep_8k_defa...
+Compiling module xil_defaultlib.xdma_0_pcie3_ip_bram_rep
+Compiling module unisims_ver.RAMB18E2(READ_WIDTH_A=36,RSTREG_...
+Compiling module xil_defaultlib.xdma_0_pcie3_ip_bram_req_8k_defa...
+Compiling module xil_defaultlib.xdma_0_pcie3_ip_bram_req
+Compiling module unisims_ver.RAMB18E2(READ_WIDTH_A=18,READ_WI...
+Compiling module xil_defaultlib.xdma_0_pcie3_ip_bram_16k_default
+Compiling module xil_defaultlib.xdma_0_pcie3_ip_bram_cpl_default
+Compiling module xil_defaultlib.xdma_0_pcie3_ip_bram
+Compiling module unisims_ver.PCIE_3_1(AXISTEN_IF_CC_ALIGNMENT...
+Compiling module xil_defaultlib.xdma_0_pcie3_ip_pcie3_uscale_wra...
+Compiling module xil_defaultlib.xdma_0_pcie3_ip_pcie3_uscale_top...
+Compiling module xil_defaultlib.xdma_0_pcie3_ip_pcie3_uscale_cor...
+Compiling module xil_defaultlib.xdma_0_pcie3_ip
+Compiling module xil_defaultlib.xdma_0_core_top(PL_UPSTREAM_FACI...
+Compiling module xil_defaultlib.xdma_0
+Compiling module axis_infrastructure_v1_1_0.axis_infrastructure_v1_1_0_util_...
+Compiling module xpm.xpm_cdc_sync_rst(DEST_SYNC_FF=2)
+Compiling module xpm.xpm_cdc_sync_rst(DEST_SYNC_FF=2,...
+Compiling module xpm.xpm_fifo_rst(COMMON_CLOCK=0)
+Compiling module xpm.xpm_fifo_reg_bit
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=6...
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=5...
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_cdc_gray(DEST_SYNC_FF=2,INIT...
+Compiling module xpm.xpm_fifo_reg_vec(REG_WIDTH=5)
+Compiling module xpm.xpm_cdc_gray(INIT_SYNC_FF=1,WIDT...
+Compiling module xpm.xpm_fifo_reg_vec(REG_WIDTH=6)
+Compiling module xpm.xpm_cdc_gray(DEST_SYNC_FF=2,INIT...
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=2...
+Compiling module xpm.xpm_fifo_base(COMMON_CLOCK=0,FIF...
+Compiling module xpm.xpm_fifo_async(FIFO_MEMORY_TYPE=...
+Compiling module axis_clock_converter_v1_1_23.axis_clock_converter_v1_1_23_axi...
+Compiling module axis_infrastructure_v1_1_0.axis_infrastructure_v1_1_0_util_...
+Compiling module axis_clock_converter_v1_1_23.axis_clock_converter_v1_1_23_axi...
+Compiling module xil_defaultlib.axis_clock_converter_0
+Compiling module xil_defaultlib.xdma_app_default
+Compiling module xil_defaultlib.xilinx_dma_pcie_ep_default
+Compiling module xil_defaultlib.softMC_top(tCK=1250,REFCLK_FREQ=...
+Compiling module xil_defaultlib.short
+Compiling module xil_defaultlib.tb_softMC_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_softMC_top_behav
+run_program: Time (s): cpu = 00:00:38 ; elapsed = 00:08:04 . Memory (MB): peak = 1148.750 ; gain = 12.203
+INFO: [USF-XSim-69] 'elaborate' step finished in '484' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_softMC_top_behav -key {Behavioral:sim_1:Functional:tb_softMC_top} -tclbatch {tb_softMC_top.tcl} -protoinst "protoinst_files/bd_9054.protoinst" -view {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/tb_softMC_top_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/bd_9054.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/bd_9054.protoinst for the following reason(s):
+There are no instances of module "bd_9054" in the design.
+
+Time resolution is 1 ps
+open_wave_config C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/tb_softMC_top_behav.wcfg
+source tb_softMC_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Block Memory Generator module tb_softMC_top.uut.EP.xdma_0_i.inst.ram_top.\gen_h2c_bram.H2C_DAT0_FIFO .\genblk1[0].genblk1.u_buffermem .inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_softMC_top.uut.EP.xdma_0_i.inst.ram_top.\gen_h2c_bram.H2C_DAT0_FIFO .\genblk1[1].genblk1.u_buffermem .inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_softMC_top.uut.EP.xdma_0_i.inst.ram_top.\gen_h2c_bram.H2C_DAT1_FIFO .\genblk1[0].genblk1.u_buffermem .inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_softMC_top.uut.EP.xdma_0_i.inst.ram_top.\gen_h2c_bram.H2C_DAT1_FIFO .\genblk1[1].genblk1.u_buffermem .inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_softMC_top.uut.EP.xdma_0_i.inst.ram_top.\gen_h2c_bram.H2C_DAT2_FIFO .\genblk1[0].genblk1.u_buffermem .inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_softMC_top.uut.EP.xdma_0_i.inst.ram_top.\gen_h2c_bram.H2C_DAT2_FIFO .\genblk1[1].genblk1.u_buffermem .inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_softMC_top.uut.EP.xdma_0_i.inst.ram_top.\gen_h2c_bram.H2C_DAT3_FIFO .\genblk1[0].genblk1.u_buffermem .inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_softMC_top.uut.EP.xdma_0_i.inst.ram_top.\gen_h2c_bram.H2C_DAT3_FIFO .\genblk1[1].genblk1.u_buffermem .inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_softMC_top.uut.EP.xdma_0_i.inst.ram_top.\gen_c2h_bram.C2H_DAT0_FIFO .\genblk1[0].genblk1.u_buffermem .inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_softMC_top.uut.EP.xdma_0_i.inst.ram_top.\gen_c2h_bram.C2H_DAT0_FIFO .\genblk1[1].genblk1.u_buffermem .inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_softMC_top.uut.EP.xdma_0_i.inst.ram_top.\gen_c2h_bram.C2H_DAT1_FIFO .\genblk1[0].genblk1.u_buffermem .inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_softMC_top.uut.EP.xdma_0_i.inst.ram_top.\gen_c2h_bram.C2H_DAT1_FIFO .\genblk1[1].genblk1.u_buffermem .inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_softMC_top.uut.EP.xdma_0_i.inst.ram_top.\gen_c2h_bram.C2H_DAT2_FIFO .\genblk1[0].genblk1.u_buffermem .inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_softMC_top.uut.EP.xdma_0_i.inst.ram_top.\gen_c2h_bram.C2H_DAT2_FIFO .\genblk1[1].genblk1.u_buffermem .inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_softMC_top.uut.EP.xdma_0_i.inst.ram_top.\gen_c2h_bram.C2H_DAT3_FIFO .\genblk1[0].genblk1.u_buffermem .inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_softMC_top.uut.EP.xdma_0_i.inst.ram_top.\gen_c2h_bram.C2H_DAT3_FIFO .\genblk1[1].genblk1.u_buffermem .inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_softMC_top.uut.EP.xdma_0_i.inst.ram_top.\mas_bridge_ram_write_512.MASTER_WRITE_FIFO .\genblk1[0].genblk1.u_buffermem .inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_softMC_top.uut.EP.xdma_0_i.inst.ram_top.\mas_bridge_ram_write_512.MASTER_WRITE_FIFO .\genblk1[1].genblk1.u_buffermem .inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_softMC_top.uut.EP.xdma_0_i.inst.ram_top.MASTER_READ_BRAM.\genblk1[0].genblk1.u_buffermem .inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_softMC_top.uut.EP.xdma_0_i.inst.ram_top.MASTER_READ_BRAM.\genblk1[1].genblk1.u_buffermem .inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Timescale of (xdma_0_pcie3_ip_pcie3_uscale_core_top(PL_LINK_CAP_MAX_LINK_SPEED=1,PL_LINK_CAP_MAX_LINK_WIDTH=8,USER_CLK_FREQ=2,CORE_CLK_FREQ=1,C_DATA_WIDTH=128,PCIE_LINK_SPEED=2,KEEP_WIDTH=4,AXISTEN_IF_CC_ALIGNMENT_MODE="TRUE",AXISTEN_IF_CQ_ALIGNMENT_MODE="TRUE",AXISTEN_IF_ENABLE_MSG_ROUTE=18'b100000000000000000,PF0_BAR0_APERTURE_SIZE=5'b01001,PF0_BAR2_APERTURE_SIZE=5'b0,PF0_BAR2_CONTROL=3'b0,PF0_BAR3_APERTURE_SIZE=5'b0,PF0_BAR4_APERTURE_SIZE=5'b0,PF0_BAR4_CONTROL=3'b0,PF0_BAR5_APERTURE_SIZE=5'b0,PF0_CAPABILITY_POINTER=8'b10000000,PF0_CLASS_CODE=24'b01110000000000000001,PF0_VENDOR_ID=16'b01000011101110,PF0_DEVICE_ID=16'b1000000000011000,PF0_DEV_CAP2_128B_CAS_ATOMIC_COMPLETER_SUPPORT="FALSE",PF0_DEV_CAP2_32B_ATOMIC_COMPLETER_SUPPORT="FALSE",PF0_DEV_CAP2_64B_ATOMIC_COMPLETER_SUPPORT="FALSE",PF0_DEV_CAP2_LTR_SUPPORT="FALSE",PF0_DEV_CAP_FUNCTION_LEVEL_RESET_CAPABLE="FALSE",PF0_DEV_CAP_MAX_PAYLOAD_SIZE=3'b010,PF0_DSN_CAP_NEXTPTR=12'b0,PF0_EXPANSION_ROM_APERTURE_SIZE=5'b0,PF0_MSIX_CAP_PBA_OFFSET=29'b0,PF0_MSIX_CAP_TABLE_OFFSET=29'b0,PF0_MSI_CAP_NEXTPTR=8'b11000000,PF0_PM_CAP_NEXTPTR=8'b10010000,PF0_PM_CAP_PMESUPPORT_D0="FALSE",PF0_PM_CAP_PMESUPPORT_D1="FALSE",PF0_PM_CAP_PMESUPPORT_D3HOT="FALSE",PF0_PM_CAP_SUPP_D1_STATE="FALSE",PF0_SRIOV_BAR0_APERTURE_SIZE=5'b0,PF0_SRIOV_BAR0_CONTROL=3'b0,PF0_SRIOV_BAR2_APERTURE_SIZE=5'b0,PF0_SRIOV_BAR2_CONTROL=3'b0,PF0_SRIOV_BAR3_APERTURE_SIZE=5'b0,PF0_SRIOV_BAR4_APERTURE_SIZE=5'b0,PF0_SRIOV_BAR4_CONTROL=3'b0,PF0_SRIOV_BAR5_APERTURE_SIZE=5'b0,PF0_SRIOV_CAP_VER=4'b0,PF0_SRIOV_SUPPORTED_PAGE_SIZE=32'b010101010011,PF0_SUBSYSTEM_VENDOR_ID=16'b01000011101110,PF0_SUBSYSTEM_ID=16'b0111,PF0_TPHR_CAP_INT_VEC_MODE="FALSE",PF1_TPHR_CAP_INT_VEC_MODE="FALSE",VF0_TPHR_CAP_INT_VEC_MODE="FALSE",VF1_TPHR_CAP_INT_VEC_MODE="FALSE",VF2_TPHR_CAP_INT_VEC_MODE="FALSE",VF3_TPHR_CAP_INT_VEC_MODE="FALSE",VF4_TPHR_CAP_INT_VEC_MODE="FALSE",VF5_TPHR_CAP_INT_VEC_MODE="FALSE",PF1_BAR0_APERTURE_SIZE=5'b0,PF1_BAR0_CONTROL=3'b0,PF1_BAR1_APERTURE_SIZE=5'b0,PF1_BAR2_APERTURE_SIZE=5'b0,PF1_BAR2_CONTROL=3'b0,PF1_BAR3_APERTURE_SIZE=5'b0,PF1_BAR4_APERTURE_SIZE=5'b0,PF1_BAR4_CONTROL=3'b0,PF1_BAR5_APERTURE_SIZE=5'b0,PF1_CAPABILITY_POINTER=8'b10000000,PF1_CLASS_CODE=24'b01011000000000000000,PF1_DEVICE_ID=16'b1000000000010001,PF1_DEV_CAP_MAX_PAYLOAD_SIZE=3'b010,PF1_DSN_CAP_NEXTPTR=12'b0,PF1_EXPANSION_ROM_APERTURE_SIZE=5'b0,PF1_INTERRUPT_PIN=3'b0,PF1_MSIX_CAP_PBA_OFFSET=29'b0,PF1_MSIX_CAP_TABLE_OFFSET=29'b0,PF1_SRIOV_BAR0_APERTURE_SIZE=5'b0,PF1_SRIOV_BAR0_CONTROL=3'b0,PF1_SRIOV_BAR2_APERTURE_SIZE=5'b0,PF1_SRIOV_BAR2_CONTROL=3'b0,PF1_SRIOV_BAR3_APERTURE_SIZE=5'b0,PF1_SRIOV_BAR4_APERTURE_SIZE=5'b0,PF1_SRIOV_BAR4_CONTROL=3'b0,PF1_SRIOV_BAR5_APERTURE_SIZE=5'b0,PF1_SRIOV_CAP_VER=4'b0,PF1_SRIOV_FUNC_DEP_LINK=16'b01,PF1_SRIOV_SUPPORTED_PAGE_SIZE=32'b010101010011,PF1_SUBSYSTEM_ID=16'b0111,TL_CREDITS_CD=12'b0,TL_CREDITS_CH=8'b0,VF0_CAPABILITY_POINTER=8'b10000000,VF0_MSIX_CAP_PBA_OFFSET=29'b0,VF0_MSIX_CAP_TABLE_OFFSET=29'b0,VF1_MSIX_CAP_PBA_OFFSET=29'b0,VF1_MSIX_CAP_TABLE_OFFSET=29'b0,VF2_MSIX_CAP_PBA_OFFSET=29'b0,VF2_MSIX_CAP_TABLE_OFFSET=29'b0,VF3_MSIX_CAP_PBA_OFFSET=29'b0,VF3_MSIX_CAP_TABLE_OFFSET=29'b0,VF4_MSIX_CAP_PBA_OFFSET=29'b0,VF4_MSIX_CAP_TABLE_OFFSET=29'b0,VF5_MSIX_CAP_PBA_OFFSET=29'b0,VF5_MSIX_CAP_TABLE_OFFSET=29'b0,AXISTEN_IF_ENABLE_CLIENT_TAG="TRUE",PCIE_USE_MODE="2.0",CFG_STATUS_IF="TRUE",TX_FC_IF="TRUE",CFG_FC_IF="TRUE",PER_FUNC_STATUS_IF="TRUE",CFG_MGMT_IF="TRUE",RCV_MSG_IF="TRUE",CFG_TX_MSG_IF="TRUE",CFG_CTL_IF="TRUE",PCIE3_DRP="FALSE",DIS_GT_WIZARD="FALSE",SYS_RESET_POLARITY=0,SELECT_QUAD="GTH_Quad_225",silicon_revision="Production",DBG_DESCRAMBLE_EN="FALSE",MULT_PF_DES="TRUE",GT_DRP_CLK_SRC=0,FREE_RUN_FREQ=0)) is 1ps/1ps.
+Ref Clk Freq: 0 	 User Clk Freq: 2 	 PCIE Link Speed: 2
+Loading timesets for 'tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[0].ddr4_model .LoadTiming' @0
+	Loaded timeset:TS_1875
+	Loaded timeset:TS_1500
+	Loaded timeset:TS_1250
+	Loaded timeset:TS_1072
+	Loaded timeset:TS_938
+	Loaded timeset:TS_833
+	Loaded timeset:TS_750
+	Loaded timeset:TS_682
+	Loaded timeset:TS_625
+Model based on DDR4 DDS version 0.999 6/06/2014 (build data 5/06/2016)
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[0].ddr4_model :Configured as x16 8G stack:1
+Loading timesets for 'tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[1].ddr4_model .LoadTiming' @0
+	Loaded timeset:TS_1875
+	Loaded timeset:TS_1500
+	Loaded timeset:TS_1250
+	Loaded timeset:TS_1072
+	Loaded timeset:TS_938
+	Loaded timeset:TS_833
+	Loaded timeset:TS_750
+	Loaded timeset:TS_682
+	Loaded timeset:TS_625
+Model based on DDR4 DDS version 0.999 6/06/2014 (build data 5/06/2016)
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[1].ddr4_model :Configured as x16 8G stack:1
+Loading timesets for 'tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[2].ddr4_model .LoadTiming' @0
+	Loaded timeset:TS_1875
+	Loaded timeset:TS_1500
+	Loaded timeset:TS_1250
+	Loaded timeset:TS_1072
+	Loaded timeset:TS_938
+	Loaded timeset:TS_833
+	Loaded timeset:TS_750
+	Loaded timeset:TS_682
+	Loaded timeset:TS_625
+Model based on DDR4 DDS version 0.999 6/06/2014 (build data 5/06/2016)
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[2].ddr4_model :Configured as x16 8G stack:1
+Loading timesets for 'tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[3].ddr4_model .LoadTiming' @0
+	Loaded timeset:TS_1875
+	Loaded timeset:TS_1500
+	Loaded timeset:TS_1250
+	Loaded timeset:TS_1072
+	Loaded timeset:TS_938
+	Loaded timeset:TS_833
+	Loaded timeset:TS_750
+	Loaded timeset:TS_682
+	Loaded timeset:TS_625
+Model based on DDR4 DDS version 0.999 6/06/2014 (build data 5/06/2016)
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[3].ddr4_model :Configured as x16 8G stack:1
+WARNING: 0ns : none of the conditions were true for unique case from File:/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/xdma_v4_1/hdl/xdma_v4_1_vl_rfs.sv:33974
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: tb_softMC_top.uut.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[0].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: tb_softMC_top.uut.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[1].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: tb_softMC_top.uut.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[4].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: tb_softMC_top.uut.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[5].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: tb_softMC_top.uut.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[6].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: tb_softMC_top.uut.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[7].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: tb_softMC_top.uut.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[8].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: tb_softMC_top.uut.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[9].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+xsim: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1178.961 ; gain = 27.496
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_softMC_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:51 ; elapsed = 00:08:20 . Memory (MB): peak = 1178.961 ; gain = 42.414
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+restart: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1209.719 ; gain = 4.508
+run all
+Block Memory Generator module tb_softMC_top.uut.EP.xdma_0_i.inst.ram_top.\gen_h2c_bram.H2C_DAT0_FIFO .\genblk1[0].genblk1.u_buffermem .inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_softMC_top.uut.EP.xdma_0_i.inst.ram_top.\gen_h2c_bram.H2C_DAT0_FIFO .\genblk1[1].genblk1.u_buffermem .inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_softMC_top.uut.EP.xdma_0_i.inst.ram_top.\gen_h2c_bram.H2C_DAT1_FIFO .\genblk1[0].genblk1.u_buffermem .inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_softMC_top.uut.EP.xdma_0_i.inst.ram_top.\gen_h2c_bram.H2C_DAT1_FIFO .\genblk1[1].genblk1.u_buffermem .inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_softMC_top.uut.EP.xdma_0_i.inst.ram_top.\gen_h2c_bram.H2C_DAT2_FIFO .\genblk1[0].genblk1.u_buffermem .inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_softMC_top.uut.EP.xdma_0_i.inst.ram_top.\gen_h2c_bram.H2C_DAT2_FIFO .\genblk1[1].genblk1.u_buffermem .inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_softMC_top.uut.EP.xdma_0_i.inst.ram_top.\gen_h2c_bram.H2C_DAT3_FIFO .\genblk1[0].genblk1.u_buffermem .inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_softMC_top.uut.EP.xdma_0_i.inst.ram_top.\gen_h2c_bram.H2C_DAT3_FIFO .\genblk1[1].genblk1.u_buffermem .inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_softMC_top.uut.EP.xdma_0_i.inst.ram_top.\gen_c2h_bram.C2H_DAT0_FIFO .\genblk1[0].genblk1.u_buffermem .inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_softMC_top.uut.EP.xdma_0_i.inst.ram_top.\gen_c2h_bram.C2H_DAT0_FIFO .\genblk1[1].genblk1.u_buffermem .inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_softMC_top.uut.EP.xdma_0_i.inst.ram_top.\gen_c2h_bram.C2H_DAT1_FIFO .\genblk1[0].genblk1.u_buffermem .inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_softMC_top.uut.EP.xdma_0_i.inst.ram_top.\gen_c2h_bram.C2H_DAT1_FIFO .\genblk1[1].genblk1.u_buffermem .inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_softMC_top.uut.EP.xdma_0_i.inst.ram_top.\gen_c2h_bram.C2H_DAT2_FIFO .\genblk1[0].genblk1.u_buffermem .inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_softMC_top.uut.EP.xdma_0_i.inst.ram_top.\gen_c2h_bram.C2H_DAT2_FIFO .\genblk1[1].genblk1.u_buffermem .inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_softMC_top.uut.EP.xdma_0_i.inst.ram_top.\gen_c2h_bram.C2H_DAT3_FIFO .\genblk1[0].genblk1.u_buffermem .inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_softMC_top.uut.EP.xdma_0_i.inst.ram_top.\gen_c2h_bram.C2H_DAT3_FIFO .\genblk1[1].genblk1.u_buffermem .inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_softMC_top.uut.EP.xdma_0_i.inst.ram_top.\mas_bridge_ram_write_512.MASTER_WRITE_FIFO .\genblk1[0].genblk1.u_buffermem .inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_softMC_top.uut.EP.xdma_0_i.inst.ram_top.\mas_bridge_ram_write_512.MASTER_WRITE_FIFO .\genblk1[1].genblk1.u_buffermem .inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_softMC_top.uut.EP.xdma_0_i.inst.ram_top.MASTER_READ_BRAM.\genblk1[0].genblk1.u_buffermem .inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_softMC_top.uut.EP.xdma_0_i.inst.ram_top.MASTER_READ_BRAM.\genblk1[1].genblk1.u_buffermem .inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Timescale of (xdma_0_pcie3_ip_pcie3_uscale_core_top(PL_LINK_CAP_MAX_LINK_SPEED=1,PL_LINK_CAP_MAX_LINK_WIDTH=8,USER_CLK_FREQ=2,CORE_CLK_FREQ=1,C_DATA_WIDTH=128,PCIE_LINK_SPEED=2,KEEP_WIDTH=4,AXISTEN_IF_CC_ALIGNMENT_MODE="TRUE",AXISTEN_IF_CQ_ALIGNMENT_MODE="TRUE",AXISTEN_IF_ENABLE_MSG_ROUTE=18'b100000000000000000,PF0_BAR0_APERTURE_SIZE=5'b01001,PF0_BAR2_APERTURE_SIZE=5'b0,PF0_BAR2_CONTROL=3'b0,PF0_BAR3_APERTURE_SIZE=5'b0,PF0_BAR4_APERTURE_SIZE=5'b0,PF0_BAR4_CONTROL=3'b0,PF0_BAR5_APERTURE_SIZE=5'b0,PF0_CAPABILITY_POINTER=8'b10000000,PF0_CLASS_CODE=24'b01110000000000000001,PF0_VENDOR_ID=16'b01000011101110,PF0_DEVICE_ID=16'b1000000000011000,PF0_DEV_CAP2_128B_CAS_ATOMIC_COMPLETER_SUPPORT="FALSE",PF0_DEV_CAP2_32B_ATOMIC_COMPLETER_SUPPORT="FALSE",PF0_DEV_CAP2_64B_ATOMIC_COMPLETER_SUPPORT="FALSE",PF0_DEV_CAP2_LTR_SUPPORT="FALSE",PF0_DEV_CAP_FUNCTION_LEVEL_RESET_CAPABLE="FALSE",PF0_DEV_CAP_MAX_PAYLOAD_SIZE=3'b010,PF0_DSN_CAP_NEXTPTR=12'b0,PF0_EXPANSION_ROM_APERTURE_SIZE=5'b0,PF0_MSIX_CAP_PBA_OFFSET=29'b0,PF0_MSIX_CAP_TABLE_OFFSET=29'b0,PF0_MSI_CAP_NEXTPTR=8'b11000000,PF0_PM_CAP_NEXTPTR=8'b10010000,PF0_PM_CAP_PMESUPPORT_D0="FALSE",PF0_PM_CAP_PMESUPPORT_D1="FALSE",PF0_PM_CAP_PMESUPPORT_D3HOT="FALSE",PF0_PM_CAP_SUPP_D1_STATE="FALSE",PF0_SRIOV_BAR0_APERTURE_SIZE=5'b0,PF0_SRIOV_BAR0_CONTROL=3'b0,PF0_SRIOV_BAR2_APERTURE_SIZE=5'b0,PF0_SRIOV_BAR2_CONTROL=3'b0,PF0_SRIOV_BAR3_APERTURE_SIZE=5'b0,PF0_SRIOV_BAR4_APERTURE_SIZE=5'b0,PF0_SRIOV_BAR4_CONTROL=3'b0,PF0_SRIOV_BAR5_APERTURE_SIZE=5'b0,PF0_SRIOV_CAP_VER=4'b0,PF0_SRIOV_SUPPORTED_PAGE_SIZE=32'b010101010011,PF0_SUBSYSTEM_VENDOR_ID=16'b01000011101110,PF0_SUBSYSTEM_ID=16'b0111,PF0_TPHR_CAP_INT_VEC_MODE="FALSE",PF1_TPHR_CAP_INT_VEC_MODE="FALSE",VF0_TPHR_CAP_INT_VEC_MODE="FALSE",VF1_TPHR_CAP_INT_VEC_MODE="FALSE",VF2_TPHR_CAP_INT_VEC_MODE="FALSE",VF3_TPHR_CAP_INT_VEC_MODE="FALSE",VF4_TPHR_CAP_INT_VEC_MODE="FALSE",VF5_TPHR_CAP_INT_VEC_MODE="FALSE",PF1_BAR0_APERTURE_SIZE=5'b0,PF1_BAR0_CONTROL=3'b0,PF1_BAR1_APERTURE_SIZE=5'b0,PF1_BAR2_APERTURE_SIZE=5'b0,PF1_BAR2_CONTROL=3'b0,PF1_BAR3_APERTURE_SIZE=5'b0,PF1_BAR4_APERTURE_SIZE=5'b0,PF1_BAR4_CONTROL=3'b0,PF1_BAR5_APERTURE_SIZE=5'b0,PF1_CAPABILITY_POINTER=8'b10000000,PF1_CLASS_CODE=24'b01011000000000000000,PF1_DEVICE_ID=16'b1000000000010001,PF1_DEV_CAP_MAX_PAYLOAD_SIZE=3'b010,PF1_DSN_CAP_NEXTPTR=12'b0,PF1_EXPANSION_ROM_APERTURE_SIZE=5'b0,PF1_INTERRUPT_PIN=3'b0,PF1_MSIX_CAP_PBA_OFFSET=29'b0,PF1_MSIX_CAP_TABLE_OFFSET=29'b0,PF1_SRIOV_BAR0_APERTURE_SIZE=5'b0,PF1_SRIOV_BAR0_CONTROL=3'b0,PF1_SRIOV_BAR2_APERTURE_SIZE=5'b0,PF1_SRIOV_BAR2_CONTROL=3'b0,PF1_SRIOV_BAR3_APERTURE_SIZE=5'b0,PF1_SRIOV_BAR4_APERTURE_SIZE=5'b0,PF1_SRIOV_BAR4_CONTROL=3'b0,PF1_SRIOV_BAR5_APERTURE_SIZE=5'b0,PF1_SRIOV_CAP_VER=4'b0,PF1_SRIOV_FUNC_DEP_LINK=16'b01,PF1_SRIOV_SUPPORTED_PAGE_SIZE=32'b010101010011,PF1_SUBSYSTEM_ID=16'b0111,TL_CREDITS_CD=12'b0,TL_CREDITS_CH=8'b0,VF0_CAPABILITY_POINTER=8'b10000000,VF0_MSIX_CAP_PBA_OFFSET=29'b0,VF0_MSIX_CAP_TABLE_OFFSET=29'b0,VF1_MSIX_CAP_PBA_OFFSET=29'b0,VF1_MSIX_CAP_TABLE_OFFSET=29'b0,VF2_MSIX_CAP_PBA_OFFSET=29'b0,VF2_MSIX_CAP_TABLE_OFFSET=29'b0,VF3_MSIX_CAP_PBA_OFFSET=29'b0,VF3_MSIX_CAP_TABLE_OFFSET=29'b0,VF4_MSIX_CAP_PBA_OFFSET=29'b0,VF4_MSIX_CAP_TABLE_OFFSET=29'b0,VF5_MSIX_CAP_PBA_OFFSET=29'b0,VF5_MSIX_CAP_TABLE_OFFSET=29'b0,AXISTEN_IF_ENABLE_CLIENT_TAG="TRUE",PCIE_USE_MODE="2.0",CFG_STATUS_IF="TRUE",TX_FC_IF="TRUE",CFG_FC_IF="TRUE",PER_FUNC_STATUS_IF="TRUE",CFG_MGMT_IF="TRUE",RCV_MSG_IF="TRUE",CFG_TX_MSG_IF="TRUE",CFG_CTL_IF="TRUE",PCIE3_DRP="FALSE",DIS_GT_WIZARD="FALSE",SYS_RESET_POLARITY=0,SELECT_QUAD="GTH_Quad_225",silicon_revision="Production",DBG_DESCRAMBLE_EN="FALSE",MULT_PF_DES="TRUE",GT_DRP_CLK_SRC=0,FREE_RUN_FREQ=0)) is 1ps/1ps.
+Ref Clk Freq: 0 	 User Clk Freq: 2 	 PCIE Link Speed: 2
+Loading timesets for 'tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[0].ddr4_model .LoadTiming' @0
+	Loaded timeset:TS_1875
+	Loaded timeset:TS_1500
+	Loaded timeset:TS_1250
+	Loaded timeset:TS_1072
+	Loaded timeset:TS_938
+	Loaded timeset:TS_833
+	Loaded timeset:TS_750
+	Loaded timeset:TS_682
+	Loaded timeset:TS_625
+Model based on DDR4 DDS version 0.999 6/06/2014 (build data 5/06/2016)
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[0].ddr4_model :Configured as x16 8G stack:1
+Loading timesets for 'tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[1].ddr4_model .LoadTiming' @0
+	Loaded timeset:TS_1875
+	Loaded timeset:TS_1500
+	Loaded timeset:TS_1250
+	Loaded timeset:TS_1072
+	Loaded timeset:TS_938
+	Loaded timeset:TS_833
+	Loaded timeset:TS_750
+	Loaded timeset:TS_682
+	Loaded timeset:TS_625
+Model based on DDR4 DDS version 0.999 6/06/2014 (build data 5/06/2016)
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[1].ddr4_model :Configured as x16 8G stack:1
+Loading timesets for 'tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[2].ddr4_model .LoadTiming' @0
+	Loaded timeset:TS_1875
+	Loaded timeset:TS_1500
+	Loaded timeset:TS_1250
+	Loaded timeset:TS_1072
+	Loaded timeset:TS_938
+	Loaded timeset:TS_833
+	Loaded timeset:TS_750
+	Loaded timeset:TS_682
+	Loaded timeset:TS_625
+Model based on DDR4 DDS version 0.999 6/06/2014 (build data 5/06/2016)
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[2].ddr4_model :Configured as x16 8G stack:1
+Loading timesets for 'tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[3].ddr4_model .LoadTiming' @0
+	Loaded timeset:TS_1875
+	Loaded timeset:TS_1500
+	Loaded timeset:TS_1250
+	Loaded timeset:TS_1072
+	Loaded timeset:TS_938
+	Loaded timeset:TS_833
+	Loaded timeset:TS_750
+	Loaded timeset:TS_682
+	Loaded timeset:TS_625
+Model based on DDR4 DDS version 0.999 6/06/2014 (build data 5/06/2016)
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[3].ddr4_model :Configured as x16 8G stack:1
+WARNING: 0ns : none of the conditions were true for unique case from File:/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/xdma_v4_1/hdl/xdma_v4_1_vl_rfs.sv:33974
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: tb_softMC_top.uut.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[0].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: tb_softMC_top.uut.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[1].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: tb_softMC_top.uut.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[4].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: tb_softMC_top.uut.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[5].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: tb_softMC_top.uut.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[6].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: tb_softMC_top.uut.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[7].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: tb_softMC_top.uut.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[8].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: tb_softMC_top.uut.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[9].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[0].ddr4_model .always_diff_ck.if_diff_ck:Initialization complete @3853438
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[1].ddr4_model .always_diff_ck.if_diff_ck:Initialization complete @3853438
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[2].ddr4_model .always_diff_ck.if_diff_ck:Initialization complete @3853438
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[3].ddr4_model .always_diff_ck.if_diff_ck:Initialization complete @3853438
+Calibration Done
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[0].ddr4_model .VerifyMR:ERROR:SPEC_VIOLATION tWR/tRTP tWR spec:13 loaded:12 tRTP spec:7482 loaded:7482 @11547185
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[1].ddr4_model .VerifyMR:ERROR:SPEC_VIOLATION tWR/tRTP tWR spec:13 loaded:12 tRTP spec:7482 loaded:7482 @11547185
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[2].ddr4_model .VerifyMR:ERROR:SPEC_VIOLATION tWR/tRTP tWR spec:13 loaded:12 tRTP spec:7482 loaded:7482 @11547185
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[3].ddr4_model .VerifyMR:ERROR:SPEC_VIOLATION tWR/tRTP tWR spec:13 loaded:12 tRTP spec:7482 loaded:7482 @11547185
+run: Time (s): cpu = 00:00:12 ; elapsed = 00:00:30 . Memory (MB): peak = 1219.383 ; gain = 9.664
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+restart: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1237.305 ; gain = 0.590
+run all
+Block Memory Generator module tb_softMC_top.uut.EP.xdma_0_i.inst.ram_top.\gen_h2c_bram.H2C_DAT0_FIFO .\genblk1[0].genblk1.u_buffermem .inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_softMC_top.uut.EP.xdma_0_i.inst.ram_top.\gen_h2c_bram.H2C_DAT0_FIFO .\genblk1[1].genblk1.u_buffermem .inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_softMC_top.uut.EP.xdma_0_i.inst.ram_top.\gen_h2c_bram.H2C_DAT1_FIFO .\genblk1[0].genblk1.u_buffermem .inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_softMC_top.uut.EP.xdma_0_i.inst.ram_top.\gen_h2c_bram.H2C_DAT1_FIFO .\genblk1[1].genblk1.u_buffermem .inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_softMC_top.uut.EP.xdma_0_i.inst.ram_top.\gen_h2c_bram.H2C_DAT2_FIFO .\genblk1[0].genblk1.u_buffermem .inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_softMC_top.uut.EP.xdma_0_i.inst.ram_top.\gen_h2c_bram.H2C_DAT2_FIFO .\genblk1[1].genblk1.u_buffermem .inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_softMC_top.uut.EP.xdma_0_i.inst.ram_top.\gen_h2c_bram.H2C_DAT3_FIFO .\genblk1[0].genblk1.u_buffermem .inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_softMC_top.uut.EP.xdma_0_i.inst.ram_top.\gen_h2c_bram.H2C_DAT3_FIFO .\genblk1[1].genblk1.u_buffermem .inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_softMC_top.uut.EP.xdma_0_i.inst.ram_top.\gen_c2h_bram.C2H_DAT0_FIFO .\genblk1[0].genblk1.u_buffermem .inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_softMC_top.uut.EP.xdma_0_i.inst.ram_top.\gen_c2h_bram.C2H_DAT0_FIFO .\genblk1[1].genblk1.u_buffermem .inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_softMC_top.uut.EP.xdma_0_i.inst.ram_top.\gen_c2h_bram.C2H_DAT1_FIFO .\genblk1[0].genblk1.u_buffermem .inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_softMC_top.uut.EP.xdma_0_i.inst.ram_top.\gen_c2h_bram.C2H_DAT1_FIFO .\genblk1[1].genblk1.u_buffermem .inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_softMC_top.uut.EP.xdma_0_i.inst.ram_top.\gen_c2h_bram.C2H_DAT2_FIFO .\genblk1[0].genblk1.u_buffermem .inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_softMC_top.uut.EP.xdma_0_i.inst.ram_top.\gen_c2h_bram.C2H_DAT2_FIFO .\genblk1[1].genblk1.u_buffermem .inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_softMC_top.uut.EP.xdma_0_i.inst.ram_top.\gen_c2h_bram.C2H_DAT3_FIFO .\genblk1[0].genblk1.u_buffermem .inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_softMC_top.uut.EP.xdma_0_i.inst.ram_top.\gen_c2h_bram.C2H_DAT3_FIFO .\genblk1[1].genblk1.u_buffermem .inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_softMC_top.uut.EP.xdma_0_i.inst.ram_top.\mas_bridge_ram_write_512.MASTER_WRITE_FIFO .\genblk1[0].genblk1.u_buffermem .inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_softMC_top.uut.EP.xdma_0_i.inst.ram_top.\mas_bridge_ram_write_512.MASTER_WRITE_FIFO .\genblk1[1].genblk1.u_buffermem .inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_softMC_top.uut.EP.xdma_0_i.inst.ram_top.MASTER_READ_BRAM.\genblk1[0].genblk1.u_buffermem .inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_softMC_top.uut.EP.xdma_0_i.inst.ram_top.MASTER_READ_BRAM.\genblk1[1].genblk1.u_buffermem .inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Timescale of (xdma_0_pcie3_ip_pcie3_uscale_core_top(PL_LINK_CAP_MAX_LINK_SPEED=1,PL_LINK_CAP_MAX_LINK_WIDTH=8,USER_CLK_FREQ=2,CORE_CLK_FREQ=1,C_DATA_WIDTH=128,PCIE_LINK_SPEED=2,KEEP_WIDTH=4,AXISTEN_IF_CC_ALIGNMENT_MODE="TRUE",AXISTEN_IF_CQ_ALIGNMENT_MODE="TRUE",AXISTEN_IF_ENABLE_MSG_ROUTE=18'b100000000000000000,PF0_BAR0_APERTURE_SIZE=5'b01001,PF0_BAR2_APERTURE_SIZE=5'b0,PF0_BAR2_CONTROL=3'b0,PF0_BAR3_APERTURE_SIZE=5'b0,PF0_BAR4_APERTURE_SIZE=5'b0,PF0_BAR4_CONTROL=3'b0,PF0_BAR5_APERTURE_SIZE=5'b0,PF0_CAPABILITY_POINTER=8'b10000000,PF0_CLASS_CODE=24'b01110000000000000001,PF0_VENDOR_ID=16'b01000011101110,PF0_DEVICE_ID=16'b1000000000011000,PF0_DEV_CAP2_128B_CAS_ATOMIC_COMPLETER_SUPPORT="FALSE",PF0_DEV_CAP2_32B_ATOMIC_COMPLETER_SUPPORT="FALSE",PF0_DEV_CAP2_64B_ATOMIC_COMPLETER_SUPPORT="FALSE",PF0_DEV_CAP2_LTR_SUPPORT="FALSE",PF0_DEV_CAP_FUNCTION_LEVEL_RESET_CAPABLE="FALSE",PF0_DEV_CAP_MAX_PAYLOAD_SIZE=3'b010,PF0_DSN_CAP_NEXTPTR=12'b0,PF0_EXPANSION_ROM_APERTURE_SIZE=5'b0,PF0_MSIX_CAP_PBA_OFFSET=29'b0,PF0_MSIX_CAP_TABLE_OFFSET=29'b0,PF0_MSI_CAP_NEXTPTR=8'b11000000,PF0_PM_CAP_NEXTPTR=8'b10010000,PF0_PM_CAP_PMESUPPORT_D0="FALSE",PF0_PM_CAP_PMESUPPORT_D1="FALSE",PF0_PM_CAP_PMESUPPORT_D3HOT="FALSE",PF0_PM_CAP_SUPP_D1_STATE="FALSE",PF0_SRIOV_BAR0_APERTURE_SIZE=5'b0,PF0_SRIOV_BAR0_CONTROL=3'b0,PF0_SRIOV_BAR2_APERTURE_SIZE=5'b0,PF0_SRIOV_BAR2_CONTROL=3'b0,PF0_SRIOV_BAR3_APERTURE_SIZE=5'b0,PF0_SRIOV_BAR4_APERTURE_SIZE=5'b0,PF0_SRIOV_BAR4_CONTROL=3'b0,PF0_SRIOV_BAR5_APERTURE_SIZE=5'b0,PF0_SRIOV_CAP_VER=4'b0,PF0_SRIOV_SUPPORTED_PAGE_SIZE=32'b010101010011,PF0_SUBSYSTEM_VENDOR_ID=16'b01000011101110,PF0_SUBSYSTEM_ID=16'b0111,PF0_TPHR_CAP_INT_VEC_MODE="FALSE",PF1_TPHR_CAP_INT_VEC_MODE="FALSE",VF0_TPHR_CAP_INT_VEC_MODE="FALSE",VF1_TPHR_CAP_INT_VEC_MODE="FALSE",VF2_TPHR_CAP_INT_VEC_MODE="FALSE",VF3_TPHR_CAP_INT_VEC_MODE="FALSE",VF4_TPHR_CAP_INT_VEC_MODE="FALSE",VF5_TPHR_CAP_INT_VEC_MODE="FALSE",PF1_BAR0_APERTURE_SIZE=5'b0,PF1_BAR0_CONTROL=3'b0,PF1_BAR1_APERTURE_SIZE=5'b0,PF1_BAR2_APERTURE_SIZE=5'b0,PF1_BAR2_CONTROL=3'b0,PF1_BAR3_APERTURE_SIZE=5'b0,PF1_BAR4_APERTURE_SIZE=5'b0,PF1_BAR4_CONTROL=3'b0,PF1_BAR5_APERTURE_SIZE=5'b0,PF1_CAPABILITY_POINTER=8'b10000000,PF1_CLASS_CODE=24'b01011000000000000000,PF1_DEVICE_ID=16'b1000000000010001,PF1_DEV_CAP_MAX_PAYLOAD_SIZE=3'b010,PF1_DSN_CAP_NEXTPTR=12'b0,PF1_EXPANSION_ROM_APERTURE_SIZE=5'b0,PF1_INTERRUPT_PIN=3'b0,PF1_MSIX_CAP_PBA_OFFSET=29'b0,PF1_MSIX_CAP_TABLE_OFFSET=29'b0,PF1_SRIOV_BAR0_APERTURE_SIZE=5'b0,PF1_SRIOV_BAR0_CONTROL=3'b0,PF1_SRIOV_BAR2_APERTURE_SIZE=5'b0,PF1_SRIOV_BAR2_CONTROL=3'b0,PF1_SRIOV_BAR3_APERTURE_SIZE=5'b0,PF1_SRIOV_BAR4_APERTURE_SIZE=5'b0,PF1_SRIOV_BAR4_CONTROL=3'b0,PF1_SRIOV_BAR5_APERTURE_SIZE=5'b0,PF1_SRIOV_CAP_VER=4'b0,PF1_SRIOV_FUNC_DEP_LINK=16'b01,PF1_SRIOV_SUPPORTED_PAGE_SIZE=32'b010101010011,PF1_SUBSYSTEM_ID=16'b0111,TL_CREDITS_CD=12'b0,TL_CREDITS_CH=8'b0,VF0_CAPABILITY_POINTER=8'b10000000,VF0_MSIX_CAP_PBA_OFFSET=29'b0,VF0_MSIX_CAP_TABLE_OFFSET=29'b0,VF1_MSIX_CAP_PBA_OFFSET=29'b0,VF1_MSIX_CAP_TABLE_OFFSET=29'b0,VF2_MSIX_CAP_PBA_OFFSET=29'b0,VF2_MSIX_CAP_TABLE_OFFSET=29'b0,VF3_MSIX_CAP_PBA_OFFSET=29'b0,VF3_MSIX_CAP_TABLE_OFFSET=29'b0,VF4_MSIX_CAP_PBA_OFFSET=29'b0,VF4_MSIX_CAP_TABLE_OFFSET=29'b0,VF5_MSIX_CAP_PBA_OFFSET=29'b0,VF5_MSIX_CAP_TABLE_OFFSET=29'b0,AXISTEN_IF_ENABLE_CLIENT_TAG="TRUE",PCIE_USE_MODE="2.0",CFG_STATUS_IF="TRUE",TX_FC_IF="TRUE",CFG_FC_IF="TRUE",PER_FUNC_STATUS_IF="TRUE",CFG_MGMT_IF="TRUE",RCV_MSG_IF="TRUE",CFG_TX_MSG_IF="TRUE",CFG_CTL_IF="TRUE",PCIE3_DRP="FALSE",DIS_GT_WIZARD="FALSE",SYS_RESET_POLARITY=0,SELECT_QUAD="GTH_Quad_225",silicon_revision="Production",DBG_DESCRAMBLE_EN="FALSE",MULT_PF_DES="TRUE",GT_DRP_CLK_SRC=0,FREE_RUN_FREQ=0)) is 1ps/1ps.
+Ref Clk Freq: 0 	 User Clk Freq: 2 	 PCIE Link Speed: 2
+Loading timesets for 'tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[0].ddr4_model .LoadTiming' @0
+	Loaded timeset:TS_1875
+	Loaded timeset:TS_1500
+	Loaded timeset:TS_1250
+	Loaded timeset:TS_1072
+	Loaded timeset:TS_938
+	Loaded timeset:TS_833
+	Loaded timeset:TS_750
+	Loaded timeset:TS_682
+	Loaded timeset:TS_625
+Model based on DDR4 DDS version 0.999 6/06/2014 (build data 5/06/2016)
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[0].ddr4_model :Configured as x16 8G stack:1
+Loading timesets for 'tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[1].ddr4_model .LoadTiming' @0
+	Loaded timeset:TS_1875
+	Loaded timeset:TS_1500
+	Loaded timeset:TS_1250
+	Loaded timeset:TS_1072
+	Loaded timeset:TS_938
+	Loaded timeset:TS_833
+	Loaded timeset:TS_750
+	Loaded timeset:TS_682
+	Loaded timeset:TS_625
+Model based on DDR4 DDS version 0.999 6/06/2014 (build data 5/06/2016)
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[1].ddr4_model :Configured as x16 8G stack:1
+Loading timesets for 'tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[2].ddr4_model .LoadTiming' @0
+	Loaded timeset:TS_1875
+	Loaded timeset:TS_1500
+	Loaded timeset:TS_1250
+	Loaded timeset:TS_1072
+	Loaded timeset:TS_938
+	Loaded timeset:TS_833
+	Loaded timeset:TS_750
+	Loaded timeset:TS_682
+	Loaded timeset:TS_625
+Model based on DDR4 DDS version 0.999 6/06/2014 (build data 5/06/2016)
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[2].ddr4_model :Configured as x16 8G stack:1
+Loading timesets for 'tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[3].ddr4_model .LoadTiming' @0
+	Loaded timeset:TS_1875
+	Loaded timeset:TS_1500
+	Loaded timeset:TS_1250
+	Loaded timeset:TS_1072
+	Loaded timeset:TS_938
+	Loaded timeset:TS_833
+	Loaded timeset:TS_750
+	Loaded timeset:TS_682
+	Loaded timeset:TS_625
+Model based on DDR4 DDS version 0.999 6/06/2014 (build data 5/06/2016)
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[3].ddr4_model :Configured as x16 8G stack:1
+WARNING: 0ns : none of the conditions were true for unique case from File:/wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/xdma_v4_1/hdl/xdma_v4_1_vl_rfs.sv:33974
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: tb_softMC_top.uut.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[0].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: tb_softMC_top.uut.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[1].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: tb_softMC_top.uut.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[4].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: tb_softMC_top.uut.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[5].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: tb_softMC_top.uut.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[6].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: tb_softMC_top.uut.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[7].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: tb_softMC_top.uut.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[8].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+Info: [Unisim HPIO_VREF-1] Fabric Tune Value changed to 0100111. Instance: tb_softMC_top.uut.u_ddr4_0.inst.u_mig_ddr4_phy.inst.u_ddr_iob.\genByte[9].u_ddr_iob_byte .\genblk1.genVref.u_hpio_vref 
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[0].ddr4_model .always_diff_ck.if_diff_ck:Initialization complete @3853438
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[1].ddr4_model .always_diff_ck.if_diff_ck:Initialization complete @3853438
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[2].ddr4_model .always_diff_ck.if_diff_ck:Initialization complete @3853438
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[3].ddr4_model .always_diff_ck.if_diff_ck:Initialization complete @3853438
+Calibration Done
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[0].ddr4_model .VerifyMR:ERROR:SPEC_VIOLATION tWR/tRTP tWR spec:13 loaded:12 tRTP spec:7482 loaded:7482 @11547185
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[1].ddr4_model .VerifyMR:ERROR:SPEC_VIOLATION tWR/tRTP tWR spec:13 loaded:12 tRTP spec:7482 loaded:7482 @11547185
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[2].ddr4_model .VerifyMR:ERROR:SPEC_VIOLATION tWR/tRTP tWR spec:13 loaded:12 tRTP spec:7482 loaded:7482 @11547185
+tb_softMC_top.\mem_model_x16.mem.memModels_Ri2[0].memModel2[3].ddr4_model .VerifyMR:ERROR:SPEC_VIOLATION tWR/tRTP tWR spec:13 loaded:12 tRTP spec:7482 loaded:7482 @11547185
+run: Time (s): cpu = 00:00:34 ; elapsed = 00:01:54 . Memory (MB): peak = 1239.137 ; gain = 1.832
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/xdma_0.xci' is already up-to-date
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Sat Jul 31 00:48:41 2021] Launched impl_1...
+Run output will be captured here: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다: "C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.sim/sim_1/behav/xsim/simulate.log"
+reset_run impl_1 -prev_step 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/xdma_0.xci' is already up-to-date
+[Sat Jul 31 00:49:32 2021] Launched synth_1...
+Run output will be captured here: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/synth_1/runme.log
+[Sat Jul 31 00:49:32 2021] Launched impl_1...
+Run output will be captured here: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/runme.log
+open_project {C:/Users/yongj/Desktop/Bittware_Doc/pcie_xdma_ddr4 (1)/example_designs/vu095/pcie_xdma_ddr4/pcie_xdma_ddr4.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/yongj/Desktop/Bittware_Doc/pcie_xdma_ddr4 (1)/example_designs/vu095/pcie_xdma_ddr4'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+close_project
+open_project C:/Users/yongj/Desktop/pcie3_ultrascale_0_ex/pcie3_ultrascale_0_ex.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/yongj/Desktop/pcie3_ultrascale_0_ex/pcie3_ultrascale_0_ex.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1332.578 ; gain = 16.930
+update_compile_order -fileset sources_1
+current_project project_1
+current_project pcie3_ultrascale_0_ex
+close_project
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/xdma_0.xci' is already up-to-date
+[Sat Jul 31 01:05:29 2021] Launched impl_1...
+Run output will be captured here: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/xdma_0.xci' is already up-to-date
+[Sat Jul 31 01:08:25 2021] Launched synth_1...
+Run output will be captured here: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/synth_1/runme.log
+[Sat Jul 31 01:08:26 2021] Launched impl_1...
+Run output will be captured here: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xcvu095-ffvb2104-2-e
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2241.805 ; gain = 4.625
+INFO: [Netlist 29-17] Analyzing 1173 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'u_ddr4_0/inst/u_mig_ddr4_phy/cal_RESET_n[0]' is not directly connected to top level port. Synthesis is ignored for DRIVE but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'u_ddr4_0/inst/u_mig_ddr4_phy/cal_RESET_n[0]' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'u_ddr4_0/inst/u_mig_ddr4_phy/mmcm_clk_in' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 2855.137 ; gain = 20.012
+Restored from archive | CPU: 9.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 2855.137 ; gain = 20.012
+Generating merged BMM file for the design top 'ddr4_0'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: c:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/ddr4_0_2/sw/calibration_0/Debug/calibration_ddr.elf 
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 3055.371 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 363 instances were transformed.
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 3 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 1 instance 
+  IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instance 
+  IOBUFDS => IOBUFDS (DIFFINBUF, IBUFCTRL, INV, OBUFT(x2)): 8 instances
+  IOBUFE3 => IOBUFE3 (IBUFCTRL, INBUF, OBUFT_DCIEN): 72 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 31 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUF(x2)): 1 instance 
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 33 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 16 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 178 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 10 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 9 instances
+
+open_run: Time (s): cpu = 00:01:06 ; elapsed = 00:00:50 . Memory (MB): peak = 3329.367 ; gain = 1898.426
+open_report: Time (s): cpu = 00:00:46 ; elapsed = 00:00:19 . Memory (MB): peak = 4518.113 ; gain = 701.039
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.srcs/sources_1/ip/xdma_0/xdma_0.xci' is already up-to-date
+[Sat Jul 31 01:24:15 2021] Launched synth_1...
+Run output will be captured here: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/synth_1/runme.log
+[Sat Jul 31 01:24:15 2021] Launched impl_1...
+Run output will be captured here: C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/runme.log
+set_param general.maxThreads 8
+8
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+warning: cannot open library ftd2xx.dll, first required symbol FT_Close, Digilent FTDI based JTAG cables cannot be supported
+warning: cannot open library ftd2xx.dll, first required symbol FT_Close, Xilinx FTDI based JTAG cables cannot be supported
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 04 2020-06:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:02 ; elapsed = 00:00:16 . Memory (MB): peak = 4642.676 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00000000000000
+set_property PROGRAM.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.bit} [get_hw_devices xcvu095_0]
+set_property PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
+set_property FULL_PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
+current_hw_device [get_hw_devices xcvu095_0]
+refresh_hw_device [lindex [get_hw_devices xcvu095_0] 0]
+INFO: [Labtools 27-1434] Device xcvu095 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
+set_property FULL_PROBES.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.ltx} [get_hw_devices xcvu095_0]
+set_property PROGRAM.FILE {C:/Users/yongj/Desktop/softmc_ddr4/hw/boards/ML605/project_1/project_1.runs/impl_1/softMC_top.bit} [get_hw_devices xcvu095_0]
+program_hw_devices [get_hw_devices xcvu095_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 5752.113 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xcvu095_0] 0]
+WARNING: [Labtools 27-3089] Calibration is still in-progress.
+INFO: [Labtools 27-2302] Device xcvu095 (JTAG device index = 0) is programmed with a design that has 1 MIG core(s).
+INFO: [Labtools 27-3143] Calibration status change detected, refreshing MIG_1
+close_hw_manager
+save_project_as project_3 C:/Users/yongj/Desktop/project_3 -force
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'save_project_as' was cancelled
+import_files
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'ddr4_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'ddr4_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'rdback_fifo'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'rdback_fifo'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+save_project_as project_4 C:/Users/yongj/Desktop/project_4 -force
+save_project_as: Time (s): cpu = 00:00:48 ; elapsed = 00:01:05 . Memory (MB): peak = 5785.266 ; gain = 0.000
+import_files
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'ddr4_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'ddr4_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'rdback_fifo'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'rdback_fifo'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sources_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+reset_run impl_1
+launch_runs impl_1 -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/xdma_0/xdma_0.xci' is already up-to-date
+[Sat Jul 31 01:51:37 2021] Launched impl_1...
+Run output will be captured here: C:/Users/yongj/Desktop/project_4/project_4.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+launch_runs synth_1 -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/xdma_0/xdma_0.xci' is already up-to-date
+[Sat Jul 31 01:51:39 2021] Launched synth_1...
+Run output will be captured here: C:/Users/yongj/Desktop/project_4/project_4.runs/synth_1/runme.log
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/yongj/Desktop/project_4/project_4.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/yongj/Desktop/project_4/project_4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-50] Design contains embedded sources, generating MEM files for simulation...
+Generating merged BMM file for the design top 'ddr4_0'...
+Generating merged BMM file for the design top 'ddr4_0'...
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_softMC_top' in fileset 'sim_1'...
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'c:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/axis_clock_converter_0/axis_clock_converter_0.xml'
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'c:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/axis_clock_converter_c2h/axis_clock_converter_c2h.xml'
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'c:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/instr_fifo/instr_fifo.xml'
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'c:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/xdma_0/xdma_0.xml'
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'c:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/xdma_0/ip_0/xdma_0_pcie3_ip.xml'
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'c:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/xdma_0/ip_2/xdma_v4_1_8_blk_mem_64_noreg_be.xml'
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'c:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/xdma_0/ip_1/xdma_v4_1_8_blk_mem_64_reg_be.xml'
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'c:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/xdma_0/ip_0/ip_0/xdma_0_pcie3_ip_gt.xml'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/yongj/Desktop/project_4/project_4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -L xilinx_vip -prj tb_softMC_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_6/sim/bd_9054_lmb_bram_I_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9054_lmb_bram_I_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_9/sim/bd_9054_second_lmb_bram_I_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9054_second_lmb_bram_I_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/bd_0/sim/bd_9054.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9054
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/ip_0/sim/ddr4_0_microblaze_mcs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_0_microblaze_mcs
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/phy/ddr4_0_phy_ddr4.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_0_phy_ddr4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/phy/ddr4_phy_v2_2_xiphy_behav.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_0_xiphy_behav
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_0_bitslice_behav
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_0_fifo_sv
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/phy/ddr4_phy_v2_2_xiphy.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_0_xiphy
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/iob/ddr4_phy_v2_2_iob_byte.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_0_iob_byte
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/iob/ddr4_phy_v2_2_iob.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_0_iob
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/clocking/ddr4_phy_v2_2_pll.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_0_pll
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/xiphy_files/ddr4_phy_v2_2_xiphy_tristate_wrapper.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_0_xiphy_tristate_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/xiphy_files/ddr4_phy_v2_2_xiphy_riuor_wrapper.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_0_xiphy_riuor_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/xiphy_files/ddr4_phy_v2_2_xiphy_control_wrapper.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_0_xiphy_control_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/xiphy_files/ddr4_phy_v2_2_xiphy_byte_wrapper.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_0_xiphy_byte_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/xiphy_files/ddr4_phy_v2_2_xiphy_bitslice_wrapper.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_0_xiphy_bitslice_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/ip_1/rtl/ip_top/ddr4_0_phy.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_0_phy
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/rtl/clocking/ddr4_v2_2_infrastructure.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_infrastructure
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_xsdb_bram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_xsdb_bram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_write.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_write
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_wr_byte.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_wr_byte
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_wr_bit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_wr_bit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_sync.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_sync
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_read.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_read
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_rd_en.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_rd_en
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_pi.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_pi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_mc_odt.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_mc_odt
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_debug_microblaze.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_debug_microblaze
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_cplx_data.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_cplx_data
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_cplx.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_cplx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_config_rom.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_config_rom
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_addr_decode
+WARNING: [VRFC 10-8426] non-net output port 'io_ready_lvl' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:165]
+WARNING: [VRFC 10-8426] non-net output port 'ub_ready' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:166]
+WARNING: [VRFC 10-8426] non-net output port 'cal_DMOut_n' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:235]
+WARNING: [VRFC 10-8426] non-net output port 'casSlot' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:267]
+WARNING: [VRFC 10-8426] non-net output port 'rdCAS' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:269]
+WARNING: [VRFC 10-8426] non-net output port 'wrCAS' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:272]
+WARNING: [VRFC 10-8426] non-net output port 'lowCL0' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:276]
+WARNING: [VRFC 10-8426] non-net output port 'lowCL1' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:277]
+WARNING: [VRFC 10-8426] non-net output port 'lowCL2' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:278]
+WARNING: [VRFC 10-8426] non-net output port 'lowCL3' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:279]
+WARNING: [VRFC 10-8426] non-net output port 'uppCL0' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:280]
+WARNING: [VRFC 10-8426] non-net output port 'uppCL1' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:281]
+WARNING: [VRFC 10-8426] non-net output port 'uppCL2' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:282]
+WARNING: [VRFC 10-8426] non-net output port 'uppCL3' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:283]
+WARNING: [VRFC 10-8426] non-net output port 'win_status' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_addr_decode.sv:320]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_top
+WARNING: [VRFC 10-8426] non-net output port 'cal_RESET_n' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_top.sv:323]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal_xsdb_arbiter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal_xsdb_arbiter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_cal.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cal
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_chipscope_xsdb_slave.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_chipscope_xsdb_slave
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_v2_2_dp_AB9.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_cfg_mem_mod
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_10_bram_tdp
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/rtl/ip_top/ddr4_0_ddr4.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_0_ddr4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_0_ddr4_cal_riu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_0_ddr4_cal_riu
+WARNING: [VRFC 10-8426] non-net output port 'io_addr_strobe_lvl_riuclk' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_0_ddr4_cal_riu.sv:115]
+WARNING: [VRFC 10-8426] non-net output port 'io_write_strobe_riuclk' cannot be initialized at declaration in SystemVerilog mode [C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/rtl/cal/ddr4_0_ddr4_cal_riu.sv:118]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/rtl/ip_top/ddr4_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/tb/microblaze_mcs_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_0_microblaze_mcs
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'ddr4_0_microblaze_mcs' [C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/tb/microblaze_mcs_0.sv:36]
+INFO: [VRFC 10-311] analyzing module microblaze_mcs
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/rdback_fifo/sim/rdback_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rdback_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/imports/ML605/instr_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instr_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/imports/ML605/softMC_pcie_app.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module softMC_pcie_app
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/imports/ML605/pipe_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pipe_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/imports/ML605/instr_dispatcher.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instr_dispatcher
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/imports/ML605/read_capturer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module read_capturer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/imports/ML605/maint_handler.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module maint_handler
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/imports/ML605/maint_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module maint_ctrl_top
+INFO: [VRFC 10-311] analyzing module maint_ctrl
+INFO: [VRFC 10-311] analyzing module periodic_rd_ctrl
+INFO: [VRFC 10-311] analyzing module zq_calib_ctrl
+INFO: [VRFC 10-311] analyzing module autoref_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/imports/ML605/iseq_dispatcher.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module iseq_dispatcher
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/imports/ML605/instr_receiver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instr_receiver
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/imports/ML605/autoref_config.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module autoref_config
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/imports/ML605/softMC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module softMC
+INFO: [VRFC 10-2458] undeclared symbol dispatcher_busy, assumed default net type wire [C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/imports/ML605/softMC.v:166]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/imports/ML605/softMC_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module softMC_top
+INFO: [VRFC 10-2458] undeclared symbol ddr_dm, assumed default net type wire [C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/imports/ML605/softMC_top.v:190]
+INFO: [VRFC 10-2458] undeclared symbol app_en, assumed default net type wire [C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/imports/ML605/softMC_top.v:522]
+INFO: [VRFC 10-2458] undeclared symbol processing_iseq, assumed default net type wire [C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/imports/ML605/softMC_top.v:526]
+INFO: [VRFC 10-2458] undeclared symbol rdback_fifo_empty, assumed default net type wire [C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/imports/ML605/softMC_top.v:576]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/new/xilinx_dma_pcie_ep.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xilinx_dma_pcie_ep
+INFO: [VRFC 10-2458] undeclared symbol s_axis_c2h_tready_w, assumed default net type wire [C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/new/xilinx_dma_pcie_ep.sv:318]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/new/xdma_app.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_app
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/project_4/project_4.ip_user_files/ip/instr_fifo/sim/instr_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instr_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/project_4/project_4.ip_user_files/ip/axis_clock_converter_c2h/sim/axis_clock_converter_c2h.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axis_clock_converter_c2h
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/project_4/project_4.ip_user_files/ip/axis_clock_converter_0/sim/axis_clock_converter_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axis_clock_converter_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/project_4/project_4.ip_user_files/ip/xdma_0/ip_0/ip_0/sim/gtwizard_ultrascale_v1_7_gthe3_channel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gtwizard_ultrascale_v1_7_9_gthe3_channel
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/project_4/project_4.ip_user_files/ip/xdma_0/ip_0/ip_0/sim/xdma_0_pcie3_ip_gt_gthe3_channel_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_gt_gthe3_channel_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/project_4/project_4.ip_user_files/ip/xdma_0/ip_0/ip_0/sim/xdma_0_pcie3_ip_gt_gtwizard_gthe3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_gt_gtwizard_gthe3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/project_4/project_4.ip_user_files/ip/xdma_0/ip_0/ip_0/sim/xdma_0_pcie3_ip_gt_gtwizard_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_gt_gtwizard_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/project_4/project_4.ip_user_files/ip/xdma_0/ip_0/ip_0/sim/xdma_0_pcie3_ip_gt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_gt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/project_4/project_4.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_tph_tbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_tph_tbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/project_4/project_4.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_pipe_lane.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_pipe_lane
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/project_4/project_4.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_bram_16k.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_bram_16k
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/project_4/project_4.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_bram_rep_8k.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_bram_rep_8k
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/project_4/project_4.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_bram_req_8k.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_bram_req_8k
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/project_4/project_4.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_gt_channel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_gt_channel
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/project_4/project_4.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_pipe_pipeline.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_pipe_pipeline
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/project_4/project_4.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_pipe_misc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_pipe_misc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/project_4/project_4.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_init_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_init_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/project_4/project_4.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_gt_common.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_gt_common
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/project_4/project_4.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_bram_8k.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_bram_8k
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/project_4/project_4.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_bram_rep.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_bram_rep
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/project_4/project_4.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_bram_req.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_bram_req
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/project_4/project_4.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_phy_sync.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_phy_sync
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/project_4/project_4.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_bram_cpl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_bram_cpl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/project_4/project_4.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_sys_clk_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_sys_clk_gen_ps
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/project_4/project_4.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_phy_rst.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_phy_rst
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/project_4/project_4.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_phy_txeq.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_phy_txeq
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/project_4/project_4.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_phy_clk.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_phy_clk
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/project_4/project_4.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_bram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/project_4/project_4.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_phy_rxeq.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_phy_rxeq
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/project_4/project_4.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_gtwizard_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_gtwizard_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/project_4/project_4.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_phy_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_phy_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/project_4/project_4.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_pcie3_uscale_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_pcie3_uscale_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/project_4/project_4.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_pcie3_uscale_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_pcie3_uscale_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/project_4/project_4.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_phy_sync_cell.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_phy_sync_cell
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/project_4/project_4.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_rxcdrhold.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_rxcdrhold
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/project_4/project_4.ip_user_files/ip/xdma_0/ip_0/source/xdma_0_pcie3_ip_pcie3_uscale_core_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip_pcie3_uscale_core_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/project_4/project_4.ip_user_files/ip/xdma_0/ip_0/sim/xdma_0_pcie3_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_pcie3_ip
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/project_4/project_4.ip_user_files/ip/xdma_0/ip_1/sim/xdma_v4_1_8_blk_mem_64_reg_be.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_v4_1_8_blk_mem_64_reg_be
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/project_4/project_4.ip_user_files/ip/xdma_0/ip_2/sim/xdma_v4_1_8_blk_mem_64_noreg_be.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_v4_1_8_blk_mem_64_noreg_be
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/project_4/project_4.ip_user_files/ip/xdma_0/xdma_v4_1/hdl/verilog/xdma_0_dma_bram_wrap.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_v4_1_8_dma_bram_wrap
+INFO: [VRFC 10-311] analyzing module xdma_v4_1_8_dma_fifo_64x512_wrap
+INFO: [VRFC 10-311] analyzing module xdma_v4_1_8_mem_simple_dport_bram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/project_4/project_4.ip_user_files/ip/xdma_0/xdma_v4_1/hdl/verilog/xdma_0_dma_bram_wrap_1024.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_v4_1_8_dma_bram_wrap_1024
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/project_4/project_4.ip_user_files/ip/xdma_0/xdma_v4_1/hdl/verilog/xdma_0_dma_bram_wrap_2048.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_v4_1_8_dma_bram_wrap_2048
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/project_4/project_4.ip_user_files/ip/xdma_0/xdma_v4_1/hdl/verilog/xdma_0_core_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0_core_top
+INFO: [VRFC 10-2458] undeclared symbol cfg_config_space_enable, assumed default net type wire [C:/Users/yongj/Desktop/project_4/project_4.ip_user_files/ip/xdma_0/xdma_v4_1/hdl/verilog/xdma_0_core_top.sv:4292]
+INFO: [VRFC 10-2458] undeclared symbol cfg_hot_reset_in, assumed default net type wire [C:/Users/yongj/Desktop/project_4/project_4.ip_user_files/ip/xdma_0/xdma_v4_1/hdl/verilog/xdma_0_core_top.sv:4293]
+INFO: [VRFC 10-2458] undeclared symbol usr_irq_fail, assumed default net type wire [C:/Users/yongj/Desktop/project_4/project_4.ip_user_files/ip/xdma_0/xdma_v4_1/hdl/verilog/xdma_0_core_top.sv:4778]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/project_4/project_4.ip_user_files/ip/xdma_0/sim/xdma_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xdma_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sim_1/imports/ML605/ipcore_dir/xilinx_mig/user_design/sim/wiredly.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WireDelay
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sim_1/imports/ML605/tb_softMC_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module short
+INFO: [VRFC 10-311] analyzing module tb_softMC_top
+ERROR: [VRFC 10-2989] 'arch_package' is not declared [C:/Users/yongj/Desktop/project_4/project_4.srcs/sim_1/imports/ML605/tb_softMC_top.v:711]
+WARNING: [VRFC 10-3380] identifier 'ADDR_WIDTH' is used before its declaration [C:/Users/yongj/Desktop/project_4/project_4.srcs/sim_1/imports/ML605/tb_softMC_top.v:350]
+WARNING: [VRFC 10-3380] identifier 'ADDR_WIDTH' is used before its declaration [C:/Users/yongj/Desktop/project_4/project_4.srcs/sim_1/imports/ML605/tb_softMC_top.v:682]
+ERROR: [VRFC 10-2989] '_8G' is not declared [C:/Users/yongj/Desktop/project_4/project_4.srcs/sim_1/imports/ML605/tb_softMC_top.v:714]
+WARNING: [VRFC 10-2821] generate block is allowed only inside loop and conditional generate in SystemVerilog mode [C:/Users/yongj/Desktop/project_4/project_4.srcs/sim_1/imports/ML605/tb_softMC_top.v:740]
+ERROR: [VRFC 10-2865] module 'tb_softMC_top' ignored due to previous errors [C:/Users/yongj/Desktop/project_4/project_4.srcs/sim_1/imports/ML605/tb_softMC_top.v:11]
+"xvhdl --incr --relax -prj tb_softMC_top_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_0/sim/bd_9054_microblaze_I_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'bd_9054_microblaze_I_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_1/sim/bd_9054_rst_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'bd_9054_rst_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_2/sim/bd_9054_ilmb_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'bd_9054_ilmb_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_3/sim/bd_9054_dlmb_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'bd_9054_dlmb_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_4/sim/bd_9054_dlmb_cntlr_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'bd_9054_dlmb_cntlr_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_5/sim/bd_9054_ilmb_cntlr_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'bd_9054_ilmb_cntlr_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_7/sim/bd_9054_second_dlmb_cntlr_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'bd_9054_second_dlmb_cntlr_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_8/sim/bd_9054_second_ilmb_cntlr_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'bd_9054_second_ilmb_cntlr_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yongj/Desktop/project_4/project_4.srcs/sources_1/ip/ddr4_0_2/bd_0/ip/ip_10/sim/bd_9054_iomodule_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'bd_9054_iomodule_0_0'
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 5814.914 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '15' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/yongj/Desktop/project_4/project_4.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/yongj/Desktop/project_4/project_4.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:18 . Memory (MB): peak = 5814.914 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/yongj/Desktop/project_4/project_4.runs/synth_1
+
 exit
-INFO: [Common 17-206] Exiting Vivado at Fri Jul 30 11:47:35 2021...
+INFO: [Common 17-206] Exiting Vivado at Sat Jul 31 01:53:40 2021...

@@ -1,5 +1,7 @@
 gtwizard_ultrascale_v1_7_gthe3_channel.v,verilog,xil_defaultlib,../../../ip/xdma_0/ip_0/ip_0/sim/gtwizard_ultrascale_v1_7_gthe3_channel.v,incdir="$ref_dir/../../../ipstatic/hdl/verilog"incdir="../../../ipstatic/hdl/verilog"
 xdma_0_pcie3_ip_gt_gthe3_channel_wrapper.v,verilog,xil_defaultlib,../../../ip/xdma_0/ip_0/ip_0/sim/xdma_0_pcie3_ip_gt_gthe3_channel_wrapper.v,incdir="$ref_dir/../../../ipstatic/hdl/verilog"incdir="../../../ipstatic/hdl/verilog"
+gtwizard_ultrascale_v1_7_gthe3_common.v,verilog,xil_defaultlib,../../../ip/xdma_0/ip_0/ip_0/sim/gtwizard_ultrascale_v1_7_gthe3_common.v,incdir="$ref_dir/../../../ipstatic/hdl/verilog"incdir="../../../ipstatic/hdl/verilog"
+xdma_0_pcie3_ip_gt_gthe3_common_wrapper.v,verilog,xil_defaultlib,../../../ip/xdma_0/ip_0/ip_0/sim/xdma_0_pcie3_ip_gt_gthe3_common_wrapper.v,incdir="$ref_dir/../../../ipstatic/hdl/verilog"incdir="../../../ipstatic/hdl/verilog"
 xdma_0_pcie3_ip_gt_gtwizard_gthe3.v,verilog,xil_defaultlib,../../../ip/xdma_0/ip_0/ip_0/sim/xdma_0_pcie3_ip_gt_gtwizard_gthe3.v,incdir="$ref_dir/../../../ipstatic/hdl/verilog"incdir="../../../ipstatic/hdl/verilog"
 xdma_0_pcie3_ip_gt_gtwizard_top.v,verilog,xil_defaultlib,../../../ip/xdma_0/ip_0/ip_0/sim/xdma_0_pcie3_ip_gt_gtwizard_top.v,incdir="$ref_dir/../../../ipstatic/hdl/verilog"incdir="../../../ipstatic/hdl/verilog"
 xdma_0_pcie3_ip_gt.v,verilog,xil_defaultlib,../../../ip/xdma_0/ip_0/ip_0/sim/xdma_0_pcie3_ip_gt.v,incdir="$ref_dir/../../../ipstatic/hdl/verilog"incdir="../../../ipstatic/hdl/verilog"
